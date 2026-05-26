@@ -61,14 +61,14 @@
     .context{margin:0 0 18px;padding:18px;background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #84c5bd;border-radius:8px;color:var(--text);font-size:20px;line-height:1.45}
     .hint{margin:0 0 20px;color:var(--muted);font-size:16px;line-height:1.45}
     .stress-letter{color:var(--stress);font-weight:950;text-transform:uppercase}
-    .flashcard{position:relative;margin:18px 0 20px;min-height:260px;perspective:1200px}
+    .flashcard{position:relative;margin:18px 0 20px;min-height:320px;perspective:1200px}
     .flashcard-inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .42s ease}
     .flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
     .card-face{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:28px;border:1px solid var(--line);border-radius:8px;background:#fff;box-shadow:var(--shadow);backface-visibility:hidden;text-align:center}
     .card-back{transform:rotateY(180deg);background:#f8fbff}
     .card-eyebrow{color:var(--muted);font-size:14px;font-weight:800;text-transform:uppercase}
     .card-word{color:var(--text);font-size:48px;line-height:1.08;font-weight:950}
-    .card-rule{max-width:720px;margin:0;color:var(--muted);font-size:17px;line-height:1.45}
+    .card-rule{max-width:820px;margin:0;color:var(--muted);font-size:17px;line-height:1.45}
     .card-word .vowel-choice{appearance:none;-webkit-appearance:none;display:inline;margin:0;padding:0 .015em;min-width:0;border:0;border-radius:0;background:transparent;color:inherit;font:inherit;font-weight:inherit;line-height:inherit;box-shadow:none;vertical-align:baseline;cursor:pointer}
     .card-word .vowel-choice:hover{background:transparent;color:var(--primary-dark);transform:none;text-decoration:none}
     .card-word .vowel-choice:disabled{opacity:1;cursor:default}
@@ -120,7 +120,7 @@
     .board-mode .mode-card h2{font-size:30px}
     .board-mode .mode-card p,.board-mode .hint,.board-mode .quiz-topline{font-size:22px}
     .board-mode .question{font-size:64px}
-    .board-mode .flashcard{min-height:360px}
+    .board-mode .flashcard{min-height:440px}
     .board-mode .card-word{font-size:76px}
     .board-mode .vowel-choice{font-size:inherit}
     .board-mode .answer{min-height:104px;padding:24px;font-size:28px}
@@ -138,7 +138,7 @@
       .top-actions,.mode-grid,.answers,.result-grid,.settings-row,.tools,.quiz-actions,.trend-grid,.word-list{grid-template-columns:1fr}
       .quiz-actions #stopBtn,.quiz-actions #prevBtn,.quiz-actions #checkBtn,.quiz-actions #nextBtn{justify-self:stretch}
       .question{font-size:28px}
-      .flashcard{min-height:250px}
+      .flashcard{min-height:360px}
       .card-word{font-size:38px}
       .mode-card{min-height:132px}
     }
@@ -719,10 +719,61 @@ function plausibleWrongVariants(item){
 const CARD_WORDS=WORDS.filter(item=>vowelPositions(item).length>=2);
 const EGE_WORDS=WORDS.filter(item=>manualWrongVariants(item).length);
 const QUIZ_WORDS=CARD_WORDS;
+const CARD_RULE_HINTS={
+  'сосредотОчить':'Сравните с существительным сосредотОчение: ударение сохраняется на О. Ошибка сосредоточИть кажется привычной, но в словнике ЕГЭ нужна форма сосредотОчить.',
+  'вЕдать':'Производящее слово для вероисповЕдание: вЕдать. Здесь важно не переносить ударение на окончание.',
+  'мЕриться':'Связка для намЕрение: мЕриться — намЕрение. Ударение удерживается на Е, не на следующем слоге.',
+  'мЕстность':'Связка для мЕстностей: мЕстность — мЕстностей. Ударение остаётся на первом слоге.',
+  'прИнятый':'Полная форма: прИнятый. В краткой форме женского рода ударение меняется: принятА.',
+  'снЯтый':'Полная форма: снЯтый. В краткой форме женского рода ударение меняется: снятА.',
+  'кОнус':'Неподвижная группа: кОнус — кОнусов. В ЕГЭ важно не переносить ударение на окончание.',
+  'кОнусов':'Форма из скобок в словнике: кОнус — кОнусов. Ударение остаётся на первом слоге.',
+  'кремЕнь':'Запоминайте пару: кремЕнь — кремнЯ. В форме родительного падежа ударение переходит на окончание.',
+  'кремнЯ':'Форма из скобок в словнике: кремЕнь — кремнЯ. Здесь ударение на Я, как в ремнЯ.',
+  'ремЕнь':'Запоминайте пару: ремЕнь — ремнЯ. В форме родительного падежа ударение переходит на окончание.',
+  'ремнЯ':'Форма из скобок в словнике: ремЕнь — ремнЯ. Здесь ударение на Я, как в кремнЯ.',
+  'бухгАлтеров':'Форма из скобок в словнике: бухгАлтер — бухгАлтеров. В ЕГЭ тренируем именно форму множественного числа, не бухгалтерОв.'
+};
+function cardRuleText(item){
+  if(CARD_RULE_HINTS[item.accent])return CARD_RULE_HINTS[item.accent];
+  const rule=item.rule;
+  const category=item.category;
+  if(rule==='Глаголы на -ИТЬ')return 'В этой группе глаголов ударение держится на И: звонИть — звонИт, облегчИть — облегчИт. Частая ошибка — сдвинуть ударение на предыдущий слог.';
+  if(rule==='Глаголы на -АТЬ')return 'В словнике ЕГЭ эта пара запоминается с ударением на -Ать: пломбировАть, запломбировАть. Не смешивайте её с дозИровать, чЕрпать, щЁлкать.';
+  if(rule==='Женский род прошедшего времени')return 'В форме женского рода прошедшего времени ударение часто переходит на окончание: взялА, началА, принялА. Проверяйте именно форму, а не только исходный глагол.';
+  if(rule==='Мужской род и множественное число')return 'В этих формах ударение остаётся на основе: зАнял — зАняли, нАчал — нАчали, прИнял — прИняли. Не переносите сюда модель женского рода.';
+  if(rule==='Инфинитив = деепричастие')return 'Деепричастие обычно сохраняет ударение инфинитива: начАть — начАв, поднЯть — поднЯв, прибЫть — прибЫв.';
+  if(rule==='ДО-, но донельзя')return item.accent==='донЕльзя'
+    ? 'Это особый случай внутри наречной группы: донЕльзя произносится с ударением на Е, в отличие от дОверху, дОнизу, дОсуха.'
+    : 'В наречиях дОверху, дОнизу, дОсуха ударение падает на ДО-. Сравните с особым случаем донЕльзя.';
+  if(rule==='ЗА-'&&category==='наречие')return 'В наречиях зАтемно и зАсветло ударение падает на приставку ЗА-. Это небольшая запоминаемая группа.';
+  if(rule==='ЗА-'&&category==='причастие')return 'В словах зАпертый, зАнятый, зАгнутый ударение на приставке ЗА-. Сравните с особым случаем сОгнутый.';
+  if(rule==='Сравнительная степень')return 'Сравнительная степень сохраняет ударение исходного прилагательного: красИвый — красИвее. Ошибка красивЕе часто встречается в речи.';
+  if(rule==='ЁНН')return 'В причастиях и отглагольных прилагательных с -ЁНН- ударение читается на Ё: облегчЁнный, ободрЁнный, заселЁнный.';
+  if(rule==='Краткая форма женского рода'&&category==='причастие')return 'В краткой форме женского рода страдательных причастий ударение часто переходит на окончание: занятА, принятА, снятА.';
+  if(rule==='Краткая форма женского рода'&&category==='прилагательное')return 'В краткой форме женского рода у этих прилагательных ударение на окончании: вернА, ловкА. Не произносите по полной форме.';
+  if(rule==='Полная форма')return 'Это полная форма причастия: ударение на основе. Сравните с краткой формой женского рода, где ударение может перейти на окончание.';
+  if(rule==='-АЩ-, -ЯЩ-')return 'В причастиях с суффиксами -АЩ- и -ЯЩ- ударение падает на суффикс: кормЯщий, кровоточАщий.';
+  if(rule==='Перед -ВШ-')return 'В причастиях с -ВШ- ударение обычно стоит перед этим суффиксом: нажИвший, начАвший, прожИвший.';
+  if(rule==='Как в производящем слове')return 'Помогает производящее слово: кУхня — кУхонный, слИва — слИвовый, сосредотОчить — сосредотОчение. Ударение сохраняет связь с исходным словом.';
+  if(rule==='Производящее слово')return 'Это слово помогает проверить производное слово из словника. Запоминайте пару целиком, потому что ударение в ней повторяется.';
+  if(rule==='Иноязычные слова')return 'Иноязычные слова чаще всего приходится запоминать по словнику: жалюзИ, диспансЕр, партЕр, дефИс. Вариант с ударением на первый слог часто ошибочен.';
+  if(rule==='Статичное ударение')return 'Неподвижное ударение: в формах этого слова ударный слог обычно сохраняется. Поэтому бАнты, шАрфы, тОрты, кОнусов произносятся без сдвига на окончание.';
+  if(rule==='-провод')return 'В сложных словах на -провОд ударение падает на последнюю О: водопровОд, газопровОд, нефтепровОд.';
+  if(rule==='-лог')return 'В словах каталОг и некролОг ударение падает на последний слог. Ошибка катАлог очень частая.';
+  if(rule==='Ё')return 'В словах с Ё ориентиром служит сама буква: свЁкла, шофЁр, договорЁнность. Важно не заменять её произношением через Е.';
+  if(rule==='Подвижное ударение')return 'Это группа с подвижным ударением: бородА — бОроду, лОктя — локтЕй, нОвость — новостЕй. Проверяйте конкретную форму.';
+  if(rule==='Разные значения')return 'Место ударения связано со значением: Отзыв о книге, но отзЫв посла из страны. В ЕГЭ важно увидеть контекст.';
+  if(rule==='Первый слог')return 'Словарная группа с ударением на первом слоге: нЕдруг, пОручни, цЕнтнер. Здесь нет продуктивного правила, форму нужно запомнить.';
+  if(rule==='Второй слог')return 'Словарная группа с ударением на втором слоге: квартАл, корЫсть, досУг, столЯр. Особенно проверяйте формы из скобок: кремнЯ, ремнЯ, бухгАлтеров.';
+  if(rule==='Третий и следующие слоги')return 'Словарная группа с ударением не на первых двух слогах: аэропОрты, киломЕтр, докумЕнт, портфЕль, цемЕнт. Типичная ошибка — переносить ударение ближе к началу слова.';
+  if(rule==='Исключения и особые случаи')return 'Это слово лучше учить как отдельный словарный случай: оно не подчиняется простой модели из соседней группы.';
+  return `${category}: ${rule}. Проверьте это слово по словнику и запомните ударную гласную.`;
+}
 function show(id){['homeScreen','quizScreen','resultScreen','dictionaryScreen','trendsScreen'].forEach(x=>$(x).classList.add('hidden'));$(id).classList.remove('hidden');if(id==='dictionaryScreen')renderDictionary();if(id==='trendsScreen')renderTrends()}
 function updateProgress(){const total=state.questions.length||1;$('progress').style.width=`${Math.round(((state.index+(state.answered?1:0))/total)*100)}%`}
 function buildStressQuestion(item){
-  return {type:'card',label:'Карточка',prompt:item.plain,hint:'Нажмите на ударную гласную прямо в слове. После ответа карточка перевернётся.',correct:item.accent,correctIndex:stressedIndex(item.accent),vowels:vowelPositions(item),item};
+  return {type:'card',label:'Карточка',prompt:item.plain,hint:'Нажмите на ударную гласную прямо в слове. После ответа карточка перевернётся.',correct:item.accent,correctIndex:stressedIndex(item.accent),vowels:vowelPositions(item),item,ruleText:cardRuleText(item)};
 }
 function wrongAccent(item){
   return sample(plausibleWrongVariants(item),1)[0] || item.accent;
@@ -782,7 +833,7 @@ function renderCardQuestion(q){
   $('flashcard').classList.toggle('flipped',!!q.answered);
   $('cardPlain').innerHTML='';
   $('cardAnswer').innerHTML=formatStress(q.correct);
-  $('cardRule').textContent=q.item.rule;
+  $('cardRule').textContent=q.ruleText||cardRuleText(q.item);
   let vowelNumber=0;
   [...q.prompt].forEach((char,index)=>{
     if(VOWELS.includes(char)){
