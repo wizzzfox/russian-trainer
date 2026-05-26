@@ -16,7 +16,7 @@
       --accent:#0f766e;
       --good:#067647;
       --bad:#b42318;
-      --stress:#b42318;
+      --stress:#195cc4;
       --soft-blue:#eef4ff;
       --soft-green:#ecfdf3;
       --soft-red:#fef3f2;
@@ -70,10 +70,10 @@
     .card-word{color:var(--text);font-size:48px;line-height:1.08;font-weight:950}
     .card-rule{max-width:720px;margin:0;color:var(--muted);font-size:17px;line-height:1.45}
     .card-word .vowel-choice{appearance:none;-webkit-appearance:none;display:inline;margin:0;padding:0 .015em;min-width:0;border:0;border-radius:0;background:transparent;color:inherit;font:inherit;font-weight:inherit;line-height:inherit;box-shadow:none;vertical-align:baseline;cursor:pointer}
-    .card-word .vowel-choice:hover{background:transparent;color:var(--primary-dark);transform:none;text-decoration:underline;text-underline-offset:.12em}
+    .card-word .vowel-choice:hover{background:transparent;color:var(--primary-dark);transform:none;text-decoration:none}
     .card-word .vowel-choice:disabled{opacity:1;cursor:default}
-    .card-word .vowel-choice.correct{background:transparent;color:var(--good);text-decoration:underline;text-decoration-thickness:.08em;text-underline-offset:.12em}
-    .card-word .vowel-choice.wrong{background:transparent;color:var(--bad);text-decoration:line-through;text-decoration-thickness:.08em}
+    .card-word .vowel-choice.correct{background:transparent;color:var(--primary-dark);text-decoration:none}
+    .card-word .vowel-choice.wrong{background:transparent;color:var(--primary-dark);text-decoration:none}
     .answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch;margin-top:18px}
     .answer{min-height:64px;display:flex;align-items:center;text-align:left;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--text);box-shadow:none;font-weight:650;line-height:1.25}
     .answer:hover{background:#f8fbff;border-color:#8bb6f9;box-shadow:none}
@@ -107,10 +107,10 @@
     .trend-section{margin-top:12px}
     .trend-label{margin:0 0 8px;color:#475467;font-size:13px;font-weight:850;text-transform:uppercase}
     .chips{display:flex;gap:8px;flex-wrap:wrap}
-    .chip{display:inline-flex;align-items:center;padding:6px 9px;border:1px solid #d7deea;border-radius:999px;background:#f8fafc;color:#101828;font-size:14px;font-weight:750}
-    .trend-card .chip .stress-letter{display:inline-flex;align-items:center;justify-content:center;min-width:.78em;margin:0 .01em;padding:0 .08em;border-radius:4px;background:#fff2d6;color:#9a3412;font-weight:950}
+    .chip{display:inline-flex;align-items:center;padding:6px 9px;border:1px solid #d7deea;border-radius:999px;background:var(--soft-blue);color:#101828;font-size:14px;font-weight:750}
+    .trend-card .chip .stress-letter{color:var(--primary-dark);font-weight:950}
     .chip.exception{background:#fff7ed;border-color:#fed7aa;color:#101828}
-    .trend-card .chip.exception .stress-letter{background:#fee2e2;color:#b42318}
+    .trend-card .chip.exception .stress-letter{color:#c2410c}
     footer{margin-top:24px;padding:16px 0 0;border-top:1px solid var(--line);font-size:13px;line-height:1.45}
     .board-mode{width:min(1420px,100%)}
     .board-mode h1{font-size:68px}
@@ -480,9 +480,9 @@ const TRENDS = [
   },
   {
     title:'Словарные глаголы-ловушки',
-    text:'Часть глаголов нельзя уверенно вывести по одной модели: их лучше запоминать как словарные. Например, в паре пломбировАть — запломбировАть ударение на -Ать, а в словах дозИровать, чЕрпать, щЁлкать работает уже не эта схема. Такие слова полезно держать отдельным мини-списком.',
+    text:'Часть глаголов нельзя уверенно вывести по одной модели: их лучше запоминать как словарные. В этой группе часто ошибаются, потому что похожие внешне слова ведут себя по-разному: пломбировАть и запломбировАть имеют ударение на -Ать, а дозИровать, чЕрпать, щЁлкать проверяются по словнику.',
     examples:['пломбировАть','запломбировАть','дозИровать','чЕрпать','щЁлкать'],
-    exceptions:['не переносить модель -Ать на все глаголы','проверять слово по словнику']
+    exceptions:[]
   },
   {
     title:'Прошедшее время женского рода',
@@ -494,11 +494,11 @@ const TRENDS = [
     title:'Деепричастия',
     text:'Деепричастие часто сохраняет ударение исходного инфинитива: начАть — начАв, поднЯть — поднЯв. Это удобная рабочая связка: сначала вспоминаем ударение в глаголе, затем переносим его в форму с суффиксом -в / -вши.',
     examples:['закУпорить — закУпорив','начАть — начАв','отдАть — отдАв','поднЯть — поднЯв','прибЫть — прибЫв','создАть — создАв'],
-    exceptions:['если инфинитив не помните, слово учится как словарное']
+    exceptions:[]
   },
   {
     title:'Наречия',
-    text:'У наречий есть небольшие запоминаемые группы. В словах дОверху, дОнизу, дОсуха ударение падает на ДО-, а в зАтемно и зАсветло — на ЗА-. Отдельно держите наречия, которые не объясняются этой подсказкой или связаны с прилагательным: красИвый — красИвее.',
+    text:'У наречий есть небольшие запоминаемые группы. В словах дОверху, дОнизу, дОсуха ударение падает на ДО-, а в зАтемно и зАсветло — на ЗА-. Есть и особые случаи: донЕльзя, надОлго, ненадОлго не подчиняются первой подсказке, а красИвее сохраняет ударение производящего слова красИвый.',
     examples:['дОверху','дОнизу','дОсуха','зАтемно','зАсветло','вОвремя'],
     exceptions:['донЕльзя','надОлго','ненадОлго','красИвее']
   },
@@ -510,7 +510,7 @@ const TRENDS = [
   },
   {
     title:'Прилагательные',
-    text:'В краткой форме женского рода у ряда прилагательных ударение падает на окончание: вЕрный — вернА, лОвкий — ловкА. В производных прилагательных часто помогает исходное слово: кУхня — кУхонный, слИва — слИвовый. Но часть слов остаётся словарной, поэтому их лучше повторять отдельно.',
+    text:'В краткой форме женского рода у ряда прилагательных ударение падает на окончание: вЕрный — вернА, лОвкий — ловкА. В производных прилагательных часто помогает исходное слово: кУхня — кУхонный, слИва — слИвовый. Слова прозорлИва, мозаИчный, оптОвый лучше учить как особые случаи: они часто расходятся с бытовым произношением.',
     examples:['вернА','ловкА','знАчимый','красИвее','кУхонный','слИвовый'],
     exceptions:['прозорлИва','мозаИчный','оптОвый']
   },
@@ -755,8 +755,12 @@ function renderDictionary(){
   $('dictionaryCount').textContent=`Показано: ${rows.length} из ${WORDS.length}`;
   $('dictionaryBody').innerHTML=rows.map(item=>`<article class="word-item">${formatStress(item.accent)}</article>`).join('');
 }
+function renderTrendExceptions(exceptions){
+  if(!exceptions?.length)return '';
+  return `<div class="trend-section"><div class="trend-label">Исключения и особые случаи</div><div class="chips">${exceptions.map(x=>`<span class="chip exception">${formatStress(x)}</span>`).join('')}</div></div>`;
+}
 function renderTrends(){
-  $('trendGrid').innerHTML=TRENDS.map(t=>`<article class="trend-card"><h3>${t.title}</h3><p>${t.text}</p><div class="trend-section"><div class="trend-label">Примеры</div><div class="chips">${t.examples.map(x=>`<span class="chip">${formatStress(x)}</span>`).join('')}</div></div><div class="trend-section"><div class="trend-label">Исключения и особые случаи</div><div class="chips">${t.exceptions.map(x=>`<span class="chip exception">${formatStress(x)}</span>`).join('')}</div></div></article>`).join('');
+  $('trendGrid').innerHTML=TRENDS.map(t=>`<article class="trend-card"><h3>${t.title}</h3><p>${t.text}</p><div class="trend-section"><div class="trend-label">Примеры</div><div class="chips">${t.examples.map(x=>`<span class="chip">${formatStress(x)}</span>`).join('')}</div></div>${renderTrendExceptions(t.exceptions)}</article>`).join('');
 }
 document.querySelectorAll('.mode-card').forEach(card=>card.onclick=()=>startQuiz(card.dataset.mode));
 $('siteHomeBtn').onclick=()=>{window.location.href='../'};
