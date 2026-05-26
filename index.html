@@ -1,0 +1,2971 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Фразеологизмы — интерактивный тренажёр</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#1f2937;--muted:#667085;--line:#e5e7eb;--primary:#2f5fd0;--good:#137a3f;--bad:#b42318;--soft-blue:#eaf0ff;--soft-green:#eaf7ef;--soft-red:#fff0ee;--shadow:0 14px 34px rgba(15,23,42,.08);--radius:24px}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,#edf3ff,var(--bg) 46%);color:var(--text);min-height:100vh}.app{width:min(1120px,100%);margin:0 auto;padding:22px}header{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:18px}h1{margin:0 0 8px;font-size:clamp(34px,5vw,64px);line-height:1.02;letter-spacing:-.045em}.subtitle{margin:0 0 8px;font-size:clamp(17px,2vw,22px);font-weight:650}.school,.muted,footer{color:var(--muted)}.panel,.question-card{background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.9);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,28px)}.hidden{display:none!important}.mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}button{border:0;border-radius:16px;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer;background:var(--primary);color:white}button:hover{filter:brightness(.95)}button:disabled{opacity:.55;cursor:not-allowed}.ghost{background:white;color:var(--primary);border:1px solid #c7d2fe}.danger-ghost{background:white;color:var(--bad);border:1px solid #ffd2cc}.mode-card{text-align:left;border:1px solid var(--line);border-radius:20px;background:var(--card);padding:18px;min-height:142px;color:var(--text)}.mode-card h2{margin:0 0 8px;font-size:21px}.mode-card p{margin:0;color:var(--muted);font-size:15px;line-height:1.42}input[type=number]{border:1px solid var(--line);border-radius:14px;padding:10px 12px;font:inherit;width:120px}.settings-row{display:flex;gap:12px;margin-top:18px}.quiz-topline,.top-actions{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px;color:var(--muted)}.progress-wrap{height:10px;background:#e7ebf5;border-radius:999px;overflow:hidden;margin-bottom:22px}.progress{height:100%;width:0;background:var(--primary);border-radius:999px;transition:width .2s}.question-label{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:850;color:var(--primary);margin-bottom:10px}.question{font-size:clamp(24px,4.8vw,48px);line-height:1.12;margin:0 0 18px;letter-spacing:-.03em}.context{font-size:clamp(20px,3vw,32px);line-height:1.34;margin:0 0 18px}.hint{color:var(--muted);font-size:16px;margin:0 0 20px}.answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.answer{display:flex;align-items:center;min-height:68px;text-align:left;background:#f8fafc;color:var(--text);border:1px solid var(--line);border-radius:18px;padding:16px;font-weight:650;line-height:1.25}.answer.correct{background:var(--soft-green);color:var(--good);border-color:#9dd9b5}.answer.wrong{background:var(--soft-red);color:var(--bad);border-color:#ffb5aa}.feedback{margin-top:18px;padding:16px;border-radius:18px;background:#f8fafc;border:1px solid var(--line);line-height:1.45;font-size:17px}.feedback.good{background:var(--soft-green);border-color:#9dd9b5}.feedback.bad{background:var(--soft-red);border-color:#ffb5aa}.quiz-actions{display:flex;justify-content:space-between;gap:12px;margin-top:18px;flex-wrap:wrap}.result-grid,.team-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}.team-board{grid-template-columns:repeat(3,minmax(0,1fr))}.result-box,.team{background:white;border:1px solid var(--line);border-radius:20px;padding:18px}.team{text-align:center}.team-score{font-size:38px;font-weight:900}.team-controls{display:flex;gap:8px;justify-content:center;margin-top:10px}footer{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;line-height:1.45}@media(max-width:820px){header{flex-direction:column}.mode-grid,.answers,.result-grid,.team-board{grid-template-columns:1fr}.app{padding:14px}}
+
+.text-answer-wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.text-answer-wrap input{flex:1;min-width:240px;border:1px solid var(--line);border-radius:18px;padding:16px;font:inherit;font-size:18px;background:white;color:var(--text)}
+.text-answer-wrap input:disabled{background:#f3f4f6;color:var(--muted)}
+
+.board-mode{max-width:1440px}
+.board-mode header{align-items:center;margin-bottom:14px}
+.board-mode h1{font-size:clamp(48px,7vw,92px)}
+.board-mode .subtitle{font-size:clamp(22px,3vw,34px);max-width:1100px}
+.board-mode .school{font-size:20px}
+.board-mode .panel,.board-mode .question-card{padding:clamp(28px,5vw,62px)}
+.board-mode .mode-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.board-mode .mode-card{min-height:170px;padding:26px}
+.board-mode .mode-card h2{font-size:30px}
+.board-mode .mode-card p{font-size:21px}
+.board-mode .question-label{font-size:16px}
+.board-mode .question{font-size:clamp(44px,6vw,82px)}
+.board-mode .context{font-size:clamp(34px,4.6vw,62px)}
+.board-mode .hint{font-size:24px}
+.board-mode .answer{min-height:110px;font-size:28px;padding:26px}
+.board-mode .feedback{font-size:26px;padding:26px}
+.board-mode .quiz-topline{font-size:22px}
+.board-mode button{font-size:22px;padding:16px 22px}
+.board-mode input[type=number]{font-size:22px;width:150px}
+.board-mode .text-answer-wrap input{font-size:30px;padding:24px}
+.board-mode footer{display:none}
+@media(max-width:820px){
+  .board-mode .mode-grid,.board-mode .answers{grid-template-columns:1fr}
+  .board-mode .question{font-size:42px}
+  .board-mode .context{font-size:32px}
+}
+
+
+.table-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:16px 0}
+.table-tools input{flex:1;min-width:260px;border:1px solid var(--line);border-radius:16px;padding:13px 16px;font:inherit;background:white;color:var(--text)}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:20px;background:white;max-height:68vh}
+.phrase-table{width:100%;border-collapse:collapse;min-width:760px}
+.phrase-table th,.phrase-table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.phrase-table th{position:sticky;top:0;background:#f8fafc;z-index:1;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.phrase-table td:first-child{font-weight:750;color:var(--text)}
+.phrase-table tr:hover td{background:#f8fafc}
+.table-count{color:var(--muted);font-size:14px}
+.board-mode .table-tools input{font-size:24px;padding:18px 22px}
+.board-mode .phrase-table th,.board-mode .phrase-table td{font-size:22px;padding:18px 20px}
+
+
+.list-button{
+  background:linear-gradient(135deg,#eef4ff,#ffffff);
+  color:var(--primary);
+  border:1px solid #b9c8ff;
+  box-shadow:0 10px 24px rgba(47,95,208,.12);
+  position:relative;
+  padding-left:44px;
+}
+.list-button::before{
+  content:"📚";
+  position:absolute;
+  left:16px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:20px;
+}
+.list-button:hover{
+  background:linear-gradient(135deg,#dfe9ff,#ffffff);
+  filter:none;
+}
+.board-mode .list-button{
+  font-size:24px;
+  padding-left:52px;
+}
+.board-mode .list-button::before{
+  font-size:26px;
+  left:18px;
+}
+
+
+.phrase-table th:nth-child(1) ,.phrase-table td:nth-child(1) {width:28%}
+.phrase-table th:nth-child(2) ,.phrase-table td:nth-child(2) {width:48%}
+.phrase-table th:nth-child(3) ,.phrase-table td:nth-child(3) {width:24%}
+.phrase-table td:nth-child(2) {
+  font-size:15px;
+  line-height:1.48;
+  color:#243047;
+  background:linear-gradient(90deg,rgba(238,244,255,.55),rgba(255,255,255,0));
+}
+.phrase-table th:nth-child(2) {
+  color:var(--primary);
+}
+.board-mode .phrase-table td:nth-child(2) {
+  font-size:24px;
+  line-height:1.42;
+}
+
+
+.phrase-table th:nth-child(1) ,.phrase-table td:nth-child(1) {width:34%}
+.phrase-table th:nth-child(2) ,.phrase-table td:nth-child(2) {width:66%}
+.phrase-table{min-width:680px}
+
+
+.team-options{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.team-option{
+  background:#f8fafc;
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  font-weight:750;
+  text-align:left;
+  min-height:64px;
+}
+.team-option:hover{
+  background:#eef4ff;
+  border-color:#c7d2fe;
+  filter:none;
+}
+.team-option.correct{background:var(--soft-green);color:var(--good);border-color:#9dd9b5}
+.team-option.selected{
+  background:#eaf0ff;
+  border-color:#2f5fd0;
+  box-shadow:0 0 0 3px rgba(47,95,208,.13);
+}
+.board-mode .team-options{
+  gap:18px;
+}
+.board-mode .team-option{
+  font-size:28px;
+  min-height:104px;
+  padding:24px;
+}
+@media(max-width:820px){
+  .team-options{grid-template-columns:1fr}
+}
+
+
+.board-mode #prevBtn,.board-mode #nextBtn{
+  min-width:160px;
+}
+
+
+.quiz-actions-3{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+  gap:12px;
+}
+.quiz-actions-3 #stopBtn{justify-self:start}
+.quiz-actions-3 #prevBtn{justify-self:center}
+.quiz-actions-3 #nextBtn{justify-self:end}
+@media(max-width:820px){
+  .quiz-actions-3{grid-template-columns:1fr}
+  .quiz-actions-3 #stopBtn,.quiz-actions-3 #prevBtn,.quiz-actions-3 #nextBtn{justify-self:stretch}
+}
+.board-mode .quiz-actions-3 button{
+  min-width:180px;
+}
+
+
+.team-actions-3{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+  gap:12px;
+}
+.team-actions-3 #revealTeamAnswer{justify-self:start}
+.team-actions-3 #prevTeamPhrase{justify-self:center}
+.team-actions-3 #nextTeamPhrase{justify-self:end}
+@media(max-width:820px){
+  .team-actions-3{grid-template-columns:1fr}
+  .team-actions-3 #revealTeamAnswer,.team-actions-3 #prevTeamPhrase,.team-actions-3 #nextTeamPhrase{justify-self:stretch}
+}
+.board-mode .team-actions-3 button{min-width:220px}
+
+
+.find-context{
+  font-size:18px !important;
+  line-height:1.55 !important;
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  white-space:pre-line;
+}
+.board-mode .find-context{
+  font-size:26px !important;
+  line-height:1.5 !important;
+  padding:24px;
+}
+
+
+.team-board{
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr)) !important;
+}
+.team small{
+  display:block;
+  color:var(--muted);
+  margin-top:4px;
+}
+.board-mode .team-board{
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr)) !important;
+}
+.board-mode .team-score{
+  font-size:56px;
+}
+
+
+.team-setup{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:18px 0 4px;
+  flex-wrap:wrap;
+}
+.team-count-display{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:14px 20px;
+  font-weight:800;
+  color:var(--text);
+}
+.team-board{
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr)) !important;
+}
+.team small{
+  display:block;
+  color:var(--muted);
+  margin-top:4px;
+}
+.board-mode .team-setup{
+  gap:20px;
+}
+.board-mode .team-count-display{
+  font-size:28px;
+  padding:18px 28px;
+}
+.board-mode .team-board{
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr)) !important;
+}
+.board-mode .team-score{
+  font-size:56px;
+}
+
+
+
+/* === Modern UI refresh, 2026 === */
+:root{
+  --bg:#eef2f7;
+  --card:rgba(255,255,255,.86);
+  --text:#111827;
+  --muted:#64748b;
+  --line:rgba(148,163,184,.28);
+  --primary:#4f46e5;
+  --primary-2:#06b6d4;
+  --primary-dark:#3730a3;
+  --good:#047857;
+  --bad:#dc2626;
+  --soft-blue:#eef2ff;
+  --soft-green:#ecfdf5;
+  --soft-red:#fef2f2;
+  --shadow:0 24px 70px rgba(15,23,42,.12);
+  --shadow-soft:0 12px 32px rgba(15,23,42,.08);
+  --radius:28px;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(circle at 12% 8%,rgba(79,70,229,.08),transparent 38%),
+    radial-gradient(circle at 84% 5%,rgba(6,182,212,.07),transparent 34%),
+    linear-gradient(135deg,#f8fafc 0%,#f3f6fb 55%,#eef2ff 100%);
+  color:var(--text);
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:linear-gradient(rgba(15,23,42,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.035) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.35),transparent 72%);
+}
+.app{position:relative;z-index:1;width:min(1180px,100%);padding:28px}
+header{
+  position:relative;
+  overflow:hidden;
+  align-items:center;
+  padding:24px;
+  border:1px solid rgba(255,255,255,.74);
+  border-radius:32px;
+  background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(255,255,255,.82));
+  box-shadow:var(--shadow-soft);
+  backdrop-filter:blur(18px);
+}
+header::after{
+  content:"";
+  position:absolute;
+  right:-70px;
+  top:-90px;
+  width:260px;
+  height:260px;
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(79,70,229,.08),rgba(6,182,212,.08));
+}
+header>div{position:relative;z-index:1}
+h1{
+  background:linear-gradient(90deg,#111827,#334155 58%,#475569);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  letter-spacing:-.06em;
+}
+.subtitle{max-width:780px;color:#334155;font-weight:750}
+.school{font-size:15px;color:var(--muted)}
+.top-actions{align-items:center}
+button{
+  border-radius:18px;
+  background:linear-gradient(135deg,#4f46e5,#3b82f6);
+  box-shadow:0 8px 18px rgba(79,70,229,.14);
+  transition:transform .16s ease,box-shadow .16s ease,filter .16s ease,background .16s ease;
+}
+button:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(79,70,229,.18);filter:none}
+button:active{transform:translateY(0);box-shadow:0 8px 18px rgba(79,70,229,.18)}
+button:focus-visible,input:focus-visible{outline:3px solid rgba(79,70,229,.28);outline-offset:3px}
+.ghost,.danger-ghost{
+  background:rgba(255,255,255,.72);
+  border:1px solid rgba(148,163,184,.32);
+  box-shadow:none;
+  backdrop-filter:blur(10px);
+}
+.ghost{color:var(--primary-dark)}
+.danger-ghost{color:var(--bad)}
+.panel,.question-card,.result-box,.team{
+  border:1px solid rgba(255,255,255,.78);
+  background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,255,255,.88));
+  backdrop-filter:blur(18px);
+  box-shadow:var(--shadow);
+}
+#homeScreen h2,#tableScreen h2,#resultScreen h2{letter-spacing:-.03em;color:#111827}
+.settings-row{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(180px,230px));
+  gap:14px;
+}
+.settings-row label{
+  display:block;
+  padding:12px 14px;
+  background:rgba(255,255,255,.68);
+  border:1px solid var(--line);
+  border-radius:20px;
+}
+input[type=number],.table-tools input,.text-answer-wrap input{
+  border-color:rgba(148,163,184,.35);
+  background:rgba(255,255,255,.92);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75);
+}
+.mode-grid{gap:16px}
+.mode-card{
+  position:relative;
+  overflow:hidden;
+  min-height:160px;
+  padding:22px;
+  border:1px solid rgba(148,163,184,.28);
+  background:linear-gradient(160deg,rgba(255,255,255,.96),rgba(248,250,252,.90));
+  box-shadow:0 8px 28px rgba(15,23,42,.06);
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.mode-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:5px;
+  background:linear-gradient(90deg,#4f46e5,#3b82f6);
+  opacity:.55;
+}
+.mode-card::after{
+  content:"";
+  position:absolute;
+  right:-34px;
+  bottom:-42px;
+  width:130px;
+  height:130px;
+  border-radius:999px;
+  background:rgba(79,70,229,.08);
+}
+.mode-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(79,70,229,.42);
+  box-shadow:0 22px 48px rgba(15,23,42,.12);
+  background:linear-gradient(160deg,#fff,#f9fbff);
+}
+.mode-card h2{font-size:22px;letter-spacing:-.02em;position:relative;z-index:1}
+.mode-card p{font-size:15.5px;position:relative;z-index:1;color:#64748b}
+.quiz-topline{
+  padding:0 6px;
+  font-weight:650;
+}
+.progress-wrap{
+  height:12px;
+  background:rgba(255,255,255,.68);
+  border:1px solid rgba(148,163,184,.22);
+  box-shadow:inset 0 1px 4px rgba(15,23,42,.04);
+}
+.progress{background:linear-gradient(90deg,var(--primary),var(--primary-2))}
+.question-card{position:relative;overflow:hidden}
+.question-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:7px;
+  background:linear-gradient(90deg,#4f46e5,#3b82f6);
+}
+.question-label{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 11px;
+  border-radius:999px;
+  background:rgba(79,70,229,.075);
+  color:var(--primary-dark);
+  letter-spacing:.06em;
+}
+.question{letter-spacing:-.045em;color:#111827}
+.context,.find-context{
+  background:rgba(248,250,252,.88)!important;
+  border:1px solid rgba(148,163,184,.25)!important;
+  border-radius:22px!important;
+  padding:18px!important;
+}
+.hint{color:#64748b}
+.answer,.team-option{
+  background:rgba(255,255,255,.78);
+  border-color:rgba(148,163,184,.30);
+  box-shadow:0 6px 16px rgba(15,23,42,.04);
+  transition:transform .14s ease,border-color .14s ease,background .14s ease,box-shadow .14s ease;
+}
+.answer:hover,.team-option:hover{
+  transform:translateY(-1px);
+  background:#fff;
+  border-color:rgba(79,70,229,.38);
+  box-shadow:0 14px 28px rgba(15,23,42,.09);
+}
+.answer.correct,.team-option.correct{
+  background:#ecfdf5;
+  border-color:rgba(16,185,129,.45);
+  color:var(--good);
+}
+.answer.wrong{
+  background:#fef2f2;
+  border-color:rgba(239,68,68,.45);
+  color:var(--bad);
+}
+.feedback{
+  border-color:rgba(148,163,184,.28);
+  background:rgba(255,255,255,.74);
+}
+.feedback.good{background:#ecfdf5;border-color:rgba(16,185,129,.44)}
+.feedback.bad{background:#fef2f2;border-color:rgba(239,68,68,.44)}
+.result-box,.team{background:rgba(255,255,255,.80)}
+.team-score{background:linear-gradient(90deg,#4f46e5,#3b82f6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.team-count-display{background:rgba(255,255,255,.76);border-color:rgba(148,163,184,.30)}
+.table-wrap{border-color:rgba(148,163,184,.30);background:rgba(255,255,255,.78);box-shadow:var(--shadow-soft)}
+.phrase-table th{background:rgba(248,250,252,.96);backdrop-filter:blur(12px)}
+.phrase-table td{background:rgba(255,255,255,.48)}
+.phrase-table tr:hover td{background:#f8fafc}
+.list-button{background:linear-gradient(135deg,#fff,#eef2ff);border-color:rgba(79,70,229,.28);color:var(--primary-dark)}
+footer{
+  margin-top:24px;
+  padding:18px 20px;
+  border:1px solid rgba(148,163,184,.24);
+  border-radius:22px;
+  background:rgba(255,255,255,.54);
+  backdrop-filter:blur(12px);
+}
+.board-mode{width:min(1480px,100%)}
+.board-mode header{border-radius:38px}
+.board-mode .panel,.board-mode .question-card{border-radius:36px}
+@media(max-width:820px){
+  .app{padding:14px}
+  header{padding:18px;border-radius:24px}
+  .top-actions{width:100%;display:grid;grid-template-columns:1fr;gap:10px}
+  .settings-row{grid-template-columns:1fr}
+  .mode-card{min-height:132px}
+  .question-card,.panel{border-radius:24px}
+  .quiz-actions-3,.team-actions-3{gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;scroll-behavior:auto!important}
+  button:hover,.mode-card:hover,.answer:hover,.team-option:hover{transform:none!important}
+}
+
+
+
+/* === Clean modern UI refresh: calmer, non-gradient, readability-first === */
+:root{
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --text:#101828;
+  --muted:#667085;
+  --line:#d9e0ea;
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+  --primary-soft:#eff6ff;
+  --good:#067647;
+  --bad:#b42318;
+  --soft-blue:#eff6ff;
+  --soft-green:#ecfdf3;
+  --soft-red:#fef3f2;
+  --shadow:0 18px 44px rgba(16,24,40,.08);
+  --shadow-soft:0 8px 24px rgba(16,24,40,.06);
+  --radius:22px;
+}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:#f6f7f9;
+  color:var(--text);
+}
+body::before{display:none!important}
+.app{width:min(1160px,100%);padding:26px}
+header{
+  overflow:visible;
+  align-items:center;
+  padding:24px 26px;
+  border:1px solid var(--line);
+  border-radius:28px;
+  background:#fff;
+  box-shadow:var(--shadow-soft);
+  backdrop-filter:none;
+}
+header::after{display:none!important}
+header>div:first-child{
+  border-left:6px solid var(--primary);
+  padding-left:18px;
+}
+h1{
+  background:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+  color:#0f172a!important;
+  font-size:clamp(36px,5vw,68px);
+  letter-spacing:-.055em;
+  font-weight:900;
+}
+.subtitle{max-width:760px;color:#344054;font-weight:700;letter-spacing:-.015em}.school{color:#667085}.top-actions{gap:10px}
+button{
+  border-radius:14px;
+  background:#2563eb;
+  color:#fff;
+  box-shadow:0 6px 14px rgba(37,99,235,.16);
+  transition:transform .14s ease,box-shadow .14s ease,background .14s ease,border-color .14s ease;
+}
+button:hover{transform:translateY(-1px);background:#1d4ed8;box-shadow:0 10px 22px rgba(37,99,235,.20);filter:none}
+button:active{transform:translateY(0)}
+.ghost,.danger-ghost,.list-button{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+}
+.ghost{color:#1d4ed8!important}.danger-ghost{color:#b42318!important}.list-button{color:#1d4ed8!important}
+.list-button::before{filter:none;opacity:.9}
+.panel,.question-card,.result-box,.team{
+  border:1px solid var(--line)!important;
+  background:#fff!important;
+  box-shadow:var(--shadow-soft)!important;
+  backdrop-filter:none!important;
+}
+.panel,.question-card{border-radius:26px!important;padding:clamp(18px,3vw,30px)}
+#homeScreen h2,#tableScreen h2,#resultScreen h2{
+  color:#0f172a!important;
+  letter-spacing:-.035em;
+  font-weight:850;
+}
+.settings-row{display:flex;gap:12px;flex-wrap:wrap}.settings-row label{
+  background:#f8fafc!important;
+  border:1px solid var(--line)!important;
+  border-radius:18px;
+  padding:12px 14px;
+}
+input[type=number],.table-tools input,.text-answer-wrap input{
+  background:#fff!important;
+  border:1px solid #cfd8e3!important;
+  box-shadow:none!important;
+  border-radius:16px;
+}
+button:focus-visible,input:focus-visible{outline:3px solid rgba(37,99,235,.20);outline-offset:3px}
+.mode-grid{gap:14px;margin-top:22px}.mode-card{
+  position:relative;
+  overflow:hidden;
+  min-height:154px;
+  padding:22px;
+  border:1px solid var(--line)!important;
+  border-radius:22px;
+  background:#fff!important;
+  color:var(--text);
+  box-shadow:0 4px 14px rgba(16,24,40,.04)!important;
+  transition:transform .14s ease,border-color .14s ease,box-shadow .14s ease,background .14s ease;
+}
+.mode-card::before{display:none!important}
+.mode-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(37,99,235,.06),rgba(37,99,235,0) 42%);
+}
+.mode-card:hover{
+  transform:translateY(-3px);
+  border-color:#93b5fd!important;
+  background:#fbfdff!important;
+  box-shadow:0 16px 34px rgba(16,24,40,.09)!important;
+}
+.mode-card h2{font-size:22px;letter-spacing:-.025em;color:#0f172a}.mode-card p{font-size:15.5px;color:#667085;line-height:1.45}
+.quiz-topline{padding:0 4px;color:#667085;font-weight:650}.progress-wrap{
+  height:10px;
+  background:#e9eef5!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.progress{background:#2563eb!important}.question-card{position:relative;overflow:hidden}.question-card::before{display:none!important}.question-label{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 12px;
+  border-radius:999px;
+  background:#eff6ff!important;
+  color:#1d4ed8!important;
+  letter-spacing:.065em;
+  font-weight:850;
+}
+.question{color:#0f172a!important;letter-spacing:-.045em}.context,.find-context{
+  background:#f8fafc!important;
+  border:1px solid #d9e0ea!important;
+  border-radius:20px!important;
+  padding:18px!important;
+  color:#101828!important;
+}
+.hint{color:#667085}.answer,.team-option{
+  background:#fff!important;
+  border:1px solid #d9e0ea!important;
+  box-shadow:0 3px 10px rgba(16,24,40,.04)!important;
+  transition:transform .12s ease,border-color .12s ease,box-shadow .12s ease,background .12s ease;
+}
+.answer:hover,.team-option:hover{
+  transform:translateY(-1px);
+  background:#f8fbff!important;
+  border-color:#93b5fd!important;
+  box-shadow:0 10px 22px rgba(16,24,40,.08)!important;
+}
+.answer.correct,.team-option.correct{background:#ecfdf3!important;border-color:#75e0a7!important;color:#067647!important}.answer.wrong{background:#fef3f2!important;border-color:#fda29b!important;color:#b42318!important}
+.feedback{background:#f8fafc!important;border:1px solid #d9e0ea!important}.feedback.good{background:#ecfdf3!important;border-color:#75e0a7!important}.feedback.bad{background:#fef3f2!important;border-color:#fda29b!important}
+.result-box,.team{background:#fff!important;border-radius:22px}.team-score{background:none!important;color:#1d4ed8!important;-webkit-background-clip:initial!important;background-clip:initial!important}.team-count-display{background:#fff!important;border-color:#d9e0ea!important}
+.table-wrap{background:#fff!important;border:1px solid #d9e0ea!important;box-shadow:var(--shadow-soft)!important}.phrase-table th{background:#f8fafc!important;color:#667085!important;backdrop-filter:none!important}.phrase-table td{background:#fff!important}.phrase-table td:nth-child(2){background:#fbfdff!important}.phrase-table tr:hover td{background:#f8fafc!important}
+footer{background:#fff!important;border:1px solid #d9e0ea!important;border-radius:20px;backdrop-filter:none!important;color:#667085}
+.board-mode{width:min(1460px,100%)}.board-mode header{border-radius:30px}.board-mode .panel,.board-mode .question-card{border-radius:28px!important}
+@media(max-width:820px){.app{padding:14px}header{padding:18px;border-radius:22px;align-items:flex-start}.top-actions{width:100%;display:grid;grid-template-columns:1fr;gap:10px}.settings-row{display:grid;grid-template-columns:1fr}.mode-card{min-height:132px}.question-card,.panel{border-radius:22px!important}}
+
+
+
+/* === Design variant B: full soft-tinted cards, no separate gradient shape === */
+.mode-card{
+  overflow:hidden!important;
+  background:#f8fbff!important;
+  border:1px solid #cbdaf7!important;
+  box-shadow:0 10px 26px rgba(37,99,235,.075)!important;
+  border-radius:22px!important;
+}
+.mode-card::before,.mode-card::after{display:none!important}
+.mode-card:hover{
+  background:#eff6ff!important;
+  border-color:#93b4f6!important;
+  box-shadow:0 20px 42px rgba(37,99,235,.14)!important;
+  transform:translateY(-3px)!important;
+}
+.mode-card h2{color:#172554!important}
+.mode-card p{color:#475569!important}
+.ghost{background:#f8fbff!important}
+.list-button{background:#f8fbff!important;border-color:#cbdaf7!important;box-shadow:0 8px 18px rgba(37,99,235,.08)!important}
+.list-button:hover{background:#eff6ff!important}
+.phrase-table td:nth-child(2){background:#f8fbff!important}
+
+
+/* === Final classroom UI polish === */
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#667085;
+  --line:#d7deea;
+  --primary:#1f6feb;
+  --primary-dark:#195cc4;
+  --accent:#0f766e;
+  --accent-soft:#ecfdf9;
+  --warning:#b54708;
+  --soft-blue:#edf4ff;
+  --soft-green:#ecfdf3;
+  --soft-red:#fef3f2;
+  --shadow:0 18px 46px rgba(31,41,55,.09);
+  --shadow-soft:0 8px 22px rgba(31,41,55,.07);
+  --radius:20px;
+}
+html{background:var(--bg)}
+body{
+  background:
+    linear-gradient(180deg,#f9fafc 0%,#f5f7fb 46%,#f7f8fb 100%)!important;
+  color:var(--text);
+}
+body::before{display:none!important}
+.app{width:min(1160px,100%);padding:24px}
+header{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:18px;
+  align-items:end!important;
+  margin-bottom:18px;
+  padding:0 0 18px!important;
+  border:0!important;
+  border-bottom:1px solid var(--line)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+header::after{display:none!important}
+h1{
+  margin-bottom:6px;
+  color:#101828!important;
+  background:none!important;
+  letter-spacing:0!important;
+  font-size:clamp(32px,4.8vw,56px);
+}
+.subtitle{
+  max-width:760px;
+  color:#344054!important;
+  font-size:clamp(16px,2vw,20px);
+  font-weight:720;
+}
+.school{color:#667085!important}
+.top-actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin:0!important;
+}
+button{
+  border-radius:12px!important;
+  padding:11px 15px;
+  background:var(--primary)!important;
+  color:#fff;
+  box-shadow:none!important;
+  line-height:1.15;
+}
+button:hover{
+  background:var(--primary-dark)!important;
+  transform:translateY(-1px);
+}
+button:disabled{transform:none!important}
+.ghost,.danger-ghost,.list-button{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  color:#1d2939!important;
+}
+.ghost:hover,.list-button:hover{background:#f2f6fc!important}
+.danger-ghost{color:#b42318!important}
+.list-button{padding-left:15px!important}
+.list-button::before{display:none!important}
+.panel,.question-card,.result-box,.team{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:20px!important;
+  box-shadow:var(--shadow-soft)!important;
+}
+.panel,.question-card{padding:clamp(18px,3vw,30px)!important}
+#homeScreen h2,#tableScreen h2,#resultScreen h2{
+  margin-top:0!important;
+  letter-spacing:0!important;
+}
+.settings-row{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(170px,220px));
+  gap:12px!important;
+  align-items:stretch;
+}
+.settings-row label{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:14px!important;
+  color:#475467!important;
+}
+input[type=number],.table-tools input,.text-answer-wrap input{
+  border-radius:12px!important;
+  border:1px solid #cbd5e1!important;
+}
+.mode-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px!important;
+}
+.mode-card{
+  min-height:150px;
+  padding:20px!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  box-shadow:none!important;
+}
+.mode-card:hover{
+  background:#f8fbff!important;
+  border-color:#8bb6f9!important;
+  box-shadow:0 12px 28px rgba(31,111,235,.12)!important;
+}
+.mode-card h2{
+  color:#101828!important;
+  letter-spacing:0!important;
+}
+.mode-card p{color:#667085!important}
+.quiz-topline{
+  margin-bottom:12px!important;
+  color:#475467!important;
+}
+.progress-wrap{
+  height:8px!important;
+  margin-bottom:16px!important;
+  background:#e7edf5!important;
+}
+.progress{background:linear-gradient(90deg,var(--primary),var(--accent))!important}
+.question-card{overflow:visible!important}
+.question-label{
+  background:#edf4ff!important;
+  color:#175cd3!important;
+  letter-spacing:.04em!important;
+}
+.question{
+  margin-top:10px!important;
+  color:#101828!important;
+  letter-spacing:0!important;
+}
+.context,.find-context{
+  background:#f8fafc!important;
+  border:1px solid #e2e8f0!important;
+  border-left:5px solid #84c5bd!important;
+}
+.answers{
+  align-items:stretch;
+}
+.answer,.team-option{
+  min-height:64px;
+  border-radius:14px!important;
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  box-shadow:none!important;
+}
+.answer:hover,.team-option:hover{
+  background:#f8fbff!important;
+  border-color:#8bb6f9!important;
+  box-shadow:0 8px 18px rgba(31,41,55,.08)!important;
+}
+.feedback{
+  border-radius:14px!important;
+}
+.result-grid{
+  align-items:start;
+}
+.result-box h3,.team b{color:#101828}
+.team-score{
+  color:var(--primary)!important;
+  background:none!important;
+}
+.team-controls button{
+  min-width:48px;
+}
+.team-setup{
+  justify-content:flex-start!important;
+}
+.table-tools{
+  display:grid!important;
+  grid-template-columns:minmax(220px,1fr) auto;
+}
+.table-wrap{
+  border-radius:16px!important;
+  box-shadow:none!important;
+}
+.phrase-table th{
+  background:#f2f4f7!important;
+}
+.phrase-table td:nth-child(2){
+  background:#fff!important;
+}
+main>.panel{
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+.review-action{
+  margin-top:10px;
+  width:100%;
+  background:var(--accent)!important;
+}
+.review-action:hover{background:#115e59!important}
+#repeatBtn,#reviewMistakesBtn{
+  width:100%;
+}
+#reviewMistakesBtn{
+  margin-top:12px;
+}
+footer{
+  border:0!important;
+  border-top:1px solid var(--line)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  padding:16px 0 0!important;
+}
+.board-mode{width:min(1420px,100%)}
+.board-mode header{
+  grid-template-columns:minmax(0,1fr) auto;
+  padding-bottom:22px!important;
+}
+.board-mode h1{font-size:clamp(46px,6vw,78px)}
+.board-mode .mode-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.board-mode .answer,.board-mode .team-option{
+  border-radius:18px!important;
+}
+@media(max-width:920px){
+  header{grid-template-columns:1fr}
+  .top-actions{display:grid;width:100%;grid-template-columns:1fr}
+  .mode-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:680px){
+  .app{padding:14px}
+  .mode-grid,.answers,.result-grid,.settings-row,.table-tools{grid-template-columns:1fr!important}
+  .mode-card{min-height:132px}
+  .question{font-size:28px}
+}
+
+/* === Static release polish === */
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --text:#101828;
+  --muted:#667085;
+  --line:#d7deea;
+  --primary:#1f6feb;
+  --primary-dark:#195cc4;
+  --accent:#0f766e;
+  --good:#067647;
+  --bad:#b42318;
+  --soft-blue:#eef4ff;
+  --soft-green:#ecfdf3;
+  --soft-red:#fef3f2;
+  --shadow:0 8px 22px rgba(31,41,55,.07);
+  --radius:8px;
+}
+*{letter-spacing:0!important}
+html{background:var(--bg)}
+body{
+  background:var(--bg)!important;
+  color:var(--text);
+}
+body::before{display:none!important}
+.app{
+  width:min(1120px,100%)!important;
+  padding:24px!important;
+}
+header{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:18px!important;
+  align-items:start!important;
+  margin-bottom:22px!important;
+  padding:0 0 18px!important;
+  border:0!important;
+  border-bottom:1px solid var(--line)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+header::after{display:none!important}
+header>div:first-child{
+  border-left:0!important;
+  padding-left:0!important;
+}
+h1{
+  margin:0 0 8px!important;
+  color:var(--text)!important;
+  background:none!important;
+  font-size:56px!important;
+  line-height:1.04!important;
+  font-weight:900!important;
+}
+.subtitle{
+  max-width:760px!important;
+  margin:0 0 8px!important;
+  color:#344054!important;
+  font-size:20px!important;
+  line-height:1.35!important;
+  font-weight:720!important;
+}
+.school,.muted,footer{color:var(--muted)!important}
+.top-actions{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:flex-start!important;
+  gap:10px!important;
+  margin:0!important;
+}
+button{
+  border-radius:8px!important;
+  padding:11px 15px!important;
+  background:var(--primary)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+  line-height:1.15!important;
+}
+button:hover{
+  background:var(--primary-dark)!important;
+  transform:translateY(-1px);
+  filter:none!important;
+}
+button:disabled{
+  transform:none!important;
+  opacity:.58!important;
+}
+button:focus-visible,input:focus-visible{
+  outline:3px solid rgba(31,111,235,.22)!important;
+  outline-offset:3px!important;
+}
+.ghost,.danger-ghost,.list-button{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  color:#1d2939!important;
+}
+.ghost:hover,.list-button:hover{background:#f2f6fc!important}
+.danger-ghost{color:var(--bad)!important}
+.list-button{padding-left:15px!important}
+.list-button::before{display:none!important}
+main>.panel{
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+.panel,.question-card,.result-box,.team{
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:8px!important;
+  box-shadow:var(--shadow)!important;
+}
+.panel,.question-card{
+  padding:24px!important;
+}
+#homeScreen h2,#tableScreen h2,#resultScreen h2{
+  margin-top:0!important;
+  color:var(--text)!important;
+  font-size:28px!important;
+  line-height:1.2!important;
+}
+.settings-row{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(170px,220px))!important;
+  gap:12px!important;
+  margin-top:18px!important;
+}
+.settings-row label{
+  padding:12px 14px!important;
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  border-radius:8px!important;
+  color:#475467!important;
+}
+input[type=number],.table-tools input,.text-answer-wrap input{
+  border-radius:8px!important;
+  border:1px solid #cbd5e1!important;
+  background:#fff!important;
+  box-shadow:none!important;
+}
+.mode-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important;
+  margin-top:20px!important;
+}
+.mode-card{
+  min-height:152px!important;
+  padding:20px!important;
+  border-radius:8px!important;
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  box-shadow:none!important;
+}
+.mode-card::before,.mode-card::after{display:none!important}
+.mode-card:hover{
+  background:#f8fbff!important;
+  border-color:#8bb6f9!important;
+  box-shadow:0 12px 28px rgba(31,111,235,.12)!important;
+  transform:translateY(-2px)!important;
+}
+.mode-card h2{
+  margin:0 0 8px!important;
+  color:var(--text)!important;
+  font-size:22px!important;
+  line-height:1.18!important;
+}
+.mode-card p{
+  color:var(--muted)!important;
+  font-size:15.5px!important;
+  line-height:1.45!important;
+}
+.quiz-topline{
+  margin-bottom:12px!important;
+  color:#475467!important;
+  font-weight:650!important;
+}
+.progress-wrap{
+  height:8px!important;
+  margin-bottom:16px!important;
+  background:#e7edf5!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.progress{background:var(--primary)!important}
+.question-card{
+  overflow:visible!important;
+}
+.question-card::before{display:none!important}
+.question-label{
+  display:inline-flex!important;
+  padding:7px 11px!important;
+  border-radius:999px!important;
+  background:var(--soft-blue)!important;
+  color:var(--primary-dark)!important;
+}
+.question{
+  margin-top:10px!important;
+  color:var(--text)!important;
+  font-size:38px!important;
+  line-height:1.14!important;
+}
+.context,.find-context{
+  background:#f8fafc!important;
+  border:1px solid #e2e8f0!important;
+  border-left:5px solid #84c5bd!important;
+  border-radius:8px!important;
+  color:var(--text)!important;
+}
+.hint{
+  color:var(--muted)!important;
+  line-height:1.45!important;
+}
+.answer,.team-option{
+  min-height:64px!important;
+  border-radius:8px!important;
+  background:#fff!important;
+  border:1px solid var(--line)!important;
+  box-shadow:none!important;
+}
+.answer:hover,.team-option:hover{
+  background:#f8fbff!important;
+  border-color:#8bb6f9!important;
+  box-shadow:0 8px 18px rgba(31,41,55,.08)!important;
+}
+.answer.correct,.team-option.correct{
+  background:var(--soft-green)!important;
+  border-color:#75e0a7!important;
+  color:var(--good)!important;
+}
+.answer.wrong{
+  background:var(--soft-red)!important;
+  border-color:#fda29b!important;
+  color:var(--bad)!important;
+}
+.feedback{
+  border-radius:8px!important;
+  background:#f8fafc!important;
+  border:1px solid var(--line)!important;
+}
+.feedback.good{
+  background:var(--soft-green)!important;
+  border-color:#75e0a7!important;
+}
+.feedback.bad{
+  background:var(--soft-red)!important;
+  border-color:#fda29b!important;
+}
+.quiz-actions-3,.team-actions-3{
+  gap:12px!important;
+}
+.result-grid{
+  align-items:start!important;
+}
+.result-box,.team{
+  padding:18px!important;
+}
+.result-box h3,.team b{
+  color:var(--text)!important;
+}
+#repeatBtn,#reviewMistakesBtn{
+  width:100%!important;
+}
+#reviewMistakesBtn{
+  margin-top:12px!important;
+  background:var(--accent)!important;
+}
+#reviewMistakesBtn:hover{background:#115e59!important}
+.team-score{
+  color:var(--primary)!important;
+  background:none!important;
+}
+.team-controls button{
+  min-width:48px!important;
+}
+.team-setup{
+  justify-content:flex-start!important;
+}
+.team-count-display{
+  border-radius:8px!important;
+}
+.table-tools{
+  display:grid!important;
+  grid-template-columns:minmax(220px,1fr) auto!important;
+}
+.table-wrap{
+  border-radius:8px!important;
+  box-shadow:none!important;
+}
+.phrase-table th{
+  background:#f2f4f7!important;
+}
+.phrase-table td:nth-child(2){
+  background:#fff!important;
+}
+footer{
+  border:0!important;
+  border-top:1px solid var(--line)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  padding:16px 0 0!important;
+}
+.board-mode{
+  width:min(1420px,100%)!important;
+}
+.board-mode h1{
+  font-size:68px!important;
+}
+.board-mode .subtitle{
+  font-size:28px!important;
+}
+.board-mode .question{
+  font-size:64px!important;
+}
+.board-mode .context{
+  font-size:34px!important;
+}
+.board-mode .hint,.board-mode .quiz-topline{
+  font-size:22px!important;
+}
+.board-mode .mode-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+}
+.board-mode .answer,.board-mode .team-option{
+  min-height:104px!important;
+  font-size:28px!important;
+}
+@media(max-width:920px){
+  header{grid-template-columns:1fr!important}
+  .top-actions{
+    width:100%!important;
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .mode-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:680px){
+  .app{padding:14px!important}
+  h1{font-size:38px!important}
+  .subtitle{font-size:17px!important}
+  .top-actions,.mode-grid,.answers,.result-grid,.settings-row,.table-tools{
+    grid-template-columns:1fr!important;
+  }
+  .question{font-size:28px!important}
+  .mode-card{min-height:132px!important}
+}
+</style></head><body><div class="app" id="app"><header><div><h1>Фразеологизмы</h1><p class="subtitle">Интерактивный тренажёр для подготовки к заданию 25 ЕГЭ по русскому языку</p><p class="school">ГБОУ СОШ № 323 Невского района Санкт-Петербурга</p></div><div class="top-actions"><button class="ghost" id="siteHomeBtn">Все тренажёры</button><button class="ghost" id="homeBtn">Главный экран</button><button class="list-button" id="listBtn">Список фразеологизмов</button><button class="ghost" id="boardBtn">Крупный режим</button></div></header>
+<main><section class="panel" id="homeScreen"><h2 style="margin:0;font-size:28px">Выберите режим</h2><div class="settings-row">
+  <label class="muted">Количество вопросов<br><input type="number" id="questionCount" value="10" min="5" max="50"></label>
+  <label class="muted">Количество команд<br><input type="number" id="teamCount" value="3" min="2" max="8"></label>
+</div><div class="mode-grid"><button class="mode-card" data-mode="meaning"><h2>Значение</h2><p>Дан фразеологизм. Нужно выбрать правильное значение.</p></button><button class="mode-card" data-mode="phrase"><h2>Фразеологизм по значению</h2><p>Дано значение. Нужно выбрать подходящее устойчивое выражение.</p></button><button class="mode-card" data-mode="synonym"><h2>Синоним</h2><p>Нужно выбрать синоним фразеологизма.</p></button><button class="mode-card" data-mode="error"><h2>Исправь ошибку</h2><p>Дан искажённый фразеологизм. Нужно восстановить правильный вариант.</p></button><button class="mode-card" data-mode="fipi"><h2>ЕГЭ: задание 25</h2><p>Дан диапазон предложений. Нужно выписать один фразеологизм.</p></button><button class="mode-card" data-mode="mixed"><h2>Смешанный режим</h2><p>Значения, фразеологизмы, синонимы и исправление ошибок вперемешку.</p></button><button class="mode-card" data-mode="team"><h2>Командная игра</h2><p>Смешанные устные задания без вариантов ответа. Учитель ведёт счёт.</p></button></div></section>
+<section class="hidden" id="quizScreen"><div class="quiz-topline"><div id="modeTitle">Режим</div><div><span id="counter">1 / 10</span> · баллы: <strong id="score">0</strong></div></div><div class="progress-wrap"><div class="progress" id="progress"></div></div><div class="question-card"><div class="question-label" id="questionLabel">Вопрос</div><h2 class="question" id="questionText"></h2><p class="context hidden" id="contextText"></p><p class="hint" id="questionHint"></p><div class="answers" id="answers"></div><div class="feedback hidden" id="feedback"></div><div class="quiz-actions quiz-actions-3">
+  <button class="ghost" id="stopBtn">Завершить</button>
+  <button class="ghost" id="prevBtn" disabled>Назад</button>
+  <button id="nextBtn" disabled>Дальше</button>
+</div></div></section>
+<section class="panel hidden" id="resultScreen"><h2 style="margin-top:0;font-size:34px">Результат</h2><div class="result-grid"><div class="result-box"><h3>Итог</h3><p id="resultText" style="font-size:24px;font-weight:900"></p><button id="repeatBtn">Новая тренировка</button><button class="review-action hidden" id="reviewMistakesBtn">Отработать ошибки</button></div><div class="result-box"><h3>Ошибки для разбора</h3><ol class="muted" id="mistakesList"></ol></div></div></section>
+<section class="hidden" id="teamScreen"><div class="question-card"><div class="question-label" id="teamLabel">Командная игра</div><h2 class="question" id="teamPhrase"></h2><p class="hint" id="teamHint">Команды отвечают устно. В заданиях «Назовите фразеологизм» появляются варианты ответа.</p><div class="team-options hidden" id="teamOptions"></div><div class="feedback hidden" id="teamAnswer"></div><div class="quiz-actions team-actions-3"><button class="ghost" id="revealTeamAnswer">Показать ответ</button><button class="ghost" id="prevTeamPhrase" disabled>Назад</button><button id="nextTeamPhrase">Следующий фразеологизм</button></div></div><div class="team-setup">
+  <button class="ghost" id="removeTeamBtn">− команда</button>
+  <div class="team-count-display">Команд: <strong id="teamCountDisplay">3</strong></div>
+  <button id="addTeamBtn">+ команда</button>
+</div>
+<div class="team-board" id="teamBoard"></div>
+<button class="danger-ghost" id="resetTeams">Сбросить счёт</button></section>
+<section class="panel hidden" id="tableScreen">
+  <h2 style="margin:0;font-size:34px">Список фразеологизмов</h2>
+  <p class="muted">Таблица для справки: точная формулировка фразеологизма и словарное значение.</p>
+  <div class="table-tools">
+    <input type="text" id="tableSearch" placeholder="Поиск по фразеологизму, значению или замене">
+    <button class="ghost" id="clearTableSearch">Очистить</button>
+  </div>
+  <div class="table-count" id="tableCount"></div>
+  <div class="table-wrap">
+    <table class="phrase-table">
+      <thead>
+        <tr>
+          <th>Фразеологизм</th>
+          <th>Словарное значение</th>
+          
+        </tr>
+      </thead>
+      <tbody id="phraseTableBody"></tbody>
+    </table>
+  </div>
+</section>
+</main>
+<footer>© 2026 ГБОУ СОШ № 323 Невского района Санкт-Петербурга. Автор-составитель: Гудковский А.М. Составлено на основе материалов ФГБНУ «ФИПИ» для самостоятельной подготовки к ЕГЭ 2026 года по русскому языку.</footer></div>
+<script>
+const RAW_DATA = `sourcePhrase|phrase|definition|synonym|sentence|wrong
+альфа и омега|альфа и омега|самое главное, основа, суть чего-либо|главное|Для него дисциплина была _____ всей работы.|альфа и бета
+без оглядки|без оглядки|не раздумывая, не проявляя осторожности|неосмотрительно|Он принял решение _____, а потом пожалел.|без оглядывания
+без устали|без устали|не уставая, непрерывно|непрерывно|Волонтёры работали _____ до позднего вечера.|без усталости
+без толку|без толку|бесполезно, напрасно|напрасно|Спорить с ним было _____.|без пользы
+без ума|без ума|в восторге, очень сильно увлечён|в восторге|Младшие школьники были _____ от новой игры.|без уму
+без царя в голове|без царя в голове|глупый, неразумный, несерьёзный|неразумный|Такой поступок мог совершить только человек _____.|без хозяина в голове
+без числа|без числа|очень много, бессчётно|бесчисленно|На небе было звёзд _____.|без счёта
+белая ворона|белая ворона|человек, резко отличающийся от окружающих|непохожий на других|В новом классе он сначала чувствовал себя _____.|чёрной вороной
+белый свет (на белом свете)|на белом свете|в мире, в жизни, среди всего существующего|в мире|Нет ничего лучше дружбы _____.|на белом свету
+бить ключом|бить ключом|бурно проявляться, активно развиваться|бурно проявляться|После открытия кружка жизнь в школе стала _____.|бить родником
+бить через край|бить через край|проявляться чрезмерно, в избытке|проявляться в избытке|Энергия у младших школьников могла _____.|бить в край
+бок о бок|бок о бок|рядом, вместе|рядом|На фотографии участники стояли _____.|бок к боку
+более или менее|более или менее|в какой-то степени, сравнительно|отчасти|После повторения тема стала _____ понятной.|больше или меньше
+более того (больше того)|более того|к тому же, сверх сказанного|к тому же|Он выполнил задание; _____, сделал его раньше срока.|сверх того
+болеть душой|болеть душой|сильно переживать, заботиться о ком-либо или чём-либо|переживать|Классный руководитель всегда _____ за своих учеников.|болеть сердцем
+большей частью (по большей части)|большей частью|преимущественно, в основном|в основном|Материал был _____ посвящён лексике.|большой частью
+брать верх|брать верх|побеждать, одолевать|побеждать|В споре постепенно начала _____ спокойная аргументация.|брать вершину
+брать в свои руки|брать в свои руки|брать под контроль, начинать руководить|контролировать|Когда возникла путаница, староста решил _____ организацию встречи.|брать в свои ладони
+брать за горло|брать за горло|принуждать, оказывать сильное давление|принуждать|Жёсткие сроки начали _____ всю команду.|брать за шею
+брать себя в руки|брать себя в руки|овладевать собой, успокаиваться|собраться|Перед выступлением нужно _____ и говорить спокойно.|брать себя в ладони
+броситься в глаза|броситься в глаза|сразу стать заметным|стать заметным|В сочинении сразу _____ удачная цитата.|бросилась в лицо
+будь здоров|будь здоров|очень сильный, большой, значительный|весьма значительный|Мороз сегодня, конечно, _____.|будь крепок
+быть (держаться, оставаться) в тени|быть в тени|оставаться незаметным, не выдвигаться|не выделяться|Он много помогал, но предпочитал _____.|быть в сумраке
+валиться из рук|валиться из рук|плохо получаться из-за волнения, усталости или расстройства|не получаться|После бессонной ночи всё у него _____.|валилось из ладоней
+вверх дном|вверх дном|в полном беспорядке|в беспорядке|После подготовки к празднику кабинет был _____.|верхом вниз
+вверх ногами|вверх ногами|перевёрнуто, наоборот, неправильно|наоборот|Он всё понял _____ и поэтому ошибся.|верхом ногами
+в глаза не видел|в глаза не видел|никогда не видел|никогда|Я этого документа _____.|в глаза не встречал
+в два счёта|в два счёта|очень быстро|очень быстро|Опытный ученик решил задачу _____.|в три счёта
+в двух словах|в двух словах|кратко, очень коротко|кратко|Объясни идею проекта _____.|в трёх словах
+в двух шагах|в двух шагах|очень близко, совсем рядом|очень близко|Библиотека находится от школы _____.|в трёх шагах
+в добрый час|в добрый час|пожелание удачи при начале дела|пожелание удачи|Начинаете защиту проекта — _____.|в хороший час
+в добрый путь|в добрый путь|пожелание удачи в дороге или новом деле|пожелание удачи в дороге|Экспедиция отправилась утром, и все сказали: «_____!»|в хороший путь
+вдоль и поперёк|вдоль и поперёк|полностью, во всех подробностях|досконально|Он знал этот район _____.|вдоль и наперёд
+вести себя|вести себя|держаться, поступать определённым образом|поступать|На экскурсии нужно _____ спокойно.|вести собой
+вешать голову|вешать голову|унывать, падать духом|унывать|После первой ошибки не стоит _____.|опускать голову
+взять на заметку|взять на заметку|запомнить, учесть на будущее|учесть|Этот приём стоит _____.|взять в заметку
+в конечном счёте|в конечном счёте|в итоге, в результате|в итоге|_____ победила не скорость, а внимательность.|в конечном расчёте
+в конце концов|в конце концов|наконец, в итоге, после всего|наконец|_____, мы нашли верное решение.|в конце начала
+в крайнем случае|в крайнем случае|если не будет другого выхода|если нет другого выхода|_____, работу можно закончить дома.|в последнем случае
+в любом случае|в любом случае|при любых обстоятельствах|при любых условиях|_____ нужно проверить ответ.|в каждом случае
+в мгновение ока|в мгновение ока|мгновенно, очень быстро|моментально|Новости разлетелись по школе _____.|в мгновение глаза
+вместе с тем|вместе с тем|одновременно с этим; однако|однако|Работа сложная; _____ она очень полезна.|вместе с этим
+во весь дух|во весь дух|очень быстро, стремительно|стремительно|Он бежал на остановку _____.|во всю душу
+во весь рост|во весь рост|полностью, со всей очевидностью, в полной мере|в полной мере|После проверки проблема встала перед нами _____.|во всю длину
+во всяком случае|во всяком случае|так или иначе, по крайней мере|по крайней мере|_____, стоит попробовать ещё раз.|во всяком варианте
+в один голос|в один голос|единодушно, одновременно|единодушно|Ребята _____ поддержали предложение.|единым голосом
+в один миг|в один миг|мгновенно, очень быстро|мгновенно|Свет в классе погас _____.|в одно мгновение
+водить за нос|водить за нос|обманывать, вводить в заблуждение|обманывать|Нельзя _____ людей пустыми обещаниями.|водить за руку
+во имя|во имя|ради чего-либо|ради|Они трудились _____ общей победы.|ради имени
+войти в положение|войти в положение|понять обстоятельства другого человека, проявить сочувствие|проявить понимание|Учитель смог _____ ученика, который заболел.|войти в ситуацию
+воспрянуть духом|воспрянуть духом|приободриться, снова почувствовать силы|приободриться|После поддержки команда _____.|воспрянуть душой
+во что бы то ни стало|во что бы то ни стало|обязательно, несмотря на трудности|обязательно|Нужно _____ завершить работу сегодня.|во что бы ни было
+впиться глазами|впиться глазами|пристально, напряжённо смотреть|пристально смотреть|Он _____ в строку с правильным ответом.|вцепиться глазами
+в порядке вещей|в порядке вещей|нормально, обычно, естественно|обычно|Для исследователя сомневаться — _____.|в порядке дел
+в последнее время|в последнее время|недавно, в недавний период|недавно|_____ он стал больше читать.|в последние дни
+в последнюю очередь|в последнюю очередь|после всего остального|напоследок|Этот вопрос обсудим _____.|в последний черёд
+в противном случае|в противном случае|иначе, если обстоятельства будут другими|иначе|Нужно проверить работу; _____ ошибки останутся.|в другом случае
+в самый раз|в самый раз|точно подходит, как нужно|точно подходит|Эта тема для урока _____.|в самую меру
+в своё время|в своё время|когда-то в прошлом или в нужный момент|когда-то|_____ он тоже серьёзно занимался олимпиадами.|в своё число
+в свою очередь|в свою очередь|со своей стороны; по порядку|со своей стороны|Ученики, _____, предложили свои варианты.|в свой черёд
+в сердцах|в сердцах|сгоряча, в раздражении|сгоряча|Он _____ сказал лишнее.|в сердце
+все до одного|все до одного|абсолютно все, без исключения|без исключения|На субботник пришли ученики _____.|все до последнего
+всё в порядке|всё в порядке|всё нормально, всё хорошо|нормально|Не волнуйтесь, с документами _____.|всё по порядку
+всё на свете|всё на свете|абсолютно всё|что угодно|Казалось, он хотел узнать _____.|всё в мире
+всё равно|всё равно|безразлично; несмотря ни на что|безразлично|Мне _____, с какого задания начинать.|всё одинаково
+выжимать соки|выжимать соки|изнурять, заставлять работать сверх меры|изнурять|Такая нагрузка начала _____ из ребят.|выжимать силы
+выше головы|выше головы|сверх возможностей|сверх возможностей|Нельзя прыгнуть _____, но можно серьёзно подготовиться.|выше макушки
+выше сил (выше моих сил)|выше сил|невозможно вынести или сделать|невозможно|Молчать в такой ситуации было _____.|выше возможностей
+главным образом|главным образом|преимущественно, в основном|преимущественно|Доклад был _____ посвящён фразеологии.|главным способом
+глаза в глаза|глаза в глаза|прямо, открыто, лицом к лицу|прямо|Они поговорили _____.|глазами в глаза
+глаза горят|глаза горят|человек воодушевлён, очень заинтересован|воодушевлён|Когда он рассказывал о проекте, у него _____.|глаза пылают
+глаза разбегаются|глаза разбегаются|трудно выбрать из множества вариантов|трудно выбрать|В книжном магазине от такого выбора просто _____.|глаза разъезжаются
+глазом не моргнул|глазом не моргнул|ничуть не смутился, сделал без колебаний|невозмутимо|Он _____ и признал ошибку.|глазом не повёл
+гнуть спину|гнуть спину|тяжело и долго работать|тяжело трудиться|Пришлось весь день _____ над оформлением.|гнуть плечи
+горя не знать|горя не знать|жить спокойно, без бед|жить без бед|До переезда семья могла _____.|беды не знать
+грешным делом|грешным делом|признаваясь в небезупречной мысли или поступке|признаться|_____, я сначала хотел отказаться.|грешным словом
+далеко пойти|далеко пойти|добиться больших успехов|добиться успеха|С таким упорством он может _____.|долго пойти
+дать волю|дать волю|позволить свободно проявиться чувствам или желаниям|позволить проявиться|Он _____ раздражению и сказал лишнее.|дал дорогу
+дать урок|дать урок|проучить, научить на примере|проучить|Этот случай мог _____ всем участникам.|дать занятие
+делать нечего|делать нечего|нет другого выхода; нечем заняться|нет выхода|_____, придётся начинать заново.|ничего не сделаешь
+дело в шляпе|дело в шляпе|всё успешно решено, дело почти завершено|готово|Если подписи собраны, считай, _____.|дело в кармане
+дело житейское|дело житейское|обычное, нестрашное дело|обычно|Опоздал автобус — _____.|дело обычное
+день за днём|день за днём|ежедневно, постепенно|ежедневно|_____ он готовился к экзамену.|день после дня
+держать себя в руках|держать себя в руках|сохранять самообладание|сохранять самообладание|На споре важно _____.|держать себя в ладонях
+держать ухо востро|держать ухо востро|быть настороже, внимательно следить|быть настороже|На экскурсии нужно _____.|держать нос востро
+днём с огнём|днём с огнём|очень трудно найти|трудно найти|Такого специалиста теперь _____.|днём со свечой
+добро пожаловать|добро пожаловать|приветствие, приглашение войти или принять участие|приглашение войти|Дорогие гости, _____ в нашу школу!|добро приходите
+до глубины души (до глубины сердца)|до глубины души|очень сильно, искренне, глубоко|очень сильно|Письмо тронуло его _____.|до глубины чувств
+до нитки промокнуть (до нитки вымокнуть)|до нитки промокнуть|промокнуть полностью|насквозь мокрый|После ливня мы могли _____.|до нитки намокнуть
+до сих пор|до сих пор|до настоящего времени|до настоящего времени|Он _____ помнит тот разговор.|до этих пор
+достать из-под земли|достать из-под земли|найти любой ценой, несмотря на трудности|найти любой ценой|Нужную книгу он обещал _____.|достать из земли
+друг друга|друг друга|взаимно, один другого|взаимно|Одноклассники давно хорошо знают _____.|друг дружку
+душа болит|душа болит|кто-либо сильно переживает, тревожится|сильно переживает|У него _____ за общее дело.|сердце болит
+душа в душу|душа в душу|очень дружно, в полном согласии|дружно|Соседи много лет жили _____.|душа к душе
+душа лежит|душа лежит|есть склонность, симпатия, внутреннее расположение к чему-либо|нравится|К математике у него _____ с детства.|сердце лежит
+души не чаять|души не чаять|очень сильно любить, обожать|очень любить|Бабушка _____ во внуке.|души не видеть
+душой и телом|душой и телом|полностью, всем существом|полностью|Он был предан делу _____.|душой и сердцем
+едва таскать ноги|едва таскать ноги|с трудом ходить от усталости или болезни|еле идти|После долгого похода мы _____.|едва таскать руки
+еле дышать|еле дышать|быть очень слабым, едва действовать или существовать|быть очень слабым|Старый мотор уже _____.|еле жить
+ещё бы|ещё бы|конечно, разумеется; выражение уверенного согласия|конечно|Ты рад победе? _____!|ещё как бы
+забивать голову|забивать голову|перегружать лишними мыслями или сведениями|перегружать мыслями|Не стоит _____ ненужными подробностями.|забивать мозг
+заговаривать зубы|заговаривать зубы|отвлекать разговором, стараясь обмануть или уйти от ответа|отвлекать разговором|Он пытался _____, чтобы уйти от ответа.|заговаривать уши
+задеть за живое|задеть за живое|сильно взволновать, обидеть или болезненно затронуть|болезненно затронуть|Его замечание могло _____ даже спокойного человека.|задеть за больное
+закидать камнями|закидать камнями|резко осудить, подвергнуть нападкам|резко осудить|За одну ошибку человека не стоит _____.|закидать упрёками
+заметать следы|заметать следы|скрывать улики, признаки поступка|скрывать улики|После проступка он начал _____.|подметать следы
+за плечами|за плечами|в прошлом, в жизненном опыте|в прошлом опыте|У него _____ уже было несколько серьёзных побед.|за спиной
+засучив рукава|засучив рукава|энергично, активно взявшись за дело|энергично|Ребята _____ принялись за уборку.|засучив ладони
+затаив дыхание|затаив дыхание|с напряжённым вниманием|напряжённо|Зал слушал выступление _____.|затаив воздух
+играть роль|играть роль|иметь значение, выполнять определённую функцию|быть важным|В развитии сюжета этот эпизод будет _____ поворотного момента.|играть значение
+из конца в конец|из конца в конец|по всей длине, полностью|полностью|Он прошёл город _____.|с конца в конец
+изливать душу|изливать душу|откровенно рассказывать о своих переживаниях|откровенничать|В письме он начал _____.|выливать душу
+изо всех сил|изо всех сил|максимально стараясь, напрягая все силы|с максимальным усилием|Он держался за поручень _____.|из всех сил
+из рук в руки|из рук в руки|непосредственно от одного человека другому|лично|Документ передали _____.|из ладоней в ладони
+иметь в виду|иметь в виду|подразумевать, учитывать|подразумевать|Что ты _____ под этим словом?|держать в виду
+иметь дело|иметь дело|сталкиваться с кем-либо или чем-либо, заниматься чем-либо|сталкиваться|На уроке нам придётся _____ с трудным текстом.|вести дело
+иметь значение|иметь значение|быть важным, существенным|быть важным|В словаре это слово может _____ «родина».|играть значение
+искра божия (искра божья)|искра божия|талант, одарённость, природная способность|одарённость|В его рисунках чувствовалась _____.|искра божественная
+испокон веку (испокон веков)|испокон веку|с давних времён, издавна|издавна|Так в этих местах было _____.|испокон века
+и так и сяк|и так и сяк|по-разному, разными способами|по-разному|Мы пробовали объяснить _____.|и так и этак
+как бы то ни было|как бы то ни было|несмотря на обстоятельства, всё равно|в любом случае|_____, работу надо закончить.|как бы ни было
+как ветром сдуло|как ветром сдуло|внезапно исчез|внезапно исчез|После звонка ребят из коридора _____.|как ветром унесло
+как из ведра|как из ведра|очень сильно, ливнем|ливнем|Дождь лил _____.|как из бочки
+как миленький|как миленький|без сопротивления, послушно, вынужденно|послушно|После замечания он _____ сел за работу.|как хороший
+как назло|как назло|будто нарочно, неудачно|будто нарочно|_____, в нужный момент пропал интернет.|как нарочно
+как правило|как правило|обычно, в большинстве случаев|обычно|_____, такие задания вызывают трудности.|по правилу
+как раз|как раз|точно, именно|именно|Эта книга _____ подходит для урока.|как ровно
+как следует|как следует|хорошо, как нужно, должным образом|как нужно|Перед сдачей работу надо _____ проверить.|как нужно
+камень на сердце|камень на сердце|тяжёлое чувство тревоги, вины или печали|тревога|После разговора у него лежал _____.|камень в душе
+каши не сваришь|каши не сваришь|невозможно договориться или сделать общее дело|не договориться|С человеком, который никого не слушает, _____.|кашу не приготовишь
+конец пришёл (тут и конец пришёл)|конец пришёл|наступил крах, гибель, завершение|крах|Если потеряем ключ, всему делу _____.|конец настал
+кот наплакал|кот наплакал|очень мало|очень мало|Времени до конца урока осталось _____.|кот заплакал
+кровь из носу (хоть кровь из носу)|кровь из носу|обязательно, несмотря на трудности|обязательно|Доклад нужен завтра _____.|кровь из уха
+кроме того|кроме того|вдобавок, помимо этого|вдобавок|Текст интересный; _____, он полезен для подготовки.|помимо того
+кто его знает|кто его знает|неизвестно, трудно сказать|неизвестно|Почему он не пришёл — _____.|кто это знает
+кто куда|кто куда|в разные стороны, в разных направлениях|в разные стороны|После звонка все побежали _____.|кто где
+куда деваться|куда деваться|ничего не поделаешь, нет выхода|ничего не поделаешь|Задание сложное, но _____.|куда уходить
+куда ни шло|куда ни шло|ещё допустимо, терпимо|терпимо|Первый вариант ещё _____.|куда не шло
+лезть в голову|лезть в голову|навязчиво приходить на ум|приходить на ум|Ему всё время стала _____ одна и та же мысль.|лезть в мозг
+лить слёзы|лить слёзы|плакать, сильно горевать|плакать|Из-за каждой неудачи не стоит _____.|лить слезу
+лицом к лицу|лицом к лицу|непосредственно, прямо, один на один|напрямую|Они встретились _____ с трудностью.|лицом в лицо
+лишь только|лишь только|как только, едва|едва|_____ прозвенел звонок, класс оживился.|лишь только что
+локти кусать|локти кусать|сожалеть о сделанном или упущенном|сожалеть|Потом будешь _____, что не подготовился.|руки кусать
+ломать голову|ломать голову|напряжённо думать, искать решение|напряжённо думать|Над этой задачей пришлось долго _____.|ломать мозг
+ломать копья|ломать копья|горячо спорить, отстаивать разные мнения|спорить|Учёные долго _____ вокруг этой версии.|ломать стрелы
+любой ценой|любой ценой|несмотря ни на что, во что бы то ни стало|несмотря ни на что|Он хотел _____ добиться победы.|любой платой
+мало ли что|мало ли что|это неважно; не стоит принимать сказанное всерьёз|неважно|_____, что он обещал: нужно проверить факты.|мало ли чего
+махнуть рукой|махнуть рукой|перестать заниматься чем-либо, отказаться от надежды|отказаться|Он уже хотел _____ на задачу, но всё-таки нашёл решение.|махнуть ладонью
+между делом|между делом|попутно, заодно, не специально|попутно|Он _____ спросил о домашнем задании.|между занятиями
+между прочим|между прочим|кстати, попутно|кстати|_____, этот пример есть в словаре.|между словами
+между тем|между тем|тем временем; однако|однако|Все спорили; _____ время шло.|между этим
+мёртвая хватка|мёртвая хватка|очень крепкая хватка; упорное, неотступное удержание чего-либо|неотступное удержание|В споре он держался за свою версию _____.|мёртвой рукой
+может быть|может быть|возможно, вероятно|возможно|_____, завтра мы вернёмся к этой теме.|может статься
+на всякий случай|на всякий случай|для подстраховки, про запас|про запас|Возьми тетрадь _____.|на каждый случай
+на край света (на краю света)|на край света|очень далеко, в любое далёкое место|очень далеко|За такой книгой он готов ехать _____.|на конец света
+на первых порах|на первых порах|сначала, в первое время|поначалу|_____ работать было трудно.|на первом времени
+на поле брани|на поле брани|на поле боя, в бою|в бою|Герой погиб _____.|на поле борьбы
+направить стопы|направить стопы|пойти, отправиться куда-либо|отправиться|После уроков он _____ в библиотеку.|направить ноги
+на произвол судьбы|на произвол судьбы|оставив без помощи и защиты|без помощи|Нельзя оставлять ученика _____.|на волю судьбы
+на равных|на равных|как равные, без превосходства одной стороны|без превосходства|Они разговаривали _____.|на равном положении
+на самом деле|на самом деле|в действительности, действительно|в действительности|_____ задача оказалась проще.|на самом факте
+на своей шкуре|на своей шкуре|на собственном опыте|на собственном опыте|Он узнал это _____.|на своей коже
+на седьмом небе|на седьмом небе|в состоянии огромного счастья|очень счастлив|После победы она была _____.|на шестом небе
+на совесть|на совесть|добросовестно, очень хорошо|добросовестно|Работа была выполнена _____.|на честность
+на точке замерзания|на точке замерзания|в состоянии крайнего холода; перен. в состоянии застоя или отчуждения|в состоянии застоя|После конфликта их отношения были почти _____.|на пункте замерзания
+на ходу|на ходу|во время движения; наскоро, без подготовки|наскоро|Ответ пришлось придумывать _____.|на бегу
+на худой конец|на худой конец|в крайнем случае, если не будет лучшего выхода|в крайнем случае|_____, можно взять старый вариант.|на плохой конец
+не верить глазам (ушам)|не верить глазам|сильно удивляться увиденному|удивляться увиденному|Он не мог _____, когда увидел результат.|не верить взгляду
+не в силах|не в силах|не способен, не может|не способен|Она была _____ скрыть радость.|не по силам
+не давать покоя|не давать покоя|тревожить, беспокоить, постоянно занимать мысли|тревожить|Эта мысль могла долго _____ ему.|не давать тишины
+не ко двору|не ко двору|не подходит, не принимается в данном окружении|неуместно|На официальной встрече такая шутка оказалась _____.|не к дому
+не иметь понятия|не иметь понятия|совсем не знать, не представлять|совсем не знать|Я _____, где лежит этот журнал.|не иметь догадки
+не по нутру|не по нутру|не нравится, вызывает внутреннее неприятие|неприятно|Ему был _____ такой тон разговора.|не по желудку
+не подать виду|не подать виду|не показать своих чувств или состояния|не показать|Он испугался, но старался _____.|не показать вида
+не по себе (не по себе стало)|не по себе|тревожно, неловко, неприятно|тревожно|В пустом коридоре ему стало _____.|не по сердцу
+не сводить глаз|не сводить глаз|пристально, неотрывно смотреть|смотреть неотрывно|Во время фильма дети старались _____ с экрана.|не сводить взгляда
+несмотря ни на что|несмотря ни на что|вопреки препятствиям, при любых трудностях|вопреки всему|Команда продолжала работать _____.|невзирая на всё
+нести крест|нести крест|терпеть тяжёлую судьбу, обязанность или испытание|терпеть испытание|Он молча продолжал _____ своей ответственности.|нести ношу
+нёс на своих плечах|нести на своих плечах|брать на себя тяжесть ответственности|отвечал|Ему приходилось _____ ответственность за проект.|нести на своих руках
+нет дела|нет дела|не интересует, безразлично|безразлично|Ему _____ до чужих споров.|нет занятия
+не чаять души|не чаять души|очень сильно любить, обожать|обожать|Родители _____ в младшем сыне.|не видеть души
+ни в жизнь|ни в жизнь|никогда, ни при каких обстоятельствах|никогда|Он _____ не согласился бы на обман.|ни за жизнь
+ни в коем случае|ни в коем случае|категорически нельзя, ни при каких условиях|категорически нельзя|_____ не пропускайте инструкцию.|ни в каком случае
+никуда не годится|никуда не годится|совсем плохо, непригодно|непригодно|Такой ответ _____.|никуда не подходит
+ни с того ни с сего|ни с того ни с сего|внезапно, без видимой причины|без причины|Он _____ рассмеялся.|ни с этого ни с того
+один-одинёхонек|один-одинёхонек|совсем один, без кого-либо рядом|в одиночестве|В пустом классе он остался _____.|один-одинёшенький
+одним словом|одним словом|короче говоря, подводя итог|короче говоря|_____, работа удалась.|одним выражением
+одно время|одно время|когда-то, в некоторый период|когда-то|_____ он увлекался шахматами.|одним временем
+опустить руки|опустить руки|потерять надежду, перестать действовать|сдаться|После неудачи нельзя _____.|опустить плечи
+остаться в памяти|остаться в памяти|запомниться, сохраниться в воспоминаниях|запомниться|Эта встреча должна _____ надолго.|остаться в голове
+отвести глаза|отвести глаза|перестать смотреть прямо, отвлечь взгляд|отвлечь взгляд|Он смутился и попытался _____.|увести глаза
+отдавать должное|отдавать должное|признавать чьи-либо достоинства или заслуги|признавать заслуги|Нужно _____ его настойчивости.|отдать нужное
+открывать глаза|открывать глаза|показывать правду, помогать понять|показывать правду|Этот пример помогает _____ на проблему.|раскрывать глаза
+от нечего делать|от нечего делать|от безделья, от отсутствия занятия|от безделья|Он начал листать журнал _____.|от скуки
+падать духом|падать духом|унывать, терять уверенность и надежду|унывать|После первой неудачи не стоит _____.|падать душой
+пальцем не тронуть|пальцем не тронуть|совсем не причинить вреда, не прикоснуться|не причинить вреда|Он обещал, что никого _____.|рукой не тронуть
+пасть духом|пасть духом|уныть, потерять мужество и уверенность|уныть|Команда не должна _____ после поражения.|упасть духом
+первым делом|первым делом|прежде всего, в первую очередь|сначала|_____ проверьте условия задания.|первым случаем
+перебегать дорогу|перебегать дорогу|мешать кому-либо, становиться препятствием|мешать|Он не хотел _____ коллегам.|перепрыгивать дорогу
+перевести дух|перевести дух|немного отдохнуть после напряжения|отдохнуть|После подъёма мы остановились _____.|перевести воздух
+по белу свету|по белу свету|повсюду, по миру|по миру|Он долго странствовал _____.|по светлому свету
+поднять на ноги|поднять на ноги|вылечить, мобилизовать или вернуть к активному состоянию|восстановить|Врачи смогли быстро _____ больного.|поднять на руки
+подступить к горлу|подступить к горлу|о слезах или волнении: приблизиться, сдавить горло|перехватить дыхание|От волнения комок мог _____.|подступить к шее
+под руку (лезть под руку)|под руку|мешая во время дела, отвлекая|мешая|Не лезь _____, когда человек пишет.|под ладонь
+по душе|по душе|нравится, подходит внутренне|нравится|Эта работа пришлась ему _____.|по сердцу
+подумать только|подумать только|выражение удивления, изумления|выражение удивления|_____ — он сам всё исправил!|подумай только
+пойти в ход|пойти в ход|начать использоваться, применяться|начать использоваться|На занятии _____ карточки и схемы.|пойти в дело
+по крайней мере|по крайней мере|хотя бы, во всяком случае|хотя бы|_____, нужно попробовать.|по меньшей мере
+по правде|по правде|честно, откровенно|честно|Скажи мне _____: ты сам решил задачу?|по истине
+по правде говоря|по правде говоря|честно говоря, откровенно говоря|откровенно|_____, задание было трудным.|по правде разговаривая
+по совести|по совести|честно, справедливо, добросовестно|справедливо|Он поступил _____.|по честности
+по совести сказать (по совести говоря)|по совести сказать|честно говоря, если говорить откровенно|откровенно|_____, мы не успели подготовиться.|по совести разговаривать
+поставить крест|поставить крест|отказаться от надежд, считать дело окончательно законченным|отказаться от надежд|На этой идее рано _____.|поставить точку
+представь себе|представь себе|вводное выражение удивления или привлечения внимания|вообрази|_____, он пришёл первым.|представляешь себе
+прежде всего|прежде всего|в первую очередь, раньше всего другого|сначала|_____ нужно прочитать условие.|перед всем
+прийти в голову|прийти в голову|возникнуть в мыслях|возникнуть в мыслях|Такая мысль могла _____ каждому.|прийти в мозг
+прийти в себя|прийти в себя|восстановить сознание или самообладание|опомниться|После волнения он быстро _____.|прийти к себе
+принять меры|принять меры|предпринять необходимые действия|предпринять действия|Администрация должна _____ заранее.|взять меры
+приятного аппетита|приятного аппетита|пожелание перед едой|пожелание перед едой|Перед обедом все сказали: «_____!»|приятного питания
+проникнуть в душу|проникнуть в душу|глубоко взволновать, тронуть|глубоко тронуть|Стихотворение смогло _____ слушателей.|попасть в душу
+пропасть без вести|пропасть без вести|исчезнуть неизвестно где, без сведений о местонахождении|исчезнуть|Во время войны человек мог _____.|исчезнуть без вести
+пуля не берёт|пуля не берёт|кто-либо кажется неуязвимым, невредимым|неуязвим|Казалось, этого героя _____.|пули не берут
+путаться под ногами|путаться под ногами|мешать, находясь рядом и попадаясь на пути|мешать|Младшие ребята начали _____ у организаторов.|путаться под руками
+развести руками|развести руками|выразить бессилие, недоумение, невозможность что-либо сделать|выразить бессилие|Услышав ответ, он мог только _____.|раздвинуть руками
+раз и навсегда|раз и навсегда|окончательно, бесповоротно|окончательно|Этот вопрос нужно решить _____.|раз и навечно
+рано или поздно|рано или поздно|когда-нибудь, в какой-то момент неизбежно|когда-нибудь|_____ ошибка обнаружится.|поздно или рано
+речь идёт|речь идёт|говорится, имеется в виду|говорится|В тексте _____ о нравственном выборе.|разговор идёт
+рука об руку|рука об руку|вместе, совместно, в тесном сотрудничестве|совместно|Воспитание идёт _____ с обучением.|рука в руку
+рукой подать|рукой подать|очень близко, совсем рядом|очень близко|До музея отсюда _____.|рукой достать
+сам не свой|сам не свой|сильно взволнован, расстроен, не в обычном состоянии|взволнован|После разговора он был _____.|сам не тот
+самое большее|самое большее|максимум, не более|максимум|На дорогу уйдёт час, _____.|самое большое
+сам по себе|сам по себе|отдельно, независимо от других обстоятельств|отдельно|Этот пример интересен _____.|сам собой
+сбыть с рук|сбыть с рук|избавиться от чего-либо, передав другому|избавиться|Он хотел поскорее _____ старые вещи.|сбыть с плеч
+сверху донизу|сверху донизу|полностью, по всей поверхности или длине|целиком|Он оглядел доску _____.|сверху вниз
+свести на нет|свести на нет|уничтожить результат, сделать усилия бесполезными|обесценить усилия|Одна ошибка может _____ все усилия.|свести в ноль
+свет клином сошёлся|свет клином сошёлся|кто-то или что-то кажется единственно важным, незаменимым|кажется незаменимым|Неужели на этой оценке _____?|мир клином сошёлся
+своими словами|своими словами|не дословно, в собственной формулировке|не дословно|Перескажите правило _____.|своими выражениями
+с глазу на глаз|с глазу на глаз|наедине, без посторонних|наедине|Они поговорили _____.|с глаза на глаз
+с грехом пополам|с грехом пополам|кое-как, с трудом, не вполне удачно|кое-как|Работу мы _____ закончили.|с трудом пополам
+с дороги|с дороги|сразу после пути, после дороги|после пути|Он устал _____.|после дороги
+сидеть на шее|сидеть на шее|жить за чужой счёт, пользоваться чужим трудом|жить за чужой счёт|Он привык _____ у родителей.|сидеть на плечах
+сидеть сложа руки|сидеть сложа руки|бездействовать, ничего не предпринимать|бездействовать|Пока другие работают, нельзя _____.|сидеть сложив руки
+скажи на милость|скажи на милость|выражение удивления, недовольства или упрёка|выражение упрёка|_____, зачем ты это сделал?|скажи по милости
+скорее всего|скорее всего|вероятнее всего, по всей вероятности|вероятно|_____, урок перенесут.|скорее всё
+скрепя сердце|скрепя сердце|нехотя, через внутреннее сопротивление|нехотя|Он _____ согласился уступить.|скрипя сердце
+слово за слово|слово за слово|постепенно, по ходу разговора|постепенно в разговоре|_____, спор перешёл в обсуждение.|слово по слову
+сложить оружие|сложить оружие|прекратить борьбу, сопротивление|прекратить борьбу|После доводов оппонента он был готов _____.|сложить мечи
+смотреть в оба|смотреть в оба|быть очень внимательным, настороже|быть внимательным|На переходе нужно _____.|смотреть в три глаза
+сойти с рук|сойти с рук|остаться без наказания или последствий|остаться без наказания|Такой поступок не должен _____.|сойти с плеч
+сойти с ума|сойти с ума|обезуметь, потерять самообладание; сильно удивиться|обезуметь|От такого шума можно _____.|сойти с разума
+сослужить службу|сослужить службу|оказаться полезным или вредным в определённой ситуации|оказаться полезным|Этот навык может _____ на экзамене.|послужить службу
+со спокойной душой|со спокойной душой|без тревоги, спокойно, не сомневаясь|без тревоги|После проверки можно уйти _____.|с тихой душой
+спать мёртвым сном|спать мёртвым сном|очень крепко спать|очень крепко|После похода дети _____.|спать каменным сном
+с первого взгляда (на первый взгляд)|с первого взгляда|сразу, по первому впечатлению|сразу|_____ задача показалась лёгкой.|с первого вида
+сплошь и рядом|сплошь и рядом|очень часто, постоянно встречаясь|очень часто|Такие ошибки встречаются _____.|сплошь да рядом
+спокойной ночи|спокойной ночи|пожелание перед сном|пожелание перед сном|Перед сном мама сказала: «_____».|тихой ночи
+с пылу с жару|с пылу с жару|только что приготовленное или сделанное|только что готовое|Пирожки были _____.|с жару с пылу
+с рук на руки|с рук на руки|непосредственно от одного человека другому|лично|Книгу передали _____.|из рук на руки
+стало быть|стало быть|значит, следовательно|следовательно|Он не пришёл, _____, встречу перенесём.|стало значит
+с тех пор|с тех пор|начиная с того времени|с того времени|_____ он больше не опаздывал.|с той поры
+стоять насмерть|стоять насмерть|защищаться до конца, не отступать|не отступать|За свою позицию он готов был _____.|стоять до смерти
+с чистого листа|с чистого листа|заново, с самого начала|заново|После неудачи проект начали _____.|с белого листа
+так и быть|так и быть|согласие с уступкой|ладно|_____, помогу вам ещё раз.|так уж быть
+так или иначе|так или иначе|в любом случае, тем или иным способом|в любом случае|_____, решение нужно принять.|так и иначе
+таким образом|таким образом|следовательно, так|следовательно|_____, вывод подтверждён примерами.|таким способом
+так сказать|так сказать|условно говоря, выражаясь приблизительно|условно говоря|Это, _____, первый шаг к успеху.|так говорить
+телячьи нежности|телячьи нежности|чрезмерные, приторные проявления ласки и чувств|приторная ласковость|Он терпеть не мог _____.|телячья ласка
+тем не менее|тем не менее|однако, несмотря на это|однако|Задание трудное; _____ его можно выполнить.|тем не меньше
+то и дело|то и дело|часто, постоянно|часто|Он _____ заглядывал в словарь.|то и время
+только что|только что|совсем недавно|совсем недавно|Он _____ вернулся из библиотеки.|только сейчас
+точка зрения|точка зрения|мнение, взгляд на что-либо|мнение|У каждого автора своя _____.|точка взгляда
+тут как тут|тут как тут|сразу появился, оказался на месте|сразу появился|Стоило позвать, он был _____.|тут да тут
+уписывал за обе щеки|уписывать за обе щеки|есть с большим аппетитом|есть с аппетитом|После прогулки дети стали _____ кашу.|уплетать за обе щёки
+хлеб насущный|хлеб насущный|самое необходимое для жизни|самое необходимое|Для учёного факты — _____.|хлеб ежедневный
+час пик|час пик|время наибольшей нагрузки, скопления людей или транспорта|время наибольшей нагрузки|В метро начался _____.|час вершины
+честно говоря|честно говоря|откровенно говоря|откровенно|_____, я не сразу понял вопрос.|честно разговаривая
+честное слово|честное слово|уверение в правдивости сказанного|уверение в правдивости|_____, я этого не делал.|честное выражение
+честь по чести|честь по чести|как положено, правильно, достойно|как положено|Всё оформили _____.|честь по честию
+читать мораль|читать мораль|нравоучать, поучать|нравоучать|Не надо _____ после каждой ошибки.|читать нравы
+что есть силы (что есть мочи)|что есть силы|изо всех сил, с максимальным усилием|изо всех сил|Он закричал _____.|что есть мощи
+что и говорить|что и говорить|бесспорно, конечно, нечего возразить|бесспорно|_____, работа получилась серьёзная.|что и сказать
+что касается|что касается|относительно, по поводу|по поводу|_____ домашнего задания, оно будет небольшим.|что касаемо
+что поделаешь|что поделаешь|приходится смириться, ничего нельзя изменить|ничего не изменить|Опоздали — _____.|что сделаешь
+что толку|что толку|нет пользы, нет смысла|нет смысла|_____ спорить без фактов?|какой толк
+чувствовать себя|чувствовать себя|ощущать своё состояние|ощущать состояние|После болезни он стал _____ лучше.|чувствовать собой
+язык не повернулся|язык не повернулся|не смог сказать из-за неловкости, совести или внутреннего запрета|не смог сказать|У него _____ отказать другу.|язык не повернул`;
+const DATA = RAW_DATA.trim().split(/\n+/).slice(1) .map(line=>{const [sourcePhrase,phrase,definition,synonym,sentence,wrong]=line.split('|').map(p=>p.trim());return {sourcePhrase,phrase,definition,synonym,sentence,wrong};}).filter(x=>x.sourcePhrase&&x.phrase&&x.definition&&x.synonym&&x.sentence&&x.wrong);
+const ERROR_EXCLUDED_SOURCE_PHRASES = new Set([
+  "более того (больше того)",
+  "брать в свои руки",
+  "брать себя в руки",
+  "в двух словах",
+  "в двух шагах",
+  "вешать голову",
+  "в конце концов",
+  "в последнее время",
+  "в свою очередь",
+  "глазом не моргнул",
+  "горя не знать",
+  "делать нечего",
+  "дело в шляпе",
+  "дело житейское",
+  "держать себя в руках",
+  "до сих пор",
+  "друг друга",
+  "забивать голову",
+  "за плечами",
+  "из конца в конец",
+  "изо всех сил",
+  "и так и сяк",
+  "как ветром сдуло",
+  "как назло",
+  "как следует",
+  "конец пришёл (тут и конец пришёл)",
+  "кроме того",
+  "может быть",
+  "на произвол судьбы",
+  "на ходу",
+  "не в силах",
+  "не подать виду",
+  "не по себе (не по себе стало)",
+  "несмотря ни на что",
+  "не чаять души",
+  "ни в коем случае",
+  "остаться в памяти",
+  "открывать глаза",
+  "от нечего делать",
+  "пальцем не тронуть",
+  "пасть духом",
+  "по душе",
+  "подумать только",
+  "пойти в ход",
+  "по крайней мере",
+  "поставить крест",
+  "представь себе",
+  "приятного аппетита",
+  "проникнуть в душу",
+  "пропасть без вести",
+  "пуля не берёт",
+  "рано или поздно",
+  "рука об руку",
+  "самое большее",
+  "сам по себе",
+  "сверху донизу",
+  "свет клином сошёлся",
+  "с дороги",
+  "сослужить службу",
+  "со спокойной душой",
+  "спать мёртвым сном",
+  "спокойной ночи",
+  "с рук на руки",
+  "с тех пор",
+  "уписывал за обе щеки",
+  "что поделаешь",
+  "что толку"
+]);
+function isErrorModeAllowed(item){return item&&!ERROR_EXCLUDED_SOURCE_PHRASES.has(item.sourcePhrase);}
+const ERROR_DATA = DATA.filter(isErrorModeAllowed);
+const FIND_DATA = [];
+const FIPI_TASK_IDS = ['BF2621','D5B501','B291A8','8DA96F','86E041','065D97','74EB97','AD0E15','DAB89F','961876','76164B','125B45','DFDB41','950247','963449','9F9A43','EECE4A','E17E48','0ED1F6','1CAFFA','7506CC','860554','DB39CE','10542D','4B4F35','E2313B','14AF4C','DC851F','019533','6BDFBD','F6854B','7CD0F3','16D9F4','DCF3FC','E1D6F2','D52745','F3E10B','C7CF0B','6C3603','1D1FBE'];
+const FIPI_TASKS = [
+  {
+    "id": "ФР-001",
+    "range": "30–34",
+    "instruction": "Из предложений 30–34 выпишите один фразеологизм.",
+    "text": "(30) Многие до сих пор переживают из-за реформы 1917—1918 годов. (31) И вот в начале нового века прогрессивная общественность дала отпор ещё одной попытке реформировать наше правописание. (32) В публичной дискуссии о реформе правописания обсуждалась прежде всего замена буквы ю на у в словах брошюра и парашют. (33) Образованный носитель языка активно сопротивлялся любым изменениям орфографии и имел на это полное право. (34) Однако, как показывают опыты, не слишком мы вдумываемся в орфографию, когда читаем текст.",
+    "answer": "дала отпор"
+  },
+  {
+    "id": "ФР-002",
+    "range": "22–29",
+    "instruction": "Из предложений 22–29 выпишите один фразеологизм.",
+    "text": "(22) Он не мог бы рассказать, как она воспитывала его, он и не знал, что его «воспитывают». (23) Однажды, вернувшись из школы, он сказал: — Мама, Елена Фёдоровна говорит: «Москвин, ты ведёшь себя примерно, я поручаю тебе после уроков приносить мне фамилии ребят, которые плохо ведут себя на перемене». (24) Что же мне делать? (25) Не стану я записывать. (26) Мать ответила: — Отчего же? (27) Пиши! (28) Да только всегда одну фамилию — свою собственную. (29) Андрею стало весело — в самом деле, как хорошо и просто она придумала.",
+    "answer": "ведёшь себя"
+  },
+  {
+    "id": "ФР-003",
+    "range": "50, 51",
+    "instruction": "Из предложений 50, 51 выпишите один фразеологизм.",
+    "text": "(50) Но старая карта боевого порядка полка долго оставалась в моей памяти. (51) Мне захотелось, чтобы отныне все знали: здесь стояла шестая батарея.",
+    "answer": "оставалась в моей памяти"
+  },
+  {
+    "id": "ФР-004",
+    "range": "100–103",
+    "instruction": "Из предложений 100–103 выпишите один фразеологизм.",
+    "text": "(100) Завтра надо поговорить с Гобсоном — Гобсон обещал мне место, если Снэк откажется. — (101) Будь уверен, что тебя водят за нос. — (102) Ну, ничего, с Гобсоном поговорим. (103) Они прошли ещё раз мимо картины, искоса взглянув на неё, и вышли на улицу, удивляясь, что направляются в тот самый дом, о котором неизвестные им люди говорят так нежно и хорошо.",
+    "answer": "водят за нос"
+  },
+  {
+    "id": "ФР-005",
+    "range": "10–16",
+    "instruction": "Из предложений 10–16 выпишите один фразеологизм.",
+    "text": "(10) Вот история из жизни моих друзей. (11) Муж читает «Дэвида Копперфильда», жена рядом убирает вещи в шкафу. (12) Не поворачиваясь к мужу лицом, она окликает его и не слышит ответа. (13) Окликает ещё. (14) Поворачивается и смотрит на мужа с удивлением. (15) Взрослый мужик впился глазами в книгу, и глаза его влажные. (16) Он не видит жену, не слышит её голоса.",
+    "answer": "впился глазами"
+  },
+  {
+    "id": "ФР-006",
+    "range": "31–35",
+    "instruction": "Из предложений 31–35 выпишите один фразеологизм.",
+    "text": "(31) На всякий случай, для надёжности. (32) В ленинградской блокаде тоже пользовались керосиновой лампой. (33) И до сих пор, утверждал он, во многих семьях хранятся керосиновые лампы как семейные реликвии. (34) Я вспомнил, что в одном ленинградском доме висит на бронзовом кронштейне лампа. (35) По семейным праздникам её заправляют керосином и зажигают.",
+    "answer": "на всякий случай"
+  },
+  {
+    "id": "ФР-007",
+    "range": "52–54",
+    "instruction": "Из предложений 52–54 выпишите один фразеологизм.",
+    "text": "(52) Я первый скажу его матери... (53) Первый! (54) А сын моей соседки никогда не перебегает дорогу старшим, — сказала бабушка.",
+    "answer": "перебегает дорогу"
+  },
+  {
+    "id": "ФР-008",
+    "range": "55–59",
+    "instruction": "Из предложений 55–59 выпишите один фразеологизм.",
+    "text": "(55) Потом мы очутились на голубиной толкучке. (56) И нам сразу бросилось в глаза, что голубей там было гораздо больше, чем людей, и казалось, что это они разговаривают и торгуются, а голубятники тихо курлыкают. (57) Папа брал голубей в руки, расправлял им крылья, дул в пёрышки, осторожно тянул за клюв, потом приценялся и уводил меня за руку дальше. (58) Мы пошли дальше, туда, откуда всё громче доносился до нас птичий свист. — (59) Ну а теперь тебе всё не кажется серым? — спросил я у папы.",
+    "answer": "бросилось в глаза"
+  },
+  {
+    "id": "ФР-009",
+    "range": "23–28",
+    "instruction": "Из предложений 23–28 выпишите один фразеологизм.",
+    "text": "(23) Давно уже, видно, брошенная хозяином паутина мотается на ветру, в ней запутались сухие листья, кусочки коры, в одном месте она обвисает под тяжестью свалившегося в неё жёлудя. (24) Она похожа на невод, выброшенный на берег после гибели рыбака. (25) Игнатьев задумчиво говорит товарищу: — Слышал я, как-то два лейтенанта-зенитчика между собой говорили. (26) Вот, говорят, война идёт, а кругом сады, птицы поют, им вроде и дела нет до наших дел. (27) Вот я всё думаю: это неправильно, не увидели лейтенанты сути. (28) Война эта всей жизни коснулась.",
+    "answer": "дела нет"
+  },
+  {
+    "id": "ФР-010",
+    "range": "10–16",
+    "instruction": "Из предложений 10–16 выпишите один фразеологизм.",
+    "text": "(10) Армия многому научила нас. (11) Это были, в свою очередь, наши университеты. (12) Одних она приобщила к технике — к танку, пушке, самолёту; других научила владеть топором, пилой и лопатой. (13) А близость к природе, к земле, на которой лежишь, по которой идёшь, которую копаешь! (14) Армия научила нас мужской дружбе — мы знали, пожалуй, только детскую. (15) Мы ушли юношами, а вернулись мужами. (16) Скольких обрели мы новых друзей и скольких из них потеряли, чтобы не забыть никогда!",
+    "answer": "в свою очередь"
+  },
+  {
+    "id": "ФР-011",
+    "range": "10–23",
+    "instruction": "Из предложений 10–23 выпишите один фразеологизм.",
+    "text": "(10) Она снова попыталась встать и снова бессильно опустилась на землю. (11) К ней подошёл Андрей Иванович. — (12) Что, Наточка, тяжело? (13) Он сел возле неё. (14) Наташа подняла глаза и увидела его худое потемневшее лицо и большие, лихорадочно блестевшие глаза. (15) Видно было, что и он еле поднялся. (16) Наташа сделала усилие и села, прислонившись спиной к влажному стволу дерева. — (17) Ничего, Андрей Иванович. (18) Я ещё могу идти… — (19) Надо идти, Наташенька. — (20) Он помог ей подняться. — (21) Ещё немного. (22) А сегодня… (23) Сегодня мы немного увеличим нашу утреннюю норму.",
+    "answer": "подняла глаза"
+  },
+  {
+    "id": "ФР-012",
+    "range": "1–8",
+    "instruction": "Из предложений 1–8 выпишите фразеологизм со значением «очень близко».",
+    "text": "(1) Мысль о том, трус ли я, — одна из самых острых, укоряющих мыслей моего детства. (2) Именно она впервые поставила меня лицом к лицу с самим собою. (3) Этот взгляд со стороны, иногда оправдывающий, но чаще осуждающий, неизменно помогал мне перед лицом решений, грозивших бедой — бедой, от которой нетрудно было ускользнуть, принимая эти казавшиеся почти естественными решения. (4) Мы играли во дворе, прыгая через планку, поднимая её всё выше. (5) Потом стали прыгать с мусорного ящика — и прыгнули все, кроме меня, даже восьмилетний Боря. (6) Саша сказал, что я трус, и, возможно, это было действительно так. (7) Я боялся гусей, ещё больше я боялся петухов, в особенности после того, как один из них сел мне на голову и чуть не клюнул, как царя Додона. (8) Правда, недавно я переплыл речку, но храбро ли я её переплыл?",
+    "answer": "лицом к лицу"
+  },
+  {
+    "id": "ФР-013",
+    "range": "10–13",
+    "instruction": "Из предложений 10–13 выпишите один фразеологизм.",
+    "text": "(10) По пути домой меня сдержанно пожурили. (11) Хозяев — взрослых и детей — я поразила до глубины души: пришла в гости и уселась за книжку. (12) Но упрёки матери доносились откуда-то со стороны, а во мне звучали стихи Корнея Чуковского. (13) Я запомнила «Крокодила» наизусть, почти целиком, и стала охотно рассказывать его другим детям, а то, что дословно не запомнила, рассказывала своими словами, может быть, даже своими стихами, — подобная вольность казалась мне тогда вполне допустимой.",
+    "answer": "до глубины души"
+  },
+  {
+    "id": "ФР-014",
+    "range": "17–22",
+    "instruction": "Из предложений 17–22 выпишите один фразеологизм.",
+    "text": "(17) Речь идёт о рыцарских латах, которые теперь можно увидеть только в музее. (18) Но тысячу лет назад такие доспехи надевали не только готовясь к бою, но и собираясь в любую поездку. (19) Потому что путешествовать в те времена было намного опаснее, чем теперь. (20) По дорогам скитались в поисках добычи бродяги, в лесах укрывались шайки разбойников. (21) Да и при любом споре того и гляди получишь удар копьём или мечом. (22) Люди постоянно ходили вооружёнными, а уезжая из дому в дальний путь, надевали на себя кольчугу, тяжёлые латы, голову прятали под железный шлем.",
+    "answer": "того и гляди"
+  },
+  {
+    "id": "ФР-015",
+    "range": "5",
+    "instruction": "Из предложения 5 выпишите один фразеологизм.",
+    "text": "(5) С другой стороны, интересно: вот уже пять тысяч лет, как человечество не отстаёт от чтения, хотя у него хлопот, что называется, полон рот (тут тебе и бесконечные междоусобицы, и кризис неплатежей), а он всё почитывает на досуге, словно это, казалось бы, зряшное пристрастие злободневно.",
+    "answer": "хлопот полон рот"
+  },
+  {
+    "id": "ФР-016",
+    "range": "12–14",
+    "instruction": "Из предложений 12–14 выпишите один фразеологизм.",
+    "text": "(12) Но из тысяч примет и признаков складывается то общее, что мы зовём нашей родной природой и что мы, любя, быть может, и море, и горы, любим всё же сильнее, чем что-либо иное на всём белом свете. (13) Всё это так. (14) Но нужно сказать, что это чувство любви к родной природе в нас не стихийно, оно не только возникло само собой, поскольку мы родились и выросли среди природы, но и воспитано в нас литературой, живописью, музыкой, теми великими учителями нашими, которые жили прежде нас, тоже любили родную землю и передали свою любовь нам, потомкам.",
+    "answer": "на всём белом свете"
+  },
+  {
+    "id": "ФР-017",
+    "range": "18–25",
+    "instruction": "Из предложений 18–25 выпишите один фразеологизм.",
+    "text": "— (18) Я большой любитель разбирать слова, — неожиданно сказал лесник и смущённо усмехнулся. — (19) И вот, скажи на милость! (20) Бывает же так, что пристанет к тебе одно слово и не даёт покоя. (21) Лесник помолчал, поправил на плече охотничье ружьё. — (22) Вы, говорят, вроде книги пишете? — (23) Да, пишу. — (24) Значит, соображение слов у вас должно быть обдуманное. (25) А я вот как ни прикидываю, а редко какому слову найду объяснение.",
+    "answer": "не даёт покоя"
+  },
+  {
+    "id": "ФР-018",
+    "range": "9–14",
+    "instruction": "Из предложений 9–14 выпишите один фразеологизм.",
+    "text": "(9) И вот опять уводит меня в лесную чащобу узкая тропинка, и снова слушаю я шум летнего леса. (10) Снова торжественно и мудро шумит надо мной старинный хвойный бор, и нет ему до меня никакого дела. (11) И над бором висит в синеве солнце. (12) Оно щедро, стремительно и бесшумно сыплет в лохматую прохладу мхов свои золотые брызги, а над мхами, словно сморённые за пряжей старухи, дремлют смолистые ели. (13) Они глухо шепчут порой, как будто возмущаясь щедростью солнца, а может быть, собственным долголетием. (14) Под елями древний запах папоротника.",
+    "answer": "нет дела"
+  },
+  {
+    "id": "ФР-019",
+    "range": "17–25",
+    "instruction": "Из предложений 17–25 выпишите один фразеологизм.",
+    "text": "— (17) Пойдёмте к нам. (18) Там тётя Женя чего-то… (19) Сидит… (20) Бормочет… (21) Она вроде не в себе. (22) Я боюсь… (23) Кряхтя и постанывая, Ипполитовна поднялась с постели. (24) Старушка пошла, держась за стенки, перехватываясь руками. (25) Нина поддерживала её.",
+    "answer": "не в себе"
+  },
+  {
+    "id": "ФР-020",
+    "range": "8–18",
+    "instruction": "Из предложений 8–18 выпишите один фразеологизм.",
+    "text": "(8) Саня, в сущности, плохо понимал, что происходит. (9) Комбат приказал не вырываться вперёд и двигаться за танками в ста метрах. (10) Щербак же повис на хвосте впереди идущей машины. (11) Тридцатьчетвёрка шла зигзагами, стреляя на ходу. (12) За ней тоже зигзагами вёл самоходку Щербак. (13) Саня не видел поля боя: мешала тридцатьчетвёрка. (14) Он приказал Щербаку отстать или свернуть в сторону. (15) Щербак, не ответив, продолжал плестись за танком. (16) Вдруг суматошно закричали солдаты-десантники. (17) Саня метнулся к люку: автоматчики скатывались с машин. (18) Перед самоходкой на одной гусенице вертелся танк.",
+    "answer": "повис на хвосте"
+  },
+  {
+    "id": "ФР-021",
+    "range": "35–38",
+    "instruction": "Из предложений 35–38 выпишите один фразеологизм.",
+    "text": "(35) Выструганный из лучины меч был настоящий богатырский меч-кладенец. (36) С несокрушимою силою поражал я несметную вражескую рать, под ударами игрушечного меча слетали с высокой разросшейся крапивы пушистые вражеские головы. (37) Вражеская рать лежала поверженной на поле брани. (38) Вложив «окровавленный» меч в ножны, я гордо возвращался в заветный свой уголок.",
+    "answer": "на поле брани"
+  },
+  {
+    "id": "ФР-022",
+    "range": "33–36",
+    "instruction": "Из предложений 33–36 выпишите один фразеологизм.",
+    "text": "(33) Он был совершенно никакой, Вадик Батон. (34) Люди, умеющие быть никакими, продвигаются далеко. (35) Те, кто имеет с ними дело, довоображают и дорисовывают на никаком фоне всё, что им подсказывают их желания и их страхи. (36) Никакие всегда везунчики.",
+    "answer": "имеет дело"
+  },
+  {
+    "id": "ФР-023",
+    "range": "12–16",
+    "instruction": "Из предложений 12–16 выпишите один фразеологизм.",
+    "text": "(12) Всё, что отпущено человеку для впечатлений, в товарище моём было очень скоро переполнено, и он, не в состоянии уже больше удивляться и восхищаться, замолчал. (13) Я продолжал говорить. (14) Я рассказывал, как, впервые попав в студенческие годы на Байкал, был обманут прозрачностью воды и пытался рукой достать с лодки камешек, до которого затем при замере оказалось больше четырёх метров. (15) Товарищ принял этот случай безучастно. (16) Несколько уязвленный, я сообщил, что в Байкале удаётся видеть и за сорок метров — и, кажется, прибавил, но он и этого не заметил, точно в Москве-реке, мимо которой он ездит в машине, такое возможно сплошь и рядом.",
+    "answer": "сплошь и рядом"
+  },
+  {
+    "id": "ФР-024",
+    "range": "30",
+    "instruction": "Из предложения 30 выпишите один фразеологизм.",
+    "text": "(30) Бывшая работница нашей редакции время от времени по телефону докладывает мне о жизни ворон во дворе, о том, что они любят есть, как безошибочно узнают её в массе людей.",
+    "answer": "время от времени"
+  },
+  {
+    "id": "ФР-025",
+    "range": "19–22",
+    "instruction": "Из предложений 19–22 выпишите один фразеологизм.",
+    "text": "(19) А между тем в этом ответе есть глубочайшее заблуждение. (20) Оно станет понятным, если вообразить трёхмиллиардное человечество разделённым на две неравные части: небольшую — избранных людей, одарённых Божьей искрой, обладающих большими, яркими талантами, которые действительно украшают мир, радуют нас книгами, симфониями, научными открытиями. (21) И рядом — его большая часть, состоящая из «обыкновенных», «рядовых» людей. (22) Им будто бы и не дано рождать ту самую чудесную новизну, которая сопряжена у нас с самим пониманием творчества.",
+    "answer": "Божьей искрой"
+  },
+  {
+    "id": "ФР-026",
+    "range": "1–4",
+    "instruction": "Из предложений 1–4 выпишите один фразеологизм.",
+    "text": "(1) Вот и кончился последний урок последнего дня нашей школьной жизни. (2) Десять школьных лет завершились по знакомой хрипловатой трели звонка. (3) Все мы, растроганные, взволнованные, радостные и о чём-то жалеющие, растерянные и смущённые своим мгновенным превращением из школяров во взрослых людей, слонялись по классам и коридору, словно страшась выйти из школьных стен в мир, ставший бесконечным. (4) И было такое чувство, будто что-то недоговорено, не дожито, не исчерпано за прошедшие десять лет, будто этот день застал нас врасплох.",
+    "answer": "застал врасплох"
+  },
+  {
+    "id": "ФР-027",
+    "range": "28–31",
+    "instruction": "Из предложений 28–31 выпишите один фразеологизм.",
+    "text": "(28) Снеговая дорога сбегала в овраг между заиндевелыми кустами орешника. (29) За оврагом, за соломенными крышами овинов вился струйками к серенькому, застенчивому небу дым из печей. (30) Тоска была в глазах у мальчика — тоска по такой вот косой избе, которой у него нет, по широким лавкам вдоль стен, по треснувшему и склеенному бумагой окошку, по запаху горячего ржаного хлеба с пригоревшими к донцу угольками. (31) Я подумал: как мало в конце концов нужно человеку для счастья, когда счастья нет, и как много нужно, как только оно появляется.",
+    "answer": "в конце концов"
+  },
+  {
+    "id": "ФР-028",
+    "range": "21–28",
+    "instruction": "Из предложений 21–28 выпишите один фразеологизм.",
+    "text": "(21) Дрезину они нашли под насыпью у разъезда. (22) Бойцы и санитарки ушли, чтобы поднять её и поставить на рельсы. (23) Мы с Ромашовым остались одни в маленькой мокрой берёзовой роще. (24) Мне трудно рассказать о том, каким был этот день. (25) Мы ждали и ждали без конца. (26) Уходя, санитарка сунула мне под голову свой заплечный мешок. (27) Очевидно, в мешке были сухари: что-то хрустнуло, когда я кулаком подбил мешок повыше. (28) Ромашов стал ныть, что он умирает от голода, но я прикрикнул на него, и он замолчал.",
+    "answer": "без конца"
+  },
+  {
+    "id": "ФР-029",
+    "range": "32–33",
+    "instruction": "Из предложений 32–33 выпишите один фразеологизм.",
+    "text": "(32) Когда я вспоминаю лучшие — по-современному, «звёздные» — минуты своей жизни, первой в голову приходит такая картина: высокие окна школьного зала на четвёртом этаже распахнуты в московскую ночь, вдали за деревьями мерцают одинокие огни, весенний ветерок наносит свежесть, Юрий Викторович со сцены читает Есенина, я гляжу на сидящую впереди меня прекрасную девочку, которая вся обратилась в слух и, конечно, не подозревает о моём существовании, и по щекам моим ручьём текут горячие слёзы. (33) Так хорошо, что быть выше и счастливее, кажется, просто невозможно.",
+    "answer": "обратилась в слух"
+  },
+  {
+    "id": "ФР-030",
+    "range": "7",
+    "instruction": "Из предложения 7 выпишите фразеологизм.",
+    "text": "(7) Вскоре я совсем оставил занятия, будучи не в силах совмещать дальние экспедиции в Среднюю Азию и Сибирь, где я уже работал в качестве геолога, хотя и не имел ещё диплома.",
+    "answer": "не в силах"
+  },
+  {
+    "id": "ФР-031",
+    "range": "13–16",
+    "instruction": "Из предложений 13–16 выпишите один фразеологизм.",
+    "text": "(13) Я думал, что после окончания гимназии я куплю велосипед и совершу на нём поездку по Европе. (14) Первая мировая война ещё не начиналась, ещё всё было очень старинно: солдаты в чёрных мундирах с красными погонами, зверинец на Куликовом поле с одним львом, говорящая голова в зеркальном ящике в балагане. (15) Ещё бывала первая любовь, когда девочка смотрела на тебя с балкона, и ты думал, не уродлив ли ты. (16) Ещё отец девочки, моряк в парадном мундире, гремя палашом, шёл тебе навстречу и отвечал тебе на поклон, отчего ты бежал во весь дух, сам не зная куда, обезумевший от счастья.",
+    "answer": "во весь дух"
+  },
+  {
+    "id": "ФР-032",
+    "range": "4–6",
+    "instruction": "Из предложений 4–6 выпишите один фразеологизм.",
+    "text": "(4) Было приятно видеть бесконечную ровную линию наших контрэскарпов, их трёхметровую ширину и страшную глубину, их насыпи и зализанные закраины — работа была отличная, мы сознавали это и гордились своим трудом. (5) Всё это было ещё более приятно вот почему: шли усиленные разговоры о том, что сюда со дня на день придут наши части и встанут здесь что есть мочи защищать Москву. (6) Здесь, у сделанных нами рубежей.",
+    "answer": "со дня на день"
+  },
+  {
+    "id": "ФР-033",
+    "range": "25–26",
+    "instruction": "Из предложений 25–26 выпишите фразеологизм.",
+    "text": "(25) И, неловко поклонившись, он быстро уходит, прижимая к груди наши смешные букеты из листьев. (26) Вот его шинель мелькнула в густой щётке кустов калины, вот он уже спускается с горы — исчез из виду.",
+    "answer": "исчез из виду"
+  },
+  {
+    "id": "ФР-034",
+    "range": "1",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(1) И в самом Тургеневе всё было летнее — мелькающие среди берёз женские платья, запах леса, травы, сирени, Наташа с горничной без оглядки спешит на свидание с Рудиным через поле, по мокрой траве.",
+    "answer": "без оглядки"
+  },
+  {
+    "id": "ФР-035",
+    "range": "2",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(2) Я когда-то была стрекозой, но, увидев Паки, влюбилась без ума и превратилась в колибри. Это просто, если сильно захотеть…",
+    "answer": "без ума"
+  },
+  {
+    "id": "ФР-036",
+    "range": "3",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(3) То и дело хотелось притормозить, чтобы успеть хоть начерно осознать непрекращающийся поток новостей — их в тысячекратно слушанном тексте оказалось без числа.",
+    "answer": "то и дело"
+  },
+  {
+    "id": "ФР-037",
+    "range": "4",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(4) Потребность в русской газете чувствовалась уже с первых дней, волна эмиграции росла непрерывно, и после разгрома добровольческих армий человеческий поток всё углублялся, ширился, бил через край и принимал размеры более чем внушительные.",
+    "answer": "бил через край"
+  },
+  {
+    "id": "ФР-038",
+    "range": "5",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(5) Все университетские годы прожили они бок о бок на антресолях григорьевского дома на Малой Полянке, подле Спаса в Наливках, и не было на всём белом свете столь разных характеров, темпераментов, миросозерцаний.",
+    "answer": "бок о бок"
+  },
+  {
+    "id": "ФР-039",
+    "range": "6",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(6) Измученный, умирающий Ломоносов не переставал болеть душой о судьбах русской науки, не переставал бояться за её будущее.",
+    "answer": "болеть душой"
+  },
+  {
+    "id": "ФР-040",
+    "range": "7",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(7) Он исподлобья смотрел на неё. Она опять становилась задумчива и холодна; опять осторожность начала брать верх.",
+    "answer": "брать верх"
+  },
+  {
+    "id": "ФР-041",
+    "range": "8",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(8) Он не смеет брать в свои руки вершение судеб ближних: он справедливо боится возможных ошибок и предпочитает идти по предуказанному древними властителями человеческих дум пути.",
+    "answer": "брать в свои руки"
+  },
+  {
+    "id": "ФР-042",
+    "range": "9",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(9) Но только сейчас, когда была позади изнурительная схватка со следователями, когда остыл накал борьбы и незанятому воображению представлялся неминуемый конец, в нём разливался ужас. К ночи он брал за горло.",
+    "answer": "брал за горло"
+  },
+  {
+    "id": "ФР-043",
+    "range": "10",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(10) Я боялся праздников: было жутко, что на досуге пробудятся воспоминания… К счастью, прибой прежней жизни был слабый, хотя и бывали минуты, когда приходилось брать себя в руки.",
+    "answer": "брать себя в руки"
+  },
+  {
+    "id": "ФР-044",
+    "range": "11",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(11) Доложил обо всём командиру, и тот, не желая навлекать неприятность на себя и бросать тень на корабль, распорядился считать происшествие несчастным случаем.",
+    "answer": "бросать тень"
+  },
+  {
+    "id": "ФР-045",
+    "range": "12",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(12) Как видите, задачи перед нами стоят большие, и мы, как единственное лечебное заведение со стационаром на двадцать пять коек, должны быть на высоте.",
+    "answer": "быть на высоте"
+  },
+  {
+    "id": "ФР-046",
+    "range": "13",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(13) Говорил он медленно, складно, и вместе с тем как-то тяжело, словно стараясь вбить в голову каждую фразу.",
+    "answer": "вбить в голову"
+  },
+  {
+    "id": "ФР-047",
+    "range": "14",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(14) Утопив бедную Муму, он прибежал в свою каморку, проворно уложил кой-какие пожитки в старую попону, связал её узлом, взвалил на плечо да и был таков.",
+    "answer": "был таков"
+  },
+  {
+    "id": "ФР-048",
+    "range": "15",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(15) Всего лишь минута прошла, как Вася попал в эту комнату, а всё уже здесь перевернулось вверх дном: рядом с телевизором валялась на полу тумбочка с вывихнутой ногой, в чулане что-то ещё копошилось и падало, на стене шевелилось рыжее пятно чая.",
+    "answer": "вверх дном"
+  },
+  {
+    "id": "ФР-049",
+    "range": "16",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(16) Это был старинный провинциальный сад, изрезанный вдоль и поперёк неправильными тропинками; сад с оврагами, густо поросшими крапивой; с кирпичами, мостиками и полусгнившими ротондами.",
+    "answer": "вдоль и поперёк"
+  },
+  {
+    "id": "ФР-050",
+    "range": "17",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(17) «Ах, да когда же всё это кончится!» — пробормотал Митя вне себя от нетерпения, не двигаясь, но жадно слушая голос Ольги Петровны, отдававшей в лакейской последние приказания.",
+    "answer": "вне себя"
+  },
+  {
+    "id": "ФР-051",
+    "range": "19",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(19) Родственные языки, принадлежащие к одной группе, как правило, похожи друг на друга — конечно, не всегда так сильно, как, например, русский и белорусский языки, но, во всяком случае, их сходство обычно очевидно.",
+    "answer": "во всяком случае"
+  },
+  {
+    "id": "ФР-052",
+    "range": "20",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(20) Но умный Кот, у которого грозно и горестно повисли усы, понял, что перед ним не юноша, смелый от застенчивости, в глубине души стеснявшийся своего дарования, а решительный человек.",
+    "answer": "в глубине души"
+  },
+  {
+    "id": "ФР-053",
+    "range": "21",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(21) Когда он увидел, как мне хочется лететь на самолёте, то в два счёта уговорил маму, и она, хотя и неохотно, но всё-таки согласилась.",
+    "answer": "в два счёта"
+  },
+  {
+    "id": "ФР-054",
+    "range": "22",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(22) Пройдя мимо скамьи, на которой помещались редактор и поэт, иностранец покосился на них, остановился и вдруг уселся на соседней скамейке, в двух шагах от приятелей.",
+    "answer": "в двух шагах"
+  },
+  {
+    "id": "ФР-055",
+    "range": "23",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(23) Злым Чехова я никогда не видал; раздражался он редко, а если и раздражался, то изумительно умел владеть собой.",
+    "answer": "владеть собой"
+  },
+  {
+    "id": "ФР-056",
+    "range": "24",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(24) Он стоял на льду, следя за полётом птицы, мелькавшей на фоне угрюмых гор, опушённых снегами, и когда она самоотверженно шлёпнулась в нескольких шагах на воду, с очевидным намерением разделить общую опасность, — у него на глазах появились слёзы.",
+    "answer": "на глазах"
+  },
+  {
+    "id": "ФР-057",
+    "range": "25",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(25) Всё семейное счастье, лёгкое, ненатуженное, их избранность и близость, безграничность доверия, — всё рухнуло в один миг.",
+    "answer": "в один миг"
+  },
+  {
+    "id": "ФР-058",
+    "range": "26",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(26) Ещё минуту назад застывшие в горестном молчании люди вспыхнули от негодования и в одно мгновение окружили нас плотным кольцом.",
+    "answer": "в одно мгновение"
+  },
+  {
+    "id": "ФР-059",
+    "range": "27",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(27) Бывали минуты, когда даже не смеяться мне хотелось, а подойти к Фисуну и Луговому и каким-нибудь одним словом, одним жестом, вроде крепкого рукопожатия, заставить воспрянуть духом и этих людей.",
+    "answer": "воспрянуть духом"
+  },
+  {
+    "id": "ФР-060",
+    "range": "28",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(28) Так они плыли с минуту, выпуская ртами пузыри воздуха, а потом Илья стал показывать Айзе знаками, что пора возвращаться к поверхности, но она лишь улыбалась в ответ, желая во что бы то ни стало достичь водорослей.",
+    "answer": "во что бы то ни стало"
+  },
+  {
+    "id": "ФР-061",
+    "range": "29",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(29) Один из людей, стройный силуэт которого вырисовывался в ночи, взглянул на арку ворот и тихо сказал: «Здесь будет в самый раз». Маленький худенький мальчик, ловко снуя острыми локтями и коленками, взобрался на арку, некоторое время повозился на самой её середине, и вдруг Фомин увидел высоко над собой толстую верёвочную петлю, раскачивавшуюся в рассеянном мутном свете неба.",
+    "answer": "в самый раз"
+  },
+  {
+    "id": "ФР-062",
+    "range": "30",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(30) Указатель уровня топлива показывал, что бензина осталось всего ничего, но Фил как будто не обращал на это внимания.",
+    "answer": "всего ничего"
+  },
+  {
+    "id": "ФР-063",
+    "range": "31",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(31) Ему приходилось играть роль искреннего союзника Наполеона, возбуждая негодование и недоумение русских патриотов, которым никак нельзя было открыть истинный смысл его дипломатии.",
+    "answer": "играть роль"
+  },
+  {
+    "id": "ФР-064",
+    "range": "32",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(32) Перепечатывай на хорошей бумаге присланные из частей и соединений рапорта, подкладывай в папку генерала — на подпись и утверждение, и дело с концом.",
+    "answer": "дело с концом"
+  },
+  {
+    "id": "ФР-065",
+    "range": "33",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(33) Когда над городом пела и металась вьюга, забрасывая снегом дома до крыш, шаркая сухими мохнатыми крыльями по ставням и по стенам, — мерещился кто-то огромный, тихонький и мягкий: он покорно свернулся в шар отребьев и катится по земле из края в край, приминая на пути своём леса, заполняя овраги, давит и ломает города и села, загоняя мягкою тяжестью своею обломки в землю и в безобразное, безглавое тело своё.",
+    "answer": "из края в край"
+  },
+  {
+    "id": "ФР-066",
+    "range": "34",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(34) Ванюшин тогда вошёл в лабораторию лёгкой, энергичной походкой, бросив вскользь «вот бездельники», имея в виду практикантов.",
+    "answer": "имея в виду"
+  },
+  {
+    "id": "ФР-067",
+    "range": "35",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(35) На перроне он с очень важным видом ходил из конца в конец, встречал и провожал каждый новый поезд, выспрашивая, какой и когда прибывает или отправляется, а после тоже сообщая об этом всем, кто зазевался или торопился узнать.",
+    "answer": "из конца в конец"
+  },
+  {
+    "id": "ФР-068",
+    "range": "36",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(36) Люди становились молчаливее, скрытнее и недоверчивее, но всё же русская привычка изливать душу первому встречному продолжала существовать.",
+    "answer": "изливать душу"
+  },
+  {
+    "id": "ФР-069",
+    "range": "37",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(37) И хотя ни религиозного духа, ни отношения Марии Ивановны в жизни Пришвин не унаследовал, тягу к старообрядцам, к этой цельной непримиримой и глубокой культуре, воспринял, и позднее впечатления и воспоминания о другой жизни, иначе говоря, родовая память, повлекли его в край непуганых птиц на Выгозеро.",
+    "answer": "край непуганых птиц"
+  },
+  {
+    "id": "ФР-070",
+    "range": "38",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(38) Едва он попал на территорию порта и осмотрелся, как тотчас понял, что все работы здесь производятся в основном из-под палки, людьми случайными, неопытными, частью мобилизованными через полицию, частью принуждёнными добровольно искать чёрной работы, чтобы не умереть с голоду.",
+    "answer": "из-под палки"
+  },
+  {
+    "id": "ФР-071",
+    "range": "39",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(39) Мне хотелось выявить все случайные находки, поступившие из района колхоза «Горный гигант», но учёт вёлся из рук вон плохо, и ничего установить я не смог.",
+    "answer": "из рук вон плохо"
+  },
+  {
+    "id": "ФР-072",
+    "range": "40",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(40) Тайна подземного хода передавалась из рода в род уже много поколений.",
+    "answer": "из рода в род"
+  },
+  {
+    "id": "ФР-073",
+    "range": "41",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(41) Так до 1917 года и служил этот дом, переходя из рук в руки, от кондитера к кондитеру: от Завьялова к Бурдину, Феоктистову и другим.",
+    "answer": "из рук в руки"
+  },
+  {
+    "id": "ФР-074",
+    "range": "42",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(42) Испокон веку лекари и священники брали плату за свои услуги натуральным продуктом.",
+    "answer": "испокон веку"
+  },
+  {
+    "id": "ФР-075",
+    "range": "43",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(43) Весной выдавленные из недр сваи торчали наперекосяк, точно зубы дефективного подростка, приподнимая то один угол домика, то другой, играли домиком и так и сяк, расшатывая и без того хлипкие стенки, заклинивая окна и двери.",
+    "answer": "и так и сяк"
+  },
+  {
+    "id": "ФР-076",
+    "range": "44",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(44) Когда выехали на настоящую твёрдую дорогу, по которой заводские углепоставщики возили из куреней на заводы уголь, эти лесные сани начали катиться, как по маслу, и несколько раз перевёртывались.",
+    "answer": "как по маслу"
+  },
+  {
+    "id": "ФР-077",
+    "range": "45",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(45) Остановитесь! — воскликнул он. — Как бы не так, — процедил огромный мужчина. — Что это значит? — крикнул иностранец. — А то, что отель мы проехали, — последовал хладнокровный ответ.",
+    "answer": "как бы не так"
+  },
+  {
+    "id": "ФР-078",
+    "range": "46",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(46) Неясное, тоскливое предчувствие беды томило его, а она как назло медлила, чему-то улыбалась, думала.",
+    "answer": "как назло"
+  },
+  {
+    "id": "ФР-079",
+    "range": "47",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(47) Трое парней, все как на подбор, стояли и ждали, когда Димка подаст им мяч.",
+    "answer": "как на подбор"
+  },
+  {
+    "id": "ФР-080",
+    "range": "48",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(48) От него переселенцы впервые узнали о существовании переселенческих чиновников, о пристанище в Томске, о выдаче пособий, о стоимости дальнейшей дороги, короче говоря, благодаря студенту они совершенно случайно получили те простые, но важные для них сведения, которые облегчат бесцельные мытарства многих десятков людей.",
+    "answer": "короче говоря"
+  },
+  {
+    "id": "ФР-081",
+    "range": "49",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(49) Это противоречие сохранялось в ходе всей истории кришнаитского движения и дало о себе знать во второй половине ХХ века, когда христианство и индуизм встретились лицом к лицу.",
+    "answer": "дало о себе знать"
+  },
+  {
+    "id": "ФР-082",
+    "range": "50",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(50) Городские и деревенские грамотеи читали те книги с большой охотой, нравилось им ломать голову над речами, судить и рядить о них в дружеских беседах, толковать вкривь и вкось.",
+    "answer": "ломать голову"
+  },
+  {
+    "id": "ФР-083",
+    "range": "51",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(51) Кульбин набрасывал общие схемы, выдвигал расплывчатые формулы развития искусства и, отрицая прошлое во имя будущего, делал это так деликатно и вкрадчиво, что слушатели в сущности не поняли, чего от них хотят, из-за чего тут ломать копья.",
+    "answer": "ломать копья"
+  },
+  {
+    "id": "ФР-084",
+    "range": "52",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(52) Разные были люди: одни, чувствуя стремление хозяина любой ценой приобрести экспонаты, заламывали баснословные цены, другие, старики, продавали лампы за бесценок по причине стеснённых материальных обстоятельств.",
+    "answer": "любой ценой"
+  },
+  {
+    "id": "ФР-085",
+    "range": "53",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(53) Пишет он между делом, так, чтобы лишнее заработать. Да я и не знаю, что его больше интересует: литература, философия, наука или куроводство. Он слишком одарён во многих отношениях, чтобы отдаться чему-нибудь одному.",
+    "answer": "между делом"
+  },
+  {
+    "id": "ФР-086",
+    "range": "54",
+    "instruction": "Укажите фразеологизм в предложении.",
+    "text": "(54) Совершенно ошеломлённый загадками Бомбардова, я минута в минуту в полдень был в тупике на Сивцевом Вражке. Во дворе мужчины в тулупе не было, но как раз на том месте, где Бомбардов и говорил, стояла баба в платке.",
+    "answer": "минута в минуту"
+  }
+];
+
+function validateFipiTasks(){
+  const required=['range','instruction','text','answer'];
+  return FIPI_TASKS.map((task,index)=>({
+    index:index+1,
+    id:task.id||'',
+    missing:required.filter(key=>!task[key]),
+    hasAccepted:Object.prototype.hasOwnProperty.call(task,'accepted')
+  })).filter(row=>row.missing.length||row.hasAccepted);
+}
+
+function auditTrainerData(){
+  const rawIssues=[];
+  DATA.forEach((item,index)=>{
+    ['sourcePhrase','phrase','definition','synonym','sentence','wrong'].forEach(key=>{
+      if(!String(item[key]||'').trim())rawIssues.push({index:index+1, phrase:item.sourcePhrase||'', issue:`RAW_DATA: пустое поле ${key}`});
+    });
+    if(!String(item.sentence||'').includes('_____'))rawIssues.push({index:index+1, phrase:item.sourcePhrase||'', issue:'RAW_DATA: в контекстном предложении нет пропуска _____'});
+    if(normalizeAnswer(item.wrong)===normalizeAnswer(item.sourcePhrase)||normalizeAnswer(item.wrong)===normalizeAnswer(item.phrase))rawIssues.push({index:index+1, phrase:item.sourcePhrase||'', issue:'RAW_DATA: ошибочный вариант совпадает с правильным'});
+  });
+  const fipiStructuralIssues=validateFipiTasks();
+  const seenAnswers=new Map();
+  const fipiDuplicateAnswers=[];
+  FIPI_TASKS.forEach((task,index)=>{
+    const key=normalizeFindAnswer(task.answer);
+    if(seenAnswers.has(key))fipiDuplicateAnswers.push({answer:task.answer, first:seenAnswers.get(key), duplicate:index+1});
+    else seenAnswers.set(key,index+1);
+  });
+  return {
+    rawDataCount:DATA.length,
+    fipiTaskCount:FIPI_TASKS.length,
+    rawIssues,
+    fipiStructuralIssues,
+    fipiDuplicateAnswers,
+    ok:!rawIssues.length&&!fipiStructuralIssues.length&&!fipiDuplicateAnswers.length
+  };
+}
+window.trainerDiagnostics=auditTrainerData;
+
+const MODES={meaning:'Значение',phrase:'Фразеологизм',synonym:'Синоним',error:'Исправь ошибку',fipi:'ЕГЭ: задание 25',mixed:'Смешанный режим',team:'Командная игра'};let state={mode:'meaning',questions:[],index:0,score:0,answered:false,mistakes:[],lastSettings:null,teamItem:null,teamTask:null,teamHistory:[],teamIndex:-1,teamScores:[0,0,0]};const $=id=>document.getElementById(id);const shuffle=a=>[...a].sort(()=>Math.random()-.5);const sample=(a,n)=>shuffle(a).slice(0,n);
+const PREFERENCES_KEY='phraseTrainerPreferences';
+function savePreferences(){
+  const prefs={
+    questionCount:$('questionCount')?.value||10,
+    teamCount:$('teamCount')?.value||3,
+    boardMode:$('app')?.classList.contains('board-mode')||false
+  };
+  try{localStorage.setItem(PREFERENCES_KEY,JSON.stringify(prefs));}catch(e){}
+}
+function loadPreferences(){
+  try{
+    const prefs=JSON.parse(localStorage.getItem(PREFERENCES_KEY)||'{}');
+    if(prefs.questionCount&&$('questionCount'))$('questionCount').value=prefs.questionCount;
+    if(prefs.teamCount&&$('teamCount'))$('teamCount').value=prefs.teamCount;
+    if(prefs.boardMode&&$('app')){
+      $('app').classList.add('board-mode');
+      $('boardBtn').textContent='Обычный режим';
+    }
+  }catch(e){}
+}
+function updateProgress(){
+  const total=state.questions.length||1;
+  const current=state.questions[state.index];
+  const answeredOffset=current?.answered?1:0;
+  const completed=Math.min(state.index+answeredOffset,state.questions.length);
+  $('progress').style.width=`${(completed/total)*100}%`;
+}
+function resetQuestionForRetry(q){
+  return {...q,answered:false,isCorrect:false,userAnswer:''};
+}
+function startMistakeReview(){
+  const questions=state.mistakes.map(resetQuestionForRetry);
+  if(!questions.length)return;
+  const reviewMode=state.mode||state.lastSettings?.mode||'mixed';
+  state.mode=reviewMode;
+  state.questions=questions;
+  state.index=0;
+  state.score=0;
+  state.answered=false;
+  state.mistakes=[];
+  state.lastSettings={mode:reviewMode,count:questions.length,review:true};
+  show('quizScreen');
+  renderQuestion();
+}
+function handleKeyboard(e){
+  const tag=e.target?.tagName;
+  if(tag==='INPUT'||tag==='TEXTAREA')return;
+  if(!$('quizScreen')||$('quizScreen').classList.contains('hidden'))return;
+  if(/^[1-4]$/.test(e.key)){
+    const buttons=[...document.querySelectorAll('.answer')].filter(button=>!button.disabled);
+    const button=buttons[Number(e.key)-1];
+    if(button)button.click();
+  }
+  if(e.key==='Enter'&&!$('nextBtn').disabled)nextQuestion();
+  if(e.key==='Backspace'&&!$('prevBtn').disabled)previousQuestion();
+}
+function normalizeAnswer(s){return (s||'').toLowerCase().replace(/ё/g,'е').replace(/[()«»"“”„,.;:!?]/g,' ').replace(/[-—–]/g,' ').replace(/\s+/g,' ').trim()}
+function normalizeFindAnswer(s){return normalizeAnswer(s).replace(/\s+/g,'')}
+function sourceVariants(item){
+  const result=[item.sourcePhrase,item.phrase];
+  const m=item.sourcePhrase.match(/^(.*?)\((.*?)\)(.*)$/);
+  if(m){
+    const before=m[1].trim();
+    const inside=m[2].trim();
+    const after=m[3].trim();
+    result.push((before+' '+after).trim());
+    inside.split(',').map(x=>x.trim()).filter(Boolean).forEach(v=>{
+      if(after){
+        const words=before.split(/\s+/).filter(Boolean);
+        words.pop();
+        result.push([...words,v,after].join(' ').replace(/\s+/g,' ').trim());
+      }else if(/\s/.test(v)){
+        result.push(v);
+      }else{
+        const words=before.split(/\s+/).filter(Boolean);
+        words.pop();
+        result.push([...words,v].join(' ').trim());
+      }
+    });
+  }
+  return [...new Set(result.map(x=>x.trim()).filter(Boolean))];
+}
+const ERROR_CONTEXT_FORMS = {
+  "альфа и омега": "альфой и омегой",
+  "белая ворона": "белой вороной",
+  "белый свет (на белом свете)": "на белом свете",
+  "болеть душой": "болеет душой",
+  "брать верх": "брать верх",
+  "брать в свои руки": "взять в свои руки",
+  "брать за горло": "брать за горло",
+  "броситься в глаза": "бросилась в глаза",
+  "быть (держаться, оставаться) в тени": "быть в тени",
+  "валиться из рук": "валилось из рук",
+  "вести себя": "вести себя",
+  "воспрянуть духом": "воспрянула духом",
+  "впиться глазами": "впился глазами",
+  "глаза горят": "глаза горели",
+  "глазом не моргнул": "глазом не моргнул",
+  "дать волю": "дал волю",
+  "днём с огнём": "днём с огнём не сыщешь",
+  "до нитки промокнуть (до нитки вымокнуть)": "до нитки промокнуть",
+  "души не чаять": "души не чаяла",
+  "едва таскать ноги": "едва таскали ноги",
+  "еле дышать": "еле дышит",
+  "закидать камнями": "закидывать камнями",
+  "играть роль": "играть роль",
+  "иметь в виду": "имеешь в виду",
+  "иметь дело": "иметь дело",
+  "иметь значение": "иметь значение",
+  "лезть в голову": "лезть в голову",
+  "ломать копья": "ломали копья",
+  "мёртвая хватка": "мёртвой хваткой",
+  "на белом свете": "на белом свете",
+  "на произвол судьбы": "на произвол судьбы",
+  "на поле брани": "на поле брани",
+  "на равных": "на равных",
+  "на своей шкуре": "на своей шкуре",
+  "на седьмом небе": "на седьмом небе",
+  "не верить глазам (ушам)": "не верил глазам",
+  "не иметь понятия": "не имею понятия",
+  "не давать покоя": "не давала ему покоя",
+  "не ко двору": "не ко двору",
+  "не подать виду": "не подать виду",
+  "не чаять души": "не чаяли души",
+  "нести крест": "нести крест",
+  "нёс на своих плечах": "нести на своих плечах",
+  "отдавать должное": "отдать должное",
+  "отвести глаза": "отвести глаза",
+  "пальцем не тронуть": "пальцем не тронет",
+  "пойти в ход": "пошли в ход",
+  "под руку (лезть под руку)": "под руку",
+  "прийти в себя": "пришёл в себя",
+  "развести руками": "развести руками",
+  "сбыть с рук": "сбыть с рук",
+  "сойти с рук": "сойти с рук",
+  "сойти с ума": "сойти с ума",
+  "сослужить службу": "сослужить службу",
+  "спать мёртвым сном": "спали мёртвым сном",
+  "стоять насмерть": "стоять насмерть",
+  "уписывал за обе щеки": "уписывать за обе щеки",
+  "чувствовать себя": "чувствовать себя"
+};
+function contextualErrorAnswer(item){
+  return ERROR_CONTEXT_FORMS[item.sourcePhrase]||ERROR_CONTEXT_FORMS[item.phrase]||item.sourcePhrase;
+}
+function errorAcceptedVariants(item){
+  return [...new Set([contextualErrorAnswer(item),...sourceVariants(item)].map(x=>x.trim()).filter(Boolean))];
+}
+
+function show(id){['homeScreen','quizScreen','resultScreen','teamScreen','tableScreen'].forEach(x=>$(x).classList.add('hidden'));$(id).classList.remove('hidden');if(id==='tableScreen')renderPhraseTable()}function acceptedFindVariants(task){
+  const key=normalizeAnswer(task.answer);
+  return [...new Set([key,key.replace(/\s+/g,'')].filter(Boolean))];
+}
+function renderPhraseTable(){
+  const body=$('phraseTableBody');
+  const input=$('tableSearch');
+  if(!body||!input)return;
+  const q=normalizeAnswer(input.value);
+  const filtered=DATA.filter(item=>{
+    const hay=normalizeAnswer([item.sourcePhrase,item.definition,item.synonym].join(' '));
+    return !q||hay.includes(q);
+  });
+  body.innerHTML='';
+  filtered.forEach(item=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${item.sourcePhrase}</td><td>${item.definition}</td>`;
+    body.appendChild(tr);
+  });
+  $('tableCount').textContent=`Показано: ${filtered.length} из ${DATA.length}`;
+}
+function buildFindQuestion(task){
+  return {
+    item:null,
+    findTask:task,
+    actual:'find',
+    label:'Найдите фразеологизм',
+    prompt:task.instruction||'Из предложений выпишите один фразеологизм.',
+    context:task.rangeText||task.sentence,
+    hint:'Выпишите фразеологизм из указанного диапазона в той форме, в которой он употреблён. Регистр не важен, буквы Е/Ё считаются равными.',
+    correct:task.answer,
+    choices:[],
+    inputMode:true,
+    accepted:acceptedFindVariants(task)
+  };
+}
+function buildOfficialFipiQuestion(task){
+  const range=task.range||task.rangeLabel||task.sentences||'указанных предложений';
+  const instruction=task.instruction||`Среди предложений ${range} найдите один фразеологизм. Выпишите этот фразеологизм.`;
+  return {
+    item:null,
+    findTask:task,
+    actual:'find',
+    label:'ЕГЭ: задание 25',
+    prompt:instruction,
+    context:task.text||task.rangeText||task.sentence,
+    hint:'Ответ запишите в той форме, в которой фразеологизм употреблён в тексте. Регистр не важен, буквы Е/Ё считаются равными.',
+    correct:task.answer,
+    choices:[],
+    inputMode:true,
+    accepted:acceptedFindVariants(task)
+  };
+}
+function buildQuestion(item,mode){const actual=mode==='mixed'?shuffle(['meaning','phrase','synonym','error'])[0]:mode;const pool=DATA;let prompt='',label='',hint='',correct='',choices=[],context='';if(actual==='meaning'){label='Выберите значение';prompt=item.sourcePhrase;correct=item.definition;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.definition)]}if(actual==='phrase'){label='Выберите фразеологизм';prompt=item.definition;correct=item.sourcePhrase;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)]}if(actual==='synonym'){label='Выберите синоним';prompt=item.sourcePhrase;correct=item.synonym;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase&&x.synonym!==item.synonym),3).map(x=>x.synonym)]}if(actual==='context'){label='Вставьте в предложение';prompt='Какой фразеологизм нужен?';context=item.sentence;correct=item.sourcePhrase;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)];hint='Обратите внимание на смысл всего предложения.'}if(actual==='error'){label='Исправьте ошибку';prompt=item.wrong;correct=contextualErrorAnswer(item);choices=[];hint=`Контекст: ${item.sentence} Введите правильный фразеологизм в форме, подходящей к пропуску. Словарная форма тоже принимается. Регистр не важен, буквы Е/Ё считаются равными.`;return {item,actual,label,prompt,context,hint,correct,choices:[],inputMode:true,accepted:errorAcceptedVariants(item)}}return {item,actual,label,prompt,context,hint,correct,choices:shuffle(choices)}}
+function questionKey(q){
+  if(!q)return '';
+  if(q.actual==='find'){
+    const task=q.findTask||{};
+    return `${q.actual}|${task.id||''}|${normalizeAnswer(q.correct||'')}|${normalizeAnswer(task.sourcePhrase||'')}`;
+  }
+  const item=q.item||{};
+  return `${q.actual}|${normalizeAnswer(item.sourcePhrase||q.correct||'')}|${normalizeAnswer(item.phrase||'')}`;
+}
+function sameQuestionFamily(a,b){
+  if(!a||!b)return false;
+  if(a.actual!==b.actual)return false;
+  if(questionKey(a)===questionKey(b))return true;
+  const ac=normalizeAnswer(a.correct||'');
+  const bc=normalizeAnswer(b.correct||'');
+  const as=a.findTask?normalizeAnswer(a.findTask.sourcePhrase||''):a.item?normalizeAnswer(a.item.sourcePhrase||''):'';
+  const bs=b.findTask?normalizeAnswer(b.findTask.sourcePhrase||''):b.item?normalizeAnswer(b.item.sourcePhrase||''):'';
+  return !!((ac&&ac===bc)||(as&&as===bs));
+}
+function arrangeQuestionsNoAdjacentRepeats(questions){
+  const pool=[...questions];
+  const arranged=[];
+  let guard=0;
+  while(pool.length&&guard<10000){
+    guard++;
+    let bestIndex=-1;
+    for(let i=0;i<pool.length;i++){
+      const candidate=pool[i];
+      const prev=arranged[arranged.length-1];
+      if(!sameQuestionFamily(prev,candidate)){
+        // Для смешанного режима стараемся ещё и не ставить подряд один тип,
+        // но только если есть альтернатива.
+        if(prev&&prev.actual===candidate.actual){
+          const hasDifferent=pool.some(x=>x.actual!==prev.actual&&!sameQuestionFamily(prev,x));
+          if(hasDifferent)continue;
+        }
+        bestIndex=i;
+        break;
+      }
+    }
+    if(bestIndex<0)bestIndex=0;
+    arranged.push(pool.splice(bestIndex,1)[0]);
+  }
+  return arranged;
+}
+function buildQuestionSet(mode,count){
+  if(mode==='fipi'){
+    return arrangeQuestionsNoAdjacentRepeats(sample(FIPI_TASKS,count).map(buildOfficialFipiQuestion));
+  }
+  if(mode==='mixed'){
+    const questions=[];
+    const usedPhrase=new Set();
+    const types=['meaning','phrase','synonym','error'];
+    let lastType='';
+    let guard=0;
+    while(questions.length<count&&guard<count*80){
+      guard++;
+      const availableTypes=shuffle(types).filter(type=>type!==lastType);
+      const type=(availableTypes[0]||shuffle(types)[0]);
+      const sourcePool=type==='error'?ERROR_DATA:DATA;
+      const pool=shuffle(sourcePool.filter(item=>!usedPhrase.has(item.sourcePhrase)));
+      if(!pool.length)continue;
+      const item=pool[0];
+      usedPhrase.add(item.sourcePhrase);
+      const q=buildQuestion(item,type);
+      if(q&&!sameQuestionFamily(questions[questions.length-1],q)){
+        questions.push(q);
+        lastType=q.actual;
+      }
+    }
+    while(questions.length<count){
+      const type=shuffle(types)[0];
+      const sourcePool=type==='error'?ERROR_DATA:DATA;
+      questions.push(buildQuestion(sample(sourcePool,1)[0],type));
+    }
+    return arrangeQuestionsNoAdjacentRepeats(questions.slice(0,count));
+  }
+  const sourcePool=mode==='error'?ERROR_DATA:DATA;
+  return arrangeQuestionsNoAdjacentRepeats(sample(sourcePool,count).map(item=>buildQuestion(item,mode)));
+}
+function renderEmptyFipiMode(){show('quizScreen');$('modeTitle').textContent=MODES.fipi;$('counter').textContent='0 / 0';$('score').textContent='0';$('progress').style.width='0';$('questionLabel').textContent='ЕГЭ: задание 25';$('questionText').textContent='Оригинальные задания ещё не загружены';$('questionHint').textContent='В этот режим нужно добавить тексты заданий из открытого банка: номер задания, диапазон предложений, нумерованный фрагмент и правильный ответ.';$('contextText').classList.add('hidden');$('answers').innerHTML='';$('feedback').className='feedback hidden';$('feedback').innerHTML='';$('prevBtn').disabled=true;$('nextBtn').disabled=true}
+function startQuiz(mode){savePreferences();const sourceCount=mode==='fipi'?FIPI_TASKS.length:(mode==='error'?ERROR_DATA.length:DATA.length);if(mode==='fipi'&&!sourceCount){state.mode=mode;state.questions=[];state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count:0};renderEmptyFipiMode();return}const rawCount=Number($('questionCount').value)||10;const minCount=mode==='fipi'?1:5;const count=Math.min(Math.max(minCount,rawCount),sourceCount);state.mode=mode;state.questions=buildQuestionSet(mode,count);state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count};show('quizScreen');renderQuestion()}function displayFindAnswer(q, ok){
+  if(!ok)return q.correct;
+  const userNorm=normalizeAnswer(q.userAnswer||'');
+  const candidates=[q.correct,...(q.accepted||[])].filter(Boolean);
+  return candidates.find(x=>normalizeAnswer(x)===userNorm)||q.userAnswer||q.correct;
+}
+function feedbackHtml(q, ok){
+  if(q.actual==='find'){
+    const sourcePhrase=q.findTask?.sourcePhrase||q.item?.sourcePhrase||'';
+    const definition=q.item?.definition?`<br>Значение: ${q.item.definition}.`:'';
+    const base=sourcePhrase&&sourcePhrase!==q.correct?`<br>Словарная форма: ${sourcePhrase}.`:'';
+    const shownAnswer=displayFindAnswer(q,ok);
+    return ok
+      ? `<strong>Правильно.</strong><br>Фразеологизм: <strong>${shownAnswer}</strong>.${base}${definition}`
+      : `<strong>Неверно.</strong><br>Правильный ответ: <strong>${q.correct}</strong>.${base}${definition}`;
+  }
+  if(ok){
+    if(q.actual==='meaning'){
+      return `<strong>Правильно.</strong><br>${q.item.sourcePhrase} — ${q.correct}.`;
+    }
+    if(q.actual==='phrase'){
+      return `<strong>Правильно.</strong><br>Ответ: <strong>${q.correct}</strong>.`;
+    }
+    if(q.actual==='error'){
+      const base=q.item.sourcePhrase!==q.correct?`<br>Словарная форма: ${q.item.sourcePhrase}.`:'';
+      return `<strong>Правильно.</strong><br>${q.correct} — ${q.item.definition}.${base}`;
+    }
+    if(q.actual==='synonym'){
+      return `<strong>Правильно.</strong><br>${q.item.sourcePhrase}: возможный синоним — <strong>${q.correct}</strong>.`;
+    }
+    return `<strong>Правильно.</strong>`;
+  }
+  if(q.actual==='meaning'){
+    return `<strong>Неверно.</strong><br>Правильный ответ: <strong>${q.correct}</strong>.`;
+  }
+  if(q.actual==='phrase'){
+    return `<strong>Неверно.</strong><br>Правильный ответ: <strong>${q.correct}</strong>.`;
+  }
+  if(q.actual==='error'){
+    const base=q.item.sourcePhrase!==q.correct?`<br>Словарная форма: ${q.item.sourcePhrase}.`:'';
+    return `<strong>Неверно.</strong><br>Правильный ответ для контекста: <strong>${q.correct}</strong>.<br>${q.correct} — ${q.item.definition}.${base}`;
+  }
+  if(q.actual==='synonym'){
+    return `<strong>Неверно.</strong><br>Возможный синоним: <strong>${q.correct}</strong>.<br>${q.item.sourcePhrase} — ${q.item.definition}.`;
+  }
+  return `<strong>Неверно.</strong><br>Правильный ответ: <strong>${q.correct}</strong>.`;
+}
+function renderQuestion(){const q=state.questions[state.index];state.answered=!!q.answered;$('modeTitle').textContent=MODES[state.mode];$('counter').textContent=`${state.index+1} / ${state.questions.length}`;$('score').textContent=state.score;updateProgress();$('questionLabel').textContent=q.label;$('questionText').textContent=q.prompt;$('questionHint').textContent=q.hint||'Выберите один правильный ответ.';$('feedback').className='feedback hidden';$('feedback').innerHTML='';$('prevBtn').disabled=state.index===0;$('nextBtn').disabled=!q.answered;if(q.context){$('contextText').textContent=q.context;$('contextText').classList.remove('hidden');q.actual==='find'?$('contextText').classList.add('find-context'):$('contextText').classList.remove('find-context')}else{$('contextText').classList.add('hidden');$('contextText').classList.remove('find-context')}$('answers').innerHTML='';
+      if(q.inputMode){
+        const wrap=document.createElement('div');
+        wrap.className='text-answer-wrap';
+        const input=document.createElement('input');
+        input.id='textAnswer';
+        input.type='text';
+        input.placeholder='Введите правильный фразеологизм';
+        input.autocomplete='off';
+        const check=document.createElement('button');
+        check.id='textCheckBtn';
+        check.textContent='Проверить';
+        check.onclick=checkTextAnswer;
+        input.addEventListener('keydown',e=>{if(e.key==='Enter')checkTextAnswer()});
+        wrap.appendChild(input);
+        wrap.appendChild(check);
+        $('answers').appendChild(wrap);
+        setTimeout(()=>input.focus(),0);
+      }else{
+        q.choices.forEach(choice=>{const b=document.createElement('button');b.className='answer';b.textContent=choice;b.onclick=()=>answer(choice,b);$('answers').appendChild(b)})
+      }
+      if(q.answered){
+        if(q.inputMode){
+          const input=$('textAnswer');
+          const button=$('textCheckBtn');
+          if(input){input.value=q.userAnswer||'';input.disabled=true}
+          if(button)button.disabled=true;
+        }else{
+          document.querySelectorAll('.answer').forEach(button=>{
+            button.disabled=true;
+            if(button.textContent===q.correct)button.classList.add('correct');
+            if(button.textContent===q.userAnswer&&!q.isCorrect)button.classList.add('wrong');
+          });
+        }
+        const fb=$('feedback');
+        fb.className=`feedback ${q.isCorrect?'good':'bad'}`;
+        fb.innerHTML=feedbackHtml(q,q.isCorrect);
+        $('nextBtn').disabled=false;
+      }
+    }function checkTextAnswer(){
+  const q=state.questions[state.index];
+  if(q.answered||state.answered)return;
+  const input=$('textAnswer');
+  const button=$('textCheckBtn');
+  const value=input?input.value:'';
+  let ok=false;
+  if(q.actual==='find'){
+    ok=normalizeFindAnswer(value)===normalizeFindAnswer(q.correct);
+  }else{
+    const accepted=(q.accepted||[q.correct]).map(normalizeAnswer);
+    ok=accepted.includes(normalizeAnswer(value));
+  }
+  state.answered=true;
+  q.answered=true;
+  q.isCorrect=ok;
+  q.userAnswer=value;
+  if(ok)state.score++;else state.mistakes.push(q);
+  if(input)input.disabled=true;
+  if(button)button.disabled=true;
+  const fb=$('feedback');
+  fb.className=`feedback ${ok?'good':'bad'}`;
+  fb.innerHTML=feedbackHtml(q,ok);
+  $('nextBtn').disabled=false;
+  $('score').textContent=state.score;
+  updateProgress();
+}
+function answer(choice,btn){
+  const q=state.questions[state.index];
+  if(q.answered||state.answered)return;
+  state.answered=true;
+  const ok=choice===q.correct;
+  q.answered=true;
+  q.isCorrect=ok;
+  q.userAnswer=choice;
+  if(ok)state.score++;else state.mistakes.push(q);
+  document.querySelectorAll('.answer').forEach(b=>{
+    b.disabled=true;
+    if(b.textContent===q.correct)b.classList.add('correct');
+  });
+  if(!ok)btn.classList.add('wrong');
+  const fb=$('feedback');
+  fb.className=`feedback ${ok?'good':'bad'}`;
+  fb.innerHTML=feedbackHtml(q,ok);
+  $('nextBtn').disabled=false;
+  $('score').textContent=state.score;
+  updateProgress();
+}
+function nextQuestion(){if(state.index<state.questions.length-1){state.index++;renderQuestion()}else showResult()}function previousQuestion(){if(state.index>0){state.index--;renderQuestion()}}function showResult(){
+  $('progress').style.width='100%';
+  show('resultScreen');
+  const total=state.questions.length;
+  const percent=total?Math.round((state.score/total)*100):0;
+  $('resultText').textContent=`${state.score} из ${total} · ${percent}%`;
+  const reviewBtn=$('reviewMistakesBtn');
+  if(reviewBtn){
+    reviewBtn.classList.toggle('hidden',!state.mistakes.length);
+    reviewBtn.disabled=!state.mistakes.length;
+  }
+  const list=$('mistakesList');
+  list.innerHTML='';
+  if(!state.mistakes.length){
+    const li=document.createElement('li');
+    li.textContent='Ошибок нет.';
+    list.appendChild(li);
+  }else state.mistakes.forEach(q=>{
+    const li=document.createElement('li');
+    li.innerHTML=q.actual==='find'?`<strong>${q.correct}</strong> — ${q.findTask?.instruction||q.item?.definition||'задание на поиск фразеологизма'}`:`<strong>${q.item.sourcePhrase}</strong> — ${q.item.definition}.`;
+    list.appendChild(li);
+  })
+}function getTeamCount(){
+  const input=$('teamCount');
+  const raw=Number(input?.value)||3;
+  return Math.max(2,Math.min(8,raw));
+}
+function setTeamCount(count){
+  count=Math.max(2,Math.min(8,Number(count)||3));
+  const input=$('teamCount');
+  if(input)input.value=count;
+  const old=Array.isArray(state.teamScores)?state.teamScores:[];
+  state.teamScores=Array.from({length:count},(_,i)=>Number(old[i])||0);
+  renderTeamBoard();
+}
+function setupTeams(){
+  setTeamCount(getTeamCount());
+}
+function renderTeamBoard(){
+  const board=$('teamBoard');
+  if(!board)return;
+  const display=$('teamCountDisplay');
+  if(display)display.textContent=state.teamScores.length;
+  board.innerHTML=state.teamScores.map((score,i)=>{
+    const n=i+1;
+    return `<div class="team">
+      <b>Команда ${n}</b>
+      <small>счёт</small>
+      <div class="team-score" id="teamScore${n}">${score}</div>
+      <div class="team-controls">
+        <button data-team="${n}" data-delta="1">+1</button>
+        <button class="ghost" data-team="${n}" data-delta="-1">−1</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function addTeam(){
+  setTeamCount((state.teamScores?.length||getTeamCount())+1);
+}
+function removeTeam(){
+  setTeamCount((state.teamScores?.length||getTeamCount())-1);
+}
+function resetTeamScores(){
+  state.teamScores=state.teamScores.map(()=>0);
+  renderTeamBoard();
+}
+
+function startTeamMode(){savePreferences();setupTeams();show('teamScreen');state.teamHistory=[];state.teamIndex=-1;nextTeamPhrase()}function buildTeamTask(item){
+  const type=shuffle(['meaning','phrase','synonym','error'])[0];
+  if(type==='meaning')return {
+    label:'Объясните значение',
+    prompt:item.sourcePhrase,
+    hint:'Команда должна объяснить значение фразеологизма своими словами.',
+    answer:`<strong>${item.sourcePhrase}</strong> — ${item.definition}.`
+  };
+  if(type==='phrase'){const options=shuffle([item.sourcePhrase,...sample(DATA.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)]);return {
+    label:'Назовите фразеологизм',
+    prompt:item.definition,
+    hint:'Команда должна выбрать фразеологизм по его значению.',
+    options,
+    answer:`Правильный ответ: <strong>${item.sourcePhrase}</strong>.`
+  }};
+  if(type==='synonym')return {
+    label:'Подберите синоним',
+    prompt:item.sourcePhrase,
+    hint:'Команда должна подобрать синоним.',
+    answer:`Возможный синоним: <strong>${item.synonym}</strong>.<br>${item.sourcePhrase} — ${item.definition}.`
+  };
+  if(type==='context'){const options=shuffle([item.sourcePhrase,...sample(DATA.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)]);return {
+    label:'Вставьте в предложение',
+    prompt:item.sentence,
+    hint:'Команда должна выбрать фразеологизм, который подходит по смыслу.',
+    options,
+    answer:`Правильный ответ: <strong>${item.sourcePhrase}</strong>.<br>Пример: ${item.sentence.replace('_____',`<strong>${item.phrase}</strong>`)}`
+  }};
+  return {
+    label:'Исправьте ошибку',
+    prompt:item.wrong,
+    hint:`Команда должна восстановить точную форму фразеологизма. Контекст: ${item.sentence}`,
+    answer:`Правильный ответ: <strong>${item.sourcePhrase}</strong>.<br>${item.sourcePhrase} — ${item.definition}.`
+  };
+}
+function renderTeamOptions(){
+  const box=$('teamOptions');
+  if(!box)return;
+  box.innerHTML='';
+  if(!state.teamTask.options||!state.teamTask.options.length){
+    box.classList.add('hidden');
+    return;
+  }
+  box.classList.remove('hidden');
+  const letters=['А','Б','В','Г'];
+  state.teamTask.options.forEach((option,i)=>{
+    const btn=document.createElement('button');
+    btn.className='team-option';
+    btn.textContent=`${letters[i]}. ${option}`;
+    if(state.teamTask.selectedOption===option)btn.classList.add('selected');
+    if(state.teamTask.revealed&&option===state.teamItem.sourcePhrase)btn.classList.add('correct');
+    btn.onclick=()=>{
+      state.teamTask.selectedOption=option;
+      document.querySelectorAll('.team-option').forEach(x=>x.classList.remove('selected'));
+      btn.classList.add('selected');
+    };
+    box.appendChild(btn);
+  });
+}
+function renderTeamTask(){
+  $('teamLabel').textContent=state.teamTask.label;
+  $('teamPhrase').textContent=state.teamTask.prompt;
+  $('teamHint').textContent=state.teamTask.hint;
+  $('teamAnswer').className=state.teamTask.revealed?'feedback good':'feedback hidden';
+  $('teamAnswer').innerHTML=state.teamTask.revealed?state.teamTask.answer:'';
+  $('prevTeamPhrase').disabled=state.teamIndex<=0;
+  renderTeamOptions();
+}
+function teamTaskKey(entry){
+  if(!entry)return '';
+  const item=entry.item||{};
+  const task=entry.task||{};
+  return `${task.label||''}|${normalizeAnswer(task.prompt||'')}|${normalizeAnswer(item.sourcePhrase||task.answer||'')}`;
+}
+function chooseNextTeamItem(){
+  const prev=state.teamHistory&&state.teamHistory.length?state.teamHistory[state.teamIndex]:null;
+  const prevKey=teamTaskKey(prev);
+  const pool=shuffle(DATA);
+  for(const item of pool){
+    const probe={item,task:{label:'',prompt:item.sourcePhrase,answer:item.sourcePhrase}};
+    const k=teamTaskKey(probe);
+    if(k!==prevKey&&normalizeAnswer(item.sourcePhrase)!==normalizeAnswer(prev?.item?.sourcePhrase||''))return item;
+  }
+  return sample(DATA,1)[0];
+}
+function nextTeamPhrase(){
+  const item=chooseNextTeamItem();
+  const task=buildTeamTask(item);
+  task.revealed=false;
+  task.selectedOption=null;
+  state.teamHistory=state.teamHistory.slice(0,state.teamIndex+1);
+  state.teamHistory.push({item,task});
+  state.teamIndex=state.teamHistory.length-1;
+  state.teamItem=item;
+  state.teamTask=task;
+  renderTeamTask();
+}
+function previousTeamPhrase(){
+  if(state.teamIndex<=0)return;
+  state.teamIndex--;
+  const entry=state.teamHistory[state.teamIndex];
+  state.teamItem=entry.item;
+  state.teamTask=entry.task;
+  renderTeamTask();
+}
+function revealTeamAnswer(){
+  if(!state.teamTask)return;
+  state.teamTask.revealed=true;
+  renderTeamTask();
+}
+function updateTeam(t,d){
+  const i=Number(t)-1;
+  if(!Number.isInteger(i)||i<0||i>=state.teamScores.length)return;
+  state.teamScores[i]=Math.max(0,state.teamScores[i]+Number(d));
+  const el=$(`teamScore${t}`);
+  if(el)el.textContent=state.teamScores[i];
+}
+loadPreferences();
+document.querySelectorAll('.mode-card').forEach(c=>c.onclick=()=>{const m=c.dataset.mode;m==='team'?startTeamMode():startQuiz(m)});
+$('nextBtn').onclick=nextQuestion;
+$('prevBtn').onclick=previousQuestion;
+$('stopBtn').onclick=showResult;
+$('siteHomeBtn').onclick=()=>{window.location.href='../'};
+$('homeBtn').onclick=()=>show('homeScreen');
+$('listBtn').onclick=()=>show('tableScreen');
+$('tableSearch').oninput=renderPhraseTable;
+$('clearTableSearch').onclick=()=>{$('tableSearch').value='';renderPhraseTable()};
+$('repeatBtn').onclick=()=>startQuiz(state.lastSettings?.mode||'meaning');
+$('reviewMistakesBtn').onclick=startMistakeReview;
+$('boardBtn').onclick=()=>{
+  const on=$('app').classList.toggle('board-mode');
+  $('boardBtn').textContent=on?'Обычный режим':'Крупный режим';
+  savePreferences();
+};
+$('nextTeamPhrase').onclick=nextTeamPhrase;
+$('prevTeamPhrase').onclick=previousTeamPhrase;
+$('revealTeamAnswer').onclick=revealTeamAnswer;
+$('resetTeams').onclick=resetTeamScores;
+$('teamBoard').onclick=e=>{const b=e.target.closest('button[data-team]');if(b)updateTeam(b.dataset.team,b.dataset.delta)};
+$('questionCount').addEventListener('change',savePreferences);
+$('teamCount').addEventListener('change',()=>{
+  savePreferences();
+  if(!document.getElementById('teamScreen').classList.contains('hidden'))setupTeams();
+});
+$('addTeamBtn').onclick=()=>{addTeam();savePreferences()};
+$('removeTeamBtn').onclick=()=>{removeTeam();savePreferences()};
+document.addEventListener('keydown',handleKeyboard);
+
+try{console.info('Диагностика тренажёра:', auditTrainerData());}catch(e){console.warn('Диагностика тренажёра недоступна:', e);}
+</script></body></html>
