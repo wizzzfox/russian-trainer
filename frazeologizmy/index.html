@@ -1707,15 +1707,66 @@ function buildOfficialFipiQuestion(task){
 function buildQuestion(item,mode){const actual=mode==='mixed'?shuffle(['meaning','phrase','synonym','error'])[0]:mode;const pool=DATA;let prompt='',label='',hint='',correct='',choices=[],context='';if(actual==='meaning'){label='Выберите значение';prompt=item.sourcePhrase;correct=item.definition;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.definition)]}if(actual==='phrase'){label='Выберите фразеологизм';prompt=item.definition;correct=item.sourcePhrase;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)]}if(actual==='synonym'){label='Выберите синоним';prompt=item.sourcePhrase;correct=item.synonym;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase&&x.synonym!==item.synonym),3).map(x=>x.synonym)]}if(actual==='context'){label='Вставьте в предложение';prompt='Какой фразеологизм нужен?';context=item.sentence;correct=item.sourcePhrase;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)];hint='Обратите внимание на смысл всего предложения.'}if(actual==='error'){label='Исправьте ошибку';prompt=item.wrong;correct=contextualErrorAnswer(item);choices=[];hint=`Контекст: ${item.sentence} Введите правильный фразеологизм в форме, подходящей к пропуску. Словарная форма тоже принимается. Регистр не важен, буквы Е/Ё считаются равными.`;return {item,actual,label,prompt,context,hint,correct,choices:[],inputMode:true,accepted:errorAcceptedVariants(item)}}return {item,actual,label,prompt,context,hint,correct,choices:shuffle(choices)}}
 function questionKey(q){
   if(!q)return '';
+  const exampleKeys=questionExampleKeys(q).join('|');
   if(q.actual==='find'){
     const task=q.findTask||{};
-    return `${q.actual}|${task.id||''}|${normalizeAnswer(q.correct||'')}|${normalizeAnswer(task.sourcePhrase||'')}`;
+    return `${q.actual}|${task.id||''}|${exampleKeys}`;
   }
-  const item=q.item||{};
-  return `${q.actual}|${normalizeAnswer(item.sourcePhrase||q.correct||'')}|${normalizeAnswer(item.phrase||'')}`;
+  return `${q.actual}|${exampleKeys}`;
+}
+function addExampleKey(keys,value){
+  const key=normalizeAnswer(value||'');
+  if(key)keys.add(key);
+}
+function itemExampleKeys(item){
+  const keys=new Set();
+  if(!item)return [];
+  sourceVariants(item).forEach(value=>addExampleKey(keys,value));
+  addExampleKey(keys,item.sourcePhrase);
+  addExampleKey(keys,item.phrase);
+  return [...keys];
+}
+function questionExampleKeys(q){
+  const keys=new Set();
+  if(!q)return [];
+  if(q.actual==='find'){
+    const task=q.findTask||{};
+    findTaskAnswers(task).forEach(answer=>addExampleKey(keys,answer));
+    (q.correctAnswers||[]).forEach(answer=>addExampleKey(keys,answer));
+    addExampleKey(keys,q.correct);
+    addExampleKey(keys,task.answer);
+    addExampleKey(keys,task.sourcePhrase);
+    return [...keys];
+  }
+  itemExampleKeys(q.item).forEach(key=>keys.add(key));
+  return [...keys];
+}
+function questionsShareExample(a,b){
+  const aKeys=questionExampleKeys(a);
+  if(!aKeys.length)return false;
+  const bKeys=new Set(questionExampleKeys(b));
+  return aKeys.some(key=>bKeys.has(key));
+}
+function hasUsedQuestionExample(q,usedExamples){
+  return questionExampleKeys(q).some(key=>usedExamples.has(key));
+}
+function rememberQuestionExample(q,usedExamples){
+  questionExampleKeys(q).forEach(key=>usedExamples.add(key));
+}
+function selectUniqueQuestions(questions,count){
+  const selected=[];
+  const usedExamples=new Set();
+  for(const q of questions){
+    if(!q||hasUsedQuestionExample(q,usedExamples))continue;
+    selected.push(q);
+    rememberQuestionExample(q,usedExamples);
+    if(selected.length>=count)break;
+  }
+  return selected;
 }
 function sameQuestionFamily(a,b){
   if(!a||!b)return false;
+  if(questionsShareExample(a,b))return true;
   if(a.actual!==b.actual)return false;
   if(questionKey(a)===questionKey(b))return true;
   const ac=normalizeAnswer(a.correct||'');
@@ -1752,11 +1803,11 @@ function arrangeQuestionsNoAdjacentRepeats(questions){
 }
 function buildQuestionSet(mode,count){
   if(mode==='fipi'){
-    return arrangeQuestionsNoAdjacentRepeats(sample(FIPI_TASKS,count).map(buildOfficialFipiQuestion));
+    return arrangeQuestionsNoAdjacentRepeats(selectUniqueQuestions(shuffle(FIPI_TASKS).map(buildOfficialFipiQuestion),count));
   }
   if(mode==='mixed'){
     const questions=[];
-    const usedPhrase=new Set();
+    const usedExamples=new Set();
     const types=['meaning','phrase','synonym','error'];
     let lastType='';
     let guard=0;
@@ -1765,25 +1816,38 @@ function buildQuestionSet(mode,count){
       const availableTypes=shuffle(types).filter(type=>type!==lastType);
       const type=(availableTypes[0]||shuffle(types)[0]);
       const sourcePool=type==='error'?ERROR_DATA:DATA;
-      const pool=shuffle(sourcePool.filter(item=>!usedPhrase.has(item.sourcePhrase)));
+      const pool=shuffle(sourcePool.filter(item=>!itemExampleKeys(item).some(key=>usedExamples.has(key))));
       if(!pool.length)continue;
       const item=pool[0];
-      usedPhrase.add(item.sourcePhrase);
       const q=buildQuestion(item,type);
-      if(q&&!sameQuestionFamily(questions[questions.length-1],q)){
+      if(q&&!hasUsedQuestionExample(q,usedExamples)&&!sameQuestionFamily(questions[questions.length-1],q)){
         questions.push(q);
+        rememberQuestionExample(q,usedExamples);
         lastType=q.actual;
       }
     }
-    while(questions.length<count){
+    let fallbackGuard=0;
+    while(questions.length<count&&fallbackGuard<count*80){
+      fallbackGuard++;
       const type=shuffle(types)[0];
       const sourcePool=type==='error'?ERROR_DATA:DATA;
-      questions.push(buildQuestion(sample(sourcePool,1)[0],type));
+      const pool=shuffle(sourcePool);
+      let added=false;
+      for(const item of pool){
+        const q=buildQuestion(item,type);
+        if(q&&!hasUsedQuestionExample(q,usedExamples)){
+          questions.push(q);
+          rememberQuestionExample(q,usedExamples);
+          added=true;
+          break;
+        }
+      }
+      if(!added)break;
     }
     return arrangeQuestionsNoAdjacentRepeats(questions.slice(0,count));
   }
   const sourcePool=mode==='error'?ERROR_DATA:DATA;
-  return arrangeQuestionsNoAdjacentRepeats(sample(sourcePool,count).map(item=>buildQuestion(item,mode)));
+  return arrangeQuestionsNoAdjacentRepeats(selectUniqueQuestions(shuffle(sourcePool).map(item=>buildQuestion(item,mode)),count));
 }
 function renderEmptyFipiMode(){show('quizScreen');$('modeTitle').textContent=MODES.fipi;$('counter').textContent='0 / 0';$('score').textContent='0';$('progress').style.width='0';$('questionLabel').textContent='ЕГЭ: задание 25';$('questionText').textContent='Оригинальные задания ещё не загружены';$('questionHint').textContent='В этот режим нужно добавить тексты заданий из открытого банка: номер задания, диапазон предложений, нумерованный фрагмент и правильный ответ.';$('contextText').classList.add('hidden');$('answers').innerHTML='';$('feedback').className='feedback hidden';$('feedback').innerHTML='';$('prevBtn').disabled=true;$('nextBtn').disabled=true}
 function startQuiz(mode){savePreferences();const sourceCount=mode==='fipi'?FIPI_TASKS.length:(mode==='error'?ERROR_DATA.length:DATA.length);if(mode==='fipi'&&!sourceCount){state.mode=mode;state.questions=[];state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count:0};renderEmptyFipiMode();return}const rawCount=Number($('questionCount').value)||10;const minCount=mode==='fipi'?1:5;const count=Math.min(Math.max(minCount,rawCount),sourceCount);state.mode=mode;state.questions=buildQuestionSet(mode,count);state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count};show('quizScreen');renderQuestion()}function displayFindAnswer(q, ok){
