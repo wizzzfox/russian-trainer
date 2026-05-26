@@ -1,1 +1,648 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ударения — интерактивный тренажёр</title>
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --text:#101828;
+      --muted:#667085;
+      --line:#d7deea;
+      --primary:#1f6feb;
+      --primary-dark:#195cc4;
+      --accent:#0f766e;
+      --good:#067647;
+      --bad:#b42318;
+      --soft-blue:#eef4ff;
+      --soft-green:#ecfdf3;
+      --soft-red:#fef3f2;
+      --shadow:0 8px 22px rgba(31,41,55,.07);
+    }
+    *{box-sizing:border-box;letter-spacing:0!important}
+    html{background:var(--bg)}
+    body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+    .app{width:min(1120px,100%);margin:0 auto;padding:24px}
+    .hidden{display:none!important}
+    header{display:grid;grid-template-columns:1fr;gap:18px;align-items:start;margin-bottom:22px;padding:0 0 18px;border-bottom:1px solid var(--line)}
+    h1{margin:0 0 8px;color:var(--text);font-size:56px;line-height:1.04;font-weight:900}
+    .subtitle{max-width:800px;margin:0 0 8px;color:#344054;font-size:20px;line-height:1.35;font-weight:720}
+    .school,.muted,footer{color:var(--muted)}
+    .top-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0}
+    button{border:0;border-radius:8px;padding:11px 15px;font:inherit;font-weight:750;line-height:1.15;cursor:pointer;background:var(--primary);color:#fff;box-shadow:none;transition:background .14s ease,border-color .14s ease,transform .14s ease}
+    button:hover{background:var(--primary-dark);transform:translateY(-1px)}
+    button:disabled{opacity:.58;cursor:not-allowed;transform:none}
+    button:focus-visible,input:focus-visible{outline:3px solid rgba(31,111,235,.22);outline-offset:3px}
+    .ghost,.danger-ghost{background:#fff;border:1px solid var(--line);color:#1d2939}
+    .ghost:hover{background:#f2f6fc}
+    .danger-ghost{color:var(--bad)}
+    .danger-ghost:hover{background:var(--soft-red);color:var(--bad)}
+    main>.panel{background:transparent;border:0;box-shadow:none;padding:0}
+    .panel,.question-card,.result-box,.team-card{background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow)}
+    .panel,.question-card{padding:24px}
+    #homeScreen h2,#dictionaryScreen h2,#trendsScreen h2,#resultScreen h2{margin-top:0!important;color:var(--text);font-size:28px!important;line-height:1.2}
+    .settings-row{display:grid;grid-template-columns:repeat(2,minmax(170px,220px));gap:12px;margin-top:18px}
+    .settings-row label{padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;color:#475467}
+    input{border:1px solid #cbd5e1;border-radius:8px;background:#fff;color:var(--text);box-shadow:none;font:inherit}
+    input[type=number]{width:120px;padding:10px 12px}
+    .mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+    .mode-card{min-height:152px;padding:20px;text-align:left;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--text);box-shadow:none}
+    .mode-card:hover{background:#f8fbff;border-color:#8bb6f9;box-shadow:none;transform:translateY(-2px)}
+    .mode-card h2{margin:0 0 8px;color:var(--text);font-size:22px;line-height:1.18}
+    .mode-card p{margin:0;color:var(--muted);font-size:15.5px;line-height:1.45}
+    .quick-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+    .quick-panel{padding:18px;border:1px solid var(--line);border-radius:8px;background:#fff}
+    .quick-panel h3{margin:0 0 8px;font-size:20px}
+    .quick-panel p{margin:0;color:var(--muted);line-height:1.45}
+    .quiz-topline{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px;color:#475467;font-weight:650}
+    .progress-wrap{height:8px;margin-bottom:16px;background:#e7edf5;border-radius:999px;overflow:hidden}
+    .progress{height:100%;width:0;background:var(--primary);border-radius:999px;transition:width .2s}
+    .question-label{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:var(--soft-blue);color:var(--primary-dark);text-transform:uppercase;font-size:12px;font-weight:850}
+    .question{margin:10px 0 18px;color:var(--text);font-size:38px;line-height:1.14;font-weight:900}
+    .context{margin:0 0 18px;padding:18px;background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #84c5bd;border-radius:8px;color:var(--text);font-size:20px;line-height:1.45}
+    .hint{margin:0 0 20px;color:var(--muted);font-size:16px;line-height:1.45}
+    .answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch;margin-top:18px}
+    .answer{min-height:64px;display:flex;align-items:center;text-align:left;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--text);box-shadow:none;font-weight:650;line-height:1.25}
+    .answer:hover{background:#f8fbff;border-color:#8bb6f9;box-shadow:none}
+    .answer.correct{background:var(--soft-green);border-color:#75e0a7;color:var(--good)}
+    .answer.wrong{background:var(--soft-red);border-color:#fda29b;color:var(--bad)}
+    .feedback{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:8px;background:#f8fafc;color:var(--text);line-height:1.45;font-size:17px}
+    .feedback.good{background:var(--soft-green);border-color:#75e0a7}
+    .feedback.bad{background:var(--soft-red);border-color:#fda29b}
+    .quiz-actions{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:12px;margin-top:18px}
+    .quiz-actions #stopBtn{justify-self:start}
+    .quiz-actions #prevBtn{justify-self:center}
+    .quiz-actions #nextBtn{justify-self:end}
+    .result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start;margin-top:18px}
+    .result-box{padding:18px}
+    .result-box h3{color:var(--text)}
+    #repeatBtn,#reviewMistakesBtn{width:100%}
+    #reviewMistakesBtn{margin-top:12px;background:var(--accent)}
+    #reviewMistakesBtn:hover{background:#115e59}
+    .tools{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:12px;align-items:center;margin:16px 0}
+    .tools input{min-width:0;padding:13px 16px}
+    .count{color:var(--muted);font-size:14px}
+    .table-wrap{overflow:auto;max-height:68vh;background:#fff;border:1px solid var(--line);border-radius:8px}
+    table{width:100%;min-width:760px;border-collapse:collapse}
+    th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{position:sticky;top:0;z-index:1;background:#f2f4f7;color:var(--muted);font-size:13px;text-transform:uppercase}
+    td:first-child{font-weight:850;color:var(--text)}
+    tr:hover td{background:#f8fafc}
+    .trend-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .trend-card{padding:18px;border:1px solid var(--line);border-radius:8px;background:#fff}
+    .trend-card h3{margin:0 0 8px;color:var(--text)}
+    .trend-card p{margin:0 0 10px;color:var(--muted);line-height:1.45}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{display:inline-flex;padding:6px 9px;border-radius:999px;background:var(--soft-blue);color:var(--primary-dark);font-size:14px;font-weight:750}
+    footer{margin-top:24px;padding:16px 0 0;border-top:1px solid var(--line);font-size:13px;line-height:1.45}
+    .board-mode{width:min(1420px,100%)}
+    .board-mode h1{font-size:68px}
+    .board-mode .subtitle{font-size:28px;max-width:1100px}
+    .board-mode .mode-grid,.board-mode .trend-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .board-mode .mode-card{min-height:170px;padding:26px}
+    .board-mode .mode-card h2{font-size:30px}
+    .board-mode .mode-card p,.board-mode .hint,.board-mode .quiz-topline{font-size:22px}
+    .board-mode .question{font-size:64px}
+    .board-mode .answer{min-height:104px;padding:24px;font-size:28px}
+    .board-mode .feedback{padding:26px;font-size:26px}
+    .board-mode button{font-size:22px;padding:16px 22px}
+    .board-mode footer{display:none}
+    @media(max-width:920px){
+      .top-actions{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+      .mode-grid,.trend-grid,.quick-panels{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:680px){
+      .app{padding:14px}
+      h1{font-size:38px}
+      .subtitle{font-size:17px}
+      .top-actions,.mode-grid,.answers,.result-grid,.settings-row,.tools,.quiz-actions,.trend-grid,.quick-panels{grid-template-columns:1fr}
+      .quiz-actions #stopBtn,.quiz-actions #prevBtn,.quiz-actions #nextBtn{justify-self:stretch}
+      .question{font-size:28px}
+      .mode-card{min-height:132px}
+    }
+  </style>
+</head>
+<body>
+  <div class="app" id="app">
+    <header>
+      <div>
+        <h1>Ударения</h1>
+        <p class="subtitle">Словник с ударениями, основные тенденции русского ударения и тренировка задания 4 ЕГЭ.</p>
+        <p class="school">ГБОУ СОШ № 323 Невского района Санкт-Петербурга</p>
+      </div>
+      <div class="top-actions">
+        <button class="ghost" id="siteHomeBtn">Все тренажёры</button>
+        <button class="ghost" id="homeBtn">Главный экран</button>
+        <button class="ghost" id="dictionaryBtn">Словник</button>
+        <button class="ghost" id="trendsBtn">Тенденции</button>
+        <button class="ghost" id="boardBtn">Крупный режим</button>
+      </div>
+    </header>
 
+    <main>
+      <section class="panel" id="homeScreen">
+        <h2>Выберите режим</h2>
+        <div class="settings-row">
+          <label class="muted">Количество вопросов<br><input type="number" id="questionCount" value="10" min="5" max="50"></label>
+        </div>
+        <div class="mode-grid">
+          <button class="mode-card" data-mode="stress"><h2>Поставь ударение</h2><p>Дано слово без ударения. Нужно выбрать правильный вариант.</p></button>
+          <button class="mode-card" data-mode="mistake"><h2>Найди ошибку</h2><p>Среди четырёх слов нужно найти вариант с неверным ударением.</p></button>
+          <button class="mode-card" data-mode="trend"><h2>По тенденциям</h2><p>Правила и закономерности: глаголы, причастия, наречия, существительные.</p></button>
+          <button class="mode-card" data-mode="mixed"><h2>Смешанный режим</h2><p>Ударения, ошибки и тенденции вперемешку.</p></button>
+        </div>
+        <div class="quick-panels">
+          <article class="quick-panel"><h3>Словник</h3><p>Все слова из раздела с поиском по слову, части речи и правилу.</p></article>
+          <article class="quick-panel"><h3>Тенденции</h3><p>Короткая теория по основным закономерностям русского ударения.</p></article>
+        </div>
+      </section>
+
+      <section class="hidden" id="quizScreen">
+        <div class="quiz-topline"><div id="modeTitle">Режим</div><div><span id="counter">1 / 10</span> · баллы: <strong id="score">0</strong></div></div>
+        <div class="progress-wrap"><div class="progress" id="progress"></div></div>
+        <div class="question-card">
+          <div class="question-label" id="questionLabel">Вопрос</div>
+          <h2 class="question" id="questionText"></h2>
+          <p class="context hidden" id="contextText"></p>
+          <p class="hint" id="questionHint"></p>
+          <div class="answers" id="answers"></div>
+          <div class="feedback hidden" id="feedback"></div>
+          <div class="quiz-actions">
+            <button class="ghost" id="stopBtn">Завершить</button>
+            <button class="ghost" id="prevBtn" disabled>Назад</button>
+            <button id="nextBtn" disabled>Дальше</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel hidden" id="resultScreen">
+        <h2>Результат</h2>
+        <div class="result-grid">
+          <div class="result-box"><h3>Итог</h3><p id="resultText" style="font-size:24px;font-weight:900"></p><button id="repeatBtn">Новая тренировка</button><button class="hidden" id="reviewMistakesBtn">Отработать ошибки</button></div>
+          <div class="result-box"><h3>Ошибки для разбора</h3><ol class="muted" id="mistakesList"></ol></div>
+        </div>
+      </section>
+
+      <section class="panel hidden" id="dictionaryScreen">
+        <h2>Словник ударений</h2>
+        <p class="muted">Ударная гласная выделена заглавной буквой. Буква Ё всегда ударная.</p>
+        <div class="tools">
+          <input type="text" id="dictionarySearch" placeholder="Поиск по слову, части речи или правилу">
+          <button class="ghost" id="clearDictionarySearch">Очистить</button>
+        </div>
+        <div class="count" id="dictionaryCount"></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Слово</th><th>Без ударения</th><th>Раздел</th><th>Тенденция</th></tr></thead>
+            <tbody id="dictionaryBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel hidden" id="trendsScreen">
+        <h2>Основные тенденции</h2>
+        <div class="trend-grid" id="trendGrid"></div>
+      </section>
+    </main>
+
+    <footer>© 2026 ГБОУ СОШ № 323 Невского района Санкт-Петербурга. Раздел составлен по предоставленному словнику «Все ударения для ЕГЭ 2025» для самостоятельной подготовки к заданию 4 ЕГЭ.</footer>
+  </div>
+
+  <script>
+const RAW_WORDS = `accent|category|rule
+вручИть|глагол|Глаголы на -ИТЬ
+вручИт|глагол|Глаголы на -ИТЬ
+защемИть|глагол|Глаголы на -ИТЬ
+защемИт|глагол|Глаголы на -ИТЬ
+звонИть|глагол|Глаголы на -ИТЬ
+звонИт|глагол|Глаголы на -ИТЬ
+обзвонИт|глагол|Глаголы на -ИТЬ
+перезвонИт|глагол|Глаголы на -ИТЬ
+дозвонИтся|глагол|Глаголы на -ИТЬ
+позвонИт|глагол|Глаголы на -ИТЬ
+кровоточИт|глагол|Глаголы на -ИТЬ
+наделИть|глагол|Глаголы на -ИТЬ
+наделИт|глагол|Глаголы на -ИТЬ
+накренИться|глагол|Глаголы на -ИТЬ
+накренИтся|глагол|Глаголы на -ИТЬ
+облегчИть|глагол|Глаголы на -ИТЬ
+облегчИт|глагол|Глаголы на -ИТЬ
+ободрИть|глагол|Глаголы на -ИТЬ
+ободрИт|глагол|Глаголы на -ИТЬ
+ободрИться|глагол|Глаголы на -ИТЬ
+обострИть|глагол|Глаголы на -ИТЬ
+одолжИть|глагол|Глаголы на -ИТЬ
+окружИть|глагол|Глаголы на -ИТЬ
+окружИт|глагол|Глаголы на -ИТЬ
+плодоносИть|глагол|Глаголы на -ИТЬ
+повторИть|глагол|Глаголы на -ИТЬ
+повторИт|глагол|Глаголы на -ИТЬ
+положИл|глагол|Глаголы на -ИТЬ
+сверлИть|глагол|Глаголы на -ИТЬ
+сверлИт|глагол|Глаголы на -ИТЬ
+сорИть|глагол|Глаголы на -ИТЬ
+сорИт|глагол|Глаголы на -ИТЬ
+углубИть|глагол|Глаголы на -ИТЬ
+укрепИть|глагол|Глаголы на -ИТЬ
+укрепИт|глагол|Глаголы на -ИТЬ
+щемИть|глагол|Глаголы на -ИТЬ
+щемИт|глагол|Глаголы на -ИТЬ
+закУпорить|глагол|Исключения и остатки
+откУпорить|глагол|Исключения и остатки
+клЕить|глагол|Исключения и остатки
+оклЕить|глагол|Исключения и остатки
+озлОбить|глагол|Исключения и остатки
+опОшлить|глагол|Исключения и остатки
+освЕдомиться|глагол|Исключения и остатки
+освЕдомится|глагол|Исключения и остатки
+запломбировАть|глагол|Глаголы на -АТЬ
+пломбировАть|глагол|Глаголы на -АТЬ
+дозИровать|глагол|Исключения и остатки
+чЕрпать|глагол|Исключения и остатки
+щЁлкать|глагол|Исключения и остатки
+бралА|глагол|Женский род прошедшего времени
+бралАсь|глагол|Женский род прошедшего времени
+взялА|глагол|Женский род прошедшего времени
+взялАсь|глагол|Женский род прошедшего времени
+влилАсь|глагол|Женский род прошедшего времени
+ворвалАсь|глагол|Женский род прошедшего времени
+воспринялА|глагол|Женский род прошедшего времени
+воссоздалА|глагол|Женский род прошедшего времени
+гналА|глагол|Женский род прошедшего времени
+добралА|глагол|Женский род прошедшего времени
+добралАсь|глагол|Женский род прошедшего времени
+дождалАсь|глагол|Женский род прошедшего времени
+ждалА|глагол|Женский род прошедшего времени
+занялА|глагол|Женский род прошедшего времени
+заперлА|глагол|Женский род прошедшего времени
+клАла|глагол|Исключения и остатки
+послАла|глагол|Исключения и остатки
+крАлась|глагол|Исключения и остатки
+звалА|глагол|Женский род прошедшего времени
+лгалА|глагол|Женский род прошедшего времени
+лилА|глагол|Женский род прошедшего времени
+лилАсь|глагол|Женский род прошедшего времени
+налилА|глагол|Женский род прошедшего времени
+облилА|глагол|Женский род прошедшего времени
+перелилА|глагол|Женский род прошедшего времени
+полилА|глагол|Женский род прошедшего времени
+навралА|глагол|Женский род прошедшего времени
+надорвалАсь|глагол|Женский род прошедшего времени
+назвалАсь|глагол|Женский род прошедшего времени
+нарвалА|глагол|Женский род прошедшего времени
+началА|глагол|Женский род прошедшего времени
+обнялАсь|глагол|Женский род прошедшего времени
+обогналА|глагол|Женский род прошедшего времени
+ободралА|глагол|Женский род прошедшего времени
+отбылА|глагол|Женский род прошедшего времени
+отдалА|глагол|Женский род прошедшего времени
+отозвалА|глагол|Женский род прошедшего времени
+отозвалАсь|глагол|Женский род прошедшего времени
+позвалА|глагол|Женский род прошедшего времени
+поднялА|глагол|Женский род прошедшего времени
+прибылА|глагол|Женский род прошедшего времени
+принялА|глагол|Женский род прошедшего времени
+рвалА|глагол|Женский род прошедшего времени
+снялА|глагол|Женский род прошедшего времени
+совралА|глагол|Женский род прошедшего времени
+создалА|глагол|Женский род прошедшего времени
+сорвалА|глагол|Женский род прошедшего времени
+убралА|глагол|Женский род прошедшего времени
+жилОсь|глагол|Исключения и остатки
+кАшлянуть|глагол|Исключения и остатки
+зАнял|глагол|Мужской род и множественное число
+зАняли|глагол|Мужской род и множественное число
+нАчал|глагол|Мужской род и множественное число
+нАчали|глагол|Мужской род и множественное число
+прИбыл|глагол|Мужской род и множественное число
+прИбыли|глагол|Мужской род и множественное число
+прИнял|глагол|Мужской род и множественное число
+прИняли|глагол|Мужской род и множественное число
+закУпорив|деепричастие|Инфинитив = деепричастие
+начАв|деепричастие|Инфинитив = деепричастие
+начАвшись|деепричастие|Инфинитив = деепричастие
+отдАв|деепричастие|Инфинитив = деепричастие
+поднЯв|деепричастие|Инфинитив = деепричастие
+понЯв|деепричастие|Инфинитив = деепричастие
+прибЫв|деепричастие|Инфинитив = деепричастие
+создАв|деепричастие|Инфинитив = деепричастие
+дОверху|наречие|ДО-, но донельзя
+дОнизу|наречие|ДО-, но донельзя
+дОсуха|наречие|ДО-, но донельзя
+донЕльзя|наречие|ДО-, но донельзя
+зАтемно|наречие|ЗА-
+зАсветло|наречие|ЗА-
+вОвремя|наречие|Исключения и остатки
+надОлго|наречие|Исключения и остатки
+ненадОлго|наречие|Исключения и остатки
+красИвее|наречие|Как в производящем слове
+довезЁнный|причастие|ЁНН
+заселЁнный|причастие|ЁНН
+низведЁнный|причастие|ЁНН
+облегчЁнный|причастие|ЁНН
+ободрЁнный|причастие|ЁНН
+обострЁнный|причастие|ЁНН
+отключЁнный|причастие|ЁНН
+повторЁнный|причастие|ЁНН
+поделЁнный|причастие|ЁНН
+приручЁнный|причастие|ЁНН
+углублЁнный|причастие|ЁНН
+занятА|причастие|Краткая форма женского рода
+заселенА|причастие|Краткая форма женского рода
+принятА|причастие|Краткая форма женского рода
+снятА|причастие|Краткая форма женского рода
+зАпертый|причастие|ЗА-
+зАнятый|причастие|ЗА-
+зАгнутый|причастие|ЗА-
+сОгнутый|причастие|Исключения и остатки
+кормЯщий|причастие|-АЩ-, -ЯЩ-
+кровоточАщий|причастие|-АЩ-, -ЯЩ-
+нажИвший|причастие|Перед -ВШ-
+налИвший|причастие|Перед -ВШ-
+нанЯвшийся|причастие|Перед -ВШ-
+начАвший|причастие|Перед -ВШ-
+нАчатый|причастие|Исключения и остатки
+понЯвший|причастие|Перед -ВШ-
+прожИвший|причастие|Перед -ВШ-
+ловкА|прилагательное|Краткая форма женского рода
+вернА|прилагательное|Краткая форма женского рода
+прозорлИва|прилагательное|Исключения и остатки
+знАчимый|прилагательное|Как в производящем слове
+красИвый|прилагательное|Как в производящем слове
+кУхонный|прилагательное|Как в производящем слове
+слИвовый|прилагательное|Как в производящем слове
+мозаИчный|прилагательное|Исключения и остатки
+оптОвый|прилагательное|Исключения и остатки
+жалюзИ|существительное|Иноязычные слова
+диспансЕр|существительное|Иноязычные слова
+партЕр|существительное|Иноязычные слова
+еретИк|существительное|Иноязычные слова
+дефИс|существительное|Иноязычные слова
+бАнты|существительное|Статичное ударение
+шАрфы|существительное|Статичное ударение
+крАны|существительное|Статичное ударение
+лЕкторы|существительное|Статичное ударение
+тУфля|существительное|Статичное ударение
+Иксы|существительное|Статичное ударение
+тОрты|существительное|Статичное ударение
+Отрочество|существительное|Статичное ударение
+срЕдства|существительное|Статичное ударение
+кОнус|существительное|Статичное ударение
+кОнусов|существительное|Статичное ударение
+водопровОд|существительное|-провод
+газопровОд|существительное|-провод
+нефтепровОд|существительное|-провод
+каталОг|существительное|-лог
+некролОг|существительное|-лог
+свЁкла|существительное|Ё
+шофЁр|существительное|Ё
+договорЁнность|существительное|Ё
+сосредотОчение|существительное|Как в производящем слове
+вероисповЕдание|существительное|Как в производящем слове
+мЕстностей|существительное|Как в производящем слове
+намЕрение|существительное|Как в производящем слове
+бородА|существительное|Подвижное ударение
+бОроду|существительное|Подвижное ударение
+лОктя|существительное|Подвижное ударение
+локтЕй|существительное|Подвижное ударение
+нОгтя|существительное|Подвижное ударение
+ногтЕй|существительное|Подвижное ударение
+сиротА|существительное|Подвижное ударение
+сирОты|существительное|Подвижное ударение
+Отзыв|существительное|Разные значения
+отзЫв|существительное|Разные значения
+нОвость|существительное|Подвижное ударение
+новостЕй|существительное|Подвижное ударение
+нЕдруг|существительное|Первый слог
+пОручни|существительное|Первый слог
+цЕнтнер|существительное|Первый слог
+квартАл|существительное|Второй слог
+корЫсть|существительное|Второй слог
+кремЕнь|существительное|Второй слог
+кремнЯ|существительное|Второй слог
+ремЕнь|существительное|Второй слог
+ремнЯ|существительное|Второй слог
+бухгАлтер|существительное|Второй слог
+бухгАлтеров|существительное|Второй слог
+досУг|существительное|Второй слог
+нарОст|существительное|Второй слог
+недУг|существительное|Второй слог
+придАное|существительное|Второй слог
+призЫв|существительное|Второй слог
+созЫв|существительное|Второй слог
+столЯр|существительное|Второй слог
+цепОчка|существительное|Второй слог
+аэропОрты|существительное|Третий и следующие слоги
+киломЕтр|существительное|Третий и следующие слоги
+дешевИзна|существительное|Третий и следующие слоги
+докумЕнт|существительное|Третий и следующие слоги
+знАчимость|существительное|Третий и следующие слоги
+нЕнависть|существительное|Третий и следующие слоги
+стАтуя|существительное|Третий и следующие слоги
+граждАнство|существительное|Третий и следующие слоги
+лыжнЯ|существительное|Третий и следующие слоги
+портфЕль|существительное|Третий и следующие слоги
+тамОжня|существительное|Третий и следующие слоги
+цемЕнт|существительное|Третий и следующие слоги
+экспЕрт|существительное|Третий и следующие слоги`;
+
+const TRENDS = [
+  {title:'Особенности русского ударения', text:'Русское ударение свободное, подвижное, меняется со временем и иногда допускает варианты.', examples:['твОрог / творОг','подвижность','свобода']},
+  {title:'Глаголы на -ИТЬ', text:'Во многих глаголах на -ить и их формах ударение держится на И.', examples:['звонИть','облегчИт','укрепИт']},
+  {title:'Глаголы женского рода', text:'В форме женского рода прошедшего времени ударение часто переходит на окончание.', examples:['бралА','занялА','принялА']},
+  {title:'Деепричастия', text:'Часто сохраняют ударение инфинитива.', examples:['начАть — начАв','поднЯть — поднЯв','создАть — создАв']},
+  {title:'Наречия', text:'Есть устойчивые группы: ДО-, ЗА- и отдельные остаточные формы.', examples:['дОверху','зАтемно','вОвремя']},
+  {title:'Причастия и отглагольные прилагательные', text:'ЁНН ударно; в краткой форме женского рода часто ударное окончание.', examples:['облегчЁнный','занятА','снятА']},
+  {title:'Прилагательные', text:'В краткой форме женского рода часто ударение на окончании; производные часто сохраняют ударение исходного слова.', examples:['ловкА','знАчимый','красИвый']},
+  {title:'Существительные', text:'Часть слов надо держать как словарные: иноязычные, -провод, -лог, слова с Ё и подвижным ударением.', examples:['жалюзИ','водопровОд','каталОг','свЁкла']}
+];
+
+const WORDS = RAW_WORDS.trim().split(/\n+/).slice(1).map(line=>{
+  const [accent,category,rule]=line.split('|').map(x=>x.trim());
+  return {accent,plain:plainWord(accent),category,rule};
+});
+const MODES={stress:'Поставь ударение',mistake:'Найди ошибку',trend:'По тенденциям',mixed:'Смешанный режим'};
+let state={mode:'stress',questions:[],index:0,score:0,answered:false,mistakes:[],lastSettings:null};
+const $=id=>document.getElementById(id);
+const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+const sample=(a,n)=>shuffle(a).slice(0,n);
+function plainWord(word){return word.toLocaleLowerCase('ru-RU').replaceAll('ё','е')}
+function removeStress(word){return word.toLocaleLowerCase('ru-RU').replaceAll('ё','е')}
+function stressedIndex(word){
+  const chars=[...word];
+  const vowels='АЕЁИОУЫЭЮЯ';
+  for(let i=0;i<chars.length;i++)if(vowels.includes(chars[i]))return i;
+  for(let i=0;i<chars.length;i++)if(chars[i]==='ё'||chars[i]==='Ё')return i;
+  return -1;
+}
+function accentAt(base,index){
+  const chars=[...base.toLocaleLowerCase('ru-RU').replaceAll('ё','е')];
+  if(index<0||index>=chars.length)return base;
+  chars[index]=chars[index].toLocaleUpperCase('ru-RU');
+  return chars.join('');
+}
+function stressVariants(item){
+  const base=removeStress(item.accent);
+  const vowels='аеёиоуыэюя';
+  const correctIndex=stressedIndex(item.accent);
+  const variants=[item.accent];
+  [...base].forEach((char,i)=>{if(vowels.includes(char)&&i!==correctIndex)variants.push(accentAt(base,i))});
+  return [...new Set(variants)].slice(0,5);
+}
+const QUIZ_WORDS=WORDS.filter(item=>stressVariants(item).length>=3);
+function show(id){['homeScreen','quizScreen','resultScreen','dictionaryScreen','trendsScreen'].forEach(x=>$(x).classList.add('hidden'));$(id).classList.remove('hidden');if(id==='dictionaryScreen')renderDictionary();if(id==='trendsScreen')renderTrends()}
+function updateProgress(){const total=state.questions.length||1;$('progress').style.width=`${Math.round(((state.index+(state.answered?1:0))/total)*100)}%`}
+function buildStressQuestion(item){
+  const variants=stressVariants(item);
+  const wrong=shuffle(variants.filter(x=>x!==item.accent)).slice(0,3);
+  return {type:'stress',label:'Поставьте ударение',prompt:item.plain,hint:'Ударная гласная выделена заглавной буквой. Выберите правильный вариант.',correct:item.accent,choices:shuffle([item.accent,...wrong]),item};
+}
+function buildMistakeQuestion(){
+  const items=sample(QUIZ_WORDS,4);
+  const wrongItem=items[0];
+  const wrong=shuffle(stressVariants(wrongItem).filter(x=>x!==wrongItem.accent))[0];
+  const choices=shuffle([wrong,...items.slice(1).map(x=>x.accent)]);
+  return {type:'mistake',label:'Найдите ошибку',prompt:'В каком слове ударение поставлено неверно?',hint:'Ударная гласная выделена заглавной буквой. Выберите ошибочный вариант.',correct:wrong,choices,item:wrongItem,correctAccent:wrongItem.accent};
+}
+function buildTrendQuestion(){
+  const trend=sample(TRENDS.filter(t=>t.examples.length>=3),1)[0];
+  const otherExamples=sample(TRENDS.filter(t=>t!==trend).flatMap(t=>t.examples),3);
+  const correct=sample(trend.examples,1)[0];
+  return {type:'trend',label:'Тенденция',prompt:trend.title,hint:trend.text,correct,choices:shuffle([correct,...otherExamples]),item:{accent:correct,category:'тенденция',rule:trend.title}};
+}
+function buildQuestion(mode){
+  const actual=mode==='mixed'?sample(['stress','mistake','trend'],1)[0]:mode;
+  if(actual==='mistake')return buildMistakeQuestion();
+  if(actual==='trend')return buildTrendQuestion();
+  return buildStressQuestion(sample(QUIZ_WORDS,1)[0]);
+}
+function startQuiz(mode){
+  const rawCount=Number($('questionCount').value)||10;
+  const count=Math.min(Math.max(5,rawCount),50);
+  state={mode,questions:Array.from({length:count},()=>buildQuestion(mode)),index:0,score:0,answered:false,mistakes:[],lastSettings:{mode,count}};
+  show('quizScreen');
+  renderQuestion();
+}
+function renderQuestion(){
+  const q=state.questions[state.index];
+  state.answered=!!q.answered;
+  $('modeTitle').textContent=MODES[state.mode];
+  $('counter').textContent=`${state.index+1} / ${state.questions.length}`;
+  $('score').textContent=state.score;
+  $('questionLabel').textContent=q.label;
+  $('questionText').textContent=q.prompt;
+  $('questionHint').textContent=q.hint;
+  $('contextText').classList.add('hidden');
+  $('answers').innerHTML='';
+  $('feedback').className='feedback hidden';
+  $('feedback').innerHTML='';
+  $('prevBtn').disabled=state.index===0;
+  $('nextBtn').disabled=!q.answered;
+  q.choices.forEach(choice=>{
+    const b=document.createElement('button');
+    b.className='answer';
+    b.textContent=choice;
+    b.onclick=()=>answer(choice,b);
+    $('answers').appendChild(b);
+  });
+  if(q.answered){
+    document.querySelectorAll('.answer').forEach(button=>{
+      button.disabled=true;
+      if(button.textContent===q.correct)button.classList.add('correct');
+      if(button.textContent===q.userAnswer&&!q.isCorrect)button.classList.add('wrong');
+    });
+    showFeedback(q,q.isCorrect);
+    $('nextBtn').disabled=false;
+  }
+  updateProgress();
+}
+function answer(choice,btn){
+  const q=state.questions[state.index];
+  if(q.answered)return;
+  const ok=choice===q.correct;
+  q.answered=true;
+  q.isCorrect=ok;
+  q.userAnswer=choice;
+  if(ok)state.score++;else state.mistakes.push(q);
+  document.querySelectorAll('.answer').forEach(button=>button.disabled=true);
+  btn.classList.add(ok?'correct':'wrong');
+  document.querySelectorAll('.answer').forEach(button=>{if(button.textContent===q.correct)button.classList.add('correct')});
+  showFeedback(q,ok);
+  $('nextBtn').disabled=false;
+  $('score').textContent=state.score;
+  updateProgress();
+}
+function showFeedback(q,ok){
+  const fb=$('feedback');
+  fb.className=`feedback ${ok?'good':'bad'}`;
+  if(q.type==='mistake'){
+    fb.innerHTML=ok?`<strong>Правильно.</strong><br>Ошибочный вариант: <strong>${q.correct}</strong>. Норма: <strong>${q.correctAccent}</strong>.`:`<strong>Неверно.</strong><br>Нужно было выбрать ошибочный вариант: <strong>${q.correct}</strong>. Норма: <strong>${q.correctAccent}</strong>.`;
+  }else if(q.type==='trend'){
+    fb.innerHTML=ok?`<strong>Правильно.</strong><br>${q.correct} относится к тенденции «${q.item.rule}».`:`<strong>Неверно.</strong><br>Подходящий пример: <strong>${q.correct}</strong>.`;
+  }else{
+    fb.innerHTML=ok?`<strong>Правильно.</strong><br>${q.item.plain}: <strong>${q.correct}</strong>. ${q.item.rule}.`:`<strong>Неверно.</strong><br>Правильный вариант: <strong>${q.correct}</strong>. ${q.item.rule}.`;
+  }
+}
+function nextQuestion(){if(state.index<state.questions.length-1){state.index++;renderQuestion()}else showResult()}
+function previousQuestion(){if(state.index>0){state.index--;renderQuestion()}}
+function showResult(){
+  $('progress').style.width='100%';
+  show('resultScreen');
+  const total=state.questions.length;
+  const percent=total?Math.round((state.score/total)*100):0;
+  $('resultText').textContent=`${state.score} из ${total} · ${percent}%`;
+  const reviewBtn=$('reviewMistakesBtn');
+  reviewBtn.classList.toggle('hidden',!state.mistakes.length);
+  reviewBtn.disabled=!state.mistakes.length;
+  const list=$('mistakesList');
+  list.innerHTML='';
+  if(!state.mistakes.length){
+    const li=document.createElement('li');
+    li.textContent='Ошибок нет.';
+    list.appendChild(li);
+  }else state.mistakes.forEach(q=>{
+    const li=document.createElement('li');
+    li.innerHTML=q.type==='mistake'?`Норма: <strong>${q.correctAccent}</strong>; ошибочный вариант был <strong>${q.correct}</strong>.`:`<strong>${q.correct}</strong> — ${q.item?.rule||q.label}.`;
+    list.appendChild(li);
+  });
+}
+function startMistakeReview(){
+  if(!state.mistakes.length)return;
+  state.questions=state.mistakes.map(q=>({...q,answered:false,isCorrect:false,userAnswer:null}));
+  state.index=0;state.score=0;state.mistakes=[];show('quizScreen');renderQuestion();
+}
+function renderDictionary(){
+  const query=($('dictionarySearch').value||'').trim().toLocaleLowerCase('ru-RU');
+  const rows=WORDS.filter(item=>`${item.accent} ${item.plain} ${item.category} ${item.rule}`.toLocaleLowerCase('ru-RU').includes(query));
+  $('dictionaryCount').textContent=`Показано: ${rows.length} из ${WORDS.length}`;
+  $('dictionaryBody').innerHTML=rows.map(item=>`<tr><td>${item.accent}</td><td>${item.plain}</td><td>${item.category}</td><td>${item.rule}</td></tr>`).join('');
+}
+function renderTrends(){
+  $('trendGrid').innerHTML=TRENDS.map(t=>`<article class="trend-card"><h3>${t.title}</h3><p>${t.text}</p><div class="chips">${t.examples.map(x=>`<span class="chip">${x}</span>`).join('')}</div></article>`).join('');
+}
+document.querySelectorAll('.mode-card').forEach(card=>card.onclick=()=>startQuiz(card.dataset.mode));
+$('siteHomeBtn').onclick=()=>{window.location.href='../'};
+$('homeBtn').onclick=()=>show('homeScreen');
+$('dictionaryBtn').onclick=()=>show('dictionaryScreen');
+$('trendsBtn').onclick=()=>show('trendsScreen');
+$('boardBtn').onclick=()=>{$('app').classList.toggle('board-mode');$('boardBtn').textContent=$('app').classList.contains('board-mode')?'Обычный режим':'Крупный режим'};
+$('nextBtn').onclick=nextQuestion;
+$('prevBtn').onclick=previousQuestion;
+$('stopBtn').onclick=showResult;
+$('repeatBtn').onclick=()=>startQuiz(state.lastSettings?.mode||'stress');
+$('reviewMistakesBtn').onclick=startMistakeReview;
+$('dictionarySearch').oninput=renderDictionary;
+$('clearDictionarySearch').onclick=()=>{$('dictionarySearch').value='';renderDictionary()};
+document.addEventListener('keydown',e=>{
+  if($('quizScreen').classList.contains('hidden'))return;
+  if(e.key>='1'&&e.key<='4'){
+    const button=document.querySelectorAll('.answer')[Number(e.key)-1];
+    if(button&&!button.disabled)button.click();
+  }
+  if(e.key==='Enter'&&!$('nextBtn').disabled)nextQuestion();
+});
+  </script>
+</body>
+</html>
