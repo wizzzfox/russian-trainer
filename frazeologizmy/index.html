@@ -656,8 +656,6 @@ const ERROR_EXCLUDED_SOURCE_PHRASES = new Set([
 ]);
 function isErrorModeAllowed(item){return item&&!ERROR_EXCLUDED_SOURCE_PHRASES.has(item.sourcePhrase);}
 const ERROR_DATA = DATA.filter(isErrorModeAllowed);
-const FIND_DATA = [];
-const FIPI_TASK_IDS = ['BF2621','D5B501','B291A8','8DA96F','86E041','065D97','74EB97','AD0E15','DAB89F','961876','76164B','125B45','DFDB41','950247','963449','9F9A43','EECE4A','E17E48','0ED1F6','1CAFFA','7506CC','860554','DB39CE','10542D','4B4F35','E2313B','14AF4C','DC851F','019533','6BDFBD','F6854B','7CD0F3','16D9F4','DCF3FC','E1D6F2','D52745','F3E10B','C7CF0B','6C3603','1D1FBE'];
 const FIPI_TASKS = [
   {
     "id": "ФР-006",
@@ -1849,8 +1847,7 @@ function buildQuestionSet(mode,count){
   const sourcePool=mode==='error'?ERROR_DATA:DATA;
   return arrangeQuestionsNoAdjacentRepeats(selectUniqueQuestions(shuffle(sourcePool).map(item=>buildQuestion(item,mode)),count));
 }
-function renderEmptyFipiMode(){show('quizScreen');$('modeTitle').textContent=MODES.fipi;$('counter').textContent='0 / 0';$('score').textContent='0';$('progress').style.width='0';$('questionLabel').textContent='ЕГЭ: задание 25';$('questionText').textContent='Оригинальные задания ещё не загружены';$('questionHint').textContent='В этот режим нужно добавить тексты заданий из открытого банка: номер задания, диапазон предложений, нумерованный фрагмент и правильный ответ.';$('contextText').classList.add('hidden');$('answers').innerHTML='';$('feedback').className='feedback hidden';$('feedback').innerHTML='';$('prevBtn').disabled=true;$('nextBtn').disabled=true}
-function startQuiz(mode){savePreferences();const sourceCount=mode==='fipi'?FIPI_TASKS.length:(mode==='error'?ERROR_DATA.length:DATA.length);if(mode==='fipi'&&!sourceCount){state.mode=mode;state.questions=[];state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count:0};renderEmptyFipiMode();return}const rawCount=Number($('questionCount').value)||10;const minCount=mode==='fipi'?1:5;const count=Math.min(Math.max(minCount,rawCount),sourceCount);state.mode=mode;state.questions=buildQuestionSet(mode,count);state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count};show('quizScreen');renderQuestion()}function displayFindAnswer(q, ok){
+function startQuiz(mode){savePreferences();const sourceCount=mode==='fipi'?FIPI_TASKS.length:(mode==='error'?ERROR_DATA.length:DATA.length);if(!sourceCount)return;const rawCount=Number($('questionCount').value)||10;const minCount=mode==='fipi'?1:5;const count=Math.min(Math.max(minCount,rawCount),sourceCount);state.mode=mode;state.questions=buildQuestionSet(mode,count);state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count};show('quizScreen');renderQuestion()}function displayFindAnswer(q, ok){
   if(!ok)return q.correct;
   const userNorm=normalizeAnswer(q.userAnswer||'');
   const candidates=[...(q.correctAnswers||[q.correct]),...(q.accepted||[])].filter(Boolean);
@@ -2202,5 +2199,4 @@ $('addTeamBtn').onclick=()=>{addTeam();savePreferences()};
 $('removeTeamBtn').onclick=()=>{removeTeam();savePreferences()};
 document.addEventListener('keydown',handleKeyboard);
 
-try{console.info('Диагностика тренажёра:', auditTrainerData());}catch(e){console.warn('Диагностика тренажёра недоступна:', e);}
 </script></body></html>
