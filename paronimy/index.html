@@ -118,7 +118,7 @@
           <label class="muted">Количество вопросов<br><input type="number" id="questionCount" value="10" min="5" max="100"></label>
         </div>
         <div class="mode-grid">
-          <button class="mode-card" data-mode="meaning"><h2>Найди пароним</h2><p>Дано слово. Нужно выбрать пароним из той же группы.</p></button>
+          <button class="mode-card" data-mode="meaning"><h2>Найди пароним</h2><p>Дано сочетание. Нужно выбрать подходящий пароним из указанной пары или группы.</p></button>
           <button class="mode-card" data-mode="findError"><h2>Найди ошибку</h2><p>Выберите предложение с неверно употреблённым паронимом и проверьте замену.</p></button>
           <button class="mode-card" data-mode="ege"><h2>ЕГЭ: задание 5</h2><p>Найдите ошибку и впишите правильную форму паронима, как в задании ЕГЭ.</p></button>
         </div>
@@ -210,24 +210,45 @@ function buildEgeQuestion(task){
     item:{word:task.answer,definition:`${task.wrong} → ${task.answer}`,examples:task.source}
   }
 }
-function wordChoices(item){
-  const group=groupItems(item).filter(x=>x.word!==item.word).map(x=>x.word);
-  const extra=ITEMS.filter(x=>x.groupIndex!==item.groupIndex).map(x=>x.word);
-  return shuffle([item.word,...sample([...new Set([...group,...extra])],3)]);
+function splitExamples(item){return String(item.examples||'').split(/\s*,\s*/).map(x=>x.trim()).filter(Boolean)}
+function wordVariants(item){return [...new Set(String(item.word||'').split(/\s*\/\s*/).map(x=>x.trim()).filter(Boolean))]}
+function lexicalKey(value){const clean=normalize(value).replace(/[^а-я]/g,'');return clean.length<=5?clean:clean.slice(0,Math.min(7,clean.length-2))}
+function blankContextFromExample(item,example){
+  const keys=wordVariants(item).map(lexicalKey).filter(x=>x.length>=4).sort((a,b)=>b.length-a.length);
+  const pattern=/[А-Яа-яЁё]+/g;
+  let replaced=false;
+  const clue=example.replace(pattern,token=>{
+    const norm=normalize(token).replace(/[^а-я]/g,'');
+    if(!replaced&&keys.some(key=>norm.startsWith(key)||key.startsWith(norm))){
+      replaced=true;
+      return '_____';
+    }
+    return token;
+  });
+  return {text:clue,replaced};
+}
+function contextClueFor(item){
+  const examples=splitExamples(item);
+  const candidates=examples.map(example=>blankContextFromExample(item,example));
+  const withBlank=candidates.filter(x=>x.replaced).map(x=>x.text);
+  if(withBlank.length)return sample(withBlank,1)[0];
+  if(examples.length)return sample(examples,1)[0];
+  return item.definition;
 }
 function paronymChoiceQuestion(item){
-  const group=groupItems(item).filter(x=>x.word!==item.word);
-  const correctItem=sample(group,1)[0];
-  const extra=ITEMS.filter(x=>x.groupIndex!==item.groupIndex).map(x=>x.word);
+  const group=groupItems(item);
+  const clue=contextClueFor(item);
   return {
     item,
     actual:'meaning',
-    label:'Найди пароним',
-    prompt:item.word,
-    hint:'Выберите слово из той же паронимической группы.',
-    correct:correctItem.word,
-    correctItem,
-    choices:shuffle([correctItem.word,...sample([...new Set(extra)],3)])
+    label:'Выберите пароним',
+    prompt:clue,
+    context:`Группа: ${item.groupTitle}`,
+    hint:'Выберите, какой пароним из этой группы подходит к сочетанию.',
+    correct:item.word,
+    correctItem:item,
+    contextClue:clue,
+    choices:shuffle(group.map(x=>x.word))
   };
 }
 function hasParonym(item){return groupItems(item).some(x=>x.word!==item.word)}
@@ -265,9 +286,10 @@ function renderTextAnswer(q){
 function checkTypedAnswer(){const q=state.questions[state.index];if(q.answered||!q.inputMode)return;const input=$('typedAnswer');const button=$('typedCheckBtn');const value=input?input.value:'';if(!value.trim()){if(input)input.focus();return}const accepted=(q.accepted||[q.correct]).map(normalizeTypedAnswer);const ok=accepted.includes(normalizeTypedAnswer(value));q.answered=true;q.isCorrect=ok;q.userAnswer=value;if(ok)state.score++;else state.mistakes.push(q);if(input)input.disabled=true;if(button)button.disabled=true;showFeedback(q,ok);$('nextBtn').disabled=false;$('score').textContent=state.score;updateProgress()}
 function answer(choice,button){const q=state.questions[state.index];if(q.answered)return;const ok=choice===q.correct;q.answered=true;q.isCorrect=ok;q.userAnswer=choice;if(ok)state.score++;else state.mistakes.push(q);document.querySelectorAll('.answer').forEach(btn=>{btn.disabled=true;if(btn.textContent===q.correct)btn.classList.add('correct');if(btn===button&&!ok)btn.classList.add('wrong')});showFeedback(q,ok);$('nextBtn').disabled=false;$('score').textContent=state.score;updateProgress()}
 function examplesHtml(item){return item.examples?`<br><span class="muted">Примеры: ${escapeHtml(item.examples)}</span>`:''}
-function paronymAnswerHtml(q){return `<strong>${escapeHtml(q.item.word)}</strong> — <strong>${escapeHtml(q.correct)}</strong>.<br><span class="muted">${escapeHtml(q.item.word)}: ${escapeHtml(q.item.definition)}.</span>${q.correctItem?`<br><span class="muted">${escapeHtml(q.correctItem.word)}: ${escapeHtml(q.correctItem.definition)}.</span>`:''}`}
+function filledContext(q){return q.contextClue&&q.contextClue.includes('_____')?q.contextClue.replaceAll('_____',q.correct):`${q.correct}: ${q.contextClue||''}`}
+function paronymAnswerHtml(q){return `<strong>${escapeHtml(filledContext(q))}</strong><br><span class="muted">${escapeHtml(q.correct)}: ${escapeHtml(q.item.definition)}.</span>${q.item.examples?`<br><span class="muted">Примеры: ${escapeHtml(q.item.examples)}</span>`:''}`}
 function itemAnswerHtml(q){return q.actual==='meaning'?paronymAnswerHtml(q):`<strong>${escapeHtml(q.correct)}</strong> — ${escapeHtml(q.item.definition)}.${examplesHtml(q.item)}`}
-function mistakeSummaryHtml(q){return q.task?`<strong>Предложение ${q.task.correctIndex}</strong>: ${escapeHtml(q.task.wrong)} → ${escapeHtml(q.task.answer)}.`:q.actual==='meaning'?`<strong>${escapeHtml(q.item.word)}</strong> — <strong>${escapeHtml(q.correct)}</strong>.`:`<strong>${escapeHtml(q.correct)}</strong> — ${escapeHtml(q.item.definition)}.`}
+function mistakeSummaryHtml(q){return q.task?`<strong>Предложение ${q.task.correctIndex}</strong>: ${escapeHtml(q.task.wrong)} → ${escapeHtml(q.task.answer)}.`:q.actual==='meaning'?`<strong>${escapeHtml(filledContext(q))}</strong>.`:`<strong>${escapeHtml(q.correct)}</strong> — ${escapeHtml(q.item.definition)}.`}
 function showFeedback(q,ok){const fb=$('feedback');fb.className=`feedback ${ok?'good':'bad'}`;if(q.task&&q.inputMode){fb.innerHTML=`<strong>${ok?'Правильно.':'Неверно.'}</strong><br>Правильный ответ: <strong>${escapeHtml(q.task.answer)}</strong>.<br>Ошибка в предложении ${q.task.correctIndex}: <strong>${escapeHtml(q.task.wrong)}</strong> → <strong>${escapeHtml(q.task.answer)}</strong>.<br><span class="muted">${escapeHtml(q.task.source)}</span>`;return}if(q.task){fb.innerHTML=`<strong>${ok?'Правильно.':'Неверно.'}</strong><br>Правильный выбор: <strong>${escapeHtml(q.correct)}</strong>.<br>Замена: <strong>${escapeHtml(q.task.wrong)}</strong> → <strong>${escapeHtml(q.task.answer)}</strong>.<br><span class="muted">${escapeHtml(q.task.source)}</span>`;return}fb.innerHTML=ok?`<strong>Правильно.</strong><br>${itemAnswerHtml(q)}`:`<strong>Неверно.</strong><br>Правильный ответ:<br>${itemAnswerHtml(q)}`;}
 function nextQuestion(){if(state.index<state.questions.length-1){state.index++;renderQuestion()}else showResult()}
 function previousQuestion(){if(state.index>0){state.index--;renderQuestion()}}
@@ -280,7 +302,7 @@ $('homeBtn').onclick=()=>show('homeScreen');
 $('dictionaryBtn').onclick=()=>show('dictionaryScreen');
 $('boardBtn').onclick=()=>{$('app').classList.toggle('board-mode');$('boardBtn').textContent=$('app').classList.contains('board-mode')?'Обычный режим':'Крупный режим'};
 $('nextBtn').onclick=nextQuestion;$('prevBtn').onclick=previousQuestion;$('stopBtn').onclick=showResult;$('repeatBtn').onclick=()=>startQuiz(state.lastSettings?.mode||'meaning');$('reviewMistakesBtn').onclick=startMistakeReview;$('dictionarySearch').oninput=renderDictionary;$('clearDictionarySearch').onclick=()=>{$('dictionarySearch').value='';renderDictionary()};
-document.addEventListener('keydown',e=>{if($('quizScreen').classList.contains('hidden'))return;if(document.activeElement?.id==='typedAnswer')return;if(e.key>='1'&&e.key<='5'){const button=document.querySelectorAll('.answer')[Number(e.key)-1];if(button&&!button.disabled)button.click()}else if(e.key==='Enter'&&!$('nextBtn').disabled)nextQuestion()});
+document.addEventListener('keydown',e=>{if($('quizScreen').classList.contains('hidden'))return;if(document.activeElement?.id==='typedAnswer')return;if(e.key>='1'&&e.key<='9'){const button=document.querySelectorAll('.answer')[Number(e.key)-1];if(button&&!button.disabled)button.click()}else if(e.key==='Enter'&&!$('nextBtn').disabled)nextQuestion()});
   </script>
 </body>
 </html>
