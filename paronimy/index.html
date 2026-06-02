@@ -210,48 +210,95 @@ function buildEgeQuestion(task){
     item:{word:task.answer,definition:`${task.wrong} → ${task.answer}`,examples:task.source}
   }
 }
-function splitExamples(item){return String(item.examples||'').split(/\s*,\s*/).map(x=>x.trim()).filter(Boolean)}
+function splitExamples(item){return String(item.examples||'').replace(/\s+\d+\.\s+/g,' | ').split(/\s*[;,]\s*|\.\s+|\s+\|\s+/).map(x=>x.trim()).filter(Boolean)}
 function wordVariants(item){return [...new Set(String(item.word||'').split(/\s*\/\s*/).map(x=>x.trim()).filter(Boolean))]}
 function lexicalKey(value){const clean=normalize(value).replace(/[^а-я]/g,'');return clean.length<=5?clean:clean.slice(0,Math.min(7,clean.length-2))}
 function blankContextFromExample(item,example){
   const keys=wordVariants(item).map(lexicalKey).filter(x=>x.length>=4).sort((a,b)=>b.length-a.length);
   const pattern=/[А-Яа-яЁё]+/g;
   let replaced=false;
+  let correctForm='';
+  let matchIndex=-1;
+  let tokenIndex=0;
+  let variantIndex=0;
   const clue=example.replace(pattern,token=>{
     const norm=normalize(token).replace(/[^а-я]/g,'');
-    if(!replaced&&keys.some(key=>norm.startsWith(key)||key.startsWith(norm))){
+    const foundIndex=keys.findIndex(key=>norm.startsWith(key)||key.startsWith(norm));
+    if(!replaced&&foundIndex>=0){
       replaced=true;
+      correctForm=token;
+      matchIndex=tokenIndex;
+      variantIndex=Math.max(0,foundIndex);
       return '_____';
     }
+    tokenIndex++;
     return token;
   });
-  return {text:clue,replaced};
+  const tokenCount=(example.match(pattern)||[]).length;
+  return {text:clue,replaced,correctForm,matchIndex,tokenCount,variantIndex};
+}
+function cleanContextCandidates(item){
+  const examples=splitExamples(item).filter(example=>example&&!/\d|[-–—]/.test(example));
+  const candidates=examples.map(example=>blankContextFromExample(item,example));
+  return candidates.filter(x=>x.replaced&&x.correctForm&&x.text.includes('_____')&&x.tokenCount>=2&&x.tokenCount<=5).sort((a,b)=>a.matchIndex-b.matchIndex||a.tokenCount-b.tokenCount);
 }
 function contextClueFor(item){
-  const examples=splitExamples(item);
-  const candidates=examples.map(example=>blankContextFromExample(item,example));
-  const withBlank=candidates.filter(x=>x.replaced).map(x=>x.text);
-  if(withBlank.length)return sample(withBlank,1)[0];
-  if(examples.length)return sample(examples,1)[0];
-  return item.definition;
+  return cleanContextCandidates(item)[0]||null;
+}
+function adjectiveInfo(value){
+  const variants=wordVariants({word:value});
+  const base=variants[0]||value;
+  const lower=normalize(base);
+  const endings=['ый','ий','ой'];
+  const ending=endings.find(x=>lower.endsWith(x));
+  if(!ending)return null;
+  return {base,stem:base.slice(0,base.length-ending.length),ending};
+}
+function displayChoice(value){return value?value[0].toLocaleUpperCase('ru-RU')+value.slice(1):value}
+function adjectiveFeatureFor(item, clue){
+  const variant=wordVariants(item)[clue.variantIndex]||wordVariants(item)[0]||item.word;
+  const info=adjectiveInfo(variant);
+  if(!info)return null;
+  const form=normalize(clue.correctForm);
+  const lemma=normalize(variant);
+  if(form===lemma)return 'masc';
+  if(form.endsWith('ая')||form.endsWith('яя'))return 'fem';
+  if(form.endsWith('ое')||form.endsWith('ее'))return 'neut';
+  if(form.endsWith('ые')||form.endsWith('ие'))return 'plur';
+  return null;
+}
+function inflectAdjective(value,feature){
+  const info=adjectiveInfo(value);
+  if(!info||!feature)return value;
+  const lower=normalize(info.base);
+  if(feature==='masc')return info.base;
+  if(feature==='fem')return info.stem+(lower.endsWith('ний')?'яя':'ая');
+  if(feature==='neut')return info.stem+(lower.endsWith('ний')?'ее':'ое');
+  if(feature==='plur')return info.stem+(/[кгхц]ий$|ский$/.test(lower)?'ие':'ые');
+  return info.base;
+}
+function choiceFormFor(item, feature, variantIndex){
+  const variant=wordVariants(item)[variantIndex]||wordVariants(item)[0]||item.word;
+  return displayChoice(feature?inflectAdjective(variant,feature):variant);
 }
 function paronymChoiceQuestion(item){
   const group=groupItems(item);
   const clue=contextClueFor(item);
+  const feature=clue?adjectiveFeatureFor(item,clue):null;
   return {
     item,
     actual:'meaning',
     label:'Выберите пароним',
-    prompt:clue,
-    context:`Группа: ${item.groupTitle}`,
-    hint:'Выберите, какой пароним из этой группы подходит к сочетанию.',
-    correct:item.word,
+    prompt:clue.text,
+    hint:'Выберите подходящий вариант.',
+    correct:displayChoice(clue.correctForm),
+    correctForm:clue.correctForm,
     correctItem:item,
-    contextClue:clue,
-    choices:shuffle(group.map(x=>x.word))
+    contextClue:clue.text,
+    choices:shuffle(group.map(x=>choiceFormFor(x,feature,clue.variantIndex)))
   };
 }
-function hasParonym(item){return groupItems(item).some(x=>x.word!==item.word)}
+function hasParonym(item){return groupItems(item).some(x=>x.word!==item.word)&&!!contextClueFor(item)}
 function buildQuestion(item,mode){
   return paronymChoiceQuestion(item);
 }
@@ -286,7 +333,7 @@ function renderTextAnswer(q){
 function checkTypedAnswer(){const q=state.questions[state.index];if(q.answered||!q.inputMode)return;const input=$('typedAnswer');const button=$('typedCheckBtn');const value=input?input.value:'';if(!value.trim()){if(input)input.focus();return}const accepted=(q.accepted||[q.correct]).map(normalizeTypedAnswer);const ok=accepted.includes(normalizeTypedAnswer(value));q.answered=true;q.isCorrect=ok;q.userAnswer=value;if(ok)state.score++;else state.mistakes.push(q);if(input)input.disabled=true;if(button)button.disabled=true;showFeedback(q,ok);$('nextBtn').disabled=false;$('score').textContent=state.score;updateProgress()}
 function answer(choice,button){const q=state.questions[state.index];if(q.answered)return;const ok=choice===q.correct;q.answered=true;q.isCorrect=ok;q.userAnswer=choice;if(ok)state.score++;else state.mistakes.push(q);document.querySelectorAll('.answer').forEach(btn=>{btn.disabled=true;if(btn.textContent===q.correct)btn.classList.add('correct');if(btn===button&&!ok)btn.classList.add('wrong')});showFeedback(q,ok);$('nextBtn').disabled=false;$('score').textContent=state.score;updateProgress()}
 function examplesHtml(item){return item.examples?`<br><span class="muted">Примеры: ${escapeHtml(item.examples)}</span>`:''}
-function filledContext(q){return q.contextClue&&q.contextClue.includes('_____')?q.contextClue.replaceAll('_____',q.correct):`${q.correct}: ${q.contextClue||''}`}
+function filledContext(q){const form=q.correctForm||q.correct;return q.contextClue&&q.contextClue.includes('_____')?q.contextClue.replaceAll('_____',form):`${form}: ${q.contextClue||''}`}
 function paronymAnswerHtml(q){return `<strong>${escapeHtml(filledContext(q))}</strong><br><span class="muted">${escapeHtml(q.correct)}: ${escapeHtml(q.item.definition)}.</span>${q.item.examples?`<br><span class="muted">Примеры: ${escapeHtml(q.item.examples)}</span>`:''}`}
 function itemAnswerHtml(q){return q.actual==='meaning'?paronymAnswerHtml(q):`<strong>${escapeHtml(q.correct)}</strong> — ${escapeHtml(q.item.definition)}.${examplesHtml(q.item)}`}
 function mistakeSummaryHtml(q){return q.task?`<strong>Предложение ${q.task.correctIndex}</strong>: ${escapeHtml(q.task.wrong)} → ${escapeHtml(q.task.answer)}.`:q.actual==='meaning'?`<strong>${escapeHtml(filledContext(q))}</strong>.`:`<strong>${escapeHtml(q.correct)}</strong> — ${escapeHtml(q.item.definition)}.`}
