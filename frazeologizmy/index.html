@@ -1439,59 +1439,6 @@ const FIPI_TASKS = [
   }
 ];
 
-function validateFipiTasks(){
-  const required=['range','instruction','text','answer'];
-  const hasPhrase=(text,phrase)=>` ${normalizeAnswer(text)} `.includes(` ${normalizeAnswer(phrase)} `);
-  const phraseKeySet=new Set(DATA.flatMap(item=>[item.sourcePhrase,item.phrase]).map(normalizeAnswer));
-  return FIPI_TASKS.map((task,index)=>{
-    const hits=[...new Set(DATA.filter(item=>hasPhrase(task.text,item.sourcePhrase)||hasPhrase(task.text,item.phrase)).map(item=>item.sourcePhrase))];
-    const answerList=findTaskAnswers(task);
-    const answerSet=new Set(answerList.map(normalizeAnswer));
-    const answerInList=answerList.length&&answerList.every(answer=>phraseKeySet.has(normalizeAnswer(answer)));
-    const answerMatchesText=hits.length&&hits.every(hit=>{
-      const hitItem=DATA.find(item=>normalizeAnswer(item.sourcePhrase)===normalizeAnswer(hit));
-      return !!(hitItem&&(answerSet.has(normalizeAnswer(hitItem.sourcePhrase))||answerSet.has(normalizeAnswer(hitItem.phrase))));
-    });
-    return {
-      index:index+1,
-      id:task.id||'',
-      missing:required.filter(key=>!task[key]),
-      hasAccepted:Object.prototype.hasOwnProperty.call(task,'accepted'),
-      answerInList,
-      phraseHits:hits,
-      answerMatchesText
-    };
-  }).filter(row=>row.missing.length||row.hasAccepted||!row.answerInList||!row.phraseHits.length||!row.answerMatchesText);
-}
-
-function auditTrainerData(){
-  const rawIssues=[];
-  DATA.forEach((item,index)=>{
-    ['sourcePhrase','phrase','definition','synonym','sentence','wrong'].forEach(key=>{
-      if(!String(item[key]||'').trim())rawIssues.push({index:index+1, phrase:item.sourcePhrase||'', issue:`RAW_DATA: пустое поле ${key}`});
-    });
-    if(!String(item.sentence||'').includes('_____'))rawIssues.push({index:index+1, phrase:item.sourcePhrase||'', issue:'RAW_DATA: в контекстном предложении нет пропуска _____'});
-    if(normalizeAnswer(item.wrong)===normalizeAnswer(item.sourcePhrase)||normalizeAnswer(item.wrong)===normalizeAnswer(item.phrase))rawIssues.push({index:index+1, phrase:item.sourcePhrase||'', issue:'RAW_DATA: ошибочный вариант совпадает с правильным'});
-  });
-  const fipiStructuralIssues=validateFipiTasks();
-  const seenAnswers=new Map();
-  const fipiDuplicateAnswers=[];
-  FIPI_TASKS.forEach((task,index)=>{
-    const key=normalizeFindAnswer(task.answer);
-    if(seenAnswers.has(key))fipiDuplicateAnswers.push({answer:task.answer, first:seenAnswers.get(key), duplicate:index+1});
-    else seenAnswers.set(key,index+1);
-  });
-  return {
-    rawDataCount:DATA.length,
-    fipiTaskCount:FIPI_TASKS.length,
-    rawIssues,
-    fipiStructuralIssues,
-    fipiDuplicateAnswers,
-    ok:!rawIssues.length&&!fipiStructuralIssues.length&&!fipiDuplicateAnswers.length
-  };
-}
-window.trainerDiagnostics=auditTrainerData;
-
 const MODES={meaning:'Значение',phrase:'Фразеологизм по значению',synonym:'Синоним',error:'Исправь ошибку',fipi:'ЕГЭ: задание 25',mixed:'Смешанный режим',team:'Командная игра'};let state={mode:'meaning',questions:[],index:0,score:0,answered:false,mistakes:[],lastSettings:null,teamItem:null,teamTask:null,teamHistory:[],teamIndex:-1,teamScores:[0,0,0]};const $=id=>document.getElementById(id);const shuffle=a=>[...a].sort(()=>Math.random()-.5);const sample=(a,n)=>shuffle(a).slice(0,n);
 const PREFERENCES_KEY='phraseTrainerPreferences';
 function savePreferences(){
