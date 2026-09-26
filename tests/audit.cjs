@@ -76,6 +76,9 @@ function inspect() {
         }
         assert.ok(site.run(`(()=>{const qs=buildQuestionSet('${mode}',100);return qs.every((q,i)=>qs.slice(i+1).every(other=>!questionsShareExample(q,other)))})()`), `Repeated example in ${mode}`);
       }
+      site.run('state.teamHistory=[{item:DATA[0],task:{prompt:"first"}},{item:DATA[1],task:{prompt:"second"}}];state.teamIndex=0;nextTeamPhrase()');
+      assert.equal(site.run('state.teamTask.prompt'),'second','Team forward navigation must restore history');
+      assert.equal(site.run('state.teamHistory.length'),2);
     }
     if(section!=='frazeologizmy') {
       site.run('state.questions=[{answered:true},{answered:false}];state.index=0;state.answered=false;updateProgress()');
@@ -94,6 +97,7 @@ function inspect() {
       site.run('nextQuestion();previousQuestion()');
       assert.equal(site.run('state.questions[0].answered'),true);
       site.run('showResult()');
+      assert.ok(site.run('$("resultText").textContent').includes('Не отвечено: 9'));
     }
   }
   const pages=['index.html',...['udareniya','paronimy','frazeologizmy'].map(x=>`${x}/index.html`)];

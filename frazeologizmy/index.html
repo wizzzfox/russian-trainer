@@ -1975,7 +1975,8 @@ function nextQuestion(){if(state.index<state.questions.length-1){state.index++;r
   show('resultScreen');
   const total=state.questions.length;
   const percent=total?Math.round((state.score/total)*100):0;
-  $('resultText').textContent=`${state.score} из ${total} · ${percent}%`;
+  const unanswered=state.questions.filter(q=>!q.answered).length;
+  $('resultText').textContent=`${state.score} из ${total} · ${percent}%`+(unanswered?` · Не отвечено: ${unanswered}`:'');
   const reviewBtn=$('reviewMistakesBtn');
   if(reviewBtn){
     reviewBtn.classList.toggle('hidden',!state.mistakes.length);

@@ -969,7 +969,8 @@ function showResult(){
   show('resultScreen');
   const total=state.questions.length;
   const percent=total?Math.round((state.score/total)*100):0;
-  $('resultText').textContent=`${state.score} из ${total} · ${percent}%`;
+  const unanswered=state.questions.filter(q=>!q.answered).length;
+  $('resultText').textContent=`${state.score} из ${total} · ${percent}%`+(unanswered?` · Не отвечено: ${unanswered}`:'');
   const reviewBtn=$('reviewMistakesBtn');
   reviewBtn.classList.toggle('hidden',!state.mistakes.length);
   reviewBtn.disabled=!state.mistakes.length;
@@ -983,7 +984,7 @@ function showResult(){
     const li=document.createElement('li');
     li.innerHTML=q.type==='ege'
       ?`ЕГЭ: задание 4 — верные варианты: ${q.choices.filter(choice=>choice.isCorrect).map(choice=>`<strong>${formatStress(choice.value)}</strong>`).join(', ')}.`
-      :`<strong>${formatStress(q.correct)}</strong> — ${q.item?.rule||q.label}.`;
+      :`<strong>${formatStress(q.correct)}</strong> — ${escapeHtml(q.ruleText||cardRuleText(q.item))}`;
     list.appendChild(li);
   });
 }
