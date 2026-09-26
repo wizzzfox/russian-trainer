@@ -875,7 +875,7 @@ function renderEgeQuestion(q){
     const b=document.createElement('button');
     b.className='answer';
     const context=cardContextText(choice.item);
-    b.innerHTML=formatStress(choice.value)+(context?`<span class="choice-context">${escapeHtml(context.replace(/^Контекст:\s*/,'')).replaceAll('.', '')}</span>`:'');
+    b.innerHTML=`<span class="choice-word">${formatStress(choice.value)}</span>`+(context?`<span class="choice-context">${escapeHtml(context.replace(/^Контекст:\s*/,'')).replaceAll('.', '')}</span>`:'');
     b.onclick=()=>toggleEgeChoice(index,b);
     if(q.selected?.includes(index))b.classList.add('selected');
     if(q.answered){
