@@ -9,7 +9,7 @@
     *{box-sizing:border-box;letter-spacing:0!important}
     html{background:var(--bg)}
     body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
-    .app{width:min(1120px,100%);margin:0 auto;padding:24px}
+    .app{width:min(1120px,100%);margin:0 auto;padding:24px;overflow-wrap:anywhere}
     .hidden{display:none!important}
     header{display:grid;grid-template-columns:1fr;gap:18px;align-items:start;margin-bottom:22px;padding:0 0 18px;border-bottom:1px solid var(--line)}
     h1{margin:0 0 8px;color:var(--text);font-size:56px;line-height:1.04;font-weight:900}
@@ -51,6 +51,7 @@
     .answer:hover{background:#f8fbff;border-color:#8bb6f9;box-shadow:none}
     .answer.correct{background:var(--soft-green);border-color:#75e0a7;color:var(--good)}
     .answer.wrong{background:var(--soft-red);border-color:#fda29b;color:var(--bad)}
+    .answer:disabled{opacity:1}
     .text-answer-wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;margin-top:18px}
     .text-answer-wrap input{width:100%;padding:15px 16px;font-size:18px;font-weight:720}
     .text-answer-wrap input:disabled{background:#f3f4f6;color:var(--muted)}
@@ -92,7 +93,8 @@
     .board-mode button{font-size:22px;padding:16px 22px}
     .board-mode footer{display:none}
     @media(max-width:920px){.top-actions{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.mode-grid,.answers,.result-grid,.word-grid{grid-template-columns:1fr}}
-    @media(max-width:680px){.app{padding:14px}h1{font-size:38px}.subtitle{font-size:17px}.settings-row,.tools,.quiz-actions,.text-answer-wrap{grid-template-columns:1fr}.quiz-actions #stopBtn,.quiz-actions #prevBtn,.quiz-actions #nextBtn{justify-self:stretch}.question{font-size:28px}.mode-card{min-height:132px}}
+    @media(max-width:680px){.app{padding:14px}h1,.board-mode h1{font-size:38px}.subtitle{font-size:17px}.top-actions,.settings-row,.tools,.quiz-actions,.text-answer-wrap{grid-template-columns:1fr}.quiz-actions #stopBtn,.quiz-actions #prevBtn,.quiz-actions #nextBtn{justify-self:stretch}.question{font-size:28px}.board-mode .question{font-size:32px}.mode-card{min-height:132px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
@@ -214,7 +216,7 @@ function splitExamples(item){return String(item.examples||'').replace(/\s+\d+\.\
 function wordVariants(item){return [...new Set(String(item.word||'').split(/\s*\/\s*/).map(x=>x.trim()).filter(Boolean))]}
 function lexicalKey(value){const clean=normalize(value).replace(/[^а-я]/g,'');return clean.length<=5?clean:clean.slice(0,Math.min(7,clean.length-2))}
 function blankContextFromExample(item,example){
-  const keys=wordVariants(item).map(lexicalKey).filter(x=>x.length>=4).sort((a,b)=>b.length-a.length);
+  const keys=wordVariants(item).map((word,index)=>({key:lexicalKey(word),index})).filter(x=>x.key.length>=4).sort((a,b)=>b.key.length-a.key.length);
   const pattern=/[А-Яа-яЁё]+/g;
   let replaced=false;
   let correctForm='';
@@ -223,12 +225,12 @@ function blankContextFromExample(item,example){
   let variantIndex=0;
   const clue=example.replace(pattern,token=>{
     const norm=normalize(token).replace(/[^а-я]/g,'');
-    const foundIndex=keys.findIndex(key=>norm.startsWith(key)||key.startsWith(norm));
+    const foundIndex=keys.findIndex(({key})=>norm.length>=4&&(norm.startsWith(key)||key.startsWith(norm)));
     if(!replaced&&foundIndex>=0){
       replaced=true;
       correctForm=token;
       matchIndex=tokenIndex;
-      variantIndex=Math.max(0,foundIndex);
+      variantIndex=keys[foundIndex].index;
       return '_____';
     }
     tokenIndex++;
@@ -243,6 +245,7 @@ function cleanContextCandidates(item){
   return candidates.filter(x=>x.replaced&&x.correctForm&&x.text.includes('_____')&&x.tokenCount>=2&&x.tokenCount<=5).sort((a,b)=>a.matchIndex-b.matchIndex||a.tokenCount-b.tokenCount);
 }
 function contextClueFor(item){
+  if(item.word==='Охватить')return {text:'Меня _____ паника',correctForm:'охватила',variantIndex:0};
   return cleanContextCandidates(item)[0]||null;
 }
 function adjectiveInfo(value){
@@ -273,10 +276,22 @@ function inflectAdjective(value,feature){
   const lower=normalize(info.base);
   if(feature==='masc')return info.base;
   if(feature==='fem')return info.stem+(lower.endsWith('ний')?'яя':'ая');
-  if(feature==='neut')return info.stem+(lower.endsWith('ний')?'ее':'ое');
-  if(feature==='plur')return info.stem+(/[кгхц]ий$|ский$/.test(lower)?'ие':'ые');
+  if(feature==='neut')return info.stem+(/ний$|[жшчщ]ий$/.test(lower)?'ее':'ое');
+  if(feature==='plur')return info.stem+(/ий$|[гкхжшчщ]ой$/.test(lower)?'ие':'ые');
   return info.base;
 }
+// These source examples use cases or verb forms, not dictionary forms.
+const CONTEXT_FORMS={
+  адресата:['Адресанта','Адресата'],
+  переполнен:['Заполнен','Восполнен','Наполнен','Переполнен','Пополнен','Дополнен'],
+  гордыню:['Гордость','Гордыню'],
+  информацией:['Информированностью','Информацией'],
+  наличности:['Наличия','Наличности'],
+  обхватил:['Обхватил','Охватил'],
+  охватила:['Обхватила','Охватила'],
+  поделки:['Подделки','Поделки','Проделки'],
+  проделки:['Подделки','Поделки','Проделки']
+};
 function choiceFormFor(item, feature, variantIndex){
   const variant=wordVariants(item)[variantIndex]||wordVariants(item)[0]||item.word;
   return displayChoice(feature?inflectAdjective(variant,feature):variant);
@@ -295,7 +310,7 @@ function paronymChoiceQuestion(item){
     correctForm:clue.correctForm,
     correctItem:item,
     contextClue:clue.text,
-    choices:shuffle(group.map(x=>choiceFormFor(x,feature,clue.variantIndex)))
+    choices:shuffle(CONTEXT_FORMS[normalize(clue.correctForm)]||group.map(x=>x.word===item.word?displayChoice(clue.correctForm):choiceFormFor(x,feature,clue.variantIndex)))
   };
 }
 function hasParonym(item){return groupItems(item).some(x=>x.word!==item.word)&&!!contextClueFor(item)}
@@ -309,7 +324,7 @@ function buildQuestionSet(mode,count){
   return sampleUnique(source,count,item=>`${item.groupIndex}:${item.itemIndex}`).map(item=>buildQuestion(item,mode));
 }
 function show(id){['homeScreen','quizScreen','resultScreen','dictionaryScreen'].forEach(x=>$(x).classList.add('hidden'));$(id).classList.remove('hidden');if(id==='dictionaryScreen')renderDictionary()}
-function updateProgress(){const total=state.questions.length||1;$('progress').style.width=`${Math.round(((state.index+(state.answered?1:0))/total)*100)}%`}
+function updateProgress(){const total=state.questions.length||1;$('progress').style.width=`${Math.round(((state.index+(state.questions[state.index]?.answered?1:0))/total)*100)}%`}
 function startQuiz(mode){const rawCount=Number($('questionCount').value)||10;const available=mode==='ege'||mode==='findError'?uniqueBy(PARONYM_EGE_TASKS,task=>task.id).length:ITEMS.filter(hasParonym).length;const count=Math.min(Math.max(5,rawCount),Math.min(MAX_QUESTIONS,available));state={mode,questions:buildQuestionSet(mode,count),index:0,score:0,answered:false,mistakes:[],lastSettings:{mode,count}};show('quizScreen');renderQuestion()}
 function renderQuestion(){
   const q=state.questions[state.index];state.answered=!!q.answered;
@@ -349,7 +364,7 @@ $('homeBtn').onclick=()=>show('homeScreen');
 $('dictionaryBtn').onclick=()=>show('dictionaryScreen');
 $('boardBtn').onclick=()=>{$('app').classList.toggle('board-mode');$('boardBtn').textContent=$('app').classList.contains('board-mode')?'Обычный режим':'Крупный режим'};
 $('nextBtn').onclick=nextQuestion;$('prevBtn').onclick=previousQuestion;$('stopBtn').onclick=showResult;$('repeatBtn').onclick=()=>startQuiz(state.lastSettings?.mode||'meaning');$('reviewMistakesBtn').onclick=startMistakeReview;$('dictionarySearch').oninput=renderDictionary;$('clearDictionarySearch').onclick=()=>{$('dictionarySearch').value='';renderDictionary()};
-document.addEventListener('keydown',e=>{if($('quizScreen').classList.contains('hidden'))return;if(document.activeElement?.id==='typedAnswer')return;if(e.key>='1'&&e.key<='9'){const button=document.querySelectorAll('.answer')[Number(e.key)-1];if(button&&!button.disabled)button.click()}else if(e.key==='Enter'&&!$('nextBtn').disabled)nextQuestion()});
+document.addEventListener('keydown',e=>{if($('quizScreen').classList.contains('hidden'))return;if(e.target?.tagName==='INPUT'||e.target?.tagName==='TEXTAREA')return;if(e.key==='Enter'&&e.target?.closest('button'))return;if(e.key>='1'&&e.key<='9'){const button=document.querySelectorAll('.answer')[Number(e.key)-1];if(button&&!button.disabled)button.click()}else if(e.key==='Enter'&&!$('nextBtn').disabled)nextQuestion()});
   </script>
 </body>
 </html>

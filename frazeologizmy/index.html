@@ -178,6 +178,7 @@ input[type=number]{width:120px;padding:10px 12px}
 .answer:hover,.team-option:hover{background:#f8fbff;border-color:#8bb6f9;box-shadow:none}
 .answer.correct,.team-option.correct{background:var(--soft-green);border-color:#75e0a7;color:var(--good)}
 .answer.wrong{background:var(--soft-red);border-color:#fda29b;color:var(--bad)}
+.answer:disabled{opacity:1}
 .team-option.selected{background:var(--soft-blue);border-color:var(--primary);color:var(--text);box-shadow:none}
 .feedback{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:8px;background:#f8fafc;color:var(--text);line-height:1.45;font-size:17px}
 .feedback.good{background:var(--soft-green);border-color:#75e0a7}
@@ -244,8 +245,13 @@ footer{margin-top:24px;padding:16px 0 0;border-top:1px solid var(--line);font-si
   .mode-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:680px){
-  .app{padding:14px}
+  .app{padding:14px;overflow-wrap:anywhere}
   h1{font-size:38px}
+  .board-mode h1{font-size:38px}
+  .board-mode .question{font-size:32px}
+  .board-mode .context{font-size:24px}
+  .board-mode .mode-grid{grid-template-columns:1fr}
+  .board-mode .question-card{padding:18px}
   .subtitle{font-size:17px}
   .top-actions,.mode-grid,.answers,.result-grid,.settings-row,.table-tools,.quiz-actions-3,.team-actions-3,.team-options{grid-template-columns:1fr}
   .quiz-actions-3 #stopBtn,.quiz-actions-3 #prevBtn,.quiz-actions-3 #nextBtn,.team-actions-3 #revealTeamAnswer,.team-actions-3 #prevTeamPhrase,.team-actions-3 #nextTeamPhrase{justify-self:stretch}
@@ -260,7 +266,7 @@ footer{margin-top:24px;padding:16px 0 0;border-top:1px solid var(--line);font-si
 <main><section class="panel" id="homeScreen"><h2 style="margin:0;font-size:28px">Выберите режим</h2><div class="settings-row">
   <label class="muted">Количество вопросов<br><input type="number" id="questionCount" value="10" min="5" max="50"></label>
   <label class="muted">Количество команд<br><input type="number" id="teamCount" value="3" min="2" max="8"></label>
-</div><div class="mode-grid"><button class="mode-card" data-mode="meaning"><h2>Значение</h2><p>Дан фразеологизм. Нужно выбрать правильное значение.</p></button><button class="mode-card" data-mode="phrase"><h2>Фразеологизм по значению</h2><p>Дано значение. Нужно выбрать подходящее устойчивое выражение.</p></button><button class="mode-card" data-mode="synonym"><h2>Синоним</h2><p>Нужно выбрать синоним фразеологизма.</p></button><button class="mode-card" data-mode="error"><h2>Исправь ошибку</h2><p>Дан искажённый фразеологизм. Нужно восстановить правильный вариант.</p></button><button class="mode-card" data-mode="fipi"><h2>ЕГЭ: задание 25</h2><p>Дан диапазон предложений. Нужно выписать один фразеологизм.</p></button><button class="mode-card" data-mode="mixed"><h2>Смешанный режим</h2><p>Значения, фразеологизмы, синонимы и исправление ошибок вперемешку.</p></button><button class="mode-card" data-mode="team"><h2>Командная игра</h2><p>Смешанные устные задания без вариантов ответа. Учитель ведёт счёт.</p></button></div></section>
+</div><div class="mode-grid"><button class="mode-card" data-mode="meaning"><h2>Значение</h2><p>Дан фразеологизм. Нужно выбрать правильное значение.</p></button><button class="mode-card" data-mode="phrase"><h2>Фразеологизм по значению</h2><p>Дано значение. Нужно выбрать подходящее устойчивое выражение.</p></button><button class="mode-card" data-mode="synonym"><h2>Синоним</h2><p>Нужно выбрать синоним фразеологизма.</p></button><button class="mode-card" data-mode="error"><h2>Исправь ошибку</h2><p>Дан искажённый фразеологизм. Нужно восстановить правильный вариант.</p></button><button class="mode-card" data-mode="fipi"><h2>ЕГЭ: задание 25</h2><p>Дан диапазон предложений. Нужно выписать один фразеологизм.</p></button><button class="mode-card" data-mode="mixed"><h2>Смешанный режим</h2><p>Значения, фразеологизмы, синонимы и исправление ошибок вперемешку.</p></button><button class="mode-card" data-mode="team"><h2>Командная игра</h2><p>Смешанные задания для команд. Учитель ведёт счёт.</p></button></div></section>
 <section class="hidden" id="quizScreen"><div class="quiz-topline"><div id="modeTitle">Режим</div><div><span id="counter">1 / 10</span> · баллы: <strong id="score">0</strong></div></div><div class="progress-wrap"><div class="progress" id="progress"></div></div><div class="question-card"><div class="question-label" id="questionLabel">Вопрос</div><h2 class="question" id="questionText"></h2><p class="context hidden" id="contextText"></p><p class="hint" id="questionHint"></p><div class="answers" id="answers"></div><div class="feedback hidden" id="feedback"></div><div class="quiz-actions quiz-actions-3">
   <button class="ghost" id="stopBtn">Завершить</button>
   <button class="ghost" id="prevBtn" disabled>Назад</button>
@@ -1487,6 +1493,7 @@ function startMistakeReview(){
 function handleKeyboard(e){
   const tag=e.target?.tagName;
   if(tag==='INPUT'||tag==='TEXTAREA')return;
+  if(e.key==='Enter'&&e.target?.closest('button'))return;
   if(!$('quizScreen')||$('quizScreen').classList.contains('hidden'))return;
   if(/^[1-4]$/.test(e.key)){
     const buttons=[...document.querySelectorAll('.answer')].filter(button=>!button.disabled);
@@ -1649,7 +1656,38 @@ function buildOfficialFipiQuestion(task){
     accepted:acceptedFindVariants(task)
   };
 }
-function buildQuestion(item,mode){const actual=mode==='mixed'?shuffle(['meaning','phrase','synonym','error'])[0]:mode;const pool=DATA;let prompt='',label='',hint='',correct='',choices=[],context='';if(actual==='meaning'){label='Выберите значение';prompt=item.sourcePhrase;correct=item.definition;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.definition)]}if(actual==='phrase'){label='Выберите фразеологизм';prompt=item.definition;correct=item.sourcePhrase;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)]}if(actual==='synonym'){label='Выберите синоним';prompt=item.sourcePhrase;correct=item.synonym;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase&&x.synonym!==item.synonym),3).map(x=>x.synonym)]}if(actual==='context'){label='Вставьте в предложение';prompt='Какой фразеологизм нужен?';context=item.sentence;correct=item.sourcePhrase;choices=[correct,...sample(pool.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)];hint='Обратите внимание на смысл всего предложения.'}if(actual==='error'){label='Исправьте ошибку';prompt=item.wrong;correct=contextualErrorAnswer(item);choices=[];hint=`Контекст: ${item.sentence} Введите правильный фразеологизм в форме, подходящей к пропуску. Словарная форма тоже принимается. Регистр не важен, буквы Е/Ё считаются равными.`;return {item,actual,label,prompt,context,hint,correct,choices:[],inputMode:true,accepted:errorAcceptedVariants(item)}}return {item,actual,label,prompt,context,hint,correct,choices:shuffle(choices)}}
+function distinctChoices(correct,values){
+  const seen=new Set([normalizeAnswer(correct)]);
+  const alternatives=values.filter(value=>{
+    const key=normalizeAnswer(value);
+    if(!key||seen.has(key))return false;
+    seen.add(key);
+    return true;
+  });
+  return shuffle([correct,...sample(alternatives,3)]);
+}
+function buildQuestion(item,mode){
+  const actual=mode==='mixed'?shuffle(['meaning','phrase','synonym','error'])[0]:mode;
+  let prompt='',label='',hint='',correct='',choices=[],context='';
+  if(actual==='meaning'){
+    label='Выберите значение';prompt=item.sourcePhrase;correct=item.definition;
+    choices=distinctChoices(correct,DATA.map(x=>x.definition));
+  }
+  if(actual==='phrase'){
+    label='Выберите фразеологизм';prompt=item.definition;correct=item.sourcePhrase;
+    choices=distinctChoices(correct,DATA.map(x=>x.sourcePhrase));
+  }
+  if(actual==='synonym'){
+    label='Выберите синоним';prompt=item.sourcePhrase;correct=item.synonym;
+    choices=distinctChoices(correct,DATA.map(x=>x.synonym));
+  }
+  if(actual==='error'){
+    label='Исправьте ошибку';prompt=item.wrong;correct=contextualErrorAnswer(item);
+    hint=`Контекст: ${item.sentence} Введите правильный фразеологизм в форме, подходящей к пропуску. Словарная форма тоже принимается. Регистр не важен, буквы Е/Ё считаются равными.`;
+    return {item,actual,label,prompt,context,hint,correct,choices:[],inputMode:true,accepted:errorAcceptedVariants(item)};
+  }
+  return {item,actual,label,prompt,context,hint,correct,choices};
+}
 function questionKey(q){
   if(!q)return '';
   const exampleKeys=questionExampleKeys(q).join('|');
@@ -1888,6 +1926,7 @@ function renderQuestion(){const q=state.questions[state.index];state.answered=!!
   const input=$('textAnswer');
   const button=$('textCheckBtn');
   const value=input?input.value:'';
+  if(!value.trim()){if(input)input.focus();return;}
   let ok=false;
   if(q.actual==='find'){
     const accepted=(q.accepted||[q.correct]).map(normalizeFindAnswer);
@@ -2006,7 +2045,7 @@ function startTeamMode(){savePreferences();setupTeams();show('teamScreen');state
     hint:'Команда должна объяснить значение фразеологизма своими словами.',
     answer:`<strong>${item.sourcePhrase}</strong> — ${item.definition}.`
   };
-  if(type==='phrase'){const options=shuffle([item.sourcePhrase,...sample(DATA.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)]);return {
+  if(type==='phrase'){const options=distinctChoices(item.sourcePhrase,DATA.map(x=>x.sourcePhrase));return {
     label:'Назовите фразеологизм',
     prompt:item.definition,
     hint:'Команда должна выбрать фразеологизм по его значению.',
@@ -2019,13 +2058,6 @@ function startTeamMode(){savePreferences();setupTeams();show('teamScreen');state
     hint:'Команда должна подобрать синоним.',
     answer:`Возможный синоним: <strong>${item.synonym}</strong>.<br>${item.sourcePhrase} — ${item.definition}.`
   };
-  if(type==='context'){const options=shuffle([item.sourcePhrase,...sample(DATA.filter(x=>x.phrase!==item.phrase),3).map(x=>x.sourcePhrase)]);return {
-    label:'Вставьте в предложение',
-    prompt:item.sentence,
-    hint:'Команда должна выбрать фразеологизм, который подходит по смыслу.',
-    options,
-    answer:`Правильный ответ: <strong>${item.sourcePhrase}</strong>.<br>Пример: ${item.sentence.replace('_____',`<strong>${item.phrase}</strong>`)}`
-  }};
   return {
     label:'Исправьте ошибку',
     prompt:item.wrong,
@@ -2084,6 +2116,14 @@ function chooseNextTeamItem(){
   return sample(DATA,1)[0];
 }
 function nextTeamPhrase(){
+  if(state.teamIndex<state.teamHistory.length-1){
+    state.teamIndex++;
+    const entry=state.teamHistory[state.teamIndex];
+    state.teamItem=entry.item;
+    state.teamTask=entry.task;
+    renderTeamTask();
+    return;
+  }
   const item=chooseNextTeamItem();
   const task=buildTeamTask(item);
   task.revealed=false;
