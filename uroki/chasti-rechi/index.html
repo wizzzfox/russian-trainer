@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>Части речи | Урок русского языка</title>
+  <link rel="stylesheet" href="lesson.css?v=20261003.2">
+  <script src="content.js?v=20261003.2" defer></script>
+  <script src="lesson-core.js?v=20261003.2" defer></script>
+  <script src="lesson.js?v=20261003.2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lesson-heading">К содержанию урока</a>
+  <div class="app">
+    <header class="site-header">
+      <a class="back-link" href="../../"><img src="icons/arrowLeft.svg" alt="" width="18" height="18">Все тренажёры</a>
+      <div class="header-tools">
+        <button id="large-mode" class="quiet-button" type="button" aria-pressed="false" title="Крупный режим"><img src="icons/expand.svg" alt="" width="18" height="18"><span>Крупный режим</span></button>
+        <button id="reset-lesson" class="icon-button" type="button" aria-label="Начать урок заново" title="Начать урок заново"><img src="icons/rotate.svg" alt="" width="18" height="18"></button>
+      </div>
+    </header>
+    <div class="lesson-title">
+      <div class="title-icon"><img src="icons/book.svg" alt="" width="26" height="26"></div>
+      <div><p class="eyebrow">Русский язык · Урок 1</p><h1>Части речи</h1></div>
+    </div>
+    <div class="layout">
+      <aside class="lesson-sidebar" aria-label="Содержание урока">
+        <div class="progress-heading"><span>Урок</span><span id="overall-count"></span></div>
+        <progress id="overall-progress" value="0" aria-label="Пройденные разделы"></progress>
+        <nav id="lesson-nav" aria-label="Разделы урока"></nav>
+        <label class="mobile-nav" for="section-select">Раздел<select id="section-select"></select></label>
+      </aside>
+      <main id="lesson-main">
+        <div class="section-heading"><p id="section-number" class="eyebrow"></p><h2 id="lesson-heading" tabindex="-1"></h2></div>
+        <div id="lesson-content"></div>
+        <nav class="section-footer" aria-label="Переход между разделами"><button id="previous-section" class="button secondary" type="button"><img src="icons/arrowLeft.svg" alt="" width="18" height="18">Назад</button><button id="next-section" class="button primary" type="button">Продолжить<img src="icons/arrowRight.svg" alt="" width="18" height="18"></button></nav>
+        <p id="storage-status" class="storage-status" role="status" hidden></p>
+      </main>
+    </div>
+  </div>
+  <dialog id="reset-dialog" aria-labelledby="reset-heading">
+    <form method="dialog"><h2 id="reset-heading">Начать урок заново?</h2><p>Ответы и отметки о пройденных разделах будут удалены с этого устройства.</p><div class="dialog-actions"><button class="button secondary" value="cancel">Отмена</button><button class="button primary" value="confirm">Начать заново</button></div></form>
+  </dialog>
+  <noscript><p class="noscript">Для упражнений нужен JavaScript. <a href="tekst.html">Текст урока и ответы</a></p></noscript>
+</body>
+</html>

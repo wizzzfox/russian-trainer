@@ -114,6 +114,23 @@
       font-size:13px;
       line-height:1.45;
     }
+    .lessons{margin-top:20px;padding-top:24px;border-top:1px solid var(--line)}
+    .lesson-link{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:18px;padding:22px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);text-decoration:none;transition:border-color .14s ease,background .14s ease}
+    .lesson-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:8px;background:#edf4ff}
+    .lesson-icon::before{content:"";width:26px;height:26px;background:var(--primary-dark);mask:url('uroki/chasti-rechi/icons/book.svg') center/contain no-repeat}
+    .lesson-copy{min-width:0}
+    .lesson-copy strong{display:block;font-size:20px;line-height:1.3;color:var(--primary-dark)}
+    .lesson-description{display:block;margin-top:6px;color:var(--muted);font-size:16px;line-height:1.5}
+    .lesson-state{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:750;line-height:1.4;color:var(--primary-dark)}
+    .lesson-state img{width:18px;height:18px;opacity:.65}
+    .lesson-check{width:20px;height:20px;flex:none;background:var(--accent);mask:url('uroki/chasti-rechi/icons/check.svg') center/contain no-repeat}
+    .lesson-check[hidden]{display:none}
+    .lesson-link.completed{border-color:#b9ded5;background:#f2fbf8}
+    .lesson-link.completed .lesson-state{color:var(--accent)}
+    .lesson-link.completed .lesson-icon{background:#e2f4ee}
+    .lesson-link.completed .lesson-icon::before{background:var(--accent)}
+    .lesson-link:hover{border-color:#8bb6f9;background:#f8fbff}
+    .lesson-link:focus-visible{outline:3px solid #80aef5;outline-offset:4px}
     @media(max-width:900px){
       .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
@@ -121,6 +138,10 @@
       .app{padding:14px}
       .grid{grid-template-columns:1fr}
       .card{min-height:148px}
+      .lesson-link{grid-template-columns:36px minmax(0,1fr);gap:12px;padding:18px;align-items:start}
+      .lesson-icon{width:36px;height:36px}
+      .lesson-icon::before{width:23px;height:23px}
+      .lesson-state{grid-column:2}
     }
   </style>
 </head>
@@ -151,9 +172,20 @@
           <span class="meta">Открыть</span>
         </a>
       </div>
+      <section class="lessons" aria-labelledby="lessons-title">
+        <h2 class="section-title" id="lessons-title">Изучение тем</h2>
+        <a class="lesson-link" id="parts-of-speech-link" href="uroki/chasti-rechi/">
+          <span class="lesson-icon" aria-hidden="true"></span>
+          <div class="lesson-copy"><strong>Части речи</strong><span class="lesson-description">Значение слова, грамматические признаки и связь с другими словами.</span></div>
+          <span class="lesson-state"><span class="lesson-check" aria-hidden="true" hidden></span><span id="parts-of-speech-status">Начать</span><img class="lesson-arrow" src="uroki/chasti-rechi/icons/arrowRight.svg" alt="" width="18" height="18"></span>
+        </a>
+      </section>
     </main>
 
     <footer>© 2026 ГБОУ СОШ № 323 Невского района Санкт-Петербурга. Учебный тренажёр разработан с использованием открытых материалов Федерального государственного бюджетного научного учреждения «Федеральный институт педагогических измерений» (ФГБНУ «ФИПИ»).</footer>
   </div>
+  <script src="uroki/chasti-rechi/content.js?v=20261003.2" defer></script>
+  <script src="uroki/chasti-rechi/lesson-core.js?v=20261003.2" defer></script>
+  <script src="home.js?v=20261003.2" defer></script>
 </body>
 </html>

@@ -183,8 +183,8 @@ input[type=number]{width:120px;padding:10px 12px}
 .feedback{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:8px;background:#f8fafc;color:var(--text);line-height:1.45;font-size:17px}
 .feedback.good{background:var(--soft-green);border-color:#75e0a7}
 .feedback.bad{background:var(--soft-red);border-color:#fda29b}
-.text-answer-wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
-.text-answer-wrap input{flex:1;min-width:240px;padding:16px;font-size:18px}
+.text-answer-wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap;grid-column:1 / -1;min-width:0;max-width:100%;margin-top:18px}
+.text-answer-wrap input{flex:1 1 240px;min-width:0;width:100%;max-width:100%;padding:16px;font-size:18px}
 .text-answer-wrap input:disabled{background:#f3f4f6;color:var(--muted)}
 .quiz-actions{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:18px}
 .quiz-actions-3,.team-actions-3{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:12px}
