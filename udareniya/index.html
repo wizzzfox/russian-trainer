@@ -199,6 +199,7 @@
               <div class="card-face card-back">
                 <div class="card-eyebrow">Правильное ударение</div>
                 <div class="card-word" id="cardAnswer"></div>
+                <p class="card-context hidden" id="cardAnswerContext"></p>
                 <p class="card-rule" id="cardRule"></p>
               </div>
             </div>
@@ -730,7 +731,8 @@ const EGE_WORDS=WORDS.filter(item=>manualWrongVariants(item).length);
 const QUIZ_WORDS=CARD_WORDS;
 const CARD_CONTEXTS={
   'Отзыв':'Контекст: отзыв о книге, фильме или работе.',
-  'отзЫв':'Контекст: отзыв посла или официальное возвращение.'
+  'отзЫв':'Контекст: отзыв посла или официальное возвращение.',
+  'сирОты':'Контекст: Сироты получили помощь (именительный падеж, множественное число).'
 };
 const CARD_RULE_HINTS={
   'сосредотОчить':'Запоминайте связь: сосредотОчить — сосредотОчение. В обоих словах ударение падает на О.',
@@ -785,6 +787,11 @@ function cardRuleText(item){
 function show(id){['homeScreen','quizScreen','resultScreen','dictionaryScreen','trendsScreen'].forEach(x=>$(x).classList.add('hidden'));$(id).classList.remove('hidden');if(id==='dictionaryScreen')renderDictionary();if(id==='trendsScreen')renderTrends()}
 function updateProgress(){const total=state.questions.length||1;$('progress').style.width=`${Math.round(((state.index+(state.questions[state.index]?.answered?1:0))/total)*100)}%`}
 function cardContextText(item){return item ? CARD_CONTEXTS[item.accent]||'' : ''}
+function contextDescription(item){return cardContextText(item).replace(/^Контекст:\s*/,'').replace(/\.$/,'')}
+function formatStressWithContext(item,accent=item.accent){
+  const context=contextDescription(item);
+  return formatStress(accent)+(context?` (${escapeHtml(context)})`:'');
+}
 function buildStressQuestion(item){
   return {type:'card',label:'Карточка',prompt:item.plain,hint:'Нажмите на ударную гласную прямо в слове. После ответа карточка перевернётся.',correct:item.accent,correctIndex:stressedIndex(item.accent),vowels:vowelPositions(item),item,context:cardContextText(item),ruleText:cardRuleText(item)};
 }
@@ -852,8 +859,11 @@ function renderCardQuestion(q){
   $('flashcard').classList.remove('hidden');
   $('flashcard').classList.toggle('flipped',!!q.answered);
   $('cardPlain').innerHTML='';
-  $('cardContext').textContent=q.context||'';
-  $('cardContext').classList.toggle('hidden',!q.context);
+  const context=q.context||cardContextText(q.item);
+  ['cardContext','cardAnswerContext'].forEach(id=>{
+    $(id).textContent=context;
+    $(id).classList.toggle('hidden',!context);
+  });
   $('cardAnswer').innerHTML=formatStress(q.correct);
   $('cardRule').textContent=q.ruleText||cardRuleText(q.item);
   let vowelNumber=0;
@@ -892,8 +902,8 @@ function renderEgeQuestion(q){
   q.choices.forEach((choice,index)=>{
     const b=document.createElement('button');
     b.className='answer';
-    const context=cardContextText(choice.item);
-    b.innerHTML=`<span class="choice-word">${formatStress(choice.value)}</span>`+(context?`<span class="choice-context">${escapeHtml(context.replace(/^Контекст:\s*/,'')).replaceAll('.', '')}</span>`:'');
+    const context=contextDescription(choice.item);
+    b.innerHTML=`<span class="choice-word">${formatStress(choice.value)}</span>`+(context?`<span class="choice-context">${escapeHtml(context)}</span>`:'');
     b.onclick=()=>toggleEgeChoice(index,b);
     if(q.selected?.includes(index))b.classList.add('selected');
     if(q.answered){
@@ -956,10 +966,10 @@ function showFeedback(q,ok){
   const fb=$('feedback');
   fb.className=`feedback ${ok?'good':'bad'}`;
   if(q.type==='ege'){
-    const correct=q.choices.filter(choice=>choice.isCorrect).map(choice=>formatStress(choice.value)).join(', ');
+    const correct=q.choices.filter(choice=>choice.isCorrect).map(choice=>formatStressWithContext(choice.item,choice.value)).join(', ');
     fb.innerHTML=ok?`<strong>Правильно.</strong><br>Все верные варианты выбраны.`:`<strong>Неверно.</strong><br>Верные варианты: ${correct}.`;
   }else{
-    fb.innerHTML=ok?`<strong>Правильно.</strong><br>${q.item.plain}: <strong>${formatStress(q.correct)}</strong>.`:`<strong>Неверно.</strong><br>Правильный вариант: <strong>${formatStress(q.correct)}</strong>.`;
+    fb.innerHTML=ok?`<strong>Правильно.</strong><br>${q.item.plain}: <strong>${formatStressWithContext(q.item,q.correct)}</strong>.`:`<strong>Неверно.</strong><br>Правильный вариант: <strong>${formatStressWithContext(q.item,q.correct)}</strong>.`;
   }
 }
 function nextQuestion(){if(state.index<state.questions.length-1){state.index++;renderQuestion()}else showResult()}
@@ -983,8 +993,8 @@ function showResult(){
   }else state.mistakes.forEach(q=>{
     const li=document.createElement('li');
     li.innerHTML=q.type==='ege'
-      ?`ЕГЭ: задание 4 — верные варианты: ${q.choices.filter(choice=>choice.isCorrect).map(choice=>`<strong>${formatStress(choice.value)}</strong>`).join(', ')}.`
-      :`<strong>${formatStress(q.correct)}</strong> — ${escapeHtml(q.ruleText||cardRuleText(q.item))}`;
+      ?`ЕГЭ: задание 4 — верные варианты: ${q.choices.filter(choice=>choice.isCorrect).map(choice=>`<strong>${formatStressWithContext(choice.item,choice.value)}</strong>`).join(', ')}.`
+      :`<strong>${formatStressWithContext(q.item,q.correct)}</strong> — ${escapeHtml(q.ruleText||cardRuleText(q.item))}`;
     list.appendChild(li);
   });
 }
@@ -995,9 +1005,12 @@ function startMistakeReview(){
 }
 function renderDictionary(){
   const query=($('dictionarySearch').value||'').trim().toLocaleLowerCase('ru-RU');
-  const rows=WORDS.filter(item=>`${item.accent} ${item.plain}`.toLocaleLowerCase('ru-RU').includes(query));
+  const rows=WORDS.filter(item=>`${item.accent} ${item.plain} ${cardContextText(item)}`.toLocaleLowerCase('ru-RU').includes(query));
   $('dictionaryCount').textContent=`Показано: ${rows.length} из ${WORDS.length}`;
-  $('dictionaryBody').innerHTML=rows.map(item=>`<article class="word-item">${formatStress(item.accent)}</article>`).join('');
+  $('dictionaryBody').innerHTML=rows.map(item=>{
+    const context=contextDescription(item);
+    return `<article class="word-item">${formatStress(item.accent)}${context?`<span class="choice-context">${escapeHtml(context)}</span>`:''}</article>`;
+  }).join('');
 }
 function renderTrendExceptions(exceptions){
   if(!exceptions?.length)return '';
