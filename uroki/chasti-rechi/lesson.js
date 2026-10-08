@@ -29,8 +29,13 @@
     $('overall-count').textContent = `${completed} из ${content.steps.length}`;
     $('overall-progress').max = content.steps.length;
     $('overall-progress').value = completed;
-    $('lesson-nav').innerHTML = content.steps.map((step, i) => `<button class="nav-step${complete(step) ? ' done' : ''}" type="button" data-step="${i}"${state.step === i ? ' aria-current="step"' : ''}><span class="step-number">${complete(step) ? icon('check') : i + 1}</span><span>${escape(step.title)}</span></button>`).join('');
-    $('section-select').innerHTML = content.steps.map((step, i) => `<option value="${i}"${i === state.step ? ' selected' : ''}>${i + 1}. ${escape(step.title)}</option>`).join('');
+    $('lesson-nav').innerHTML = content.steps.map((step, i) => {
+      const chapter = content.chapters?.find(chapter => chapter.id === step.chapter);
+      const heading = chapter && (i === 0 || content.steps[i - 1].chapter !== step.chapter) ? `<p class="nav-chapter">${escape(chapter.title)}</p>` : '';
+      return `${heading}<button class="nav-step${complete(step) ? ' done' : ''}" type="button" data-step="${i}"${state.step === i ? ' aria-current="step"' : ''}><span class="step-number">${complete(step) ? icon('check') : i + 1}</span><span>${escape(step.title)}</span></button>`;
+    }).join('');
+    const sectionOptions = chapter => content.steps.map((step, i) => (!chapter || step.chapter === chapter.id) ? `<option value="${i}"${i === state.step ? ' selected' : ''}>${i + 1}. ${escape(step.title)}</option>` : '').join('');
+    $('section-select').innerHTML = content.chapters ? content.chapters.map(chapter => `<optgroup label="${escape(chapter.title)}">${sectionOptions(chapter)}</optgroup>`).join('') : sectionOptions();
     $('previous-section').disabled = state.step === 0;
     $('next-section').innerHTML = state.step === content.steps.length - 1 ? `К началу урока${icon('arrowRight')}` : `Продолжить${icon('arrowRight')}`;
     document.body.classList.toggle('large', state.large);
@@ -99,7 +104,7 @@
     if (q.type === 'input') return `<div class="input-answer"><label for="input-${q.id}">Ответ</label><input id="input-${q.id}" data-question="${q.id}" data-text type="text" value="${escape(answer.text)}" maxlength="1000" autocomplete="off" spellcheck="false"${locked ? ' disabled' : ''}></div>`;
     return `<div class="sort-rows">${q.rows.map(row => {
       const correct = answer.mapping[row.id] === row.correct;
-      return `<div class="sort-row${locked && correct ? ' checked-correct' : ''}"><label class="sort-word" for="sort-${q.id}-${row.id}">${escape(row.label)}</label><select id="sort-${q.id}-${row.id}" data-question="${q.id}" data-row="${row.id}"${locked ? ' disabled' : ''}><option value="">Выберите часть речи</option>${q.choices.map(choice => `<option value="${choice.value}"${answer.mapping[row.id] === choice.value ? ' selected' : ''}>${escape(choice.label)}</option>`).join('')}</select>${locked ? `<p class="sort-answer-note">${correct ? 'Верно' : `Правильный ответ: ${escape(content.labels[row.correct])}`}</p>` : ''}</div>`;
+      return `<div class="sort-row${locked && correct ? ' checked-correct' : ''}"><label class="sort-word" for="sort-${q.id}-${row.id}">${escape(row.label)}</label><select id="sort-${q.id}-${row.id}" data-question="${q.id}" data-row="${row.id}"${locked ? ' disabled' : ''}><option value="">${escape(q.sortLabel || 'Выберите часть речи')}</option>${q.choices.map(choice => `<option value="${choice.value}"${answer.mapping[row.id] === choice.value ? ' selected' : ''}>${escape(choice.label)}</option>`).join('')}</select>${locked ? `<p class="sort-answer-note">${correct ? 'Верно' : `Правильный ответ: ${escape(q.choices.find(choice => choice.value === row.correct)?.label)}`}</p>` : ''}</div>`;
     }).join('')}</div>`;
   }
   function assessmentResult(group) {
@@ -244,6 +249,14 @@
     state = core.cleanState(null, content);
     navigate(0);
   });
-  render();
-  persist();
+  const url = new URL(location.href);
+  const requestedStep = content.steps.findIndex(step => step.id === url.searchParams.get('section'));
+  if (requestedStep >= 0) {
+    url.searchParams.delete('section');
+    history.replaceState(null, '', url);
+    navigate(requestedStep);
+  } else {
+    render();
+    persist();
+  }
 })();

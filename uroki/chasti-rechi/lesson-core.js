@@ -35,7 +35,7 @@
     });
   }
   function cleanState(saved, content) {
-    const fresh = { version: content.version, theoryRevision: content.theoryRevision, finalRevision: content.finalRevision || 1, step: 0, stepId: content.steps[0].id, answers: {}, cursors: {}, read: [], submitted: { entry: false, final: false }, large: false };
+    const fresh = { version: content.version, theoryRevision: content.theoryRevision, finalRevision: content.finalRevision || 1, step: 0, stepId: content.steps[0].id, answers: {}, cursors: {}, read: [], submitted: Object.fromEntries(Object.values(content.groups).filter(group => group.assessment).map(group => [group.id, false])), large: false };
     if (!saved || saved.version !== content.version) return fresh;
     const sameTheory = saved.theoryRevision === content.theoryRevision;
     const stepId = typeof saved.stepId === 'string' ? saved.stepId : Number.isInteger(saved.step) ? (content.previousStepIds || content.steps.map(step => step.id))[saved.step] : undefined;
@@ -60,7 +60,7 @@
         fresh.answers[q.id] = answer;
       }
     }
-    for (const id of ['entry', 'final']) fresh.submitted[id] = saved.submitted?.[id] === true;
+    for (const id of Object.keys(fresh.submitted)) fresh.submitted[id] = saved.submitted?.[id] === true;
     // An expanded assessment resumes at the first new unanswered question.
     if (saved.finalRevision !== fresh.finalRevision && fresh.submitted.final) {
       const missing = content.groups.final.questions.findIndex(q => !hasAnswer(q, fresh.answers[q.id]));

@@ -29,6 +29,8 @@ progress::-webkit-progress-bar{background:#e5ebf3;border-radius:3px}
 progress::-webkit-progress-value{background:var(--blue);border-radius:3px}
 progress::-moz-progress-bar{background:var(--blue)}
 #lesson-nav{display:grid;gap:4px;margin-top:18px}
+.nav-chapter{margin:18px 10px 5px;color:var(--text);font-size:13px;font-weight:750;line-height:1.4}
+.nav-chapter:first-child{margin-top:0}
 .nav-step{display:flex;align-items:flex-start;gap:10px;width:100%;min-height:46px;padding:11px 10px;text-align:left;border:0;border-radius:5px;background:transparent;color:#475467;font-size:14px;line-height:1.4}
 .nav-step:hover{background:#edf0f5}
 .nav-step[aria-current=step]{background:var(--blue-soft);color:var(--blue);font-weight:700}
