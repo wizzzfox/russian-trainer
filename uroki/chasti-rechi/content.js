@@ -12,6 +12,10 @@ window.LESSON_CONTENT = {
     {
       "id": "noun",
       "title": "Имя существительное"
+    },
+    {
+      "id": "adjective",
+      "title": "Имя прилагательное"
     }
   ],
   "labels": {
@@ -170,6 +174,87 @@ window.LESSON_CONTENT = {
       "html": "",
       "groups": [
         "noun-check"
+      ]
+    },
+    {
+      "id": "adjective-meaning",
+      "title": "Что обозначает прилагательное",
+      "chapter": "adjective",
+      "html": "\u003cp>Когда мы называем предмет, часто нужно уточнить, какой он: большой или маленький, новый или старый, из чего сделан и кому принадлежит. Для этого служат прилагательные.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>На столе лежат карандаши. Просим: Дай \u003cstrong class=\"example-word\">красный\u003c/strong> карандаш.\u003c/p>\n\u003cp>Существительное \u003cspan class=\"example-word\">«карандаш»\u003c/span> называет предмет. Прилагательное \u003cspan class=\"example-word\">«красный»\u003c/span> помогает выбрать нужный карандаш по его цвету. В сочетании \u003cstrong class=\"example-word\">мамин\u003c/strong> карандаш прилагательное сообщает, кому он принадлежит.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Имя прилагательное\u003c/strong> обозначает признак предмета. Это самостоятельная часть речи. К прилагательным ставят вопросы какой? какая? какое? какие? и чей? чья? чьё? чьи?\u003c/p>\n\u003c/div>\u003cp>Признаком называют то, что характеризует предмет: цвет, размер, форму, вкус, материал, назначение, принадлежность. Прилагательное может описывать не только вещь, но и человека, явление или чувство.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Что характеризует прилагательное\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Цвет\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Синий\u003c/strong> шарф\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Размер\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Большой\u003c/strong> дом\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Форма\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Круглый\u003c/strong> стол\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Вкус\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Сладкое\u003c/strong> яблоко\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Характер человека\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Добрый\u003c/strong> сосед\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Материал\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Деревянная\u003c/strong> полка\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Время\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Зимний\u003c/strong> день\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Назначение\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Спортивная\u003c/strong> обувь\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Принадлежность\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мамина\u003c/strong> сумка\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ch3>От какого слова поставить вопрос\u003c/h3>\u003cp>Прилагательное характеризует предмет, поэтому вопрос к нему ставят от слова, которое этот предмет называет.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы открыли \u003cstrong class=\"example-word\">новую\u003c/strong> книгу.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Новую»\u003c/span> относится к существительному \u003cspan class=\"example-word\">«книгу»\u003c/span>: книгу какую? новую. Слово \u003cspan class=\"example-word\">«открыли»\u003c/span> сообщает о действии, а \u003cspan class=\"example-word\">«новую»\u003c/span> обозначает признак книги.\u003c/p>\n\u003c/div>\u003cp>Вопрос и значение нужно рассматривать вместе. Например, \u003cspan class=\"example-word\">«этот»\u003c/span> в сочетании \u003cspan class=\"example-word\">«этот дом»\u003c/span> указывает на предмет, но не называет его признак. Это местоимение, а не прилагательное.\u003c/p>\n",
+      "groups": [
+        "adjective-meaning-practice"
+      ]
+    },
+    {
+      "id": "adjective-agreement",
+      "title": "Род, число и связь с существительным",
+      "chapter": "adjective",
+      "html": "\u003cp>Существительное \u003cspan class=\"example-word\">«дом»\u003c/span> имеет мужской род, \u003cspan class=\"example-word\">«комната»\u003c/span> женский, \u003cspan class=\"example-word\">«окно»\u003c/span> средний. Прилагательное \u003cspan class=\"example-word\">«светлый»\u003c/span> может относиться к каждому из этих существительных, но принимает разные формы: \u003cspan class=\"example-word\">«светлый»\u003c/span>, \u003cspan class=\"example-word\">«светлая»\u003c/span>, \u003cspan class=\"example-word\">«светлое»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Согласование\u003c/strong> означает, что прилагательное принимает тот же род, число и падеж, что и существительное, к которому относится. У полных прилагательных эти признаки определяют по существительному.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Форма\u003c/th>\n\u003cth>Вопрос\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Мужской род, единственное число\u003c/td>\n\u003ctd>Какой?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Светлый\u003c/strong> дом\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Женский род, единственное число\u003c/td>\n\u003ctd>Какая?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Светлая\u003c/strong> комната\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Средний род, единственное число\u003c/td>\n\u003ctd>Какое?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Светлое\u003c/strong> окно\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Множественное число\u003c/td>\n\u003ctd>Какие?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Светлые\u003c/strong> дома, комнаты, окна\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У существительного род обычно постоянный, а прилагательное изменяется по родам. Во множественном числе род прилагательного не определяется: форма \u003cspan class=\"example-word\">«светлые»\u003c/span> подходит к словам всех трёх родов.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы купили \u003cstrong class=\"example-word\">новое\u003c/strong> пальто и \u003cstrong class=\"example-word\">новые\u003c/strong> перчатки.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Пальто»\u003c/span> среднего рода, здесь стоит в единственном числе. Поэтому \u003cspan class=\"example-word\">«новое»\u003c/span> тоже среднего рода, единственного числа. \u003cspan class=\"example-word\">«Перчатки»\u003c/span> стоят во множественном числе, поэтому прилагательное имеет форму \u003cspan class=\"example-word\">«новые»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Если существительное не меняет своей записи, прилагательное всё равно согласуется с ним: \u003cspan class=\"example-word\">«новое пальто»\u003c/span>, \u003cspan class=\"example-word\">«новые пальто»\u003c/span>. Так форма прилагательного помогает увидеть число существительного.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Начальная форма\u003c/strong> прилагательного, имеющего полную форму, является формой мужского рода, единственного числа, именительного падежа. Вопросы: какой? чей?\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Весенней\u003c/strong> погодой, \u003cstrong class=\"example-word\">весенние\u003c/strong> дни, \u003cstrong class=\"example-word\">весеннее\u003c/strong> утро. Начальная форма прилагательного во всех трёх сочетаниях: \u003cstrong class=\"example-word\">весенний\u003c/strong>.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "adjective-agreement-practice"
+      ]
+    },
+    {
+      "id": "adjective-case",
+      "title": "Падеж и склонение прилагательного",
+      "chapter": "adjective",
+      "html": "\u003cp>Когда существительное меняет падеж, связанное с ним полное прилагательное тоже меняет форму. Это изменение по падежам называется \u003cstrong class=\"term\">склонением\u003c/strong>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы подошли к \u003cstrong class=\"example-word\">старому\u003c/strong> дому.\u003c/p>\n\u003cp>Подошли к кому? к чему? К дому. Существительное \u003cspan class=\"example-word\">«дому»\u003c/span> стоит в дательном падеже. Прилагательное \u003cspan class=\"example-word\">«старому»\u003c/span> тоже в дательном падеже: к дому какому? старому.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Вопросы к полному прилагательному\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>Какой? Какая? Какое? Какие?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Новый\u003c/strong> дом\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>Какого? Какой? Каких?\u003c/td>\n\u003ctd>Нет \u003cstrong class=\"example-word\">нового\u003c/strong> дома\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>Какому? Какой? Каким?\u003c/td>\n\u003ctd>Подойти к \u003cstrong class=\"example-word\">новому\u003c/strong> дому\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>Какой? Какого? Какую? Какое? Какие? Каких?\u003c/td>\n\u003ctd>Увидеть \u003cstrong class=\"example-word\">новый\u003c/strong> дом\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>Каким? Какой? Какими?\u003c/td>\n\u003ctd>Стоять перед \u003cstrong class=\"example-word\">новым\u003c/strong> домом\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О каком? О какой? О каких?\u003c/td>\n\u003ctd>Рассказать о \u003cstrong class=\"example-word\">новом\u003c/strong> доме\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>В винительном падеже вопрос зависит в том числе от одушевлённости существительного: \u003cspan class=\"example-word\">«вижу новый дом»\u003c/span>, но \u003cspan class=\"example-word\">«вижу нового ученика»\u003c/span>. Прилагательное само по себе не называют одушевлённым или неодушевлённым.\u003c/p>\n\u003ch3>Как проверить окончание\u003c/h3>\u003cp>Найдите существительное и поставьте от него вопрос к прилагательному. В безударных окончаниях многих полных прилагательных вопрос помогает выбрать нужные буквы.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы гуляли в \u003cstrong class=\"example-word\">сосновом\u003c/strong> лесу.\u003c/p>\n\u003cp>В лесу каком? Сосновом. В вопросе окончание -ом, в прилагательном тоже -ом.\u003c/p>\n\u003cp>Мы любовались \u003cstrong class=\"example-word\">синим\u003c/strong> небом. Небом каким? Синим. Вопрос подсказывает окончание -ым или -им; после мягкого согласного в слове \u003cspan class=\"example-word\">«синий»\u003c/span> пишется -им.\u003c/p>\n\u003c/div>\u003cp>Нельзя просто копировать окончание вопроса во всех словах. Например, в именительном падеже мужского рода на вопрос \u003cspan class=\"example-word\">«какой?»\u003c/span> отвечают формы \u003cspan class=\"example-word\">«новый»\u003c/span>, \u003cspan class=\"example-word\">«синий»\u003c/span>, \u003cspan class=\"example-word\">«лесной»\u003c/span>. Притяжательные прилагательные тоже имеют особые окончания: \u003cspan class=\"example-word\">«мамин»\u003c/span>, \u003cspan class=\"example-word\">«мамина»\u003c/span>, \u003cspan class=\"example-word\">«лисий»\u003c/span>, \u003cspan class=\"example-word\">«лисьего»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "adjective-case-practice"
+      ]
+    },
+    {
+      "id": "adjective-classes",
+      "title": "Три разряда прилагательных",
+      "chapter": "adjective",
+      "html": "\u003cp>Прилагательные обозначают признаки по-разному. Одни называют качество, другие связывают предмет с материалом, временем или назначением, третьи указывают на владельца. Эти группы называют разрядами по значению.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Разряд\u003c/th>\n\u003cth>Что обозначает\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Качественные прилагательные\u003c/strong>\u003c/td>\n\u003ctd>Качество или свойство предмета\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Тёплый\u003c/strong> шарф, \u003cstrong class=\"example-word\">узкая\u003c/strong> улица\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Относительные прилагательные\u003c/strong>\u003c/td>\n\u003ctd>Признак через связь с материалом, местом, временем, назначением\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Шерстяной\u003c/strong> шарф, \u003cstrong class=\"example-word\">городская\u003c/strong> улица\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Притяжательные прилагательные\u003c/strong>\u003c/td>\n\u003ctd>Принадлежность человеку или животному\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мамин\u003c/strong> шарф, \u003cstrong class=\"example-word\">лисий\u003c/strong> хвост\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ch3>Качественные прилагательные\u003c/h3>\u003cp>Качество часто может проявляться сильнее или слабее: один шарф тёплый, а другой ещё теплее. Многие качественные прилагательные сочетаются со словом \u003cspan class=\"example-word\">«очень»\u003c/span>, имеют степени сравнения и краткую форму.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Тёплый\u003c/strong> шарф: очень тёплый, теплее, самый тёплый. Шарф \u003cstrong class=\"example-word\">тёпел\u003c/strong>.\u003c/p>\n\u003cp>Эти формы показывают, что речь идёт о качестве. Но не у каждого качественного прилагательного есть все такие формы: \u003cspan class=\"example-word\">«коричневый»\u003c/span> обозначает цвет, хотя обычной краткой формы у него нет.\u003c/p>\n\u003c/div>\u003ch3>Относительные прилагательные\u003c/h3>\u003cp>Связь с другим предметом или обстоятельством можно объяснить сочетанием слов: \u003cspan class=\"example-word\">«шерстяной»\u003c/span> означает \u003cspan class=\"example-word\">«из шерсти»\u003c/span>, \u003cspan class=\"example-word\">«городской»\u003c/span> означает \u003cspan class=\"example-word\">«относящийся к городу»\u003c/span>. В таком значении признак не сравнивают по степени: шарф не бывает \u003cspan class=\"example-word\">«более шерстяным»\u003c/span> в значении материала.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Связь\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003cth>Объяснение\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>С материалом\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Стеклянная\u003c/strong> ваза\u003c/td>\n\u003ctd>Ваза из стекла\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>С местом\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Лесная\u003c/strong> тропинка\u003c/td>\n\u003ctd>Тропинка в лесу\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Со временем\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Утренний\u003c/strong> поезд\u003c/td>\n\u003ctd>Поезд, отправляющийся утром\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>С назначением\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Школьный\u003c/strong> рюкзак\u003c/td>\n\u003ctd>Рюкзак для школы\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ch3>Притяжательные прилагательные\u003c/h3>\u003cp>Они отвечают на вопросы чей? чья? чьё? чьи? и называют принадлежность. Слово \u003cspan class=\"example-word\">«мамин»\u003c/span> связано со словом \u003cspan class=\"example-word\">«мама»\u003c/span>, \u003cspan class=\"example-word\">«лисий»\u003c/span> со словом \u003cspan class=\"example-word\">«лиса»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мамина\u003c/strong> сумка: сумка чья? мамина, принадлежит маме.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Лисьи\u003c/strong> следы: следы чьи? лисьи, оставлены лисой.\u003c/p>\n\u003c/div>\u003cp>Не всякое слово, отвечающее на вопрос \u003cspan class=\"example-word\">«чей?»\u003c/span>, является прилагательным. \u003cspan class=\"example-word\">«Мамин»\u003c/span> называет владельца, а \u003cspan class=\"example-word\">«мой»\u003c/span> указывает на него. \u003cspan class=\"example-word\">«Мой»\u003c/span> является местоимением.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cstrong class=\"example-word\">Тёплый\u003c/strong>: качество. \u003cstrong class=\"example-word\">Шерстяной\u003c/strong>: связь с материалом. \u003cstrong class=\"example-word\">Мамин\u003c/strong>: принадлежность. Чтобы вспомнить три разряда, можно представить один шарф с этими тремя признаками.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "adjective-classes-practice"
+      ]
+    },
+    {
+      "id": "adjective-context",
+      "title": "Разряд зависит от значения",
+      "chapter": "adjective",
+      "html": "\u003cp>Одно и то же прилагательное может употребляться в разных значениях. Поэтому разряд определяют не по отдельному слову и не только по его окончанию, а по сочетанию, в котором оно встретилось.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Золотое\u003c/strong> кольцо сделано из золота. Здесь \u003cspan class=\"example-word\">«золотое»\u003c/span> относительное.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Золотое\u003c/strong> сердце означает доброту человека. Здесь \u003cspan class=\"example-word\">«золотое»\u003c/span> качественное: оно не называет материал, а оценивает человека.\u003c/p>\n\u003c/div>\u003cp>В переносном значении слово обозначает не то, что в прямом. \u003cspan class=\"example-word\">«Золотое сердце»\u003c/span> не означает, что сердце сделано из металла.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Сочетание\u003c/th>\n\u003cth>Значение прилагательного\u003c/th>\n\u003cth>Разряд\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Лисий\u003c/strong> хвост\u003c/td>\n\u003ctd>Хвост лисы\u003c/td>\n\u003ctd>Притяжательное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Лисья\u003c/strong> шапка\u003c/td>\n\u003ctd>Шапка из лисьего меха\u003c/td>\n\u003ctd>Относительное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Лисья\u003c/strong> хитрость\u003c/td>\n\u003ctd>Хитрость, похожая на хитрость лисы\u003c/td>\n\u003ctd>Качественное\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Форма слова \u003cspan class=\"example-word\">«лисий»\u003c/span> не даёт готового ответа о разряде. В первом сочетании важен владелец, во втором материал, в третьем качество.\u003c/p>\n",
+      "groups": [
+        "adjective-context-practice"
+      ]
+    },
+    {
+      "id": "adjective-degrees",
+      "title": "Степени сравнения",
+      "chapter": "adjective",
+      "html": "\u003cp>Два предмета могут обладать одним качеством, но в разной степени. Одна дорожка длинная, а другая длиннее. Если сравнить все дорожки в парке, можно найти самую длинную.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Положительная степень\u003c/strong> называет признак без сравнения: \u003cspan class=\"example-word\">«длинный»\u003c/span>, \u003cspan class=\"example-word\">«удобный»\u003c/span>. Это исходная форма для образования степеней сравнения.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Сравнительная степень\u003c/strong> показывает, что качество проявляется сильнее или слабее, чем у другого предмета или у того же предмета раньше.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Этот путь \u003cstrong class=\"example-word\">короче\u003c/strong>, чем путь через лес. Сегодня путь кажется \u003cstrong class=\"example-word\">более трудным\u003c/strong>, чем вчера.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Превосходная степень\u003c/strong> показывает наибольшую или наименьшую степень качества среди сравниваемых предметов.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Это \u003cstrong class=\"example-word\">самый короткий\u003c/strong> путь к станции. Мы выбрали \u003cstrong class=\"example-word\">наиболее удобный\u003c/strong> маршрут.\u003c/p>\n\u003c/div>\u003ch3>Простая и составная формы\u003c/h3>\u003cp>Простая форма состоит из одного слова, составная из нескольких. В таблице показано, как они образуются.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Степень и форма\u003c/th>\n\u003cth>Как образуется\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Сравнительная, простая\u003c/td>\n\u003ctd>С помощью суффиксов -ее (-ей), -е, -ше\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Теплее\u003c/strong>, \u003cstrong class=\"example-word\">громче\u003c/strong>, \u003cstrong class=\"example-word\">тоньше\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Сравнительная, составная\u003c/td>\n\u003ctd>Более или менее + исходное прилагательное\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Более тёплый\u003c/strong>, \u003cstrong class=\"example-word\">менее громкий\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Превосходная, простая\u003c/td>\n\u003ctd>С помощью суффиксов -ейш-, -айш-\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Добрейший\u003c/strong>, \u003cstrong class=\"example-word\">высочайший\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Превосходная, составная\u003c/td>\n\u003ctd>Самый, наиболее, наименее + исходное прилагательное\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Самый добрый\u003c/strong>, \u003cstrong class=\"example-word\">наиболее высокий\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Превосходная, составная\u003c/td>\n\u003ctd>Простая сравнительная форма + всех или всего\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Выше всех\u003c/strong>, \u003cstrong class=\"example-word\">дороже всего\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У некоторых слов сравнительная форма образуется от другой основы: \u003cspan class=\"example-word\">«хороший, лучше»\u003c/span>, \u003cspan class=\"example-word\">«плохой, хуже»\u003c/span>.\u003c/p>\n\u003cp>Простая сравнительная форма не изменяется по родам, числам и падежам. Сравните: \u003cspan class=\"example-word\">«дом выше»\u003c/span>, \u003cspan class=\"example-word\">«башня выше»\u003c/span>, \u003cspan class=\"example-word\">«дерево выше»\u003c/span>, \u003cspan class=\"example-word\">«дома выше»\u003c/span>. В составной форме со словами \u003cspan class=\"example-word\">«более»\u003c/span> и \u003cspan class=\"example-word\">«менее»\u003c/span> само прилагательное изменяется: \u003cspan class=\"example-word\">«более высокий дом»\u003c/span>, \u003cspan class=\"example-word\">«более высокая башня»\u003c/span>, \u003cspan class=\"example-word\">«у более высокой башни»\u003c/span>.\u003c/p>\n\u003cp>Не все качественные прилагательные образуют степени сравнения. В обычном употреблении не говорят \u003cspan class=\"example-word\">«более босой»\u003c/span>. Относительные и притяжательные прилагательные в своих прямых значениях степеней сравнения не имеют.\u003c/p>\n\u003ch3>Что именно сравнивается\u003c/h3>\u003cp>Форма сравнительной степени тоже может совпадать у прилагательного и наречия. Посмотрите, обозначает ли слово качество предмета или признак действия.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мальчик \u003cstrong class=\"example-word\">выше\u003c/strong> брата. Сравнивается рост двух людей. \u003cspan class=\"example-word\">«Выше»\u003c/span> является прилагательным в сравнительной степени.\u003c/p>\n\u003cp>Мальчик прыгнул \u003cstrong class=\"example-word\">выше\u003c/strong> брата. Сравнивается высота прыжков. \u003cspan class=\"example-word\">«Выше»\u003c/span> характеризует действие \u003cspan class=\"example-word\">«прыгнул»\u003c/span>, поэтому является наречием в сравнительной степени.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Для сравнительной степени выберите один способ: \u003cstrong class=\"example-word\">удобнее\u003c/strong> или \u003cstrong class=\"example-word\">более удобный\u003c/strong>. Не соединяйте их: сочетание \u003cspan class=\"example-word\">«более удобнее»\u003c/span> ошибочно. Так же: \u003cstrong class=\"example-word\">самый высокий\u003c/strong>, а не \u003cspan class=\"example-word\">«самый высочайший»\u003c/span>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "adjective-degrees-practice"
+      ]
+    },
+    {
+      "id": "adjective-short",
+      "title": "Полная и краткая формы",
+      "chapter": "adjective",
+      "html": "\u003cp>О качестве можно сказать по-разному: \u003cspan class=\"example-word\">«ответ правильный»\u003c/span> и \u003cspan class=\"example-word\">«ответ правилен»\u003c/span>. \u003cspan class=\"example-word\">«Правильный»\u003c/span> является полной формой, \u003cspan class=\"example-word\">«правилен»\u003c/span> краткой формой того же прилагательного.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Полная форма\u003c/strong> качественного прилагательного изменяется по родам, числам и падежам. \u003cstrong class=\"term\">Краткая форма\u003c/strong> изменяется по числам и в единственном числе по родам, но по падежам не изменяется.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Форма\u003c/th>\n\u003cth>Полное прилагательное\u003c/th>\n\u003cth>Краткое прилагательное\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Мужской род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Правильный\u003c/strong> ответ\u003c/td>\n\u003ctd>Ответ \u003cstrong class=\"example-word\">правилен\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Женский род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Правильная\u003c/strong> мысль\u003c/td>\n\u003ctd>Мысль \u003cstrong class=\"example-word\">правильна\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Средний род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Правильное\u003c/strong> решение\u003c/td>\n\u003ctd>Решение \u003cstrong class=\"example-word\">правильно\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Множественное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Правильные\u003c/strong> ответы\u003c/td>\n\u003ctd>Ответы \u003cstrong class=\"example-word\">правильны\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У краткой формы мужского рода часто нулевое окончание: \u003cspan class=\"example-word\">«готов»\u003c/span>. В других формах окончания видны: \u003cspan class=\"example-word\">«готова»\u003c/span>, \u003cspan class=\"example-word\">«готово»\u003c/span>, \u003cspan class=\"example-word\">«готовы»\u003c/span>. Иногда меняется основа: \u003cspan class=\"example-word\">«умный, умён»\u003c/span>, \u003cspan class=\"example-word\">«спокойный, спокоен»\u003c/span>.\u003c/p>\n\u003cp>Краткая форма обычно сообщает о качестве предмета в целом: \u003cspan class=\"example-word\">«ответ верен»\u003c/span>, \u003cspan class=\"example-word\">«комната светла»\u003c/span>. Не нужно определять у неё падеж. У относительных и притяжательных прилагательных нет пары полная / краткая форма, подобной \u003cspan class=\"example-word\">«добрый / добр»\u003c/span>.\u003c/p>\n\u003ch3>Как не спутать краткое прилагательное с наречием\u003c/h3>\u003cp>Слова могут одинаково писаться, но относиться к разным частям речи. Нужно понять, что характеризует слово: предмет или действие.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Решение \u003cstrong class=\"example-word\">правильно\u003c/strong>. Слово \u003cspan class=\"example-word\">«правильно»\u003c/span> характеризует решение; можно изменить число: решения \u003cstrong class=\"example-word\">правильны\u003c/strong>. Это краткое прилагательное.\u003c/p>\n\u003cp>Ученик решил задачу \u003cstrong class=\"example-word\">правильно\u003c/strong>. Слово \u003cspan class=\"example-word\">«правильно»\u003c/span> характеризует действие: решил как? правильно. Ученики решили правильно. Здесь это наречие.\u003c/p>\n\u003c/div>\u003ch3>Значение полной и краткой формы\u003c/h3>\u003cp>Часто значение совпадает, но не всегда: \u003cspan class=\"example-word\">«юбка короткая»\u003c/span> описывает длину, а \u003cspan class=\"example-word\">«юбка коротка»\u003c/span> обычно означает, что её длины недостаточно для того, кто её носит.\u003c/p>\n\u003cp>Не каждое качественное прилагательное имеет краткую форму. Например, обычной краткой формы нет у слова \u003cspan class=\"example-word\">«коричневый»\u003c/span>. Есть и слова только с краткой формой: \u003cspan class=\"example-word\">«рад»\u003c/span>, \u003cspan class=\"example-word\">«должен»\u003c/span>. Их начальная форма является формой мужского рода единственного числа: \u003cspan class=\"example-word\">«рада, рад»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "adjective-short-practice"
+      ]
+    },
+    {
+      "id": "adjective-analysis",
+      "title": "Как охарактеризовать прилагательное",
+      "chapter": "adjective",
+      "html": "\u003cp>Начните с сочетания или предложения. Слово без контекста не всегда позволяет определить разряд и форму.\u003c/p>\n\u003ch3>1. Найдите предмет и поставьте вопрос\u003c/h3>\u003cp>Установите, какое слово называет предмет, а какое характеризует его.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы остановились у \u003cstrong class=\"example-word\">старого\u003c/strong> дома. Слово \u003cspan class=\"example-word\">«старого»\u003c/span> относится к слову \u003cspan class=\"example-word\">«дома»\u003c/span>: дома какого? старого. Оно обозначает признак предмета, значит, это прилагательное.\u003c/p>\n\u003c/div>\u003ch3>2. Назовите начальную форму и разряд\u003c/h3>\u003cp>Если у слова есть полная форма, поставьте его в мужской род, единственное число, именительный падеж. Определите, называет ли оно качество, связь с материалом, временем или назначением либо принадлежность.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Начальная форма слова \u003cspan class=\"example-word\">«старого»\u003c/span>: \u003cstrong class=\"example-word\">старый\u003c/strong>. В сочетании \u003cspan class=\"example-word\">«старый дом»\u003c/span> оно обозначает возраст дома. Это качественное прилагательное.\u003c/p>\n\u003c/div>\u003ch3>3. Определите форму и изменяемые признаки\u003c/h3>\u003cp>Для качественного прилагательного проверьте степень сравнения и полную или краткую форму. У полной формы определите число, род в единственном числе и падеж по существительному. У краткой формы падежа нет; у простой сравнительной формы нет рода, числа и падежа.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Старого»\u003c/span> является полной формой в положительной степени. \u003cspan class=\"example-word\">«Дома»\u003c/span> мужского рода, единственного числа, родительного падежа (вопросы \u003cspan class=\"example-word\">«кого? чего?»\u003c/span>): у дома. Прилагательное \u003cspan class=\"example-word\">«старого»\u003c/span> имеет те же признаки.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Постоянные признаки\u003c/strong> характеризуют слово в данном значении. Для прилагательного таким признаком является разряд по значению. \u003cstrong class=\"term\">Непостоянные признаки\u003c/strong> характеризуют форму слова: род, число, падеж, а у большинства качественных прилагательных также степень сравнения и полная или краткая форма.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Старого»\u003c/span>: имя прилагательное; начальная форма \u003cspan class=\"example-word\">«старый»\u003c/span>; качественное; положительная степень, полная форма; единственное число, мужской род, родительный падеж.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "adjective-analysis-practice"
+      ]
+    },
+    {
+      "id": "adjective-check",
+      "title": "Проверка по прилагательному",
+      "chapter": "adjective",
+      "html": "",
+      "groups": [
+        "adjective-check"
       ]
     }
   ],
@@ -3075,6 +3160,1222 @@ window.LESSON_CONTENT = {
           ],
           "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Тетрадь»\u003c/span> является общим названием отдельного предмета, а не вещества или совокупности. Начальная форма \u003cspan class=\"example-word\">«тетрадь»\u003c/span>, женский род, нулевое окончание, третье склонение. Кто? Что? \u003cspan class=\"example-word\">«Тетради»\u003c/span>: именительный падеж множественного числа.\u003c/p>\n",
           "reviewStep": "noun-declension"
+        }
+      ]
+    },
+    "adjective-meaning-practice": {
+      "id": "adjective-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все прилагательные.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Тихий",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ветер",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "слегка",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "качал",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "зелёные",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "ветви",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Тихий",
+              "role": "adjective"
+            },
+            {
+              "value": "1",
+              "label": "ветер",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "слегка",
+              "role": "adverb"
+            },
+            {
+              "value": "3",
+              "label": "качал",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "зелёные",
+              "role": "adjective"
+            },
+            {
+              "value": "5",
+              "label": "ветви",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "4"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Тихий»\u003c/span> характеризует ветер, \u003cspan class=\"example-word\">«зелёные»\u003c/span> ветви. \u003cspan class=\"example-word\">«Слегка»\u003c/span> относится к действию \u003cspan class=\"example-word\">«качал»\u003c/span>, это наречие.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-meaning-2",
+          "type": "choice",
+          "promptHtml": "Дети \u003cstrong class=\"example-word\">внимательно\u003c/strong> слушали рассказ. Выберите верную характеристику выделенного слова.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное: обозначает качество детей, отвечает на вопрос «какие?», имеет множественное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Наречие: характеризует действие «слушали», отвечает на вопрос «как?», не изменяется по родам и числам."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя существительное: называет внимание, отвечает на вопросы «кто? что?», имеет средний род."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Слушали как? \u003cspan class=\"example-word\">«Внимательно»\u003c/span>. Слово характеризует действие. В варианте А вопрос к детям подменяет связь с глаголом. В варианте В характеристика названия \u003cspan class=\"example-word\">«внимание»\u003c/span> перенесена на другое слово.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-meaning-3",
+          "type": "choice",
+          "promptHtml": "На полке стоит \u003cstrong class=\"example-word\">деревянная\u003c/strong> шкатулка. Выберите верную характеристику выделенного слова.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное: обозначает материал предмета, отвечает на вопрос «какая?», имеет формы «деревянный», «деревянное»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Имя существительное: называет древесину, отвечает на вопросы «кто? что?», имеет женский род и изменяется по падежам."
+            },
+            {
+              "value": "2",
+              "label": "В. Наречие: обозначает способ изготовления шкатулки, отвечает на вопрос «как?», не изменяется."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Шкатулка какая? \u003cspan class=\"example-word\">«Деревянная»\u003c/span>. Это признак предмета, выраженный прилагательным. В варианте Б признак спутан с названием материала. В варианте В не учтены вопрос и изменяемость слова.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-agreement-practice": {
+      "id": "adjective-agreement-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-agreement-1",
+          "type": "sort",
+          "promptHtml": "Определите род и число прилагательных.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "зимний вечер",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "зимняя ночь",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "зимнее утро",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "зимние дни",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Мужской род, единственное число"
+            },
+            {
+              "value": "1",
+              "label": "Женский род, единственное число"
+            },
+            {
+              "value": "2",
+              "label": "Средний род, единственное число"
+            },
+            {
+              "value": "3",
+              "label": "Множественное число, род не определяется"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вечер»\u003c/span> мужского рода, \u003cspan class=\"example-word\">«ночь»\u003c/span> женского, \u003cspan class=\"example-word\">«утро»\u003c/span> среднего. Прилагательное принимает соответствующие формы. \u003cspan class=\"example-word\">«Зимние»\u003c/span> во множественном числе, рода у этой формы нет.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-agreement-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«удобный»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы купили _____ кресло.\u003c/strong>",
+          "correct": [
+            "удобное"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Кресло»\u003c/span> среднего рода, единственного числа. Поэтому нужна форма \u003cspan class=\"example-word\">«удобное»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-agreement-3",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму прилагательного: \u003cstrong class=\"example-word\">Мы любовались вечерними облаками.\u003c/strong> Рассмотрите слово \u003cspan class=\"example-word\">«вечерними»\u003c/span>.",
+          "correct": [
+            "вечерний"
+          ],
+          "explanationHtml": "\u003cp>Начальная форма: мужской род, единственное число, именительный падеж. \u003cspan class=\"example-word\">«Вечерними»\u003c/span> имеет начальную форму \u003cspan class=\"example-word\">«вечерний»\u003c/span>, а не \u003cspan class=\"example-word\">«вечернее»\u003c/span> или \u003cspan class=\"example-word\">«вечерние»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-case-practice": {
+      "id": "adjective-case-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-case-1",
+          "type": "choice",
+          "promptHtml": "Мы подошли к \u003cstrong class=\"example-word\">высокой\u003c/strong> башне. Определите падеж прилагательного.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Родительный: форма «высокой» отвечает на вопрос «какой?»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Предложный: окончание -ой употребляется в предложном падеже."
+            },
+            {
+              "value": "2",
+              "label": "В. Дательный: прилагательное согласуется со словом «башне», к башне какой? высокой."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Подошли к кому? к чему? \u003cspan class=\"example-word\">«К башне»\u003c/span>: дательный падеж. Прилагательное \u003cspan class=\"example-word\">«высокой»\u003c/span> имеет тот же падеж. Один вопрос \u003cspan class=\"example-word\">«какой?»\u003c/span> или окончание -ой не различают все падежи женского рода.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-case-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«синий»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы любовались _____ морем.\u003c/strong>",
+          "correct": [
+            "синим"
+          ],
+          "explanationHtml": "\u003cp>Любовались кем? чем? \u003cspan class=\"example-word\">«Морем»\u003c/span>: творительный падеж. Морем каким? \u003cspan class=\"example-word\">«Синим»\u003c/span>. Нужна форма творительного падежа, среднего рода, единственного числа.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-case-3",
+          "type": "choice",
+          "promptHtml": "Мы говорили о \u003cstrong class=\"example-word\">новых\u003c/strong> книгах. Выберите верную характеристику прилагательного.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Множественное число, предложный падеж; род не определяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Множественное число, родительный падеж, женский род."
+            },
+            {
+              "value": "2",
+              "label": "В. Единственное число, предложный падеж, женский род."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Говорили о ком? о чём? \u003cspan class=\"example-word\">«О книгах»\u003c/span>: предложный падеж множественного числа. Прилагательное \u003cspan class=\"example-word\">«новых»\u003c/span> согласуется с существительным, но рода во множественном числе не имеет.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-classes-practice": {
+      "id": "adjective-classes-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-classes-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд прилагательных по значению.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "тёплая куртка",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "шерстяная куртка",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "мамина куртка",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "школьный двор",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "лисий хвост",
+              "correct": "2"
+            },
+            {
+              "id": "5",
+              "label": "широкий двор",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Качественное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            },
+            {
+              "value": "2",
+              "label": "Притяжательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Тёплая»\u003c/span> и \u003cspan class=\"example-word\">«широкий»\u003c/span> называют качества. \u003cspan class=\"example-word\">«Шерстяная»\u003c/span> обозначает материал, \u003cspan class=\"example-word\">«школьный»\u003c/span> связь со школой. \u003cspan class=\"example-word\">«Мамина»\u003c/span> и \u003cspan class=\"example-word\">«лисий»\u003c/span> называют принадлежность.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-classes-2",
+          "type": "choice",
+          "promptHtml": "Почему \u003cspan class=\"example-word\">«утренний»\u003c/span> в сочетании \u003cstrong class=\"example-word\">утренний поезд\u003c/strong> является относительным?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Указывает на принадлежность поезда утру и отвечает на вопрос «чей?»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Обозначает признак через связь со временем отправления поезда."
+            },
+            {
+              "value": "2",
+              "label": "В. Называет качество, которое можно усилить: поезд может быть очень утренним."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Утренний»\u003c/span> здесь означает, что поезд отправляется утром. Это связь со временем, а не принадлежность владельцу и не качество, сравниваемое по степени.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-classes-3",
+          "type": "choice",
+          "promptHtml": "В сочетании \u003cstrong class=\"example-word\">мой рюкзак\u003c/strong> чем является слово \u003cspan class=\"example-word\">«мой»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Притяжательным прилагательным: отвечает на вопрос «чей?» и образовано от имени владельца."
+            },
+            {
+              "value": "1",
+              "label": "Б. Качественным прилагательным: характеризует рюкзак и имеет формы рода."
+            },
+            {
+              "value": "2",
+              "label": "В. Местоимением: указывает на принадлежность говорящему, не называя владельца."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Мой»\u003c/span> указывает на владельца, это местоимение. Прилагательное \u003cspan class=\"example-word\">«мамин»\u003c/span> называет принадлежность маме. Вопрос \u003cspan class=\"example-word\">«чей?»\u003c/span> сам по себе не отличает прилагательное от местоимения.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-context-practice": {
+      "id": "adjective-context-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-context-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд прилагательного \u003cspan class=\"example-word\">«железный»\u003c/span> в каждом сочетании.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "железная ограда (из железа)",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "железная выдержка (очень стойкая)",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "железная деталь (из железа)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "железная дисциплина (очень строгая)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Качественное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В сочетаниях \u003cspan class=\"example-word\">«железная ограда»\u003c/span> и \u003cspan class=\"example-word\">«железная деталь»\u003c/span> назван материал. В сочетаниях \u003cspan class=\"example-word\">«железная выдержка»\u003c/span> и \u003cspan class=\"example-word\">«железная дисциплина»\u003c/span> названо качество в переносном значении.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-context-2",
+          "type": "sort",
+          "promptHtml": "Определите разряд прилагательного в каждом сочетании.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "лисий хвост (хвост лисы)",
+              "correct": "2"
+            },
+            {
+              "id": "1",
+              "label": "лисья шапка (из меха лисы)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "лисья хитрость (как у лисы)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Качественное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            },
+            {
+              "value": "2",
+              "label": "Притяжательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Лисий хвост»\u003c/span> обозначает принадлежность, \u003cspan class=\"example-word\">«лисья шапка»\u003c/span> материал, \u003cspan class=\"example-word\">«лисья хитрость»\u003c/span> качество. Разряд устанавливают по значению сочетания.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-context-3",
+          "type": "choice",
+          "promptHtml": "В предложении \u003cstrong class=\"example-word\">У нашего соседа золотые руки\u003c/strong> прилагательное \u003cspan class=\"example-word\">«золотые»\u003c/span> означает умелые. Какой это разряд?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Качественное: оценивает умение человека."
+            },
+            {
+              "value": "1",
+              "label": "Б. Относительное: обозначает связь рук с золотом как материалом."
+            },
+            {
+              "value": "2",
+              "label": "В. Притяжательное: обозначает принадлежность рук соседу."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Слово \u003cspan class=\"example-word\">«золотые»\u003c/span> здесь характеризует мастерство человека, а не материал и не владельца. Принадлежность рук соседу не является значением самого прилагательного.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-degrees-practice": {
+      "id": "adjective-degrees-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-degrees-1",
+          "type": "sort",
+          "promptHtml": "Различите формы степеней сравнения.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "удобнее",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "более удобный",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "удобнейший",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "самый удобный",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Простая сравнительная"
+            },
+            {
+              "value": "1",
+              "label": "Составная сравнительная"
+            },
+            {
+              "value": "2",
+              "label": "Простая превосходная"
+            },
+            {
+              "value": "3",
+              "label": "Составная превосходная"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Удобнее»\u003c/span> сравнивает степень качества одним словом. \u003cspan class=\"example-word\">«Более удобный»\u003c/span> составная сравнительная форма. \u003cspan class=\"example-word\">«Удобнейший»\u003c/span> и \u003cspan class=\"example-word\">«самый удобный»\u003c/span> выражают превосходную степень.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-degrees-2",
+          "type": "input",
+          "promptHtml": "Вставьте простую сравнительную форму слова \u003cspan class=\"example-word\">«хороший»\u003c/span>: \u003cstrong class=\"example-word\">Этот результат _____ вчерашнего.\u003c/strong>",
+          "correct": [
+            "лучше"
+          ],
+          "explanationHtml": "\u003cp>У слова \u003cspan class=\"example-word\">«хороший»\u003c/span> сравнительная форма образуется от другой основы: \u003cspan class=\"example-word\">«лучше»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-degrees-3",
+          "type": "choice",
+          "promptHtml": "Как исправить сочетание \u003cstrong class=\"example-word\">более интереснее\u003c/strong>, сохранив составную сравнительную форму?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наиболее интересный."
+            },
+            {
+              "value": "1",
+              "label": "Б. Более интересный."
+            },
+            {
+              "value": "2",
+              "label": "В. Интереснее."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Составная сравнительная форма: \u003cspan class=\"example-word\">«более интересный»\u003c/span>. \u003cspan class=\"example-word\">«Наиболее интересный»\u003c/span> является превосходной степенью, \u003cspan class=\"example-word\">«интереснее»\u003c/span> простой сравнительной. Нельзя соединять \u003cspan class=\"example-word\">«более»\u003c/span> с \u003cspan class=\"example-word\">«интереснее»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-degrees-4",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Эта башня выше соседнего дома.\u003c/strong> Какие признаки есть у формы \u003cspan class=\"example-word\">«выше»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Женский род, единственное число, именительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Краткая форма, женский род, единственное число, без падежа."
+            },
+            {
+              "value": "2",
+              "label": "В. Простая сравнительная степень; род, число и падеж не определяются."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Выше»\u003c/span> не меняется: \u003cspan class=\"example-word\">«башня выше»\u003c/span>, \u003cspan class=\"example-word\">«дом выше»\u003c/span>, \u003cspan class=\"example-word\">«дома выше»\u003c/span>. Нельзя переносить на эту форму род, число и падеж существительного. Это не краткая форма: краткая форма \u003cspan class=\"example-word\">«высок»\u003c/span>, \u003cspan class=\"example-word\">«высока»\u003c/span> меняется.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-short-practice": {
+      "id": "adjective-short-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-short-1",
+          "type": "sort",
+          "promptHtml": "Определите полную или краткую форму прилагательных.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "дорога свободна",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "свободная дорога",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "решение верно",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "верное решение",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Полная"
+            },
+            {
+              "value": "1",
+              "label": "Краткая"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Свободна»\u003c/span> и \u003cspan class=\"example-word\">«верно»\u003c/span> краткие формы. \u003cspan class=\"example-word\">«Свободная»\u003c/span> и \u003cspan class=\"example-word\">«верное»\u003c/span> полные формы, которые могут изменяться по падежам.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-short-2",
+          "type": "input",
+          "promptHtml": "Замените полное прилагательное кратким: \u003cstrong class=\"example-word\">Ответы правильные. Ответы _____.\u003c/strong>",
+          "correct": [
+            "правильны"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ответы»\u003c/span> во множественном числе. Краткая форма \u003cspan class=\"example-word\">«правильный»\u003c/span> для множественного числа: \u003cspan class=\"example-word\">«правильны»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-short-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Решение правильно.\u003c/strong> Выберите верную характеристику слова \u003cspan class=\"example-word\">«правильно»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наречие: характеризует действие решения, отвечает на вопрос «как?», не меняет формы."
+            },
+            {
+              "value": "1",
+              "label": "Б. Краткое прилагательное: характеризует решение, имеет средний род и единственное число; во множественном числе «правильны»."
+            },
+            {
+              "value": "2",
+              "label": "В. Существительное: называет правильность, отвечает на вопросы «кто? что?», имеет средний род."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Правильно»\u003c/span> сообщает о качестве решения. Во множественном числе: \u003cspan class=\"example-word\">«решения правильны»\u003c/span>. В варианте А предмет ошибочно принят за действие. В варианте В название качества подменяет характеристику предмета.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-analysis-practice": {
+      "id": "adjective-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adjective-analysis-1",
+          "type": "choice",
+          "promptHtml": "Мы шли по \u003cstrong class=\"example-word\">узкой\u003c/strong> тропинке. Выберите верную характеристику прилагательного.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «узкий»; качественное; положительная степень, полная форма; единственное число, женский род, дательный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Начальная форма «узкий»; относительное; сравнительная степень, полная форма; единственное число, женский род, предложный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «узкая»; качественное; положительная степень, краткая форма; множественное число, род не определяется."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Узкий»\u003c/span> называет качество: \u003cspan class=\"example-word\">«уже»\u003c/span>, \u003cspan class=\"example-word\">«очень узкий»\u003c/span>. \u003cspan class=\"example-word\">«Узкой»\u003c/span> полная форма без сравнения. Шли по кому? по чему? \u003cspan class=\"example-word\">«По тропинке»\u003c/span>: дательный падеж. Прилагательное согласуется с существительным женского рода, единственного числа.\u003c/p>\n"
+        },
+        {
+          "id": "adjective-analysis-2",
+          "type": "choice",
+          "promptHtml": "Комнаты \u003cstrong class=\"example-word\">светлы\u003c/strong>. Выберите верную характеристику выделенного слова.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «светлый»; относительное; полная форма, множественное число, женский род, именительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Начальная форма «светлый»; качественное; положительная степень, краткая форма; множественное число, без рода и падежа."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «светло»; качественное; сравнительная степень, краткая форма; единственное число, средний род."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Светлы»\u003c/span> краткая форма слова \u003cspan class=\"example-word\">«светлый»\u003c/span>, множественное число. У краткой формы нет падежа, а во множественном числе нет рода. Сравнение не выражено.\u003c/p>\n"
+        }
+      ]
+    },
+    "adjective-check": {
+      "id": "adjective-check",
+      "title": "Проверка по прилагательному",
+      "assessment": "adjective-check",
+      "questions": [
+        {
+          "id": "adjective-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все прилагательные.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Свежий",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ветер",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "быстро",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "разогнал",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "тяжёлые",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "тучи",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Свежий",
+              "role": "adjective"
+            },
+            {
+              "value": "1",
+              "label": "ветер",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "быстро",
+              "role": "adverb"
+            },
+            {
+              "value": "3",
+              "label": "разогнал",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "тяжёлые",
+              "role": "adjective"
+            },
+            {
+              "value": "5",
+              "label": "тучи",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "4"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Свежий»\u003c/span> характеризует ветер, \u003cspan class=\"example-word\">«тяжёлые»\u003c/span> тучи. \u003cspan class=\"example-word\">«Быстро»\u003c/span> характеризует действие \u003cspan class=\"example-word\">«разогнал»\u003c/span>, это наречие.\u003c/p>\n",
+          "reviewStep": "adjective-meaning"
+        },
+        {
+          "id": "adjective-check-2",
+          "type": "choice",
+          "promptHtml": "В сочетании \u003cstrong class=\"example-word\">этот высокий дом\u003c/strong> какая часть речи слово \u003cspan class=\"example-word\">«этот»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное: называет признак дома и согласуется с существительным."
+            },
+            {
+              "value": "1",
+              "label": "Б. Местоимение: указывает на дом, не называя его признак."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя существительное: называет определённый дом и имеет мужской род."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Этот»\u003c/span> указывает на предмет, это местоимение. Прилагательное \u003cspan class=\"example-word\">«высокий»\u003c/span> называет признак. Совпадение рода, числа и падежа с существительным ещё не делает слово прилагательным.\u003c/p>\n",
+          "reviewStep": "adjective-meaning"
+        },
+        {
+          "id": "adjective-check-3",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму прилагательного \u003cspan class=\"example-word\">«осенними»\u003c/span>: \u003cstrong class=\"example-word\">Мы любовались осенними деревьями.\u003c/strong>",
+          "correct": [
+            "осенний"
+          ],
+          "explanationHtml": "\u003cp>Начальная форма: \u003cspan class=\"example-word\">«осенний»\u003c/span>, мужской род, единственное число, именительный падеж.\u003c/p>\n",
+          "reviewStep": "adjective-agreement"
+        },
+        {
+          "id": "adjective-check-4",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«лёгкий»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы укрылись _____ одеялом.\u003c/strong>",
+          "correct": [
+            "лёгким"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Одеялом»\u003c/span> среднего рода, единственного числа, творительного падежа. Прилагательное согласуется с ним: \u003cspan class=\"example-word\">«лёгким»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "adjective-case"
+        },
+        {
+          "id": "adjective-check-5",
+          "type": "choice",
+          "promptHtml": "Мы подошли к \u003cstrong class=\"example-word\">высоким\u003c/strong> соснам. Выберите верную характеристику формы \u003cspan class=\"example-word\">«высоким»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Множественное число, дательный падеж, род не определяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Единственное число, мужской род, творительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Множественное число, женский род, предложный падеж."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Подошли к кому? к чему? \u003cspan class=\"example-word\">«К соснам»\u003c/span>: дательный падеж множественного числа. Прилагательное имеет тот же падеж и число. Род прилагательного во множественном числе не определяется.\u003c/p>\n",
+          "reviewStep": "adjective-case"
+        },
+        {
+          "id": "adjective-check-6",
+          "type": "sort",
+          "promptHtml": "Определите разряды прилагательных в сочетаниях.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "глубокое озеро",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "городской парк",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "бабушкина чашка",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "сладкий чай",
+              "correct": "0"
+            },
+            {
+              "id": "4",
+              "label": "стеклянная чашка",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Качественное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            },
+            {
+              "value": "2",
+              "label": "Притяжательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Глубокое»\u003c/span> и \u003cspan class=\"example-word\">«сладкий»\u003c/span> обозначают качества. \u003cspan class=\"example-word\">«Городской»\u003c/span> связь с местом, \u003cspan class=\"example-word\">«стеклянная»\u003c/span> материал. \u003cspan class=\"example-word\">«Бабушкина»\u003c/span> обозначает принадлежность.\u003c/p>\n",
+          "reviewStep": "adjective-classes"
+        },
+        {
+          "id": "adjective-check-7",
+          "type": "sort",
+          "promptHtml": "Определите разряд прилагательного \u003cspan class=\"example-word\">«серебряный»\u003c/span> в каждом значении.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "серебряное кольцо (из серебра)",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "серебряный голос (чистый, звонкий)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Качественное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом сочетании назван материал, разряд относительный. Во втором описано качество голоса в переносном значении, разряд качественный.\u003c/p>\n",
+          "reviewStep": "adjective-context"
+        },
+        {
+          "id": "adjective-check-8",
+          "type": "choice",
+          "promptHtml": "Почему \u003cstrong class=\"example-word\">медвежья берлога\u003c/strong> содержит притяжательное прилагательное?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Потому что прилагательное обозначает материал берлоги."
+            },
+            {
+              "value": "1",
+              "label": "Б. Потому что прилагательное называет качество берлоги, похожей на медведя."
+            },
+            {
+              "value": "2",
+              "label": "В. Потому что прилагательное обозначает принадлежность берлоги медведю."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Берлога чья? \u003cspan class=\"example-word\">«Медвежья»\u003c/span>. Названа принадлежность животному, а не материал или качество.\u003c/p>\n",
+          "reviewStep": "adjective-classes"
+        },
+        {
+          "id": "adjective-check-9",
+          "type": "sort",
+          "promptHtml": "Распределите формы по степени сравнения.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "спокойный",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "спокойнее",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "менее спокойный",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "самый спокойный",
+              "correct": "2"
+            },
+            {
+              "id": "4",
+              "label": "спокойнейший",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Положительная"
+            },
+            {
+              "value": "1",
+              "label": "Сравнительная"
+            },
+            {
+              "value": "2",
+              "label": "Превосходная"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Спокойный»\u003c/span> без сравнения. \u003cspan class=\"example-word\">«Спокойнее»\u003c/span> и \u003cspan class=\"example-word\">«менее спокойный»\u003c/span> сравнительные формы. \u003cspan class=\"example-word\">«Самый спокойный»\u003c/span> и \u003cspan class=\"example-word\">«спокойнейший»\u003c/span> превосходные.\u003c/p>\n",
+          "reviewStep": "adjective-degrees"
+        },
+        {
+          "id": "adjective-check-10",
+          "type": "input",
+          "promptHtml": "Исправьте \u003cstrong class=\"example-word\">самый высочайший\u003c/strong>: сохраните составную превосходную форму, запишите всё сочетание.",
+          "correct": [
+            "самый высокий"
+          ],
+          "explanationHtml": "\u003cp>В составной форме со словом \u003cspan class=\"example-word\">«самый»\u003c/span> используют исходное прилагательное: \u003cspan class=\"example-word\">«самый высокий»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "adjective-degrees"
+        },
+        {
+          "id": "adjective-check-11",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Этот мост длиннее прежнего.\u003c/strong> Что верно о форме \u003cspan class=\"example-word\">«длиннее»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Полная форма, мужской род, единственное число, именительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Простая сравнительная степень, не изменяется по родам, числам и падежам."
+            },
+            {
+              "value": "2",
+              "label": "В. Краткая форма, мужской род, единственное число, падежа нет."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Длиннее»\u003c/span> является простой сравнительной формой. Она не меняется при замене \u003cspan class=\"example-word\">«мост»\u003c/span> на \u003cspan class=\"example-word\">«дорога»\u003c/span> или \u003cspan class=\"example-word\">«мосты»\u003c/span>. Её не характеризуют как полную или краткую форму.\u003c/p>\n",
+          "reviewStep": "adjective-degrees"
+        },
+        {
+          "id": "adjective-check-12",
+          "type": "input",
+          "promptHtml": "Замените прилагательное кратким: \u003cstrong class=\"example-word\">Комната просторная. Комната _____.\u003c/strong>",
+          "correct": [
+            "просторна"
+          ],
+          "explanationHtml": "\u003cp>Женский род, единственное число: \u003cspan class=\"example-word\">«просторна»\u003c/span>. Краткая форма не имеет падежа.\u003c/p>\n",
+          "reviewStep": "adjective-short"
+        },
+        {
+          "id": "adjective-check-13",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова \u003cspan class=\"example-word\">«спокойно»\u003c/span> в каждом предложении.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Море спокойно.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Он отвечал спокойно.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Краткое прилагательное"
+            },
+            {
+              "value": "1",
+              "label": "Наречие"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Море спокойно»\u003c/span> характеризует предмет: \u003cspan class=\"example-word\">«моря спокойны»\u003c/span>. \u003cspan class=\"example-word\">«Отвечал спокойно»\u003c/span> характеризует действие: отвечал как? спокойно. В этом предложении слово является наречием.\u003c/p>\n",
+          "reviewStep": "adjective-short"
+        },
+        {
+          "id": "adjective-check-14",
+          "type": "choice",
+          "promptHtml": "Выберите предложение, в котором слово в скобках является прилагательным.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. В комнате светло. (светло)"
+            },
+            {
+              "value": "1",
+              "label": "Б. Комната светлая. (светлая)"
+            },
+            {
+              "value": "2",
+              "label": "В. Лампа светит. (светит)"
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Светлая»\u003c/span> является прилагательным: комната какая? светлая. \u003cspan class=\"example-word\">«Светло»\u003c/span> в варианте А обозначает состояние окружающей среды, \u003cspan class=\"example-word\">«светит»\u003c/span> в варианте В является глаголом.\u003c/p>\n",
+          "reviewStep": "adjective-meaning"
+        },
+        {
+          "id": "adjective-check-15",
+          "type": "choice",
+          "promptHtml": "Мы любовались \u003cstrong class=\"example-word\">зимним\u003c/strong> лесом. Выберите верную характеристику прилагательного.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «зимний»; качественное; краткая форма, сравнительная степень; мужской род, единственное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Начальная форма «зимний»; относительное; полная форма; мужской род, единственное число, предложный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «зимний»; относительное; полная форма; мужской род, единственное число, творительный падеж."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Зимний»\u003c/span> связан со временем, это относительное прилагательное. Любовались кем? чем? \u003cspan class=\"example-word\">«Лесом»\u003c/span>: творительный падеж. \u003cspan class=\"example-word\">«Зимним»\u003c/span> является полной формой мужского рода единственного числа. Степени сравнения у относительного прилагательного в таком значении нет.\u003c/p>\n",
+          "reviewStep": "adjective-analysis"
+        },
+        {
+          "id": "adjective-check-16",
+          "type": "choice",
+          "promptHtml": "Выберите верное объяснение: \u003cstrong class=\"example-word\">Пальто удобно.\u003c/strong>",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Удобно» является кратким прилагательным среднего рода, единственного числа; характеризует пальто, падежа нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Удобно» является наречием; «пальто» не меняется, поэтому и зависимое слово не может изменяться."
+            },
+            {
+              "value": "2",
+              "label": "В. «Удобно» является полным прилагательным среднего рода, единственного числа, именительного падежа."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Удобно»\u003c/span> характеризует пальто, а не действие. Сравните: \u003cspan class=\"example-word\">«пальто удобны»\u003c/span>. Это краткое прилагательное. Несклоняемость существительного не мешает зависимому прилагательному менять форму.\u003c/p>\n",
+          "reviewStep": "adjective-short"
         }
       ]
     }
