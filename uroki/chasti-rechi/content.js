@@ -16,6 +16,10 @@ window.LESSON_CONTENT = {
     {
       "id": "adjective",
       "title": "Имя прилагательное"
+    },
+    {
+      "id": "numeral",
+      "title": "Имя числительное"
     }
   ],
   "labels": {
@@ -255,6 +259,96 @@ window.LESSON_CONTENT = {
       "html": "",
       "groups": [
         "adjective-check"
+      ]
+    },
+    {
+      "id": "numeral-meaning",
+      "title": "Что обозначает числительное",
+      "chapter": "numeral",
+      "html": "\u003cp>Чтобы сообщить, сколько предметов перед нами или какой предмет идёт по счёту, мы используем числительные. Они нужны и для записи чисел, и для обозначения времени, возраста, расстояния, стоимости.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>На полке стоят \u003cstrong class=\"example-word\">пять\u003c/strong> книг. Я взял \u003cstrong class=\"example-word\">пятую\u003c/strong> книгу.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Пять»\u003c/span> сообщает количество: книг сколько? пять. \u003cspan class=\"example-word\">«Пятую»\u003c/span> указывает место книги в ряду: книгу какую по счёту? пятую. Количество и порядковый номер являются разными значениями.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Имя числительное\u003c/strong> является самостоятельной частью речи. Оно обозначает число, количество предметов или их порядок при счёте. Основные вопросы: сколько? который по счёту? какой по счёту?\u003c/p>\n\u003c/div>\u003cp>Числительное может называть число без существительного: \u003cspan class=\"example-word\">«пять плюс два»\u003c/span>. Если рядом есть название предмета, числительное сообщает его количество или порядок: \u003cspan class=\"example-word\">«пять книг»\u003c/span>, \u003cspan class=\"example-word\">«пятая книга»\u003c/span>.\u003c/p>\n\u003ch3>Число, цифра и слово\u003c/h3>\u003cp>Число можно записать цифрами или словами. Цифры являются знаками для записи чисел, а числительные словами. Одно число может быть записано несколькими цифрами и несколькими словами.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>25 и \u003cstrong class=\"example-word\">двадцать пять\u003c/strong> обозначают одно число. В записи 25 две цифры, в записи \u003cspan class=\"example-word\">«двадцать пять»\u003c/span> два слова. Вместе эти слова составляют одно числительное.\u003c/p>\n\u003c/div>\u003ch3>Как отличить от других частей речи\u003c/h3>\u003cp>Не каждое слово, связанное с числом, является числительным. Нужно учитывать, что оно обозначает и на какой вопрос отвечает.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Слово в сочетании\u003c/th>\n\u003cth>Значение\u003c/th>\n\u003cth>Часть речи\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Пять\u003c/strong> учеников\u003c/td>\n\u003ctd>Точное количество учеников\u003c/td>\n\u003ctd>Имя числительное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Пятый\u003c/strong> ученик\u003c/td>\n\u003ctd>Место ученика при счёте\u003c/td>\n\u003ctd>Имя числительное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Получил \u003cstrong class=\"example-word\">пятёрку\u003c/strong>\u003c/td>\n\u003ctd>Название отметки; вопросы \u003cspan class=\"example-word\">«кого? что?»\u003c/span>\u003c/td>\n\u003ctd>Имя существительное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Пятиэтажный\u003c/strong> дом\u003c/td>\n\u003ctd>Признак дома: дом какой?\u003c/td>\n\u003ctd>Имя прилагательное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Несколько\u003c/strong> учеников\u003c/td>\n\u003ctd>Указание на неопределённое количество\u003c/td>\n\u003ctd>Местоимение\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>\u003cspan class=\"example-word\">«Пятёрка»\u003c/span> называет отметку, а не количество предметов. \u003cspan class=\"example-word\">«Пятиэтажный»\u003c/span> характеризует дом, а не указывает его место при счёте. \u003cspan class=\"example-word\">«Несколько»\u003c/span> не называет точное число.\u003c/p>\n",
+      "groups": [
+        "numeral-meaning-practice"
+      ]
+    },
+    {
+      "id": "numeral-classes",
+      "title": "Разряды числительных по значению",
+      "chapter": "numeral",
+      "html": "\u003cp>По значению выделяют две основные группы: количественные и порядковые числительные.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Количественные числительные\u003c/strong> обозначают число или количество предметов и отвечают на вопрос сколько?\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Порядковые числительные\u003c/strong> обозначают порядок предметов при счёте и отвечают на вопросы который по счёту? какой по счёту?\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Три\u003c/strong> этажа: этажей сколько? три. Это количественное числительное.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Третий\u003c/strong> этаж: этаж какой по счёту? третий. Это порядковое числительное.\u003c/p>\n\u003c/div>\u003cp>Количественные числительные тоже неодинаковы: можно назвать целое число предметов, часть величины или группу как одно целое.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Группа количественных числительных\u003c/th>\n\u003cth>Что обозначает\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Целые числительные\u003c/strong>\u003c/td>\n\u003ctd>Целое число или количество\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Семь\u003c/strong> дней, \u003cstrong class=\"example-word\">двадцать\u003c/strong> страниц\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дробные числительные\u003c/strong>\u003c/td>\n\u003ctd>Дробное число или количество\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Две третьих\u003c/strong> метра, \u003cstrong class=\"example-word\">полтора\u003c/strong> часа\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Собирательные числительные\u003c/strong>\u003c/td>\n\u003ctd>Количество как совокупность\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Трое\u003c/strong> детей, \u003cstrong class=\"example-word\">двое\u003c/strong> ножниц\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Собирательное числительное не означает приблизительное количество. \u003cspan class=\"example-word\">«Трое»\u003c/span> называет ровно три человека или предмета, но представляет их как группу.\u003c/p>\n\u003cp>Важно не смешивать эти группы с единственным и множественным числом. Слова \u003cspan class=\"example-word\">«пять»\u003c/span> и \u003cspan class=\"example-word\">«шесть»\u003c/span> обозначают разные числа, но не являются формами единственного и множественного числа одного слова.\u003c/p>\n",
+      "groups": [
+        "numeral-classes-practice"
+      ]
+    },
+    {
+      "id": "numeral-structure",
+      "title": "Простые, сложные и составные числительные",
+      "chapter": "numeral",
+      "html": "\u003cp>Разряд по значению отвечает на вопрос, что обозначает числительное. Строение показывает, из скольких слов и значимых частей оно состоит. Эти признаки определяют отдельно.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Простые числительные\u003c/strong> состоят из одного слова с одним корнем. Корень является основной значимой частью слова. Например, у слова \u003cspan class=\"example-word\">«пять»\u003c/span> корень пят-, у слова \u003cspan class=\"example-word\">«пятый»\u003c/span> тот же корень.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Сложные числительные\u003c/strong> тоже пишутся одним словом, но содержат несколько корней. В слове \u003cspan class=\"example-word\">«пятьсот»\u003c/span> соединены части со значением пяти и сотни.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Составные числительные\u003c/strong> состоят из нескольких слов. Каждое слово пишется отдельно.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Строение\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Простое\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пять\u003c/strong>, \u003cstrong class=\"example-word\">второй\u003c/strong>, \u003cstrong class=\"example-word\">пятнадцать\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Сложное\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пятьдесят\u003c/strong>, \u003cstrong class=\"example-word\">двести\u003c/strong>, \u003cstrong class=\"example-word\">пятисотый\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Составное\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двадцать пять\u003c/strong>, \u003cstrong class=\"example-word\">сто двадцать пятый\u003c/strong>, \u003cstrong class=\"example-word\">две третьих\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Пятьдесят\u003c/strong> является сложным количественным числительным. \u003cstrong class=\"example-word\">Пятьдесят первый\u003c/strong> является составным порядковым числительным.\u003c/p>\n\u003cp>Одно и то же числительное можно описать по двум признакам: значению и строению.\u003c/p>\n\u003c/div>\u003cp>Длина слова не определяет его строение. \u003cspan class=\"example-word\">«Одиннадцать»\u003c/span> и \u003cspan class=\"example-word\">«пятнадцать»\u003c/span> относим к простым: часть -надцать в современном слове является суффиксом, а не отдельным корнем. Суффикс является значимой частью после корня, с помощью которой образуются слова.\u003c/p>\n\u003ch3>Мягкий знак\u003c/h3>\u003cp>У числительных от пяти до двадцати и у слова \u003cspan class=\"example-word\">«тридцать»\u003c/span> мягкий знак пишется на конце. У числительных от пятидесяти до восьмидесяти и от пятисот до девятисот он стоит в середине.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Пять\u003c/strong>, \u003cstrong class=\"example-word\">пятнадцать\u003c/strong>, \u003cstrong class=\"example-word\">двадцать\u003c/strong>, \u003cstrong class=\"example-word\">тридцать\u003c/strong>; \u003cstrong class=\"example-word\">пятьдесят\u003c/strong>, \u003cstrong class=\"example-word\">шестьсот\u003c/strong>.\u003c/p>\n\u003cp>В слове \u003cspan class=\"example-word\">«пятнадцать»\u003c/span> после т мягкого знака нет. В слове \u003cspan class=\"example-word\">«пятьдесят»\u003c/span> он сохраняется в первой части.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "numeral-structure-practice"
+      ]
+    },
+    {
+      "id": "numeral-whole",
+      "title": "Количественные числительные и существительные",
+      "chapter": "numeral",
+      "html": "\u003cp>Большинство количественных числительных изменяется по падежам, но не по родам и числам: \u003cspan class=\"example-word\">«пять»\u003c/span>, \u003cspan class=\"example-word\">«пяти»\u003c/span>, \u003cspan class=\"example-word\">«пятью»\u003c/span>. У нескольких слов есть особенности.\u003c/p>\n\u003ch3>Род и число\u003c/h3>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Числительное\u003c/th>\n\u003cth>Особенность\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Один\u003c/strong>\u003c/td>\n\u003ctd>Изменяется по родам, числам и падежам\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Один\u003c/strong> стол, \u003cstrong class=\"example-word\">одна\u003c/strong> книга, \u003cstrong class=\"example-word\">одно\u003c/strong> окно, \u003cstrong class=\"example-word\">одни\u003c/strong> ножницы\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Два\u003c/strong>\u003c/td>\n\u003ctd>Две родовые формы; отдельной формы множественного числа нет\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Два\u003c/strong> стола, \u003cstrong class=\"example-word\">два\u003c/strong> окна, \u003cstrong class=\"example-word\">две\u003c/strong> книги\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Пять\u003c/strong> и большинство других\u003c/td>\n\u003ctd>Род и число не определяются; изменяется падеж\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пять\u003c/strong> столов, книг, окон; \u003cstrong class=\"example-word\">пяти\u003c/strong> книг; \u003cstrong class=\"example-word\">пятью\u003c/strong> книгами\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Форма \u003cspan class=\"example-word\">«одни»\u003c/span> может обозначать один предмет, название которого употребляется только во множественном числе: \u003cspan class=\"example-word\">«одни ножницы»\u003c/span>. В этом случае это числительное. Если слово имеет значение \u003cspan class=\"example-word\">«только»\u003c/span>, оно употребляется иначе: \u003cspan class=\"example-word\">«В сумке одни книги»\u003c/span> означает, что кроме книг там ничего нет.\u003c/p>\n\u003cp>Слова \u003cspan class=\"example-word\">«тысяча»\u003c/span>, \u003cspan class=\"example-word\">«миллион»\u003c/span>, \u003cspan class=\"example-word\">«миллиард»\u003c/span> называют большие количества. По школьной классификации их обычно включают в числительные, но изменяются они как существительные: \u003cspan class=\"example-word\">«тысяча, тысячи»\u003c/span>, \u003cspan class=\"example-word\">«миллион, миллионы»\u003c/span>. Эти слова имеют род и формы числа.\u003c/p>\n\u003ch3>Какую форму принимает существительное\u003c/h3>\u003cp>В именительном падеже сочетания строятся по-разному. Для примеров с неодушевлёнными существительными такое же правило действует и в винительном падеже.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Числительное\u003c/th>\n\u003cth>Форма существительного\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Один\u003c/td>\n\u003ctd>Единственное число, тот же падеж\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Один\u003c/strong> карандаш\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Два, три, четыре\u003c/td>\n\u003ctd>Родительный падеж, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Два\u003c/strong> карандаша, \u003cstrong class=\"example-word\">четыре\u003c/strong> карандаша\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Пять и далее\u003c/td>\n\u003ctd>Родительный падеж, множественное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пять\u003c/strong> карандашей, \u003cstrong class=\"example-word\">десять\u003c/strong> карандашей\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У составного числительного важна последняя часть: \u003cspan class=\"example-word\">«двадцать один карандаш»\u003c/span>, \u003cspan class=\"example-word\">«двадцать два карандаша»\u003c/span>, \u003cspan class=\"example-word\">«двадцать пять карандашей»\u003c/span>. Но числа на 11, 12, 13, 14 требуют формы множественного числа: \u003cspan class=\"example-word\">«одиннадцать карандашей»\u003c/span>, \u003cspan class=\"example-word\">«сто двенадцать карандашей»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>На столе лежат \u003cstrong class=\"example-word\">двадцать две\u003c/strong> тетради, а в шкафу \u003cstrong class=\"example-word\">двенадцать\u003c/strong> тетрадей.\u003c/p>\n\u003cp>У первого числительного последняя часть \u003cspan class=\"example-word\">«две»\u003c/span>, поэтому \u003cspan class=\"example-word\">«тетради»\u003c/span> является формой родительного падежа единственного числа. \u003cspan class=\"example-word\">«Двенадцать»\u003c/span> требует формы родительного падежа множественного числа: \u003cspan class=\"example-word\">«тетрадей»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>В других падежах меняются оба слова: \u003cspan class=\"example-word\">«к двум карандашам»\u003c/span>, \u003cspan class=\"example-word\">«с пятью карандашами»\u003c/span>. Сначала установите связь с остальными словами предложения, а затем выбирайте формы.\u003c/p>\n",
+      "groups": [
+        "numeral-whole-practice"
+      ]
+    },
+    {
+      "id": "numeral-declension",
+      "title": "Как склоняются количественные числительные",
+      "chapter": "numeral",
+      "html": "\u003cp>Склонение является изменением по падежам. Чтобы выбрать форму числительного, нужно понять, как всё сочетание связано с другими словами.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы подошли к \u003cstrong class=\"example-word\">трём\u003c/strong> домам. Подошли к кому? к чему? К домам. Домам скольким? Трём. Числительное стоит в дательном падеже.\u003c/p>\n\u003c/div>\u003ch3>Два, три, четыре; пять и далее\u003c/h3>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Вопрос к числительному\u003c/th>\n\u003cth>Два\u003c/th>\n\u003cth>Пять\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>Сколько?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Два\u003c/strong> дома\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пять\u003c/strong> домов\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>Скольких?\u003c/td>\n\u003ctd>Нет \u003cstrong class=\"example-word\">двух\u003c/strong> домов\u003c/td>\n\u003ctd>Нет \u003cstrong class=\"example-word\">пяти\u003c/strong> домов\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>Скольким?\u003c/td>\n\u003ctd>К \u003cstrong class=\"example-word\">двум\u003c/strong> домам\u003c/td>\n\u003ctd>К \u003cstrong class=\"example-word\">пяти\u003c/strong> домам\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>Сколько? Скольких?\u003c/td>\n\u003ctd>Вижу \u003cstrong class=\"example-word\">два\u003c/strong> дома\u003c/td>\n\u003ctd>Вижу \u003cstrong class=\"example-word\">пять\u003c/strong> домов\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>Сколькими?\u003c/td>\n\u003ctd>Перед \u003cstrong class=\"example-word\">двумя\u003c/strong> домами\u003c/td>\n\u003ctd>Перед \u003cstrong class=\"example-word\">пятью\u003c/strong> домами\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О скольких?\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">двух\u003c/strong> домах\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">пяти\u003c/strong> домах\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У слов \u003cspan class=\"example-word\">«три»\u003c/span> и \u003cspan class=\"example-word\">«четыре»\u003c/span> формы похожи: \u003cspan class=\"example-word\">«трёх, трём, тремя»\u003c/span>, \u003cspan class=\"example-word\">«четырёх, четырём, четырьмя»\u003c/span>. В винительном падеже важна одушевлённость: \u003cspan class=\"example-word\">«вижу два дома»\u003c/span>, но \u003cspan class=\"example-word\">«вижу двух учеников»\u003c/span>.\u003c/p>\n\u003cp>Слова от пяти до двадцати и \u003cspan class=\"example-word\">«тридцать»\u003c/span> изменяются по той же модели, что \u003cspan class=\"example-word\">«пять»\u003c/span>: \u003cspan class=\"example-word\">«семи, семью»\u003c/span>, \u003cspan class=\"example-word\">«двадцати, двадцатью»\u003c/span>. У слова \u003cspan class=\"example-word\">«восемь»\u003c/span> две допустимые формы творительного падежа: \u003cspan class=\"example-word\">«восемью»\u003c/span> и \u003cspan class=\"example-word\">«восьмью»\u003c/span>.\u003c/p>\n\u003ch3>Сорок, девяносто, сто\u003c/h3>\u003cp>У этих числительных только две падежные формы.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падежи\u003c/th>\n\u003cth>Формы\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Именительный и винительный\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Сорок\u003c/strong>, \u003cstrong class=\"example-word\">девяносто\u003c/strong>, \u003cstrong class=\"example-word\">сто\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Родительный, дательный, творительный, предложный\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Сорока\u003c/strong>, \u003cstrong class=\"example-word\">девяноста\u003c/strong>, \u003cstrong class=\"example-word\">ста\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>К \u003cstrong class=\"example-word\">сорока\u003c/strong> страницам добавили ещё десять. Рассказ занимает \u003cstrong class=\"example-word\">сорок\u003c/strong> страниц.\u003c/p>\n\u003c/div>\u003ch3>Пятьдесят и пятьсот\u003c/h3>\u003cp>У сложных количественных числительных на -десят и -сот изменяются обе части слова.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Пятьдесят\u003c/th>\n\u003cth>Двести\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пятьдесят\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двести\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пятидесяти\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двухсот\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пятидесяти\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двумстам\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пятьдесят\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двести\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пятьюдесятью\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двумястами\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">пятидесяти\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">двухстах\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>По сходной модели изменяются \u003cspan class=\"example-word\">«шестьдесят»\u003c/span>, \u003cspan class=\"example-word\">«семьдесят»\u003c/span>, \u003cspan class=\"example-word\">«восемьдесят»\u003c/span>, а также \u003cspan class=\"example-word\">«триста»\u003c/span>, \u003cspan class=\"example-word\">«четыреста»\u003c/span>, \u003cspan class=\"example-word\">«пятьсот»\u003c/span> и остальные названия сотен до девятисот. Например: \u003cspan class=\"example-word\">«трёхсот, трёмстам, тремястами»\u003c/span>; \u003cspan class=\"example-word\">«пятисот, пятистам, пятьюстами»\u003c/span>.\u003c/p>\n\u003ch3>Составные числительные\u003c/h3>\u003cp>У составного количественного числительного изменяется каждое слово, а не только последнее.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Было \u003cstrong class=\"example-word\">двести пятьдесят три\u003c/strong> книги. Добавили обложки к \u003cstrong class=\"example-word\">двумстам пятидесяти трём\u003c/strong> книгам.\u003c/p>\n\u003cp>В дательном падеже изменились все три слова: \u003cspan class=\"example-word\">«двести»\u003c/span> стало \u003cspan class=\"example-word\">«двумстам»\u003c/span>, \u003cspan class=\"example-word\">«пятьдесят»\u003c/span> стало \u003cspan class=\"example-word\">«пятидесяти»\u003c/span>, \u003cspan class=\"example-word\">«три»\u003c/span> стало \u003cspan class=\"example-word\">«трём»\u003c/span>.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Количество: меняем каждое слово. \u003cstrong class=\"example-word\">Двадцать пять\u003c/strong> книг, к \u003cstrong class=\"example-word\">двадцати пяти\u003c/strong> книгам. У сложного числительного тоже не забываем обе части: \u003cstrong class=\"example-word\">пятьдесят\u003c/strong>, \u003cstrong class=\"example-word\">пятидесяти\u003c/strong>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "numeral-declension-practice"
+      ]
+    },
+    {
+      "id": "numeral-collective",
+      "title": "Собирательные числительные",
+      "chapter": "numeral",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Собирательные числительные\u003c/strong> обозначают точное количество как группу: \u003cspan class=\"example-word\">«двое»\u003c/span>, \u003cspan class=\"example-word\">«трое»\u003c/span>, \u003cspan class=\"example-word\">«четверо»\u003c/span>, \u003cspan class=\"example-word\">«пятеро»\u003c/span> и далее до \u003cspan class=\"example-word\">«десятеро»\u003c/span>. К этой группе относят также \u003cspan class=\"example-word\">«оба»\u003c/span> и \u003cspan class=\"example-word\">«обе»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Не со всеми существительными сочетаются формы \u003cspan class=\"example-word\">«двое»\u003c/span>, \u003cspan class=\"example-word\">«трое»\u003c/span> и подобные. Выбор зависит от того, кого или что называют существительные.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>С чем сочетаются\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Названия лиц мужского пола\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Трое\u003c/strong> мальчиков\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Слова \u003cspan class=\"example-word\">«дети»\u003c/span>, \u003cspan class=\"example-word\">«ребята»\u003c/span>, \u003cspan class=\"example-word\">«люди»\u003c/span>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пятеро\u003c/strong> детей\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Названия детёнышей\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двое\u003c/strong> котят\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Слова только множественного числа\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Двое\u003c/strong> ножниц, \u003cstrong class=\"example-word\">трое\u003c/strong> суток\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Личные местоимения\u003c/td>\n\u003ctd>Нас \u003cstrong class=\"example-word\">трое\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>С названиями лиц женского пола употребляют обычные количественные числительные: \u003cspan class=\"example-word\">«три девочки»\u003c/span>, а не \u003cspan class=\"example-word\">«трое девочек»\u003c/span>. С названиями взрослых животных тоже выбирают обычную форму: \u003cspan class=\"example-word\">«две кошки»\u003c/span>. Возможны оба сочетания \u003cspan class=\"example-word\">«два мальчика»\u003c/span> и \u003cspan class=\"example-word\">«двое мальчиков»\u003c/span>.\u003c/p>\n\u003cp>С названиями парных предметов собирательная форма может считать пары: \u003cspan class=\"example-word\">«двое носков»\u003c/span> означает две пары. Если нужно исключить двусмысленность, можно прямо сказать \u003cspan class=\"example-word\">«две пары носков»\u003c/span>.\u003c/p>\n\u003ch3>Как изменяются собирательные числительные\u003c/h3>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Форма \u003cspan class=\"example-word\">«трое»\u003c/span>\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Трое\u003c/strong> друзей\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>Нет \u003cstrong class=\"example-word\">троих\u003c/strong> друзей\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>К \u003cstrong class=\"example-word\">троим\u003c/strong> друзьям\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>Встретил \u003cstrong class=\"example-word\">троих\u003c/strong> друзей\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>С \u003cstrong class=\"example-word\">троими\u003c/strong> друзьями\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">троих\u003c/strong> друзьях\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Здесь винительный падеж показан с названием людей. С неодушевлённым существительным форма другая: \u003cspan class=\"example-word\">«купили двое ножниц»\u003c/span>.\u003c/p>\n\u003ch3>Оба и обе\u003c/h3>\u003cp>Эти слова обозначают два предмета, взятые вместе. \u003cspan class=\"example-word\">«Оба»\u003c/span> сочетается со словами мужского и среднего рода, \u003cspan class=\"example-word\">«обе»\u003c/span> со словами женского рода.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Род существительного\u003c/th>\n\u003cth>Именительный падеж\u003c/th>\n\u003cth>Другие формы\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Мужской или средний\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Оба\u003c/strong> друга, \u003cstrong class=\"example-word\">оба\u003c/strong> окна\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Обоих\u003c/strong>, \u003cstrong class=\"example-word\">обоим\u003c/strong>, \u003cstrong class=\"example-word\">обоими\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Женский\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Обе\u003c/strong> подруги\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Обеих\u003c/strong>, \u003cstrong class=\"example-word\">обеим\u003c/strong>, \u003cstrong class=\"example-word\">обеими\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>Я поговорил с \u003cstrong class=\"example-word\">обеими\u003c/strong> подругами и с \u003cstrong class=\"example-word\">обоими\u003c/strong> друзьями.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Подруга»\u003c/span> женского рода, поэтому \u003cspan class=\"example-word\">«обеими»\u003c/span>. \u003cspan class=\"example-word\">«Друг»\u003c/span> мужского рода, поэтому \u003cspan class=\"example-word\">«обоими»\u003c/span>. Ограничение для сочетания \u003cspan class=\"example-word\">«трое девочек»\u003c/span> не относится к слову \u003cspan class=\"example-word\">«обе»\u003c/span>.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "numeral-collective-practice"
+      ]
+    },
+    {
+      "id": "numeral-fractions",
+      "title": "Дробные числительные",
+      "chapter": "numeral",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Дробные числительные\u003c/strong> называют дробные числа и количества. У дроби есть числитель и знаменатель. Числитель показывает, сколько долей взято, знаменатель на сколько равных частей разделено целое.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Пирог разделили на три равные части и взяли две. Это 2/3 пирога: \u003cstrong class=\"example-word\">две третьих\u003c/strong> пирога.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Две»\u003c/span> называет количество взятых долей, \u003cspan class=\"example-word\">«третьих»\u003c/span> сообщает, что каждая доля составляет треть целого.\u003c/p>\n\u003c/div>\u003cp>Вместо \u003cspan class=\"example-word\">«две третьих»\u003c/span> можно сказать \u003cspan class=\"example-word\">«две трети»\u003c/span>, вместо \u003cspan class=\"example-word\">«одна вторая»\u003c/span> \u003cspan class=\"example-word\">«половина»\u003c/span>. Но \u003cspan class=\"example-word\">«треть»\u003c/span> и \u003cspan class=\"example-word\">«половина»\u003c/span> являются существительными, называющими доли. В учебном разборе числительного \u003cspan class=\"example-word\">«две третьих»\u003c/span> рассматриваем всё сочетание.\u003c/p>\n\u003ch3>Как читается дробное число\u003c/h3>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Запись\u003c/th>\n\u003cth>Чтение\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>1/4\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Одна четвёртая\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>3/5\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Три пятых\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>0,7\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ноль целых семь десятых\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>2,5\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Две целых пять десятых\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>В дробном числительном согласование отличается от обычного счёта предметов: \u003cspan class=\"example-word\">«две целых»\u003c/span>, а не \u003cspan class=\"example-word\">«два целых»\u003c/span>. Здесь считают целые единицы, поэтому у слова \u003cspan class=\"example-word\">«два»\u003c/span> выбирают форму женского рода \u003cspan class=\"example-word\">«две»\u003c/span>.\u003c/p>\n\u003cp>После дробного числительного при измерении одной величины существительное обычно имеет родительный падеж единственного числа: \u003cspan class=\"example-word\">«три пятых метра»\u003c/span>, \u003cspan class=\"example-word\">«две целых пять десятых литра»\u003c/span>. Его форма сохраняется при склонении числительного: \u003cspan class=\"example-word\">«к трём пятым метра»\u003c/span>.\u003c/p>\n\u003ch3>Как изменяются дробные числительные\u003c/h3>\u003cp>Меняются обе части сочетания: первая как количественное числительное, вторая как порядковое.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Форма \u003cspan class=\"example-word\">«три пятых»\u003c/span>\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Три пятых\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Трёх пятых\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Трём пятым\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Три пятых\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Тремя пятыми\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">трёх пятых\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ch3>Полтора, полторы, полтораста\u003c/h3>\u003cp>\u003cspan class=\"example-word\">«Полтора»\u003c/span> обозначает один и ещё половину. С существительным женского рода нужна форма \u003cspan class=\"example-word\">«полторы»\u003c/span>: \u003cspan class=\"example-word\">«полторы минуты»\u003c/span>. С существительным мужского или среднего рода форма \u003cspan class=\"example-word\">«полтора»\u003c/span>: \u003cspan class=\"example-word\">«полтора часа»\u003c/span>, \u003cspan class=\"example-word\">«полтора яблока»\u003c/span>.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падежи\u003c/th>\n\u003cth>Формы\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Именительный и винительный\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Полтора\u003c/strong>, \u003cstrong class=\"example-word\">полторы\u003c/strong>; \u003cstrong class=\"example-word\">полтораста\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Родительный, дательный, творительный, предложный\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Полутора\u003c/strong>; \u003cstrong class=\"example-word\">полутораста\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>Прошло \u003cstrong class=\"example-word\">полторы\u003c/strong> минуты. Мы вернулись через \u003cstrong class=\"example-word\">полтора\u003c/strong> часа. Цена выросла на \u003cstrong class=\"example-word\">полтораста\u003c/strong> рублей.\u003c/p>\n\u003cp>Не прошло \u003cstrong class=\"example-word\">полутора\u003c/strong> минут. Мы купили сборник с \u003cstrong class=\"example-word\">полутораста\u003c/strong> заданиями.\u003c/p>\n\u003c/div>\u003cp>\u003cspan class=\"example-word\">«Полтораста»\u003c/span> означает сто пятьдесят. Его особые формы удобно запоминать вместе с формами \u003cspan class=\"example-word\">«полтора»\u003c/span>. В других падежах существительное при \u003cspan class=\"example-word\">«полтора»\u003c/span> имеет множественное число: \u003cspan class=\"example-word\">«полутора часов»\u003c/span>, \u003cspan class=\"example-word\">«полутора часами»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "numeral-fractions-practice"
+      ]
+    },
+    {
+      "id": "numeral-ordinal",
+      "title": "Порядковые числительные",
+      "chapter": "numeral",
+      "html": "\u003cp>Порядковое числительное отвечает не на вопрос о количестве, а на вопрос о месте при счёте. Поэтому \u003cspan class=\"example-word\">«три»\u003c/span> и \u003cspan class=\"example-word\">«третий»\u003c/span> являются разными словами, а не падежными формами одного слова.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>В соревновании участвуют \u003cstrong class=\"example-word\">восемь\u003c/strong> команд. Наша команда выступает \u003cstrong class=\"example-word\">восьмой\u003c/strong>.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Восемь»\u003c/span> называет количество всех команд. \u003cspan class=\"example-word\">«Восьмой»\u003c/span> называет место одной команды в очереди выступлений.\u003c/p>\n\u003c/div>\u003cp>Порядковые числительные изменяются как прилагательные: согласуются с существительным в роде, числе и падеже. Во множественном числе род не определяется.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Форма\u003c/th>\n\u003cth>Вопрос\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Мужской род, единственное число\u003c/td>\n\u003ctd>Какой по счёту?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Третий\u003c/strong> урок\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Женский род, единственное число\u003c/td>\n\u003ctd>Какая по счёту?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Третья\u003c/strong> попытка\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Средний род, единственное число\u003c/td>\n\u003ctd>Какое по счёту?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Третье\u003c/strong> место\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Множественное число\u003c/td>\n\u003ctd>Какие по счёту?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Третьи\u003c/strong> классы\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Начальная форма порядкового числительного: мужской род, единственное число, именительный падеж. Для \u003cspan class=\"example-word\">«третьей»\u003c/span>, \u003cspan class=\"example-word\">«третьему»\u003c/span>, \u003cspan class=\"example-word\">«третьими»\u003c/span> начальная форма \u003cspan class=\"example-word\">«третий»\u003c/span>.\u003c/p>\n\u003ch3>Составные порядковые числительные\u003c/h3>\u003cp>В составном порядковом числительном изменяется только последнее слово. Это отличает его от составного количественного числительного.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Открыли \u003cstrong class=\"example-word\">двадцать пятую\u003c/strong> страницу. Прочитали заголовок на \u003cstrong class=\"example-word\">двадцать пятой\u003c/strong> странице.\u003c/p>\n\u003cp>Изменилась только форма слова \u003cspan class=\"example-word\">«пятый»\u003c/span>. \u003cspan class=\"example-word\">«Двадцать»\u003c/span> осталось без изменений.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Количество: \u003cstrong class=\"example-word\">двадцать пять\u003c/strong>, к \u003cstrong class=\"example-word\">двадцати пяти\u003c/strong>. Порядок: \u003cstrong class=\"example-word\">двадцать пятый\u003c/strong>, к \u003cstrong class=\"example-word\">двадцать пятому\u003c/strong>. В количественном меняем все слова, в порядковом только последнее.\u003c/p>\n\u003c/aside>\u003ch3>Даты\u003c/h3>\u003cp>День месяца при чтении даты обозначается порядковым числительным. Название месяца имеет родительный падеж и не меняется вместе с числительным.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Сегодня \u003cstrong class=\"example-word\">пятое\u003c/strong> октября. Мы встретимся \u003cstrong class=\"example-word\">пятого\u003c/strong> октября. Доклад подготовлен к \u003cstrong class=\"example-word\">пятому\u003c/strong> октября.\u003c/p>\n\u003c/div>\u003cp>В обозначении года тоже меняется последнее слово: \u003cspan class=\"example-word\">«две тысячи двадцать шестой год»\u003c/span>, \u003cspan class=\"example-word\">«в две тысячи двадцать шестом году»\u003c/span>. Не нужно изменять \u003cspan class=\"example-word\">«две тысячи»\u003c/span> на \u003cspan class=\"example-word\">«двух тысяч»\u003c/span> в этом сочетании.\u003c/p>\n",
+      "groups": [
+        "numeral-ordinal-practice"
+      ]
+    },
+    {
+      "id": "numeral-analysis",
+      "title": "Как охарактеризовать числительное",
+      "chapter": "numeral",
+      "html": "\u003ch3>1. Определите значение и разряд\u003c/h3>\u003cp>Установите, названо количество или порядок. У количественного числительного уточните группу: целое, дробное или собирательное.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы подошли к \u003cstrong class=\"example-word\">двадцати трём\u003c/strong> домам. Домам скольким? Двадцати трём. Это количественное числительное, обозначающее целое количество.\u003c/p>\n\u003c/div>\u003ch3>2. Назовите начальную форму и строение\u003c/h3>\u003cp>Начальная форма количественного числительного является формой именительного падежа. У порядкового нужна также форма мужского рода единственного числа. Если числительное составное, выпишите все его слова.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Начальная форма \u003cspan class=\"example-word\">«двадцати трём»\u003c/span>: \u003cstrong class=\"example-word\">двадцать три\u003c/strong>. Два слова, значит, строение составное.\u003c/p>\n\u003c/div>\u003ch3>3. Определите изменяемые признаки\u003c/h3>\u003cp>Назовите падеж. Род и число указывайте только тогда, когда числительное имеет эти признаки. У порядкового числительного они определяются так же, как у прилагательного.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Подошли к кому? к чему? К домам. Числительное \u003cspan class=\"example-word\">«двадцати трём»\u003c/span> стоит в дательном падеже. Рода и числа у него нет, хотя существительное \u003cspan class=\"example-word\">«домам»\u003c/span> стоит во множественном числе.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Двадцати трём»\u003c/span>: имя числительное; начальная форма \u003cspan class=\"example-word\">«двадцать три»\u003c/span>; количественное, целое, составное; дательный падеж.\u003c/p>\n\u003c/div>\u003cp>Разряд по значению и строение являются постоянными признаками. Падеж является непостоянным признаком. Род и число тоже относятся к непостоянным признакам у тех числительных, которые по ним изменяются.\u003c/p>\n",
+      "groups": [
+        "numeral-analysis-practice"
+      ]
+    },
+    {
+      "id": "numeral-check",
+      "title": "Проверка по числительному",
+      "chapter": "numeral",
+      "html": "",
+      "groups": [
+        "numeral-check"
       ]
     }
   ],
@@ -4376,6 +4470,1158 @@ window.LESSON_CONTENT = {
           ],
           "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Удобно»\u003c/span> характеризует пальто, а не действие. Сравните: \u003cspan class=\"example-word\">«пальто удобны»\u003c/span>. Это краткое прилагательное. Несклоняемость существительного не мешает зависимому прилагательному менять форму.\u003c/p>\n",
           "reviewStep": "adjective-short"
+        }
+      ]
+    },
+    "numeral-meaning-practice": {
+      "id": "numeral-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все числительные.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Пять",
+                "role": "numeral"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ребят",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "заняли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "второй",
+                "role": "numeral"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "ряд",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Пять",
+              "role": "numeral"
+            },
+            {
+              "value": "1",
+              "label": "ребят",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "заняли",
+              "role": "verb"
+            },
+            {
+              "value": "3",
+              "label": "второй",
+              "role": "numeral"
+            },
+            {
+              "value": "4",
+              "label": "ряд",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "3"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пять»\u003c/span> называет количество ребят, \u003cspan class=\"example-word\">«второй»\u003c/span> номер ряда при счёте. \u003cspan class=\"example-word\">«Ребят»\u003c/span> и \u003cspan class=\"example-word\">«ряд»\u003c/span> называют людей и предмет, это существительные.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-meaning-2",
+          "type": "choice",
+          "promptHtml": "В дневнике появилась \u003cstrong class=\"example-word\">пятёрка\u003c/strong>. Выберите верную характеристику выделенного слова.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Количественное числительное: обозначает число пять, отвечает на вопрос «сколько?», изменяется только по падежам."
+            },
+            {
+              "value": "1",
+              "label": "Б. Имя существительное: называет отметку, отвечает на вопросы «кто? что?», имеет женский род и формы «пятёрки», «пятёркой»."
+            },
+            {
+              "value": "2",
+              "label": "В. Порядковое числительное: обозначает место отметки при счёте, отвечает на вопрос «какая по счёту?», согласуется со словом «дневник»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пятёрка»\u003c/span> называет отметку, а не количество или порядок предметов. В варианте А смешаны значение названия отметки и число. В варианте В нет связи согласования с существительным \u003cspan class=\"example-word\">«дневник»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-meaning-3",
+          "type": "choice",
+          "promptHtml": "Мы прочитали \u003cstrong class=\"example-word\">несколько\u003c/strong> рассказов. Какой частью речи является выделенное слово?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Числительным: обозначает точное число рассказов, отвечает на вопрос «сколько?»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Прилагательным: называет признак рассказов, изменяется по родам и числам."
+            },
+            {
+              "value": "2",
+              "label": "В. Местоимением: указывает на неопределённое количество рассказов, не называя точное число."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Несколько»\u003c/span> не называет числа, а указывает на количество. Это местоимение. Вопрос \u003cspan class=\"example-word\">«сколько?»\u003c/span> не является достаточным основанием для отнесения слова к числительным.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-classes-practice": {
+      "id": "numeral-classes-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-classes-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд числительных в сочетаниях.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "семь страниц",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "седьмая страница",
+              "correct": "3"
+            },
+            {
+              "id": "2",
+              "label": "трое детей",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "три пятых метра",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "двадцать учеников",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Количественное, целое"
+            },
+            {
+              "value": "1",
+              "label": "Количественное, дробное"
+            },
+            {
+              "value": "2",
+              "label": "Количественное, собирательное"
+            },
+            {
+              "value": "3",
+              "label": "Порядковое"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Семь»\u003c/span> и \u003cspan class=\"example-word\">«двадцать»\u003c/span> называют целое количество. \u003cspan class=\"example-word\">«Седьмая»\u003c/span> место страницы при счёте. \u003cspan class=\"example-word\">«Трое»\u003c/span> представляет детей как группу, \u003cspan class=\"example-word\">«три пятых»\u003c/span> называет дробное количество.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-classes-2",
+          "type": "choice",
+          "promptHtml": "Почему слово \u003cspan class=\"example-word\">«трое»\u003c/span> в сочетании \u003cstrong class=\"example-word\">трое друзей\u003c/strong> является собирательным числительным?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Обозначает трёх друзей как группу, а не неопределённое множество."
+            },
+            {
+              "value": "1",
+              "label": "Б. Обозначает приблизительное количество, которое может быть больше трёх."
+            },
+            {
+              "value": "2",
+              "label": "В. Обозначает порядок появления друзей: каждый из них третий."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Трое»\u003c/span> называет ровно три лица и представляет их как совокупность. Это не приблизительное количество и не порядковый номер.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-classes-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Пять\u003c/strong> и \u003cstrong class=\"example-word\">шесть\u003c/strong>: как связаны эти слова?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это формы единственного и множественного числа одного числительного."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это разные количественные числительные; обычного признака единственного или множественного числа у них нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Это формы разных падежей одного количественного числительного."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пять»\u003c/span> и \u003cspan class=\"example-word\">«шесть»\u003c/span> обозначают разные числа. Падежные формы слова \u003cspan class=\"example-word\">«пять»\u003c/span>: \u003cspan class=\"example-word\">«пяти»\u003c/span>, \u003cspan class=\"example-word\">«пятью»\u003c/span>, а не \u003cspan class=\"example-word\">«шесть»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-structure-practice": {
+      "id": "numeral-structure-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-structure-1",
+          "type": "sort",
+          "promptHtml": "Определите строение числительных.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "девять",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "девяносто пять",
+              "correct": "2"
+            },
+            {
+              "id": "2",
+              "label": "девятьсот",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "пятнадцать",
+              "correct": "0"
+            },
+            {
+              "id": "4",
+              "label": "триста двадцать первый",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Простое"
+            },
+            {
+              "value": "1",
+              "label": "Сложное"
+            },
+            {
+              "value": "2",
+              "label": "Составное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Девять»\u003c/span> и \u003cspan class=\"example-word\">«пятнадцать»\u003c/span> имеют один корень. \u003cspan class=\"example-word\">«Девятьсот»\u003c/span> пишется одним словом с двумя корнями. \u003cspan class=\"example-word\">«Девяносто пять»\u003c/span> и \u003cspan class=\"example-word\">«триста двадцать первый»\u003c/span> состоят из нескольких слов.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-structure-2",
+          "type": "choice",
+          "promptHtml": "Выберите верную характеристику \u003cstrong class=\"example-word\">двести третий\u003c/strong>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Сложное количественное: состоит из двух слов и обозначает двести три предмета."
+            },
+            {
+              "value": "1",
+              "label": "Б. Простое порядковое: порядковое значение есть только у последнего слова."
+            },
+            {
+              "value": "2",
+              "label": "В. Составное порядковое: всё сочетание обозначает номер 203 при счёте."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Двести третий»\u003c/span> обозначает порядковый номер и состоит из двух слов. Характеристику строения определяют для всего сочетания, а не только для слова \u003cspan class=\"example-word\">«третий»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-structure-3",
+          "type": "input",
+          "promptHtml": "Запишите числительное без пропуска: \u003cstrong class=\"example-word\">пят_десят\u003c/strong>.",
+          "correct": [
+            "пятьдесят"
+          ],
+          "explanationHtml": "\u003cp>В числительном \u003cspan class=\"example-word\">«пятьдесят»\u003c/span> мягкий знак пишется в середине. Не путайте со словом \u003cspan class=\"example-word\">«пятнадцать»\u003c/span>, где мягкий знак только на конце.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-whole-practice": {
+      "id": "numeral-whole-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-whole-1",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«два»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">На столе лежат _____ тетради.\u003c/strong>",
+          "correct": [
+            "две"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Тетрадь»\u003c/span> женского рода, поэтому количественное числительное имеет форму \u003cspan class=\"example-word\">«две»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-whole-2",
+          "type": "input",
+          "promptHtml": "Поставьте слово \u003cspan class=\"example-word\">«карандаш»\u003c/span> в нужную форму: \u003cstrong class=\"example-word\">В коробке двадцать четыре _____.\u003c/strong>",
+          "correct": [
+            "карандаша"
+          ],
+          "explanationHtml": "\u003cp>В именительном падеже сочетания числительное с последней частью \u003cspan class=\"example-word\">«четыре»\u003c/span> требует родительного падежа единственного числа: \u003cspan class=\"example-word\">«карандаша»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-whole-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Одни ножницы\u003c/strong> лежат в ящике. Что верно о слове \u003cspan class=\"example-word\">«одни»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это количественное числительное в форме множественного числа, обозначающее один инструмент."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это собирательное числительное, обозначающее несколько инструментов."
+            },
+            {
+              "value": "2",
+              "label": "В. Это прилагательное без форм рода, числа и падежа, обозначающее свойство ножниц."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>У слова \u003cspan class=\"example-word\">«ножницы»\u003c/span> нет единственного числа. Числительное \u003cspan class=\"example-word\">«один»\u003c/span> согласуется с ним в форме \u003cspan class=\"example-word\">«одни»\u003c/span>, но по значению речь об одном инструменте.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-declension-practice": {
+      "id": "numeral-declension-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-declension-1",
+          "type": "sort",
+          "promptHtml": "Определите падеж выделенного числительного по всему сочетанию.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "нет трёх книг (трёх)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "к трём книгам (трём)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "с тремя книгами (тремя)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "о трёх книгах (трёх)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Родительный"
+            },
+            {
+              "value": "1",
+              "label": "Дательный"
+            },
+            {
+              "value": "2",
+              "label": "Творительный"
+            },
+            {
+              "value": "3",
+              "label": "Предложный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Нет»\u003c/span> требует родительного падежа, \u003cspan class=\"example-word\">«к книгам»\u003c/span> дательного, \u003cspan class=\"example-word\">«с книгами»\u003c/span> творительного, \u003cspan class=\"example-word\">«о книгах»\u003c/span> предложного. Одинаковая форма \u003cspan class=\"example-word\">«трёх»\u003c/span> встречается в родительном и предложном падежах, поэтому важен контекст.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-declension-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«сорок»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">К _____ страницам добавили ещё пять.\u003c/strong>",
+          "correct": [
+            "сорока"
+          ],
+          "explanationHtml": "\u003cp>Это дательный падеж. У слова \u003cspan class=\"example-word\">«сорок»\u003c/span> в родительном, дательном, творительном и предложном падежах форма \u003cspan class=\"example-word\">«сорока»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-declension-3",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«двести»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Набор состоит из _____ карточек.\u003c/strong>",
+          "correct": [
+            "двухсот"
+          ],
+          "explanationHtml": "\u003cp>Состоит из кого? чего? \u003cspan class=\"example-word\">«Двухсот карточек»\u003c/span>: родительный падеж. Изменяются обе части слова: \u003cspan class=\"example-word\">«двести»\u003c/span>, \u003cspan class=\"example-word\">«двухсот»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-declension-4",
+          "type": "input",
+          "promptHtml": "Поставьте \u003cspan class=\"example-word\">«восемь»\u003c/span> в нужную форму: \u003cstrong class=\"example-word\">Мы встретились с _____ участниками.\u003c/strong>",
+          "correct": [
+            "восемью",
+            "восьмью"
+          ],
+          "explanationHtml": "\u003cp>Творительный падеж: \u003cspan class=\"example-word\">«с восемью участниками»\u003c/span> или \u003cspan class=\"example-word\">«с восьмью участниками»\u003c/span>. Обе формы правильные.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-declension-5",
+          "type": "input",
+          "promptHtml": "Запишите все слова числительного \u003cspan class=\"example-word\">«сто двадцать три»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы подготовили обложки к _____ книгам.\u003c/strong>",
+          "correct": [
+            "ста двадцати трём"
+          ],
+          "explanationHtml": "\u003cp>Дательный падеж: \u003cspan class=\"example-word\">«к ста двадцати трём книгам»\u003c/span>. В составном количественном числительном изменяются все слова.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-collective-practice": {
+      "id": "numeral-collective-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-collective-1",
+          "type": "choice",
+          "promptHtml": "Выберите сочетание, которое нужно исправить.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Трое котят."
+            },
+            {
+              "value": "1",
+              "label": "Б. Трое сестёр."
+            },
+            {
+              "value": "2",
+              "label": "В. Трое суток."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>С названиями лиц женского пола формы \u003cspan class=\"example-word\">«двое»\u003c/span>, \u003cspan class=\"example-word\">«трое»\u003c/span> не употребляют. Правильно: \u003cspan class=\"example-word\">«три сестры»\u003c/span>. \u003cspan class=\"example-word\">«Трое котят»\u003c/span> и \u003cspan class=\"example-word\">«трое суток»\u003c/span> правильные сочетания.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-collective-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«обе»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы подошли к _____ подругам.\u003c/strong>",
+          "correct": [
+            "обеим"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Подруга»\u003c/span> женского рода, нужна форма слова \u003cspan class=\"example-word\">«обе»\u003c/span>. Дательный падеж: \u003cspan class=\"example-word\">«к обеим подругам»\u003c/span>, а не \u003cspan class=\"example-word\">«к обоим»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-collective-3",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«трое»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Тренер поговорил с _____ ребятами.\u003c/strong>",
+          "correct": [
+            "троими"
+          ],
+          "explanationHtml": "\u003cp>В творительном падеже собирательное числительное имеет форму \u003cspan class=\"example-word\">«троими»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-collective-4",
+          "type": "choice",
+          "promptHtml": "Что обозначает сочетание \u003cstrong class=\"example-word\">двое носков\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Две пары носков."
+            },
+            {
+              "value": "1",
+              "label": "Б. Два отдельных носка, то есть одну пару."
+            },
+            {
+              "value": "2",
+              "label": "В. Неопределённое количество носков, больше двух."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>При названиях парных предметов собирательное числительное может считать пары. \u003cspan class=\"example-word\">«Двое носков»\u003c/span> обозначает две пары. Чтобы назвать два отдельных носка, говорят \u003cspan class=\"example-word\">«два носка»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-fractions-practice": {
+      "id": "numeral-fractions-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-fractions-1",
+          "type": "choice",
+          "promptHtml": "Как прочитать \u003cstrong class=\"example-word\">2,5 литра\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Два целых пять десятых литров."
+            },
+            {
+              "value": "1",
+              "label": "Б. Две целых пять десятых литров."
+            },
+            {
+              "value": "2",
+              "label": "В. Две целых пять десятых литра."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Считаются целые единицы, поэтому \u003cspan class=\"example-word\">«две целых»\u003c/span>. При измерении объёма существительное стоит в родительном падеже единственного числа: \u003cspan class=\"example-word\">«литра»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-fractions-2",
+          "type": "input",
+          "promptHtml": "Запишите оба слова числительного \u003cspan class=\"example-word\">«две третьих»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">К _____ метра ленты добавили ещё метр.\u003c/strong>",
+          "correct": [
+            "двум третьим"
+          ],
+          "explanationHtml": "\u003cp>В дательном падеже: \u003cspan class=\"example-word\">«двум третьим»\u003c/span>. Меняются обе части. Существительное \u003cspan class=\"example-word\">«метра»\u003c/span> сохраняет родительный падеж единственного числа.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-fractions-3",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«полтора»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">До начала осталось _____ минуты.\u003c/strong>",
+          "correct": [
+            "полторы"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Минута»\u003c/span> женского рода. В именительном падеже нужна форма \u003cspan class=\"example-word\">«полторы»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-fractions-4",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«полтора»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Не прошло _____ часов.\u003c/strong>",
+          "correct": [
+            "полутора"
+          ],
+          "explanationHtml": "\u003cp>В родительном падеже числительное имеет форму \u003cspan class=\"example-word\">«полутора»\u003c/span>. Существительное стоит во множественном числе: \u003cspan class=\"example-word\">«полутора часов»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-ordinal-practice": {
+      "id": "numeral-ordinal-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-ordinal-1",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму числительного \u003cspan class=\"example-word\">«седьмых»\u003c/span>: \u003cstrong class=\"example-word\">В седьмых классах прошёл конкурс.\u003c/strong>",
+          "correct": [
+            "седьмой"
+          ],
+          "explanationHtml": "\u003cp>Начальная форма порядкового числительного: мужской род, единственное число, именительный падеж, \u003cspan class=\"example-word\">«седьмой»\u003c/span>. В сочетании \u003cspan class=\"example-word\">«в седьмых классах»\u003c/span> слово стоит во множественном числе, предложном падеже.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-ordinal-2",
+          "type": "input",
+          "promptHtml": "Запишите все слова \u003cspan class=\"example-word\">«двадцать первый»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы говорили о _____ странице.\u003c/strong>",
+          "correct": [
+            "двадцать первой"
+          ],
+          "explanationHtml": "\u003cp>Составное порядковое числительное согласуется со словом \u003cspan class=\"example-word\">«странице»\u003c/span>: женский род, единственное число, предложный падеж. Изменяется только последнее слово.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-ordinal-3",
+          "type": "choice",
+          "promptHtml": "Как правильно прочитать запись \u003cstrong class=\"example-word\">в 2026 году\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. В двух тысячах двадцати шестом году."
+            },
+            {
+              "value": "1",
+              "label": "Б. В две тысячи двадцать шестом году."
+            },
+            {
+              "value": "2",
+              "label": "В. В две тысячи двадцати шестом году."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Название года является составным порядковым числительным. Меняется только последнее слово: \u003cspan class=\"example-word\">«шестой»\u003c/span>, \u003cspan class=\"example-word\">«шестом»\u003c/span>. Остальные слова сохраняют начальную запись.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-ordinal-4",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«пятый»\u003c/span> в нужной форме для даты: \u003cstrong class=\"example-word\">Мы встретимся _____ октября.\u003c/strong>",
+          "correct": [
+            "пятого"
+          ],
+          "explanationHtml": "\u003cp>Дата встречи: \u003cspan class=\"example-word\">«пятого октября»\u003c/span>. Числительное стоит в родительном падеже, название месяца \u003cspan class=\"example-word\">«октября»\u003c/span> сохраняет ту же форму.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-analysis-practice": {
+      "id": "numeral-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "numeral-analysis-1",
+          "type": "choice",
+          "promptHtml": "Мы подошли к \u003cstrong class=\"example-word\">двадцати трём\u003c/strong> домам. Выберите верную характеристику числительного.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «двадцать три»; количественное, целое, составное; дательный падеж, род и число не определяются."
+            },
+            {
+              "value": "1",
+              "label": "Б. Начальная форма «двадцатый третий»; порядковое, составное; мужской род, множественное число, дательный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «двадцать три»; количественное, собирательное, сложное; мужской род, множественное число, творительный падеж."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Сочетание называет количество домов. \u003cspan class=\"example-word\">«Двадцать три»\u003c/span> целое количественное числительное из двух слов. Форма \u003cspan class=\"example-word\">«двадцати трём»\u003c/span> является дательным падежом. У данного числительного нет рода и числа; эти признаки существительного на него не переносят.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-analysis-2",
+          "type": "choice",
+          "promptHtml": "Мы остановились у \u003cstrong class=\"example-word\">третьего\u003c/strong> дома. Выберите верную характеристику выделенного слова.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное; начальная форма «третий»; относительное; мужской род, единственное число, родительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Имя числительное; начальная форма «третий»; порядковое, простое; мужской род, единственное число, родительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя существительное; начальная форма «третий»; мужской род, единственное число, родительный падеж; называет отдельный дом."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Третьего»\u003c/span> обозначает место дома при счёте, поэтому это порядковое числительное, хотя изменяется оно как прилагательное. В сочетании \u003cspan class=\"example-word\">«у третьего дома»\u003c/span> родительный падеж, мужской род, единственное число.\u003c/p>\n"
+        },
+        {
+          "id": "numeral-analysis-3",
+          "type": "input",
+          "promptHtml": "Запишите полную начальную форму числительного: \u003cstrong class=\"example-word\">Мы воспользовались пятьюдесятью двумя карточками.\u003c/strong>",
+          "correct": [
+            "пятьдесят два"
+          ],
+          "explanationHtml": "\u003cp>Количественное числительное ставят в именительный падеж и записывают все его слова: \u003cspan class=\"example-word\">«пятьдесят два»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "numeral-check": {
+      "id": "numeral-check",
+      "title": "Проверка по числительному",
+      "assessment": "numeral-check",
+      "questions": [
+        {
+          "id": "numeral-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все слова, входящие в числительные.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Три",
+                "role": "numeral"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ученика",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "открыли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "двадцать",
+                "role": "numeral"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "вторую",
+                "role": "numeral"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "страницу",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Три",
+              "role": "numeral"
+            },
+            {
+              "value": "1",
+              "label": "ученика",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "открыли",
+              "role": "verb"
+            },
+            {
+              "value": "3",
+              "label": "двадцать",
+              "role": "numeral"
+            },
+            {
+              "value": "4",
+              "label": "вторую",
+              "role": "numeral"
+            },
+            {
+              "value": "5",
+              "label": "страницу",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "3",
+            "4"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Три»\u003c/span> называет количество учеников, \u003cspan class=\"example-word\">«двадцать вторую»\u003c/span> номер страницы. В составном числительном выделяются оба слова.\u003c/p>\n",
+          "reviewStep": "numeral-meaning"
+        },
+        {
+          "id": "numeral-check-2",
+          "type": "choice",
+          "promptHtml": "На двери установлен \u003cstrong class=\"example-word\">двойной\u003c/strong> замок. Выберите верную характеристику слова \u003cspan class=\"example-word\">«двойной»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Количественное числительное: обозначает два замка и отвечает на вопрос «сколько?»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Порядковое числительное: обозначает второй замок и отвечает на вопрос «который по счёту?»."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя прилагательное: обозначает устройство замка, отвечает на вопрос «какой?» и изменяется по родам, числам, падежам."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Двойной»\u003c/span> характеризует устройство замка. Слово связано с числом два, но не называет количество предметов или порядковый номер.\u003c/p>\n",
+          "reviewStep": "numeral-meaning"
+        },
+        {
+          "id": "numeral-check-3",
+          "type": "sort",
+          "promptHtml": "Определите разряды числительных.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "двенадцать",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "двенадцатый",
+              "correct": "3"
+            },
+            {
+              "id": "2",
+              "label": "четверо",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "две пятых",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Количественное, целое"
+            },
+            {
+              "value": "1",
+              "label": "Количественное, дробное"
+            },
+            {
+              "value": "2",
+              "label": "Количественное, собирательное"
+            },
+            {
+              "value": "3",
+              "label": "Порядковое"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Двенадцать»\u003c/span> целое количественное, \u003cspan class=\"example-word\">«двенадцатый»\u003c/span> порядковое, \u003cspan class=\"example-word\">«четверо»\u003c/span> собирательное, \u003cspan class=\"example-word\">«две пятых»\u003c/span> дробное.\u003c/p>\n",
+          "reviewStep": "numeral-classes"
+        },
+        {
+          "id": "numeral-check-4",
+          "type": "sort",
+          "promptHtml": "Определите строение числительных.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "одиннадцать",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "семьдесят",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "семьдесят второй",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "четыреста",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Простое"
+            },
+            {
+              "value": "1",
+              "label": "Сложное"
+            },
+            {
+              "value": "2",
+              "label": "Составное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Одиннадцать»\u003c/span> имеет один корень и суффикс -надцать. \u003cspan class=\"example-word\">«Семьдесят»\u003c/span> и \u003cspan class=\"example-word\">«четыреста»\u003c/span> имеют по два корня, но пишутся одним словом. \u003cspan class=\"example-word\">«Семьдесят второй»\u003c/span> состоит из двух слов.\u003c/p>\n",
+          "reviewStep": "numeral-structure"
+        },
+        {
+          "id": "numeral-check-5",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«тетрадь»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">На столе двадцать две _____.\u003c/strong>",
+          "correct": [
+            "тетради"
+          ],
+          "explanationHtml": "\u003cp>После числительного \u003cspan class=\"example-word\">«двадцать две»\u003c/span> нужна форма родительного падежа единственного числа: \u003cspan class=\"example-word\">«тетради»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-whole"
+        },
+        {
+          "id": "numeral-check-6",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«один»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы купили _____ пальто.\u003c/strong>",
+          "correct": [
+            "одно"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пальто»\u003c/span> среднего рода, единственного числа. Числительное \u003cspan class=\"example-word\">«один»\u003c/span> имеет форму среднего рода \u003cspan class=\"example-word\">«одно»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-whole"
+        },
+        {
+          "id": "numeral-check-7",
+          "type": "choice",
+          "promptHtml": "Мы подошли к \u003cstrong class=\"example-word\">четырём\u003c/strong> домам. В каком падеже числительное?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Дательном."
+            },
+            {
+              "value": "1",
+              "label": "Б. Творительном."
+            },
+            {
+              "value": "2",
+              "label": "В. Предложном."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Подошли к кому? к чему? \u003cspan class=\"example-word\">«К домам»\u003c/span>. Домам скольким? \u003cspan class=\"example-word\">«Четырём»\u003c/span>. Это дательный падеж.\u003c/p>\n",
+          "reviewStep": "numeral-declension"
+        },
+        {
+          "id": "numeral-check-8",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«пятьдесят»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы остановились в _____ метрах от берега.\u003c/strong>",
+          "correct": [
+            "пятидесяти"
+          ],
+          "explanationHtml": "\u003cp>Предложный падеж: \u003cspan class=\"example-word\">«в пятидесяти метрах»\u003c/span>. Изменяются обе части слова, а не только последняя.\u003c/p>\n",
+          "reviewStep": "numeral-declension"
+        },
+        {
+          "id": "numeral-check-9",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«двести»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы воспользовались _____ карточками.\u003c/strong>",
+          "correct": [
+            "двумястами"
+          ],
+          "explanationHtml": "\u003cp>Творительный падеж: \u003cspan class=\"example-word\">«двумястами карточками»\u003c/span>. Форма \u003cspan class=\"example-word\">«двухсот»\u003c/span> является родительным падежом, а \u003cspan class=\"example-word\">«двумстам»\u003c/span> дательным.\u003c/p>\n",
+          "reviewStep": "numeral-declension"
+        },
+        {
+          "id": "numeral-check-10",
+          "type": "input",
+          "promptHtml": "Запишите все слова \u003cspan class=\"example-word\">«семьдесят пять»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Обложки нужны к _____ книгам.\u003c/strong>",
+          "correct": [
+            "семидесяти пяти"
+          ],
+          "explanationHtml": "\u003cp>В составном количественном числительном меняются все слова: \u003cspan class=\"example-word\">«к семидесяти пяти книгам»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-declension"
+        },
+        {
+          "id": "numeral-check-11",
+          "type": "choice",
+          "promptHtml": "Выберите сочетание с ошибкой.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Четверо школьниц."
+            },
+            {
+              "value": "1",
+              "label": "Б. Четверо котят."
+            },
+            {
+              "value": "2",
+              "label": "В. Четверо ребят."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>С названиями лиц женского пола собирательная форма \u003cspan class=\"example-word\">«четверо»\u003c/span> не употребляется. Правильно: \u003cspan class=\"example-word\">«четыре школьницы»\u003c/span>. Названия детёнышей и слово \u003cspan class=\"example-word\">«ребята»\u003c/span> допускают собирательную форму.\u003c/p>\n",
+          "reviewStep": "numeral-collective"
+        },
+        {
+          "id": "numeral-check-12",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«обе»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы обсудили проект с _____ подругами.\u003c/strong>",
+          "correct": [
+            "обеими"
+          ],
+          "explanationHtml": "\u003cp>Женский род существительного требует формы слова \u003cspan class=\"example-word\">«обе»\u003c/span>. Творительный падеж: \u003cspan class=\"example-word\">«обеими»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-collective"
+        },
+        {
+          "id": "numeral-check-13",
+          "type": "input",
+          "promptHtml": "Запишите оба слова \u003cspan class=\"example-word\">«три четвёртых»\u003c/span> в дательном падеже: \u003cstrong class=\"example-word\">К _____ метра добавили ещё метр.\u003c/strong>",
+          "correct": [
+            "трём четвёртым"
+          ],
+          "explanationHtml": "\u003cp>Дательный падеж: \u003cspan class=\"example-word\">«трём четвёртым»\u003c/span>. Меняется и количественная, и порядковая часть дробного числительного.\u003c/p>\n",
+          "reviewStep": "numeral-fractions"
+        },
+        {
+          "id": "numeral-check-14",
+          "type": "choice",
+          "promptHtml": "Выберите правильное чтение записи \u003cstrong class=\"example-word\">1,2 метра\u003c/strong>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Один целый две десятых метра."
+            },
+            {
+              "value": "1",
+              "label": "Б. Одна целая две десятых метров."
+            },
+            {
+              "value": "2",
+              "label": "В. Одна целая две десятых метра."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Считается одна целая единица, поэтому \u003cspan class=\"example-word\">«одна целая»\u003c/span>. Существительное при измерении длины имеет форму родительного падежа единственного числа: \u003cspan class=\"example-word\">«метра»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-fractions"
+        },
+        {
+          "id": "numeral-check-15",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«полтора»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Нам пришлось ограничиться _____ часами.\u003c/strong>",
+          "correct": [
+            "полутора"
+          ],
+          "explanationHtml": "\u003cp>В творительном падеже форма \u003cspan class=\"example-word\">«полутора»\u003c/span>, а существительное принимает множественное число: \u003cspan class=\"example-word\">«полутора часами»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-fractions"
+        },
+        {
+          "id": "numeral-check-16",
+          "type": "input",
+          "promptHtml": "Запишите все слова \u003cspan class=\"example-word\">«сто сорок третий»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Ответ дан на _____ странице.\u003c/strong>",
+          "correct": [
+            "сто сорок третьей"
+          ],
+          "explanationHtml": "\u003cp>Порядковое числительное согласуется со словом \u003cspan class=\"example-word\">«странице»\u003c/span>: женский род, единственное число, предложный падеж. Меняется только последнее слово.\u003c/p>\n",
+          "reviewStep": "numeral-ordinal"
+        },
+        {
+          "id": "numeral-check-17",
+          "type": "choice",
+          "promptHtml": "Мы говорили о \u003cstrong class=\"example-word\">двадцатой\u003c/strong> странице. Выберите верную характеристику слова \u003cspan class=\"example-word\">«двадцатой»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Количественное, целое, простое; род не определяется, предложный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Порядковое, простое; женский род, единственное число, предложный падеж; начальная форма «двадцатый»."
+            },
+            {
+              "value": "2",
+              "label": "В. Порядковое, составное; женский род, множественное число, родительный падеж; начальная форма «двадцать»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Назван номер страницы при счёте. Слово \u003cspan class=\"example-word\">«двадцатый»\u003c/span> имеет один корень и пишется одним словом. В данном сочетании \u003cspan class=\"example-word\">«двадцатой»\u003c/span> согласуется со словом \u003cspan class=\"example-word\">«странице»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-analysis"
+        },
+        {
+          "id": "numeral-check-18",
+          "type": "choice",
+          "promptHtml": "Как правильно прочитать дату встречи: \u003cstrong class=\"example-word\">Встретимся 23 сентября\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Встретимся двадцати третьего сентября."
+            },
+            {
+              "value": "1",
+              "label": "Б. Встретимся двадцать третьего сентябре."
+            },
+            {
+              "value": "2",
+              "label": "В. Встретимся двадцать третьего сентября."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Меняется последнее слово составного порядкового числительного: \u003cspan class=\"example-word\">«двадцать третьего»\u003c/span>. Название месяца сохраняет родительный падеж: \u003cspan class=\"example-word\">«сентября»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "numeral-ordinal"
         }
       ]
     }
