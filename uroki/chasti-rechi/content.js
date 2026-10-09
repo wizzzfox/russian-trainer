@@ -20,6 +20,10 @@ window.LESSON_CONTENT = {
     {
       "id": "numeral",
       "title": "Имя числительное"
+    },
+    {
+      "id": "pronoun",
+      "title": "Местоимение"
     }
   ],
   "labels": {
@@ -349,6 +353,114 @@ window.LESSON_CONTENT = {
       "html": "",
       "groups": [
         "numeral-check"
+      ]
+    },
+    {
+      "id": "pronoun-meaning",
+      "title": "Что обозначает местоимение",
+      "chapter": "pronoun",
+      "html": "\u003cp>Когда предмет уже назван, мы можем говорить о нём, не повторяя его название.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>На столе лежала книга. \u003cstrong class=\"example-word\">Она\u003c/strong> была открыта.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Книга»\u003c/span> называет предмет. \u003cspan class=\"example-word\">«Она»\u003c/span> указывает на ту же книгу, но само это слово не сообщает, какой именно предмет имеется в виду. Понять его помогает предыдущее предложение.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Местоимение\u003c/strong> является самостоятельной частью речи, которая указывает на предмет, признак или количество, но не называет их.\u003c/p>\n\u003c/div>\u003cp>Указание не обязательно заменяет уже употреблённое слово. Когда человек говорит \u003cspan class=\"example-word\">«я»\u003c/span>, он указывает на себя. Когда говорит \u003cspan class=\"example-word\">«этот»\u003c/span> и показывает на предмет, понять его помогает сама ситуация.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>На что указывает\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003cth>Как понять указание\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>На предмет или лицо\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Он\u003c/strong> открыл дверь\u003c/td>\n\u003ctd>О ком говорится, узнаём из разговора или текста\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>На признак предмета\u003c/td>\n\u003ctd>Возьми \u003cstrong class=\"example-word\">эту\u003c/strong> книгу\u003c/td>\n\u003ctd>Указана определённая книга, но её свойство не названо\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>На количество\u003c/td>\n\u003ctd>У нас \u003cstrong class=\"example-word\">несколько\u003c/strong> книг\u003c/td>\n\u003ctd>Точное число книг не названо\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Слово \u003cspan class=\"example-word\">«предмет»\u003c/span> здесь имеет то же широкое грамматическое значение, что и в определении существительного. Местоимение может указывать не только на вещь, но и на человека, явление или мысль.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Радость\u003c/strong> охватила детей. \u003cstrong class=\"example-word\">Она\u003c/strong> была заметна по их лицам.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Она»\u003c/span> указывает на радость, то есть на названное чувство.\u003c/p>\n\u003c/div>\u003cp>Вопросы к местоимениям различаются. К словам, указывающим на предмет, задаём падежные вопросы: кто? что?, кого? чего? и другие. К словам, указывающим на признак: какой? чей? К словам, указывающим на количество: сколько?\u003c/p>\n\u003cp>Местоимение отличается от существительного, прилагательного и числительного именно указанием. \u003cspan class=\"example-word\">«Ученик»\u003c/span> называет человека, \u003cspan class=\"example-word\">«внимательный»\u003c/span> его свойство, \u003cspan class=\"example-word\">«три»\u003c/span> точное количество. \u003cspan class=\"example-word\">«Он»\u003c/span>, \u003cspan class=\"example-word\">«такой»\u003c/span>, \u003cspan class=\"example-word\">«несколько»\u003c/span> помогают указать на человека, признак или количество, не называя их.\u003c/p>\n",
+      "groups": [
+        "pronoun-meaning-practice"
+      ]
+    },
+    {
+      "id": "pronoun-classes",
+      "title": "Девять разрядов по значению",
+      "chapter": "pronoun",
+      "html": "\u003cp>Указание может иметь разный смысл: назвать участника разговора, показать принадлежность, спросить о чём-то или сообщить об отсутствии. По этому различию выделяют девять разрядов местоимений.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Разряд\u003c/th>\n\u003cth>Что выражает\u003c/th>\n\u003cth>Основные слова\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Личные местоимения\u003c/strong>\u003c/td>\n\u003ctd>Указывают на участников речи и на тех, о ком или о чём говорят\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Я, ты, он, она, оно, мы, вы, они\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Возвратное местоимение\u003c/strong>\u003c/td>\n\u003ctd>Указывает на того, кто сам выполняет действие\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Себя\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Притяжательные местоимения\u003c/strong>\u003c/td>\n\u003ctd>Указывают на принадлежность\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мой, твой, наш, ваш, свой, его, её, их\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Указательные местоимения\u003c/strong>\u003c/td>\n\u003ctd>Выделяют предмет, признак или количество\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Этот, тот, такой, таков, столько\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Определительные местоимения\u003c/strong>\u003c/td>\n\u003ctd>Обобщают, выделяют или уточняют предметы и лица\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Сам, самый, весь, всякий, каждый, любой, другой, иной, всяческий\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Вопросительные местоимения\u003c/strong>\u003c/td>\n\u003ctd>Служат для вопроса о предмете, признаке или количестве\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Кто, что, какой, который, чей, сколько\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Относительные местоимения\u003c/strong>\u003c/td>\n\u003ctd>Связывают части предложения и указывают на предмет, признак или количество\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Кто, что, какой, который, чей, сколько\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Неопределённые местоимения\u003c/strong>\u003c/td>\n\u003ctd>Указывают на неизвестный или не названный точно предмет, признак, количество\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Кто-то, что-нибудь, кое-кто, какой-либо, некоторый, некий, некто, нечто, несколько\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Отрицательные местоимения\u003c/strong>\u003c/td>\n\u003ctd>Выражают отсутствие лица, предмета или признака\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Никто, ничто, некого, нечего, никакой, ничей\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Один разряд объединяет слова с общим значением, но их формы могут различаться. Например, \u003cspan class=\"example-word\">«мой»\u003c/span> изменяется: \u003cspan class=\"example-word\">«моего»\u003c/span>, \u003cspan class=\"example-word\">«моему»\u003c/span>, а притяжательное \u003cspan class=\"example-word\">«его»\u003c/span> сохраняет одну форму.\u003c/p>\n\u003cp>Некоторые слова одинаково выглядят в разных разрядах. Чтобы определить разряд \u003cspan class=\"example-word\">«кто»\u003c/span> или \u003cspan class=\"example-word\">«его»\u003c/span>, нужно прочитать предложение, а не рассматривать слово отдельно.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Кто\u003c/strong> принёс книгу? Я знаю, \u003cstrong class=\"example-word\">кто\u003c/strong> принёс книгу.\u003c/p>\n\u003cp>В первом предложении \u003cspan class=\"example-word\">«кто»\u003c/span> помогает задать вопрос, во втором связывает две части сообщения.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "pronoun-classes-practice"
+      ]
+    },
+    {
+      "id": "pronoun-personal",
+      "title": "Личные местоимения",
+      "chapter": "pronoun",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Личные местоимения\u003c/strong> указывают на говорящего, собеседника и на тех, о ком или о чём говорят. Признак лица показывает отношение к участникам речи, а не пол человека.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Лицо\u003c/th>\n\u003cth>На кого указывает\u003c/th>\n\u003cth>Единственное число\u003c/th>\n\u003cth>Множественное число\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Первое лицо\u003c/strong>\u003c/td>\n\u003ctd>На говорящего; на группу, в которую он входит\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Я\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мы\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Второе лицо\u003c/strong>\u003c/td>\n\u003ctd>На собеседника; на группу собеседников\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ты\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вы\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Третье лицо\u003c/strong>\u003c/td>\n\u003ctd>На того или то, о ком или о чём говорят\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Он, она, оно\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Они\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я\u003c/strong> рассказываю, \u003cstrong class=\"example-word\">ты\u003c/strong> слушаешь, \u003cstrong class=\"example-word\">она\u003c/strong> записывает.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Я»\u003c/span> указывает на говорящего, \u003cspan class=\"example-word\">«ты»\u003c/span> на его собеседника, \u003cspan class=\"example-word\">«она»\u003c/span> на ещё одного участника ситуации.\u003c/p>\n\u003c/div>\u003cp>\u003cspan class=\"example-word\">«Он»\u003c/span>, \u003cspan class=\"example-word\">«она»\u003c/span>, \u003cspan class=\"example-word\">«оно»\u003c/span> различаются по роду: мужскому, женскому, среднему. У местоимений \u003cspan class=\"example-word\">«я»\u003c/span>, \u003cspan class=\"example-word\">«ты»\u003c/span>, \u003cspan class=\"example-word\">«мы»\u003c/span>, \u003cspan class=\"example-word\">«вы»\u003c/span>, \u003cspan class=\"example-word\">«они»\u003c/span> род при характеристике самого местоимения не указывают. \u003cspan class=\"example-word\">«Я»\u003c/span> может сказать о себе и мальчик, и девочка.\u003c/p>\n\u003cp>Личные местоимения бывают единственного и множественного числа. \u003cspan class=\"example-word\">«Вы»\u003c/span> может также служить вежливым обращением к одному человеку. В таком обращении грамматическая форма остаётся формой множественного числа.\u003c/p>\n\u003ch3>Как изменяются личные местоимения\u003c/h3>\u003cp>При склонении может изменяться всё слово, а не только окончание: \u003cspan class=\"example-word\">«я»\u003c/span>, \u003cspan class=\"example-word\">«меня»\u003c/span>, \u003cspan class=\"example-word\">«мне»\u003c/span>. Чтобы узнать исходное местоимение, нужно вспомнить его формы.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Вопросы\u003c/th>\n\u003cth>Я\u003c/th>\n\u003cth>Ты\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>Кто? Что?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Я\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ты\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>Кого? Чего?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Меня\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Тебя\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>Кому? Чему?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мне\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Тебе\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>Кого? Что?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Меня\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Тебя\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>Кем? Чем?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мной, мною\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Тобой, тобою\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О ком? О чём?\u003c/td>\n\u003ctd>Обо \u003cstrong class=\"example-word\">мне\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">тебе\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Он\u003c/th>\n\u003cth>Она\u003c/th>\n\u003cth>Мы\u003c/th>\n\u003cth>Вы\u003c/th>\n\u003cth>Они\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Он\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Она\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мы\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вы\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Они\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Его\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Её\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Нас\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вас\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Их\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ему\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ей\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Нам\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вам\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Им\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Его\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Её\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Нас\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вас\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Их\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Им\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ею, ей\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Нами\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вами\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ими\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">нём\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">ней\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">нас\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">вас\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">них\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У \u003cspan class=\"example-word\">«оно»\u003c/span> формы косвенных падежей такие же, как у \u003cspan class=\"example-word\">«он»\u003c/span>. Косвенными называют все падежи, кроме именительного.\u003c/p>\n\u003cp>После многих предлогов у личных местоимений третьего лица появляется начальное \u003cspan class=\"example-word\">«н»\u003c/span>: \u003cspan class=\"example-word\">«у него»\u003c/span>, \u003cspan class=\"example-word\">«к ней»\u003c/span>, \u003cspan class=\"example-word\">«с ними»\u003c/span>. Но это не правило для любого предлога: правильно \u003cspan class=\"example-word\">«благодаря ему»\u003c/span>, \u003cspan class=\"example-word\">«согласно ей»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Я встретил \u003cstrong class=\"example-word\">его\u003c/strong>. Я подошёл к \u003cstrong class=\"example-word\">нему\u003c/strong>.\u003c/p>\n\u003cp>В обоих случаях речь о том же человеке. После предлога \u003cspan class=\"example-word\">«к»\u003c/span> нужна форма \u003cspan class=\"example-word\">«нему»\u003c/span>.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "pronoun-personal-practice"
+      ]
+    },
+    {
+      "id": "pronoun-reflexive",
+      "title": "Возвратное местоимение «себя»",
+      "chapter": "pronoun",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Возвратное местоимение\u003c/strong> \u003cspan class=\"example-word\">«себя»\u003c/span> указывает на того, кто выполняет действие. Тот, кто действует, и тот, на кого указывает местоимение, совпадают.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Маша похвалила \u003cstrong class=\"example-word\">себя\u003c/strong>.\u003c/p>\n\u003cp>Хвалит Маша, и похвала обращена к самой Маше.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Маша похвалила \u003cstrong class=\"example-word\">её\u003c/strong>.\u003c/p>\n\u003cp>Здесь \u003cspan class=\"example-word\">«её»\u003c/span> указывает на другую девочку или женщину, а не на Машу.\u003c/p>\n\u003c/div>\u003cp>У \u003cspan class=\"example-word\">«себя»\u003c/span> нет лица, рода и числа: \u003cspan class=\"example-word\">«я берегу себя»\u003c/span>, \u003cspan class=\"example-word\">«ты бережёшь себя»\u003c/span>, \u003cspan class=\"example-word\">«они берегут себя»\u003c/span>. Оно может относиться и к одному человеку, и к нескольким.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Себя»\u003c/span> изменяется по падежам, но не имеет формы именительного падежа. В словаре его приводят в форме \u003cspan class=\"example-word\">«себя»\u003c/span>.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Форма\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Себя\u003c/strong>\u003c/td>\n\u003ctd>Для \u003cstrong class=\"example-word\">себя\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Себе\u003c/strong>\u003c/td>\n\u003ctd>Купил \u003cstrong class=\"example-word\">себе\u003c/strong> книгу\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Себя\u003c/strong>\u003c/td>\n\u003ctd>Увидел \u003cstrong class=\"example-word\">себя\u003c/strong> в зеркале\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Собой, собою\u003c/strong>\u003c/td>\n\u003ctd>Доволен \u003cstrong class=\"example-word\">собой\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">себе\u003c/strong>\u003c/td>\n\u003ctd>Рассказал о \u003cstrong class=\"example-word\">себе\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cspan class=\"example-word\">«Себя»\u003c/span> возвращает указание к тому, кто действует: я о себе, ты о себе, они о себе. Имя действующего лица меняется, местоимение остаётся возвратным.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "pronoun-reflexive-practice"
+      ]
+    },
+    {
+      "id": "pronoun-possessive",
+      "title": "Притяжательные местоимения",
+      "chapter": "pronoun",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Притяжательные местоимения\u003c/strong> указывают на принадлежность предмета и отвечают на вопросы чей? чья? чьё? чьи? К ним относятся \u003cspan class=\"example-word\">«мой»\u003c/span>, \u003cspan class=\"example-word\">«твой»\u003c/span>, \u003cspan class=\"example-word\">«наш»\u003c/span>, \u003cspan class=\"example-word\">«ваш»\u003c/span>, \u003cspan class=\"example-word\">«свой»\u003c/span>, \u003cspan class=\"example-word\">«его»\u003c/span>, \u003cspan class=\"example-word\">«её»\u003c/span>, \u003cspan class=\"example-word\">«их»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>\u003cspan class=\"example-word\">«Мой»\u003c/span> указывает на принадлежность говорящему, \u003cspan class=\"example-word\">«твой»\u003c/span> собеседнику, \u003cspan class=\"example-word\">«наш»\u003c/span> группе с участием говорящего, \u003cspan class=\"example-word\">«ваш»\u003c/span> собеседникам. \u003cspan class=\"example-word\">«Его»\u003c/span>, \u003cspan class=\"example-word\">«её»\u003c/span>, \u003cspan class=\"example-word\">«их»\u003c/span> указывают на принадлежность тому или тем, о ком говорят.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Мой»\u003c/span>, \u003cspan class=\"example-word\">«твой»\u003c/span>, \u003cspan class=\"example-word\">«наш»\u003c/span>, \u003cspan class=\"example-word\">«ваш»\u003c/span>, \u003cspan class=\"example-word\">«свой»\u003c/span> согласуются с существительным в роде, числе и падеже.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мой\u003c/strong> рюкзак, \u003cstrong class=\"example-word\">моя\u003c/strong> книга, \u003cstrong class=\"example-word\">моё\u003c/strong> письмо, \u003cstrong class=\"example-word\">мои\u003c/strong> тетради.\u003c/p>\n\u003cp>Во всех сочетаниях вещи принадлежат одному говорящему. Форму местоимения определяет название вещи, а не пол её владельца.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Падеж\u003c/th>\n\u003cth>Мой рюкзак\u003c/th>\n\u003cth>Моя книга\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Именительный\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мой\u003c/strong> рюкзак\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Моя\u003c/strong> книга\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Родительный\u003c/strong>\u003c/td>\n\u003ctd>Нет \u003cstrong class=\"example-word\">моего\u003c/strong> рюкзака\u003c/td>\n\u003ctd>Нет \u003cstrong class=\"example-word\">моей\u003c/strong> книги\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Дательный\u003c/strong>\u003c/td>\n\u003ctd>К \u003cstrong class=\"example-word\">моему\u003c/strong> рюкзаку\u003c/td>\n\u003ctd>К \u003cstrong class=\"example-word\">моей\u003c/strong> книге\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Винительный\u003c/strong>\u003c/td>\n\u003ctd>Вижу \u003cstrong class=\"example-word\">мой\u003c/strong> рюкзак\u003c/td>\n\u003ctd>Вижу \u003cstrong class=\"example-word\">мою\u003c/strong> книгу\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Творительный\u003c/strong>\u003c/td>\n\u003ctd>С \u003cstrong class=\"example-word\">моим\u003c/strong> рюкзаком\u003c/td>\n\u003ctd>С \u003cstrong class=\"example-word\">моей\u003c/strong> книгой\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Предложный\u003c/strong>\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">моём\u003c/strong> рюкзаке\u003c/td>\n\u003ctd>О \u003cstrong class=\"example-word\">моей\u003c/strong> книге\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ch3>\u003cspan class=\"example-word\">«Свой»\u003c/span> и \u003cspan class=\"example-word\">«его»\u003c/span>\u003c/h3>\u003cp>\u003cspan class=\"example-word\">«Свой»\u003c/span> указывает на принадлежность тому, кто выполняет действие. Это притяжательное, а не возвратное местоимение: оно говорит о принадлежности вещи.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Петя взял \u003cstrong class=\"example-word\">свой\u003c/strong> рюкзак.\u003c/p>\n\u003cp>Рюкзак принадлежит Пете.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Петя взял \u003cstrong class=\"example-word\">его\u003c/strong> рюкзак.\u003c/p>\n\u003cp>В таком сообщении \u003cspan class=\"example-word\">«его»\u003c/span> указывает на другого владельца, который должен быть известен из текста или разговора.\u003c/p>\n\u003c/div>\u003ch3>Личное и притяжательное \u003cspan class=\"example-word\">«его»\u003c/span>, \u003cspan class=\"example-word\">«её»\u003c/span>, \u003cspan class=\"example-word\">«их»\u003c/span>\u003c/h3>\u003cp>Одинаково написанное слово может быть личным или притяжательным местоимением. Важно, на что оно указывает: на самого человека или на принадлежность предмета.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Личное местоимение\u003c/th>\n\u003cth>Притяжательное местоимение\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Увидел \u003cstrong class=\"example-word\">его\u003c/strong>: увидел кого? что? Самого мальчика\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Его\u003c/strong> рюкзак: рюкзак чей? Принадлежащий мальчику\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Позвал \u003cstrong class=\"example-word\">её\u003c/strong>: позвал кого? что? Саму девочку\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Её\u003c/strong> книга: книга чья? Принадлежащая девочке\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Встретил \u003cstrong class=\"example-word\">их\u003c/strong>: встретил кого? что? Самих ребят\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Их\u003c/strong> тетради: тетради чьи? Принадлежащие ребятам\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Притяжательные \u003cspan class=\"example-word\">«его»\u003c/span>, \u003cspan class=\"example-word\">«её»\u003c/span>, \u003cspan class=\"example-word\">«их»\u003c/span> не изменяются: \u003cspan class=\"example-word\">«его рюкзак»\u003c/span>, \u003cspan class=\"example-word\">«его книга»\u003c/span>, \u003cspan class=\"example-word\">«его письма»\u003c/span>, \u003cspan class=\"example-word\">«о его письмах»\u003c/span>. Род, число и падеж у этих притяжательных местоимений не определяют. После предлога начальное \u003cspan class=\"example-word\">«н»\u003c/span> к ним не добавляют: \u003cspan class=\"example-word\">«у его дома»\u003c/span>, \u003cspan class=\"example-word\">«с её братом»\u003c/span>. В литературной речи употребляют \u003cspan class=\"example-word\">«их»\u003c/span>, а не \u003cspan class=\"example-word\">«ихний»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "pronoun-possessive-practice"
+      ]
+    },
+    {
+      "id": "pronoun-relative",
+      "title": "Вопросительные и относительные местоимения",
+      "chapter": "pronoun",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Вопросительные местоимения\u003c/strong> помогают спросить о лице, предмете, признаке или количестве. Это \u003cspan class=\"example-word\">«кто»\u003c/span>, \u003cspan class=\"example-word\">«что»\u003c/span>, \u003cspan class=\"example-word\">«какой»\u003c/span>, \u003cspan class=\"example-word\">«который»\u003c/span>, \u003cspan class=\"example-word\">«чей»\u003c/span>, \u003cspan class=\"example-word\">«сколько»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Кто\u003c/strong> принёс письмо? \u003cstrong class=\"example-word\">Чей\u003c/strong> это рюкзак? \u003cstrong class=\"example-word\">Сколько\u003c/strong> страниц в книге?\u003c/p>\n\u003cp>Говорящий хочет узнать человека, владельца вещи или количество страниц.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Относительные местоимения\u003c/strong> имеют те же слова и формы, но служат для связи частей предложения. Они сохраняют указание на лицо, предмет, признак или количество, о котором сообщается.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Я знаю, \u003cstrong class=\"example-word\">кто\u003c/strong> принёс письмо.\u003c/p>\n\u003cp>Первая часть сообщает \u003cspan class=\"example-word\">«я знаю»\u003c/span>. Вторая поясняет, что именно известно. \u003cspan class=\"example-word\">«Кто»\u003c/span> связывает эти части и указывает на человека, принёсшего письмо.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Мы открыли книгу, \u003cstrong class=\"example-word\">которую\u003c/strong> подарила бабушка.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Которую»\u003c/span> указывает на книгу и присоединяет сообщение о ней. Можно понять так: бабушка подарила эту книгу.\u003c/p>\n\u003c/div>\u003cp>Вопросительные и относительные местоимения склоняются одинаково. У \u003cspan class=\"example-word\">«кто»\u003c/span> формы \u003cspan class=\"example-word\">«кого»\u003c/span>, \u003cspan class=\"example-word\">«кому»\u003c/span>, \u003cspan class=\"example-word\">«кем»\u003c/span>, \u003cspan class=\"example-word\">«о ком»\u003c/span>; у \u003cspan class=\"example-word\">«что»\u003c/span> формы \u003cspan class=\"example-word\">«чего»\u003c/span>, \u003cspan class=\"example-word\">«чему»\u003c/span>, \u003cspan class=\"example-word\">«чем»\u003c/span>, \u003cspan class=\"example-word\">«о чём»\u003c/span>. \u003cspan class=\"example-word\">«Какой»\u003c/span>, \u003cspan class=\"example-word\">«который»\u003c/span>, \u003cspan class=\"example-word\">«чей»\u003c/span> изменяются по родам, числам и падежам. \u003cspan class=\"example-word\">«Сколько»\u003c/span> изменяется по падежам: \u003cspan class=\"example-word\">«скольких»\u003c/span>, \u003cspan class=\"example-word\">«скольким»\u003c/span>, \u003cspan class=\"example-word\">«сколькими»\u003c/span>, \u003cspan class=\"example-word\">«о скольких»\u003c/span>.\u003c/p>\n\u003ch3>Не всякое \u003cspan class=\"example-word\">«что»\u003c/span> является местоимением\u003c/h3>\u003cp>Союз \u003cspan class=\"example-word\">«что»\u003c/span> тоже связывает части предложения, но не указывает на предмет и не заменяет его название.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Я вижу, \u003cstrong class=\"example-word\">что\u003c/strong> лежит на столе.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Что»\u003c/span> указывает на лежащий предмет. На его месте можно представить название: на столе лежит книга. Это относительное местоимение.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Я вижу, что книга лежит на столе.\u003c/p>\n\u003cp>Предмет уже назван словом \u003cspan class=\"example-word\">«книга»\u003c/span>. \u003cspan class=\"example-word\">«Что»\u003c/span> только присоединяет сообщение о положении книги. Это союз.\u003c/p>\n\u003c/div>\u003cp>Разряд не определяют только по знаку вопроса в конце предложения. Например: \u003cspan class=\"example-word\">«Ты знаешь, кто принёс письмо?»\u003c/span> Вопрос задан собеседнику, а \u003cspan class=\"example-word\">«кто»\u003c/span> связывает части предложения и остаётся относительным местоимением.\u003c/p>\n",
+      "groups": [
+        "pronoun-relative-practice"
+      ]
+    },
+    {
+      "id": "pronoun-indefinite",
+      "title": "Неопределённые местоимения",
+      "chapter": "pronoun",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Неопределённые местоимения\u003c/strong> указывают на лицо, предмет, признак или количество, которые не названы точно: \u003cspan class=\"example-word\">«кто-то»\u003c/span>, \u003cspan class=\"example-word\">«что-нибудь»\u003c/span>, \u003cspan class=\"example-word\">«какой-либо»\u003c/span>, \u003cspan class=\"example-word\">«кое-кто»\u003c/span>, \u003cspan class=\"example-word\">«некоторый»\u003c/span>, \u003cspan class=\"example-word\">«некий»\u003c/span>, \u003cspan class=\"example-word\">«некто»\u003c/span>, \u003cspan class=\"example-word\">«нечто»\u003c/span>, \u003cspan class=\"example-word\">«несколько»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>За дверью \u003cstrong class=\"example-word\">кто-то\u003c/strong> разговаривает.\u003c/p>\n\u003cp>Мы знаем, что там есть человек, но не называем его.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Принеси \u003cstrong class=\"example-word\">какую-нибудь\u003c/strong> книгу.\u003c/p>\n\u003cp>Конкретная книга не выбрана.\u003c/p>\n\u003c/div>\u003cp>\u003cspan class=\"example-word\">«Несколько»\u003c/span> указывает на количество, но не называет точное число. Поэтому в сочетании \u003cspan class=\"example-word\">«несколько книг»\u003c/span> это местоимение, а \u003cspan class=\"example-word\">«пять книг»\u003c/span> содержит числительное.\u003c/p>\n\u003cp>Многие неопределённые местоимения образованы от вопросительных с помощью \u003cspan class=\"example-word\">«кое-»\u003c/span>, \u003cspan class=\"example-word\">«-то»\u003c/span>, \u003cspan class=\"example-word\">«-либо»\u003c/span>, \u003cspan class=\"example-word\">«-нибудь»\u003c/span>: \u003cspan class=\"example-word\">«кто»\u003c/span>, \u003cspan class=\"example-word\">«кто-то»\u003c/span>, \u003cspan class=\"example-word\">«кто-либо»\u003c/span>, \u003cspan class=\"example-word\">«кто-нибудь»\u003c/span>, \u003cspan class=\"example-word\">«кое-кто»\u003c/span>. При склонении эти части сохраняются: \u003cspan class=\"example-word\">«кого-то»\u003c/span>, \u003cspan class=\"example-word\">«кому-то»\u003c/span>, \u003cspan class=\"example-word\">«с кем-то»\u003c/span>.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Основа\u003c/th>\n\u003cth>Неопределённое местоимение\u003c/th>\n\u003cth>Форма в предложении\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Кто\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Кто-то\u003c/strong>\u003c/td>\n\u003ctd>Мы поговорили с \u003cstrong class=\"example-word\">кем-то\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Какой\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Какой-либо\u003c/strong>\u003c/td>\n\u003ctd>Без \u003cstrong class=\"example-word\">какого-либо\u003c/strong> предупреждения\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Чей\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Чей-нибудь\u003c/strong>\u003c/td>\n\u003ctd>В \u003cstrong class=\"example-word\">чьей-нибудь\u003c/strong> тетради\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Кто\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Кое-кто\u003c/strong>\u003c/td>\n\u003ctd>Поговорить кое с \u003cstrong class=\"example-word\">кем\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>С \u003cspan class=\"example-word\">«кое-»\u003c/span>, \u003cspan class=\"example-word\">«-то»\u003c/span>, \u003cspan class=\"example-word\">«-либо»\u003c/span>, \u003cspan class=\"example-word\">«-нибудь»\u003c/span> местоимения пишутся через дефис. Если между \u003cspan class=\"example-word\">«кое»\u003c/span> и местоимением стоит предлог, получаются три отдельных слова: \u003cspan class=\"example-word\">«кое у кого»\u003c/span>, \u003cspan class=\"example-word\">«кое с кем»\u003c/span>.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cspan class=\"example-word\">«Кое-»\u003c/span>, \u003cspan class=\"example-word\">«-то»\u003c/span>, \u003cspan class=\"example-word\">«-либо»\u003c/span>, \u003cspan class=\"example-word\">«-нибудь»\u003c/span> соединяются с местоимением дефисом. Предлог между \u003cspan class=\"example-word\">«кое»\u003c/span> и местоимением разделяет их: \u003cspan class=\"example-word\">«кое-кто»\u003c/span>, но \u003cspan class=\"example-word\">«кое с кем»\u003c/span>.\u003c/p>\n\u003c/aside>\u003cp>\u003cspan class=\"example-word\">«Некто»\u003c/span> и \u003cspan class=\"example-word\">«нечто»\u003c/span> не нужно пытаться склонять по образцу \u003cspan class=\"example-word\">«кто-то»\u003c/span>. \u003cspan class=\"example-word\">«Некто»\u003c/span> употребляется только в именительном падеже, \u003cspan class=\"example-word\">«нечто»\u003c/span> в именительном и винительном. Для других падежей выбирают подходящее слово: \u003cspan class=\"example-word\">«кого-то»\u003c/span>, \u003cspan class=\"example-word\">«чего-то»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "pronoun-indefinite-practice"
+      ]
+    },
+    {
+      "id": "pronoun-negative",
+      "title": "Отрицательные местоимения",
+      "chapter": "pronoun",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Отрицательные местоимения\u003c/strong> указывают на отсутствие лица, предмета или признака: \u003cspan class=\"example-word\">«никто»\u003c/span>, \u003cspan class=\"example-word\">«ничто»\u003c/span>, \u003cspan class=\"example-word\">«некого»\u003c/span>, \u003cspan class=\"example-word\">«нечего»\u003c/span>, \u003cspan class=\"example-word\">«никакой»\u003c/span>, \u003cspan class=\"example-word\">«ничей»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Никто\u003c/strong> не ответил. \u003cstrong class=\"example-word\">Никаких\u003c/strong> писем не пришло.\u003c/p>\n\u003cp>В первом предложении нет человека, который ответил; во втором сообщается об отсутствии писем.\u003c/p>\n\u003c/div>\u003cp>\u003cspan class=\"example-word\">«Никто»\u003c/span> и \u003cspan class=\"example-word\">«ничто»\u003c/span> изменяются по падежам: \u003cspan class=\"example-word\">«никого»\u003c/span>, \u003cspan class=\"example-word\">«никому»\u003c/span>, \u003cspan class=\"example-word\">«никем»\u003c/span>; \u003cspan class=\"example-word\">«ничего»\u003c/span>, \u003cspan class=\"example-word\">«ничему»\u003c/span>, \u003cspan class=\"example-word\">«ничем»\u003c/span>. \u003cspan class=\"example-word\">«Никакой»\u003c/span> и \u003cspan class=\"example-word\">«ничей»\u003c/span> изменяются по родам, числам и падежам: \u003cspan class=\"example-word\">«никакая»\u003c/span>, \u003cspan class=\"example-word\">«никакие»\u003c/span>, \u003cspan class=\"example-word\">«никакими»\u003c/span>; \u003cspan class=\"example-word\">«ничья»\u003c/span>, \u003cspan class=\"example-word\">«ничьи»\u003c/span>, \u003cspan class=\"example-word\">«ничьими»\u003c/span>.\u003c/p>\n\u003cp>У \u003cspan class=\"example-word\">«некого»\u003c/span> и \u003cspan class=\"example-word\">«нечего»\u003c/span> нет именительного падежа. Они обозначают, что нет человека или предмета, к которому можно было бы направить действие.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Некого\u003c/strong> спросить: рядом нет человека, который мог бы ответить.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Нечего\u003c/strong> читать: подходящих книг нет.\u003c/p>\n\u003c/div>\u003ch3>\u003cspan class=\"example-word\">«Не»\u003c/span> и \u003cspan class=\"example-word\">«ни»\u003c/span>\u003c/h3>\u003cp>В отрицательных местоимениях \u003cspan class=\"example-word\">«не»\u003c/span> пишется под ударением, \u003cspan class=\"example-word\">«ни»\u003c/span> без ударения. При чтении сравним: \u003cspan class=\"example-word\">«не́кого»\u003c/span>, \u003cspan class=\"example-word\">«нико́го»\u003c/span>; \u003cspan class=\"example-word\">«не́чего»\u003c/span>, \u003cspan class=\"example-word\">«ничего́»\u003c/span>.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Значение\u003c/th>\n\u003cth>С \u003cspan class=\"example-word\">«не»\u003c/span>\u003c/th>\n\u003cth>С \u003cspan class=\"example-word\">«ни»\u003c/span>\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Нет того, к кому можно обратиться; никто не получил вопроса\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Некого\u003c/strong> спросить\u003c/td>\n\u003ctd>Я \u003cstrong class=\"example-word\">никого\u003c/strong> не спросил\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Нет темы для разговора; разговор не состоялся\u003c/td>\n\u003ctd>Мне \u003cstrong class=\"example-word\">не о чем\u003c/strong> говорить\u003c/td>\n\u003ctd>Я \u003cstrong class=\"example-word\">ни о чём\u003c/strong> не говорил\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Без предлога местоимение пишется слитно: \u003cspan class=\"example-word\">«никого»\u003c/span>, \u003cspan class=\"example-word\">«нечего»\u003c/span>. Если предлог находится между \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span> и местоимением, все три слова пишутся раздельно: \u003cspan class=\"example-word\">«не у кого»\u003c/span>, \u003cspan class=\"example-word\">«ни с кем»\u003c/span>, \u003cspan class=\"example-word\">«не о чем»\u003c/span>, \u003cspan class=\"example-word\">«ни о чём»\u003c/span>.\u003c/p>\n\u003cp>Употребление отрицательного местоимения часто сопровождается отрицанием при глаголе: \u003cspan class=\"example-word\">«никто не пришёл»\u003c/span>, \u003cspan class=\"example-word\">«ничего не потерял»\u003c/span>, \u003cspan class=\"example-word\">«ни с кем не спорил»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "pronoun-negative-practice"
+      ]
+    },
+    {
+      "id": "pronoun-pointing",
+      "title": "Указательные и определительные местоимения",
+      "chapter": "pronoun",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Указательные местоимения\u003c/strong> помогают выделить определённый предмет, признак или количество: \u003cspan class=\"example-word\">«этот»\u003c/span>, \u003cspan class=\"example-word\">«тот»\u003c/span>, \u003cspan class=\"example-word\">«такой»\u003c/span>, \u003cspan class=\"example-word\">«таков»\u003c/span>, \u003cspan class=\"example-word\">«столько»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Дай мне \u003cstrong class=\"example-word\">эту\u003c/strong> тетрадь.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Эту»\u003c/span> выделяет нужную тетрадь среди других. Её могут показать или назвать раньше.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Я хочу \u003cstrong class=\"example-word\">такой\u003c/strong> же рюкзак. Мы не ожидали \u003cstrong class=\"example-word\">стольких\u003c/strong> гостей.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Такой»\u003c/span> указывает на уже известный образец, \u003cspan class=\"example-word\">«стольких»\u003c/span> на количество гостей, которое стало понятно из ситуации.\u003c/p>\n\u003c/div>\u003cp>\u003cspan class=\"example-word\">«Этот»\u003c/span>, \u003cspan class=\"example-word\">«тот»\u003c/span>, \u003cspan class=\"example-word\">«такой»\u003c/span> согласуются с существительным: \u003cspan class=\"example-word\">«эта книга»\u003c/span>, \u003cspan class=\"example-word\">«эти книги»\u003c/span>, \u003cspan class=\"example-word\">«об этой книге»\u003c/span>. \u003cspan class=\"example-word\">«Таков»\u003c/span> имеет формы рода и числа: \u003cspan class=\"example-word\">«таков»\u003c/span>, \u003cspan class=\"example-word\">«такова»\u003c/span>, \u003cspan class=\"example-word\">«таково»\u003c/span>, \u003cspan class=\"example-word\">«таковы»\u003c/span>, но не склоняется. \u003cspan class=\"example-word\">«Столько»\u003c/span> изменяется по падежам: \u003cspan class=\"example-word\">«стольких»\u003c/span>, \u003cspan class=\"example-word\">«стольким»\u003c/span>, \u003cspan class=\"example-word\">«столькими»\u003c/span>, \u003cspan class=\"example-word\">«о стольких»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Определительные местоимения\u003c/strong> обобщают, выделяют или уточняют предметы и лица. К ним относятся \u003cspan class=\"example-word\">«сам»\u003c/span>, \u003cspan class=\"example-word\">«самый»\u003c/span>, \u003cspan class=\"example-word\">«весь»\u003c/span>, \u003cspan class=\"example-word\">«всякий»\u003c/span>, \u003cspan class=\"example-word\">«каждый»\u003c/span>, \u003cspan class=\"example-word\">«любой»\u003c/span>, \u003cspan class=\"example-word\">«другой»\u003c/span>, \u003cspan class=\"example-word\">«иной»\u003c/span>, \u003cspan class=\"example-word\">«всяческий»\u003c/span>.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Слово\u003c/th>\n\u003cth>Что помогает выразить\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Сам\u003c/strong>\u003c/td>\n\u003ctd>Самостоятельное участие, без чужой помощи\u003c/td>\n\u003ctd>Он \u003cstrong class=\"example-word\">сам\u003c/strong> собрал модель\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Самый\u003c/strong>\u003c/td>\n\u003ctd>Особое выделение предмета\u003c/td>\n\u003ctd>В \u003cstrong class=\"example-word\">самом\u003c/strong> центре площади\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Весь\u003c/strong>\u003c/td>\n\u003ctd>Полноту, целое без исключений\u003c/td>\n\u003ctd>Прочитал \u003cstrong class=\"example-word\">всю\u003c/strong> книгу\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Каждый\u003c/strong>\u003c/td>\n\u003ctd>Все предметы по отдельности\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Каждый\u003c/strong> ученик получил лист\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Любой\u003c/strong>\u003c/td>\n\u003ctd>Возможность свободного выбора\u003c/td>\n\u003ctd>Возьми \u003cstrong class=\"example-word\">любую\u003c/strong> тетрадь\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Другой, иной\u003c/strong>\u003c/td>\n\u003ctd>Отличие от уже названного\u003c/td>\n\u003ctd>Выбери \u003cstrong class=\"example-word\">другой\u003c/strong> цвет\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Всякий, всяческий\u003c/strong>\u003c/td>\n\u003ctd>Обобщённое указание на разновидности\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Всякая\u003c/strong> работа требует внимания; \u003cstrong class=\"example-word\">всяческая\u003c/strong> помощь\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Эти местоимения изменяются по родам, числам и падежам: \u003cspan class=\"example-word\">«весь»\u003c/span>, \u003cspan class=\"example-word\">«вся»\u003c/span>, \u003cspan class=\"example-word\">«всё»\u003c/span>, \u003cspan class=\"example-word\">«все»\u003c/span>; \u003cspan class=\"example-word\">«каждый»\u003c/span>, \u003cspan class=\"example-word\">«каждая»\u003c/span>, \u003cspan class=\"example-word\">«каждое»\u003c/span>, \u003cspan class=\"example-word\">«каждые»\u003c/span>; \u003cspan class=\"example-word\">«с каждым»\u003c/span>, \u003cspan class=\"example-word\">«о каждом»\u003c/span>.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Сам»\u003c/span> и \u003cspan class=\"example-word\">«самый»\u003c/span> являются разными словами. \u003cspan class=\"example-word\">«Сам»\u003c/span> подчёркивает самостоятельное участие: \u003cspan class=\"example-word\">«я сам решил»\u003c/span>. \u003cspan class=\"example-word\">«Самый»\u003c/span> может выделять точное место или момент: \u003cspan class=\"example-word\">«в самом начале»\u003c/span>. В сочетании \u003cspan class=\"example-word\">«самый высокий»\u003c/span> оно участвует в образовании превосходной степени прилагательного.\u003c/p>\n",
+      "groups": [
+        "pronoun-pointing-practice"
+      ]
+    },
+    {
+      "id": "pronoun-forms",
+      "title": "Как изменяются разные местоимения",
+      "chapter": "pronoun",
+      "html": "\u003cp>Местоимения объединены своим значением указания, но изменяются неодинаково. Их грамматические признаки удобно сравнивать с уже изученными существительными, прилагательными и числительными.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Группа по грамматическим признакам\u003c/th>\n\u003cth>На что указывают\u003c/th>\n\u003cth>Какие формы имеют\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Сходные с существительными\u003c/td>\n\u003ctd>На лицо или предмет\u003c/td>\n\u003ctd>Падежные формы; у некоторых есть лицо, число или род\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Я, он, себя, кто, никто, кто-то\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Сходные с прилагательными\u003c/td>\n\u003ctd>На признак предмета\u003c/td>\n\u003ctd>Обычно согласуются в роде, числе и падеже\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Мой, этот, каждый, какой, ничей\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Сходные с числительными\u003c/td>\n\u003ctd>На количество без называния числа\u003c/td>\n\u003ctd>Падежные формы, без рода и числа\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Сколько, столько, несколько\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Название группы показывает сходство, а не превращает местоимение в другую часть речи. \u003cspan class=\"example-word\">«Мой»\u003c/span> не является прилагательным, а \u003cspan class=\"example-word\">«несколько»\u003c/span> числительным.\u003c/p>\n\u003cp>Исключения важны: притяжательные \u003cspan class=\"example-word\">«его»\u003c/span>, \u003cspan class=\"example-word\">«её»\u003c/span>, \u003cspan class=\"example-word\">«их»\u003c/span> не изменяются, а \u003cspan class=\"example-word\">«таков»\u003c/span> имеет только формы рода и числа. Нельзя приписывать каждому местоимению все признаки существительного или прилагательного.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>У \u003cstrong class=\"example-word\">этой\u003c/strong> книги интересная обложка.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Этой»\u003c/span> указывает на признак и согласуется с \u003cspan class=\"example-word\">«книги»\u003c/span>: женский род, единственное число, родительный падеж.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Мы поговорили с \u003cstrong class=\"example-word\">несколькими\u003c/strong> учениками.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Несколькими»\u003c/span> указывает на неопределённое количество и стоит в творительном падеже. Род и число учеников не становятся признаками этого местоимения.\u003c/p>\n\u003c/div>\u003cp>Слова \u003cspan class=\"example-word\">«там»\u003c/span>, \u003cspan class=\"example-word\">«здесь»\u003c/span>, \u003cspan class=\"example-word\">«тогда»\u003c/span> тоже указывают, не называя точного места или времени. Их называем местоименными наречиями и относим к наречиям: они отвечают на вопросы где? когда? и не изменяются.\u003c/p>\n",
+      "groups": [
+        "pronoun-forms-practice"
+      ]
+    },
+    {
+      "id": "pronoun-analysis",
+      "title": "Как охарактеризовать местоимение",
+      "chapter": "pronoun",
+      "html": "\u003cp>Сначала прочитайте предложение целиком. Одной записи \u003cspan class=\"example-word\">«его»\u003c/span> недостаточно: она может обозначать самого человека или принадлежность его вещи.\u003c/p>\n\u003ch3>1. Установите значение и разряд\u003c/h3>\u003cp>Определите, на что слово указывает: на участника речи, принадлежность, неизвестный предмет или что-то другое. По этому значению назовите разряд.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы открыли её тетрадь.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Её»\u003c/span> указывает на принадлежность тетради, значит, это притяжательное местоимение.\u003c/p>\n\u003c/div>\u003ch3>2. Найдите начальную форму\u003c/h3>\u003cp>Для склоняемого местоимения обычно нужна форма именительного падежа. Если слово изменяется по родам и числам, начальная форма также мужского рода и единственного числа: \u003cspan class=\"example-word\">«этой»\u003c/span>, \u003cspan class=\"example-word\">«этот»\u003c/span>; \u003cspan class=\"example-word\">«моими»\u003c/span>, \u003cspan class=\"example-word\">«мой»\u003c/span>.\u003c/p>\n\u003cp>У \u003cspan class=\"example-word\">«себя»\u003c/span>, \u003cspan class=\"example-word\">«некого»\u003c/span>, \u003cspan class=\"example-word\">«нечего»\u003c/span> именительного падежа нет: их приводим в этих словарных формах. Неизменяемые притяжательные \u003cspan class=\"example-word\">«его»\u003c/span>, \u003cspan class=\"example-word\">«её»\u003c/span>, \u003cspan class=\"example-word\">«их»\u003c/span> сохраняем без замены на \u003cspan class=\"example-word\">«он»\u003c/span>, \u003cspan class=\"example-word\">«она»\u003c/span>, \u003cspan class=\"example-word\">«они»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я написал ей письмо.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Ей»\u003c/span> указывает на человека, это личное местоимение. Начальная форма \u003cspan class=\"example-word\">«она»\u003c/span>.\u003c/p>\n\u003c/div>\u003ch3>3. Укажите только имеющиеся признаки\u003c/h3>\u003cp>У личного местоимения определите лицо, число, падеж; у \u003cspan class=\"example-word\">«он»\u003c/span>, \u003cspan class=\"example-word\">«она»\u003c/span>, \u003cspan class=\"example-word\">«оно»\u003c/span> также род. У изменяемого местоимения, сходного с прилагательным, определите род, число и падеж по сочетанию. У \u003cspan class=\"example-word\">«себя»\u003c/span> или \u003cspan class=\"example-word\">«несколько»\u003c/span> определите падеж, не добавляя несуществующие род и число.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы подошли к ней.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Ней»\u003c/span>: местоимение, начальная форма \u003cspan class=\"example-word\">«она»\u003c/span>, личное; третье лицо, единственное число, женский род, дательный падеж.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы открыли её тетрадь.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Её»\u003c/span>: местоимение, притяжательное, неизменяемое. Род, число и падеж не определяем.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Она рассказала о себе.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Себе»\u003c/span>: местоимение, словарная форма \u003cspan class=\"example-word\">«себя»\u003c/span>, возвратное; предложный падеж. Лица, рода и числа нет.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "pronoun-analysis-practice"
+      ]
+    },
+    {
+      "id": "pronoun-check",
+      "title": "Проверка по местоимению",
+      "chapter": "pronoun",
+      "html": "",
+      "groups": [
+        "pronoun-check"
       ]
     }
   ],
@@ -5622,6 +5734,1688 @@ window.LESSON_CONTENT = {
           ],
           "explanationHtml": "\u003cp>Меняется последнее слово составного порядкового числительного: \u003cspan class=\"example-word\">«двадцать третьего»\u003c/span>. Название месяца сохраняет родительный падеж: \u003cspan class=\"example-word\">«сентября»\u003c/span>.\u003c/p>\n",
           "reviewStep": "numeral-ordinal"
+        }
+      ]
+    },
+    "pronoun-meaning-practice": {
+      "id": "pronoun-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все местоимения.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "принесли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "несколько",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "книг",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "в",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "этот",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "класс",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "1",
+              "label": "принесли",
+              "role": "verb"
+            },
+            {
+              "value": "2",
+              "label": "несколько",
+              "role": "pronoun"
+            },
+            {
+              "value": "3",
+              "label": "книг",
+              "role": "noun"
+            },
+            {
+              "value": "4",
+              "label": "в",
+              "role": "preposition"
+            },
+            {
+              "value": "5",
+              "label": "этот",
+              "role": "pronoun"
+            },
+            {
+              "value": "6",
+              "label": "класс",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "2",
+            "5"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Мы»\u003c/span> указывает на участников речи, \u003cspan class=\"example-word\">«несколько»\u003c/span> на количество без точного числа, \u003cspan class=\"example-word\">«этот»\u003c/span> на признак предмета. \u003cspan class=\"example-word\">«Книг»\u003c/span> и \u003cspan class=\"example-word\">«класс»\u003c/span> называют предметы, \u003cspan class=\"example-word\">«принесли»\u003c/span> действие, \u003cspan class=\"example-word\">«в»\u003c/span> является предлогом.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-meaning-2",
+          "type": "choice",
+          "promptHtml": "Книга лежала на столе. \u003cstrong class=\"example-word\">Она\u003c/strong> была открыта. Выберите верную характеристику слова \u003cspan class=\"example-word\">«она»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя существительное: называет книгу, имеет женский род и изменяется по падежам."
+            },
+            {
+              "value": "1",
+              "label": "Б. Местоимение: указывает на книгу, не называя её; имеет формы «её», «ей», «ею»."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя прилагательное: называет свойство книги, имеет женский род, единственное число и согласуется с названием предмета."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Она»\u003c/span> указывает на уже названную книгу. В варианте А указание принято за название предмета, в варианте В слову приписано значение свойства. \u003cspan class=\"example-word\">«Она»\u003c/span> является местоимением.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-meaning-3",
+          "type": "sort",
+          "promptHtml": "Определите часть речи выделенного слова. В скобках указано слово для характеристики.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "новый рюкзак (новый)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "такой рюкзак (такой)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "пять тетрадей (пять)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "несколько тетрадей (несколько)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "1",
+              "label": "Местоимение"
+            },
+            {
+              "value": "2",
+              "label": "Имя числительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Новый»\u003c/span> называет признак, \u003cspan class=\"example-word\">«такой»\u003c/span> указывает на него. \u003cspan class=\"example-word\">«Пять»\u003c/span> называет число, \u003cspan class=\"example-word\">«несколько»\u003c/span> указывает на количество без точного числа.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-classes-practice": {
+      "id": "pronoun-classes-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-classes-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд выделенного местоимения.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "ты читаешь (ты)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "любит себя (себя)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "наша комната (наша)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "этот день (этот)",
+              "correct": "3"
+            },
+            {
+              "id": "4",
+              "label": "каждый день (каждый)",
+              "correct": "4"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Личное"
+            },
+            {
+              "value": "1",
+              "label": "Возвратное"
+            },
+            {
+              "value": "2",
+              "label": "Притяжательное"
+            },
+            {
+              "value": "3",
+              "label": "Указательное"
+            },
+            {
+              "value": "4",
+              "label": "Определительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ты»\u003c/span> указывает на собеседника, \u003cspan class=\"example-word\">«себя»\u003c/span> на того, кто выполняет действие. \u003cspan class=\"example-word\">«Наша»\u003c/span> выражает принадлежность, \u003cspan class=\"example-word\">«этот»\u003c/span> выделяет определённый день, \u003cspan class=\"example-word\">«каждый»\u003c/span> охватывает дни по отдельности.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-classes-2",
+          "type": "sort",
+          "promptHtml": "Определите разряд слова в скобках по предложению.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Кто открыл окно? (кто)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я знаю, кто открыл окно. (кто)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Кто-то открыл окно. (кто-то)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Никто не открывал окно. (никто)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Вопросительное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            },
+            {
+              "value": "2",
+              "label": "Неопределённое"
+            },
+            {
+              "value": "3",
+              "label": "Отрицательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В вопросе \u003cspan class=\"example-word\">«кто»\u003c/span> вопросительное, в сообщении \u003cspan class=\"example-word\">«я знаю, кто»\u003c/span> относительное. \u003cspan class=\"example-word\">«Кто-то»\u003c/span> указывает на неизвестного человека, \u003cspan class=\"example-word\">«никто»\u003c/span> выражает отсутствие такого человека.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-classes-3",
+          "type": "choice",
+          "promptHtml": "В комнате \u003cstrong class=\"example-word\">никто\u003c/strong> не разговаривал. Что нужно учитывать при определении разряда \u003cspan class=\"example-word\">«никто»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Слово указывает на отсутствующего участника действия, поэтому это отрицательное местоимение."
+            },
+            {
+              "value": "1",
+              "label": "Б. Слово не называет точного человека, поэтому это неопределённое местоимение."
+            },
+            {
+              "value": "2",
+              "label": "В. Слово обозначает людей, о которых говорят, поэтому это личное местоимение третьего лица."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Неопределённое \u003cspan class=\"example-word\">«кто-то»\u003c/span> предполагает существование человека, которого мы не называем. \u003cspan class=\"example-word\">«Никто»\u003c/span> отрицает наличие участника действия. Поэтому разряд отрицательный.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-personal-practice": {
+      "id": "pronoun-personal-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-personal-1",
+          "type": "sort",
+          "promptHtml": "Определите лицо личных местоимений.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "мы",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "тебе",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "им",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "меня",
+              "correct": "0"
+            },
+            {
+              "id": "4",
+              "label": "она",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Первое лицо"
+            },
+            {
+              "value": "1",
+              "label": "Второе лицо"
+            },
+            {
+              "value": "2",
+              "label": "Третье лицо"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Мы»\u003c/span> и форма \u003cspan class=\"example-word\">«меня»\u003c/span> от \u003cspan class=\"example-word\">«я»\u003c/span> относятся к первому лицу. \u003cspan class=\"example-word\">«Тебе»\u003c/span> является формой второго лица \u003cspan class=\"example-word\">«ты»\u003c/span>. \u003cspan class=\"example-word\">«Им»\u003c/span> и \u003cspan class=\"example-word\">«она»\u003c/span> относятся к третьему лицу.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-personal-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«они»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы подошли к _____ после урока.\u003c/strong>",
+          "correct": [
+            "ним"
+          ],
+          "explanationHtml": "\u003cp>После предлога \u003cspan class=\"example-word\">«к»\u003c/span> употребляется форма дательного падежа с начальным \u003cspan class=\"example-word\">«н»\u003c/span>: \u003cspan class=\"example-word\">«к ним»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-personal-3",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму местоимения: \u003cstrong class=\"example-word\">Я передал ей письмо.\u003c/strong> Рассмотрите \u003cspan class=\"example-word\">«ей»\u003c/span>.",
+          "correct": [
+            "она"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ей»\u003c/span> указывает на получателя письма. Это дательный падеж личного местоимения \u003cspan class=\"example-word\">«она»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-personal-4",
+          "type": "choice",
+          "promptHtml": "Учитель обращается к одному ученику: \u003cstrong class=\"example-word\">Вы готовы отвечать?\u003c/strong> Что верно о местоимении \u003cspan class=\"example-word\">«вы»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Личное местоимение второго лица, единственного числа, именительного падежа: число определяется количеством собеседников."
+            },
+            {
+              "value": "1",
+              "label": "Б. Личное местоимение третьего лица, множественного числа, именительного падежа: говорящий не входит в названную группу."
+            },
+            {
+              "value": "2",
+              "label": "В. Личное местоимение второго лица, множественного числа, именительного падежа: форма используется для вежливого обращения к одному человеку."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Местоимение \u003cspan class=\"example-word\">«вы»\u003c/span> указывает на собеседника, значит, лицо второе. Вежливое обращение к одному человеку не меняет грамматическую форму множественного числа.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-reflexive-practice": {
+      "id": "pronoun-reflexive-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-reflexive-1",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Лена купила себе тетрадь.\u003c/strong> На кого указывает \u003cspan class=\"example-word\">«себе»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. На Лену, потому что она сама выполняет действие."
+            },
+            {
+              "value": "1",
+              "label": "Б. На другую девочку, потому что возвратное местоимение заменяет личное «ей»."
+            },
+            {
+              "value": "2",
+              "label": "В. На тетрадь, потому что это ближайшее название предмета."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Себе»\u003c/span> возвращает указание к действующему лицу. Покупает Лена, и тетрадь предназначена ей самой.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-reflexive-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«себя»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">После выступления ребята были довольны _____.\u003c/strong>",
+          "correct": [
+            "собой",
+            "собою"
+          ],
+          "explanationHtml": "\u003cp>Довольны кем? чем? Нужен творительный падеж: \u003cspan class=\"example-word\">«собой»\u003c/span> или \u003cspan class=\"example-word\">«собою»\u003c/span>. Число ребят не создаёт отдельной формы множественного числа у \u003cspan class=\"example-word\">«себя»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-reflexive-3",
+          "type": "choice",
+          "promptHtml": "Она рассказала о \u003cstrong class=\"example-word\">себе\u003c/strong>. Выберите верную характеристику местоимения.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Личное: начальная форма «она», женский род, единственное число, предложный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Возвратное: словарная форма «себя», предложный падеж; лица, рода, числа и именительного падежа нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Притяжательное: начальная форма «свой», женский род, единственное число, предложный падеж; указывает на принадлежность рассказа."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Себе»\u003c/span> указывает на саму рассказчицу, а не на принадлежность вещи. Это форма возвратного \u003cspan class=\"example-word\">«себя»\u003c/span>. В варианте А признаки \u003cspan class=\"example-word\">«она»\u003c/span> перенесены на другое слово; в варианте В перепутаны указание на человека и принадлежность.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-possessive-practice": {
+      "id": "pronoun-possessive-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-possessive-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Мы встретили их у школы. (их)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы взяли их тетради. (их)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Я поговорил с ней. (ней)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Я поговорил с её братом. (её)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Личное"
+            },
+            {
+              "value": "1",
+              "label": "Притяжательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Их»\u003c/span> в первом предложении указывает на самих ребят, во втором на владельцев тетрадей. \u003cspan class=\"example-word\">«Ней»\u003c/span> указывает на саму девочку, \u003cspan class=\"example-word\">«её»\u003c/span> на принадлежность брата к её семье.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-possessive-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«мой»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы говорили о _____ книге.\u003c/strong>",
+          "correct": [
+            "моей"
+          ],
+          "explanationHtml": "\u003cp>Местоимение согласуется со словом \u003cspan class=\"example-word\">«книге»\u003c/span>: женский род, единственное число, предложный падеж. Форма \u003cspan class=\"example-word\">«моей»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-possessive-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Игорь положил свою тетрадь в рюкзак.\u003c/strong> Выберите верную характеристику \u003cspan class=\"example-word\">«свою»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Возвратное местоимение: указывает на Игоря, не имеет рода и числа, стоит в винительном падеже."
+            },
+            {
+              "value": "1",
+              "label": "Б. Личное местоимение: указывает на владельца, имеет третье лицо, женский род и винительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Притяжательное местоимение: указывает на принадлежность тетради Игорю, согласуется с «тетрадь» в женском роде, единственном числе, винительном падеже."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Свою»\u003c/span> отвечает на вопрос \u003cspan class=\"example-word\">«чью?»\u003c/span> и характеризует принадлежность тетради. Возвратным является \u003cspan class=\"example-word\">«себя»\u003c/span>, а \u003cspan class=\"example-word\">«свой»\u003c/span> притяжательное, хотя оба связывают указание с действующим лицом.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-possessive-4",
+          "type": "choice",
+          "promptHtml": "Мы подошли к \u003cstrong class=\"example-word\">его\u003c/strong> дому. Что верно о \u003cspan class=\"example-word\">«его»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это притяжательное неизменяемое местоимение; род, число и падеж у него не определяются."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это личное местоимение третьего лица в дательном падеже; после «к» нужно исправить его на «него»."
+            },
+            {
+              "value": "2",
+              "label": "В. Это притяжательное местоимение мужского рода, единственного числа, дательного падежа; эти признаки задаёт слово «дому»."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Его»\u003c/span> указывает на владельца дома. Притяжательное \u003cspan class=\"example-word\">«его»\u003c/span> не изменяется, и начальное \u003cspan class=\"example-word\">«н»\u003c/span> к нему не добавляют. Дательный падеж слова \u003cspan class=\"example-word\">«дому»\u003c/span> не становится падежом \u003cspan class=\"example-word\">«его»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-relative-practice": {
+      "id": "pronoun-relative-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-relative-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд местоимения \u003cspan class=\"example-word\">«чей»\u003c/span> или его формы по предложению.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Чей рюкзак лежит у двери? (чей)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я узнал, чей рюкзак лежит у двери. (чей)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Ты знаешь, чей рюкзак лежит у двери? (чей)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "С чьим братом ты разговаривал? (чьим)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Вопросительное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Прямой вопрос о владельце содержит вопросительное местоимение. В \u003cspan class=\"example-word\">«я узнал, чей»\u003c/span> и \u003cspan class=\"example-word\">«ты знаешь, чей»\u003c/span> слово связывает части предложения, поэтому оно относительное даже при вопросительном знаке в конце.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-relative-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«который»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы взяли книгу, _____ нам посоветовал учитель.\u003c/strong>",
+          "correct": [
+            "которую"
+          ],
+          "explanationHtml": "\u003cp>Местоимение указывает на книгу. Учитель посоветовал кого? что? Книгу. Поэтому \u003cspan class=\"example-word\">«которую»\u003c/span>: женский род, единственное число, винительный падеж.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-relative-3",
+          "type": "choice",
+          "promptHtml": "В каком предложении выделенное \u003cspan class=\"example-word\">«что»\u003c/span> является относительным местоимением?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Я понял, **что** урок закончился."
+            },
+            {
+              "value": "1",
+              "label": "Б. Я узнал, **что** лежит в коробке."
+            },
+            {
+              "value": "2",
+              "label": "В. Я услышал, **что** ребята уже пришли."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Во втором предложении \u003cspan class=\"example-word\">«что»\u003c/span> указывает на содержимое коробки: там лежит какой-то предмет. В вариантах А и В \u003cspan class=\"example-word\">«что»\u003c/span> только связывает сообщения и является союзом.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-relative-4",
+          "type": "choice",
+          "promptHtml": "Я узнал, \u003cstrong class=\"example-word\">сколько\u003c/strong> страниц в книге. Выберите верную характеристику \u003cspan class=\"example-word\">«сколько»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Количественное числительное: называет точное число страниц, не имеет рода и числа."
+            },
+            {
+              "value": "1",
+              "label": "Б. Вопросительное местоимение: употреблено в вопросе, имеет род и число по слову «страниц»."
+            },
+            {
+              "value": "2",
+              "label": "В. Относительное местоимение: указывает на количество без называния числа и связывает части предложения; изменяется по падежам, не имеет рода и числа."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Сколько»\u003c/span> не называет числа страниц. В данном сообщении это относительное местоимение, связывающее части, а не слово прямого вопроса.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-indefinite-practice": {
+      "id": "pronoun-indefinite-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-indefinite-1",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«кто-то»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Я встретился с _____ у библиотеки.\u003c/strong>",
+          "correct": [
+            "кем-то"
+          ],
+          "explanationHtml": "\u003cp>Нужен творительный падеж: \u003cspan class=\"example-word\">«с кем-то»\u003c/span>. Часть \u003cspan class=\"example-word\">«-то»\u003c/span> сохраняется и пишется через дефис.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-indefinite-2",
+          "type": "input",
+          "promptHtml": "Запишите сочетание, раскрывая скобки: \u003cstrong class=\"example-word\">Я поговорил (кое)(с)(кем).\u003c/strong>",
+          "correct": [
+            "кое с кем"
+          ],
+          "explanationHtml": "\u003cp>Между \u003cspan class=\"example-word\">«кое»\u003c/span> и местоимением стоит предлог \u003cspan class=\"example-word\">«с»\u003c/span>, поэтому все три слова пишутся раздельно.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-indefinite-3",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«какой-нибудь»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Возьми _____ тетрадь.\u003c/strong>",
+          "correct": [
+            "какую-нибудь"
+          ],
+          "explanationHtml": "\u003cp>Местоимение согласуется с \u003cspan class=\"example-word\">«тетрадь»\u003c/span>: женский род, единственное число, винительный падеж. Часть \u003cspan class=\"example-word\">«-нибудь»\u003c/span> остаётся после дефиса.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-indefinite-4",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Некто\u003c/strong> оставил записку. Как правильно охарактеризовать слово \u003cspan class=\"example-word\">«некто»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Неопределённое местоимение в именительном падеже; других падежных форм у него нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. Отрицательное местоимение в именительном падеже; означает, что записку никто не оставлял."
+            },
+            {
+              "value": "2",
+              "label": "В. Личное местоимение третьего лица; изменяется по падежам: «некого», «некому»."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Некто»\u003c/span> указывает на существующего, но не названного человека. \u003cspan class=\"example-word\">«Некого»\u003c/span> и \u003cspan class=\"example-word\">«некому»\u003c/span> не являются его формами; это формы другого, отрицательного местоимения.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-negative-practice": {
+      "id": "pronoun-negative-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-negative-1",
+          "type": "input",
+          "promptHtml": "Выберите \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span> и запишите слово целиком: \u003cstrong class=\"example-word\">Мне (не/ни)кого попросить о помощи.\u003c/strong>",
+          "correct": [
+            "некого"
+          ],
+          "explanationHtml": "\u003cp>Нет человека, к которому можно обратиться: \u003cspan class=\"example-word\">«некого попросить»\u003c/span>. \u003cspan class=\"example-word\">«Не»\u003c/span> находится под ударением.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-negative-2",
+          "type": "input",
+          "promptHtml": "Запишите сочетание, раскрывая скобки: \u003cstrong class=\"example-word\">Я (ни)(с)(кем) не спорил.\u003c/strong>",
+          "correct": [
+            "ни с кем"
+          ],
+          "explanationHtml": "\u003cp>Предлог \u003cspan class=\"example-word\">«с»\u003c/span> разделяет \u003cspan class=\"example-word\">«ни»\u003c/span> и местоимение. Получаются три отдельных слова: \u003cspan class=\"example-word\">«ни с кем»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-negative-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Никаких\u003c/strong> писем не пришло. Выберите верную характеристику \u003cspan class=\"example-word\">«никаких»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Неопределённое местоимение: указывает на неизвестные письма, множественное число, родительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Отрицательное местоимение: выражает отсутствие писем, множественное число, родительный падеж; род во множественном числе не определяется."
+            },
+            {
+              "value": "2",
+              "label": "В. Личное местоимение: указывает на письма, о которых говорят, третье лицо, множественное число, именительный падеж."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Никаких»\u003c/span> отрицает наличие писем, а не оставляет их неизвестными. Нет кого? чего? Писем, поэтому родительный падеж. Во множественном числе род у этой формы не определяется.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-negative-4",
+          "type": "sort",
+          "promptHtml": "Определите, что выражает выделенное слово.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Никто не звонил. (никто)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Кто-то звонил. (кто-то)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Нечего читать. (нечего)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Прочитай что-нибудь. (что-нибудь)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Отсутствие"
+            },
+            {
+              "value": "1",
+              "label": "Неопределённое указание"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Никто»\u003c/span> и \u003cspan class=\"example-word\">«нечего»\u003c/span> выражают отсутствие. \u003cspan class=\"example-word\">«Кто-то»\u003c/span> и \u003cspan class=\"example-word\">«что-нибудь»\u003c/span> предполагают человека или предмет, который не назван точно.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-pointing-practice": {
+      "id": "pronoun-pointing-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-pointing-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд выделенного местоимения.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Возьми эту книгу. (эту)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Возьми любую книгу. (любую)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он сам собрал модель. (сам)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Я хочу такой рюкзак. (такой)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Указательное"
+            },
+            {
+              "value": "1",
+              "label": "Определительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Эту»\u003c/span> и \u003cspan class=\"example-word\">«такой»\u003c/span> выделяют предмет или образец. \u003cspan class=\"example-word\">«Любую»\u003c/span> разрешает свободный выбор, \u003cspan class=\"example-word\">«сам»\u003c/span> подчёркивает самостоятельное действие; это определительные местоимения.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-pointing-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«столько»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы не ожидали _____ гостей.\u003c/strong>",
+          "correct": [
+            "стольких"
+          ],
+          "explanationHtml": "\u003cp>Не ожидали кого? чего? Гостей. Нужен родительный падеж: \u003cspan class=\"example-word\">«стольких гостей»\u003c/span>. Местоимение не получает род и число от существительного.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-pointing-3",
+          "type": "choice",
+          "promptHtml": "В каком предложении \u003cstrong class=\"example-word\">сам\u003c/strong> подчёркивает действие без чужой помощи?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Мы встретились в самом начале урока."
+            },
+            {
+              "value": "1",
+              "label": "Б. Самый короткий путь проходит через парк."
+            },
+            {
+              "value": "2",
+              "label": "В. Я сам отремонтировал велосипед."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>В варианте В \u003cspan class=\"example-word\">«сам»\u003c/span> сообщает о самостоятельном участии. В варианте А употреблено другое слово \u003cspan class=\"example-word\">«самый»\u003c/span> для выделения момента, в варианте Б \u003cspan class=\"example-word\">«самый»\u003c/span> образует превосходную степень прилагательного.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-forms-practice": {
+      "id": "pronoun-forms-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-forms-1",
+          "type": "sort",
+          "promptHtml": "С какой частью речи сходно местоимение по грамматическим признакам?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "кому-то",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "этими",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "несколькими",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "никого",
+              "correct": "0"
+            },
+            {
+              "id": "4",
+              "label": "своей",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "С существительным"
+            },
+            {
+              "value": "1",
+              "label": "С прилагательным"
+            },
+            {
+              "value": "2",
+              "label": "С числительным"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Кому-то»\u003c/span> и \u003cspan class=\"example-word\">«никого»\u003c/span> указывают на лицо и имеют падежные формы. \u003cspan class=\"example-word\">«Этими»\u003c/span> и \u003cspan class=\"example-word\">«своей»\u003c/span> согласуются с названиями предметов. \u003cspan class=\"example-word\">«Несколькими»\u003c/span> указывает на количество и изменяется по падежам.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-forms-2",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«несколько»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы работали с _____ словарями.\u003c/strong>",
+          "correct": [
+            "несколькими"
+          ],
+          "explanationHtml": "\u003cp>С кем? чем? Словарями. Местоимение стоит в творительном падеже: \u003cspan class=\"example-word\">«несколькими»\u003c/span>. Форм рода и числа у него нет.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-forms-3",
+          "type": "choice",
+          "promptHtml": "Нам помогли \u003cstrong class=\"example-word\">их\u003c/strong> друзья. Какие признаки можно указать у \u003cspan class=\"example-word\">«их»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Притяжательное, неизменяемое; рода, числа и падежа нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. Притяжательное, множественное число, именительный падеж; число и падеж определяются по слову «друзья»."
+            },
+            {
+              "value": "2",
+              "label": "В. Личное, третье лицо, множественное число, винительный падеж; начальная форма «они»."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Их»\u003c/span> отвечает на вопрос \u003cspan class=\"example-word\">«чьи?»\u003c/span> и указывает, с кем дружат названные люди. Это неизменяемое притяжательное местоимение. В варианте Б ему приписаны признаки существительного, в варианте В перепутан разряд.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-analysis-practice": {
+      "id": "pronoun-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "pronoun-analysis-1",
+          "type": "choice",
+          "promptHtml": "Мы подошли к \u003cstrong class=\"example-word\">нему\u003c/strong>. Выберите верную характеристику \u003cspan class=\"example-word\">«нему»\u003c/span>, если речь о мальчике.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «его»; притяжательное, неизменяемое; род и падеж не определяются."
+            },
+            {
+              "value": "1",
+              "label": "Б. Начальная форма «он»; личное, третье лицо, единственное число, мужской род, дательный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «они»; личное, третье лицо, множественное число, творительный падеж."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Местоимение указывает на самого мальчика. После \u003cspan class=\"example-word\">«к»\u003c/span> дательный падеж: \u003cspan class=\"example-word\">«к нему»\u003c/span>. Начальная форма \u003cspan class=\"example-word\">«он»\u003c/span>, а не \u003cspan class=\"example-word\">«его»\u003c/span> или \u003cspan class=\"example-word\">«они»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-analysis-2",
+          "type": "choice",
+          "promptHtml": "Мы говорили об \u003cstrong class=\"example-word\">этой\u003c/strong> книге. Выберите верную характеристику \u003cspan class=\"example-word\">«этой»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное: начальная форма «этот»; относительное, женский род, единственное число, предложный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Местоимение: начальная форма «этот»; определительное, женский род, единственное число, родительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Местоимение: начальная форма «этот»; указательное, женский род, единственное число, предложный падеж."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Этой»\u003c/span> указывает на определённую книгу, не называя её свойства. Начальная форма \u003cspan class=\"example-word\">«этот»\u003c/span>. Сочетание \u003cspan class=\"example-word\">«об этой книге»\u003c/span> требует предложного падежа.\u003c/p>\n"
+        },
+        {
+          "id": "pronoun-analysis-3",
+          "type": "input",
+          "promptHtml": "Запишите словарную форму выделенного местоимения: \u003cstrong class=\"example-word\">Дети рассказали о себе.\u003c/strong> Рассмотрите \u003cspan class=\"example-word\">«себе»\u003c/span>.",
+          "correct": [
+            "себя"
+          ],
+          "explanationHtml": "\u003cp>Возвратное местоимение не имеет именительного падежа. Его словарная форма \u003cspan class=\"example-word\">«себя»\u003c/span>, даже если речь идёт о нескольких детях.\u003c/p>\n"
+        }
+      ]
+    },
+    "pronoun-check": {
+      "id": "pronoun-check",
+      "title": "Проверка по местоимению",
+      "assessment": "pronoun-check",
+      "questions": [
+        {
+          "id": "pronoun-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все местоимения.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Каждый",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ученик",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "принёс",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "свою",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "книгу",
+                "role": "noun"
+              }
+            },
+            {
+              "text": ","
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "а",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "подготовили",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "8",
+                "label": "несколько",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "9",
+                "label": "вопросов",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Каждый",
+              "role": "pronoun"
+            },
+            {
+              "value": "1",
+              "label": "ученик",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "принёс",
+              "role": "verb"
+            },
+            {
+              "value": "3",
+              "label": "свою",
+              "role": "pronoun"
+            },
+            {
+              "value": "4",
+              "label": "книгу",
+              "role": "noun"
+            },
+            {
+              "value": "5",
+              "label": "а",
+              "role": "conjunction"
+            },
+            {
+              "value": "6",
+              "label": "мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "7",
+              "label": "подготовили",
+              "role": "verb"
+            },
+            {
+              "value": "8",
+              "label": "несколько",
+              "role": "pronoun"
+            },
+            {
+              "value": "9",
+              "label": "вопросов",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "3",
+            "6",
+            "8"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Каждый»\u003c/span> определительное, \u003cspan class=\"example-word\">«свою»\u003c/span> притяжательное, \u003cspan class=\"example-word\">«мы»\u003c/span> личное, \u003cspan class=\"example-word\">«несколько»\u003c/span> неопределённое. Остальные слова называют людей, предметы, действия или связывают части предложения.\u003c/p>\n",
+          "reviewStep": "pronoun-meaning"
+        },
+        {
+          "id": "pronoun-check-2",
+          "type": "sort",
+          "promptHtml": "Определите разряды слов в скобках по контексту.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Мы читаем. (мы)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Рассказал о себе. (себе)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Наш класс победил. (наш)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Возьми тот лист. (тот)",
+              "correct": "3"
+            },
+            {
+              "id": "4",
+              "label": "Каждый получил лист. (каждый)",
+              "correct": "4"
+            },
+            {
+              "id": "5",
+              "label": "Чей это лист? (чей)",
+              "correct": "5"
+            },
+            {
+              "id": "6",
+              "label": "Я знаю, чей это лист. (чей)",
+              "correct": "6"
+            },
+            {
+              "id": "7",
+              "label": "Кто-нибудь ответит. (кто-нибудь)",
+              "correct": "7"
+            },
+            {
+              "id": "8",
+              "label": "Никто не ответил. (никто)",
+              "correct": "8"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Личное"
+            },
+            {
+              "value": "1",
+              "label": "Возвратное"
+            },
+            {
+              "value": "2",
+              "label": "Притяжательное"
+            },
+            {
+              "value": "3",
+              "label": "Указательное"
+            },
+            {
+              "value": "4",
+              "label": "Определительное"
+            },
+            {
+              "value": "5",
+              "label": "Вопросительное"
+            },
+            {
+              "value": "6",
+              "label": "Относительное"
+            },
+            {
+              "value": "7",
+              "label": "Неопределённое"
+            },
+            {
+              "value": "8",
+              "label": "Отрицательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Личные указывают на участников речи, возвратное на действующее лицо, притяжательные на принадлежность. \u003cspan class=\"example-word\">«Тот»\u003c/span> выделяет предмет, \u003cspan class=\"example-word\">«каждый»\u003c/span> охватывает всех по отдельности. \u003cspan class=\"example-word\">«Чей»\u003c/span> в вопросе вопросительное, при связи частей относительное. \u003cspan class=\"example-word\">«Кто-нибудь»\u003c/span> неопределённое, \u003cspan class=\"example-word\">«никто»\u003c/span> отрицательное.\u003c/p>\n",
+          "reviewStep": "pronoun-classes"
+        },
+        {
+          "id": "pronoun-check-3",
+          "type": "choice",
+          "promptHtml": "Выберите верную характеристику \u003cstrong class=\"example-word\">несколько\u003c/strong> в сочетании \u003cspan class=\"example-word\">«несколько страниц»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Количественное числительное: называет число страниц, изменяется по падежам."
+            },
+            {
+              "value": "1",
+              "label": "Б. Неопределённое местоимение: указывает на количество без точного числа, изменяется по падежам, не имеет рода и числа."
+            },
+            {
+              "value": "2",
+              "label": "В. Определительное местоимение: охватывает все страницы, изменяется по родам, числам и падежам."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Несколько»\u003c/span> не называет числа и не означает все страницы. Это неопределённое местоимение с падежными формами \u003cspan class=\"example-word\">«нескольких»\u003c/span>, \u003cspan class=\"example-word\">«нескольким»\u003c/span>, \u003cspan class=\"example-word\">«несколькими»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "pronoun-forms"
+        },
+        {
+          "id": "pronoun-check-4",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«она»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы подошли к _____ после концерта.\u003c/strong>",
+          "correct": [
+            "ней"
+          ],
+          "explanationHtml": "\u003cp>Дательный падеж личного местоимения \u003cspan class=\"example-word\">«она»\u003c/span> после \u003cspan class=\"example-word\">«к»\u003c/span>: \u003cspan class=\"example-word\">«ней»\u003c/span>, с начальным \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "pronoun-personal"
+        },
+        {
+          "id": "pronoun-check-5",
+          "type": "choice",
+          "promptHtml": "Благодаря \u003cstrong class=\"example-word\">ему\u003c/strong> мы нашли дорогу. Что верно о \u003cspan class=\"example-word\">«ему»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Личное местоимение третьего лица, единственного числа, дательного падежа; после «благодаря» начальное «н» не добавляется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Притяжательное неизменяемое местоимение; отвечает на вопрос «чей?» и поэтому не получает «н»."
+            },
+            {
+              "value": "2",
+              "label": "В. Личное местоимение третьего лица, творительного падежа; после любого предлога нужно исправить на «нему»."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ему»\u003c/span> указывает на человека, которому мы обязаны помощью. Предлог \u003cspan class=\"example-word\">«благодаря»\u003c/span> требует дательного падежа, но не добавления \u003cspan class=\"example-word\">«н»\u003c/span> к местоимению.\u003c/p>\n",
+          "reviewStep": "pronoun-personal"
+        },
+        {
+          "id": "pronoun-check-6",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«себя»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Я оставил _____ один экземпляр.\u003c/strong>",
+          "correct": [
+            "себе"
+          ],
+          "explanationHtml": "\u003cp>Нужен дательный падеж: \u003cspan class=\"example-word\">«себе»\u003c/span>. Местоимение указывает на того же человека, который оставил экземпляр.\u003c/p>\n",
+          "reviewStep": "pronoun-reflexive"
+        },
+        {
+          "id": "pronoun-check-7",
+          "type": "choice",
+          "promptHtml": "Ребята гордятся \u003cstrong class=\"example-word\">собой\u003c/strong>. Выберите верную характеристику \u003cspan class=\"example-word\">«собой»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Притяжательное местоимение: начальная форма «свой», множественное число, творительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Личное местоимение: начальная форма «они», третье лицо, множественное число, творительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Возвратное местоимение: словарная форма «себя», творительный падеж; лица, рода и числа нет."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Собой»\u003c/span> является формой возвратного \u003cspan class=\"example-word\">«себя»\u003c/span>. Местоимение указывает на самих ребят, но их множественное число не является признаком \u003cspan class=\"example-word\">«себя»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "pronoun-reflexive"
+        },
+        {
+          "id": "pronoun-check-8",
+          "type": "sort",
+          "promptHtml": "Определите разряд слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Я увидел его у двери. (его)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я взял его книгу. (его)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Я подошёл к нему. (нему)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Я подошёл к его дому. (его)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Личное"
+            },
+            {
+              "value": "1",
+              "label": "Притяжательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Увидел его»\u003c/span> и \u003cspan class=\"example-word\">«к нему»\u003c/span> указывают на самого человека. \u003cspan class=\"example-word\">«Его книгу»\u003c/span> и \u003cspan class=\"example-word\">«к его дому»\u003c/span> на принадлежность предметов. Притяжательное \u003cspan class=\"example-word\">«его»\u003c/span> не изменяется и не получает начальное \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "pronoun-possessive"
+        },
+        {
+          "id": "pronoun-check-9",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«наш»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Мы гордимся _____ командой.\u003c/strong>",
+          "correct": [
+            "нашей"
+          ],
+          "explanationHtml": "\u003cp>Слово \u003cspan class=\"example-word\">«командой»\u003c/span> женского рода, единственного числа, творительного падежа. С ним согласуется форма \u003cspan class=\"example-word\">«нашей»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "pronoun-possessive"
+        },
+        {
+          "id": "pronoun-check-10",
+          "type": "choice",
+          "promptHtml": "Оля прочитала \u003cstrong class=\"example-word\">своё\u003c/strong> сочинение. Какой разряд у \u003cspan class=\"example-word\">«своё»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Возвратное: возвращает действие к Оле и не имеет рода и числа."
+            },
+            {
+              "value": "1",
+              "label": "Б. Притяжательное: указывает на принадлежность сочинения Оле; средний род, единственное число, винительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Личное: обозначает сочинение вместо его названия; третье лицо, средний род, винительный падеж."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Своё»\u003c/span> говорит о принадлежности сочинения и согласуется с его названием. Это притяжательное местоимение, а не возвратное \u003cspan class=\"example-word\">«себя»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "pronoun-possessive"
+        },
+        {
+          "id": "pronoun-check-11",
+          "type": "sort",
+          "promptHtml": "Определите разряд выделенного местоимения.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Какая книга тебе понравилась? (какая)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я помню, какая книга тебе понравилась. (какая)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Ты помнишь, какая книга тебе понравилась? (какая)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Вопросительное"
+            },
+            {
+              "value": "1",
+              "label": "Относительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В прямом вопросе \u003cspan class=\"example-word\">«какая»\u003c/span> вопросительное. В двух других предложениях оно связывает части и остаётся относительным независимо от знака в конце.\u003c/p>\n",
+          "reviewStep": "pronoun-relative"
+        },
+        {
+          "id": "pronoun-check-12",
+          "type": "choice",
+          "promptHtml": "В каком предложении \u003cspan class=\"example-word\">«что»\u003c/span> является союзом, а не местоимением?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Я заметил, что изменилось в комнате."
+            },
+            {
+              "value": "1",
+              "label": "Б. Я увидел, что лежит под столом."
+            },
+            {
+              "value": "2",
+              "label": "В. Я узнал, что поезд уже прибыл."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>В варианте В \u003cspan class=\"example-word\">«что»\u003c/span> только присоединяет сообщение о прибытии поезда. В вариантах А и Б оно указывает на то, что изменилось или лежит под столом, и является относительным местоимением.\u003c/p>\n",
+          "reviewStep": "pronoun-relative"
+        },
+        {
+          "id": "pronoun-check-13",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«чей-нибудь»\u003c/span> в нужной форме: \u003cstrong class=\"example-word\">Запиши номер в _____ тетради.\u003c/strong>",
+          "correct": [
+            "чьей-нибудь"
+          ],
+          "explanationHtml": "\u003cp>Сочетание \u003cspan class=\"example-word\">«в тетради»\u003c/span> требует предложного падежа, женского рода, единственного числа: \u003cspan class=\"example-word\">«чьей-нибудь»\u003c/span>. Часть \u003cspan class=\"example-word\">«-нибудь»\u003c/span> пишется через дефис.\u003c/p>\n",
+          "reviewStep": "pronoun-indefinite"
+        },
+        {
+          "id": "pronoun-check-14",
+          "type": "input",
+          "promptHtml": "Запишите сочетание, раскрывая скобки: \u003cstrong class=\"example-word\">Я взял линейку (кое)(у)(кого).\u003c/strong>",
+          "correct": [
+            "кое у кого"
+          ],
+          "explanationHtml": "\u003cp>Предлог \u003cspan class=\"example-word\">«у»\u003c/span> стоит между \u003cspan class=\"example-word\">«кое»\u003c/span> и местоимением. Все три слова пишутся отдельно.\u003c/p>\n",
+          "reviewStep": "pronoun-indefinite"
+        },
+        {
+          "id": "pronoun-check-15",
+          "type": "input",
+          "promptHtml": "Запишите слово, выбирая \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span>: \u003cstrong class=\"example-word\">Я (не/ни)чего не забыл.\u003c/strong>",
+          "correct": [
+            "ничего"
+          ],
+          "explanationHtml": "\u003cp>При отрицании действия: \u003cspan class=\"example-word\">«ничего не забыл»\u003c/span>. В местоимении \u003cspan class=\"example-word\">«ничего»\u003c/span> приставка \u003cspan class=\"example-word\">«ни»\u003c/span> без ударения.\u003c/p>\n",
+          "reviewStep": "pronoun-negative"
+        },
+        {
+          "id": "pronoun-check-16",
+          "type": "input",
+          "promptHtml": "Запишите сочетание, раскрывая скобки: \u003cstrong class=\"example-word\">Мне (не)(с)(кем) обсудить эту мысль.\u003c/strong>",
+          "correct": [
+            "не с кем"
+          ],
+          "explanationHtml": "\u003cp>Нет человека для разговора: \u003cspan class=\"example-word\">«не с кем обсудить»\u003c/span>. Предлог разделяет \u003cspan class=\"example-word\">«не»\u003c/span> и местоимение, поэтому три слова пишутся раздельно.\u003c/p>\n",
+          "reviewStep": "pronoun-negative"
+        },
+        {
+          "id": "pronoun-check-17",
+          "type": "sort",
+          "promptHtml": "Определите разряд слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Эта книга уже прочитана. (эта)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Вся книга уже прочитана. (вся)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Каждый получил книгу. (каждый)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Я не ожидал стольких писем. (стольких)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Указательное"
+            },
+            {
+              "value": "1",
+              "label": "Определительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Эта»\u003c/span> выделяет конкретную книгу, \u003cspan class=\"example-word\">«стольких»\u003c/span> указывает на количество. \u003cspan class=\"example-word\">«Вся»\u003c/span> означает целое без исключений, \u003cspan class=\"example-word\">«каждый»\u003c/span> всех по отдельности; это определительные.\u003c/p>\n",
+          "reviewStep": "pronoun-pointing"
+        },
+        {
+          "id": "pronoun-check-18",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму местоимения \u003cspan class=\"example-word\">«этими»\u003c/span>: \u003cstrong class=\"example-word\">Мы воспользовались этими словарями.\u003c/strong>",
+          "correct": [
+            "этот"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Этот»\u003c/span> изменяется по родам, числам и падежам. Начальная форма: мужской род, единственное число, именительный падеж, \u003cspan class=\"example-word\">«этот»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "pronoun-analysis"
+        },
+        {
+          "id": "pronoun-check-19",
+          "type": "choice",
+          "promptHtml": "Мы говорили об \u003cstrong class=\"example-word\">их\u003c/strong> работе. Выберите верную характеристику \u003cspan class=\"example-word\">«их»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «они»; личное, третье лицо, множественное число, предложный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Притяжательное, начальная форма «их», неизменяемое; род, число и падеж не определяются."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «ихний»; притяжательное, женский род, единственное число, предложный падеж."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Их»\u003c/span> указывает на принадлежность работы. Оно не изменяется, поэтому сохраняется и в начальной форме. \u003cspan class=\"example-word\">«Ихний»\u003c/span> не является нормативной начальной формой.\u003c/p>\n",
+          "reviewStep": "pronoun-analysis"
+        },
+        {
+          "id": "pronoun-check-20",
+          "type": "choice",
+          "promptHtml": "Мы дали \u003cstrong class=\"example-word\">ей\u003c/strong> книгу. Выберите верную характеристику \u003cspan class=\"example-word\">«ей»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Местоимение, начальная форма «она»; личное, третье лицо, единственное число, женский род, дательный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Местоимение, начальная форма «её»; притяжательное, неизменяемое; род и падеж не определяются."
+            },
+            {
+              "value": "2",
+              "label": "В. Местоимение, начальная форма «она»; личное, третье лицо, единственное число, женский род, творительный падеж."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Дали кому? чему? Получатель выражен личным местоимением в дательном падеже. Форма \u003cspan class=\"example-word\">«ей»\u003c/span> бывает и творительным падежом, но не в этом контексте.\u003c/p>\n",
+          "reviewStep": "pronoun-analysis"
         }
       ]
     }
