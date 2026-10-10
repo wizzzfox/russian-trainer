@@ -24,6 +24,10 @@ window.LESSON_CONTENT = {
     {
       "id": "pronoun",
       "title": "Местоимение"
+    },
+    {
+      "id": "verb",
+      "title": "Глагол"
     }
   ],
   "labels": {
@@ -461,6 +465,150 @@ window.LESSON_CONTENT = {
       "html": "",
       "groups": [
         "pronoun-check"
+      ]
+    },
+    {
+      "id": "verb-meaning",
+      "title": "Что обозначает глагол",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Глагол\u003c/strong> обозначает действие или состояние предмета и отвечает на вопросы \u003cspan class=\"example-word\">«что делать?»\u003c/span>, \u003cspan class=\"example-word\">«что сделать?»\u003c/span> и вопросы к его формам: \u003cspan class=\"example-word\">«что делает?»\u003c/span>, \u003cspan class=\"example-word\">«что делал?»\u003c/span>, \u003cspan class=\"example-word\">«что сделает?»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Действием в грамматике называют не только работу или движение. Мы можем думать, разговаривать, радоваться, болеть. Всё это можно выразить глаголами. Глагол также сообщает о том, что происходит в природе.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Что выражает глагол\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Работу, движение\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">строит\u003c/strong> дом, \u003cstrong class=\"example-word\">бежит\u003c/strong> по дорожке\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Мысль, речь\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">думает\u003c/strong> над задачей, \u003cstrong class=\"example-word\">рассказывает\u003c/strong> историю\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Чувство, состояние\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">радуется\u003c/strong> встрече, \u003cstrong class=\"example-word\">болеет\u003c/strong>, \u003cstrong class=\"example-word\">спит\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Явление природы\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">смеркается\u003c/strong>, \u003cstrong class=\"example-word\">морозит\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Ребята радостно встретили друга.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Ребята»\u003c/span> и \u003cspan class=\"example-word\">«друга»\u003c/span> называют людей. \u003cspan class=\"example-word\">«Встретили»\u003c/span> сообщает об их действии и отвечает на вопрос \u003cspan class=\"example-word\">«что сделали?»\u003c/span>. \u003cspan class=\"example-word\">«Радостно»\u003c/span> характеризует действие: встретили как? Глагол в этом предложении только один: \u003cspan class=\"example-word\">«встретили»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Название действия ещё не делает слово глаголом. Важны вопрос и грамматические признаки слова.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Плавание полезно. Ребята плавают в бассейне.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Плавание»\u003c/span> называет занятие как предмет: кто? что? Плавание. Это существительное. \u003cspan class=\"example-word\">«Плавают»\u003c/span> представляет действие как происходящее во времени: что делают? Это глагол.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "verb-meaning-practice"
+      ]
+    },
+    {
+      "id": "verb-infinitive",
+      "title": "Начальная форма глагола",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Инфинитив\u003c/strong> (неопределённая форма) является начальной формой глагола. Он называет действие, но не указывает, кто его совершает и когда оно происходит. Его вопросы: \u003cspan class=\"example-word\">«что делать?»\u003c/span> и \u003cspan class=\"example-word\">«что сделать?»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Читать, прочитать, нести, принести, беречь, сберечь.\u003c/strong>\u003c/p>\n\u003cp>Все эти слова стоят в инфинитиве. В формах \u003cspan class=\"example-word\">«читает»\u003c/span>, \u003cspan class=\"example-word\">«прочитали»\u003c/span>, \u003cspan class=\"example-word\">«несу»\u003c/span>, \u003cspan class=\"example-word\">«берегла»\u003c/span> уже есть указание на время и другие признаки конкретной формы.\u003c/p>\n\u003c/div>\u003cp>Инфинитив не изменяется по временам, лицам, числам и родам. У него не определяют наклонение. При этом у самого глагола сохраняются постоянные признаки, например вид: \u003cspan class=\"example-word\">«читать»\u003c/span> и \u003cspan class=\"example-word\">«прочитать»\u003c/span> обозначают действие по-разному.\u003c/p>\n\u003ch3>Как найти начальную форму\u003c/h3>\u003cp>Уберите указание на время и исполнителя, поставив вопрос \u003cspan class=\"example-word\">«что делать?»\u003c/span> или \u003cspan class=\"example-word\">«что сделать?»\u003c/span>. Сохраните значение слова, его приставку и часть \u003cspan class=\"example-word\">«-ся»\u003c/span> или \u003cspan class=\"example-word\">«-сь»\u003c/span>, если она есть.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Написали.\u003c/strong> Что сделали? Для начальной формы задаём вопрос \u003cspan class=\"example-word\">«что сделать?»\u003c/span>: \u003cspan class=\"example-word\">«написать»\u003c/span>. \u003cspan class=\"example-word\">«Писать»\u003c/span> не подходит: это другой глагол.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Улыбаешься.\u003c/strong> Что делаешь? Начальная форма отвечает на вопрос \u003cspan class=\"example-word\">«что делать?»\u003c/span>: \u003cspan class=\"example-word\">«улыбаться»\u003c/span>. Часть \u003cspan class=\"example-word\">«-ся»\u003c/span> сохраняется.\u003c/p>\n\u003c/div>\u003ch3>Как устроен инфинитив\u003c/h3>\u003cp>Чаще всего инфинитив оканчивается на \u003cspan class=\"example-word\">«-ть»\u003c/span> или \u003cspan class=\"example-word\">«-ти»\u003c/span>: \u003cspan class=\"example-word\">«читать»\u003c/span>, \u003cspan class=\"example-word\">«нести»\u003c/span>. Это суффиксы, то есть части слова, с помощью которых образована форма. В словах \u003cspan class=\"example-word\">«беречь»\u003c/span>, \u003cspan class=\"example-word\">«печь»\u003c/span> сочетание \u003cspan class=\"example-word\">«чь»\u003c/span> относится к корню.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Начальная форма должна сохранять тот же вопрос: \u003cspan class=\"example-word\">«что делал? писал»\u003c/span> → \u003cspan class=\"example-word\">«что делать? писать»\u003c/span>; \u003cspan class=\"example-word\">«что сделал? написал»\u003c/span> → \u003cspan class=\"example-word\">«что сделать? написать»\u003c/span>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "verb-infinitive-practice"
+      ]
+    },
+    {
+      "id": "verb-aspect",
+      "title": "Совершенный и несовершенный вид",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Вид глагола\u003c/strong> показывает, как представлено действие: как процесс, повторение или как действие с границей, результатом.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Вид\u003c/th>\n\u003cth>Вопрос к инфинитиву\u003c/th>\n\u003cth>Как представлено действие\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Несовершенный вид\u003c/strong>\u003c/td>\n\u003ctd>Что делать?\u003c/td>\n\u003ctd>Процесс или повторение; завершение не обозначено\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читать\u003c/strong>, \u003cstrong class=\"example-word\">решать\u003c/strong>, \u003cstrong class=\"example-word\">прыгать\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Совершенный вид\u003c/strong>\u003c/td>\n\u003ctd>Что сделать?\u003c/td>\n\u003ctd>Результат, завершение, начало или однократное действие\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">прочитать\u003c/strong>, \u003cstrong class=\"example-word\">решить\u003c/strong>, \u003cstrong class=\"example-word\">запеть\u003c/strong>, \u003cstrong class=\"example-word\">прыгнуть\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я читал рассказ. Я прочитал рассказ.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Читал»\u003c/span> сообщает о процессе чтения, но не говорит, был ли рассказ дочитан. \u003cspan class=\"example-word\">«Прочитал»\u003c/span> указывает на завершение. Оба глагола обозначают прошлое, но имеют разный вид.\u003c/p>\n\u003c/div>\u003cp>Совершенный вид не означает, что действие обязательно уже произошло. Форма \u003cspan class=\"example-word\">«прочитаю»\u003c/span> тоже совершенного вида, хотя действие только предстоит.\u003c/p>\n\u003ch3>Видовые пары\u003c/h3>\u003cp>Глаголы с одним основным значением, но разным видом составляют \u003cstrong class=\"term\">видовую пару\u003c/strong>: \u003cspan class=\"example-word\">«решать»\u003c/span> и \u003cspan class=\"example-word\">«решить»\u003c/span>, \u003cspan class=\"example-word\">«рассказывать»\u003c/span> и \u003cspan class=\"example-word\">«рассказать»\u003c/span>, \u003cspan class=\"example-word\">«говорить»\u003c/span> и \u003cspan class=\"example-word\">«сказать»\u003c/span>. Это два глагола, а не две формы одного слова. Вид является постоянным признаком: у форм \u003cspan class=\"example-word\">«решил»\u003c/span>, \u003cspan class=\"example-word\">«решу»\u003c/span>, \u003cspan class=\"example-word\">«решите»\u003c/span> сохраняется совершенный вид глагола \u003cspan class=\"example-word\">«решить»\u003c/span>.\u003c/p>\n\u003cp>Приставка не всегда только меняет вид. \u003cspan class=\"example-word\">«Писать»\u003c/span> и \u003cspan class=\"example-word\">«переписать»\u003c/span> различаются ещё и значением: второе слово обозначает повторную запись или копирование. Поэтому вид определяют по вопросу и значению, а не по наличию приставки.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Бежать к остановке. Бегать по утрам.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Бежать»\u003c/span> и \u003cspan class=\"example-word\">«бегать»\u003c/span> обозначают движение по-разному: в одном направлении или как повторяющееся занятие. Но оба отвечают на вопрос \u003cspan class=\"example-word\">«что делать?»\u003c/span> и имеют несовершенный вид. Это не видовая пара.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>«Что \u003cstrong class=\"example-word\">с\u003c/strong>делать?» помогает узнать \u003cstrong class=\"example-word\">совершенный вид\u003c/strong>. \u003cspan class=\"example-word\">«Что делать?»\u003c/span> указывает на \u003cstrong class=\"example-word\">несовершенный вид\u003c/strong>. Проверяйте вопрос к самому глаголу, а не к существительному рядом с ним.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "verb-aspect-practice"
+      ]
+    },
+    {
+      "id": "verb-transitive",
+      "title": "Переходные и непереходные глаголы",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Переходные глаголы\u003c/strong> обозначают действие, направленное на предмет, который можно назвать существительным или местоимением в винительном падеже без предлога. Вопросы к этому предмету: \u003cspan class=\"example-word\">«кого? что?»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Читать книгу, встретить друга, увидеть его.\u003c/strong>\u003c/p>\n\u003cp>Читать кого? что? Книгу. Встретить кого? что? Друга. Увидеть кого? что? Его. Во всех трёх сочетаниях действие направлено на предмет, винительный падеж употреблён без предлога. Глаголы переходные.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Непереходные глаголы\u003c/strong> не допускают такого сочетания. Они могут употребляться с существительными, но в другом падеже или с предлогом.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Идти по дороге, помогать другу, гордиться работой.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«По дороге»\u003c/span> содержит предлог. Помогать кому? чему? Другу: дательный падеж. Гордиться кем? чем? Работой: творительный падеж. Глаголы \u003cspan class=\"example-word\">«идти»\u003c/span>, \u003cspan class=\"example-word\">«помогать»\u003c/span>, \u003cspan class=\"example-word\">«гордиться»\u003c/span> непереходные.\u003c/p>\n\u003c/div>\u003ch3>Если предмет не назван\u003c/h3>\u003cp>Переходность является постоянным признаком. Предмет действия не обязательно должен быть назван в каждом предложении: важно, можно ли построить нужное сочетание без изменения значения глагола.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Вечером я читал.\u003c/strong>\u003c/p>\n\u003cp>В предложении нет названия книги, но можно уточнить: \u003cspan class=\"example-word\">«читал книгу»\u003c/span>. Поэтому \u003cspan class=\"example-word\">«читать»\u003c/span> остаётся переходным глаголом.\u003c/p>\n\u003c/div>\u003cp>При отрицании и при обозначении части предмета у переходного глагола может употребляться родительный падеж.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Не прочитал книги. Налил воды.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Прочитать»\u003c/span> и \u003cspan class=\"example-word\">«налить»\u003c/span> переходные: можно сказать \u003cspan class=\"example-word\">«прочитать книгу»\u003c/span>, \u003cspan class=\"example-word\">«налить воду»\u003c/span>. Родительный падеж в этих примерах не меняет переходности.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "verb-transitive-practice"
+      ]
+    },
+    {
+      "id": "verb-reflexive",
+      "title": "Возвратные и невозвратные глаголы",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Возвратные глаголы\u003c/strong> имеют часть \u003cspan class=\"example-word\">«-ся»\u003c/span> или \u003cspan class=\"example-word\">«-сь»\u003c/span>. Она называется \u003cstrong class=\"term\">постфикс\u003c/strong>: это часть слова, которая находится после других суффиксов и окончания, если окончание есть. Формы \u003cspan class=\"example-word\">«-ся»\u003c/span> и \u003cspan class=\"example-word\">«-сь»\u003c/span> являются вариантами одного постфикса.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Умываться, умываюсь, умывается, умывалась.\u003c/strong>\u003c/p>\n\u003cp>В \u003cspan class=\"example-word\">«умываюсь»\u003c/span> часть \u003cspan class=\"example-word\">«-сь»\u003c/span> стоит после окончания \u003cspan class=\"example-word\">«-ю»\u003c/span>, в \u003cspan class=\"example-word\">«умывается»\u003c/span> часть \u003cspan class=\"example-word\">«-ся»\u003c/span> после окончания \u003cspan class=\"example-word\">«-ет»\u003c/span>. Во всех формах глагол остаётся возвратным.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Невозвратные глаголы\u003c/strong> не имеют этого постфикса: \u003cspan class=\"example-word\">«умывать»\u003c/span>, \u003cspan class=\"example-word\">«читать»\u003c/span>, \u003cspan class=\"example-word\">«спать»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Возвратность является постоянным признаком. \u003cspan class=\"example-word\">«Умывать»\u003c/span> и \u003cspan class=\"example-word\">«умываться»\u003c/span> являются разными глаголами, а \u003cspan class=\"example-word\">«умывается»\u003c/span> и \u003cspan class=\"example-word\">«умывалась»\u003c/span> формами одного глагола.\u003c/p>\n\u003ch3>Что может означать \u003cspan class=\"example-word\">«-ся»\u003c/span>\u003c/h3>\u003cp>Название \u003cspan class=\"example-word\">«возвратный»\u003c/span> не означает, что действие всегда направлено на себя. Значение зависит от слова.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Значение\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Действие направлено на самого исполнителя\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">умывается\u003c/strong>: умывает себя\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Участники действуют друг на друга\u003c/td>\n\u003ctd>друзья \u003cstrong class=\"example-word\">обнимаются\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Чувство, состояние или другое действие\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">радуется\u003c/strong>, \u003cstrong class=\"example-word\">смеётся\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Действие совершается над предметом\u003c/td>\n\u003ctd>дом \u003cstrong class=\"example-word\">строится\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ch3>\u003cspan class=\"example-word\">«-тся»\u003c/span> или \u003cspan class=\"example-word\">«-ться»\u003c/span>\u003c/h3>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Что делает? \u003cstrong class=\"example-word\">Учится.\u003c/strong> В вопросе нет \u003cspan class=\"example-word\">«ь»\u003c/span>, в \u003cspan class=\"example-word\">«-тся»\u003c/span> его тоже нет.\u003c/p>\n\u003cp>Что делать? \u003cstrong class=\"example-word\">Учиться.\u003c/strong> В вопросе есть \u003cspan class=\"example-word\">«ь»\u003c/span>, в \u003cspan class=\"example-word\">«-ться»\u003c/span> он тоже есть.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "verb-reflexive-practice"
+      ]
+    },
+    {
+      "id": "verb-mood",
+      "title": "Три наклонения глагола",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Наклонение глагола\u003c/strong> показывает, как говорящий представляет действие: сообщает о нём, предполагает его или побуждает к нему.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Наклонение\u003c/th>\n\u003cth>Значение\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Изъявительное наклонение\u003c/strong>\u003c/td>\n\u003ctd>Сообщение о действии в прошлом, настоящем или будущем\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">прочитал\u003c/strong>, \u003cstrong class=\"example-word\">читаю\u003c/strong>, \u003cstrong class=\"example-word\">прочитаю\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Условное наклонение\u003c/strong>\u003c/td>\n\u003ctd>Возможное или желаемое действие\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">прочитал бы\u003c/strong>, \u003cstrong class=\"example-word\">прочитала бы\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Повелительное наклонение\u003c/strong>\u003c/td>\n\u003ctd>Просьба, приказ, совет\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">прочитай\u003c/strong>, \u003cstrong class=\"example-word\">прочитайте\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Ты прочитаешь письмо. Ты прочитал бы письмо. Прочитай письмо.\u003c/strong>\u003c/p>\n\u003cp>Первое предложение сообщает о будущем действии. Второе представляет действие как возможное. Третье побуждает собеседника прочитать письмо.\u003c/p>\n\u003c/div>\u003cp>Наклонение является непостоянным признаком. У одного глагола \u003cspan class=\"example-word\">«прочитать»\u003c/span> можно образовать формы всех трёх наклонений. От наклонения зависит, какие другие признаки есть у конкретной формы.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Наклонение\u003c/th>\n\u003cth>Какие формы есть\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Изъявительное\u003c/td>\n\u003ctd>Время и число; лицо в настоящем и будущем, род в единственном числе прошедшего времени\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Условное\u003c/td>\n\u003ctd>Число; род в единственном числе. Времени и лица нет\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Повелительное\u003c/td>\n\u003ctd>Формы обращения ко второму лицу: \u003cspan class=\"example-word\">«читай»\u003c/span>, \u003cspan class=\"example-word\">«читайте»\u003c/span>; формы с частицами: \u003cspan class=\"example-word\">«пусть читает»\u003c/span>. Времени и рода нет\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n",
+      "groups": [
+        "verb-mood-practice"
+      ]
+    },
+    {
+      "id": "verb-time",
+      "title": "Время глагола",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Время глагола\u003c/strong> показывает, как действие соотносится с моментом речи: происходит сейчас, происходило раньше или произойдёт позже. Время определяют у форм изъявительного наклонения.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Время\u003c/th>\n\u003cth>Основное значение\u003c/th>\n\u003cth>Вопросы\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Прошедшее время\u003c/strong>\u003c/td>\n\u003ctd>Действие до момента речи\u003c/td>\n\u003ctd>Что делал? Что сделал?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читал\u003c/strong>, \u003cstrong class=\"example-word\">прочитал\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Настоящее время\u003c/strong>\u003c/td>\n\u003ctd>Действие сейчас или регулярно\u003c/td>\n\u003ctd>Что делает?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читает\u003c/strong>, \u003cstrong class=\"example-word\">ходит\u003c/strong> в школу\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Будущее время\u003c/strong>\u003c/td>\n\u003ctd>Действие после момента речи\u003c/td>\n\u003ctd>Что будет делать? Что сделает?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">будет читать\u003c/strong>, \u003cstrong class=\"example-word\">прочитает\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003ch3>Как время связано с видом\u003c/h3>\u003cp>У глаголов несовершенного вида есть все три времени: \u003cspan class=\"example-word\">«читал»\u003c/span>, \u003cspan class=\"example-word\">«читаю»\u003c/span>, \u003cspan class=\"example-word\">«буду читать»\u003c/span>. У глаголов совершенного вида только два: прошедшее и будущее, \u003cspan class=\"example-word\">«прочитал»\u003c/span>, \u003cspan class=\"example-word\">«прочитаю»\u003c/span>. Настоящего времени у них нет.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Решаю задачу. Решу задачу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Решаю»\u003c/span> отвечает на вопрос \u003cspan class=\"example-word\">«что делаю?»\u003c/span> и обозначает настоящее время. \u003cspan class=\"example-word\">«Решу»\u003c/span> отвечает на вопрос \u003cspan class=\"example-word\">«что сделаю?»\u003c/span> и обозначает будущее. Короткое слово без \u003cspan class=\"example-word\">«буду»\u003c/span> тоже может быть формой будущего времени.\u003c/p>\n\u003c/div>\u003ch3>Простое и составное будущее\u003c/h3>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Простое будущее время\u003c/strong> состоит из одного слова и образуется у глаголов совершенного вида: \u003cspan class=\"example-word\">«решу»\u003c/span>, \u003cspan class=\"example-word\">«прочитаешь»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Составное будущее время\u003c/strong> состоит из формы глагола \u003cspan class=\"example-word\">«быть»\u003c/span> и инфинитива глагола несовершенного вида: \u003cspan class=\"example-word\">«буду решать»\u003c/span>, \u003cspan class=\"example-word\">«будешь читать»\u003c/span>, \u003cspan class=\"example-word\">«будут играть»\u003c/span>. Два слова вместе являются одной формой глагола. В ней изменяется только первое слово, а инфинитив сохраняется.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы будем читать. Они будут читать.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Будем читать»\u003c/span> является формой первого лица множественного числа, \u003cspan class=\"example-word\">«будут читать»\u003c/span> формой третьего лица множественного числа. Это формы глагола \u003cspan class=\"example-word\">«читать»\u003c/span>, а не \u003cspan class=\"example-word\">«прочитать»\u003c/span>.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "verb-time-practice"
+      ]
+    },
+    {
+      "id": "verb-past",
+      "title": "Род и число в прошедшем времени",
+      "chapter": "verb",
+      "html": "\u003cp>В прошедшем времени глаголы изменяются по числам, а в единственном числе также по родам. Род формы зависит от того, о ком или о чём говорится.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Форма\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Мужской род\u003c/strong>, единственное число\u003c/td>\n\u003ctd>мальчик \u003cstrong class=\"example-word\">читал\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Женский род\u003c/strong>, единственное число\u003c/td>\n\u003ctd>девочка \u003cstrong class=\"example-word\">читала\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Средний род\u003c/strong>, единственное число\u003c/td>\n\u003ctd>радио \u003cstrong class=\"example-word\">работало\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Множественное число\u003c/strong>, род не определяется\u003c/td>\n\u003ctd>дети \u003cstrong class=\"example-word\">читали\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я читала. Ты читала. Она читала.\u003c/strong>\u003c/p>\n\u003cp>Местоимения указывают на разных участников речи, но форма глагола одинакова. У \u003cspan class=\"example-word\">«читала»\u003c/span> есть женский род и единственное число, а лица нет. Лицо местоимения не становится лицом глагола.\u003c/p>\n\u003c/div>\u003ch3>Как образуется прошедшее время\u003c/h3>\u003cp>Чаще всего в форме появляется суффикс \u003cspan class=\"example-word\">«-л-»\u003c/span>: \u003cspan class=\"example-word\">«читать»\u003c/span> → \u003cspan class=\"example-word\">«читал»\u003c/span>, \u003cspan class=\"example-word\">«решить»\u003c/span> → \u003cspan class=\"example-word\">«решил»\u003c/span>. После него могут стоять окончания \u003cspan class=\"example-word\">«-а»\u003c/span>, \u003cspan class=\"example-word\">«-о»\u003c/span>, \u003cspan class=\"example-word\">«-и»\u003c/span>: \u003cspan class=\"example-word\">«читала»\u003c/span>, \u003cspan class=\"example-word\">«читало»\u003c/span>, \u003cspan class=\"example-word\">«читали»\u003c/span>. В мужском роде окончание нулевое.\u003c/p>\n\u003cp>У некоторых глаголов в мужском роде нет \u003cspan class=\"example-word\">«-л-»\u003c/span>, но другие формы помогают узнать прошедшее время: \u003cspan class=\"example-word\">«нёс»\u003c/span>, \u003cspan class=\"example-word\">«несла»\u003c/span>, \u003cspan class=\"example-word\">«несли»\u003c/span>; \u003cspan class=\"example-word\">«пёк»\u003c/span>, \u003cspan class=\"example-word\">«пекла»\u003c/span>, \u003cspan class=\"example-word\">«пекли»\u003c/span>.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Перед \u003cspan class=\"example-word\">«-л-»\u003c/span> сохраняется гласная, которая стоит перед \u003cspan class=\"example-word\">«-ть»\u003c/span> в инфинитиве: \u003cstrong class=\"example-word\">видеть → видел; слышать → слышал; таять → таял\u003c/strong>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "verb-past-practice"
+      ]
+    },
+    {
+      "id": "verb-person",
+      "title": "Лицо и число глагола",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Лицо\u003c/strong> показывает, как исполнитель действия связан с разговором: это сам говорящий, его собеседник или тот, о ком говорят. В изъявительном наклонении лицо определяют в настоящем и будущем времени.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Лицо\u003c/th>\n\u003cth>Кто выполняет действие\u003c/th>\n\u003cth>Единственное число\u003c/th>\n\u003cth>Множественное число\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Первое лицо\u003c/strong>\u003c/td>\n\u003ctd>Говорящий или группа с его участием\u003c/td>\n\u003ctd>я \u003cstrong class=\"example-word\">читаю\u003c/strong>, \u003cstrong class=\"example-word\">прочитаю\u003c/strong>\u003c/td>\n\u003ctd>мы \u003cstrong class=\"example-word\">читаем\u003c/strong>, \u003cstrong class=\"example-word\">прочитаем\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Второе лицо\u003c/strong>\u003c/td>\n\u003ctd>Собеседник или собеседники\u003c/td>\n\u003ctd>ты \u003cstrong class=\"example-word\">читаешь\u003c/strong>, \u003cstrong class=\"example-word\">прочитаешь\u003c/strong>\u003c/td>\n\u003ctd>вы \u003cstrong class=\"example-word\">читаете\u003c/strong>, \u003cstrong class=\"example-word\">прочитаете\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Третье лицо\u003c/strong>\u003c/td>\n\u003ctd>Тот или те, о ком говорят\u003c/td>\n\u003ctd>он, она, оно \u003cstrong class=\"example-word\">читает\u003c/strong>, \u003cstrong class=\"example-word\">прочитает\u003c/strong>\u003c/td>\n\u003ctd>они \u003cstrong class=\"example-word\">читают\u003c/strong>, \u003cstrong class=\"example-word\">прочитают\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Исполнитель может быть назван существительным. В сочетании \u003cspan class=\"example-word\">«ученики читают»\u003c/span> глагол имеет третье лицо множественного числа: можно заменить \u003cspan class=\"example-word\">«ученики»\u003c/span> местоимением \u003cspan class=\"example-word\">«они»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Читаю интересную книгу.\u003c/strong>\u003c/p>\n\u003cp>Местоимения \u003cspan class=\"example-word\">«я»\u003c/span> нет, но форма \u003cspan class=\"example-word\">«читаю»\u003c/span> указывает на самого говорящего. Это первое лицо единственного числа настоящего времени.\u003c/p>\n\u003c/div>\u003cp>У форм настоящего и будущего времени род не определяется: \u003cspan class=\"example-word\">«он читает»\u003c/span>, \u003cspan class=\"example-word\">«она читает»\u003c/span>, \u003cspan class=\"example-word\">«оно читает»\u003c/span>. Одна форма подходит к названиям предметов разных родов.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Во втором лице единственного числа после \u003cspan class=\"example-word\">«ш»\u003c/span> пишется \u003cspan class=\"example-word\">«ь»\u003c/span>, в том числе перед \u003cspan class=\"example-word\">«-ся»\u003c/span>: \u003cstrong class=\"example-word\">читаешь, учишься, вернёшься\u003c/strong>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "verb-person-practice"
+      ]
+    },
+    {
+      "id": "verb-conjugation",
+      "title": "Первое и второе спряжение",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Спряжение\u003c/strong> является изменением глагола по лицам и числам в настоящем и будущем времени. Словом \u003cspan class=\"example-word\">«спряжение»\u003c/span> также называют группу глаголов с определённым набором личных окончаний. Основных групп две: первое (I) и второе (II) спряжение.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Лицо и число\u003c/th>\n\u003cth>I спряжение\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003cth>II спряжение\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Первое лицо, единственное число\u003c/td>\n\u003ctd>-у, -ю\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читаю\u003c/strong>\u003c/td>\n\u003ctd>-у, -ю\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">говорю\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Второе лицо, единственное число\u003c/td>\n\u003ctd>-ешь, -ёшь\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читаешь\u003c/strong>\u003c/td>\n\u003ctd>-ишь\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">говоришь\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Третье лицо, единственное число\u003c/td>\n\u003ctd>-ет, -ёт\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читает\u003c/strong>\u003c/td>\n\u003ctd>-ит\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">говорит\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Первое лицо, множественное число\u003c/td>\n\u003ctd>-ем, -ём\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читаем\u003c/strong>\u003c/td>\n\u003ctd>-им\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">говорим\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Второе лицо, множественное число\u003c/td>\n\u003ctd>-ете, -ёте\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читаете\u003c/strong>\u003c/td>\n\u003ctd>-ите\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">говорите\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Третье лицо, множественное число\u003c/td>\n\u003ctd>-ут, -ют\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читают\u003c/strong>\u003c/td>\n\u003ctd>-ат, -ят\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">говорят\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Читаю. Говорю.\u003c/strong>\u003c/p>\n\u003cp>Окончание \u003cspan class=\"example-word\">«-ю»\u003c/span> встречается в обоих спряжениях. Оно не помогает различить группы. Сравним другие формы: \u003cspan class=\"example-word\">«читаешь»\u003c/span>, \u003cspan class=\"example-word\">«читают»\u003c/span> относятся к I спряжению; \u003cspan class=\"example-word\">«говоришь»\u003c/span>, \u003cspan class=\"example-word\">«говорят»\u003c/span> к II.\u003c/p>\n\u003c/div>\u003cp>Спряжение является постоянным признаком. \u003cspan class=\"example-word\">«Читать»\u003c/span> относится к I спряжению и в форме \u003cspan class=\"example-word\">«читала»\u003c/span>, хотя в прошедшем времени глагол изменяется по родам и числам, а не по лицам.\u003c/p>\n\u003ch3>Глаголы с особыми окончаниями\u003c/h3>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Разноспрягаемые глаголы\u003c/strong> сочетают окончания I и II спряжения. К ним относятся \u003cspan class=\"example-word\">«хотеть»\u003c/span>, \u003cspan class=\"example-word\">«бежать»\u003c/span> и образованные от них глаголы.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Форма\u003c/th>\n\u003cth>Хотеть\u003c/th>\n\u003cth>Бежать\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Я\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">хочу\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">бегу\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Ты\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">хочешь\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">бежишь\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Он, она, оно\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">хочет\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">бежит\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Мы\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">хотим\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">бежим\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Вы\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">хотите\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">бежите\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Они\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">хотят\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">бегут\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У \u003cspan class=\"example-word\">«хотеть»\u003c/span> формы единственного числа имеют окончания I спряжения, а множественного II. У \u003cspan class=\"example-word\">«бежать»\u003c/span> окончание \u003cspan class=\"example-word\">«-ут»\u003c/span> в \u003cspan class=\"example-word\">«бегут»\u003c/span> относится к I спряжению, остальные различающие окончания к II.\u003c/p>\n\u003cp>Глаголы \u003cspan class=\"example-word\">«есть»\u003c/span> и \u003cspan class=\"example-word\">«дать»\u003c/span> спрягаются по особой системе: \u003cspan class=\"example-word\">«ем»\u003c/span>, \u003cspan class=\"example-word\">«ешь»\u003c/span>, \u003cspan class=\"example-word\">«ест»\u003c/span>, \u003cspan class=\"example-word\">«едим»\u003c/span>, \u003cspan class=\"example-word\">«едите»\u003c/span>, \u003cspan class=\"example-word\">«едят»\u003c/span>; \u003cspan class=\"example-word\">«дам»\u003c/span>, \u003cspan class=\"example-word\">«дашь»\u003c/span>, \u003cspan class=\"example-word\">«даст»\u003c/span>, \u003cspan class=\"example-word\">«дадим»\u003c/span>, \u003cspan class=\"example-word\">«дадите»\u003c/span>, \u003cspan class=\"example-word\">«дадут»\u003c/span>. Их нельзя целиком отнести к I или II спряжению. Такие же особенности сохраняются в \u003cspan class=\"example-word\">«съесть»\u003c/span>, \u003cspan class=\"example-word\">«передать»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "verb-conjugation-practice"
+      ]
+    },
+    {
+      "id": "verb-endings",
+      "title": "Как определить спряжение и выбрать окончание",
+      "chapter": "verb",
+      "html": "\u003cp>Ударное окончание слышно отчётливо. Безударное нужно проверять. Поэтому сначала смотрят на ударение, а не на последние буквы инфинитива.\u003c/p>\n\u003ch3>1. Проверьте ударение в личной форме\u003c/h3>\u003cp>Если окончание ударное, определите спряжение по нему. Для проверки подойдут формы второго лица единственного числа и третьего лица множественного числа.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Спать → спишь, спят.\u003c/strong> Окончания \u003cspan class=\"example-word\">«-ишь»\u003c/span>, \u003cspan class=\"example-word\">«-ят»\u003c/span> ударные и относятся к II спряжению, хотя инфинитив заканчивается на \u003cspan class=\"example-word\">«-ать»\u003c/span>.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Пить → пьёшь, пьют.\u003c/strong> По ударным окончаниям определяем I спряжение, несмотря на \u003cspan class=\"example-word\">«-ить»\u003c/span> в инфинитиве.\u003c/p>\n\u003c/div>\u003cp>Приставка \u003cspan class=\"example-word\">«вы-»\u003c/span> может перетянуть на себя ударение. Если без неё окончание ударное, проверяем форму без этой приставки.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Выпьешь → пьёшь.\u003c/strong> Без приставки окончание ударное и относится к I спряжению. \u003cspan class=\"example-word\">«Выпить»\u003c/span> сохраняет I спряжение глагола \u003cspan class=\"example-word\">«пить»\u003c/span>.\u003c/p>\n\u003c/div>\u003ch3>2. При безударном окончании найдите инфинитив\u003c/h3>\u003cp>Основное школьное правило для глаголов с безударными личными окончаниями:\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>II спряжение\u003c/th>\n\u003cth>I спряжение\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Глаголы на -ить, кроме \u003cspan class=\"example-word\">«брить»\u003c/span>, \u003cspan class=\"example-word\">«стелить»\u003c/span>\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«Брить»\u003c/span>, \u003cspan class=\"example-word\">«стелить»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Семь глаголов на -еть: \u003cstrong class=\"example-word\">смотреть, видеть, ненавидеть, зависеть, терпеть, вертеть, обидеть\u003c/strong>\u003c/td>\n\u003ctd>Остальные глаголы на -еть\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Четыре глагола на -ать: \u003cstrong class=\"example-word\">слышать, дышать, держать, гнать\u003c/strong>\u003c/td>\n\u003ctd>Остальные глаголы на -ать и другие глаголы с безударными окончаниями, кроме особых групп\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Строишь → строить.\u003c/strong> Окончание безударное. Инфинитив на \u003cspan class=\"example-word\">«-ить»\u003c/span>, это II спряжение: \u003cspan class=\"example-word\">«строишь»\u003c/span>, \u003cspan class=\"example-word\">«строят»\u003c/span>.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Читаешь → читать.\u003c/strong> Окончание безударное. \u003cspan class=\"example-word\">«Читать»\u003c/span> не входит в исключения на \u003cspan class=\"example-word\">«-ать»\u003c/span>, это I спряжение: \u003cspan class=\"example-word\">«читаешь»\u003c/span>, \u003cspan class=\"example-word\">«читают»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Спряжение сохраняется у глаголов с приставками и с \u003cspan class=\"example-word\">«-ся»\u003c/span>: \u003cspan class=\"example-word\">«видеть»\u003c/span>, \u003cspan class=\"example-word\">«увидеть»\u003c/span>, \u003cspan class=\"example-word\">«видеться»\u003c/span> относятся ко II спряжению; \u003cspan class=\"example-word\">«брить»\u003c/span>, \u003cspan class=\"example-word\">«побрить»\u003c/span>, \u003cspan class=\"example-word\">«бриться»\u003c/span> к I.\u003c/p>\n\u003ch3>3. Выберите окончание для нужного лица и числа\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы кле_м модель.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«клеить»\u003c/span>, II спряжение. Для первого лица множественного числа нужно \u003cspan class=\"example-word\">«-им»\u003c/span>: \u003cspan class=\"example-word\">«клеим»\u003c/span>.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Они бор_тся за победу.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«бороться»\u003c/span>, I спряжение. Для третьего лица множественного числа нужно \u003cspan class=\"example-word\">«-ют»\u003c/span>: \u003cspan class=\"example-word\">«борются»\u003c/span>. Постфикс \u003cspan class=\"example-word\">«-ся»\u003c/span> стоит после окончания.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Исключения II спряжения удобно учить двумя группами: \u003cstrong class=\"example-word\">семь на -еть\u003c/strong> и \u003cstrong class=\"example-word\">четыре на -ать\u003c/strong>. Вместе это одиннадцать слов. \u003cstrong class=\"example-word\">Брить и стелить\u003c/strong> относятся к I спряжению.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "verb-endings-practice"
+      ]
+    },
+    {
+      "id": "verb-conditional",
+      "title": "Условное наклонение",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Условное наклонение\u003c/strong> обозначает действие, возможное при определённом условии или желаемое. Форма образуется из формы, совпадающей с прошедшим временем, и частицы \u003cspan class=\"example-word\">«бы»\u003c/span> или \u003cspan class=\"example-word\">«б»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Если бы было свободное время, я прочитал бы эту книгу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Прочитал бы»\u003c/span> не сообщает о состоявшемся чтении. Книга могла бы быть прочитана при названном условии.\u003c/p>\n\u003c/div>\u003cp>Частица пишется отдельно и может находиться не рядом с глаголом: \u003cspan class=\"example-word\">«Я бы прочитал эту книгу»\u003c/span>; \u003cspan class=\"example-word\">«Я эту книгу прочитал бы»\u003c/span>. В обоих случаях форма условного наклонения одна: \u003cspan class=\"example-word\">«прочитал бы»\u003c/span>.\u003c/p>\n\u003ch3>Какие признаки есть у формы\u003c/h3>\u003cp>Глаголы в условном наклонении изменяются по числам и в единственном числе по родам. Времени и лица у этих форм нет.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Форма\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Мужской род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">прочитал бы\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Женский род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">прочитала бы\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Средний род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">помогло бы\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Множественное число, род не определяется\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">прочитали бы\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Вчера я помог бы тебе. Завтра я помог бы тебе.\u003c/strong>\u003c/p>\n\u003cp>Слова \u003cspan class=\"example-word\">«вчера»\u003c/span> и \u003cspan class=\"example-word\">«завтра»\u003c/span> сообщают, когда помощь была бы возможна. Но у формы \u003cspan class=\"example-word\">«помог бы»\u003c/span> грамматического времени нет. В обоих предложениях это условное наклонение, мужской род, единственное число.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "verb-conditional-practice"
+      ]
+    },
+    {
+      "id": "verb-imperative",
+      "title": "Повелительное наклонение",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Повелительное наклонение\u003c/strong> выражает побуждение к действию: просьбу, приказ, совет. Говорящий хочет, чтобы действие было выполнено или, при отрицании, не выполнялось.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Открой окно, пожалуйста. Запишите дату. Не шумите.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Открой»\u003c/span> выражает просьбу, \u003cspan class=\"example-word\">«запишите»\u003c/span> указание, \u003cspan class=\"example-word\">«не шумите»\u003c/span> запрет. Все три глагола стоят в повелительном наклонении.\u003c/p>\n\u003c/div>\u003ch3>Как образуются формы\u003c/h3>\u003cp>Обычная форма обращения к одному собеседнику имеет значение второго лица единственного числа: \u003cspan class=\"example-word\">«пиши»\u003c/span>, \u003cspan class=\"example-word\">«читай»\u003c/span>, \u003cspan class=\"example-word\">«встань»\u003c/span>. Для обращения к нескольким собеседникам добавляется \u003cspan class=\"example-word\">«-те»\u003c/span>: \u003cspan class=\"example-word\">«пишите»\u003c/span>, \u003cspan class=\"example-word\">«читайте»\u003c/span>, \u003cspan class=\"example-word\">«встаньте»\u003c/span>. Форма множественного числа используется и при вежливом обращении к одному человеку.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Инфинитив\u003c/th>\n\u003cth>Обращение к одному собеседнику\u003c/th>\n\u003cth>Обращение к нескольким или вежливое обращение\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Писать\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">пиши\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">пишите\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Читать\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читай\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">читайте\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Встать\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">встань\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">встаньте\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Положить\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">положи\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">положите\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Поехать\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">поезжай\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">поезжайте\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Побуждение можно направить и к тому, о ком говорят: \u003cspan class=\"example-word\">«Пусть он прочитает письмо»\u003c/span>. Здесь форму образует частица \u003cspan class=\"example-word\">«пусть»\u003c/span> и глагол третьего лица.\u003c/p>\n\u003cp>У повелительного наклонения нет времени и рода. Просьба обычно касается будущего действия, но это не делает \u003cspan class=\"example-word\">«прочитай»\u003c/span> формой будущего времени.\u003c/p>\n\u003ch3>\u003cspan class=\"example-word\">«Пишете»\u003c/span> и \u003cspan class=\"example-word\">«пишите»\u003c/span>\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Вы пишете аккуратно. Пишите аккуратно.\u003c/strong>\u003c/p>\n\u003cp>В первом предложении сообщают о действии: что делаете? \u003cspan class=\"example-word\">«Пишете»\u003c/span> является формой изъявительного наклонения с окончанием I спряжения \u003cspan class=\"example-word\">«-ете»\u003c/span>. Во втором дают совет: \u003cspan class=\"example-word\">«пишите»\u003c/span> является формой повелительного наклонения; \u003cspan class=\"example-word\">«-и-»\u003c/span> участвует в её образовании, \u003cspan class=\"example-word\">«-те»\u003c/span> указывает на множественное число.\u003c/p>\n\u003c/div>\u003cp>У глаголов II спряжения написание может совпадать: \u003cspan class=\"example-word\">«Вы дышите спокойно»\u003c/span> и \u003cspan class=\"example-word\">«Дышите спокойно!»\u003c/span> содержат одинаковое \u003cspan class=\"example-word\">«дышите»\u003c/span>, но в первом предложении это сообщение, а во втором совет. Наклонение определяют по смыслу предложения, а не только по буквам.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>На конце повелительной формы после согласной пишется \u003cspan class=\"example-word\">«ь»\u003c/span>. Он сохраняется перед \u003cspan class=\"example-word\">«-те»\u003c/span> и \u003cspan class=\"example-word\">«-ся»\u003c/span>: \u003cstrong class=\"example-word\">встань, встаньте; спрячь, спрячься\u003c/strong>. Исключение: \u003cstrong class=\"example-word\">ляг, лягте\u003c/strong>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "verb-imperative-practice"
+      ]
+    },
+    {
+      "id": "verb-impersonal",
+      "title": "Безличные глаголы",
+      "chapter": "verb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Безличные глаголы\u003c/strong> обозначают действие или состояние без действующего лица. В предложении с таким глаголом не называют того, кто сам выполняет действие.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Смеркается. На улице морозит. Мне не спится.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Смеркается»\u003c/span> и \u003cspan class=\"example-word\">«морозит»\u003c/span> сообщают о состоянии природы. \u003cspan class=\"example-word\">«Не спится»\u003c/span> о состоянии человека, которое от него не зависит. Нельзя добавить \u003cspan class=\"example-word\">«я»\u003c/span>, \u003cspan class=\"example-word\">«ты»\u003c/span>, \u003cspan class=\"example-word\">«он»\u003c/span> как исполнителя, сохранив это построение: не \u003cspan class=\"example-word\">«я не спится»\u003c/span>, а \u003cspan class=\"example-word\">«мне не спится»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Отсутствие слова \u003cspan class=\"example-word\">«я»\u003c/span> или названия человека ещё не делает глагол безличным. В форме \u003cspan class=\"example-word\">«читаю»\u003c/span> исполнитель понятен: читаю я. В \u003cspan class=\"example-word\">«смеркается»\u003c/span> такого исполнителя нет.\u003c/p>\n\u003ch3>Какие формы употребляются\u003c/h3>\u003cp>Безличные глаголы не имеют полного набора форм лица, числа и рода. В настоящем и будущем они употребляются в форме, совпадающей с третьим лицом единственного числа: \u003cspan class=\"example-word\">«смеркается»\u003c/span>, \u003cspan class=\"example-word\">«будет смеркаться»\u003c/span>. В прошедшем в форме среднего рода единственного числа: \u003cspan class=\"example-word\">«смеркалось»\u003c/span>. Это форма слова, а не указание на исполнителя.\u003c/p>\n\u003cp>Личный глагол тоже может употребляться безлично.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Ветер сорвал крышу. Ветром сорвало крышу.\u003c/strong>\u003c/p>\n\u003cp>В первом предложении действие приписано ветру: глагол \u003cspan class=\"example-word\">«сорвал»\u003c/span> согласуется с \u003cspan class=\"example-word\">«ветер»\u003c/span> в мужском роде. Во втором действие представлено без исполнителя; \u003cspan class=\"example-word\">«сорвало»\u003c/span> употреблено безлично и имеет форму среднего рода.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "verb-impersonal-practice"
+      ]
+    },
+    {
+      "id": "verb-analysis",
+      "title": "Как охарактеризовать глагол",
+      "chapter": "verb",
+      "html": "\u003cp>Сначала найдите начальную форму. Затем назовите постоянные признаки глагола и признаки той формы, которая употреблена в предложении.\u003c/p>\n\u003ch3>1. Найдите инфинитив\u003c/h3>\u003cp>Сохраните значение, вид и возвратность.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы прочитаем рассказ.\u003c/strong> Рассмотрим \u003cspan class=\"example-word\">«прочитаем»\u003c/span>: что сделаем? Начальная форма \u003cspan class=\"example-word\">«прочитать»\u003c/span>, вопрос \u003cspan class=\"example-word\">«что сделать?»\u003c/span>.\u003c/p>\n\u003c/div>\u003ch3>2. Назовите постоянные признаки\u003c/h3>\u003cp>Укажите вид, переходность, возвратность и спряжение. Эти признаки сохраняются у разных форм одного глагола.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Прочитать\u003c/strong>: совершенный вид, потому что вопрос \u003cspan class=\"example-word\">«что сделать?»\u003c/span>; переходный, потому что можно \u003cspan class=\"example-word\">«прочитать книгу»\u003c/span>; невозвратный, потому что нет \u003cspan class=\"example-word\">«-ся»\u003c/span>; I спряжение, как \u003cspan class=\"example-word\">«читать»\u003c/span>: \u003cspan class=\"example-word\">«прочитаешь»\u003c/span>, \u003cspan class=\"example-word\">«прочитают»\u003c/span>.\u003c/p>\n\u003c/div>\u003ch3>3. Определите признаки формы\u003c/h3>\u003cp>Начните с наклонения. В изъявительном наклонении определите время и число; в настоящем и будущем лицо, в единственном числе прошедшего времени род. В условном определите число и, если оно единственное, род. У обычных повелительных форм обращения укажите второе лицо и число.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Прочитаем\u003c/strong>: изъявительное наклонение, будущее время, первое лицо, множественное число. Род не определяется.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Читала бы\u003c/strong>: условное наклонение, единственное число, женский род. Времени и лица нет.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Прочитайте\u003c/strong>: повелительное наклонение, второе лицо, множественное число. Времени и рода нет.\u003c/p>\n\u003c/div>\u003cp>У инфинитива указывают только постоянные признаки, а наклонение, время, лицо, число и род не определяют.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Постоянные признаки\u003c/th>\n\u003cth>Непостоянные признаки\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Вид, переходность, возвратность, спряжение\u003c/td>\n\u003ctd>Наклонение; время, лицо, число, род, если они есть у данной формы\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n",
+      "groups": [
+        "verb-analysis-practice"
+      ]
+    },
+    {
+      "id": "verb-check",
+      "title": "Проверка по глаголу",
+      "chapter": "verb",
+      "html": "",
+      "groups": [
+        "verb-check"
       ]
     }
   ],
@@ -7416,6 +7564,2436 @@ window.LESSON_CONTENT = {
           ],
           "explanationHtml": "\u003cp>Дали кому? чему? Получатель выражен личным местоимением в дательном падеже. Форма \u003cspan class=\"example-word\">«ей»\u003c/span> бывает и творительным падежом, но не в этом контексте.\u003c/p>\n",
           "reviewStep": "pronoun-analysis"
+        }
+      ]
+    },
+    "verb-meaning-practice": {
+      "id": "verb-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все глаголы.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Утром",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "дети",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "радостно",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "встретили",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "учителя",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "рассказали",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "новости",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Утром",
+              "role": "adverb"
+            },
+            {
+              "value": "1",
+              "label": "дети",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "радостно",
+              "role": "adverb"
+            },
+            {
+              "value": "3",
+              "label": "встретили",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "учителя",
+              "role": "noun"
+            },
+            {
+              "value": "5",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "6",
+              "label": "рассказали",
+              "role": "verb"
+            },
+            {
+              "value": "7",
+              "label": "новости",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "3",
+            "6"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Встретили»\u003c/span> и \u003cspan class=\"example-word\">«рассказали»\u003c/span> обозначают действия: что сделали? \u003cspan class=\"example-word\">«Утром»\u003c/span> и \u003cspan class=\"example-word\">«радостно»\u003c/span> являются наречиями, остальные самостоятельные слова существительными.\u003c/p>\n"
+        },
+        {
+          "id": "verb-meaning-2",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Наступила тишина. (тишина)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ребёнок тихо говорит. (тихо)",
+              "correct": "2"
+            },
+            {
+              "id": "2",
+              "label": "Ребёнок молчит. (молчит)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Тихий голос слышен из комнаты. (тихий)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Имя существительное"
+            },
+            {
+              "value": "1",
+              "label": "Глагол"
+            },
+            {
+              "value": "2",
+              "label": "Наречие"
+            },
+            {
+              "value": "3",
+              "label": "Имя прилагательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Тишина»\u003c/span> называет состояние как предмет: кто? что? \u003cspan class=\"example-word\">«Молчит»\u003c/span> представляет состояние как происходящее во времени: что делает? \u003cspan class=\"example-word\">«Тихо»\u003c/span> характеризует действие, \u003cspan class=\"example-word\">«тихий»\u003c/span> признак предмета.\u003c/p>\n"
+        },
+        {
+          "id": "verb-meaning-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Ожидание затянулось.\u003c/strong> Выберите верную характеристику слова \u003cspan class=\"example-word\">«ожидание»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Глагол: обозначает действие, отвечает на вопрос «что делает?», имеет настоящее время и третье лицо."
+            },
+            {
+              "value": "1",
+              "label": "Б. Имя существительное: называет действие как предмет, отвечает на вопросы «кто? что?», имеет средний род и падежные формы «ожидания», «ожиданию»."
+            },
+            {
+              "value": "2",
+              "label": "В. Наречие: характеризует длительность действия, отвечает на вопрос «как долго?» и не изменяется."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ожидание»\u003c/span> связано по значению с действием, но устроено как существительное. Глагол здесь \u003cspan class=\"example-word\">«затянулось»\u003c/span>. В варианте А названию действия приписаны признаки глагола; в варианте В оно принято за характеристику длительности.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-infinitive-practice": {
+      "id": "verb-infinitive-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-infinitive-1",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму: \u003cstrong class=\"example-word\">Ребята принесли книги.\u003c/strong> Рассмотрите \u003cspan class=\"example-word\">«принесли»\u003c/span>.",
+          "correct": [
+            "принести"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Принесли»\u003c/span>: что сделали? Начальная форма \u003cspan class=\"example-word\">«принести»\u003c/span>: что сделать? \u003cspan class=\"example-word\">«Нести»\u003c/span> является другим глаголом, несовершенного вида.\u003c/p>\n"
+        },
+        {
+          "id": "verb-infinitive-2",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму: \u003cstrong class=\"example-word\">Ты улыбаешься.\u003c/strong> Рассмотрите \u003cspan class=\"example-word\">«улыбаешься»\u003c/span>.",
+          "correct": [
+            "улыбаться"
+          ],
+          "explanationHtml": "\u003cp>Начальная форма отвечает на вопрос \u003cspan class=\"example-word\">«что делать?»\u003c/span> и сохраняет возвратность: \u003cspan class=\"example-word\">«улыбаться»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-infinitive-3",
+          "type": "tokens",
+          "promptHtml": "Найдите только глаголы в неопределённой форме.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "решили",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "беречь",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "лес",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "не",
+                "role": "particle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "оставлять",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "мусор",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "1",
+              "label": "решили",
+              "role": "verb"
+            },
+            {
+              "value": "2",
+              "label": "беречь",
+              "role": "verb"
+            },
+            {
+              "value": "3",
+              "label": "лес",
+              "role": "noun"
+            },
+            {
+              "value": "4",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "5",
+              "label": "не",
+              "role": "particle"
+            },
+            {
+              "value": "6",
+              "label": "оставлять",
+              "role": "verb"
+            },
+            {
+              "value": "7",
+              "label": "мусор",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "2",
+            "6"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Беречь»\u003c/span> и \u003cspan class=\"example-word\">«оставлять»\u003c/span> отвечают на вопрос \u003cspan class=\"example-word\">«что делать?»\u003c/span>. \u003cspan class=\"example-word\">«Решили»\u003c/span> тоже глагол, но стоит в прошедшем времени.\u003c/p>\n"
+        },
+        {
+          "id": "verb-infinitive-4",
+          "type": "choice",
+          "promptHtml": "Какая характеристика верна для \u003cstrong class=\"example-word\">прочитать\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Инфинитив совершенного вида; время, лицо, число и род не определяются."
+            },
+            {
+              "value": "1",
+              "label": "Б. Изъявительное наклонение, будущее время, третье лицо, единственное число, совершенный вид."
+            },
+            {
+              "value": "2",
+              "label": "В. Инфинитив несовершенного вида; лицо не определяется, но есть будущее время и единственное число."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Прочитать»\u003c/span> отвечает на вопрос \u003cspan class=\"example-word\">«что сделать?»\u003c/span>. Это инфинитив совершенного вида. Само значение завершения не создаёт времени или числа.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-aspect-practice": {
+      "id": "verb-aspect-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-aspect-1",
+          "type": "sort",
+          "promptHtml": "Определите вид глаголов.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "решать",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "решить",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "запеть",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "прыгнуть",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "бегать",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Несовершенный вид"
+            },
+            {
+              "value": "1",
+              "label": "Совершенный вид"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Решать»\u003c/span>, \u003cspan class=\"example-word\">«бегать»\u003c/span>: что делать? \u003cspan class=\"example-word\">«Решить»\u003c/span>, \u003cspan class=\"example-word\">«запеть»\u003c/span>, \u003cspan class=\"example-word\">«прыгнуть»\u003c/span>: что сделать? Совершенный вид может обозначать результат, начало или однократное действие.\u003c/p>\n"
+        },
+        {
+          "id": "verb-aspect-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Завтра я прочитаю рассказ.\u003c/strong> Что верно о \u003cspan class=\"example-word\">«прочитаю»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Несовершенный вид: действие ещё не завершено, поэтому завершённость определить нельзя."
+            },
+            {
+              "value": "1",
+              "label": "Б. Совершенный вид: действие представлено как чтение до результата, хотя оно только предстоит."
+            },
+            {
+              "value": "2",
+              "label": "В. Несовершенный вид: будущее действие всегда обозначает процесс."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Вид показывает, как представлено действие, а не произошло ли оно к моменту речи. Вопрос \u003cspan class=\"example-word\">«что сделаю?»\u003c/span> указывает на совершенный вид.\u003c/p>\n"
+        },
+        {
+          "id": "verb-aspect-3",
+          "type": "input",
+          "promptHtml": "Запишите глагол совершенного вида из видовой пары к \u003cspan class=\"example-word\">«говорить»\u003c/span> в значении сообщения: \u003cstrong class=\"example-word\">говорить правду, _____ правду\u003c/strong>.",
+          "correct": [
+            "сказать"
+          ],
+          "explanationHtml": "\u003cp>Видовая пара \u003cspan class=\"example-word\">«говорить»\u003c/span> и \u003cspan class=\"example-word\">«сказать»\u003c/span>: что делать? и что сделать? Корни у пары могут различаться.\u003c/p>\n"
+        },
+        {
+          "id": "verb-aspect-4",
+          "type": "choice",
+          "promptHtml": "Какое объяснение верно для пары \u003cstrong class=\"example-word\">бежать и бегать\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это видовая пара: «бежать» совершенного вида, «бегать» несовершенного."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это формы одного глагола: первая единственного числа, вторая множественного."
+            },
+            {
+              "value": "2",
+              "label": "В. Это два глагола несовершенного вида: оба отвечают на вопрос «что делать?», но обозначают движение по-разному."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Оба глагола несовершенного вида. \u003cspan class=\"example-word\">«Бежать»\u003c/span> обозначает направленное движение, \u003cspan class=\"example-word\">«бегать»\u003c/span> может обозначать повторяющееся занятие. Различие значений не всегда является различием вида.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-transitive-practice": {
+      "id": "verb-transitive-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-transitive-1",
+          "type": "sort",
+          "promptHtml": "Определите переходность глагола в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "читать письмо (читать)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "помогать другу (помогать)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "встретить сестру (встретить)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "идти по тропинке (идти)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Переходный"
+            },
+            {
+              "value": "1",
+              "label": "Непереходный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Читать письмо»\u003c/span> и \u003cspan class=\"example-word\">«встретить сестру»\u003c/span> содержат винительный падеж без предлога, действие направлено на предмет. \u003cspan class=\"example-word\">«Помогать»\u003c/span> требует дательного падежа, \u003cspan class=\"example-word\">«идти по тропинке»\u003c/span> содержит предлог.\u003c/p>\n"
+        },
+        {
+          "id": "verb-transitive-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Вечером я рисовал.\u003c/strong> Как определить переходность \u003cspan class=\"example-word\">«рисовать»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Непереходный: в предложении нет существительного в винительном падеже."
+            },
+            {
+              "value": "1",
+              "label": "Б. Переходный: можно назвать предмет действия, например «рисовать картину»."
+            },
+            {
+              "value": "2",
+              "label": "В. Непереходный: «вечером» отвечает на вопрос «когда?», а не «кого? что?»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Отсутствие названного предмета не меняет постоянного признака глагола. Можно \u003cspan class=\"example-word\">«рисовать картину»\u003c/span>: винительный падеж без предлога.\u003c/p>\n"
+        },
+        {
+          "id": "verb-transitive-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Я не прочитал книги.\u003c/strong> Что верно о \u003cspan class=\"example-word\">«прочитал»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Глагол непереходный, потому что «книги» имеет родительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Глагол непереходный, потому что отрицание отменяет направленность действия."
+            },
+            {
+              "value": "2",
+              "label": "В. Глагол переходный: при отрицании вместо винительного может употребляться родительный падеж."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Прочитать»\u003c/span> допускает \u003cspan class=\"example-word\">«прочитать книгу»\u003c/span> и остаётся переходным. В сочетании с отрицанием возможен родительный падеж: \u003cspan class=\"example-word\">«не прочитал книги»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-transitive-4",
+          "type": "sort",
+          "promptHtml": "Определите переходность каждого глагола.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "гордиться победой",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "налить воды",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "увидеть его",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "разговаривать с другом",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Переходный"
+            },
+            {
+              "value": "1",
+              "label": "Непереходный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Налить»\u003c/span> переходный: можно \u003cspan class=\"example-word\">«налить воду»\u003c/span>, родительный обозначает часть. \u003cspan class=\"example-word\">«Увидеть его»\u003c/span> содержит винительный без предлога. \u003cspan class=\"example-word\">«Гордиться»\u003c/span> требует творительного падежа, \u003cspan class=\"example-word\">«разговаривать с другом»\u003c/span> предлога \u003cspan class=\"example-word\">«с»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-reflexive-practice": {
+      "id": "verb-reflexive-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-reflexive-1",
+          "type": "sort",
+          "promptHtml": "Определите возвратность глаголов.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "умывал",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "умывалась",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "смеюсь",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "помогаешь",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Невозвратный"
+            },
+            {
+              "value": "1",
+              "label": "Возвратный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В \u003cspan class=\"example-word\">«умывалась»\u003c/span> и \u003cspan class=\"example-word\">«смеюсь»\u003c/span> есть \u003cspan class=\"example-word\">«-сь»\u003c/span>. В \u003cspan class=\"example-word\">«умывал»\u003c/span> и \u003cspan class=\"example-word\">«помогаешь»\u003c/span> нет постфикса \u003cspan class=\"example-word\">«-ся»\u003c/span> или \u003cspan class=\"example-word\">«-сь»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-reflexive-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Ребята смеются.\u003c/strong> Какое объяснение верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Глагол невозвратный: ребята не выполняют действие над собой."
+            },
+            {
+              "value": "1",
+              "label": "Б. Глагол возвратный: есть «-ся», но значение возвратного глагола не обязательно связано с действием на себя."
+            },
+            {
+              "value": "2",
+              "label": "В. Глагол невозвратный: «-ся» является окончанием множественного числа."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Возвратность определяют по наличию \u003cspan class=\"example-word\">«-ся»\u003c/span> или \u003cspan class=\"example-word\">«-сь»\u003c/span>. У \u003cspan class=\"example-word\">«смеяться»\u003c/span> этот постфикс не обозначает действие на самого себя и не является окончанием.\u003c/p>\n"
+        },
+        {
+          "id": "verb-reflexive-3",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью, вставляя \u003cspan class=\"example-word\">«ь»\u003c/span>, если он нужен: \u003cstrong class=\"example-word\">Пора вернут_ся.\u003c/strong>",
+          "correct": [
+            "вернуться"
+          ],
+          "explanationHtml": "\u003cp>Пора что сделать? \u003cspan class=\"example-word\">«Вернуться»\u003c/span> является инфинитивом, в \u003cspan class=\"example-word\">«-ться»\u003c/span> пишется \u003cspan class=\"example-word\">«ь»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-mood-practice": {
+      "id": "verb-mood-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-mood-1",
+          "type": "sort",
+          "promptHtml": "Определите наклонение глагольных форм.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "открыли",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "открыли бы",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "откройте",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "откроем",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Изъявительное"
+            },
+            {
+              "value": "1",
+              "label": "Условное"
+            },
+            {
+              "value": "2",
+              "label": "Повелительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Открыли»\u003c/span> и \u003cspan class=\"example-word\">«откроем»\u003c/span> сообщают о действии. \u003cspan class=\"example-word\">«Открыли бы»\u003c/span> обозначает возможное действие, \u003cspan class=\"example-word\">«откройте»\u003c/span> побуждает к нему.\u003c/p>\n"
+        },
+        {
+          "id": "verb-mood-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Не шумите, пожалуйста.\u003c/strong> Что верно о \u003cspan class=\"example-word\">«шумите»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Изъявительное наклонение: отрицание сообщает, что действие не происходит."
+            },
+            {
+              "value": "1",
+              "label": "Б. Условное наклонение: говорящий хочет, чтобы действие не происходило."
+            },
+            {
+              "value": "2",
+              "label": "В. Повелительное наклонение: говорящий просит не выполнять действие."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Отрицание может сопровождать побуждение. Здесь говорящий не сообщает о тишине и не предполагает её, а просит не шуметь.\u003c/p>\n"
+        },
+        {
+          "id": "verb-mood-3",
+          "type": "input",
+          "promptHtml": "Поставьте \u003cspan class=\"example-word\">«открыть»\u003c/span> в повелительное наклонение для обращения к одному другу: \u003cstrong class=\"example-word\">_____ окно, пожалуйста.\u003c/strong>",
+          "correct": [
+            "открой"
+          ],
+          "explanationHtml": "\u003cp>Форма просьбы к одному собеседнику \u003cspan class=\"example-word\">«открой»\u003c/span>. \u003cspan class=\"example-word\">«Откроешь»\u003c/span> сообщало бы о будущем действии.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-time-practice": {
+      "id": "verb-time-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-time-1",
+          "type": "sort",
+          "promptHtml": "Определите время форм изъявительного наклонения.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "решала",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "решает",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "решит",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "будет решать",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Прошедшее"
+            },
+            {
+              "value": "1",
+              "label": "Настоящее"
+            },
+            {
+              "value": "2",
+              "label": "Будущее"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Решала»\u003c/span> обозначает прошлое, \u003cspan class=\"example-word\">«решает»\u003c/span> настоящее. \u003cspan class=\"example-word\">«Решит»\u003c/span> и \u003cspan class=\"example-word\">«будет решать»\u003c/span> обе формы будущего, но разного вида.\u003c/p>\n"
+        },
+        {
+          "id": "verb-time-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Мы построим дом.\u003c/strong> Какое объяснение верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Построим» настоящее время, потому что в форме нет слова «будем»."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Построим» простое будущее совершенного вида; вопрос «что сделаем?»."
+            },
+            {
+              "value": "2",
+              "label": "В. «Построим» составное будущее несовершенного вида; начальная форма «строить»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Построим»\u003c/span> является формой глагола \u003cspan class=\"example-word\">«построить»\u003c/span>, совершенного вида. Простое будущее состоит из одного слова.\u003c/p>\n"
+        },
+        {
+          "id": "verb-time-3",
+          "type": "tokens",
+          "promptHtml": "Выберите оба слова, которые вместе образуют составное будущее время.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Завтра",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "будем",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "читать",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "новый",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "рассказ",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Завтра",
+              "role": "adverb"
+            },
+            {
+              "value": "1",
+              "label": "мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "2",
+              "label": "будем",
+              "role": "verb"
+            },
+            {
+              "value": "3",
+              "label": "читать",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "новый",
+              "role": "adjective"
+            },
+            {
+              "value": "5",
+              "label": "рассказ",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "2",
+            "3"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Будем читать»\u003c/span> одна форма будущего времени глагола \u003cspan class=\"example-word\">«читать»\u003c/span>. \u003cspan class=\"example-word\">«Завтра»\u003c/span> указывает на время действия, но не входит в глагольную форму.\u003c/p>\n"
+        },
+        {
+          "id": "verb-time-4",
+          "type": "choice",
+          "promptHtml": "Почему у глагола \u003cstrong class=\"example-word\">решить\u003c/strong> нет настоящего времени?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Совершенный вид представляет действие с границей или результатом; «решит» отвечает на вопрос «что сделает?» и обозначает будущее."
+            },
+            {
+              "value": "1",
+              "label": "Б. Глагол относится ко II спряжению, поэтому у него есть только прошедшее и будущее время."
+            },
+            {
+              "value": "2",
+              "label": "В. В инфинитиве нет указания на исполнителя, поэтому настоящее время нельзя образовать ни от одного инфинитива."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Отсутствие настоящего времени связано с совершенным видом, а не со спряжением или устройством инфинитива. \u003cspan class=\"example-word\">«Решать»\u003c/span> несовершенного вида имеет настоящее \u003cspan class=\"example-word\">«решает»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-past-practice": {
+      "id": "verb-past-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-past-1",
+          "type": "sort",
+          "promptHtml": "Определите род и число форм прошедшего времени.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "дождь закончился (закончился)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "гроза закончилась (закончилась)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "собрание закончилось (закончилось)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "уроки закончились (закончились)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Мужской род, единственное число"
+            },
+            {
+              "value": "1",
+              "label": "Женский род, единственное число"
+            },
+            {
+              "value": "2",
+              "label": "Средний род, единственное число"
+            },
+            {
+              "value": "3",
+              "label": "Множественное число, рода нет"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В единственном числе форма согласуется с названием предмета в роде. Во множественном числе род глагола не определяется.\u003c/p>\n"
+        },
+        {
+          "id": "verb-past-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Я несла рюкзак.\u003c/strong> Какие признаки есть у \u003cspan class=\"example-word\">«несла»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Прошедшее время, женский род, единственное число; лицо не определяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Прошедшее время, первое лицо, единственное число; род не определяется."
+            },
+            {
+              "value": "2",
+              "label": "В. Настоящее время, третье лицо, единственное число, женский род."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Форма \u003cspan class=\"example-word\">«несла»\u003c/span> изменяется по роду и числу: \u003cspan class=\"example-word\">«нёс»\u003c/span>, \u003cspan class=\"example-word\">«несло»\u003c/span>, \u003cspan class=\"example-word\">«несли»\u003c/span>. Лица в прошедшем времени нет, даже рядом с \u003cspan class=\"example-word\">«я»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-past-3",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Снег та_л.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«таять»\u003c/span>.",
+          "correct": [
+            "таял"
+          ],
+          "explanationHtml": "\u003cp>Перед \u003cspan class=\"example-word\">«-л-»\u003c/span> сохраняется \u003cspan class=\"example-word\">«я»\u003c/span>, как перед \u003cspan class=\"example-word\">«-ть»\u003c/span> в \u003cspan class=\"example-word\">«таять»\u003c/span>: \u003cspan class=\"example-word\">«таял»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-person-practice": {
+      "id": "verb-person-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-person-1",
+          "type": "sort",
+          "promptHtml": "Определите лицо глаголов.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "расскажу",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "расскажете",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "ребята расскажут (расскажут)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "рассказываем",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Первое"
+            },
+            {
+              "value": "1",
+              "label": "Второе"
+            },
+            {
+              "value": "2",
+              "label": "Третье"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Расскажу»\u003c/span> сочетается с \u003cspan class=\"example-word\">«я»\u003c/span>, \u003cspan class=\"example-word\">«рассказываем»\u003c/span> с \u003cspan class=\"example-word\">«мы»\u003c/span>, \u003cspan class=\"example-word\">«расскажете»\u003c/span> с \u003cspan class=\"example-word\">«вы»\u003c/span>. \u003cspan class=\"example-word\">«Ребята расскажут»\u003c/span> соответствует \u003cspan class=\"example-word\">«они расскажут»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-person-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Читаешь интересную книгу?\u003c/strong> Выберите верную характеристику \u003cspan class=\"example-word\">«читаешь»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Третье лицо, единственное число: местоимение «ты» в предложении не названо."
+            },
+            {
+              "value": "1",
+              "label": "Б. Второе лицо, единственное число: окончание указывает на собеседника даже без «ты»."
+            },
+            {
+              "value": "2",
+              "label": "В. Второе лицо, множественное число: вопросительное предложение обращено к читателям."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Окончание \u003cspan class=\"example-word\">«-ешь»\u003c/span> указывает на второго участника речи в единственном числе. Отсутствие местоимения не меняет признаков формы.\u003c/p>\n"
+        },
+        {
+          "id": "verb-person-3",
+          "type": "input",
+          "promptHtml": "Запишите форму второго лица единственного числа от \u003cspan class=\"example-word\">«учиться»\u003c/span>: \u003cstrong class=\"example-word\">Ты _____ в нашей школе.\u003c/strong>",
+          "correct": [
+            "учишься"
+          ],
+          "explanationHtml": "\u003cp>Форма \u003cspan class=\"example-word\">«учишься»\u003c/span>: второе лицо, единственное число. После \u003cspan class=\"example-word\">«ш»\u003c/span> перед \u003cspan class=\"example-word\">«-ся»\u003c/span> сохраняется \u003cspan class=\"example-word\">«ь»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-conjugation-practice": {
+      "id": "verb-conjugation-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-conjugation-1",
+          "type": "sort",
+          "promptHtml": "Определите спряжение по личным окончаниям.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "читаешь, читают",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "говоришь, говорят",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "хочешь, хотят",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "дашь, дадут",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "I спряжение"
+            },
+            {
+              "value": "1",
+              "label": "II спряжение"
+            },
+            {
+              "value": "2",
+              "label": "Разноспрягаемый"
+            },
+            {
+              "value": "3",
+              "label": "Особое спряжение"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Читать»\u003c/span> имеет окончания I, \u003cspan class=\"example-word\">«говорить»\u003c/span> II спряжения. \u003cspan class=\"example-word\">«Хотеть»\u003c/span> разноспрягаемый: единственное число по I, множественное по II. \u003cspan class=\"example-word\">«Дать»\u003c/span> имеет особую систему окончаний.\u003c/p>\n"
+        },
+        {
+          "id": "verb-conjugation-2",
+          "type": "choice",
+          "promptHtml": "Даны формы \u003cstrong class=\"example-word\">рисую и строю\u003c/strong>. Можно ли определить спряжение только по \u003cspan class=\"example-word\">«-ю»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Да: обе формы относятся к I спряжению, потому что имеют одинаковое окончание."
+            },
+            {
+              "value": "1",
+              "label": "Б. Да: обе формы относятся ко II спряжению, потому что оканчиваются на «-ю»."
+            },
+            {
+              "value": "2",
+              "label": "В. Нет: «-ю» есть в обоих спряжениях; помогут формы «рисуешь», «рисуют» и «строишь», «строят»."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Окончания первого лица единственного числа совпадают. \u003cspan class=\"example-word\">«Рисовать»\u003c/span> I спряжения, \u003cspan class=\"example-word\">«строить»\u003c/span> II.\u003c/p>\n"
+        },
+        {
+          "id": "verb-conjugation-3",
+          "type": "input",
+          "promptHtml": "Запишите форму третьего лица множественного числа: \u003cstrong class=\"example-word\">Они _____ домой.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«бежать»\u003c/span>.",
+          "correct": [
+            "бегут"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Бежать»\u003c/span> разноспрягаемый. Во многих формах окончания II спряжения, но в \u003cspan class=\"example-word\">«бегут»\u003c/span> окончание \u003cspan class=\"example-word\">«-ут»\u003c/span> I спряжения.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-endings-practice": {
+      "id": "verb-endings-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-endings-1",
+          "type": "sort",
+          "promptHtml": "Определите спряжение. У первых двух глаголов личные окончания ударные.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "спать: спишь, спят",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "пить: пьёшь, пьют",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "видеть",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "стелить",
+              "correct": "0"
+            },
+            {
+              "id": "4",
+              "label": "клеить",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "I спряжение"
+            },
+            {
+              "value": "1",
+              "label": "II спряжение"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Спать»\u003c/span> II спряжения, \u003cspan class=\"example-word\">«пить»\u003c/span> I: проверяем ударные окончания. \u003cspan class=\"example-word\">«Видеть»\u003c/span> исключение II, \u003cspan class=\"example-word\">«стелить»\u003c/span> исключение I, \u003cspan class=\"example-word\">«клеить»\u003c/span> обычный глагол на \u003cspan class=\"example-word\">«-ить»\u003c/span> II спряжения.\u003c/p>\n"
+        },
+        {
+          "id": "verb-endings-2",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Ты кле_шь конверт.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«клеить»\u003c/span>.",
+          "correct": [
+            "клеишь"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Клеить»\u003c/span> на \u003cspan class=\"example-word\">«-ить»\u003c/span>, II спряжение. Во втором лице единственного числа окончание \u003cspan class=\"example-word\">«-ишь»\u003c/span>: \u003cspan class=\"example-word\">«клеишь»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-endings-3",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Они бор_тся за победу.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«бороться»\u003c/span>.",
+          "correct": [
+            "борются"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Бороться»\u003c/span> I спряжения. В третьем лице множественного числа окончание \u003cspan class=\"example-word\">«-ют»\u003c/span>: \u003cspan class=\"example-word\">«борются»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-endings-4",
+          "type": "choice",
+          "promptHtml": "Как верно проверить окончание \u003cstrong class=\"example-word\">выпь_шь\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. По «выпить»: инфинитив на «-ить», значит, нужно окончание II спряжения «-ишь»."
+            },
+            {
+              "value": "1",
+              "label": "Б. По «пьёшь»: без приставки «вы-» окончание ударное; «выпьешь» сохраняет I спряжение."
+            },
+            {
+              "value": "2",
+              "label": "В. По «выпьешь»: приставка «вы-» переводит любой глагол в I спряжение."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Приставка \u003cspan class=\"example-word\">«вы-»\u003c/span> меняет место ударения, но не спряжение. В исходном \u003cspan class=\"example-word\">«пьёшь»\u003c/span> ударное окончание I спряжения. Пишем \u003cspan class=\"example-word\">«выпьешь»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-endings-5",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Результат завис_т от подготовки.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«зависеть»\u003c/span>.",
+          "correct": [
+            "зависит"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Зависеть»\u003c/span> одно из семи исключений на \u003cspan class=\"example-word\">«-еть»\u003c/span>, II спряжение. В третьем лице единственного числа окончание \u003cspan class=\"example-word\">«-ит»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-conditional-practice": {
+      "id": "verb-conditional-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-conditional-1",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Завтра я поехала бы с вами.\u003c/strong> Какие признаки имеет \u003cspan class=\"example-word\">«поехала бы»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Изъявительное наклонение, будущее время, первое лицо, единственное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Условное наклонение, прошедшее время, женский род, единственное число."
+            },
+            {
+              "value": "2",
+              "label": "В. Условное наклонение, женский род, единственное число; время и лицо не определяются."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Слово \u003cspan class=\"example-word\">«завтра»\u003c/span> указывает на предполагаемый момент поездки, но не создаёт времени у условной формы. \u003cspan class=\"example-word\">«Поехала бы»\u003c/span> имеет женский род и единственное число.\u003c/p>\n"
+        },
+        {
+          "id": "verb-conditional-2",
+          "type": "input",
+          "promptHtml": "Запишите два слова в нужной форме условного наклонения: \u003cstrong class=\"example-word\">Если бы было теплее, дети _____ во дворе.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«играть»\u003c/span>.",
+          "correct": [
+            "играли бы"
+          ],
+          "explanationHtml": "\u003cp>Нужна форма множественного числа \u003cspan class=\"example-word\">«играли бы»\u003c/span>. Частица пишется отдельно; времени и рода у этой формы нет.\u003c/p>\n"
+        },
+        {
+          "id": "verb-conditional-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Я бы эту задачу решил.\u003c/strong> Что верно о глагольной форме?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Решил» прошедшее время, потому что частица «бы» отделена от него другими словами."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Решил бы» условное наклонение: частица может стоять не рядом с глаголом."
+            },
+            {
+              "value": "2",
+              "label": "В. «Решил» повелительное наклонение: частица «бы» всегда выражает просьбу."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Частица \u003cspan class=\"example-word\">«бы»\u003c/span> участвует в образовании условной формы независимо от своего места: \u003cspan class=\"example-word\">«я бы решил»\u003c/span> и \u003cspan class=\"example-word\">«я решил бы»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-imperative-practice": {
+      "id": "verb-imperative-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-imperative-1",
+          "type": "input",
+          "promptHtml": "Запишите нормативную форму для обращения к одному другу: \u003cstrong class=\"example-word\">_____ книгу на стол.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«положить»\u003c/span>.",
+          "correct": [
+            "положи"
+          ],
+          "explanationHtml": "\u003cp>Нормативная форма \u003cspan class=\"example-word\">«положи»\u003c/span>. Она сохраняет совершенный вид глагола \u003cspan class=\"example-word\">«положить»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-imperative-2",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Встан_те, пожалуйста.\u003c/strong>",
+          "correct": [
+            "встаньте"
+          ],
+          "explanationHtml": "\u003cp>Мягкий знак в \u003cspan class=\"example-word\">«встань»\u003c/span> сохраняется перед \u003cspan class=\"example-word\">«-те»\u003c/span>: \u003cspan class=\"example-word\">«встаньте»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "verb-imperative-3",
+          "type": "sort",
+          "promptHtml": "Определите наклонение слова в скобках по предложению.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Вы пишете письмо. (пишете)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Пишите разборчиво. (пишите)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Вы дышите спокойно. (дышите)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Дышите глубже! (дышите)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Изъявительное"
+            },
+            {
+              "value": "1",
+              "label": "Повелительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Сообщение \u003cspan class=\"example-word\">«вы пишете»\u003c/span> содержит \u003cspan class=\"example-word\">«-ете»\u003c/span>, совет \u003cspan class=\"example-word\">«пишите»\u003c/span> пишется с \u003cspan class=\"example-word\">«-ите»\u003c/span>. У \u003cspan class=\"example-word\">«дышите»\u003c/span> II спряжения написание совпадает, но наклонение различается по смыслу.\u003c/p>\n"
+        },
+        {
+          "id": "verb-imperative-4",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Прочитай письмо завтра.\u003c/strong> Что верно о \u003cspan class=\"example-word\">«прочитай»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Повелительное наклонение, второе лицо, единственное число; времени нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. Изъявительное наклонение, будущее время, второе лицо, единственное число."
+            },
+            {
+              "value": "2",
+              "label": "В. Повелительное наклонение, будущее время, третье лицо, единственное число."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Прочитай»\u003c/span> побуждает собеседника к действию. \u003cspan class=\"example-word\">«Завтра»\u003c/span> уточняет, когда выполнить просьбу, но время у повелительной формы не определяется.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-impersonal-practice": {
+      "id": "verb-impersonal-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-impersonal-1",
+          "type": "choice",
+          "promptHtml": "В каком предложении глагол употреблён безлично?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Читаю до позднего вечера."
+            },
+            {
+              "value": "1",
+              "label": "Б. За окном смеркается."
+            },
+            {
+              "value": "2",
+              "label": "В. Ребята вернутся вечером."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Смеркается»\u003c/span> обозначает состояние природы без исполнителя. В варианте А исполнитель \u003cspan class=\"example-word\">«я»\u003c/span> понятен по форме \u003cspan class=\"example-word\">«читаю»\u003c/span>, даже без местоимения. В варианте В действуют ребята.\u003c/p>\n"
+        },
+        {
+          "id": "verb-impersonal-2",
+          "type": "sort",
+          "promptHtml": "Определите употребление глагола в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ветер сорвал крышу. (сорвал)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ветром сорвало крышу. (сорвало)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Я не сплю. (сплю)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Мне не спится. (спится)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Личное"
+            },
+            {
+              "value": "1",
+              "label": "Безличное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В \u003cspan class=\"example-word\">«ветер сорвал»\u003c/span> действие приписано ветру, в \u003cspan class=\"example-word\">«я не сплю»\u003c/span> говорящему. \u003cspan class=\"example-word\">«Ветром сорвало»\u003c/span> и \u003cspan class=\"example-word\">«мне не спится»\u003c/span> представляют действие или состояние без действующего лица.\u003c/p>\n"
+        },
+        {
+          "id": "verb-impersonal-3",
+          "type": "input",
+          "promptHtml": "Запишите \u003cspan class=\"example-word\">«смеркаться»\u003c/span> в прошедшем времени: \u003cstrong class=\"example-word\">За окном уже _____.\u003c/strong>",
+          "correct": [
+            "смеркалось"
+          ],
+          "explanationHtml": "\u003cp>Безличное \u003cspan class=\"example-word\">«смеркаться»\u003c/span> в прошедшем времени употребляется в форме среднего рода единственного числа: \u003cspan class=\"example-word\">«смеркалось»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-analysis-practice": {
+      "id": "verb-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "verb-analysis-1",
+          "type": "choice",
+          "promptHtml": "Мы \u003cstrong class=\"example-word\">прочитаем\u003c/strong> рассказ. Выберите верную характеристику.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «читать»; несовершенный вид, переходный, невозвратный, I спряжение; настоящее время, первое лицо, множественное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Начальная форма «прочитать»; совершенный вид, переходный, невозвратный, I спряжение; изъявительное наклонение, будущее время, первое лицо, множественное число."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «прочитать»; совершенный вид, переходный, невозвратный, II спряжение; повелительное наклонение, второе лицо, множественное число."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Вопрос \u003cspan class=\"example-word\">«что сделаем?»\u003c/span> указывает на \u003cspan class=\"example-word\">«прочитать»\u003c/span>, совершенный вид и будущее время. \u003cspan class=\"example-word\">«Прочитать книгу»\u003c/span> подтверждает переходность, \u003cspan class=\"example-word\">«-ся»\u003c/span> нет. Окончания \u003cspan class=\"example-word\">«прочитаешь»\u003c/span>, \u003cspan class=\"example-word\">«прочитают»\u003c/span> показывают I спряжение. \u003cspan class=\"example-word\">«Мы»\u003c/span> соответствует первому лицу множественного числа.\u003c/p>\n"
+        },
+        {
+          "id": "verb-analysis-2",
+          "type": "choice",
+          "promptHtml": "Она \u003cstrong class=\"example-word\">читала бы\u003c/strong> эту книгу. Выберите верную характеристику формы.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Условное наклонение, женский род, единственное число; времени и лица нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. Изъявительное наклонение, прошедшее время, женский род, единственное число, третье лицо."
+            },
+            {
+              "value": "2",
+              "label": "В. Условное наклонение, прошедшее время, женский род, единственное число, третье лицо."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Частица \u003cspan class=\"example-word\">«бы»\u003c/span> образует условное наклонение. Форма \u003cspan class=\"example-word\">«читала бы»\u003c/span> имеет род и число, но не время и не лицо.\u003c/p>\n"
+        },
+        {
+          "id": "verb-analysis-3",
+          "type": "sort",
+          "promptHtml": "Разделите признаки глагола на постоянные и непостоянные.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "вид",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "переходность",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "возвратность",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "спряжение",
+              "correct": "0"
+            },
+            {
+              "id": "4",
+              "label": "наклонение",
+              "correct": "1"
+            },
+            {
+              "id": "5",
+              "label": "время",
+              "correct": "1"
+            },
+            {
+              "id": "6",
+              "label": "лицо",
+              "correct": "1"
+            },
+            {
+              "id": "7",
+              "label": "число",
+              "correct": "1"
+            },
+            {
+              "id": "8",
+              "label": "род",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Постоянный"
+            },
+            {
+              "value": "1",
+              "label": "Непостоянный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Вид, переходность, возвратность и спряжение характеризуют глагол как слово. Наклонение, время, лицо, число и род относятся к конкретной форме, если у неё есть эти признаки.\u003c/p>\n"
+        }
+      ]
+    },
+    "verb-check": {
+      "id": "verb-check",
+      "title": "Проверка по глаголу",
+      "assessment": "verb-check",
+      "questions": [
+        {
+          "id": "verb-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все глаголы, включая неопределённую форму.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "После",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "дождя",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "ребята",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "вышли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "во",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "двор",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "стали",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "8",
+                "label": "играть",
+                "role": "verb"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "После",
+              "role": "preposition"
+            },
+            {
+              "value": "1",
+              "label": "дождя",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "ребята",
+              "role": "noun"
+            },
+            {
+              "value": "3",
+              "label": "вышли",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "во",
+              "role": "preposition"
+            },
+            {
+              "value": "5",
+              "label": "двор",
+              "role": "noun"
+            },
+            {
+              "value": "6",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "7",
+              "label": "стали",
+              "role": "verb"
+            },
+            {
+              "value": "8",
+              "label": "играть",
+              "role": "verb"
+            }
+          ],
+          "correct": [
+            "3",
+            "7",
+            "8"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вышли»\u003c/span>, \u003cspan class=\"example-word\">«стали»\u003c/span> формы прошедшего времени, \u003cspan class=\"example-word\">«играть»\u003c/span> инфинитив. \u003cspan class=\"example-word\">«Дождя»\u003c/span>, \u003cspan class=\"example-word\">«ребята»\u003c/span>, \u003cspan class=\"example-word\">«двор»\u003c/span> существительные, \u003cspan class=\"example-word\">«после»\u003c/span>, \u003cspan class=\"example-word\">«во»\u003c/span> предлоги, \u003cspan class=\"example-word\">«и»\u003c/span> союз.\u003c/p>\n",
+          "reviewStep": "verb-meaning"
+        },
+        {
+          "id": "verb-check-2",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ученик отвечает. (отвечает)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ответ был точным. (ответ)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он ответил точно. (точно)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Точный ответ записан. (точный)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Глагол"
+            },
+            {
+              "value": "1",
+              "label": "Имя существительное"
+            },
+            {
+              "value": "2",
+              "label": "Наречие"
+            },
+            {
+              "value": "3",
+              "label": "Имя прилагательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Отвечает»\u003c/span> действие во времени, \u003cspan class=\"example-word\">«ответ»\u003c/span> его название как предмет. \u003cspan class=\"example-word\">«Точно»\u003c/span> характеризует действие, \u003cspan class=\"example-word\">«точный»\u003c/span> признак предмета.\u003c/p>\n",
+          "reviewStep": "verb-meaning"
+        },
+        {
+          "id": "verb-check-3",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму: \u003cstrong class=\"example-word\">Мы вернулись домой.\u003c/strong> Рассмотрите \u003cspan class=\"example-word\">«вернулись»\u003c/span>.",
+          "correct": [
+            "вернуться"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вернулись»\u003c/span>: что сделали? Начальная форма \u003cspan class=\"example-word\">«вернуться»\u003c/span>, вопрос \u003cspan class=\"example-word\">«что сделать?»\u003c/span>. Вид, приставка и возвратность сохраняются.\u003c/p>\n",
+          "reviewStep": "verb-infinitive"
+        },
+        {
+          "id": "verb-check-4",
+          "type": "choice",
+          "promptHtml": "Выберите верную характеристику \u003cstrong class=\"example-word\">беречь\u003c/strong>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Глагол, инфинитив несовершенного вида; переходный, невозвратный; время, лицо, число и род не определяются."
+            },
+            {
+              "value": "1",
+              "label": "Б. Глагол, изъявительное наклонение, настоящее время, третье лицо; несовершенный вид, невозвратный."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя существительное: называет действие как предмет, имеет женский род и нулевое окончание."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Вопрос \u003cspan class=\"example-word\">«что делать?»\u003c/span> указывает на инфинитив. Можно \u003cspan class=\"example-word\">«беречь книгу»\u003c/span>, поэтому глагол переходный; \u003cspan class=\"example-word\">«-ся»\u003c/span> нет. Окончание на \u003cspan class=\"example-word\">«чь»\u003c/span> не делает слово существительным.\u003c/p>\n",
+          "reviewStep": "verb-infinitive"
+        },
+        {
+          "id": "verb-check-5",
+          "type": "sort",
+          "promptHtml": "Определите вид глаголов.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "буду объяснять",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "объясню",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "говорили",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "сказали",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "запели",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Несовершенный вид"
+            },
+            {
+              "value": "1",
+              "label": "Совершенный вид"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Объяснять»\u003c/span>, \u003cspan class=\"example-word\">«говорить»\u003c/span>: что делать? \u003cspan class=\"example-word\">«Объяснить»\u003c/span>, \u003cspan class=\"example-word\">«сказать»\u003c/span>, \u003cspan class=\"example-word\">«запеть»\u003c/span>: что сделать? Вид сохраняется в форме будущего или прошедшего времени.\u003c/p>\n",
+          "reviewStep": "verb-aspect"
+        },
+        {
+          "id": "verb-check-6",
+          "type": "choice",
+          "promptHtml": "Какая пара является видовой?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Бежать и бегать: направленное движение и повторение."
+            },
+            {
+              "value": "1",
+              "label": "Б. Решать и решить: одно основное действие, вопросы «что делать?» и «что сделать?»."
+            },
+            {
+              "value": "2",
+              "label": "В. Читать и читали: действие сейчас и в прошлом."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Решать»\u003c/span> и \u003cspan class=\"example-word\">«решить»\u003c/span> видовая пара. В варианте А оба глагола несовершенного вида. В варианте В представлены инфинитив и прошедшее время одного глагола, а не разных видов.\u003c/p>\n",
+          "reviewStep": "verb-aspect"
+        },
+        {
+          "id": "verb-check-7",
+          "type": "sort",
+          "promptHtml": "Определите переходность глаголов.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "обсуждать задачу",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "помогать ученику",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "налить воды",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "идти к школе",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Переходный"
+            },
+            {
+              "value": "1",
+              "label": "Непереходный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Обсуждать»\u003c/span> и \u003cspan class=\"example-word\">«налить»\u003c/span> допускают предмет действия в винительном падеже без предлога: \u003cspan class=\"example-word\">«задачу»\u003c/span>, \u003cspan class=\"example-word\">«воду»\u003c/span>. \u003cspan class=\"example-word\">«Помогать»\u003c/span> требует дательного падежа, \u003cspan class=\"example-word\">«идти к школе»\u003c/span> содержит предлог.\u003c/p>\n",
+          "reviewStep": "verb-transitive"
+        },
+        {
+          "id": "verb-check-8",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Сегодня я писал.\u003c/strong> Почему \u003cspan class=\"example-word\">«писать»\u003c/span> переходный?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. У глагола можно назвать предмет действия: «писать письмо»; отсутствие этого слова не меняет переходности."
+            },
+            {
+              "value": "1",
+              "label": "Б. У глагола есть форма прошедшего времени; все такие формы переходные."
+            },
+            {
+              "value": "2",
+              "label": "В. В предложении есть слово «сегодня» без предлога; этого достаточно для переходности."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Переходность зависит от возможности сочетания с предметом действия в винительном падеже без предлога, а не от времени или наличия наречия.\u003c/p>\n",
+          "reviewStep": "verb-transitive"
+        },
+        {
+          "id": "verb-check-9",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Они вернут_ся к вечеру.\u003c/strong>",
+          "correct": [
+            "вернутся"
+          ],
+          "explanationHtml": "\u003cp>Что сделают? \u003cspan class=\"example-word\">«Вернутся»\u003c/span> личная форма будущего времени, третье лицо множественного числа. В \u003cspan class=\"example-word\">«-тся»\u003c/span> мягкого знака нет.\u003c/p>\n",
+          "reviewStep": "verb-reflexive"
+        },
+        {
+          "id": "verb-check-10",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Дом строится.\u003c/strong> Что верно о \u003cspan class=\"example-word\">«строится»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Невозвратный: дом не выполняет действие над собой."
+            },
+            {
+              "value": "1",
+              "label": "Б. Возвратный: «-ся» входит в слово, но здесь действие совершается над домом."
+            },
+            {
+              "value": "2",
+              "label": "В. Возвратный: любое «-ся» означает, что предмет сам выполняет действие над собой."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Постфикс \u003cspan class=\"example-word\">«-ся»\u003c/span> делает глагол возвратным. В этом предложении он представляет дом как предмет, над которым совершается действие.\u003c/p>\n",
+          "reviewStep": "verb-reflexive"
+        },
+        {
+          "id": "verb-check-11",
+          "type": "sort",
+          "promptHtml": "Определите наклонение.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "запишешь",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "записал бы",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "запиши",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "не записывайте",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Изъявительное"
+            },
+            {
+              "value": "1",
+              "label": "Условное"
+            },
+            {
+              "value": "2",
+              "label": "Повелительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Запишешь»\u003c/span> сообщает о будущем, \u003cspan class=\"example-word\">«записал бы»\u003c/span> предполагает действие, \u003cspan class=\"example-word\">«запиши»\u003c/span> и \u003cspan class=\"example-word\">«не записывайте»\u003c/span> побуждают к действию или его прекращению.\u003c/p>\n",
+          "reviewStep": "verb-mood"
+        },
+        {
+          "id": "verb-check-12",
+          "type": "sort",
+          "promptHtml": "Определите время форм изъявительного наклонения.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "пишет",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "напишет",
+              "correct": "2"
+            },
+            {
+              "id": "2",
+              "label": "будет писать",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "написала",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Прошедшее"
+            },
+            {
+              "value": "1",
+              "label": "Настоящее"
+            },
+            {
+              "value": "2",
+              "label": "Будущее"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пишет»\u003c/span> настоящее. \u003cspan class=\"example-word\">«Напишет»\u003c/span> простое будущее совершенного вида, \u003cspan class=\"example-word\">«будет писать»\u003c/span> составное будущее несовершенного вида. \u003cspan class=\"example-word\">«Написала»\u003c/span> прошедшее.\u003c/p>\n",
+          "reviewStep": "verb-time"
+        },
+        {
+          "id": "verb-check-13",
+          "type": "input",
+          "promptHtml": "Запишите оба слова составного будущего времени от \u003cspan class=\"example-word\">«решать»\u003c/span>: \u003cstrong class=\"example-word\">Мы завтра _____ задачи.\u003c/strong>",
+          "correct": [
+            "будем решать"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Мы»\u003c/span> требует первого лица множественного числа: \u003cspan class=\"example-word\">«будем решать»\u003c/span>. \u003cspan class=\"example-word\">«Решим»\u003c/span> было бы формой другого глагола, \u003cspan class=\"example-word\">«решить»\u003c/span>, совершенного вида.\u003c/p>\n",
+          "reviewStep": "verb-time"
+        },
+        {
+          "id": "verb-check-14",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Вы читали рассказ.\u003c/strong> Какие признаки есть у \u003cspan class=\"example-word\">«читали»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Изъявительное наклонение, прошедшее время, второе лицо, множественное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Изъявительное наклонение, прошедшее время, мужской род, множественное число."
+            },
+            {
+              "value": "2",
+              "label": "В. Изъявительное наклонение, прошедшее время, множественное число; лицо и род не определяются."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Прошедшее время не имеет лица. Во множественном числе нет и рода. Местоимение \u003cspan class=\"example-word\">«вы»\u003c/span> не добавляет глаголу признака второго лица.\u003c/p>\n",
+          "reviewStep": "verb-past"
+        },
+        {
+          "id": "verb-check-15",
+          "type": "sort",
+          "promptHtml": "Определите лицо и число.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "проверю",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "проверите",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "ребята проверят (проверят)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "проверяем",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Первое лицо, единственное число"
+            },
+            {
+              "value": "1",
+              "label": "Второе лицо, множественное число"
+            },
+            {
+              "value": "2",
+              "label": "Третье лицо, множественное число"
+            },
+            {
+              "value": "3",
+              "label": "Первое лицо, множественное число"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Формы соответствуют местоимениям \u003cspan class=\"example-word\">«я»\u003c/span>, \u003cspan class=\"example-word\">«вы»\u003c/span>, \u003cspan class=\"example-word\">«они»\u003c/span>, \u003cspan class=\"example-word\">«мы»\u003c/span>. Лицо и число можно узнать и без самого местоимения.\u003c/p>\n",
+          "reviewStep": "verb-person"
+        },
+        {
+          "id": "verb-check-16",
+          "type": "sort",
+          "promptHtml": "Определите спряжение.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "читать",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "видеть",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "хотеть",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "дать",
+              "correct": "3"
+            },
+            {
+              "id": "4",
+              "label": "брить",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "I спряжение"
+            },
+            {
+              "value": "1",
+              "label": "II спряжение"
+            },
+            {
+              "value": "2",
+              "label": "Разноспрягаемый"
+            },
+            {
+              "value": "3",
+              "label": "Особое спряжение"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Читать»\u003c/span> и исключение \u003cspan class=\"example-word\">«брить»\u003c/span> I спряжения; \u003cspan class=\"example-word\">«видеть»\u003c/span> исключение II. \u003cspan class=\"example-word\">«Хотеть»\u003c/span> разноспрягаемый, \u003cspan class=\"example-word\">«дать»\u003c/span> имеет особое спряжение.\u003c/p>\n",
+          "reviewStep": "verb-conjugation"
+        },
+        {
+          "id": "verb-check-17",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Они стел_т постель.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«стелить»\u003c/span>.",
+          "correct": [
+            "стелют"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Стелить»\u003c/span> исключение из глаголов на \u003cspan class=\"example-word\">«-ить»\u003c/span>, относится к I спряжению. Третье лицо множественного числа: \u003cspan class=\"example-word\">«стелют»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "verb-endings"
+        },
+        {
+          "id": "verb-check-18",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Ты увид_шь море.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«увидеть»\u003c/span>.",
+          "correct": [
+            "увидишь"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Увидеть»\u003c/span> сохраняет II спряжение исключения \u003cspan class=\"example-word\">«видеть»\u003c/span>. Второе лицо единственного числа имеет окончание \u003cspan class=\"example-word\">«-ишь»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "verb-endings"
+        },
+        {
+          "id": "verb-check-19",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Он наде_лся на помощь.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«надеяться»\u003c/span>.",
+          "correct": [
+            "надеялся"
+          ],
+          "explanationHtml": "\u003cp>В прошедшем времени перед \u003cspan class=\"example-word\">«-л-»\u003c/span> сохраняется \u003cspan class=\"example-word\">«я»\u003c/span>, как перед \u003cspan class=\"example-word\">«-ть»\u003c/span> в \u003cspan class=\"example-word\">«надеяться»\u003c/span>: \u003cspan class=\"example-word\">«надеялся»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "verb-past"
+        },
+        {
+          "id": "verb-check-20",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Мы бы отправились завтра.\u003c/strong> Выберите верную характеристику формы \u003cspan class=\"example-word\">«отправились бы»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Условное наклонение, будущее время, первое лицо, множественное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Условное наклонение, множественное число; времени, лица и рода нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Изъявительное наклонение, прошедшее время, множественное число; частица не входит в форму из-за своего положения."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Частица \u003cspan class=\"example-word\">«бы»\u003c/span> образует условное наклонение, даже если стоит перед глаголом. \u003cspan class=\"example-word\">«Завтра»\u003c/span> не создаёт грамматического времени. Во множественном числе род не определяется.\u003c/p>\n",
+          "reviewStep": "verb-conditional"
+        },
+        {
+          "id": "verb-check-21",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Когда выберете книгу, выйд_те, пожалуйста, из зала.\u003c/strong>",
+          "correct": [
+            "выйдите"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Выйдите»\u003c/span> просьба, повелительное наклонение. Пишется \u003cspan class=\"example-word\">«-ите»\u003c/span>. \u003cspan class=\"example-word\">«Выберете»\u003c/span> в первой части сообщает о будущем действии.\u003c/p>\n",
+          "reviewStep": "verb-imperative"
+        },
+        {
+          "id": "verb-check-22",
+          "type": "input",
+          "promptHtml": "Запишите нормативную форму для обращения к одному собеседнику: \u003cstrong class=\"example-word\">_____ домой на автобусе.\u003c/strong> Начальная форма \u003cspan class=\"example-word\">«поехать»\u003c/span>.",
+          "correct": [
+            "поезжай"
+          ],
+          "explanationHtml": "\u003cp>Нормативная повелительная форма \u003cspan class=\"example-word\">«поезжай»\u003c/span>, а не \u003cspan class=\"example-word\">«ехай»\u003c/span> или \u003cspan class=\"example-word\">«езжай»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "verb-imperative"
+        },
+        {
+          "id": "verb-check-23",
+          "type": "choice",
+          "promptHtml": "В каком предложении глагол употреблён безлично?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Я не могу уснуть."
+            },
+            {
+              "value": "1",
+              "label": "Б. Дети не спят."
+            },
+            {
+              "value": "2",
+              "label": "В. Мне не спится."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Мне не спится»\u003c/span> представляет состояние без действующего лица. В двух других предложениях названы исполнители: \u003cspan class=\"example-word\">«я»\u003c/span> и \u003cspan class=\"example-word\">«дети»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "verb-impersonal"
+        },
+        {
+          "id": "verb-check-24",
+          "type": "choice",
+          "promptHtml": "Ребята \u003cstrong class=\"example-word\">строят\u003c/strong> модель. Выберите верную полную характеристику \u003cspan class=\"example-word\">«строят»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Начальная форма «строить»; несовершенный вид, переходный, невозвратный, II спряжение; изъявительное наклонение, настоящее время, третье лицо, множественное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Начальная форма «построить»; совершенный вид, переходный, невозвратный, II спряжение; изъявительное наклонение, будущее время, третье лицо, множественное число."
+            },
+            {
+              "value": "2",
+              "label": "В. Начальная форма «строить»; несовершенный вид, непереходный, возвратный, I спряжение; повелительное наклонение, второе лицо, множественное число."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Строят»\u003c/span>: что делают? Начальная форма \u003cspan class=\"example-word\">«строить»\u003c/span>, несовершенный вид. \u003cspan class=\"example-word\">«Строить модель»\u003c/span> подтверждает переходность, \u003cspan class=\"example-word\">«-ся»\u003c/span> нет. Глагол на \u003cspan class=\"example-word\">«-ить»\u003c/span> относится ко II спряжению. Форма сообщает о действии ребят: изъявительное наклонение, настоящее время, третье лицо множественного числа.\u003c/p>\n",
+          "reviewStep": "verb-analysis"
         }
       ]
     }
