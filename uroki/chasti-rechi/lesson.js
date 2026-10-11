@@ -24,20 +24,25 @@
   function complete(step) {
     return core.isStepComplete(step, content, state);
   }
+  function chapterSteps() {
+    const chapter = content.steps[state.step].chapter;
+    return content.steps.map((step, index) => ({ step, index })).filter(item => item.step.chapter === chapter);
+  }
   function updateNavigation() {
-    const completed = content.steps.filter(complete).length;
-    $('overall-count').textContent = `${completed} из ${content.steps.length}`;
-    $('overall-progress').max = content.steps.length;
+    const steps = chapterSteps();
+    const chapter = content.chapters.find(item => item.id === content.steps[state.step].chapter);
+    const completed = steps.filter(item => complete(item.step)).length;
+    $('chapter-title').textContent = chapter.title;
+    document.title = `${chapter.title} | Части речи`;
+    $('overall-count').textContent = `${completed} из ${steps.length}`;
+    $('overall-progress').max = steps.length;
     $('overall-progress').value = completed;
-    $('lesson-nav').innerHTML = content.steps.map((step, i) => {
-      const chapter = content.chapters?.find(chapter => chapter.id === step.chapter);
-      const heading = chapter && (i === 0 || content.steps[i - 1].chapter !== step.chapter) ? `<p class="nav-chapter">${escape(chapter.title)}</p>` : '';
-      return `${heading}<button class="nav-step${complete(step) ? ' done' : ''}" type="button" data-step="${i}"${state.step === i ? ' aria-current="step"' : ''}><span class="step-number">${complete(step) ? icon('check') : i + 1}</span><span>${escape(step.title)}</span></button>`;
+    $('lesson-nav').innerHTML = `<p class="nav-chapter">${escape(chapter.title)}</p>` + steps.map(({ step, index }, position) => {
+      return `<button class="nav-step${complete(step) ? ' done' : ''}" type="button" data-step="${index}"${state.step === index ? ' aria-current="step"' : ''}><span class="step-number">${complete(step) ? icon('check') : position + 1}</span><span>${escape(step.title)}</span></button>`;
     }).join('');
-    const sectionOptions = chapter => content.steps.map((step, i) => (!chapter || step.chapter === chapter.id) ? `<option value="${i}"${i === state.step ? ' selected' : ''}>${i + 1}. ${escape(step.title)}</option>` : '').join('');
-    $('section-select').innerHTML = content.chapters ? content.chapters.map(chapter => `<optgroup label="${escape(chapter.title)}">${sectionOptions(chapter)}</optgroup>`).join('') : sectionOptions();
-    $('previous-section').disabled = state.step === 0;
-    $('next-section').innerHTML = state.step === content.steps.length - 1 ? `К началу урока${icon('arrowRight')}` : `Продолжить${icon('arrowRight')}`;
+    $('section-select').innerHTML = `<optgroup label="${escape(chapter.title)}">${steps.map(({ step, index }, position) => `<option value="${index}"${index === state.step ? ' selected' : ''}>${position + 1}. ${escape(step.title)}</option>`).join('')}</optgroup>`;
+    $('previous-section').disabled = state.step === steps[0].index;
+    $('next-section').innerHTML = state.step === steps.at(-1).index ? `Все блоки${icon('arrowRight')}` : `Продолжить${icon('arrowRight')}`;
     document.body.classList.toggle('large', state.large);
     $('large-mode').setAttribute('aria-pressed', String(state.large));
   }
@@ -45,6 +50,10 @@
     if (!Number.isInteger(index) || index < 0 || index >= content.steps.length) return;
     state.step = index;
     state.stepId = content.steps[index].id;
+    const url = new URL(location.href);
+    url.searchParams.delete('chapter');
+    url.searchParams.set('section', state.stepId);
+    history.replaceState(null, '', url);
     persist();
     render();
     $('lesson-heading').focus({ preventScroll: true });
@@ -137,7 +146,8 @@
   }
   function render() {
     const step = content.steps[state.step];
-    $('section-number').textContent = `Раздел ${state.step + 1} из ${content.steps.length}`;
+    const steps = chapterSteps();
+    $('section-number').textContent = `Раздел ${steps.findIndex(item => item.index === state.step) + 1} из ${steps.length}`;
     $('lesson-heading').textContent = step.title;
     $('lesson-content').innerHTML = `${step.html ? `<div class="theory">${trustedTheory(step.html)}</div>` : ''}${step.groups.map(id => renderGroup(content.groups[id])).join('')}`;
     updateNavigation();
@@ -240,23 +250,35 @@
   $('next-section').addEventListener('click', () => {
     const step = content.steps[state.step];
     if (!step.groups.length && !state.read.includes(step.id)) state.read.push(step.id);
-    navigate(state.step === content.steps.length - 1 ? 0 : state.step + 1);
+    const steps = chapterSteps();
+    if (state.step === steps.at(-1).index) { persist(); location.assign('./'); }
+    else navigate(state.step + 1);
   });
   $('large-mode').addEventListener('click', () => { state.large = !state.large; persist(); updateNavigation(); });
   $('reset-lesson').addEventListener('click', () => $('reset-dialog').showModal());
   $('reset-dialog').addEventListener('close', () => {
     if ($('reset-dialog').returnValue !== 'confirm') return;
-    state = core.cleanState(null, content);
-    navigate(0);
+    const steps = chapterSteps();
+    const ids = new Set(steps.map(item => item.step.id));
+    state.read = state.read.filter(id => !ids.has(id));
+    for (const { step } of steps) for (const id of step.groups) {
+      delete state.cursors[id];
+      delete state.submitted[id];
+      for (const question of content.groups[id].questions) delete state.answers[question.id];
+    }
+    navigate(steps[0].index);
   });
   const url = new URL(location.href);
   const requestedStep = content.steps.findIndex(step => step.id === url.searchParams.get('section'));
+  const requestedChapter = content.chapters.find(chapter => chapter.id === url.searchParams.get('chapter'));
   if (requestedStep >= 0) {
-    url.searchParams.delete('section');
-    history.replaceState(null, '', url);
     navigate(requestedStep);
+  } else if (requestedChapter) {
+    const steps = content.steps.map((step, index) => ({ step, index })).filter(item => item.step.chapter === requestedChapter.id);
+    const lastVisited = steps.find(item => item.step.id === state.stepId);
+    const nextUnread = steps.find(item => !complete(item.step));
+    navigate((lastVisited || nextUnread || steps[0]).index);
   } else {
-    render();
-    persist();
+    navigate(state.step);
   }
 })();

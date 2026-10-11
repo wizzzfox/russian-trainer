@@ -1,4 +1,24 @@
 :root{--bg:#f7f8fb;--paper:#fff;--text:#101828;--muted:#667085;--line:#d7deea;--blue:#195cc4;--blue-soft:#edf4ff;--example-green:#00745e;--example-line:#c4e6da;--teal:#0f766e;--teal-soft:#edf9f6;--body-size:17px;--reading-size:18px;--control-size:16px}
+.chapter-hub{border-top:1px solid var(--line);padding-top:24px}
+.hub-progress{margin-bottom:24px;max-width:420px}
+.chapter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.chapter-card{display:grid;grid-template-columns:44px minmax(0,1fr);grid-template-rows:1fr auto;gap:12px 18px;min-height:184px;padding:22px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--text);text-decoration:none;transition:border-color .14s ease,background .14s ease}
+.chapter-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:8px;background:var(--blue-soft)}
+.chapter-icon::before{content:"";width:26px;height:26px;background:var(--blue);mask:url('icons/book.svg') center/contain no-repeat}
+.chapter-copy{min-width:0}
+.chapter-copy h2{font-size:20px;line-height:1.3;color:var(--blue);margin:0 0 7px}
+.chapter-copy p{margin:0;color:var(--muted);font-size:var(--control-size);line-height:1.5}
+.chapter-state{grid-column:2;display:flex;align-items:center;gap:8px;font-size:15px;font-weight:750;line-height:1.4;color:var(--blue)}
+.chapter-state img{opacity:.65;flex:none}
+.chapter-check{width:20px;height:20px;flex:none;background:var(--teal);mask:url('icons/check.svg') center/contain no-repeat}
+.chapter-card.completed{border-color:#b9ded5;background:#f2fbf8}
+.chapter-card.completed .chapter-state{color:var(--teal)}
+.chapter-card.completed .chapter-icon{background:#e2f4ee}
+.chapter-card.completed .chapter-icon::before{background:var(--teal)}
+.chapter-card:hover{border-color:#8bb6f9;background:#f8fbff}
+body.large .chapter-copy h2{font-size:22px}
+body.large .chapter-state{font-size:17px}
+@media(max-width:720px){.chapter-grid{grid-template-columns:1fr}.chapter-card{min-height:164px;padding:18px;grid-template-columns:36px minmax(0,1fr);gap:12px}.chapter-icon{width:36px;height:36px}.chapter-icon::before{width:23px;height:23px}.hub-progress{max-width:none}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:var(--body-size);line-height:1.55;letter-spacing:0}
 body.large{--body-size:19px;--reading-size:21px;--control-size:18px}
@@ -18,6 +38,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .icon-button{width:40px;padding:8px;flex:none}
 .quiet-button[aria-pressed=true]{background:var(--blue-soft);border-color:#91b3ed;color:var(--blue)}
 .lesson-title{display:flex;gap:14px;align-items:flex-start;padding:28px 0 26px}
+.lesson-title{container-type:inline-size}
+.lesson-title>div:last-child{min-width:0}
+@container(max-width:360px){#chapter-title{font-size:26px}}
 .title-icon{display:grid;place-items:center;flex:none;width:48px;height:48px;border:1px solid #bfd1ee;background:var(--blue-soft);border-radius:8px;margin-top:4px}
 .eyebrow{font-size:12px;font-weight:750;text-transform:uppercase;color:var(--muted);margin:0 0 5px}
 h1{font-size:34px;line-height:1.15;margin:0 0 7px;letter-spacing:0}
