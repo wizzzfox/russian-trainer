@@ -29,6 +29,7 @@ a{color:var(--blue);text-underline-offset:3px}
 img{display:inline-block;flex:none;vertical-align:middle}
 button img{pointer-events:none}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #80aef5;outline-offset:3px}
+#lesson-heading:focus{outline:none}
 [hidden]{display:none!important}
 .app{width:min(1240px,100%);margin:auto;padding:22px 32px 28px}
 .site-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line)}
