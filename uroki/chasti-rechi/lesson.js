@@ -6,6 +6,9 @@
   const $ = id => document.getElementById(id);
   const escape = text => String(text ?? '').replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
   const icon = name => `<img src="icons/${name}.svg" alt="" width="18" height="18">`;
+  // The browser may restore an old scroll position after initialization or from its page cache.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('pageshow', scrollToTop);
   let storageAvailable = true;
   let saved;
   try { saved = JSON.parse(localStorage.getItem(storageKey) || 'null'); } catch (_) { storageAvailable = false; }
@@ -46,6 +49,9 @@
     document.body.classList.toggle('large', state.large);
     $('large-mode').setAttribute('aria-pressed', String(state.large));
   }
+  function scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }
   function navigate(index) {
     if (!Number.isInteger(index) || index < 0 || index >= content.steps.length) return;
     state.step = index;
@@ -57,7 +63,7 @@
     persist();
     render();
     $('lesson-heading').focus({ preventScroll: true });
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    scrollToTop();
   }
   function trustedTheory(html) {
     const container = document.createElement('div');
