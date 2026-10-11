@@ -40,6 +40,18 @@ window.LESSON_CONTENT = {
     {
       "id": "gerund",
       "title": "Деепричастие"
+    },
+    {
+      "id": "preposition",
+      "title": "Предлог"
+    },
+    {
+      "id": "conjunction",
+      "title": "Союз"
+    },
+    {
+      "id": "particle",
+      "title": "Частица"
     }
   ],
   "labels": {
@@ -929,6 +941,249 @@ window.LESSON_CONTENT = {
       "html": "",
       "groups": [
         "gerund-check"
+      ]
+    },
+    {
+      "id": "preposition-meaning",
+      "title": "Для чего нужны предлоги",
+      "chapter": "preposition",
+      "html": "\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Книга лежит на столе. Книга лежит под столом. Книга лежит у стола.\u003c/strong>\u003c/p>\n\u003cp>Предлоги \u003cspan class=\"example-word\">«на»\u003c/span>, \u003cspan class=\"example-word\">«под»\u003c/span>, \u003cspan class=\"example-word\">«у»\u003c/span> связывают слово \u003cspan class=\"example-word\">«лежит»\u003c/span> с названием места. Если заменить предлог, изменится и расположение книги. Вместе с предлогом меняется форма существительного: \u003cspan class=\"example-word\">«столе»\u003c/span>, \u003cspan class=\"example-word\">«столом»\u003c/span>, \u003cspan class=\"example-word\">«стола»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Предлог\u003c/strong> служит для связи существительного, местоимения или числительного с другими словами. Это служебная часть речи: предлог не называет предмет или действие, а показывает отношение между ними.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Разговор с другом. Подойти к нему. Разделить на два.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«С»\u003c/span> присоединяет существительное \u003cspan class=\"example-word\">«другом»\u003c/span>, \u003cspan class=\"example-word\">«к»\u003c/span> местоимение \u003cspan class=\"example-word\">«нему»\u003c/span>, \u003cspan class=\"example-word\">«на»\u003c/span> числительное \u003cspan class=\"example-word\">«два»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Предлог не изменяется. В сочетаниях \u003cstrong class=\"example-word\">у дома, у домов\u003c/strong> меняется существительное, но не \u003cspan class=\"example-word\">«у»\u003c/span>. У предлога нет рода, числа, падежа и окончания. Вопрос задают к присоединённому слову вместе с предлогом: \u003cstrong class=\"example-word\">разговор с кем? с чем? с другом\u003c/strong>. Сам предлог на этот вопрос не отвечает.\u003c/p>\n\u003cp>Предлог может стоять не прямо перед существительным: \u003cstrong class=\"example-word\">на большом столе\u003c/strong>. Прилагательное \u003cspan class=\"example-word\">«большом»\u003c/span> не мешает \u003cspan class=\"example-word\">«на»\u003c/span> связывать существительное с другим словом.\u003c/p>\n",
+      "groups": [
+        "preposition-meaning-practice"
+      ]
+    },
+    {
+      "id": "preposition-relations",
+      "title": "Какие отношения выражают предлоги",
+      "chapter": "preposition",
+      "html": "\u003cp>Отношение становится понятным из всего сочетания. \u003cspan class=\"example-word\">«В»\u003c/span> может указывать и на место, и на время: \u003cstrong class=\"example-word\">жить в городе, встретиться в понедельник\u003c/strong>.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Значение\u003c/th>\n\u003cth>Что помогает понять\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Пространственное\u003c/td>\n\u003ctd>Где находится предмет или куда направлено движение\u003c/td>\n\u003ctd>Книга \u003cstrong class=\"example-word\">под\u003c/strong> столом; идти \u003cstrong class=\"example-word\">к\u003c/strong> дому\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Временное\u003c/td>\n\u003ctd>Когда происходит действие\u003c/td>\n\u003ctd>Прийти \u003cstrong class=\"example-word\">после\u003c/strong> обеда\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Причинное\u003c/td>\n\u003ctd>Почему произошло действие\u003c/td>\n\u003ctd>Опоздать \u003cstrong class=\"example-word\">из-за\u003c/strong> пробки\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Целевое\u003c/td>\n\u003ctd>Для чего совершается действие\u003c/td>\n\u003ctd>Купить тетрадь \u003cstrong class=\"example-word\">для\u003c/strong> записей\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Объектное\u003c/td>\n\u003ctd>На кого или на что направлены речь, мысль, действие\u003c/td>\n\u003ctd>Рассказать \u003cstrong class=\"example-word\">о\u003c/strong> поездке\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Образа действия\u003c/td>\n\u003ctd>Как совершается действие\u003c/td>\n\u003ctd>Читать \u003cstrong class=\"example-word\">без\u003c/strong> выражения\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Определительное\u003c/td>\n\u003ctd>Какой признак есть у предмета\u003c/td>\n\u003ctd>Рубашка \u003cstrong class=\"example-word\">в\u003c/strong> клетку\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Сравнительное\u003c/td>\n\u003ctd>С чем сопоставляется предмет\u003c/td>\n\u003ctd>Яблоко величиной \u003cstrong class=\"example-word\">с\u003c/strong> кулак\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Письмо от друга. Дрожать от холода.\u003c/strong>\u003c/p>\n\u003cp>В первом сочетании \u003cspan class=\"example-word\">«от»\u003c/span> указывает, от кого получено письмо. Во втором \u003cspan class=\"example-word\">«от»\u003c/span> выражает причину. Разряд по значению определяют в контексте, а не по одному предлогу.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "preposition-relations-practice"
+      ]
+    },
+    {
+      "id": "preposition-cases",
+      "title": "Предлог и падеж",
+      "chapter": "preposition",
+      "html": "\u003cp>Предлог употребляется с определённой падежной формой. \u003cspan class=\"example-word\">«К»\u003c/span> требует дательного падежа, \u003cspan class=\"example-word\">«без»\u003c/span> родительного, \u003cspan class=\"example-word\">«при»\u003c/span> предложного. Некоторые предлоги сочетаются с несколькими падежами.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Предлог\u003c/th>\n\u003cth>Падеж\u003c/th>\n\u003cth>Пример с вопросом\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Без, у, от, до, из\u003c/td>\n\u003ctd>Родительный: кого? чего?\u003c/td>\n\u003ctd>Без \u003cstrong class=\"example-word\">кого? чего? друга\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>К\u003c/td>\n\u003ctd>Дательный: кому? чему?\u003c/td>\n\u003ctd>К \u003cstrong class=\"example-word\">кому? чему? дому\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Про\u003c/td>\n\u003ctd>Винительный: кого? что?\u003c/td>\n\u003ctd>Про \u003cstrong class=\"example-word\">кого? что? поездку\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Над\u003c/td>\n\u003ctd>Творительный: кем? чем?\u003c/td>\n\u003ctd>Над \u003cstrong class=\"example-word\">кем? чем? рекой\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>При\u003c/td>\n\u003ctd>Предложный: о ком? о чём?\u003c/td>\n\u003ctd>При \u003cstrong class=\"example-word\">ком? при чём? школе\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>В, на\u003c/td>\n\u003ctd>Винительный или предложный\u003c/td>\n\u003ctd>В \u003cstrong class=\"example-word\">кого? что? школу\u003c/strong>; в \u003cstrong class=\"example-word\">ком? в чём? школе\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>С\u003c/td>\n\u003ctd>Родительный, винительный или творительный\u003c/td>\n\u003ctd>С \u003cstrong class=\"example-word\">кого? чего? крыши\u003c/strong>; величиной с \u003cstrong class=\"example-word\">кого? что? кулак\u003c/strong>; с \u003cstrong class=\"example-word\">кем? чем? другом\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У предложного падежа вопрос меняется вместе с предлогом: \u003cstrong class=\"example-word\">о ком? о чём?; в ком? в чём?; при ком? при чём?\u003c/strong>\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Идти в школу. Учиться в школе.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Идти в кого? что? школу»\u003c/span>: винительный падеж, движение направлено внутрь. \u003cspan class=\"example-word\">«Учиться в ком? в чём? школе»\u003c/span>: предложный падеж, названо место учёбы. Предлог один, падежи разные.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "preposition-cases-practice"
+      ]
+    },
+    {
+      "id": "preposition-origin",
+      "title": "Производные и непроизводные предлоги",
+      "chapter": "preposition",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Непроизводные предлоги\u003c/strong> не образованы от других частей речи: \u003cstrong class=\"example-word\">в, на, к, с, у, без, из-за, из-под\u003c/strong>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Производные предлоги\u003c/strong> образовались из слов других частей речи. Слово перестало самостоятельно называть действие, предмет или обстоятельство и стало связывать слова.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>От какой части речи образовались\u003c/th>\n\u003cth>Примеры предлогов\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>От наречий\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вокруг, вдоль, напротив, вблизи\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>От существительных\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">В течение, вследствие, в связи с, по поводу\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>От глагольных форм\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Благодаря, несмотря на, спустя\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Благодаря поддержке друзей я справился.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Благодаря»\u003c/span> указывает на причину успеха. Здесь никто не совершает действие \u003cspan class=\"example-word\">«благодарить»\u003c/span>: это производный предлог.\u003c/p>\n\u003c/div>\u003cp>Происхождение и значение не одно и то же. \u003cspan class=\"example-word\">«Из-за»\u003c/span> и \u003cspan class=\"example-word\">«вследствие»\u003c/span> могут выражать причину, но \u003cspan class=\"example-word\">«из-за»\u003c/span> непроизводный предлог, а \u003cspan class=\"example-word\">«вследствие»\u003c/span> производный.\u003c/p>\n",
+      "groups": [
+        "preposition-origin-practice"
+      ]
+    },
+    {
+      "id": "preposition-structure",
+      "title": "Простые и составные предлоги",
+      "chapter": "preposition",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Простые предлоги\u003c/strong> состоят из одного слова: \u003cstrong class=\"example-word\">в, около, благодаря, вследствие, из-за, из-под\u003c/strong>. Дефис внутри \u003cspan class=\"example-word\">«из-за»\u003c/span> не разделяет его на два слова.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Составные предлоги\u003c/strong> состоят из нескольких слов: \u003cstrong class=\"example-word\">в течение, в связи с, по отношению к, несмотря на\u003c/strong>. Всё сочетание выполняет одну работу: связывает слова.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы встретились в течение недели.\u003c/strong>\u003c/p>\n\u003cp>Предлог нужно назвать полностью: \u003cspan class=\"example-word\">«в течение»\u003c/span>, а не только \u003cspan class=\"example-word\">«в»\u003c/span>. Он обозначает промежуток времени.\u003c/p>\n\u003c/div>\u003cp>В некоторых учебниках предлоги \u003cspan class=\"example-word\">«из-за»\u003c/span>, \u003cspan class=\"example-word\">«из-под»\u003c/span> выделяют в особую группу сложных. При делении на простые и составные они относятся к простым, поскольку пишутся без пробела.\u003c/p>\n",
+      "groups": [
+        "preposition-structure-practice"
+      ]
+    },
+    {
+      "id": "preposition-distinction",
+      "title": "Предлог или другая часть речи",
+      "chapter": "preposition",
+      "html": "\u003cp>Одинаково звучащие слова могут выполнять разную работу. Чтобы отличить предлог, нужно найти, какие слова он связывает, и понять значение сочетания.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы обошли вокруг дома. Вокруг было тихо.\u003c/strong>\u003c/p>\n\u003cp>В первом предложении \u003cspan class=\"example-word\">«вокруг»\u003c/span> связывает \u003cspan class=\"example-word\">«обошли»\u003c/span> и \u003cspan class=\"example-word\">«дома»\u003c/span>: это предлог. Во втором \u003cspan class=\"example-word\">«вокруг»\u003c/span> само обозначает место и отвечает на вопрос \u003cspan class=\"example-word\">«где?»\u003c/span>: это наречие.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">В течение часа шёл дождь. В течении реки есть водовороты.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«В течение»\u003c/span> обозначает время и служит предлогом. \u003cspan class=\"example-word\">«Течение»\u003c/span> во втором предложении называет движение воды: это существительное с предлогом \u003cspan class=\"example-word\">«в»\u003c/span>. Можно добавить прилагательное: \u003cspan class=\"example-word\">«в быстром течении реки»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Несмотря на дождь, мы вышли. Не смотря на экран, он отвечал на вопросы.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Несмотря на»\u003c/span> значит \u003cspan class=\"example-word\">«хотя шёл дождь»\u003c/span>: это предлог. \u003cspan class=\"example-word\">«Не смотря»\u003c/span> обозначает добавочное действие, которое не совершалось: человек не смотрел на экран. Это деепричастие с частицей \u003cspan class=\"example-word\">«не»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Одного соседнего существительного для вывода недостаточно. В сочетании \u003cstrong class=\"example-word\">внимательно читая книгу\u003c/strong> \u003cspan class=\"example-word\">«читая»\u003c/span> остаётся деепричастием: оно называет действие, а не отношение между словами.\u003c/p>\n",
+      "groups": [
+        "preposition-distinction-practice"
+      ]
+    },
+    {
+      "id": "preposition-spelling",
+      "title": "Как пишутся предлоги",
+      "chapter": "preposition",
+      "html": "\u003cp>Предлоги пишутся отдельно от слов, которые присоединяют: \u003cstrong class=\"example-word\">у дома, перед ним, к пяти\u003c/strong>. У некоторых производных предлогов нужно запомнить собственное написание.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Написание\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Слитно\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Ввиду\u003c/strong> дождя, \u003cstrong class=\"example-word\">вследствие\u003c/strong> ошибки, узнать \u003cstrong class=\"example-word\">насчёт\u003c/strong> поездки, крыша \u003cstrong class=\"example-word\">вроде\u003c/strong> купола, встреча \u003cstrong class=\"example-word\">вместо\u003c/strong> урока\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Раздельно\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">В течение\u003c/strong> дня, \u003cstrong class=\"example-word\">в продолжение\u003c/strong> недели, \u003cstrong class=\"example-word\">в связи с\u003c/strong> переездом, \u003cstrong class=\"example-word\">за счёт\u003c/strong> помощи, \u003cstrong class=\"example-word\">в отличие от\u003c/strong> брата\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Через дефис\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Из-за\u003c/strong> дождя, \u003cstrong class=\"example-word\">из-под\u003c/strong> стола\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>В предлогах \u003cspan class=\"example-word\">«в течение»\u003c/span>, \u003cspan class=\"example-word\">«в продолжение»\u003c/span>, \u003cspan class=\"example-word\">«вследствие»\u003c/span> на конце пишется \u003cspan class=\"example-word\">«е»\u003c/span>. Но само окончание \u003cspan class=\"example-word\">«е»\u003c/span> ещё не доказывает, что перед нами предлог: \u003cstrong class=\"example-word\">попасть в сильное течение\u003c/strong>. Здесь \u003cspan class=\"example-word\">«течение»\u003c/span> существительное.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Узнать насчёт билетов. Перевести деньги на счёт.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Насчёт»\u003c/span> заменяется на \u003cspan class=\"example-word\">«о»\u003c/span>: узнать о билетах. \u003cspan class=\"example-word\">«Счёт»\u003c/span> во втором сочетании называет банковский счёт, поэтому \u003cspan class=\"example-word\">«на»\u003c/span> пишется отдельно.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Ввиду ремонта вход закрыт. Имей в виду запасной вход.\u003c/strong>\u003c/p>\n\u003cp>Предлог \u003cspan class=\"example-word\">«ввиду»\u003c/span> обозначает причину и пишется слитно. Сочетание \u003cspan class=\"example-word\">«иметь в виду»\u003c/span> пишется в три слова.\u003c/p>\n\u003c/div>\u003cp>В предлоге \u003cspan class=\"example-word\">«несмотря на»\u003c/span> слитно пишется только \u003cspan class=\"example-word\">«несмотря»\u003c/span>, а \u003cspan class=\"example-word\">«на»\u003c/span> отдельно. Деепричастие \u003cstrong class=\"example-word\">не смотря\u003c/strong> пишется раздельно.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Временные предлоги: \u003cstrong class=\"example-word\">в течение часа, в продолжение дня\u003c/strong>. Существительное: \u003cstrong class=\"example-word\">в быстром течении реки, в новом продолжении рассказа\u003c/strong>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "preposition-spelling-practice"
+      ]
+    },
+    {
+      "id": "preposition-usage",
+      "title": "Как правильно употреблять предлоги",
+      "chapter": "preposition",
+      "html": "\u003cp>После \u003cspan class=\"example-word\">«благодаря»\u003c/span>, \u003cspan class=\"example-word\">«согласно»\u003c/span>, \u003cspan class=\"example-word\">«вопреки»\u003c/span>, \u003cspan class=\"example-word\">«навстречу»\u003c/span> нужен дательный падеж: \u003cstrong class=\"example-word\">благодаря кому? чему? другу; согласно кому? чему? расписанию; вопреки кому? чему? совету\u003c/strong>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Согласно расписанию, поезд отправляется утром.\u003c/strong>\u003c/p>\n\u003cp>Правильно \u003cspan class=\"example-word\">«согласно расписанию»\u003c/span>, а не \u003cspan class=\"example-word\">«согласно расписания»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>В значении \u003cspan class=\"example-word\">«после»\u003c/span> предлог \u003cspan class=\"example-word\">«по»\u003c/span> требует предложного падежа: \u003cstrong class=\"example-word\">по окончании урока, по прибытии поезда, по возвращении домой\u003c/strong>. Сравните: \u003cstrong class=\"example-word\">по расписанию\u003c/strong>. Здесь \u003cspan class=\"example-word\">«по»\u003c/span> не значит \u003cspan class=\"example-word\">«после»\u003c/span> и употребляется с дательным падежом.\u003c/p>\n\u003cp>Предлоги направления и возвращения образуют пары: \u003cstrong class=\"example-word\">в школу, из школы; на стадион, со стадиона\u003c/strong>.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cstrong class=\"example-word\">В → из. На → с.\u003c/strong> Поехать в город, вернуться из города. Поехать на дачу, вернуться с дачи.\u003c/p>\n\u003c/aside>\u003cp>При характеристике предлога назовите его полностью, укажите происхождение и строение, затем определите, с каким падежом он употреблён.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">В течение недели мы готовились к поездке.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«В течение»\u003c/span>: предлог, неизменяемый, производный, составной; имеет временное значение; употреблён с \u003cspan class=\"example-word\">«недели»\u003c/span> в родительном падеже.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "preposition-usage-practice"
+      ]
+    },
+    {
+      "id": "preposition-check",
+      "title": "Проверка по предлогам",
+      "chapter": "preposition",
+      "html": "",
+      "groups": [
+        "preposition-check"
+      ]
+    },
+    {
+      "id": "conjunction-meaning",
+      "title": "Для чего нужны союзы",
+      "chapter": "conjunction",
+      "html": "\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">На столе лежат тетрадь и книга. На столе лежат тетрадь или книга.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«И»\u003c/span> соединяет названия двух предметов: на столе оба. \u003cspan class=\"example-word\">«Или»\u003c/span> указывает на выбор между ними. Союз связывает слова и помогает понять отношение между ними.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Союз\u003c/strong> служит для связи слов в предложении, частей сложного предложения и предложений в тексте. Это служебная часть речи, которая не изменяется и сама не отвечает на вопрос.\u003c/p>\n\u003c/div>\u003cp>Сложное предложение объединяет несколько сообщений. Каждое из них можно выразить отдельным предложением.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Пошёл дождь, и мы вернулись домой.\u003c/strong>\u003c/p>\n\u003cp>Два сообщения: \u003cspan class=\"example-word\">«Пошёл дождь»\u003c/span> и \u003cspan class=\"example-word\">«Мы вернулись домой»\u003c/span>. \u003cspan class=\"example-word\">«И»\u003c/span> связывает их в одном сложном предложении.\u003c/p>\n\u003c/div>\u003cp>Союз не получает рода, числа, падежа или времени от соединяемых слов: \u003cstrong class=\"example-word\">брат и сестра, братья и сёстры\u003c/strong>. Меняются существительные, но \u003cspan class=\"example-word\">«и»\u003c/span> остаётся тем же.\u003c/p>\n",
+      "groups": [
+        "conjunction-meaning-practice"
+      ]
+    },
+    {
+      "id": "conjunction-kinds",
+      "title": "Сочинительные и подчинительные союзы",
+      "chapter": "conjunction",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Сочинительные союзы\u003c/strong> связывают равноправные слова или сообщения. Одно не служит пояснением другого: они перечисляются, сопоставляются или предлагаются на выбор.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Маша читает, а Петя рисует.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«А»\u003c/span> сопоставляет два самостоятельных сообщения о занятиях детей. Союз сочинительный.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Подчинительные союзы\u003c/strong> связывают сообщения так, что одно поясняет другое: указывает причину, время, условие, цель или другое отношение.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы вернулись домой, потому что пошёл дождь.\u003c/strong>\u003c/p>\n\u003cp>Второе сообщение объясняет первое: почему мы вернулись? Потому что пошёл дождь. Союз \u003cspan class=\"example-word\">«потому что»\u003c/span> подчинительный.\u003c/p>\n\u003c/div>\u003cp>Вопрос помогает понять связь сообщений. Он задаётся не к самому союзу, а к сообщению целиком. Сравните: \u003cstrong class=\"example-word\">мы вернулись когда? когда стемнело; вернулись почему? потому что стемнело\u003c/strong>.\u003c/p>\n",
+      "groups": [
+        "conjunction-kinds-practice"
+      ]
+    },
+    {
+      "id": "conjunction-coordinate",
+      "title": "Разряды сочинительных союзов",
+      "chapter": "conjunction",
+      "html": "\u003cp>В школьной классификации выделяют три основных разряда.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Разряд\u003c/th>\n\u003cth>Значение\u003c/th>\n\u003cth>Союзы\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Соединительные\u003c/td>\n\u003ctd>И одно, и другое\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">И, да\u003c/strong> в значении \u003cspan class=\"example-word\">«и»\u003c/span>, \u003cstrong class=\"example-word\">ни…ни, тоже, также, не только…но и\u003c/strong>\u003c/td>\n\u003ctd>Принеси хлеб \u003cstrong class=\"example-word\">и\u003c/strong> молоко\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Противительные\u003c/td>\n\u003ctd>Сопоставление или противопоставление\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">А, но, да\u003c/strong> в значении \u003cspan class=\"example-word\">«но»\u003c/span>, \u003cstrong class=\"example-word\">зато, однако\u003c/strong>\u003c/td>\n\u003ctd>Книга небольшая, \u003cstrong class=\"example-word\">но\u003c/strong> интересная\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Разделительные\u003c/td>\n\u003ctd>Выбор, чередование или неопределённость\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Или, либо, то…то, не то…не то, то ли…то ли\u003c/strong>\u003c/td>\n\u003ctd>Мы поедем поездом \u003cstrong class=\"example-word\">или\u003c/strong> автобусом\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Карандаш да ручка. Хотел ответить, да не успел.\u003c/strong>\u003c/p>\n\u003cp>В первом случае \u003cspan class=\"example-word\">«да»\u003c/span> заменяется на \u003cspan class=\"example-word\">«и»\u003c/span>: соединительный союз. Во втором на \u003cspan class=\"example-word\">«но»\u003c/span>: противительный. Разряд определяется значением в предложении.\u003c/p>\n\u003c/div>\u003cp>Есть и более подробная классификация: пояснительные союзы \u003cstrong class=\"example-word\">то есть, а именно\u003c/strong>, присоединительные \u003cstrong class=\"example-word\">притом, причём\u003c/strong>, градационные \u003cstrong class=\"example-word\">не только…но и, не столько…сколько\u003c/strong>. Пояснение уточняет сказанное, присоединение добавляет сообщение, градация показывает разную важность или степень признаков. В основной школьной схеме \u003cspan class=\"example-word\">«не только…но и»\u003c/span> включают в соединительные союзы.\u003c/p>\n",
+      "groups": [
+        "conjunction-coordinate-practice"
+      ]
+    },
+    {
+      "id": "conjunction-subordinate",
+      "title": "Разряды подчинительных союзов",
+      "chapter": "conjunction",
+      "html": "\u003cp>Разряд зависит от того, как одно сообщение поясняет другое.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Разряд\u003c/th>\n\u003cth>Какое отношение выражает\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Временные\u003c/td>\n\u003ctd>Когда происходит действие\u003c/td>\n\u003ctd>Мы вышли, \u003cstrong class=\"example-word\">когда\u003c/strong> дождь закончился\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Причинные\u003c/td>\n\u003ctd>Почему происходит действие\u003c/td>\n\u003ctd>Мы остались дома, \u003cstrong class=\"example-word\">потому что\u003c/strong> шёл дождь\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Целевые\u003c/td>\n\u003ctd>Для чего совершается действие\u003c/td>\n\u003ctd>Мы остановились, \u003cstrong class=\"example-word\">чтобы\u003c/strong> отдохнуть\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Условные\u003c/td>\n\u003ctd>При каком условии возможно действие\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Если\u003c/strong> дождь закончится, мы выйдем\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Уступительные\u003c/td>\n\u003ctd>Что могло помешать, но не помешало\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Хотя\u003c/strong> шёл дождь, мы вышли\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Следствия\u003c/td>\n\u003ctd>Каков результат\u003c/td>\n\u003ctd>Начался ливень, \u003cstrong class=\"example-word\">так что\u003c/strong> мы промокли\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Сравнительные\u003c/td>\n\u003ctd>С чем сравнивается происходящее\u003c/td>\n\u003ctd>Снег блестел, \u003cstrong class=\"example-word\">будто\u003c/strong> его посыпали серебром\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Изъяснительные\u003c/td>\n\u003ctd>Что именно сообщают, знают, думают, хотят\u003c/td>\n\u003ctd>Я знаю, \u003cstrong class=\"example-word\">что\u003c/strong> поезд уже прибыл\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Изъяснительный союз\u003c/strong> вводит сообщение, раскрывающее содержание речи, мысли, чувства или желания. В \u003cstrong class=\"example-word\">я надеюсь, что мы успеем\u003c/strong> вторая часть поясняет, на что именно надеются.\u003c/p>\n\u003c/div>\u003cp>Союзы одного разряда: временные \u003cstrong class=\"example-word\">когда, пока, едва\u003c/strong>; причинные \u003cstrong class=\"example-word\">потому что, так как\u003c/strong>; целевые \u003cstrong class=\"example-word\">чтобы, для того чтобы\u003c/strong>; условные \u003cstrong class=\"example-word\">если\u003c/strong>; уступительные \u003cstrong class=\"example-word\">хотя, несмотря на то что\u003c/strong>; следствия \u003cstrong class=\"example-word\">так что\u003c/strong>; сравнительные \u003cstrong class=\"example-word\">как, словно, будто\u003c/strong>; изъяснительные \u003cstrong class=\"example-word\">что, чтобы, как\u003c/strong>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я пришёл, чтобы помочь. Я хочу, чтобы ты помог.\u003c/strong>\u003c/p>\n\u003cp>В первом предложении \u003cspan class=\"example-word\">«чтобы»\u003c/span> вводит цель прихода. Во втором раскрывает содержание желания. Один союз может относиться к разным разрядам.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "conjunction-subordinate-practice"
+      ]
+    },
+    {
+      "id": "conjunction-structure",
+      "title": "Строение и употребление союзов",
+      "chapter": "conjunction",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Простые союзы\u003c/strong> состоят из одного слова: \u003cstrong class=\"example-word\">и, но, если, чтобы, также\u003c/strong>. \u003cstrong class=\"term\">Составные союзы\u003c/strong> состоят из нескольких слов: \u003cstrong class=\"example-word\">потому что, так как, для того чтобы\u003c/strong>.\u003c/p>\n\u003c/div>\u003cp>По употреблению союзы бывают одиночными, повторяющимися и двойными.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Употребление\u003c/th>\n\u003cth>Как устроено\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Одиночный союз\u003c/td>\n\u003ctd>Стоит один раз между соединяемыми словами или сообщениями\u003c/td>\n\u003ctd>Чай \u003cstrong class=\"example-word\">или\u003c/strong> кофе\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Повторяющийся союз\u003c/td>\n\u003ctd>Одинаковые части повторяются\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">И\u003c/strong> чай, \u003cstrong class=\"example-word\">и\u003c/strong> кофе\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Двойной союз\u003c/td>\n\u003ctd>Разные части работают вместе\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Не только\u003c/strong> чай, \u003cstrong class=\"example-word\">но и\u003c/strong> кофе\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У двойного союза нужно сохранять обе части: \u003cstrong class=\"example-word\">не только…но и; как…так и; не столько…сколько\u003c/strong>. Нельзя смешивать их: \u003cstrong class=\"example-word\">не только…а также\u003c/strong> вместо \u003cspan class=\"example-word\">«не только…но и»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Он любит не только читать, но и обсуждать книги.\u003c/strong>\u003c/p>\n\u003cp>Обе части союза стоят перед тем, что сопоставляется: \u003cspan class=\"example-word\">«читать»\u003c/span>, \u003cspan class=\"example-word\">«обсуждать»\u003c/span>. Значение предложения: он любит оба занятия.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "conjunction-structure-practice"
+      ]
+    },
+    {
+      "id": "conjunction-punctuation",
+      "title": "Союзы и запятые",
+      "chapter": "conjunction",
+      "html": "\u003cp>Запятая зависит от того, что именно соединяет союз, а не от одного его наличия. В простом перечислении перед одиночными \u003cspan class=\"example-word\">«и»\u003c/span>, \u003cspan class=\"example-word\">«или»\u003c/span>, \u003cspan class=\"example-word\">«либо»\u003c/span>, \u003cspan class=\"example-word\">«да»\u003c/span> в значении \u003cspan class=\"example-word\">«и»\u003c/span> запятая не нужна.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я купил хлеб и молоко. Я купил хлеб, но забыл молоко.\u003c/strong>\u003c/p>\n\u003cp>Перед одиночным \u003cspan class=\"example-word\">«и»\u003c/span> в перечислении запятой нет. Перед противительным \u003cspan class=\"example-word\">«но»\u003c/span> она нужна.\u003c/p>\n\u003c/div>\u003cp>Если союз повторяется при каждом перечисляемом слове, между сочетаниями ставят запятую: \u003cstrong class=\"example-word\">и хлеб, и молоко; то дождь, то снег\u003c/strong>. Перед второй частью двойного союза тоже нужна запятая: \u003cstrong class=\"example-word\">не только хлеб, но и молоко\u003c/strong>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я открыл окно и проветрил комнату. Я открыл окно, и в комнате стало прохладнее.\u003c/strong>\u003c/p>\n\u003cp>В первом предложении перечислены действия одного человека. Во втором соединены два сообщения: об открытом окне и о перемене в комнате. Здесь перед \u003cspan class=\"example-word\">«и»\u003c/span> нужна запятая.\u003c/p>\n\u003c/div>\u003cp>Часть предложения, введённую подчинительным союзом, отделяют от другой части: \u003cstrong class=\"example-word\">Мы вышли, когда дождь закончился. Когда дождь закончился, мы вышли.\u003c/strong>\u003c/p>\n\u003cp>В сложных предложениях есть случаи, когда перед \u003cspan class=\"example-word\">«и»\u003c/span> запятая не ставится. Например: \u003cstrong class=\"example-word\">Утром дождь закончился и выглянуло солнце\u003c/strong>. Слово \u003cspan class=\"example-word\">«утром»\u003c/span> относится к обоим сообщениям. Поэтому правило \u003cspan class=\"example-word\">«перед и всегда нужна запятая»\u003c/span> неверно.\u003c/p>\n",
+      "groups": [
+        "conjunction-punctuation-practice"
+      ]
+    },
+    {
+      "id": "conjunction-spelling",
+      "title": "Союз или сочетание отдельных слов",
+      "chapter": "conjunction",
+      "html": "\u003cp>Союзы \u003cspan class=\"example-word\">«тоже»\u003c/span>, \u003cspan class=\"example-word\">«также»\u003c/span>, \u003cspan class=\"example-word\">«чтобы»\u003c/span>, \u003cspan class=\"example-word\">«зато»\u003c/span> пишутся слитно. Похожие сочетания других частей речи пишутся раздельно. Выбор зависит от смысла и работы слова.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Союз: связывает сообщения или присоединяет\u003c/th>\n\u003cth>Другие части речи: сохраняют своё значение\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Я \u003cstrong class=\"example-word\">тоже\u003c/strong> прочитал книгу: и я прочитал\u003c/td>\n\u003ctd>Я прочитал \u003cstrong class=\"example-word\">то же\u003c/strong> произведение: то же самое произведение\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Купи хлеб, а \u003cstrong class=\"example-word\">также\u003c/strong> молоко: и молоко\u003c/td>\n\u003ctd>Сделай \u003cstrong class=\"example-word\">так же\u003c/strong>, как в образце: таким же способом\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Я пришёл, \u003cstrong class=\"example-word\">чтобы\u003c/strong> помочь: с целью помочь\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Что бы\u003c/strong> мне прочитать? \u003cspan class=\"example-word\">«Что»\u003c/span> обозначает предмет выбора, \u003cspan class=\"example-word\">«бы»\u003c/span> добавляет значение размышления\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Дом небольшой, \u003cstrong class=\"example-word\">зато\u003c/strong> уютный: но уютный\u003c/td>\n\u003ctd>Спрячься \u003cstrong class=\"example-word\">за то\u003c/strong> дерево: за указанное дерево\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Он умеет рисовать, \u003cstrong class=\"example-word\">причём\u003c/strong> хорошо: добавляется уточнение\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">При чём\u003c/strong> здесь мой рисунок? Вопрос о связи с рисунком\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Он художник и \u003cstrong class=\"example-word\">притом\u003c/strong> музыкант: к первому сообщению добавляется второе\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">При том\u003c/strong> доме есть сад: у указанного дома\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cstrong class=\"example-word\">То же самое. Так же, как. Зато = но. Чтобы = с целью\u003c/strong>, если союз выражает цель.\u003c/p>\n\u003c/aside>\u003cp>Замена помогает проверить решение, но сначала прочитайте всё предложение. Не всякое \u003cspan class=\"example-word\">«чтобы»\u003c/span> выражает цель: \u003cstrong class=\"example-word\">Я хочу, чтобы ты остался\u003c/strong>. Здесь союз раскрывает содержание желания.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Что бы мне предпринять, чтобы решить эту проблему?\u003c/strong>\u003c/p>\n\u003cp>Первое сочетание содержит местоимение \u003cspan class=\"example-word\">«что»\u003c/span> и частицу \u003cspan class=\"example-word\">«бы»\u003c/span>: человек выбирает действие. Второе \u003cspan class=\"example-word\">«чтобы»\u003c/span> связывает действие с целью. В одном предложении нужны разные написания.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "conjunction-spelling-practice"
+      ]
+    },
+    {
+      "id": "conjunction-analysis",
+      "title": "Как отличить союз и охарактеризовать его",
+      "chapter": "conjunction",
+      "html": "\u003cp>Сначала найдите, что слово соединяет. Затем установите характер связи: перечисление, противопоставление, выбор или пояснение одного сообщения другим. Назовите разряд по значению и строение союза.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Мы остались дома, потому что начался дождь.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Потому что»\u003c/span> соединяет сообщения и объясняет причину. Это союз, неизменяемый, подчинительный, причинный, составной.\u003c/p>\n\u003c/div>\u003cp>Не всякое слово, связывающее части предложения, является союзом. Местоимение тоже может выполнять такую работу. Его называют \u003cstrong class=\"term\">союзным словом\u003c/strong>: это местоимение или местоименное наречие, которое связывает части и одновременно имеет собственное значение.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я знаю, что поезд прибыл. Я знаю, что ты читаешь.\u003c/strong>\u003c/p>\n\u003cp>В первом случае \u003cspan class=\"example-word\">«что»\u003c/span> только присоединяет сообщение о поезде: союз. Во втором \u003cspan class=\"example-word\">«что»\u003c/span> обозначает предмет чтения: читаешь кого? что? Это относительное местоимение, союзное слово.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Ты пойдёшь с нами? Да. Маша да Петя пойдут с нами.\u003c/strong>\u003c/p>\n\u003cp>Первое \u003cspan class=\"example-word\">«да»\u003c/span> подтверждает ответ: частица. Второе соединяет имена и заменяется на \u003cspan class=\"example-word\">«и»\u003c/span>: союз.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "conjunction-analysis-practice"
+      ]
+    },
+    {
+      "id": "conjunction-check",
+      "title": "Проверка по союзам",
+      "chapter": "conjunction",
+      "html": "",
+      "groups": [
+        "conjunction-check"
+      ]
+    },
+    {
+      "id": "particle-meaning",
+      "title": "Для чего нужны частицы",
+      "chapter": "particle",
+      "html": "\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Маша пришла. Только Маша пришла. Даже Маша пришла. Маша не пришла.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Только»\u003c/span> ограничивает круг пришедших одним человеком. \u003cspan class=\"example-word\">«Даже»\u003c/span> подчёркивает неожиданность её прихода. \u003cspan class=\"example-word\">«Не»\u003c/span> отрицает действие. В каждом случае частица меняет смысл сообщения, но не называет нового предмета или действия.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Частица\u003c/strong> придаёт слову или предложению дополнительный оттенок значения либо помогает образовать форму слова. Это служебная часть речи.\u003c/p>\n\u003c/div>\u003cp>Частицы не изменяются: \u003cstrong class=\"example-word\">он же, она же, они же\u003c/strong>. Меняются местоимения, но \u003cspan class=\"example-word\">«же»\u003c/span> остаётся тем же. К самой частице не ставят вопрос о предмете, признаке или действии.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Ты придёшь? Придёшь ли ты? Разве ты придёшь? Неужели ты придёшь?\u003c/strong>\u003c/p>\n\u003cp>Вопрос можно выразить интонацией. Частицы уточняют отношение говорящего: \u003cspan class=\"example-word\">«разве»\u003c/span> может передавать сомнение, \u003cspan class=\"example-word\">«неужели»\u003c/span> удивление.\u003c/p>\n\u003c/div>\u003cp>Частица часто относится не к ближайшему слову, а к целому сообщению. В \u003cstrong class=\"example-word\">Разве Маша вчера не приходила?\u003c/strong> \u003cspan class=\"example-word\">«разве»\u003c/span> выражает вопрос с сомнением относительно всего сказанного.\u003c/p>\n",
+      "groups": [
+        "particle-meaning-practice"
+      ]
+    },
+    {
+      "id": "particle-kinds",
+      "title": "Разряды смысловых частиц",
+      "chapter": "particle",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Смысловые частицы\u003c/strong> выражают отрицание, вопрос, уточнение, усиление и другие оттенки. Чтобы определить разряд, нужно понять, что частица добавляет к конкретному сообщению.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Разряд\u003c/th>\n\u003cth>Что добавляет\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Отрицательные\u003c/td>\n\u003ctd>Отрицание\u003c/td>\n\u003ctd>Я \u003cstrong class=\"example-word\">не\u003c/strong> согласен; в комнате \u003cstrong class=\"example-word\">ни\u003c/strong> звука\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Вопросительные\u003c/td>\n\u003ctd>Вопрос, нередко с сомнением или удивлением\u003c/td>\n\u003ctd>Придёшь \u003cstrong class=\"example-word\">ли\u003c/strong> ты? \u003cstrong class=\"example-word\">Неужели\u003c/strong> уже вечер?\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Указательные\u003c/td>\n\u003ctd>Указание на предмет или явление\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вот\u003c/strong> наш дом; \u003cstrong class=\"example-word\">вон\u003c/strong> остановка\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Уточняющие\u003c/td>\n\u003ctd>Точность, выделение нужного\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Именно\u003c/strong> этот ответ верный; мы пришли \u003cstrong class=\"example-word\">как раз\u003c/strong> вовремя\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Ограничительно-выделительные\u003c/td>\n\u003ctd>Ограничение круга предметов или действий\u003c/td>\n\u003ctd>Пришёл \u003cstrong class=\"example-word\">только\u003c/strong> брат; осталась \u003cstrong class=\"example-word\">лишь\u003c/strong> одна страница\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Восклицательные\u003c/td>\n\u003ctd>Эмоциональную оценку\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Что за\u003c/strong> чудесный день! \u003cstrong class=\"example-word\">Как\u003c/strong> красиво!\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Усилительные\u003c/td>\n\u003ctd>Особое подчёркивание\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Даже\u003c/strong> брат удивился; я \u003cstrong class=\"example-word\">же\u003c/strong> предупреждал; ты \u003cstrong class=\"example-word\">ведь\u003c/strong> обещал\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Со значением сомнения\u003c/td>\n\u003ctd>Неуверенность\u003c/td>\n\u003ctd>Он \u003cstrong class=\"example-word\">вряд ли\u003c/strong> успеет; \u003cstrong class=\"example-word\">едва ли\u003c/strong> это возможно\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Утвердительные\u003c/td>\n\u003ctd>Подтверждение\u003c/td>\n\u003ctd>Ты готов? \u003cstrong class=\"example-word\">Да\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Некоторые частицы состоят из нескольких слов: \u003cstrong class=\"example-word\">вряд ли, едва ли, как раз, что за\u003c/strong>. При характеристике называют всё сочетание.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Даже Петя решил задачу. Только Петя решил задачу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Даже»\u003c/span> усиливает сообщение: результат Пети оказался неожиданным. \u003cspan class=\"example-word\">«Только»\u003c/span> ограничивает: остальные задачу не решили.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "particle-kinds-practice"
+      ]
+    },
+    {
+      "id": "particle-forms",
+      "title": "Формообразующие частицы",
+      "chapter": "particle",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Формообразующие частицы\u003c/strong> участвуют в образовании грамматических форм. Глагол и такая частица вместе выражают наклонение.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Частица\u003c/th>\n\u003cth>Какую форму образует\u003c/th>\n\u003cth>Пример\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Бы, б\u003c/td>\n\u003ctd>Условное наклонение\u003c/td>\n\u003ctd>Я \u003cstrong class=\"example-word\">прочитал бы\u003c/strong> эту книгу\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Пусть, пускай, да, давай, давайте\u003c/td>\n\u003ctd>Повелительное наклонение: просьбу, пожелание, побуждение\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Пусть придёт\u003c/strong>; \u003cstrong class=\"example-word\">давайте прочитаем\u003c/strong>; \u003cstrong class=\"example-word\">да будет\u003c/strong> мир\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я бы завтра прочитал эту книгу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Бы»\u003c/span> отделено от глагола другими словами, но всё равно входит в форму условного наклонения \u003cspan class=\"example-word\">«прочитал бы»\u003c/span>. \u003cspan class=\"example-word\">«Завтра»\u003c/span> указывает время возможного действия; грамматического будущего времени у этой формы нет.\u003c/p>\n\u003c/div>\u003cp>В составных степенях сравнения прилагательных и наречий тоже участвуют формообразующие слова: \u003cstrong class=\"example-word\">более интересный, менее интересно, самый интересный\u003c/strong>. Они помогают образовать форму, а не называют ещё один предмет или действие.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Давай книгу. Давай прочитаем книгу.\u003c/strong>\u003c/p>\n\u003cp>В первом предложении \u003cspan class=\"example-word\">«давай»\u003c/span> называет действие передачи: это глагол. Во втором \u003cspan class=\"example-word\">«давай»\u003c/span> вместе с \u003cspan class=\"example-word\">«прочитаем»\u003c/span> выражает побуждение к совместному действию: формообразующая частица.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "particle-forms-practice"
+      ]
+    },
+    {
+      "id": "particle-negative",
+      "title": "Не и ни: различие значений",
+      "chapter": "particle",
+      "html": "\u003cp>\u003cspan class=\"example-word\">«Не»\u003c/span> обычно отрицает действие или признак: \u003cstrong class=\"example-word\">не пришёл, не готов\u003c/strong>. \u003cspan class=\"example-word\">«Ни»\u003c/span> может усиливать уже имеющееся отрицание: \u003cstrong class=\"example-word\">не услышал ни звука\u003c/strong>. Если отрицание понятно без глагола, \u003cspan class=\"example-word\">«ни»\u003c/span> выражает его само: \u003cstrong class=\"example-word\">В комнате ни звука\u003c/strong> означает \u003cspan class=\"example-word\">«в комнате не слышно ни звука»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Не один ученик решил задачу. Ни один ученик не решил задачу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Не один»\u003c/span> означает \u003cspan class=\"example-word\">«несколько, многие»\u003c/span>. \u003cspan class=\"example-word\">«Ни один»\u003c/span> вместе с \u003cspan class=\"example-word\">«не решил»\u003c/span> означает \u003cspan class=\"example-word\">«никто»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я не раз читал эту книгу. Я ни разу не читал эту книгу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Не раз»\u003c/span> означает \u003cspan class=\"example-word\">«много раз»\u003c/span>. \u003cspan class=\"example-word\">«Ни разу не»\u003c/span> означает \u003cspan class=\"example-word\">«никогда»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>В сочетаниях \u003cstrong class=\"example-word\">кто ни, что ни, где ни, куда ни, как ни\u003c/strong> \u003cspan class=\"example-word\">«ни»\u003c/span> может означать, что результат сохраняется при любом условии: \u003cstrong class=\"example-word\">Куда ни посмотри, всюду снег\u003c/strong>. В любое место посмотришь, увидишь снег.\u003c/p>\n\u003cp>Не путайте это значение с отрицанием: \u003cstrong class=\"example-word\">Я не знаю, куда он не ходил\u003c/strong> означает, что неизвестно место, где он не был.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Где он только не бывал!\u003c/strong>\u003c/p>\n\u003cp>Это восклицание означает \u003cspan class=\"example-word\">«он бывал во многих местах»\u003c/span>, а не \u003cspan class=\"example-word\">«он нигде не был»\u003c/span>. В вопросительных и восклицательных предложениях такого типа пишется \u003cspan class=\"example-word\">«не»\u003c/span>.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cstrong class=\"example-word\">Не один = многие. Ни один не = никто. Не раз = много раз. Ни разу не = никогда.\u003c/strong>\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "particle-negative-practice"
+      ]
+    },
+    {
+      "id": "particle-spelling",
+      "title": "Как пишутся частицы",
+      "chapter": "particle",
+      "html": "\u003cp>Частицы \u003cspan class=\"example-word\">«бы»\u003c/span>, \u003cspan class=\"example-word\">«ли»\u003c/span>, \u003cspan class=\"example-word\">«же»\u003c/span> пишутся раздельно: \u003cstrong class=\"example-word\">сказал бы, придёшь ли, тот же\u003c/strong>. Раздельно пишутся сочетания \u003cstrong class=\"example-word\">вряд ли, едва ли, как раз, что за\u003c/strong>.\u003c/p>\n\u003cp>Через дефис присоединяются частицы \u003cspan class=\"example-word\">«-ка»\u003c/span>, \u003cspan class=\"example-word\">«-то»\u003c/span>: \u003cstrong class=\"example-word\">скажи-ка, я-то знаю\u003c/strong>. \u003cspan class=\"example-word\">«-Ка»\u003c/span> может смягчать просьбу или побуждение, \u003cspan class=\"example-word\">«-то»\u003c/span> подчёркивает выделенное слово.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Таки»\u003c/span> пишется через дефис после глаголов, наречий и частиц: \u003cstrong class=\"example-word\">пришёл-таки, опять-таки, всё-таки\u003c/strong>. В других положениях отдельно: \u003cstrong class=\"example-word\">он таки пришёл, я таки успел\u003c/strong>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Он всё-таки пришёл. Он таки пришёл.\u003c/strong>\u003c/p>\n\u003cp>В первом предложении \u003cspan class=\"example-word\">«таки»\u003c/span> присоединено к частице \u003cspan class=\"example-word\">«всё»\u003c/span> дефисом. Во втором стоит после местоимения \u003cspan class=\"example-word\">«он»\u003c/span> и пишется отдельно.\u003c/p>\n\u003c/div>\u003cp>Когда \u003cspan class=\"example-word\">«не»\u003c/span> и \u003cspan class=\"example-word\">«ни»\u003c/span> самостоятельные частицы, они пишутся отдельно: \u003cstrong class=\"example-word\">не прочитал, ни разу, не у кого спросить, ни с кем не говорил\u003c/strong>. Внутри слова \u003cspan class=\"example-word\">«не»\u003c/span> и \u003cspan class=\"example-word\">«ни»\u003c/span> могут быть приставками: \u003cstrong class=\"example-word\">недруг, никто, нигде\u003c/strong>. Тогда это части слова, а не отдельные частицы.\u003c/p>\n\u003cp>У глаголов и деепричастий обычно пишется отдельная частица \u003cspan class=\"example-word\">«не»\u003c/span>: \u003cstrong class=\"example-word\">не видел, не глядя\u003c/strong>. Слитно пишутся слова, не употребляющиеся без \u003cspan class=\"example-word\">«не»\u003c/span>: \u003cstrong class=\"example-word\">ненавидеть, негодуя\u003c/strong>, а также слова с приставкой \u003cspan class=\"example-word\">«недо-»\u003c/span> в значении недостаточности: \u003cstrong class=\"example-word\">недосыпать\u003c/strong>. Написание \u003cspan class=\"example-word\">«не»\u003c/span> с другими частями речи зависит от их собственных правил.\u003c/p>\n",
+      "groups": [
+        "particle-spelling-practice"
+      ]
+    },
+    {
+      "id": "particle-distinction",
+      "title": "Частица или другая часть речи",
+      "chapter": "particle",
+      "html": "\u003cp>Решение зависит от работы слова, а не от его длины. Короткие \u003cspan class=\"example-word\">«на»\u003c/span>, \u003cspan class=\"example-word\">«но»\u003c/span>, \u003cspan class=\"example-word\">«не»\u003c/span> относятся к трём разным частям речи.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Книга на столе. Книга интересная, но трудная. Книга не трудная.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«На»\u003c/span> связывает название книги с местом: предлог. \u003cspan class=\"example-word\">«Но»\u003c/span> противопоставляет признаки: союз. \u003cspan class=\"example-word\">«Не»\u003c/span> отрицает признак: частица.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Брат да сестра. Да, я согласен. Да будет мир!\u003c/strong>\u003c/p>\n\u003cp>В первом примере \u003cspan class=\"example-word\">«да»\u003c/span> соединяет слова и значит \u003cspan class=\"example-word\">«и»\u003c/span>: союз. Во втором подтверждает: смысловая частица. В третьем образует побуждение или пожелание: формообразующая частица.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Кто-то постучал. Я-то слышал стук.\u003c/strong>\u003c/p>\n\u003cp>В \u003cspan class=\"example-word\">«кто-то»\u003c/span> элемент \u003cspan class=\"example-word\">«-то»\u003c/span> образует неопределённое местоимение и входит в слово. В \u003cspan class=\"example-word\">«я-то»\u003c/span> \u003cspan class=\"example-word\">«-то»\u003c/span> только подчёркивает \u003cspan class=\"example-word\">«я»\u003c/span>: это частица. Местоимение не становится неопределённым.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "particle-distinction-practice"
+      ]
+    },
+    {
+      "id": "particle-usage",
+      "title": "Место частицы и смысл сообщения",
+      "chapter": "particle",
+      "html": "\u003cp>Положение частицы может менять смысл. Сравните, что ограничивается словом \u003cspan class=\"example-word\">«только»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Только Маша прочитала рассказ. Маша прочитала только рассказ.\u003c/strong>\u003c/p>\n\u003cp>В первом случае рассказ прочитала Маша и больше никто. Во втором Маша прочитала рассказ, но не другие произведения.\u003c/p>\n\u003c/div>\u003cp>Частицы сами по себе не требуют выделения запятыми: \u003cstrong class=\"example-word\">Я же предупреждал. Разве ты не знал? Вот наш дом.\u003c/strong> Не нужно ставить запятую после \u003cspan class=\"example-word\">«разве»\u003c/span> или отделять \u003cspan class=\"example-word\">«же»\u003c/span> от соседних слов.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Да, я согласен. Я не видел ни брата, ни сестры.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Да»\u003c/span> в отдельном подтверждении отделяется запятой. Во втором предложении \u003cspan class=\"example-word\">«ни…ни»\u003c/span> связывает перечисляемые слова и работает как повторяющийся союз. Запятая нужна между сочетаниями, а не потому, что любое \u003cspan class=\"example-word\">«ни»\u003c/span> выделяется запятыми.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "particle-usage-practice"
+      ]
+    },
+    {
+      "id": "particle-analysis",
+      "title": "Как охарактеризовать частицу",
+      "chapter": "particle",
+      "html": "\u003cp>Найдите, к какому слову или сообщению относится частица. Определите, добавляет она оттенок значения или образует грамматическую форму. Для смысловой частицы назовите разряд.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Даже младший брат решил задачу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Даже»\u003c/span>: частица, неизменяемая, смысловая, усилительная. Подчёркивает неожиданность результата брата.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Я бы прочитал эту книгу.\u003c/strong>\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Бы»\u003c/span>: частица, неизменяемая, формообразующая. Вместе с \u003cspan class=\"example-word\">«прочитал»\u003c/span> образует условное наклонение.\u003c/p>\n\u003c/div>\u003cp>Не приписывайте частице признаки соседних слов. В \u003cstrong class=\"example-word\">она бы пришла\u003c/strong> женский род имеет форма глагола \u003cspan class=\"example-word\">«пришла»\u003c/span>, но не частица \u003cspan class=\"example-word\">«бы»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "particle-analysis-practice"
+      ]
+    },
+    {
+      "id": "particle-check",
+      "title": "Проверка по частицам",
+      "chapter": "particle",
+      "html": "",
+      "groups": [
+        "particle-check"
       ]
     }
   ],
@@ -15761,6 +16016,4515 @@ window.LESSON_CONTENT = {
           ],
           "explanationHtml": "\u003cp>Маша дочитала и вернула. \u003cspan class=\"example-word\">«Дочитав»\u003c/span> не согласуется с \u003cspan class=\"example-word\">«Маша»\u003c/span>, не имеет времени, рода и числа и не изменяется.\u003c/p>\n",
           "reviewStep": "gerund-analysis"
+        }
+      ]
+    },
+    "preposition-meaning-practice": {
+      "id": "preposition-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все предлоги.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "После",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "урока",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "подошли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "к",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "учителю",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "После",
+              "role": "preposition"
+            },
+            {
+              "value": "1",
+              "label": "урока",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "3",
+              "label": "подошли",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "к",
+              "role": "preposition"
+            },
+            {
+              "value": "5",
+              "label": "учителю",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "4"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«После»\u003c/span> связывает действие с временем, \u003cspan class=\"example-word\">«к»\u003c/span> с тем, к кому подошли. Оба слова служебные.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-meaning-2",
+          "type": "sort",
+          "promptHtml": "К какой части речи относится выделенное скобками слово?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Рядом со школой есть парк. (со)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Вокруг тихо. (вокруг)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Оглянувшись, он заметил друга. (оглянувшись)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Предлог"
+            },
+            {
+              "value": "1",
+              "label": "Наречие"
+            },
+            {
+              "value": "2",
+              "label": "Деепричастие"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Со»\u003c/span> присоединяет \u003cspan class=\"example-word\">«школой»\u003c/span>, \u003cspan class=\"example-word\">«вокруг»\u003c/span> само обозначает место, \u003cspan class=\"example-word\">«оглянувшись»\u003c/span> называет добавочное действие.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-meaning-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">У\u003c/strong> новой школы посадили деревья. Выберите характеристику \u003cspan class=\"example-word\">«у»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Предлог: связывает «посадили» и «школы», употреблён с родительным падежом, не изменяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Наречие: самостоятельно называет место посадки, отвечает на вопрос «где?», не изменяется."
+            },
+            {
+              "value": "2",
+              "label": "В. Частица: усиливает сообщение о новой школе, не связывает слова и не изменяется."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Место выражает всё сочетание \u003cspan class=\"example-word\">«у новой школы»\u003c/span>. Само \u003cspan class=\"example-word\">«у»\u003c/span> служит для связи слов, вопрос к нему отдельно не ставится.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-meaning-4",
+          "type": "input",
+          "promptHtml": "Выпишите предлог: \u003cstrong class=\"example-word\">За широким окном виден сад.\u003c/strong>",
+          "correct": [
+            "за"
+          ],
+          "explanationHtml": "\u003cp>Между предлогом \u003cspan class=\"example-word\">«за»\u003c/span> и существительным \u003cspan class=\"example-word\">«окном»\u003c/span> стоит прилагательное. Предлог всё равно относится к существительному.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-relations-practice": {
+      "id": "preposition-relations-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-relations-1",
+          "type": "sort",
+          "promptHtml": "Какое отношение выражает предлог в сочетании?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ждать до вечера.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Стоять у окна.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Опоздать из-за пробки.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Тетрадь для записей.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Место"
+            },
+            {
+              "value": "1",
+              "label": "Время"
+            },
+            {
+              "value": "2",
+              "label": "Причина"
+            },
+            {
+              "value": "3",
+              "label": "Цель"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«До»\u003c/span> указывает на время, \u003cspan class=\"example-word\">«у»\u003c/span> на место, \u003cspan class=\"example-word\">«из-за»\u003c/span> на причину, \u003cspan class=\"example-word\">«для»\u003c/span> на цель использования тетради.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-relations-2",
+          "type": "sort",
+          "promptHtml": "Сравните значение одного предлога.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Жить в городе.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Встретиться в пятницу.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Рубашка в клетку.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Место"
+            },
+            {
+              "value": "1",
+              "label": "Время"
+            },
+            {
+              "value": "2",
+              "label": "Признак предмета"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Разряд \u003cspan class=\"example-word\">«в»\u003c/span> зависит от сочетания: местонахождение, день встречи или рисунок ткани.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-relations-3",
+          "type": "choice",
+          "promptHtml": "В каком сочетании предлог выражает причину?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Письмо от друга."
+            },
+            {
+              "value": "1",
+              "label": "Б. Отойти от окна."
+            },
+            {
+              "value": "2",
+              "label": "В. Дрожать от холода."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Холод вызывает дрожь. В варианте А указан отправитель, в варианте Б направление удаления.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-relations-4",
+          "type": "sort",
+          "promptHtml": "Определите значение предлога.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Рассказать о поездке.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Читать без выражения.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Мяч величиной с яблоко.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Объектное"
+            },
+            {
+              "value": "1",
+              "label": "Образа действия"
+            },
+            {
+              "value": "2",
+              "label": "Сравнительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Названа тема рассказа, способ чтения и предмет, с которым сравнивается мяч.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-cases-practice": {
+      "id": "preposition-cases-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-cases-1",
+          "type": "sort",
+          "promptHtml": "С каким падежом употреблён предлог?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Войти в класс.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Сидеть в классе.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Положить на стол.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Лежать на столе.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Винительный"
+            },
+            {
+              "value": "1",
+              "label": "Предложный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Направление: в кого? что? класс, на кого? что? стол. Место: в ком? в чём? классе, на ком? на чём? столе.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-cases-2",
+          "type": "sort",
+          "promptHtml": "Определите падеж после предлога.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Сойти с крыши.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Встретиться с другом.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Ростом с брата.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Родительный"
+            },
+            {
+              "value": "1",
+              "label": "Творительный"
+            },
+            {
+              "value": "2",
+              "label": "Винительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«С»\u003c/span> употреблено с разными падежами: с кого? чего? крыши; с кем? чем? другом; с кого? что? брата. В последнем случае сравнивается рост.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-cases-3",
+          "type": "choice",
+          "promptHtml": "Как правильно объяснить сочетание \u003cstrong class=\"example-word\">к новым домам\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «К» получает множественное число от существительного «домам»."
+            },
+            {
+              "value": "1",
+              "label": "Б. «К» неизменяемый предлог, употреблён с существительным в дательном падеже."
+            },
+            {
+              "value": "2",
+              "label": "В. «К» имеет дательный падеж, но не имеет числа."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Падеж и число определяются у \u003cspan class=\"example-word\">«домам»\u003c/span>. Предлог \u003cspan class=\"example-word\">«к»\u003c/span> требует дательного падежа, но сам падежа не имеет.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-origin-practice": {
+      "id": "preposition-origin-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-origin-1",
+          "type": "sort",
+          "promptHtml": "Определите происхождение предлога.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Из-за дождя.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Вследствие ошибки.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Около дома.",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Под столом.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Непроизводный"
+            },
+            {
+              "value": "1",
+              "label": "Производный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Из-за»\u003c/span>, \u003cspan class=\"example-word\">«под»\u003c/span> непроизводные. \u003cspan class=\"example-word\">«Вследствие»\u003c/span> образовано от существительного, \u003cspan class=\"example-word\">«около»\u003c/span> связано по происхождению с наречием.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-origin-2",
+          "type": "sort",
+          "promptHtml": "От какой части речи образован предлог?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Вокруг сада.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "В течение недели.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Благодаря помощи.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "От наречия"
+            },
+            {
+              "value": "1",
+              "label": "От существительного"
+            },
+            {
+              "value": "2",
+              "label": "От глагольной формы"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Различаем происхождение, а не значение: наречный, отыменный и отглагольный предлоги.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-origin-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Благодаря\u003c/strong> друзьям он справился. Что верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Деепричастие: называет добавочное действие благодарности, совершённое одновременно с основным."
+            },
+            {
+              "value": "1",
+              "label": "Б. Наречие: самостоятельно характеризует способ действия и отвечает на вопрос «как?»."
+            },
+            {
+              "value": "2",
+              "label": "В. Предлог: присоединяет «друзьям», выражает причину успеха, образован от глагольной формы."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Здесь говорится о помощи друзей, а не о том, что человек их благодарил.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-structure-practice": {
+      "id": "preposition-structure-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-structure-1",
+          "type": "sort",
+          "promptHtml": "Определите строение предлога по делению на простые и составные.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Из-под стола.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "В связи с переездом.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Несмотря на дождь.",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Вследствие ремонта.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Простой"
+            },
+            {
+              "value": "1",
+              "label": "Составной"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Пробел разделяет слова составного предлога. Дефис в \u003cspan class=\"example-word\">«из-под»\u003c/span> находится внутри одного слова.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-structure-2",
+          "type": "input",
+          "promptHtml": "Выпишите предлог полностью: \u003cstrong class=\"example-word\">В течение месяца шёл ремонт.\u003c/strong>",
+          "correct": [
+            "в течение"
+          ],
+          "explanationHtml": "\u003cp>Предлог \u003cspan class=\"example-word\">«в течение»\u003c/span> состоит из двух слов. \u003cspan class=\"example-word\">«Течение»\u003c/span> здесь не обозначает движение воды.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-structure-3",
+          "type": "choice",
+          "promptHtml": "Какая характеристика верна для \u003cstrong class=\"example-word\">в связи с\u003c/strong> переездом?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Предлог производный и простой, потому что выражает одну причину."
+            },
+            {
+              "value": "1",
+              "label": "Б. Предлог производный и составной, потому что включает несколько слов."
+            },
+            {
+              "value": "2",
+              "label": "В. Предлог непроизводный и составной, потому что содержит короткие «в» и «с»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Одна работа не означает одно слово. Всё сочетание \u003cspan class=\"example-word\">«в связи с»\u003c/span> составной производный предлог.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-distinction-practice": {
+      "id": "preposition-distinction-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-distinction-1",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Вокруг дома растут деревья. (вокруг)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Вокруг растут деревья. (вокруг)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он шёл, не смотря под ноги. (смотря)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "В быстром течении реки есть водовороты. (течении)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Предлог"
+            },
+            {
+              "value": "1",
+              "label": "Наречие"
+            },
+            {
+              "value": "2",
+              "label": "Деепричастие"
+            },
+            {
+              "value": "3",
+              "label": "Существительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Предлог связывает слова, наречие само называет место, деепричастие добавочное действие, существительное движение воды.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-distinction-2",
+          "type": "choice",
+          "promptHtml": "Где употреблён предлог \u003cstrong class=\"example-word\">несмотря на\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Не смотря на доску, ученик объяснял решение."
+            },
+            {
+              "value": "1",
+              "label": "Б. Не смотря на часы, он продолжал разговор."
+            },
+            {
+              "value": "2",
+              "label": "В. Несмотря на усталость, ученик закончил работу."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>В варианте В работа выполнена вопреки усталости. В вариантах А и Б говорится об отсутствии действия \u003cspan class=\"example-word\">«смотреть»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-distinction-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Он попал в сильное течение реки.\u003c/strong> Что верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «В течение» составной предлог времени, потому что на конце «е»."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Течение» существительное в винительном падеже; «в» отдельный предлог."
+            },
+            {
+              "value": "2",
+              "label": "В. «Течение» наречие, обозначающее направление движения, не изменяется."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Назван поток воды. Прилагательное \u003cspan class=\"example-word\">«сильное»\u003c/span> относится к \u003cspan class=\"example-word\">«течение»\u003c/span>. Окончание \u003cspan class=\"example-word\">«е»\u003c/span> не превращает существительное в предлог.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-distinction-4",
+          "type": "sort",
+          "promptHtml": "Какова роль слова \u003cspan class=\"example-word\">«благодаря»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Благодаря поддержке команды мы победили.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Благодаря зрителей за поддержку, игроки поклонились.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Предлог"
+            },
+            {
+              "value": "1",
+              "label": "Деепричастие"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом случае названа причина победы. Во втором игроки совершили два действия: благодарили и поклонились.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-spelling-practice": {
+      "id": "preposition-spelling-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-spelling-1",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(В)следствие ремонта вход закрыт.\u003c/strong> Запишите только раскрытое сочетание.",
+          "correct": [
+            "вследствие"
+          ],
+          "explanationHtml": "\u003cp>Производный предлог причины \u003cspan class=\"example-word\">«вследствие»\u003c/span> пишется слитно и заканчивается на \u003cspan class=\"example-word\">«е»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-spelling-2",
+          "type": "sort",
+          "promptHtml": "Выберите написание слов в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Узнать (на)счёт билетов.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Положить деньги (на)счёт.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Отменить прогулку (в)виду дождя.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Иметь (в)виду запасной путь.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Насчёт»\u003c/span> значит \u003cspan class=\"example-word\">«о»\u003c/span>, \u003cspan class=\"example-word\">«ввиду»\u003c/span> выражает причину. Банковский счёт назван существительным. В \u003cspan class=\"example-word\">«иметь в виду»\u003c/span> слова раздельные.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-spelling-3",
+          "type": "input",
+          "promptHtml": "Запишите предлог с нужной последней буквой: \u003cstrong class=\"example-word\">В течени_ часа мы ждали поезд.\u003c/strong>",
+          "correct": [
+            "в течение"
+          ],
+          "explanationHtml": "\u003cp>Предлог времени \u003cspan class=\"example-word\">«в течение»\u003c/span> пишется в два слова с \u003cspan class=\"example-word\">«е»\u003c/span> на конце.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-spelling-4",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(Из)под скамейки выглянул кот.\u003c/strong> Запишите предлог.",
+          "correct": [
+            "из-под"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Из-под»\u003c/span> пишется через дефис, а с существительным \u003cspan class=\"example-word\">«скамейки»\u003c/span> раздельно.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-usage-practice": {
+      "id": "preposition-usage-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "preposition-usage-1",
+          "type": "input",
+          "promptHtml": "Поставьте \u003cspan class=\"example-word\">«расписание»\u003c/span> в нужную форму: \u003cstrong class=\"example-word\">согласно _____\u003c/strong>.",
+          "correct": [
+            "расписанию"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Согласно»\u003c/span> требует дательного падежа: кому? чему? расписанию.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-usage-2",
+          "type": "sort",
+          "promptHtml": "Верно ли употреблена форма после \u003cspan class=\"example-word\">«по»\u003c/span> в значении \u003cspan class=\"example-word\">«после»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "По окончании урока мы вышли.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "По прибытию поезда нас встретили.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "По возвращении домой я позвонил.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Верно"
+            },
+            {
+              "value": "1",
+              "label": "Неверно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Правильно \u003cspan class=\"example-word\">«по окончании»\u003c/span>, \u003cspan class=\"example-word\">«по прибытии»\u003c/span>, \u003cspan class=\"example-word\">«по возвращении»\u003c/span>: в значении \u003cspan class=\"example-word\">«после»\u003c/span> предлог \u003cspan class=\"example-word\">«по»\u003c/span> требует предложного падежа.\u003c/p>\n"
+        },
+        {
+          "id": "preposition-usage-3",
+          "type": "choice",
+          "promptHtml": "Выберите правильное предложение.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Мы поехали на стадион и вернулись со стадиона."
+            },
+            {
+              "value": "1",
+              "label": "Б. Мы поехали на стадион и вернулись из стадиона."
+            },
+            {
+              "value": "2",
+              "label": "В. Мы поехали в стадион и вернулись со стадиона."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Для места \u003cspan class=\"example-word\">«стадион»\u003c/span> употребляется пара \u003cspan class=\"example-word\">«на»\u003c/span>, \u003cspan class=\"example-word\">«с»\u003c/span>. \u003cspan class=\"example-word\">«На стадион»\u003c/span>, \u003cspan class=\"example-word\">«со стадиона»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "preposition-check": {
+      "id": "preposition-check",
+      "title": "Проверка по предлогам",
+      "assessment": "preposition-check",
+      "questions": [
+        {
+          "id": "preposition-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все предлоги.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Сегодня",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "вышли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "из",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "дома",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "подошли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "к",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "8",
+                "label": "реке",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Сегодня",
+              "role": "adverb"
+            },
+            {
+              "value": "1",
+              "label": "мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "2",
+              "label": "вышли",
+              "role": "verb"
+            },
+            {
+              "value": "3",
+              "label": "из",
+              "role": "preposition"
+            },
+            {
+              "value": "4",
+              "label": "дома",
+              "role": "noun"
+            },
+            {
+              "value": "5",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "6",
+              "label": "подошли",
+              "role": "verb"
+            },
+            {
+              "value": "7",
+              "label": "к",
+              "role": "preposition"
+            },
+            {
+              "value": "8",
+              "label": "реке",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "3",
+            "7"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Из»\u003c/span> и \u003cspan class=\"example-word\">«к»\u003c/span> связывают действие с местом. \u003cspan class=\"example-word\">«И»\u003c/span> союз, \u003cspan class=\"example-word\">«сегодня»\u003c/span> наречие.\u003c/p>\n",
+          "reviewStep": "preposition-meaning"
+        },
+        {
+          "id": "preposition-check-2",
+          "type": "choice",
+          "promptHtml": "Книга лежит \u003cstrong class=\"example-word\">под\u003c/strong> столом. Выберите характеристику \u003cspan class=\"example-word\">«под»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наречие: называет место книги, отвечает на вопрос «где?», не изменяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Предлог: связывает «лежит» и «столом», не изменяется; непроизводный, простой, употреблён с творительным падежом."
+            },
+            {
+              "value": "2",
+              "label": "В. Частица: уточняет положение книги, имеет творительный падеж, согласуется со «столом»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Место выражает \u003cspan class=\"example-word\">«под столом»\u003c/span>. Сам предлог не имеет падежа, но употребляется с падежной формой существительного.\u003c/p>\n",
+          "reviewStep": "preposition-meaning"
+        },
+        {
+          "id": "preposition-check-3",
+          "type": "sort",
+          "promptHtml": "Какое отношение выражено?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Прийти после обеда.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Спрятаться за дверью.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Задержаться из-за аварии.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Купить альбом для рисунков.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Место"
+            },
+            {
+              "value": "1",
+              "label": "Время"
+            },
+            {
+              "value": "2",
+              "label": "Причина"
+            },
+            {
+              "value": "3",
+              "label": "Цель"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Названы время, место, причина и цель.\u003c/p>\n",
+          "reviewStep": "preposition-relations"
+        },
+        {
+          "id": "preposition-check-4",
+          "type": "sort",
+          "promptHtml": "Определите падеж.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Поставить на полку.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Хранить на полке.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Подойти к полке.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Винительный"
+            },
+            {
+              "value": "1",
+              "label": "Предложный"
+            },
+            {
+              "value": "2",
+              "label": "Дательный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>На кого? что? полку; на ком? на чём? полке; к кому? чему? полке. Одна форма \u003cspan class=\"example-word\">«полке»\u003c/span> может выражать разные падежи.\u003c/p>\n",
+          "reviewStep": "preposition-cases"
+        },
+        {
+          "id": "preposition-check-5",
+          "type": "sort",
+          "promptHtml": "Определите происхождение предлога.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Из-за мороза.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Несмотря на мороз.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "В течение зимы.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Непроизводный"
+            },
+            {
+              "value": "1",
+              "label": "Производный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Дефис не означает производность. \u003cspan class=\"example-word\">«Несмотря на»\u003c/span> и \u003cspan class=\"example-word\">«в течение»\u003c/span> связаны по происхождению с другими частями речи.\u003c/p>\n",
+          "reviewStep": "preposition-origin"
+        },
+        {
+          "id": "preposition-check-6",
+          "type": "sort",
+          "promptHtml": "Определите строение по делению на простые и составные.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ввиду непогоды.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "В отличие от брата.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Из-за непогоды.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Простой"
+            },
+            {
+              "value": "1",
+              "label": "Составной"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Простой предлог пишется без пробела. Составной включает несколько слов.\u003c/p>\n",
+          "reviewStep": "preposition-structure"
+        },
+        {
+          "id": "preposition-check-7",
+          "type": "input",
+          "promptHtml": "Выпишите предлог полностью: \u003cstrong class=\"example-word\">Несмотря на ветер, мы вышли на прогулку.\u003c/strong> Нужен только предлог со значением \u003cspan class=\"example-word\">«вопреки»\u003c/span>.",
+          "correct": [
+            "несмотря на"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Несмотря на»\u003c/span> составной производный предлог. \u003cspan class=\"example-word\">«На»\u003c/span> перед \u003cspan class=\"example-word\">«прогулку»\u003c/span> другой предлог.\u003c/p>\n",
+          "reviewStep": "preposition-structure"
+        },
+        {
+          "id": "preposition-check-8",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Напротив школы есть парк. (напротив)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Напротив находится парк. (напротив)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Улыбаясь другу, Маша вошла. (улыбаясь)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Предлог"
+            },
+            {
+              "value": "1",
+              "label": "Наречие"
+            },
+            {
+              "value": "2",
+              "label": "Деепричастие"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Напротив школы»\u003c/span> содержит предлог. Отдельное \u003cspan class=\"example-word\">«напротив»\u003c/span> само обозначает место и является наречием. \u003cspan class=\"example-word\">«Улыбаясь»\u003c/span> деепричастие.\u003c/p>\n",
+          "reviewStep": "preposition-distinction"
+        },
+        {
+          "id": "preposition-check-9",
+          "type": "choice",
+          "promptHtml": "Где \u003cspan class=\"example-word\">«течение»\u003c/span> существительное?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. В течение часа мы гуляли."
+            },
+            {
+              "value": "1",
+              "label": "Б. В течение недели шёл снег."
+            },
+            {
+              "value": "2",
+              "label": "В. Лодка попала в быстрое течение."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>В варианте В назван поток воды. Окончание \u003cspan class=\"example-word\">«е»\u003c/span> встречается и у существительного.\u003c/p>\n",
+          "reviewStep": "preposition-distinction"
+        },
+        {
+          "id": "preposition-check-10",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(Не)смотря на сильный ветер, матч состоялся.\u003c/strong> Выпишите предлог полностью.",
+          "correct": [
+            "несмотря на"
+          ],
+          "explanationHtml": "\u003cp>Матч состоялся вопреки ветру. \u003cspan class=\"example-word\">«Несмотря»\u003c/span> пишется слитно, \u003cspan class=\"example-word\">«на»\u003c/span> отдельно.\u003c/p>\n",
+          "reviewStep": "preposition-distinction"
+        },
+        {
+          "id": "preposition-check-11",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Он отвечал, (не)смотря на записи.\u003c/strong> Выпишите сочетание из скобок.",
+          "correct": [
+            "не смотря"
+          ],
+          "explanationHtml": "\u003cp>Человек отвечал и не смотрел. Это деепричастие с отдельной отрицательной частицей.\u003c/p>\n",
+          "reviewStep": "preposition-distinction"
+        },
+        {
+          "id": "preposition-check-12",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Узнай (на)счёт экскурсии.\u003c/strong> Выпишите раскрытое слово или сочетание.",
+          "correct": [
+            "насчёт"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Насчёт»\u003c/span> заменяется на \u003cspan class=\"example-word\">«о»\u003c/span>, поэтому это слитно написанный предлог.\u003c/p>\n",
+          "reviewStep": "preposition-spelling"
+        },
+        {
+          "id": "preposition-check-13",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Деньги поступили (на)счёт школы.\u003c/strong> Выпишите раскрытое сочетание.",
+          "correct": [
+            "на счёт"
+          ],
+          "explanationHtml": "\u003cp>Назван банковский счёт, существительное с отдельным предлогом \u003cspan class=\"example-word\">«на»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "preposition-spelling"
+        },
+        {
+          "id": "preposition-check-14",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Имей (в)виду: библиотека закрывается рано.\u003c/strong> Выпишите раскрытое сочетание.",
+          "correct": [
+            "в виду"
+          ],
+          "explanationHtml": "\u003cp>Устойчивое сочетание \u003cspan class=\"example-word\">«иметь в виду»\u003c/span> пишется в три слова.\u003c/p>\n",
+          "reviewStep": "preposition-spelling"
+        },
+        {
+          "id": "preposition-check-15",
+          "type": "input",
+          "promptHtml": "Допишите последнюю букву и выпишите предлог: \u003cstrong class=\"example-word\">В продолжени_ недели стояла жара.\u003c/strong>",
+          "correct": [
+            "в продолжение"
+          ],
+          "explanationHtml": "\u003cp>Предлог времени \u003cspan class=\"example-word\">«в продолжение»\u003c/span> пишется раздельно с \u003cspan class=\"example-word\">«е»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "preposition-spelling"
+        },
+        {
+          "id": "preposition-check-16",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(Из)за забора выглядывала собака.\u003c/strong> Выпишите предлог.",
+          "correct": [
+            "из-за"
+          ],
+          "explanationHtml": "\u003cp>Непроизводный предлог \u003cspan class=\"example-word\">«из-за»\u003c/span> пишется через дефис. Здесь он обозначает место, а не причину.\u003c/p>\n",
+          "reviewStep": "preposition-spelling"
+        },
+        {
+          "id": "preposition-check-17",
+          "type": "input",
+          "promptHtml": "Исправьте форму существительного: \u003cstrong class=\"example-word\">вопреки совета\u003c/strong>. Запишите правильное сочетание.",
+          "correct": [
+            "вопреки совету"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вопреки»\u003c/span> требует дательного падежа: кому? чему? совету.\u003c/p>\n",
+          "reviewStep": "preposition-usage"
+        },
+        {
+          "id": "preposition-check-18",
+          "type": "input",
+          "promptHtml": "Поставьте \u003cspan class=\"example-word\">«прибытие»\u003c/span> в нужную форму: \u003cstrong class=\"example-word\">по _____ поезда\u003c/strong>, то есть после его прибытия.",
+          "correct": [
+            "прибытии"
+          ],
+          "explanationHtml": "\u003cp>В значении \u003cspan class=\"example-word\">«после»\u003c/span> нужно \u003cspan class=\"example-word\">«по прибытии»\u003c/span>, предложный падеж.\u003c/p>\n",
+          "reviewStep": "preposition-usage"
+        },
+        {
+          "id": "preposition-check-19",
+          "type": "choice",
+          "promptHtml": "Выберите правильное предложение.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Благодаря помощи сестры я справился."
+            },
+            {
+              "value": "1",
+              "label": "Б. Благодаря помощь сестры я справился."
+            },
+            {
+              "value": "2",
+              "label": "В. Благодаря помощью сестры я справился."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>У \u003cspan class=\"example-word\">«помощи»\u003c/span> дательный падеж, которого требует \u003cspan class=\"example-word\">«благодаря»\u003c/span>. Сам предлог падежа не имеет.\u003c/p>\n",
+          "reviewStep": "preposition-usage"
+        },
+        {
+          "id": "preposition-check-20",
+          "type": "choice",
+          "promptHtml": "Выберите верную характеристику \u003cstrong class=\"example-word\">в течение\u003c/strong> дня.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Предлог производный, простой, временной; употреблён с «дня» в родительном падеже."
+            },
+            {
+              "value": "1",
+              "label": "Б. Предлог непроизводный, составной, причинный; употреблён с «дня» в винительном падеже."
+            },
+            {
+              "value": "2",
+              "label": "В. Предлог производный, составной, временной; употреблён с «дня» в родительном падеже, не изменяется."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Сочетание образовано от существительного, включает два слова и обозначает время.\u003c/p>\n",
+          "reviewStep": "preposition-usage"
+        }
+      ]
+    },
+    "conjunction-meaning-practice": {
+      "id": "conjunction-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все союзы.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "взяли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "хлеб",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "сыр",
+                "role": "noun"
+              }
+            },
+            {
+              "text": ","
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "но",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "забыли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "молоко",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "1",
+              "label": "взяли",
+              "role": "verb"
+            },
+            {
+              "value": "2",
+              "label": "хлеб",
+              "role": "noun"
+            },
+            {
+              "value": "3",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "4",
+              "label": "сыр",
+              "role": "noun"
+            },
+            {
+              "value": "5",
+              "label": "но",
+              "role": "conjunction"
+            },
+            {
+              "value": "6",
+              "label": "забыли",
+              "role": "verb"
+            },
+            {
+              "value": "7",
+              "label": "молоко",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "3",
+            "5"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«И»\u003c/span> соединяет названия продуктов, \u003cspan class=\"example-word\">«но»\u003c/span> противопоставляет действия.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-meaning-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Пошёл дождь, и мы вернулись домой.\u003c/strong> Что соединяет \u003cspan class=\"example-word\">«и»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Слова «дождь» и «мы», которые называют участников одного действия."
+            },
+            {
+              "value": "1",
+              "label": "Б. Два сообщения: о начале дождя и о возвращении домой."
+            },
+            {
+              "value": "2",
+              "label": "В. Только слова «вернулись» и «домой», действие и его направление."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Союз связывает части сложного предложения. Каждая содержит своё сообщение.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-meaning-3",
+          "type": "choice",
+          "promptHtml": "Маша \u003cstrong class=\"example-word\">и\u003c/strong> Петя читают. Выберите характеристику \u003cspan class=\"example-word\">«и»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Предлог: присоединяет «Петя» в именительном падеже к существительному «Маша», не изменяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Частица: усиливает сообщение о чтении, не связывает имена и не изменяется."
+            },
+            {
+              "value": "2",
+              "label": "В. Союз: соединяет равноправные названия людей, не изменяется и сам не отвечает на вопрос."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Названы два участника чтения. \u003cspan class=\"example-word\">«И»\u003c/span> соединяет их имена.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-meaning-4",
+          "type": "input",
+          "promptHtml": "Выпишите союз полностью: \u003cstrong class=\"example-word\">Мы остались дома, так как начался дождь.\u003c/strong>",
+          "correct": [
+            "так как"
+          ],
+          "explanationHtml": "\u003cp>Два слова \u003cspan class=\"example-word\">«так как»\u003c/span> вместе присоединяют сообщение о причине.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-kinds-practice": {
+      "id": "conjunction-kinds-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-kinds-1",
+          "type": "sort",
+          "promptHtml": "Определите вид союза в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Я читал, а брат рисовал. (а)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я читал, пока брат рисовал. (пока)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Чай или кофе? (или)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Сочинительный"
+            },
+            {
+              "value": "1",
+              "label": "Подчинительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«А»\u003c/span> сопоставляет равноправные сообщения, \u003cspan class=\"example-word\">«пока»\u003c/span> указывает время одного действия через другое, \u003cspan class=\"example-word\">«или»\u003c/span> предлагает выбор.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-kinds-2",
+          "type": "choice",
+          "promptHtml": "Почему в \u003cstrong class=\"example-word\">Мы остановились, потому что устали\u003c/strong> союз подчинительный?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Сообщение об усталости поясняет причину остановки."
+            },
+            {
+              "value": "1",
+              "label": "Б. Союз состоит из нескольких слов; все составные союзы подчинительные."
+            },
+            {
+              "value": "2",
+              "label": "В. Он соединяет сообщения; союзы между сообщениями всегда подчинительные."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Решает характер связи, а не число слов или положение между частями предложения.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-kinds-3",
+          "type": "choice",
+          "promptHtml": "Какой союз делает второе сообщение условием первого?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Мы выйдем, и дождь закончится."
+            },
+            {
+              "value": "1",
+              "label": "Б. Мы выйдем, если дождь закончится."
+            },
+            {
+              "value": "2",
+              "label": "В. Мы выйдем, но дождь закончится."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Если»\u003c/span> показывает условие выхода. \u003cspan class=\"example-word\">«И»\u003c/span>, \u003cspan class=\"example-word\">«но»\u003c/span> сочинительные.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-coordinate-practice": {
+      "id": "conjunction-coordinate-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-coordinate-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Принеси хлеб и молоко.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Дом небольшой, зато уютный.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Возьми ручку либо карандаш.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Соединительный"
+            },
+            {
+              "value": "1",
+              "label": "Противительный"
+            },
+            {
+              "value": "2",
+              "label": "Разделительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«И»\u003c/span> соединяет, \u003cspan class=\"example-word\">«зато»\u003c/span> противопоставляет, \u003cspan class=\"example-word\">«либо»\u003c/span> предлагает выбор.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-coordinate-2",
+          "type": "sort",
+          "promptHtml": "Какое значение у \u003cspan class=\"example-word\">«да»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Карандаш да ручка лежат на столе.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Хотел позвонить, да забыл.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Соединительное: и"
+            },
+            {
+              "value": "1",
+              "label": "Противительное: но"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Один союз имеет разные значения. Проверяем заменой в контексте.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-coordinate-3",
+          "type": "choice",
+          "promptHtml": "Какой союз обозначает чередование?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Дождь шёл, но скоро закончился."
+            },
+            {
+              "value": "1",
+              "label": "Б. Шли дождь и снег."
+            },
+            {
+              "value": "2",
+              "label": "В. То шёл дождь, то падал снег."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Повторяющееся \u003cspan class=\"example-word\">«то…то»\u003c/span> показывает смену явлений, это разделительный союз.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-coordinate-4",
+          "type": "sort",
+          "promptHtml": "Определите разряд в основной школьной классификации.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ни брат, ни сестра не пришли.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Не то дождь, не то снег стучал по крыше.",
+              "correct": "2"
+            },
+            {
+              "id": "2",
+              "label": "Книга трудная, однако интересная.",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Он не только прочитал, но и обсудил книгу.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Соединительный"
+            },
+            {
+              "value": "1",
+              "label": "Противительный"
+            },
+            {
+              "value": "2",
+              "label": "Разделительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ни…ни»\u003c/span>, \u003cspan class=\"example-word\">«не только…но и»\u003c/span> соединительные; \u003cspan class=\"example-word\">«не то…не то»\u003c/span> разделительный; \u003cspan class=\"example-word\">«однако»\u003c/span> здесь противительный союз.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-subordinate-practice": {
+      "id": "conjunction-subordinate-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-subordinate-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд выделенного скобками союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Мы ушли, когда стемнело. (когда)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы ушли, потому что стемнело. (потому что)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Мы ушли, чтобы отдохнуть. (чтобы)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Если стемнеет, мы уйдём. (если)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Временной"
+            },
+            {
+              "value": "1",
+              "label": "Причинный"
+            },
+            {
+              "value": "2",
+              "label": "Целевой"
+            },
+            {
+              "value": "3",
+              "label": "Условный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Выражены время, причина, цель и условие ухода.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-subordinate-2",
+          "type": "sort",
+          "promptHtml": "Определите разряд союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Хотя было поздно, мы продолжали работу.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Стало поздно, так что мы ушли.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Снег блестел, будто его посыпали серебром.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Я знаю, что поезд прибыл.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Уступительный"
+            },
+            {
+              "value": "1",
+              "label": "Следствия"
+            },
+            {
+              "value": "2",
+              "label": "Сравнительный"
+            },
+            {
+              "value": "3",
+              "label": "Изъяснительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Хотя»\u003c/span> указывает на помеху, не остановившую действие; \u003cspan class=\"example-word\">«так что»\u003c/span> на результат; \u003cspan class=\"example-word\">«будто»\u003c/span> на сравнение; \u003cspan class=\"example-word\">«что»\u003c/span> раскрывает содержание знания.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-subordinate-3",
+          "type": "sort",
+          "promptHtml": "Какой разряд у \u003cspan class=\"example-word\">«чтобы»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Я пришёл, чтобы помочь.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я хочу, чтобы ты помог.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Целевой"
+            },
+            {
+              "value": "1",
+              "label": "Изъяснительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом сообщении названа цель прихода, во втором содержание желания.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-subordinate-4",
+          "type": "choice",
+          "promptHtml": "Какое предложение сообщает о действии, состоявшемся вопреки помехе?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Мы продолжили путь, хотя усилился ветер."
+            },
+            {
+              "value": "1",
+              "label": "Б. Мы продолжим путь, если ослабнет ветер."
+            },
+            {
+              "value": "2",
+              "label": "В. Мы остановились, потому что усилился ветер."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Хотя»\u003c/span> уступительный союз. В варианте Б условие, в варианте В причина остановки.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-structure-practice": {
+      "id": "conjunction-structure-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-structure-1",
+          "type": "sort",
+          "promptHtml": "Определите строение союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Чтобы отдохнуть, мы остановились.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы остановились, потому что устали.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Мы остановились, так как устали.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Простой"
+            },
+            {
+              "value": "1",
+              "label": "Составной"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Чтобы»\u003c/span> одно слово, \u003cspan class=\"example-word\">«потому что»\u003c/span>, \u003cspan class=\"example-word\">«так как»\u003c/span> несколько слов.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-structure-2",
+          "type": "sort",
+          "promptHtml": "Определите употребление союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Чай или кофе.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "И чай, и кофе.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Не только чай, но и кофе.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Одиночный"
+            },
+            {
+              "value": "1",
+              "label": "Повторяющийся"
+            },
+            {
+              "value": "2",
+              "label": "Двойной"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Один союз; повторение одинаковых частей; две разные части одного союза.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-structure-3",
+          "type": "choice",
+          "promptHtml": "Выберите правильное употребление двойного союза.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Он любит не только читать, а также обсуждать книги."
+            },
+            {
+              "value": "1",
+              "label": "Б. Он любит не только читать, но и обсуждать книги."
+            },
+            {
+              "value": "2",
+              "label": "В. Он любит как читать, но и обсуждать книги."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Сохраняем пару \u003cspan class=\"example-word\">«не только…но и»\u003c/span>. Обе части стоят перед действиями \u003cspan class=\"example-word\">«читать»\u003c/span>, \u003cspan class=\"example-word\">«обсуждать»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-punctuation-practice": {
+      "id": "conjunction-punctuation-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-punctuation-1",
+          "type": "choice",
+          "promptHtml": "Выберите правильную пунктуацию.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. В пенале лежат ручка, и карандаш."
+            },
+            {
+              "value": "1",
+              "label": "Б. В пенале лежат ручка и, карандаш."
+            },
+            {
+              "value": "2",
+              "label": "В. В пенале лежат ручка и карандаш."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>При простом перечислении перед одиночным \u003cspan class=\"example-word\">«и»\u003c/span> запятой нет.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-punctuation-2",
+          "type": "choice",
+          "promptHtml": "Выберите правильную пунктуацию.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Он любит не только читать, но и обсуждать книги."
+            },
+            {
+              "value": "1",
+              "label": "Б. Он любит не только читать но, и обсуждать книги."
+            },
+            {
+              "value": "2",
+              "label": "В. Он любит не только читать но и обсуждать книги."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Перед второй частью двойного союза нужна запятая.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-punctuation-3",
+          "type": "choice",
+          "promptHtml": "Выберите правильную пунктуацию.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Мы вышли когда дождь закончился."
+            },
+            {
+              "value": "1",
+              "label": "Б. Мы вышли, когда дождь закончился."
+            },
+            {
+              "value": "2",
+              "label": "В. Мы вышли когда, дождь закончился."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Сообщение, введённое \u003cspan class=\"example-word\">«когда»\u003c/span>, отделяется от другого сообщения. Запятая перед союзом, не после него.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-spelling-practice": {
+      "id": "conjunction-spelling-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-spelling-1",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Что(бы) мне предпринять, чтобы решить эту проблему?\u003c/strong> Запишите раскрытое сочетание.",
+          "correct": [
+            "что бы"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Что»\u003c/span> называет предмет выбора, \u003cspan class=\"example-word\">«бы»\u003c/span> отдельная частица. \u003cspan class=\"example-word\">«Чтобы»\u003c/span> во второй части выражает цель и пишется слитно.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-spelling-2",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Маша читает. Петя (то)же читает.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Петя читает (то)же произведение, что и Маша.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Купи хлеб, а (так)же молоко.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Сделай (так)же, как в образце.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Союзы добавляют участника или предмет. \u003cspan class=\"example-word\">«То же произведение»\u003c/span> то же самое, \u003cspan class=\"example-word\">«так же»\u003c/span> таким же способом.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-spelling-3",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Квартира тесная, (за)то уютная.\u003c/strong> Запишите раскрытое слово или сочетание.",
+          "correct": [
+            "зато"
+          ],
+          "explanationHtml": "\u003cp>Союз \u003cspan class=\"example-word\">«зато»\u003c/span> заменяется на \u003cspan class=\"example-word\">«но»\u003c/span> и пишется слитно.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-spelling-4",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он умеет рисовать, (при)чём хорошо.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "(При)чём здесь мой рисунок?",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он художник и (при)том музыкант.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "(При)том доме есть сад.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Союзы \u003cspan class=\"example-word\">«причём»\u003c/span>, \u003cspan class=\"example-word\">«притом»\u003c/span> присоединяют уточнение или добавочное сообщение. В вопросе \u003cspan class=\"example-word\">«при чём»\u003c/span> и указании \u003cspan class=\"example-word\">«при том доме»\u003c/span> предлог с местоимением.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-analysis-practice": {
+      "id": "conjunction-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "conjunction-analysis-1",
+          "type": "sort",
+          "promptHtml": "Какова часть речи слова в скобках?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Я знаю, что поезд прибыл. (что)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я знаю, что ты читаешь. (что)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Что бы мне прочитать? (бы)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Союз"
+            },
+            {
+              "value": "1",
+              "label": "Местоимение"
+            },
+            {
+              "value": "2",
+              "label": "Частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом примере \u003cspan class=\"example-word\">«что»\u003c/span> только соединяет сообщения. Во втором обозначает предмет чтения: читаешь кого? что? \u003cspan class=\"example-word\">«Бы»\u003c/span> добавляет оттенок размышления.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-analysis-2",
+          "type": "sort",
+          "promptHtml": "Определите часть речи \u003cspan class=\"example-word\">«да»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Маша да Петя пришли.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ты придёшь? Да.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Союз"
+            },
+            {
+              "value": "1",
+              "label": "Частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Соединение имён и подтверждение ответа разные работы одного слова.\u003c/p>\n"
+        },
+        {
+          "id": "conjunction-analysis-3",
+          "type": "choice",
+          "promptHtml": "Мы вернулись, \u003cstrong class=\"example-word\">потому что\u003c/strong> стемнело. Выберите характеристику.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Союз: сочинительный, соединительный, составной, не изменяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Предлог: производный, составной, выражает причину, употреблён с родительным падежом."
+            },
+            {
+              "value": "2",
+              "label": "В. Союз: подчинительный, причинный, составной, не изменяется."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Сообщение о наступлении темноты поясняет причину возвращения. \u003cspan class=\"example-word\">«Потому что»\u003c/span> не присоединяет падежную форму существительного.\u003c/p>\n"
+        }
+      ]
+    },
+    "conjunction-check": {
+      "id": "conjunction-check",
+      "title": "Проверка по союзам",
+      "assessment": "conjunction-check",
+      "questions": [
+        {
+          "id": "conjunction-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все союзы.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "взяли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "зонт",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "вышли",
+                "role": "verb"
+              }
+            },
+            {
+              "text": ","
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "хотя",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "шёл",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "дождь",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "1",
+              "label": "взяли",
+              "role": "verb"
+            },
+            {
+              "value": "2",
+              "label": "зонт",
+              "role": "noun"
+            },
+            {
+              "value": "3",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "4",
+              "label": "вышли",
+              "role": "verb"
+            },
+            {
+              "value": "5",
+              "label": "хотя",
+              "role": "conjunction"
+            },
+            {
+              "value": "6",
+              "label": "шёл",
+              "role": "verb"
+            },
+            {
+              "value": "7",
+              "label": "дождь",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "3",
+            "5"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«И»\u003c/span> соединяет действия, \u003cspan class=\"example-word\">«хотя»\u003c/span> присоединяет сообщение о помехе, не остановившей выход.\u003c/p>\n",
+          "reviewStep": "conjunction-meaning"
+        },
+        {
+          "id": "conjunction-check-2",
+          "type": "sort",
+          "promptHtml": "Определите вид союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Мы позвонили, но никто не ответил.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы позвонили, когда приехали.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Поедем поездом либо автобусом.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Сочинительный"
+            },
+            {
+              "value": "1",
+              "label": "Подчинительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Но»\u003c/span>, \u003cspan class=\"example-word\">«либо»\u003c/span> сочинительные. \u003cspan class=\"example-word\">«Когда»\u003c/span> подчинительный временной союз.\u003c/p>\n",
+          "reviewStep": "conjunction-kinds"
+        },
+        {
+          "id": "conjunction-check-3",
+          "type": "sort",
+          "promptHtml": "Определите разряд сочинительного союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Отец и сын готовят обед.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Обед простой, зато вкусный.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "То светит солнце, то идёт дождь.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Соединительный"
+            },
+            {
+              "value": "1",
+              "label": "Противительный"
+            },
+            {
+              "value": "2",
+              "label": "Разделительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Соединение, противопоставление и чередование.\u003c/p>\n",
+          "reviewStep": "conjunction-coordinate"
+        },
+        {
+          "id": "conjunction-check-4",
+          "type": "choice",
+          "promptHtml": "Какое значение у союза \u003cstrong class=\"example-word\">да\u003c/strong> в \u003cspan class=\"example-word\">«Я хотел ответить, да не успел»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Соединительное: можно заменить на «и»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Противительное: можно заменить на «но»."
+            },
+            {
+              "value": "2",
+              "label": "В. Разделительное: можно заменить на «или»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Вторая часть противоречит намерению из первой. \u003cspan class=\"example-word\">«Хотел, но не успел»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "conjunction-coordinate"
+        },
+        {
+          "id": "conjunction-check-5",
+          "type": "sort",
+          "promptHtml": "Определите разряд подчинительного союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Пока шёл дождь, мы читали.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы читали, так как шёл дождь.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Мы остановились, чтобы прочитать объявление.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Если придёшь, позвони.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Временной"
+            },
+            {
+              "value": "1",
+              "label": "Причинный"
+            },
+            {
+              "value": "2",
+              "label": "Целевой"
+            },
+            {
+              "value": "3",
+              "label": "Условный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Выражены время, причина, цель и условие.\u003c/p>\n",
+          "reviewStep": "conjunction-subordinate"
+        },
+        {
+          "id": "conjunction-check-6",
+          "type": "sort",
+          "promptHtml": "Определите разряд подчинительного союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Хотя было холодно, мы гуляли.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Похолодало, так что мы вернулись.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Вода блестела, словно её покрыли серебром.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Я думаю, что мы успеем.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Уступительный"
+            },
+            {
+              "value": "1",
+              "label": "Следствия"
+            },
+            {
+              "value": "2",
+              "label": "Сравнительный"
+            },
+            {
+              "value": "3",
+              "label": "Изъяснительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Помеха, результат, сравнение, содержание мысли.\u003c/p>\n",
+          "reviewStep": "conjunction-subordinate"
+        },
+        {
+          "id": "conjunction-check-7",
+          "type": "choice",
+          "promptHtml": "Каков разряд \u003cspan class=\"example-word\">«чтобы»\u003c/span> в \u003cstrong class=\"example-word\">Я попросил, чтобы ты подождал\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Целевой: союз всегда обозначает цель."
+            },
+            {
+              "value": "1",
+              "label": "Б. Условный: ожидание является условием просьбы."
+            },
+            {
+              "value": "2",
+              "label": "В. Изъяснительный: вторая часть раскрывает содержание просьбы."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Союз вводит то, о чём попросили, а не цель совершения другого действия.\u003c/p>\n",
+          "reviewStep": "conjunction-subordinate"
+        },
+        {
+          "id": "conjunction-check-8",
+          "type": "sort",
+          "promptHtml": "Определите строение союза.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Если будет тепло, мы пойдём гулять.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы пошли гулять, несмотря на то что было холодно.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Мы остались, чтобы помочь.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Простой"
+            },
+            {
+              "value": "1",
+              "label": "Составной"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Если»\u003c/span>, \u003cspan class=\"example-word\">«чтобы»\u003c/span> одно слово. \u003cspan class=\"example-word\">«Несмотря на то что»\u003c/span> несколько слов одного союза.\u003c/p>\n",
+          "reviewStep": "conjunction-structure"
+        },
+        {
+          "id": "conjunction-check-9",
+          "type": "sort",
+          "promptHtml": "Определите употребление.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Хлеб и сыр.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "То дождь, то снег.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Как брат, так и сестра.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Одиночный"
+            },
+            {
+              "value": "1",
+              "label": "Повторяющийся"
+            },
+            {
+              "value": "2",
+              "label": "Двойной"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В повторяющемся союзе части одинаковые, в двойном разные.\u003c/p>\n",
+          "reviewStep": "conjunction-structure"
+        },
+        {
+          "id": "conjunction-check-10",
+          "type": "choice",
+          "promptHtml": "Выберите правильное употребление союза.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. В обсуждении участвовали как ученики, так и учителя."
+            },
+            {
+              "value": "1",
+              "label": "Б. В обсуждении участвовали как ученики, но и учителя."
+            },
+            {
+              "value": "2",
+              "label": "В. В обсуждении участвовали не только ученики, так и учителя."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Пара \u003cspan class=\"example-word\">«как…так и»\u003c/span> сохраняется целиком.\u003c/p>\n",
+          "reviewStep": "conjunction-structure"
+        },
+        {
+          "id": "conjunction-check-11",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верными запятыми.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Я купил и хлеб и молоко."
+            },
+            {
+              "value": "1",
+              "label": "Б. Я купил и хлеб, и молоко."
+            },
+            {
+              "value": "2",
+              "label": "В. Я купил, и хлеб и молоко."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Повторяющийся \u003cspan class=\"example-word\">«и…и»\u003c/span> требует запятой между перечисляемыми сочетаниями.\u003c/p>\n",
+          "reviewStep": "conjunction-punctuation"
+        },
+        {
+          "id": "conjunction-check-12",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верными запятыми.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Я открыл окно, и проветрил комнату."
+            },
+            {
+              "value": "1",
+              "label": "Б. Я открыл окно и в комнате стало прохладнее."
+            },
+            {
+              "value": "2",
+              "label": "В. Я открыл окно, и в комнате стало прохладнее."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>В варианте В соединены два сообщения. В варианте А перечислены действия одного человека, запятая перед одиночным \u003cspan class=\"example-word\">«и»\u003c/span> лишняя.\u003c/p>\n",
+          "reviewStep": "conjunction-punctuation"
+        },
+        {
+          "id": "conjunction-check-13",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верными запятыми.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Когда дождь закончился, мы вышли."
+            },
+            {
+              "value": "1",
+              "label": "Б. Когда, дождь закончился мы вышли."
+            },
+            {
+              "value": "2",
+              "label": "В. Когда дождь закончился мы, вышли."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Сообщение \u003cspan class=\"example-word\">«когда дождь закончился»\u003c/span> отделяется целиком. Запятая не делит его внутри.\u003c/p>\n",
+          "reviewStep": "conjunction-punctuation"
+        },
+        {
+          "id": "conjunction-check-14",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Я пришёл, что(бы) помочь.\u003c/strong> Выпишите раскрытое слово или сочетание.",
+          "correct": [
+            "чтобы"
+          ],
+          "explanationHtml": "\u003cp>Союз выражает цель прихода, пишется слитно.\u003c/p>\n",
+          "reviewStep": "conjunction-spelling"
+        },
+        {
+          "id": "conjunction-check-15",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Что(бы) мне прочитать на каникулах?\u003c/strong> Выпишите раскрытое сочетание.",
+          "correct": [
+            "что бы"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Что»\u003c/span> обозначает предмет выбора, \u003cspan class=\"example-word\">«бы»\u003c/span> частица. Это не союз.\u003c/p>\n",
+          "reviewStep": "conjunction-spelling"
+        },
+        {
+          "id": "conjunction-check-16",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Брат (то)же пойдёт на экскурсию.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы выбрали (то)же место, что и вчера.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Сестра (так)же пойдёт на экскурсию.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Сделай (так)же, как брат.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Союзы присоединяют участника. Сочетания \u003cspan class=\"example-word\">«то же»\u003c/span>, \u003cspan class=\"example-word\">«так же»\u003c/span> указывают на тот же предмет или способ.\u003c/p>\n",
+          "reviewStep": "conjunction-spelling"
+        },
+        {
+          "id": "conjunction-check-17",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Дом маленький, (за)то удобный.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Спрячься (за)то дерево.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он рисует, (при)чём хорошо.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Зато»\u003c/span> противительный союз, \u003cspan class=\"example-word\">«причём»\u003c/span> присоединительный. \u003cspan class=\"example-word\">«За то дерево»\u003c/span> содержит предлог и указательное местоимение.\u003c/p>\n",
+          "reviewStep": "conjunction-spelling"
+        },
+        {
+          "id": "conjunction-check-18",
+          "type": "sort",
+          "promptHtml": "Определите часть речи \u003cspan class=\"example-word\">«что»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Я слышал, что ты приехал.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я не знаю, что ты купил.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Союз"
+            },
+            {
+              "value": "1",
+              "label": "Относительное местоимение"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом случае \u003cspan class=\"example-word\">«что»\u003c/span> присоединяет сообщение о приезде. Во втором обозначает купленный предмет: купил кого? что?\u003c/p>\n",
+          "reviewStep": "conjunction-analysis"
+        },
+        {
+          "id": "conjunction-check-19",
+          "type": "choice",
+          "promptHtml": "Дождь закончился, \u003cstrong class=\"example-word\">но\u003c/strong> ветер не стих. Выберите характеристику \u003cspan class=\"example-word\">«но»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Частица: добавляет отрицание к сообщению о ветре, неизменяемая, смысловая."
+            },
+            {
+              "value": "1",
+              "label": "Б. Союз: связывает сообщения, сочинительный, противительный, простой, неизменяемый."
+            },
+            {
+              "value": "2",
+              "label": "В. Предлог: связывает «дождь» и «ветер», непроизводный, простой, неизменяемый."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Но»\u003c/span> сопоставляет сообщения. Отрицание выражает \u003cspan class=\"example-word\">«не»\u003c/span>, а не \u003cspan class=\"example-word\">«но»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "conjunction-analysis"
+        },
+        {
+          "id": "conjunction-check-20",
+          "type": "choice",
+          "promptHtml": "Почему \u003cspan class=\"example-word\">«да»\u003c/span> в \u003cstrong class=\"example-word\">Да, я согласен\u003c/strong> не союз?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это глагол, обозначающий действие согласия, в повелительном наклонении."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это предлог, который присоединяет местоимение «я»."
+            },
+            {
+              "value": "2",
+              "label": "В. Это частица, подтверждающая ответ; она не соединяет слова или сообщения."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Работа слова определяется контекстом. В \u003cspan class=\"example-word\">«брат да сестра»\u003c/span> это же слово соединяет названия и является союзом.\u003c/p>\n",
+          "reviewStep": "conjunction-analysis"
+        }
+      ]
+    },
+    "particle-meaning-practice": {
+      "id": "particle-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все частицы.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Разве",
+                "role": "particle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ты",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "не",
+                "role": "particle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "прочитал",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "рассказ",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "?"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Разве",
+              "role": "particle"
+            },
+            {
+              "value": "1",
+              "label": "ты",
+              "role": "pronoun"
+            },
+            {
+              "value": "2",
+              "label": "не",
+              "role": "particle"
+            },
+            {
+              "value": "3",
+              "label": "прочитал",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "рассказ",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "2"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Разве»\u003c/span> выражает вопрос с сомнением, \u003cspan class=\"example-word\">«не»\u003c/span> отрицает действие.\u003c/p>\n"
+        },
+        {
+          "id": "particle-meaning-2",
+          "type": "choice",
+          "promptHtml": "Что означает \u003cstrong class=\"example-word\">Только Маша пришла\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Приход Маши оказался неожиданным."
+            },
+            {
+              "value": "1",
+              "label": "Б. Пришла Маша, остальные не пришли."
+            },
+            {
+              "value": "2",
+              "label": "В. Маша пришла раньше остальных."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Только»\u003c/span> ограничивает круг пришедших, а не сообщает о времени прихода.\u003c/p>\n"
+        },
+        {
+          "id": "particle-meaning-3",
+          "type": "choice",
+          "promptHtml": "Она \u003cstrong class=\"example-word\">же\u003c/strong> обещала прийти. Выберите характеристику \u003cspan class=\"example-word\">«же»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Частица: усиливает напоминание об обещании, не изменяется и не получает рода от «она»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Союз: соединяет местоимение «она» и действие «обещала», не изменяется."
+            },
+            {
+              "value": "2",
+              "label": "В. Наречие: обозначает способ обещания, отвечает на вопрос «как?», не изменяется."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Же»\u003c/span> подчёркивает сказанное. Действие и способ действия частица не называет.\u003c/p>\n"
+        },
+        {
+          "id": "particle-meaning-4",
+          "type": "input",
+          "promptHtml": "Выпишите частицу полностью: \u003cstrong class=\"example-word\">Он вряд ли успеет на поезд.\u003c/strong>",
+          "correct": [
+            "вряд ли"
+          ],
+          "explanationHtml": "\u003cp>Сочетание \u003cspan class=\"example-word\">«вряд ли»\u003c/span> выражает сомнение и рассматривается как одна частица.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-kinds-practice": {
+      "id": "particle-kinds-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-kinds-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд частицы.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Вот наш дом.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Именно этот ответ верный.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Только брат пришёл.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Даже брат удивился.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Указательная"
+            },
+            {
+              "value": "1",
+              "label": "Уточняющая"
+            },
+            {
+              "value": "2",
+              "label": "Ограничительно-выделительная"
+            },
+            {
+              "value": "3",
+              "label": "Усилительная"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Указание на дом; уточнение ответа; ограничение круга людей; подчёркивание неожиданности.\u003c/p>\n"
+        },
+        {
+          "id": "particle-kinds-2",
+          "type": "sort",
+          "promptHtml": "Определите разряд частицы.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Неужели уже вечер?",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Он едва ли успеет.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Что за чудесный день!",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Я не согласен.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Вопросительная"
+            },
+            {
+              "value": "1",
+              "label": "Со значением сомнения"
+            },
+            {
+              "value": "2",
+              "label": "Восклицательная"
+            },
+            {
+              "value": "3",
+              "label": "Отрицательная"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Называем частицы полностью: \u003cspan class=\"example-word\">«неужели»\u003c/span>, \u003cspan class=\"example-word\">«едва ли»\u003c/span>, \u003cspan class=\"example-word\">«что за»\u003c/span>, \u003cspan class=\"example-word\">«не»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "particle-kinds-3",
+          "type": "choice",
+          "promptHtml": "В каком предложении частица ограничивает круг предметов?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Даже эта книга интересная."
+            },
+            {
+              "value": "1",
+              "label": "Б. Вот эта книга."
+            },
+            {
+              "value": "2",
+              "label": "В. Мне нужна лишь эта книга."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Лишь»\u003c/span> значит \u003cspan class=\"example-word\">«только»\u003c/span>. \u003cspan class=\"example-word\">«Даже»\u003c/span> усиливает, \u003cspan class=\"example-word\">«вот»\u003c/span> указывает.\u003c/p>\n"
+        },
+        {
+          "id": "particle-kinds-4",
+          "type": "input",
+          "promptHtml": "Выпишите уточняющую частицу полностью: \u003cstrong class=\"example-word\">Мы пришли как раз вовремя.\u003c/strong>",
+          "correct": [
+            "как раз"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Как раз»\u003c/span> уточняет совпадение с нужным временем. \u003cspan class=\"example-word\">«Вовремя»\u003c/span> наречие.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-forms-practice": {
+      "id": "particle-forms-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-forms-1",
+          "type": "sort",
+          "promptHtml": "Какое наклонение образует частица?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Я прочитал бы книгу.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Пусть Маша прочитает книгу.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Давайте прочитаем книгу.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Условное"
+            },
+            {
+              "value": "1",
+              "label": "Повелительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Бы»\u003c/span> выражает возможное или желательное действие; \u003cspan class=\"example-word\">«пусть»\u003c/span>, \u003cspan class=\"example-word\">«давайте»\u003c/span> побуждение.\u003c/p>\n"
+        },
+        {
+          "id": "particle-forms-2",
+          "type": "input",
+          "promptHtml": "Выпишите частицу, образующую наклонение: \u003cstrong class=\"example-word\">Я бы завтра прочитал рассказ.\u003c/strong>",
+          "correct": [
+            "бы"
+          ],
+          "explanationHtml": "\u003cp>Частица входит в \u003cspan class=\"example-word\">«прочитал бы»\u003c/span>, хотя отделена от глагола другим словом.\u003c/p>\n"
+        },
+        {
+          "id": "particle-forms-3",
+          "type": "sort",
+          "promptHtml": "Определите часть речи \u003cspan class=\"example-word\">«давай»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Давай мне книгу.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Давай прочитаем книгу.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Глагол"
+            },
+            {
+              "value": "1",
+              "label": "Формообразующая частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом случае названо действие передачи. Во втором \u003cspan class=\"example-word\">«давай»\u003c/span> образует совместное побуждение с глаголом \u003cspan class=\"example-word\">«прочитаем»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-negative-practice": {
+      "id": "particle-negative-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-negative-1",
+          "type": "sort",
+          "promptHtml": "Каков смысл сочетания?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Не один ученик решил задачу.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ни один ученик не решил задачу.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Несколько учеников решили"
+            },
+            {
+              "value": "1",
+              "label": "Никто не решил"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Отрицание \u003cspan class=\"example-word\">«один»\u003c/span> даёт значение множества. \u003cspan class=\"example-word\">«Ни один»\u003c/span> усиливает отрицание \u003cspan class=\"example-word\">«не решил»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "particle-negative-2",
+          "type": "input",
+          "promptHtml": "Выберите \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span>: \u003cstrong class=\"example-word\">Я _____ разу не видел этого фильма.\u003c/strong>",
+          "correct": [
+            "ни"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ни разу не»\u003c/span> означает \u003cspan class=\"example-word\">«никогда»\u003c/span>. Частица \u003cspan class=\"example-word\">«ни»\u003c/span> усиливает уже выраженное отрицание.\u003c/p>\n"
+        },
+        {
+          "id": "particle-negative-3",
+          "type": "input",
+          "promptHtml": "Выберите \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span>: \u003cstrong class=\"example-word\">Куда _____ посмотри, всюду снег.\u003c/strong>",
+          "correct": [
+            "ни"
+          ],
+          "explanationHtml": "\u003cp>В любом направлении виден снег. \u003cspan class=\"example-word\">«Ни»\u003c/span> выражает обобщение при любом условии.\u003c/p>\n"
+        },
+        {
+          "id": "particle-negative-4",
+          "type": "choice",
+          "promptHtml": "Какое написание передаёт смысл \u003cspan class=\"example-word\">«он бывал во многих местах»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Где он только ни бывал!"
+            },
+            {
+              "value": "1",
+              "label": "Б. Где он только не бывал!"
+            },
+            {
+              "value": "2",
+              "label": "В. Он нигде не бывал."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>В восклицании \u003cspan class=\"example-word\">«Где он только не бывал!»\u003c/span> пишется \u003cspan class=\"example-word\">«не»\u003c/span>. Вариант В означает отсутствие поездок.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-spelling-practice": {
+      "id": "particle-spelling-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-spelling-1",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Придёшь(ли) ты завтра?\u003c/strong> Запишите сочетание из скобок.",
+          "correct": [
+            "придёшь ли"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ли»\u003c/span> отдельная частица, пишется раздельно.\u003c/p>\n"
+        },
+        {
+          "id": "particle-spelling-2",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Скажи(ка), где книга.\u003c/strong> Запишите раскрытое сочетание.",
+          "correct": [
+            "скажи-ка"
+          ],
+          "explanationHtml": "\u003cp>Частица \u003cspan class=\"example-word\">«-ка»\u003c/span> присоединяется дефисом.\u003c/p>\n"
+        },
+        {
+          "id": "particle-spelling-3",
+          "type": "sort",
+          "promptHtml": "Выберите написание \u003cspan class=\"example-word\">«таки»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он пришёл(таки).",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Он(таки) пришёл.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Опять(таки) идёт дождь.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Я(таки) успел.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Через дефис"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>После глагола и наречия \u003cspan class=\"example-word\">«таки»\u003c/span> присоединяется дефисом. После местоимения пишется отдельно.\u003c/p>\n"
+        },
+        {
+          "id": "particle-spelling-4",
+          "type": "sort",
+          "promptHtml": "Что представляет собой \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Не прочитал книгу.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Никто не пришёл. (ни в «никто»)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Недруг. (не)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Не у кого спросить. (не)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Отдельная частица"
+            },
+            {
+              "value": "1",
+              "label": "Часть слова"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Не прочитал»\u003c/span>, \u003cspan class=\"example-word\">«не у кого»\u003c/span> содержат отдельную частицу. В \u003cspan class=\"example-word\">«никто»\u003c/span>, \u003cspan class=\"example-word\">«недруг»\u003c/span> \u003cspan class=\"example-word\">«ни»\u003c/span> и \u003cspan class=\"example-word\">«не»\u003c/span> входят в состав слова.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-distinction-practice": {
+      "id": "particle-distinction-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-distinction-1",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Книга на столе. (на)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Книга маленькая, но интересная. (но)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Книга не трудная. (не)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Предлог"
+            },
+            {
+              "value": "1",
+              "label": "Союз"
+            },
+            {
+              "value": "2",
+              "label": "Частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Связь с существительным, противопоставление признаков, отрицание признака.\u003c/p>\n"
+        },
+        {
+          "id": "particle-distinction-2",
+          "type": "sort",
+          "promptHtml": "Какова роль \u003cspan class=\"example-word\">«да»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Маша да Петя пришли.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ты готов? Да.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Да будет мир!",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Союз"
+            },
+            {
+              "value": "1",
+              "label": "Смысловая частица"
+            },
+            {
+              "value": "2",
+              "label": "Формообразующая частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Да»\u003c/span> соединяет, подтверждает или образует пожелание в зависимости от контекста.\u003c/p>\n"
+        },
+        {
+          "id": "particle-distinction-3",
+          "type": "sort",
+          "promptHtml": "Чем является \u003cspan class=\"example-word\">«-то»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Кто-то позвонил.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Я-то слышал звонок.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Постфикс местоимения"
+            },
+            {
+              "value": "1",
+              "label": "Частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В \u003cspan class=\"example-word\">«кто-то»\u003c/span> образовано неопределённое местоимение. \u003cspan class=\"example-word\">«Я-то»\u003c/span> остаётся личным местоимением с усилительной частицей.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-usage-practice": {
+      "id": "particle-usage-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-usage-1",
+          "type": "choice",
+          "promptHtml": "Какой вариант означает \u003cspan class=\"example-word\">«Маша прочитала рассказ, а другие произведения не читала»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Только Маша прочитала рассказ."
+            },
+            {
+              "value": "1",
+              "label": "Б. Маша прочитала только рассказ."
+            },
+            {
+              "value": "2",
+              "label": "В. Даже Маша прочитала рассказ."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Частица перед \u003cspan class=\"example-word\">«рассказ»\u003c/span> ограничивает прочитанное произведение. Перед \u003cspan class=\"example-word\">«Маша»\u003c/span> она ограничивает круг читателей.\u003c/p>\n"
+        },
+        {
+          "id": "particle-usage-2",
+          "type": "choice",
+          "promptHtml": "Выберите правильную пунктуацию.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Я, же предупреждал."
+            },
+            {
+              "value": "1",
+              "label": "Б. Я же, предупреждал."
+            },
+            {
+              "value": "2",
+              "label": "В. Я же предупреждал."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Частица \u003cspan class=\"example-word\">«же»\u003c/span> сама по себе запятыми не выделяется.\u003c/p>\n"
+        },
+        {
+          "id": "particle-usage-3",
+          "type": "choice",
+          "promptHtml": "Выберите правильную пунктуацию.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Да, я согласен."
+            },
+            {
+              "value": "1",
+              "label": "Б. Да я, согласен."
+            },
+            {
+              "value": "2",
+              "label": "В. Да я согласен, с тобой."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Подтверждение \u003cspan class=\"example-word\">«да»\u003c/span> отделяется запятой от поясняющего сообщения.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-analysis-practice": {
+      "id": "particle-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "particle-analysis-1",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Даже\u003c/strong> младший брат решил задачу. Выберите характеристику.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Союз: соединяет названия братьев, сочинительный, соединительный, простой, неизменяемый."
+            },
+            {
+              "value": "1",
+              "label": "Б. Частица: смысловая, усилительная, неизменяемая; подчёркивает неожиданность результата."
+            },
+            {
+              "value": "2",
+              "label": "В. Наречие: обозначает способ решения, отвечает на вопрос «как?», неизменяемое."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Даже»\u003c/span> не называет способ решения и не соединяет названия. Оно подчёркивает сообщение.\u003c/p>\n"
+        },
+        {
+          "id": "particle-analysis-2",
+          "type": "choice",
+          "promptHtml": "Она \u003cstrong class=\"example-word\">бы\u003c/strong> пришла. Выберите характеристику \u003cspan class=\"example-word\">«бы»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Глагол: условное наклонение, прошедшее время, женский род, единственное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Союз: подчинительный, условный, простой, связывает сообщения."
+            },
+            {
+              "value": "2",
+              "label": "В. Частица: формообразующая, неизменяемая; вместе с «пришла» образует условное наклонение."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>У \u003cspan class=\"example-word\">«бы»\u003c/span> нет рода, числа и времени. В этом предложении частица не соединяет два сообщения.\u003c/p>\n"
+        },
+        {
+          "id": "particle-analysis-3",
+          "type": "sort",
+          "promptHtml": "Определите назначение частицы.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Пусть брат придёт.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Только брат пришёл.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Брат пришёл бы.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Брат ведь пришёл.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Образует форму"
+            },
+            {
+              "value": "1",
+              "label": "Добавляет оттенок значения"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пусть»\u003c/span>, \u003cspan class=\"example-word\">«бы»\u003c/span> образуют наклонения. \u003cspan class=\"example-word\">«Только»\u003c/span>, \u003cspan class=\"example-word\">«ведь»\u003c/span> смысловые частицы.\u003c/p>\n"
+        }
+      ]
+    },
+    "particle-check": {
+      "id": "particle-check",
+      "title": "Проверка по частицам",
+      "assessment": "particle-check",
+      "questions": [
+        {
+          "id": "particle-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все частицы.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Неужели",
+                "role": "particle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ты",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "уже",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "прочитал",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "даже",
+                "role": "particle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "этот",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "рассказ",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "?"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Неужели",
+              "role": "particle"
+            },
+            {
+              "value": "1",
+              "label": "ты",
+              "role": "pronoun"
+            },
+            {
+              "value": "2",
+              "label": "уже",
+              "role": "adverb"
+            },
+            {
+              "value": "3",
+              "label": "прочитал",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "даже",
+              "role": "particle"
+            },
+            {
+              "value": "5",
+              "label": "этот",
+              "role": "pronoun"
+            },
+            {
+              "value": "6",
+              "label": "рассказ",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "4"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Неужели»\u003c/span> вопросительная частица с удивлением, \u003cspan class=\"example-word\">«даже»\u003c/span> усилительная. \u003cspan class=\"example-word\">«Уже»\u003c/span> обозначает время и здесь является наречием.\u003c/p>\n",
+          "reviewStep": "particle-meaning"
+        },
+        {
+          "id": "particle-check-2",
+          "type": "sort",
+          "promptHtml": "Определите разряд частицы.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Вон наша остановка.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Именно эту книгу я искал.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Лишь брат ответил.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Даже брат ответил.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Указательная"
+            },
+            {
+              "value": "1",
+              "label": "Уточняющая"
+            },
+            {
+              "value": "2",
+              "label": "Ограничительно-выделительная"
+            },
+            {
+              "value": "3",
+              "label": "Усилительная"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вон»\u003c/span>, \u003cspan class=\"example-word\">«именно»\u003c/span>, \u003cspan class=\"example-word\">«лишь»\u003c/span>, \u003cspan class=\"example-word\">«даже»\u003c/span> выполняют разные смысловые задачи.\u003c/p>\n",
+          "reviewStep": "particle-kinds"
+        },
+        {
+          "id": "particle-check-3",
+          "type": "sort",
+          "promptHtml": "Определите разряд частицы.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Разве ты не знал?",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Он вряд ли придёт.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Что за красивый рисунок!",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Я не устал.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Вопросительная"
+            },
+            {
+              "value": "1",
+              "label": "Со значением сомнения"
+            },
+            {
+              "value": "2",
+              "label": "Восклицательная"
+            },
+            {
+              "value": "3",
+              "label": "Отрицательная"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Сочетания \u003cspan class=\"example-word\">«вряд ли»\u003c/span>, \u003cspan class=\"example-word\">«что за»\u003c/span> называются целиком.\u003c/p>\n",
+          "reviewStep": "particle-kinds"
+        },
+        {
+          "id": "particle-check-4",
+          "type": "input",
+          "promptHtml": "Выпишите формообразующую частицу: \u003cstrong class=\"example-word\">Пускай брат прочитает рассказ.\u003c/strong>",
+          "correct": [
+            "пускай"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пускай»\u003c/span> вместе с \u003cspan class=\"example-word\">«прочитает»\u003c/span> выражает побуждение, образует повелительное наклонение.\u003c/p>\n",
+          "reviewStep": "particle-forms"
+        },
+        {
+          "id": "particle-check-5",
+          "type": "input",
+          "promptHtml": "Выпишите формообразующую частицу: \u003cstrong class=\"example-word\">Я бы с удовольствием прочитал рассказ.\u003c/strong>",
+          "correct": [
+            "бы"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Бы»\u003c/span> относится к \u003cspan class=\"example-word\">«прочитал»\u003c/span>, хотя стоит не рядом с ним.\u003c/p>\n",
+          "reviewStep": "particle-forms"
+        },
+        {
+          "id": "particle-check-6",
+          "type": "sort",
+          "promptHtml": "Определите назначение частицы.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Давайте обсудим книгу.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Неужели ты читал эту книгу?",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Я прочитал бы книгу.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Формообразующая"
+            },
+            {
+              "value": "1",
+              "label": "Смысловая"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Давайте»\u003c/span>, \u003cspan class=\"example-word\">«бы»\u003c/span> образуют наклонение; \u003cspan class=\"example-word\">«неужели»\u003c/span> выражает вопрос с удивлением.\u003c/p>\n",
+          "reviewStep": "particle-forms"
+        },
+        {
+          "id": "particle-check-7",
+          "type": "choice",
+          "promptHtml": "Какое предложение означает \u003cspan class=\"example-word\">«многие ученики справились»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Ни один ученик не справился."
+            },
+            {
+              "value": "1",
+              "label": "Б. Не один ученик справился."
+            },
+            {
+              "value": "2",
+              "label": "В. Один ученик не справился."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Не один»\u003c/span> отрицает ограничение одним человеком.\u003c/p>\n",
+          "reviewStep": "particle-negative"
+        },
+        {
+          "id": "particle-check-8",
+          "type": "input",
+          "promptHtml": "Выберите \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span>: \u003cstrong class=\"example-word\">Я _____ разу не был в этом городе.\u003c/strong>",
+          "correct": [
+            "ни"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ни разу не»\u003c/span> означает \u003cspan class=\"example-word\">«никогда»\u003c/span> и усиливает отрицание.\u003c/p>\n",
+          "reviewStep": "particle-negative"
+        },
+        {
+          "id": "particle-check-9",
+          "type": "input",
+          "promptHtml": "Выберите \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span>: \u003cstrong class=\"example-word\">Как _____ старался Петя, открыть дверь не удалось.\u003c/strong>",
+          "correct": [
+            "ни"
+          ],
+          "explanationHtml": "\u003cp>Любые усилия не дали результата. \u003cspan class=\"example-word\">«Как ни»\u003c/span> вводит значение уступки.\u003c/p>\n",
+          "reviewStep": "particle-negative"
+        },
+        {
+          "id": "particle-check-10",
+          "type": "input",
+          "promptHtml": "Выберите \u003cspan class=\"example-word\">«не»\u003c/span> или \u003cspan class=\"example-word\">«ни»\u003c/span>: \u003cstrong class=\"example-word\">Кто только _____ приходил на этот праздник!\u003c/strong> Смысл: пришло много разных людей.",
+          "correct": [
+            "не"
+          ],
+          "explanationHtml": "\u003cp>В таком восклицании \u003cspan class=\"example-word\">«не»\u003c/span> передаёт утверждение о множестве участников.\u003c/p>\n",
+          "reviewStep": "particle-negative"
+        },
+        {
+          "id": "particle-check-11",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Я прочитал(бы) эту книгу.\u003c/strong> Выпишите раскрытое сочетание.",
+          "correct": [
+            "прочитал бы"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Бы»\u003c/span> пишется раздельно с глаголом.\u003c/p>\n",
+          "reviewStep": "particle-spelling"
+        },
+        {
+          "id": "particle-check-12",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Возьми(ка) этот карандаш.\u003c/strong> Выпишите раскрытое сочетание.",
+          "correct": [
+            "возьми-ка"
+          ],
+          "explanationHtml": "\u003cp>Частица \u003cspan class=\"example-word\">«-ка»\u003c/span> присоединяется дефисом.\u003c/p>\n",
+          "reviewStep": "particle-spelling"
+        },
+        {
+          "id": "particle-check-13",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он успел(таки).",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Он(таки) успел.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Всё(таки) мы успели.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Через дефис"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>После глагола и частицы дефис; после местоимения раздельно.\u003c/p>\n",
+          "reviewStep": "particle-spelling"
+        },
+        {
+          "id": "particle-check-14",
+          "type": "sort",
+          "promptHtml": "Какова роль \u003cspan class=\"example-word\">«-то»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Что-то случилось.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Он-то знает ответ.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Постфикс местоимения"
+            },
+            {
+              "value": "1",
+              "label": "Смысловая частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом случае образовано неопределённое местоимение. Во втором подчёркнуто личное местоимение.\u003c/p>\n",
+          "reviewStep": "particle-distinction"
+        },
+        {
+          "id": "particle-check-15",
+          "type": "sort",
+          "promptHtml": "Определите часть речи \u003cspan class=\"example-word\">«да»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Брат да сестра читают.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ты готов? Да.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Да будет мир!",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Союз"
+            },
+            {
+              "value": "1",
+              "label": "Смысловая частица"
+            },
+            {
+              "value": "2",
+              "label": "Формообразующая частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Соединение, подтверждение и образование пожелания.\u003c/p>\n",
+          "reviewStep": "particle-distinction"
+        },
+        {
+          "id": "particle-check-16",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Мы пошли к дому. (к)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы дошли, но дверь была закрыта. (но)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Мы ведь дошли. (ведь)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Предлог"
+            },
+            {
+              "value": "1",
+              "label": "Союз"
+            },
+            {
+              "value": "2",
+              "label": "Частица"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Предлог связывает с падежной формой, союз соединяет сообщения, частица усиливает сообщение.\u003c/p>\n",
+          "reviewStep": "particle-distinction"
+        },
+        {
+          "id": "particle-check-17",
+          "type": "choice",
+          "promptHtml": "Какой смысл у \u003cstrong class=\"example-word\">Только Петя прочитал повесть\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Петя прочитал повесть, но не читал другие произведения."
+            },
+            {
+              "value": "1",
+              "label": "Б. Петя неожиданно для остальных прочитал повесть."
+            },
+            {
+              "value": "2",
+              "label": "В. Повесть прочитал Петя, остальные её не прочитали."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Ограничение относится к \u003cspan class=\"example-word\">«Петя»\u003c/span>. Частица перед \u003cspan class=\"example-word\">«повесть»\u003c/span> ограничивала бы круг произведений.\u003c/p>\n",
+          "reviewStep": "particle-usage"
+        },
+        {
+          "id": "particle-check-18",
+          "type": "choice",
+          "promptHtml": "Выберите правильную пунктуацию.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Разве ты не знал?"
+            },
+            {
+              "value": "1",
+              "label": "Б. Разве, ты не знал?"
+            },
+            {
+              "value": "2",
+              "label": "В. Разве ты, не знал?"
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Разве»\u003c/span> само по себе не отделяется запятой.\u003c/p>\n",
+          "reviewStep": "particle-usage"
+        },
+        {
+          "id": "particle-check-19",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Только\u003c/strong> брат пришёл. Выберите характеристику.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наречие: обозначает время прихода, отвечает на вопрос «когда?», неизменяемое."
+            },
+            {
+              "value": "1",
+              "label": "Б. Частица: смысловая, ограничительно-выделительная, неизменяемая; указывает, что остальные не пришли."
+            },
+            {
+              "value": "2",
+              "label": "В. Союз: соединительный, простой, неизменяемый; связывает «брат» и «пришёл»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Только»\u003c/span> ограничивает круг участников. Не называет время и не соединяет сообщения.\u003c/p>\n",
+          "reviewStep": "particle-analysis"
+        },
+        {
+          "id": "particle-check-20",
+          "type": "choice",
+          "promptHtml": "Она \u003cstrong class=\"example-word\">бы\u003c/strong> помогла. Какое объяснение верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Бы» имеет женский род и единственное число, потому что относится к «она»."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Бы» подчинительный союз, который вводит условие помощи."
+            },
+            {
+              "value": "2",
+              "label": "В. «Бы» неизменяемая формообразующая частица; вместе с «помогла» образует условное наклонение."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Частица не получает признаков соседнего слова и не вводит отдельное сообщение об условии.\u003c/p>\n",
+          "reviewStep": "particle-analysis"
         }
       ]
     }
