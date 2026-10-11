@@ -1,24 +1,30 @@
 :root{--bg:#f7f8fb;--paper:#fff;--text:#101828;--muted:#667085;--line:#d7deea;--blue:#195cc4;--blue-soft:#edf4ff;--example-green:#00745e;--example-line:#c4e6da;--teal:#0f766e;--teal-soft:#edf9f6;--body-size:17px;--reading-size:18px;--control-size:16px}
 .chapter-hub{border-top:1px solid var(--line);padding-top:24px}
-.hub-progress{margin-bottom:24px;max-width:420px}
-.chapter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.chapter-card{display:grid;grid-template-columns:44px minmax(0,1fr);grid-template-rows:1fr auto;gap:12px 18px;min-height:184px;padding:22px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--text);text-decoration:none;transition:border-color .14s ease,background .14s ease}
-.chapter-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:8px;background:var(--blue-soft)}
-.chapter-icon::before{content:"";width:26px;height:26px;background:var(--blue);mask:url('icons/book.svg') center/contain no-repeat}
+.hub-progress{margin-bottom:28px;max-width:420px}
+.chapter-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.chapter-grid>li{min-width:0;border-bottom:1px solid var(--line)}
+.chapter-card{display:grid;grid-template-columns:44px minmax(0,1fr) 176px;align-items:center;gap:22px;min-height:112px;padding:22px 18px;color:var(--text);text-decoration:none;transition:background .14s ease}
+.chapter-number{align-self:start;padding-top:2px;color:var(--muted);font-size:20px;font-weight:750;font-variant-numeric:tabular-nums;line-height:1.3}
 .chapter-copy{min-width:0}
-.chapter-copy h2{font-size:20px;line-height:1.3;color:var(--blue);margin:0 0 7px}
+.chapter-copy h2{font-size:21px;line-height:1.3;color:var(--text);margin:0 0 7px}
 .chapter-copy p{margin:0;color:var(--muted);font-size:var(--control-size);line-height:1.5}
-.chapter-state{grid-column:2;display:flex;align-items:center;gap:8px;font-size:15px;font-weight:750;line-height:1.4;color:var(--blue)}
-.chapter-state img{opacity:.65;flex:none}
+.chapter-state{display:grid;grid-template-columns:minmax(0,1fr) 20px;align-items:center;gap:9px 12px;font-size:14px;font-weight:750;line-height:1.4;color:var(--blue)}
+.chapter-state [data-status]{grid-column:1;grid-row:1}
+.chapter-state img,.chapter-check{grid-column:2;grid-row:1}
+.chapter-state img{opacity:.65}
 .chapter-check{width:20px;height:20px;flex:none;background:var(--teal);mask:url('icons/check.svg') center/contain no-repeat}
-.chapter-card.completed{border-color:#b9ded5;background:#f2fbf8}
+.chapter-progress{grid-column:1/-1;grid-row:2;max-width:144px;height:3px}
+.chapter-card.completed{background:#f0f9f6;box-shadow:inset 3px 0 #70b5a2}
 .chapter-card.completed .chapter-state{color:var(--teal)}
-.chapter-card.completed .chapter-icon{background:#e2f4ee}
-.chapter-card.completed .chapter-icon::before{background:var(--teal)}
-.chapter-card:hover{border-color:#8bb6f9;background:#f8fbff}
+.chapter-card.completed .chapter-number{color:var(--teal)}
+.chapter-card.completed .chapter-progress::-webkit-progress-value{background:var(--teal)}
+.chapter-card.completed .chapter-progress::-moz-progress-bar{background:var(--teal)}
+.chapter-card:hover{background:var(--blue-soft)}
+.chapter-card:hover h2{color:var(--blue)}
+body.large .chapter-number{font-size:22px}
 body.large .chapter-copy h2{font-size:22px}
-body.large .chapter-state{font-size:17px}
-@media(max-width:720px){.chapter-grid{grid-template-columns:1fr}.chapter-card{min-height:164px;padding:18px;grid-template-columns:36px minmax(0,1fr);gap:12px}.chapter-icon{width:36px;height:36px}.chapter-icon::before{width:23px;height:23px}.hub-progress{max-width:none}}
+body.large .chapter-state{font-size:16px}
+@media(max-width:720px){.chapter-card{min-height:0;padding:20px 8px;grid-template-columns:30px minmax(0,1fr);gap:12px 14px}.chapter-number{font-size:18px}.chapter-copy h2{font-size:20px}.chapter-state{grid-column:2}.hub-progress{max-width:none}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:var(--body-size);line-height:1.55;letter-spacing:0}
 body.large{--body-size:19px;--reading-size:21px;--control-size:18px}

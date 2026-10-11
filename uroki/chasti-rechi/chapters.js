@@ -36,6 +36,10 @@
       card.querySelector('[data-status]').textContent = finished ? 'Пройдено' : started ? `${done} из ${steps.length} разделов` : 'Начать';
       card.querySelector('.chapter-check').hidden = !finished;
       card.querySelector('.chapter-arrow').hidden = finished;
+      const chapterProgress = card.querySelector('.chapter-progress');
+      chapterProgress.max = steps.length;
+      chapterProgress.value = done;
+      chapterProgress.setAttribute('aria-label', `${content.chapters.find(item => item.id === card.dataset.chapter).title}: ${done} из ${steps.length} разделов`);
     }
     document.body.classList.toggle('large', state.large);
     document.getElementById('large-mode').setAttribute('aria-pressed', String(state.large));
