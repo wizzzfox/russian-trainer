@@ -28,6 +28,10 @@ window.LESSON_CONTENT = {
     {
       "id": "verb",
       "title": "Глагол"
+    },
+    {
+      "id": "adverb",
+      "title": "Наречие"
     }
   ],
   "labels": {
@@ -609,6 +613,114 @@ window.LESSON_CONTENT = {
       "html": "",
       "groups": [
         "verb-check"
+      ]
+    },
+    {
+      "id": "adverb-meaning",
+      "title": "Что обозначает наречие",
+      "chapter": "adverb",
+      "html": "\u003cp>Сравним предложения: \u003cspan class=\"example-word\">«Ученик ответил»\u003c/span> и \u003cspan class=\"example-word\">«Ученик ответил уверенно»\u003c/span>. Во втором предложении названо не только действие, но и то, как оно выполнено. Слово \u003cspan class=\"example-word\">«уверенно»\u003c/span> поясняет глагол \u003cspan class=\"example-word\">«ответил»\u003c/span>: ответил как? уверенно. Это наречие.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Наречие\u003c/strong> обозначает признак действия, другого признака, а иногда предмета. Оно может сообщать, как, где, когда, почему или с какой целью происходит действие, в какой мере проявляется признак.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Ученик \u003cstrong class=\"example-word\">внимательно\u003c/strong> слушает. Слово \u003cspan class=\"example-word\">«внимательно»\u003c/span> характеризует действие: слушает как?\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Очень\u003c/strong> интересная книга. Слово \u003cspan class=\"example-word\">«очень»\u003c/span> показывает, в какой мере проявляется признак \u003cspan class=\"example-word\">«интересная»\u003c/span>.\u003c/p>\n\u003cp>Прогулка \u003cstrong class=\"example-word\">пешком\u003c/strong>. Слово \u003cspan class=\"example-word\">«пешком»\u003c/span> поясняет название занятия \u003cspan class=\"example-word\">«прогулка»\u003c/span> и указывает на способ передвижения.\u003c/p>\n\u003c/div>\u003cp>Вопрос зависит от значения наречия. К слову \u003cspan class=\"example-word\">«внимательно»\u003c/span> задаём вопрос \u003cspan class=\"example-word\">«как?»\u003c/span>, к слову \u003cspan class=\"example-word\">«вчера»\u003c/span> вопрос \u003cspan class=\"example-word\">«когда?»\u003c/span>, к слову \u003cspan class=\"example-word\">«домой»\u003c/span> вопрос \u003cspan class=\"example-word\">«куда?»\u003c/span>. Одного общего вопроса для всех наречий нет.\u003c/p>\n",
+      "groups": [
+        "adverb-meaning-practice"
+      ]
+    },
+    {
+      "id": "adverb-relations",
+      "title": "С каким словом связано наречие",
+      "chapter": "adverb",
+      "html": "\u003cp>Чтобы понять значение наречия, найдём слово, которое оно поясняет. Чаще всего это глагол. Но наречие может относиться и к прилагательному, другому наречию или существительному.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Сочетание\u003c/th>\n\u003cth>От какого слова задаём вопрос\u003c/th>\n\u003cth>Что поясняет наречие\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Читать \u003cstrong class=\"example-word\">медленно\u003c/strong>\u003c/td>\n\u003ctd>Читать как?\u003c/td>\n\u003ctd>Действие\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Очень\u003c/strong> удобный\u003c/td>\n\u003ctd>Удобный в какой мере?\u003c/td>\n\u003ctd>Признак предмета\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Слишком\u003c/strong> быстро\u003c/td>\n\u003ctd>Быстро в какой мере?\u003c/td>\n\u003ctd>Признак действия, выраженный другим наречием\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Чтение \u003cstrong class=\"example-word\">вслух\u003c/strong>\u003c/td>\n\u003ctd>Чтение какое?\u003c/td>\n\u003ctd>Занятие, названное существительным\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Вопрос \u003cspan class=\"example-word\">«какой?»\u003c/span> сам по себе ещё не доказывает, что перед нами прилагательное. Слово \u003cspan class=\"example-word\">«вслух»\u003c/span> не согласуется с существительным: \u003cspan class=\"example-word\">«чтение вслух»\u003c/span>, \u003cspan class=\"example-word\">«чтением вслух»\u003c/span>. Наречие сохраняет свой вид.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Местоименные наречия\u003c/strong> не называют точное место, время или способ действия, а указывают на них либо спрашивают о них: \u003cspan class=\"example-word\">«там»\u003c/span>, \u003cspan class=\"example-word\">«тогда»\u003c/span>, \u003cspan class=\"example-word\">«так»\u003c/span>, \u003cspan class=\"example-word\">«где»\u003c/span>, \u003cspan class=\"example-word\">«когда»\u003c/span>, \u003cspan class=\"example-word\">«как»\u003c/span>. В этом уроке мы относим эти слова к наречиям.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Книга лежит \u003cstrong class=\"example-word\">там\u003c/strong>. Слово \u003cspan class=\"example-word\">«там»\u003c/span> указывает на место, но не называет его.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Где\u003c/strong> лежит книга? Слово \u003cspan class=\"example-word\">«где»\u003c/span> спрашивает о месте.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "adverb-relations-practice"
+      ]
+    },
+    {
+      "id": "adverb-classes",
+      "title": "Разряды наречий по значению",
+      "chapter": "adverb",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Разряд по значению\u003c/strong> объединяет наречия, которые называют один вид признака. Например, \u003cspan class=\"example-word\">«сегодня»\u003c/span>, \u003cspan class=\"example-word\">«поздно»\u003c/span>, \u003cspan class=\"example-word\">«зимой»\u003c/span> указывают на время, а \u003cspan class=\"example-word\">«рядом»\u003c/span>, \u003cspan class=\"example-word\">«внизу»\u003c/span>, \u003cspan class=\"example-word\">«домой»\u003c/span> на место или направление.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Разряд\u003c/th>\n\u003cth>На какие вопросы отвечает\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Наречия образа действия\u003c/strong>\u003c/td>\n\u003ctd>Как? Каким образом?\u003c/td>\n\u003ctd>Говорить \u003cstrong class=\"example-word\">тихо\u003c/strong>, идти \u003cstrong class=\"example-word\">пешком\u003c/strong>, работать \u003cstrong class=\"example-word\">вместе\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Наречия меры и степени\u003c/strong>\u003c/td>\n\u003ctd>Сколько? Насколько? В какой мере?\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Очень\u003c/strong> добрый, \u003cstrong class=\"example-word\">слишком\u003c/strong> громко, увеличить \u003cstrong class=\"example-word\">вдвое\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Наречия места\u003c/strong>\u003c/td>\n\u003ctd>Где? Куда? Откуда?\u003c/td>\n\u003ctd>Стоять \u003cstrong class=\"example-word\">рядом\u003c/strong>, идти \u003cstrong class=\"example-word\">домой\u003c/strong>, приехать \u003cstrong class=\"example-word\">издалека\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Наречия времени\u003c/strong>\u003c/td>\n\u003ctd>Когда? Как долго? С каких пор? До каких пор?\u003c/td>\n\u003ctd>Встретиться \u003cstrong class=\"example-word\">завтра\u003c/strong>, ждать \u003cstrong class=\"example-word\">долго\u003c/strong>, жить \u003cstrong class=\"example-word\">издавна\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Наречия причины\u003c/strong>\u003c/td>\n\u003ctd>Почему? Отчего?\u003c/td>\n\u003ctd>Ответить \u003cstrong class=\"example-word\">сгоряча\u003c/strong>, ошибиться \u003cstrong class=\"example-word\">спросонок\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Наречия цели\u003c/strong>\u003c/td>\n\u003ctd>Зачем? С какой целью?\u003c/td>\n\u003ctd>Сказать \u003cstrong class=\"example-word\">назло\u003c/strong>, сделать \u003cstrong class=\"example-word\">нарочно\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Причина объясняет, из-за чего произошло действие. Цель показывает, чего хотел добиться человек.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Он \u003cstrong class=\"example-word\">сгоряча\u003c/strong> нагрубил другу: сказал грубо из-за сильного волнения, не подумав. Это причина.\u003c/p>\n\u003cp>Он \u003cstrong class=\"example-word\">назло\u003c/strong> включил громкую музыку: хотел рассердить других. Это цель.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>К наречию причины спрашиваем \u003cspan class=\"example-word\">«почему?»\u003c/span>, к наречию цели \u003cspan class=\"example-word\">«зачем?»\u003c/span>: из-за чего произошло или ради чего сделано.\u003c/p>\n\u003c/aside>\u003cp>Разряд определяем по значению слова в сочетании. \u003cspan class=\"example-word\">«Далеко»\u003c/span> в \u003cspan class=\"example-word\">«живёт далеко»\u003c/span> указывает на место. В \u003cspan class=\"example-word\">«далеко не простой вопрос»\u003c/span> оно усиливает отрицание и не обозначает расстояние.\u003c/p>\n",
+      "groups": [
+        "adverb-classes-practice"
+      ]
+    },
+    {
+      "id": "adverb-forms",
+      "title": "Почему наречие не изменяется",
+      "chapter": "adverb",
+      "html": "\u003cp>Наречие не склоняется и не спрягается: у него нет форм рода, числа, падежа, лица и времени. Если связанное с ним слово меняется, наречие остаётся прежним.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мальчик говорил \u003cstrong class=\"example-word\">громко\u003c/strong>. Девочка говорила \u003cstrong class=\"example-word\">громко\u003c/strong>. Дети говорят \u003cstrong class=\"example-word\">громко\u003c/strong>.\u003c/p>\n\u003cp>У глагола меняются время, род и число. У наречия \u003cspan class=\"example-word\">«громко»\u003c/span> таких форм нет.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Окончание\u003c/strong> служит для образования форм слова. У наречия окончания нет. Последняя буква \u003cspan class=\"example-word\">«о»\u003c/span> в \u003cspan class=\"example-word\">«громко»\u003c/span> входит в суффикс, а не в окончание.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Суффикс\u003c/strong> находится после корня и участвует в образовании слова или его формы. В слове \u003cspan class=\"example-word\">«громко»\u003c/span> суффикс \u003cspan class=\"example-word\">«-о»\u003c/span> образует наречие от прилагательного \u003cspan class=\"example-word\">«громкий»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Неизменяемость по родам, числам и падежам не мешает некоторым наречиям иметь степени сравнения: \u003cspan class=\"example-word\">«громко»\u003c/span>, \u003cspan class=\"example-word\">«громче»\u003c/span>, \u003cspan class=\"example-word\">«наиболее громко»\u003c/span>. Степень сравнения показывает не род или число, а силу проявления признака.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cspan class=\"example-word\">«Громкий»\u003c/span>, \u003cspan class=\"example-word\">«громкая»\u003c/span>, \u003cspan class=\"example-word\">«громкие»\u003c/span> согласуются с названиями предметов. \u003cspan class=\"example-word\">«Громко»\u003c/span> одинаково в сочетаниях \u003cspan class=\"example-word\">«говорил громко»\u003c/span>, \u003cspan class=\"example-word\">«говорила громко»\u003c/span>, \u003cspan class=\"example-word\">«говорили громко»\u003c/span>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "adverb-forms-practice"
+      ]
+    },
+    {
+      "id": "adverb-comparison",
+      "title": "Степени сравнения наречий",
+      "chapter": "adverb",
+      "html": "\u003cp>Степени сравнения есть прежде всего у наречий на \u003cspan class=\"example-word\">«-о»\u003c/span>, \u003cspan class=\"example-word\">«-е»\u003c/span>, образованных от качественных прилагательных: \u003cspan class=\"example-word\">«быстро»\u003c/span>, \u003cspan class=\"example-word\">«громко»\u003c/span>, \u003cspan class=\"example-word\">«искренне»\u003c/span>. Они позволяют сравнивать, как выполняется действие.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Степень\u003c/th>\n\u003cth>Что выражает\u003c/th>\n\u003cth>Как образуется\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Положительная степень\u003c/strong>\u003c/td>\n\u003ctd>Признак без сравнения\u003c/td>\n\u003ctd>Исходная форма\u003c/td>\n\u003ctd>Бежать \u003cstrong class=\"example-word\">быстро\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Сравнительная степень\u003c/strong>\u003c/td>\n\u003ctd>Признак проявляется сильнее или слабее\u003c/td>\n\u003ctd>Простая форма с \u003cspan class=\"example-word\">«-ее»\u003c/span>, \u003cspan class=\"example-word\">«-е»\u003c/span>, \u003cspan class=\"example-word\">«-ше»\u003c/span> либо составная с \u003cspan class=\"example-word\">«более»\u003c/span>, \u003cspan class=\"example-word\">«менее»\u003c/span>\u003c/td>\n\u003ctd>Бежать \u003cstrong class=\"example-word\">быстрее\u003c/strong>, говорить \u003cstrong class=\"example-word\">тише\u003c/strong>, прийти \u003cstrong class=\"example-word\">раньше\u003c/strong>; бежать \u003cstrong class=\"example-word\">более быстро\u003c/strong>, говорить \u003cstrong class=\"example-word\">менее громко\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"term\">Превосходная степень\u003c/strong>\u003c/td>\n\u003ctd>Наибольшая или наименьшая мера признака\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«Наиболее»\u003c/span>, \u003cspan class=\"example-word\">«наименее»\u003c/span> с исходной формой либо сравнительная степень с \u003cspan class=\"example-word\">«всех»\u003c/span>, \u003cspan class=\"example-word\">«всего»\u003c/span>\u003c/td>\n\u003ctd>Объяснить \u003cstrong class=\"example-word\">наиболее понятно\u003c/strong>, ответить \u003cstrong class=\"example-word\">наименее подробно\u003c/strong>, прыгнуть \u003cstrong class=\"example-word\">выше всех\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>При образовании простой сравнительной степени суффикс \u003cspan class=\"example-word\">«-о»\u003c/span> или \u003cspan class=\"example-word\">«-е»\u003c/span> исходной формы заменяется: \u003cspan class=\"example-word\">«быстро → быстрее»\u003c/span>, \u003cspan class=\"example-word\">«тихо → тише»\u003c/span>. Иногда изменяется корень: \u003cspan class=\"example-word\">«хорошо → лучше»\u003c/span>, \u003cspan class=\"example-word\">«плохо → хуже»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Лена решила задачу \u003cstrong class=\"example-word\">быстро\u003c/strong>, а Оля ещё \u003cstrong class=\"example-word\">быстрее\u003c/strong>. Сравниваем, как они решили задачу.\u003c/p>\n\u003c/div>\u003cp>Не у всякого наречия есть степени сравнения. \u003cspan class=\"example-word\">«Вчера»\u003c/span>, \u003cspan class=\"example-word\">«здесь»\u003c/span>, \u003cspan class=\"example-word\">«пешком»\u003c/span> не обозначают признак, который можно усилить таким способом.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Выбираем один способ сравнения: \u003cspan class=\"example-word\">«быстрее»\u003c/span> или \u003cspan class=\"example-word\">«более быстро»\u003c/span>. Соединять их в \u003cspan class=\"example-word\">«более быстрее»\u003c/span> нельзя. Так же: \u003cspan class=\"example-word\">«лучше»\u003c/span>, а не \u003cspan class=\"example-word\">«более лучше»\u003c/span>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "adverb-comparison-practice"
+      ]
+    },
+    {
+      "id": "adverb-distinction",
+      "title": "Как отличить наречие от похожих слов",
+      "chapter": "adverb",
+      "html": "\u003cp>Одинаково звучащие слова могут относиться к разным частям речи. Рассмотрим, что слово поясняет и что обозначает в предложении.\u003c/p>\n\u003ch3>Наречие и прилагательное\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>Девочка \u003cstrong class=\"example-word\">весело\u003c/strong> смеётся. \u003cspan class=\"example-word\">«Весело»\u003c/span> поясняет действие: смеётся как? Это наречие.\u003c/p>\n\u003cp>Лицо девочки \u003cstrong class=\"example-word\">весело\u003c/strong>. \u003cspan class=\"example-word\">«Весело»\u003c/span> характеризует лицо; можно изменить род и число: \u003cspan class=\"example-word\">«девочка весела»\u003c/span>, \u003cspan class=\"example-word\">«дети веселы»\u003c/span>. Это краткое прилагательное.\u003c/p>\n\u003c/div>\u003cp>Так же различаем сравнительные степени. Форма сама по себе часть речи не подскажет.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Этот дом \u003cstrong class=\"example-word\">выше\u003c/strong> соседнего. Сравнивается признак предмета \u003cspan class=\"example-word\">«дом»\u003c/span>. Это прилагательное.\u003c/p>\n\u003cp>Мяч подпрыгнул \u003cstrong class=\"example-word\">выше\u003c/strong>, чем раньше. Сравнивается, как подпрыгнул мяч. Это наречие.\u003c/p>\n\u003c/div>\u003ch3>Наречие и слово категории состояния\u003c/h3>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Слова категории состояния\u003c/strong> сообщают о состоянии человека или окружающей среды. Они не характеризуют чьё-либо действие.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Дети \u003cstrong class=\"example-word\">весело\u003c/strong> играют. Есть действие \u003cspan class=\"example-word\">«играют»\u003c/span>, и \u003cspan class=\"example-word\">«весело»\u003c/span> сообщает, как оно происходит. Это наречие.\u003c/p>\n\u003cp>Детям \u003cstrong class=\"example-word\">весело\u003c/strong>. О действии не говорится; названо состояние детей. Это слово категории состояния.\u003c/p>\n\u003c/div>\u003ch3>Наречие и существительное с предлогом\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Сначала\u003c/strong> прочитай условие. \u003cspan class=\"example-word\">«Сначала»\u003c/span> указывает на время и порядок действия: сперва прочитай. Это одно наречие.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">С начала\u003c/strong> месяца идут дожди. \u003cspan class=\"example-word\">«Начала»\u003c/span> называет начало определённого месяца, перед ним предлог \u003cspan class=\"example-word\">«с»\u003c/span>. Существительное можно пояснить прилагательным: \u003cspan class=\"example-word\">«с самого начала месяца»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Одно лишь наличие поясняющего слова не является надёжной проверкой: у наречия тоже могут быть зависимые слова, например \u003cspan class=\"example-word\">«далеко от дома»\u003c/span>. Важно понять значение и строение всего сочетания.\u003c/p>\n\u003ch3>Наречие и числительное\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>Мы пришли \u003cstrong class=\"example-word\">втроём\u003c/strong>. Слово поясняет действие \u003cspan class=\"example-word\">«пришли»\u003c/span>, не изменяется. Это наречие.\u003c/p>\n\u003cp>Пришли \u003cstrong class=\"example-word\">трое\u003c/strong> друзей. Слово называет количество людей и имеет падежные формы: \u003cspan class=\"example-word\">«троих друзей»\u003c/span>, \u003cspan class=\"example-word\">«троим друзьям»\u003c/span>. Это собирательное числительное.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "adverb-distinction-practice"
+      ]
+    },
+    {
+      "id": "adverb-formation",
+      "title": "Как образуются наречия",
+      "chapter": "adverb",
+      "html": "\u003cp>Наречие может образоваться от слова другой части речи. При этом появляется новое слово, а не другая форма прежнего.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Исходное слово\u003c/th>\n\u003cth>Наречие\u003c/th>\n\u003cth>Что изменилось\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Тихий\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Тихо\u003c/strong>\u003c/td>\n\u003ctd>Прилагательное стало основой наречия с суффиксом \u003cspan class=\"example-word\">«-о»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Зима\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Зимой\u003c/strong>\u003c/td>\n\u003ctd>Форма существительного стала употребляться для обозначения времени действия\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Двое\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Вдвоём\u003c/strong>\u003c/td>\n\u003ctd>От числительного образовано неизменяемое слово, которое поясняет действие\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Новый\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">По-новому\u003c/strong>\u003c/td>\n\u003ctd>К основе прилагательного добавлены приставка \u003cspan class=\"example-word\">«по-»\u003c/span> и суффикс \u003cspan class=\"example-word\">«-ому»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Приставка\u003c/strong> находится перед корнем и участвует в образовании слова. Приставку пишем вместе со словом или, в определённых случаях, через дефис. Предлог является отдельным служебным словом.\u003c/p>\n\u003c/div>\u003cp>Слова \u003cspan class=\"example-word\">«зимой»\u003c/span>, \u003cspan class=\"example-word\">«утром»\u003c/span>, \u003cspan class=\"example-word\">«вечером»\u003c/span> рассматриваем в контексте. Если слово называет время действия, оно может быть наречием. Если называет предмет и сохраняет связи существительного, это существительное.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Утром\u003c/strong> мы уехали. Уехали когда? Слово указывает на время действия, это наречие.\u003c/p>\n\u003cp>Мы любовались ясным \u003cstrong class=\"example-word\">утром\u003c/strong>. Слово называет время суток как предмет; с ним согласуется прилагательное \u003cspan class=\"example-word\">«ясным»\u003c/span>. Это существительное в творительном падеже: кем? чем?\u003c/p>\n\u003c/div>\u003cp>При образовании наречия меняется часть речи: \u003cspan class=\"example-word\">«тихий → тихо»\u003c/span>. При образовании степени сравнения часть речи сохраняется: \u003cspan class=\"example-word\">«тихо → тише»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "adverb-formation-practice"
+      ]
+    },
+    {
+      "id": "adverb-spelling",
+      "title": "Слитно, раздельно или через дефис",
+      "chapter": "adverb",
+      "html": "\u003cp>Написание наречия зависит от того, как оно образовано. Начнём с правил, которые помогают проверить частые случаи.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Дефис\u003c/strong> является знаком внутри слова. Он не равен пробелу между самостоятельными словами.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Правило\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Приставка \u003cspan class=\"example-word\">«по-»\u003c/span> с суффиксами \u003cspan class=\"example-word\">«-ому»\u003c/span>, \u003cspan class=\"example-word\">«-ему»\u003c/span>, \u003cspan class=\"example-word\">«-и»\u003c/span>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">По-новому\u003c/strong>, \u003cstrong class=\"example-word\">по-прежнему\u003c/strong>, \u003cstrong class=\"example-word\">по-русски\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Приставки \u003cspan class=\"example-word\">«в-»\u003c/span>, \u003cspan class=\"example-word\">«во-»\u003c/span> в наречиях от порядковых числительных\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Во-первых\u003c/strong>, \u003cstrong class=\"example-word\">во-вторых\u003c/strong>, \u003cstrong class=\"example-word\">в-третьих\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cspan class=\"example-word\">«Кое-»\u003c/span>, \u003cspan class=\"example-word\">«-то»\u003c/span>, \u003cspan class=\"example-word\">«-либо»\u003c/span>, \u003cspan class=\"example-word\">«-нибудь»\u003c/span> в неопределённых наречиях\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Кое-как\u003c/strong>, \u003cstrong class=\"example-word\">где-то\u003c/strong>, \u003cstrong class=\"example-word\">когда-либо\u003c/strong>, \u003cstrong class=\"example-word\">куда-нибудь\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Повтор слова или близких по смыслу слов\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Еле-еле\u003c/strong>, \u003cstrong class=\"example-word\">давным-давно\u003c/strong>, \u003cstrong class=\"example-word\">тихо-мирно\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Не всякое наречие с \u003cspan class=\"example-word\">«по-»\u003c/span> пишется через дефис. В \u003cspan class=\"example-word\">«побольше»\u003c/span>, \u003cspan class=\"example-word\">«подешевле»\u003c/span> нет суффиксов \u003cspan class=\"example-word\">«-ому»\u003c/span>, \u003cspan class=\"example-word\">«-ему»\u003c/span>, \u003cspan class=\"example-word\">«-и»\u003c/span>; эти слова пишутся слитно.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Теперь мы работаем \u003cstrong class=\"example-word\">по-новому\u003c/strong>. Это наречие: работаем как?\u003c/p>\n\u003cp>Машина едет \u003cstrong class=\"example-word\">по новому шоссе\u003c/strong>. Предлог \u003cspan class=\"example-word\">«по»\u003c/span> связан с существительным \u003cspan class=\"example-word\">«шоссе»\u003c/span>, а прилагательное \u003cspan class=\"example-word\">«новому»\u003c/span> поясняет его. Здесь три слова.\u003c/p>\n\u003c/div>\u003cp>Существительное с предлогом может быть похоже на наречие. Значение сочетания помогает выбрать написание.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Наречие\u003c/th>\n\u003cth>Существительное с предлогом\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Сначала\u003c/strong> подумай\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">С начала\u003c/strong> учебного года\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Приходи \u003cstrong class=\"example-word\">вовремя\u003c/strong>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Во время\u003c/strong> каникул\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Подойти \u003cstrong class=\"example-word\">вплотную\u003c/strong>\u003c/td>\n\u003ctd>Завернуть \u003cstrong class=\"example-word\">в плотную\u003c/strong> бумагу\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Не все написания можно вывести из этих правил. \u003cspan class=\"example-word\">«Наизусть»\u003c/span> пишется слитно, \u003cspan class=\"example-word\">«без устали»\u003c/span> раздельно. Незнакомое наречие или наречное сочетание проверяем по орфографическому словарю.\u003c/p>\n",
+      "groups": [
+        "adverb-spelling-practice"
+      ]
+    },
+    {
+      "id": "adverb-endings",
+      "title": "Буквы на конце и внутри наречий",
+      "chapter": "adverb",
+      "html": "\u003ch3>\u003cspan class=\"example-word\">«А»\u003c/span> и \u003cspan class=\"example-word\">«о»\u003c/span> после приставок\u003c/h3>\u003cp>В наречиях, образованных от прилагательного одновременным добавлением приставки и суффикса, после \u003cspan class=\"example-word\">«из-»\u003c/span>, \u003cspan class=\"example-word\">«до-»\u003c/span>, \u003cspan class=\"example-word\">«с-»\u003c/span> на конце обычно пишется \u003cspan class=\"example-word\">«а»\u003c/span>, после \u003cspan class=\"example-word\">«в-»\u003c/span>, \u003cspan class=\"example-word\">«на-»\u003c/span>, \u003cspan class=\"example-word\">«за-»\u003c/span> пишется \u003cspan class=\"example-word\">«о»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Сухой → \u003cstrong class=\"example-word\">досуха\u003c/strong>, новый → \u003cstrong class=\"example-word\">снова\u003c/strong>, редкий → \u003cstrong class=\"example-word\">изредка\u003c/strong>.\u003c/p>\n\u003cp>Правый → \u003cstrong class=\"example-word\">вправо\u003c/strong>, долгий → \u003cstrong class=\"example-word\">надолго\u003c/strong>, тёмный → \u003cstrong class=\"example-word\">затемно\u003c/strong>.\u003c/p>\n\u003c/div>\u003cp>Сначала выясним, как образовано слово. \u003cspan class=\"example-word\">«Дословно»\u003c/span> образовано от готового прилагательного \u003cspan class=\"example-word\">«дословный»\u003c/span> только с помощью \u003cspan class=\"example-word\">«-о»\u003c/span>, поэтому приставка \u003cspan class=\"example-word\">«до-»\u003c/span> не требует здесь \u003cspan class=\"example-word\">«а»\u003c/span>.\u003c/p>\n\u003ch3>Мягкий знак после шипящих\u003c/h3>\u003cp>На конце наречий после шипящих пишется мягкий знак: \u003cspan class=\"example-word\">«настежь»\u003c/span>, \u003cspan class=\"example-word\">«прочь»\u003c/span>, \u003cspan class=\"example-word\">«сплошь»\u003c/span>. Исключения: \u003cspan class=\"example-word\">«уж»\u003c/span>, \u003cspan class=\"example-word\">«замуж»\u003c/span>, \u003cspan class=\"example-word\">«невтерпёж»\u003c/span>.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Три исключения без мягкого знака: \u003cstrong class=\"example-word\">уж, замуж, невтерпёж\u003c/strong>.\u003c/p>\n\u003c/aside>\u003ch3>\u003cspan class=\"example-word\">«Н»\u003c/span> и \u003cspan class=\"example-word\">«нн»\u003c/span>\u003c/h3>\u003cp>В наречии на \u003cspan class=\"example-word\">«-о»\u003c/span>, \u003cspan class=\"example-word\">«-е»\u003c/span> сохраняется столько \u003cspan class=\"example-word\">«н»\u003c/span>, сколько было в прилагательном, от которого оно образовано.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Уверенный → \u003cstrong class=\"example-word\">уверенно\u003c/strong>: две \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n\u003cp>Путаный → \u003cstrong class=\"example-word\">путано\u003c/strong>: одна \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n\u003c/div>\u003ch3>\u003cspan class=\"example-word\">«О»\u003c/span> и \u003cspan class=\"example-word\">«е»\u003c/span> после шипящих\u003c/h3>\u003cp>На конце наречий после шипящих под ударением пишется \u003cspan class=\"example-word\">«о»\u003c/span>, без ударения \u003cspan class=\"example-word\">«е»\u003c/span>: \u003cspan class=\"example-word\">«горячо́»\u003c/span>, \u003cspan class=\"example-word\">«све́же»\u003c/span>. Исключение: \u003cspan class=\"example-word\">«ещё»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "adverb-endings-practice"
+      ]
+    },
+    {
+      "id": "adverb-negative",
+      "title": "Не с наречиями",
+      "chapter": "adverb",
+      "html": "\u003cp>У наречий на \u003cspan class=\"example-word\">«-о»\u003c/span>, \u003cspan class=\"example-word\">«-е»\u003c/span> написание \u003cspan class=\"example-word\">«не»\u003c/span> зависит от смысла высказывания.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Слитно\u003c/th>\n\u003cth>Раздельно\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Возникает слово с противоположным значением, которое можно передать без \u003cspan class=\"example-word\">«не»\u003c/span>: говорить \u003cstrong class=\"example-word\">негромко\u003c/strong>, то есть тихо\u003c/td>\n\u003ctd>Признак отрицается и противопоставляется другому: говорить \u003cstrong class=\"example-word\">не громко, а тихо\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Слово не употребляется без \u003cspan class=\"example-word\">«не»\u003c/span>: поступить \u003cstrong class=\"example-word\">нелепо\u003c/strong>\u003c/td>\n\u003ctd>Отрицание усилено словами \u003cspan class=\"example-word\">«далеко не»\u003c/span>, \u003cspan class=\"example-word\">«вовсе не»\u003c/span>, \u003cspan class=\"example-word\">«отнюдь не»\u003c/span>, \u003cspan class=\"example-word\">«ничуть не»\u003c/span>, \u003cspan class=\"example-word\">«нисколько не»\u003c/span>: объяснил \u003cstrong class=\"example-word\">далеко не понятно\u003c/strong>, ответил \u003cstrong class=\"example-word\">ничуть не убедительно\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Важно прочитать всё предложение. Сравним утверждение тихой речи и отрицание громкой речи.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Он говорил \u003cstrong class=\"example-word\">негромко\u003c/strong>, и мне пришлось подойти ближе. Здесь сообщается, что речь была тихой.\u003c/p>\n\u003cp>Он говорил \u003cstrong class=\"example-word\">не громко, а тихо\u003c/strong>. Здесь один признак отрицается и прямо называется другой.\u003c/p>\n\u003c/div>\u003cp>С наречиями не на \u003cspan class=\"example-word\">«-о»\u003c/span>, \u003cspan class=\"example-word\">«-е»\u003c/span> отрицательную частицу обычно пишут отдельно: \u003cspan class=\"example-word\">«не здесь»\u003c/span>, \u003cspan class=\"example-word\">«не сегодня»\u003c/span>, \u003cspan class=\"example-word\">«не всегда»\u003c/span>. Если слово без \u003cspan class=\"example-word\">«не»\u003c/span> не употребляется, написание слитное: \u003cspan class=\"example-word\">«невзначай»\u003c/span>, \u003cspan class=\"example-word\">«невдомёк»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "adverb-negative-practice"
+      ]
+    },
+    {
+      "id": "adverb-analysis",
+      "title": "Как охарактеризовать наречие",
+      "chapter": "adverb",
+      "html": "\u003cp>Для характеристики наречия достаточно последовательно установить три вещи: что слово поясняет, к какому разряду относится и есть ли у него степень сравнения.\u003c/p>\n\u003ch3>1. Найдём связанное слово и зададим вопрос\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>Саша ответил \u003cstrong class=\"example-word\">точнее\u003c/strong>, чем вчера. От слова \u003cspan class=\"example-word\">«ответил»\u003c/span> задаём вопрос \u003cspan class=\"example-word\">«как?»\u003c/span>. \u003cspan class=\"example-word\">«Точнее»\u003c/span> характеризует действие, а не Сашу как человека.\u003c/p>\n\u003c/div>\u003ch3>2. Назовём часть речи и разряд по значению\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Точнее»\u003c/span> является наречием образа действия. Оно сообщает, как выполнено действие.\u003c/p>\n\u003c/div>\u003ch3>3. Определим степень сравнения, если она есть\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>Исходная форма \u003cspan class=\"example-word\">«точно»\u003c/span>, в предложении простая сравнительная степень \u003cspan class=\"example-word\">«точнее»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>У наречия, которое не имеет степеней сравнения, просто отмечаем это: \u003cspan class=\"example-word\">«завтра»\u003c/span> является наречием времени, степеней сравнения у него нет. Род, число, падеж, лицо и время наречию не приписываем.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Полная характеристика: \u003cspan class=\"example-word\">«точнее»\u003c/span> является наречием образа действия; исходная форма \u003cspan class=\"example-word\">«точно»\u003c/span>; простая сравнительная степень. Поясняет глагол \u003cspan class=\"example-word\">«ответил»\u003c/span>.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "adverb-analysis-practice"
+      ]
+    },
+    {
+      "id": "adverb-check",
+      "title": "Проверка по наречию",
+      "chapter": "adverb",
+      "html": "",
+      "groups": [
+        "adverb-check"
       ]
     }
   ],
@@ -10211,6 +10323,2078 @@ window.LESSON_CONTENT = {
           ],
           "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Строят»\u003c/span>: что делают? Начальная форма \u003cspan class=\"example-word\">«строить»\u003c/span>, несовершенный вид. \u003cspan class=\"example-word\">«Строить модель»\u003c/span> подтверждает переходность, \u003cspan class=\"example-word\">«-ся»\u003c/span> нет. Глагол на \u003cspan class=\"example-word\">«-ить»\u003c/span> относится ко II спряжению. Форма сообщает о действии ребят: изъявительное наклонение, настоящее время, третье лицо множественного числа.\u003c/p>\n",
           "reviewStep": "verb-analysis"
+        }
+      ]
+    },
+    "adverb-meaning-practice": {
+      "id": "adverb-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все наречия.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Вчера",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ребята",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "долго",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "обсуждали",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "новый",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "рассказ",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "внимательно",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "8",
+                "label": "слушали",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "9",
+                "label": "учителя",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Вчера",
+              "role": "adverb"
+            },
+            {
+              "value": "1",
+              "label": "ребята",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "долго",
+              "role": "adverb"
+            },
+            {
+              "value": "3",
+              "label": "обсуждали",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "новый",
+              "role": "adjective"
+            },
+            {
+              "value": "5",
+              "label": "рассказ",
+              "role": "noun"
+            },
+            {
+              "value": "6",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "7",
+              "label": "внимательно",
+              "role": "adverb"
+            },
+            {
+              "value": "8",
+              "label": "слушали",
+              "role": "verb"
+            },
+            {
+              "value": "9",
+              "label": "учителя",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "2",
+            "7"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вчера»\u003c/span> указывает на время, \u003cspan class=\"example-word\">«долго»\u003c/span> на длительность обсуждения, \u003cspan class=\"example-word\">«внимательно»\u003c/span> на способ слушания. \u003cspan class=\"example-word\">«Новый»\u003c/span> является прилагательным и поясняет название предмета \u003cspan class=\"example-word\">«рассказ»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-meaning-2",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ученик пишет аккуратно. (аккуратно)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Аккуратный почерк легко прочитать. (аккуратный)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Аккуратность помогает в работе. (аккуратность)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Он аккуратно сложил вещи. (сложил)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Наречие"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "2",
+              "label": "Имя существительное"
+            },
+            {
+              "value": "3",
+              "label": "Глагол"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Аккуратно»\u003c/span> характеризует действие, \u003cspan class=\"example-word\">«аккуратный»\u003c/span> признак предмета, \u003cspan class=\"example-word\">«аккуратность»\u003c/span> называет качество как предмет, \u003cspan class=\"example-word\">«сложил»\u003c/span> обозначает действие.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-meaning-3",
+          "type": "choice",
+          "promptHtml": "Мы \u003cstrong class=\"example-word\">вместе\u003c/strong> готовили доклад. Выберите характеристику \u003cspan class=\"example-word\">«вместе»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя существительное: называет группу людей, отвечает на вопросы «кто? что?» и имеет форму множественного числа."
+            },
+            {
+              "value": "1",
+              "label": "Б. Наречие: поясняет действие «готовили», отвечает на вопрос «как?», не изменяется по родам, числам и падежам."
+            },
+            {
+              "value": "2",
+              "label": "В. Местоимение: указывает на участников работы, отвечает на вопросы «кто? что?» и изменяется по падежам."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вместе»\u003c/span> сообщает, как готовили доклад: совместно. Оно не называет и не заменяет участников работы. В варианте А значение совместности принято за название группы, в варианте В за указание на людей.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-relations-practice": {
+      "id": "adverb-relations-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-relations-1",
+          "type": "sort",
+          "promptHtml": "Какую часть речи поясняет выделенное в скобках наречие?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Очень полезный совет. (очень)",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Двигаться плавно. (плавно)",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Слишком медленно идти. (слишком)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Чтение вслух. (вслух)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Глагол"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "2",
+              "label": "Наречие"
+            },
+            {
+              "value": "3",
+              "label": "Имя существительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Очень»\u003c/span> относится к \u003cspan class=\"example-word\">«полезный»\u003c/span>, \u003cspan class=\"example-word\">«плавно»\u003c/span> к \u003cspan class=\"example-word\">«двигаться»\u003c/span>, \u003cspan class=\"example-word\">«слишком»\u003c/span> к \u003cspan class=\"example-word\">«медленно»\u003c/span>, \u003cspan class=\"example-word\">«вслух»\u003c/span> к \u003cspan class=\"example-word\">«чтение»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-relations-2",
+          "type": "input",
+          "promptHtml": "Выпишите слово, которое поясняет наречие \u003cspan class=\"example-word\">«почти»\u003c/span>: \u003cstrong class=\"example-word\">Мы почти закончили работу.\u003c/strong>",
+          "correct": [
+            "закончили"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Почти»\u003c/span> указывает, в какой мере выполнено действие \u003cspan class=\"example-word\">«закончили»\u003c/span>. Вопрос задаём от глагола, а не от \u003cspan class=\"example-word\">«мы»\u003c/span> или \u003cspan class=\"example-word\">«работу»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-relations-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Книга лежала там.\u003c/strong> Что верно о \u003cspan class=\"example-word\">«там»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Личное местоимение: заменяет название книги, изменяется по падежам и относится к третьему лицу."
+            },
+            {
+              "value": "1",
+              "label": "Б. Предлог: связывает слово «книга» с глаголом «лежала», своего значения места не имеет."
+            },
+            {
+              "value": "2",
+              "label": "В. Местоименное наречие: указывает на место действия, отвечает на вопрос «где?» и не изменяется."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Там»\u003c/span> указывает на место, а не заменяет слово \u003cspan class=\"example-word\">«книга»\u003c/span>. Это местоименное наречие места.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-classes-practice": {
+      "id": "adverb-classes-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-classes-1",
+          "type": "sort",
+          "promptHtml": "Определите разряд наречия в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ждать долго. (долго)",
+              "correct": "3"
+            },
+            {
+              "id": "1",
+              "label": "Ответить спокойно. (спокойно)",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Увеличить вдвое. (вдвое)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Посмотреть назад. (назад)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Образа действия"
+            },
+            {
+              "value": "1",
+              "label": "Меры и степени"
+            },
+            {
+              "value": "2",
+              "label": "Места"
+            },
+            {
+              "value": "3",
+              "label": "Времени"
+            },
+            {
+              "value": "4",
+              "label": "Причины"
+            },
+            {
+              "value": "5",
+              "label": "Цели"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Долго»\u003c/span> указывает на время, \u003cspan class=\"example-word\">«спокойно»\u003c/span> на способ действия, \u003cspan class=\"example-word\">«вдвое»\u003c/span> на меру изменения, \u003cspan class=\"example-word\">«назад»\u003c/span> на направление.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-classes-2",
+          "type": "sort",
+          "promptHtml": "Различите причину и цель.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Спросонок перепутал двери. (спросонок)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Нарочно спрятал ключ. (нарочно)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Сгоряча обидел друга. (сгоряча)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Назло хлопнул дверью. (назло)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Причина"
+            },
+            {
+              "value": "1",
+              "label": "Цель"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Спросонок»\u003c/span>, \u003cspan class=\"example-word\">«сгоряча»\u003c/span> объясняют, из-за чего совершено действие. \u003cspan class=\"example-word\">«Нарочно»\u003c/span>, \u003cspan class=\"example-word\">«назло»\u003c/span> показывают намерение человека.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-classes-3",
+          "type": "choice",
+          "promptHtml": "В каком сочетании наречие обозначает меру проявления признака?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Оказался очень настойчивым."
+            },
+            {
+              "value": "1",
+              "label": "Б. Уехал далеко от города."
+            },
+            {
+              "value": "2",
+              "label": "В. Вернулся поздно вечером."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Очень»\u003c/span> усиливает признак \u003cspan class=\"example-word\">«настойчивым»\u003c/span>. \u003cspan class=\"example-word\">«Далеко»\u003c/span> в варианте Б указывает на место, \u003cspan class=\"example-word\">«поздно»\u003c/span> в варианте В на время.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-classes-4",
+          "type": "input",
+          "promptHtml": "Выпишите наречие цели: \u003cstrong class=\"example-word\">Вчера брат нарочно оставил дверь открытой.\u003c/strong>",
+          "correct": [
+            "нарочно"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Нарочно»\u003c/span> означает \u003cspan class=\"example-word\">«с определённым намерением»\u003c/span>. \u003cspan class=\"example-word\">«Вчера»\u003c/span> является наречием времени.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-forms-practice": {
+      "id": "adverb-forms-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-forms-1",
+          "type": "choice",
+          "promptHtml": "Что происходит с наречием в сочетаниях \u003cstrong class=\"example-word\">говорил громко, говорила громко, говорили громко\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. У него меняются род и число вслед за глаголом, но изменения не выражены буквами."
+            },
+            {
+              "value": "1",
+              "label": "Б. Оно остаётся неизменным; род и число выражены у глагола, а у наречия их нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Оно стоит в среднем роде единственного числа, поскольку оканчивается на «о»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>У \u003cspan class=\"example-word\">«громко»\u003c/span> нет рода и числа. Совпадение последней буквы с окончанием других частей речи не создаёт этих признаков.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-forms-2",
+          "type": "choice",
+          "promptHtml": "Какова роль \u003cspan class=\"example-word\">«о»\u003c/span> в наречии \u003cstrong class=\"example-word\">точно\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это окончание среднего рода единственного числа."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это падежное окончание, не меняющееся в данном предложении."
+            },
+            {
+              "value": "2",
+              "label": "В. Это суффикс; окончания у наречия нет."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Точно»\u003c/span> не склоняется и не имеет рода. \u003cspan class=\"example-word\">«-О»\u003c/span> является суффиксом, а не окончанием и не нулевым окончанием.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-forms-3",
+          "type": "sort",
+          "promptHtml": "Какие признаки есть у наречия \u003cspan class=\"example-word\">«громче»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "степень сравнения",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "род",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "число",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "падеж",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "лицо",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Есть"
+            },
+            {
+              "value": "1",
+              "label": "Нет"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Громче»\u003c/span> сравнительная степень наречия \u003cspan class=\"example-word\">«громко»\u003c/span>. Род, число, падеж и лицо у наречия не определяются.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-comparison-practice": {
+      "id": "adverb-comparison-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-comparison-1",
+          "type": "input",
+          "promptHtml": "Запишите простую сравнительную степень \u003cspan class=\"example-word\">«рано»\u003c/span>: \u003cstrong class=\"example-word\">Сегодня мы пришли _____, чем вчера.\u003c/strong>",
+          "correct": [
+            "раньше"
+          ],
+          "explanationHtml": "\u003cp>Простая сравнительная степень \u003cspan class=\"example-word\">«рано»\u003c/span> имеет форму \u003cspan class=\"example-word\">«раньше»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-comparison-2",
+          "type": "sort",
+          "promptHtml": "Определите степень наречия в сочетании.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Работать внимательно.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Работать внимательнее.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Работать наиболее внимательно.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Работать вчера.",
+              "correct": "3"
+            },
+            {
+              "id": "4",
+              "label": "Бежать быстрее всех.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Положительная"
+            },
+            {
+              "value": "1",
+              "label": "Сравнительная"
+            },
+            {
+              "value": "2",
+              "label": "Превосходная"
+            },
+            {
+              "value": "3",
+              "label": "Степеней сравнения нет"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Внимательно»\u003c/span> положительная степень, \u003cspan class=\"example-word\">«внимательнее»\u003c/span> сравнительная, \u003cspan class=\"example-word\">«наиболее внимательно»\u003c/span> и \u003cspan class=\"example-word\">«быстрее всех»\u003c/span> превосходная. \u003cspan class=\"example-word\">«Вчера»\u003c/span> не имеет степеней сравнения.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-comparison-3",
+          "type": "input",
+          "promptHtml": "Запишите два слова: составную сравнительную степень \u003cspan class=\"example-word\">«громко»\u003c/span>, обозначающую ослабление признака.",
+          "correct": [
+            "менее громко"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Менее громко»\u003c/span> составная сравнительная степень: признак проявляется слабее.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-comparison-4",
+          "type": "choice",
+          "promptHtml": "В каком предложении степень сравнения образована правильно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Теперь он объясняет более понятнее."
+            },
+            {
+              "value": "1",
+              "label": "Б. Теперь он объясняет более понятно."
+            },
+            {
+              "value": "2",
+              "label": "В. Теперь он объясняет наиболее понятнее."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>В \u003cspan class=\"example-word\">«более понятно»\u003c/span> использован один способ образования сравнительной степени. В вариантах А и В смешаны способы образования форм.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-distinction-practice": {
+      "id": "adverb-distinction-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-distinction-1",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова \u003cspan class=\"example-word\">«весело»\u003c/span> по контексту.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ребята весело разговаривали.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Лицо ребёнка весело.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Ребятам весело.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Наречие"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "2",
+              "label": "Имя существительное"
+            },
+            {
+              "value": "3",
+              "label": "Слово категории состояния"
+            },
+            {
+              "value": "4",
+              "label": "Имя числительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В первом случае \u003cspan class=\"example-word\">«весело»\u003c/span> характеризует действие \u003cspan class=\"example-word\">«разговаривали»\u003c/span>, во втором лицо ребёнка, в третьем состояние ребят без названного действия.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-distinction-2",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова \u003cspan class=\"example-word\">«лучше»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Этот ответ лучше предыдущего.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Теперь ученик отвечает лучше.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Брат рисует лучше меня.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Новый рисунок лучше старого.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Наречие"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Лучше»\u003c/span> относится к предметам \u003cspan class=\"example-word\">«ответ»\u003c/span>, \u003cspan class=\"example-word\">«рисунок»\u003c/span> как прилагательное; к действиям \u003cspan class=\"example-word\">«отвечает»\u003c/span>, \u003cspan class=\"example-word\">«рисует»\u003c/span> как наречие.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-distinction-3",
+          "type": "choice",
+          "promptHtml": "Что верно о слове \u003cspan class=\"example-word\">«далеко»\u003c/span> в \u003cstrong class=\"example-word\">Школа находится далеко от дома\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это существительное: после него есть поясняющие слова «от дома», следовательно, оно склоняется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это наречие места: поясняет «находится», не склоняется; сочетание «от дома» уточняет расстояние."
+            },
+            {
+              "value": "2",
+              "label": "В. Это прилагательное: характеризует школу, имеет женский род и согласуется с её названием."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>У наречия могут быть зависимые слова. \u003cspan class=\"example-word\">«Далеко»\u003c/span> не получает женского рода от существительного \u003cspan class=\"example-word\">«школа»\u003c/span> и не склоняется.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-distinction-4",
+          "type": "sort",
+          "promptHtml": "Различите наречие и собирательное числительное.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Мы пришли втроём. (втроём)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Трое друзей пришли. (трое)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Они работали вдвоём. (вдвоём)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Мы помогли двоим ученикам. (двоим)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Наречие"
+            },
+            {
+              "value": "1",
+              "label": "Имя числительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Втроём»\u003c/span>, \u003cspan class=\"example-word\">«вдвоём»\u003c/span> неизменяемые слова, поясняющие действия. \u003cspan class=\"example-word\">«Трое»\u003c/span>, \u003cspan class=\"example-word\">«двоим»\u003c/span> числительные с падежными формами.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-distinction-5",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Утром мы отправились в путь. (утром)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы наслаждались прохладным утром. (утром)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Сначала проверь ответ. (сначала)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "С начала недели идут дожди. (начала)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Наречие"
+            },
+            {
+              "value": "1",
+              "label": "Имя существительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Утром»\u003c/span>, \u003cspan class=\"example-word\">«сначала»\u003c/span> указывают на время действия. \u003cspan class=\"example-word\">«Прохладным утром»\u003c/span>, \u003cspan class=\"example-word\">«с начала недели»\u003c/span> содержат существительные: в первом случае с прилагательным, во втором с предлогом и названием недели.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-formation-practice": {
+      "id": "adverb-formation-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-formation-1",
+          "type": "sort",
+          "promptHtml": "Определите, от какой части речи образовано наречие.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "вдвоём",
+              "correct": "2"
+            },
+            {
+              "id": "1",
+              "label": "тихо",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "по-новому",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "зимой",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "1",
+              "label": "Имя существительное"
+            },
+            {
+              "value": "2",
+              "label": "Имя числительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вдвоём»\u003c/span> связано с числительным \u003cspan class=\"example-word\">«двое»\u003c/span>, \u003cspan class=\"example-word\">«тихо»\u003c/span> с прилагательным \u003cspan class=\"example-word\">«тихий»\u003c/span>, \u003cspan class=\"example-word\">«по-новому»\u003c/span> с \u003cspan class=\"example-word\">«новый»\u003c/span>, \u003cspan class=\"example-word\">«зимой»\u003c/span> с существительным \u003cspan class=\"example-word\">«зима»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-formation-2",
+          "type": "choice",
+          "promptHtml": "В какой паре образована форма того же наречия, а не новое слово другой части речи?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Смелый → смело."
+            },
+            {
+              "value": "1",
+              "label": "Б. Смело → смелее."
+            },
+            {
+              "value": "2",
+              "label": "В. Двое → вдвоём."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Смелее»\u003c/span> сравнительная степень наречия \u003cspan class=\"example-word\">«смело»\u003c/span>. В двух других парах образуется наречие от слова другой части речи.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-formation-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Зимой мы часто катаемся на лыжах.\u003c/strong> Что верно о \u003cspan class=\"example-word\">«зимой»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наречие времени: поясняет «катаемся», не изменяется по падежам, хотя произошло от формы существительного."
+            },
+            {
+              "value": "1",
+              "label": "Б. Имя существительное: поясняет «лыжах», имеет множественное число и творительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Краткое прилагательное: характеризует погоду, имеет женский род и единственное число."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>В этом предложении \u003cspan class=\"example-word\">«зимой»\u003c/span> отвечает на вопрос \u003cspan class=\"example-word\">«когда?»\u003c/span> и указывает на время катания. Происхождение от существительного не мешает слову употребляться как наречие.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-spelling-practice": {
+      "id": "adverb-spelling-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-spelling-1",
+          "type": "input",
+          "promptHtml": "Раскройте скобки и запишите только нужное слово: \u003cstrong class=\"example-word\">Мы решили работать (по)новому.\u003c/strong>",
+          "correct": [
+            "по-новому"
+          ],
+          "explanationHtml": "\u003cp>Наречие с приставкой \u003cspan class=\"example-word\">«по-»\u003c/span> и суффиксом \u003cspan class=\"example-word\">«-ому»\u003c/span> пишется через дефис.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-spelling-2",
+          "type": "input",
+          "promptHtml": "Раскройте скобки и запишите сочетание из скобок: \u003cstrong class=\"example-word\">Автобус поехал (по)новому шоссе.\u003c/strong>",
+          "correct": [
+            "по новому"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«По»\u003c/span> предлог при существительном \u003cspan class=\"example-word\">«шоссе»\u003c/span>, \u003cspan class=\"example-word\">«новому»\u003c/span> прилагательное. Пишем раздельно.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-spelling-3",
+          "type": "sort",
+          "promptHtml": "Выберите написание сочетания из скобок.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Приходите (во)время.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Мы гуляли (во)время каникул.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "(С)начала подумай.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "(С)начала месяца похолодало.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вовремя»\u003c/span> означает \u003cspan class=\"example-word\">«к нужному сроку»\u003c/span>, \u003cspan class=\"example-word\">«сначала»\u003c/span> означает \u003cspan class=\"example-word\">«сперва»\u003c/span>. В сочетаниях \u003cspan class=\"example-word\">«во время каникул»\u003c/span>, \u003cspan class=\"example-word\">«с начала месяца»\u003c/span> существительное называет время или начало определённого периода.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-spelling-4",
+          "type": "sort",
+          "promptHtml": "Выберите способ написания.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "(по)больше",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "(кое)как",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "(еле)еле",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "(по)русски",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "(по)дешевле",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Через дефис"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Побольше»\u003c/span>, \u003cspan class=\"example-word\">«подешевле»\u003c/span> сравнительные формы с \u003cspan class=\"example-word\">«по-»\u003c/span>, без суффиксов \u003cspan class=\"example-word\">«-ому»\u003c/span>, \u003cspan class=\"example-word\">«-ему»\u003c/span>, \u003cspan class=\"example-word\">«-и»\u003c/span>. В остальных случаях действуют правила для \u003cspan class=\"example-word\">«кое-»\u003c/span>, повтора и \u003cspan class=\"example-word\">«по-»\u003c/span> с \u003cspan class=\"example-word\">«-и»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-endings-practice": {
+      "id": "adverb-endings-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-endings-1",
+          "type": "input",
+          "promptHtml": "Вставьте букву и запишите слово полностью: \u003cstrong class=\"example-word\">Полотенцем вытерли стол досух_.\u003c/strong>",
+          "correct": [
+            "досуха"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Досуха»\u003c/span> образовано от \u003cspan class=\"example-word\">«сухой»\u003c/span> с помощью приставки \u003cspan class=\"example-word\">«до-»\u003c/span> и суффикса \u003cspan class=\"example-word\">«-а»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-endings-2",
+          "type": "input",
+          "promptHtml": "Вставьте букву и запишите слово полностью: \u003cstrong class=\"example-word\">Мы вернулись затемн_.\u003c/strong>",
+          "correct": [
+            "затемно"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Затемно»\u003c/span> образовано с приставкой \u003cspan class=\"example-word\">«за-»\u003c/span> и суффиксом \u003cspan class=\"example-word\">«-о»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-endings-3",
+          "type": "sort",
+          "promptHtml": "Нужен ли мягкий знак на конце?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "настеж_",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "невтерпёж_",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "прочь_",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "замуж_",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "сплош_",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Пишется"
+            },
+            {
+              "value": "1",
+              "label": "Не пишется"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Настежь»\u003c/span>, \u003cspan class=\"example-word\">«прочь»\u003c/span>, \u003cspan class=\"example-word\">«сплошь»\u003c/span> пишутся с мягким знаком. \u003cspan class=\"example-word\">«Замуж»\u003c/span>, \u003cspan class=\"example-word\">«невтерпёж»\u003c/span> исключения; третье исключение \u003cspan class=\"example-word\">«уж»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-endings-4",
+          "type": "input",
+          "promptHtml": "Запишите наречие полностью: \u003cstrong class=\"example-word\">Он объяснял путан_о.\u003c/strong> Исходное прилагательное \u003cspan class=\"example-word\">«путаный»\u003c/span>.",
+          "correct": [
+            "путано"
+          ],
+          "explanationHtml": "\u003cp>В прилагательном \u003cspan class=\"example-word\">«путаный»\u003c/span> одна \u003cspan class=\"example-word\">«н»\u003c/span>, столько же сохраняется в наречии \u003cspan class=\"example-word\">«путано»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-negative-practice": {
+      "id": "adverb-negative-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-negative-1",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Он говорил (не)громко, а тихо.\u003c/strong> Запишите только сочетание из скобок.",
+          "correct": [
+            "не громко"
+          ],
+          "explanationHtml": "\u003cp>Есть отрицание и противопоставление с \u003cspan class=\"example-word\">«а»\u003c/span>: \u003cspan class=\"example-word\">«не громко, а тихо»\u003c/span>. Пишем раздельно.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-negative-2",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Доклад звучал ничуть (не)убедительно.\u003c/strong> Запишите только сочетание из скобок.",
+          "correct": [
+            "не убедительно"
+          ],
+          "explanationHtml": "\u003cp>Слово \u003cspan class=\"example-word\">«ничуть»\u003c/span> усиливает отрицание, поэтому \u003cspan class=\"example-word\">«не убедительно»\u003c/span> пишется раздельно.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-negative-3",
+          "type": "input",
+          "promptHtml": "Замените \u003cspan class=\"example-word\">«тихо»\u003c/span> одним наречием с \u003cspan class=\"example-word\">«не»\u003c/span>: \u003cstrong class=\"example-word\">Ребёнок тихо напевал песню.\u003c/strong>",
+          "correct": [
+            "негромко"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Негромко»\u003c/span> обозначает тихое пение. В задании требуется одно слово с противоположным значением к \u003cspan class=\"example-word\">«громко»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-negative-4",
+          "type": "sort",
+          "promptHtml": "Выберите написание \u003cspan class=\"example-word\">«не»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Вести себя (не)лепо.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Встретимся (не)сегодня.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Это далеко (не)просто.",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Я живу (не)здесь.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Нелепо»\u003c/span> не употребляется без \u003cspan class=\"example-word\">«не»\u003c/span>. В \u003cspan class=\"example-word\">«далеко не просто»\u003c/span> усилено отрицание. С \u003cspan class=\"example-word\">«сегодня»\u003c/span>, \u003cspan class=\"example-word\">«здесь»\u003c/span> отрицательная частица пишется отдельно.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-analysis-practice": {
+      "id": "adverb-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "adverb-analysis-1",
+          "type": "choice",
+          "promptHtml": "Маша \u003cstrong class=\"example-word\">быстрее\u003c/strong> собрала рюкзак. Выберите полную характеристику \u003cspan class=\"example-word\">«быстрее»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное: признак Маши, сравнительная степень, женский род, единственное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Наречие образа действия: поясняет «собрала», исходная форма «быстро», простая сравнительная степень; рода, числа и падежа нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя существительное: называет скорость как предмет, отвечает на вопросы «кто? что?», имеет средний род и винительный падеж."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Быстрее»\u003c/span> характеризует сборы, а не Машу. Это наречие в сравнительной степени. В варианте А форма ошибочно согласована с названием человека, в варианте В признак действия принят за название предмета.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-analysis-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Завтра\u003c/strong> мы обсудим проект. Что верно о \u003cspan class=\"example-word\">«завтра»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наречие времени; поясняет «обсудим», степеней сравнения нет; грамматического будущего времени у самого наречия нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. Глагол: называет будущее действие, имеет будущее время, первое лицо и множественное число."
+            },
+            {
+              "value": "2",
+              "label": "В. Имя существительное: называет день как предмет, имеет средний род и винительный падеж."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Завтра»\u003c/span> указывает на время действия, но грамматическое время определяется у глагола \u003cspan class=\"example-word\">«обсудим»\u003c/span>. Наречие не получает признаков глагола.\u003c/p>\n"
+        },
+        {
+          "id": "adverb-analysis-3",
+          "type": "sort",
+          "promptHtml": "Определите разряд наречия в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Книга лежит здесь. (здесь)",
+              "correct": "2"
+            },
+            {
+              "id": "1",
+              "label": "Он нарочно промолчал. (нарочно)",
+              "correct": "5"
+            },
+            {
+              "id": "2",
+              "label": "Я почти закончил работу. (почти)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Ответил сгоряча. (сгоряча)",
+              "correct": "4"
+            },
+            {
+              "id": "4",
+              "label": "Мы встретились вчера. (вчера)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Образа действия"
+            },
+            {
+              "value": "1",
+              "label": "Меры и степени"
+            },
+            {
+              "value": "2",
+              "label": "Места"
+            },
+            {
+              "value": "3",
+              "label": "Времени"
+            },
+            {
+              "value": "4",
+              "label": "Причины"
+            },
+            {
+              "value": "5",
+              "label": "Цели"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Здесь»\u003c/span> место, \u003cspan class=\"example-word\">«нарочно»\u003c/span> цель, \u003cspan class=\"example-word\">«почти»\u003c/span> степень завершения действия, \u003cspan class=\"example-word\">«сгоряча»\u003c/span> причина, \u003cspan class=\"example-word\">«вчера»\u003c/span> время.\u003c/p>\n"
+        }
+      ]
+    },
+    "adverb-check": {
+      "id": "adverb-check",
+      "title": "Проверка по наречию",
+      "assessment": "adverb-check",
+      "questions": [
+        {
+          "id": "adverb-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все наречия.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Сегодня",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "мы",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "вместе",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "читали",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "интересную",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "книгу",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "очень",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "8",
+                "label": "внимательно",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "9",
+                "label": "обсуждали",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "10",
+                "label": "её",
+                "role": "pronoun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Сегодня",
+              "role": "adverb"
+            },
+            {
+              "value": "1",
+              "label": "мы",
+              "role": "pronoun"
+            },
+            {
+              "value": "2",
+              "label": "вместе",
+              "role": "adverb"
+            },
+            {
+              "value": "3",
+              "label": "читали",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "интересную",
+              "role": "adjective"
+            },
+            {
+              "value": "5",
+              "label": "книгу",
+              "role": "noun"
+            },
+            {
+              "value": "6",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "7",
+              "label": "очень",
+              "role": "adverb"
+            },
+            {
+              "value": "8",
+              "label": "внимательно",
+              "role": "adverb"
+            },
+            {
+              "value": "9",
+              "label": "обсуждали",
+              "role": "verb"
+            },
+            {
+              "value": "10",
+              "label": "её",
+              "role": "pronoun"
+            }
+          ],
+          "correct": [
+            "0",
+            "2",
+            "7",
+            "8"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Сегодня»\u003c/span> указывает на время, \u003cspan class=\"example-word\">«вместе»\u003c/span> на способ действия, \u003cspan class=\"example-word\">«очень»\u003c/span> усиливает \u003cspan class=\"example-word\">«внимательно»\u003c/span>, \u003cspan class=\"example-word\">«внимательно»\u003c/span> поясняет \u003cspan class=\"example-word\">«обсуждали»\u003c/span>. \u003cspan class=\"example-word\">«Интересную»\u003c/span> прилагательное.\u003c/p>\n",
+          "reviewStep": "adverb-meaning"
+        },
+        {
+          "id": "adverb-check-2",
+          "type": "sort",
+          "promptHtml": "Какое слово поясняет наречие?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Совсем новый рюкзак. (совсем)",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Говорить искренне. (искренне)",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Довольно быстро идти. (довольно)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Прогулка пешком. (пешком)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Глагол"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "2",
+              "label": "Наречие"
+            },
+            {
+              "value": "3",
+              "label": "Имя существительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Связи: \u003cspan class=\"example-word\">«совсем»\u003c/span> с \u003cspan class=\"example-word\">«новый»\u003c/span>, \u003cspan class=\"example-word\">«искренне»\u003c/span> с \u003cspan class=\"example-word\">«говорить»\u003c/span>, \u003cspan class=\"example-word\">«довольно»\u003c/span> с \u003cspan class=\"example-word\">«быстро»\u003c/span>, \u003cspan class=\"example-word\">«пешком»\u003c/span> с \u003cspan class=\"example-word\">«прогулка»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "adverb-relations"
+        },
+        {
+          "id": "adverb-check-3",
+          "type": "sort",
+          "promptHtml": "Определите разряд наречия в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Написать разборчиво. (разборчиво)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Очень устал. (очень)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Подняться наверх. (наверх)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Позвонить вечером. (вечером)",
+              "correct": "3"
+            },
+            {
+              "id": "4",
+              "label": "Спутать спросонок. (спросонок)",
+              "correct": "4"
+            },
+            {
+              "id": "5",
+              "label": "Помешать назло. (назло)",
+              "correct": "5"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Образа действия"
+            },
+            {
+              "value": "1",
+              "label": "Меры и степени"
+            },
+            {
+              "value": "2",
+              "label": "Места"
+            },
+            {
+              "value": "3",
+              "label": "Времени"
+            },
+            {
+              "value": "4",
+              "label": "Причины"
+            },
+            {
+              "value": "5",
+              "label": "Цели"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Последовательно: способ действия, мера, направление, время, причина, цель.\u003c/p>\n",
+          "reviewStep": "adverb-classes"
+        },
+        {
+          "id": "adverb-check-4",
+          "type": "choice",
+          "promptHtml": "Он \u003cstrong class=\"example-word\">нарочно\u003c/strong> задержал ответ. Почему \u003cspan class=\"example-word\">«нарочно»\u003c/span> является наречием цели?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Показывает намеренное действие, отвечает на вопрос «с какой целью?»; не означает случайную причину задержки."
+            },
+            {
+              "value": "1",
+              "label": "Б. Называет причину, вызванную усталостью, и отвечает на вопрос «почему?»."
+            },
+            {
+              "value": "2",
+              "label": "В. Обозначает время задержки, отвечает на вопрос «как долго?» и указывает на длительность."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Нарочно»\u003c/span> означает \u003cspan class=\"example-word\">«с определённым намерением»\u003c/span>. Слово не называет ни длительность, ни усталость.\u003c/p>\n",
+          "reviewStep": "adverb-classes"
+        },
+        {
+          "id": "adverb-check-5",
+          "type": "choice",
+          "promptHtml": "Что верно о \u003cspan class=\"example-word\">«е»\u003c/span> в \u003cstrong class=\"example-word\">искренне\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Это окончание прилагательного множественного числа."
+            },
+            {
+              "value": "1",
+              "label": "Б. Это суффикс наречия; окончания у слова нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Это нулевое окончание наречия, выраженное буквой «е»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Искренне»\u003c/span> образовано от \u003cspan class=\"example-word\">«искренний»\u003c/span> с суффиксом \u003cspan class=\"example-word\">«-е»\u003c/span>. Окончания нет; нулевое окончание относится к изменяемым словам.\u003c/p>\n",
+          "reviewStep": "adverb-forms"
+        },
+        {
+          "id": "adverb-check-6",
+          "type": "input",
+          "promptHtml": "Запишите исходную форму наречия: \u003cstrong class=\"example-word\">Он справился с заданием лучше меня.\u003c/strong> Рассмотрите \u003cspan class=\"example-word\">«лучше»\u003c/span>.",
+          "correct": [
+            "хорошо"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Лучше»\u003c/span> сравнительная степень наречия \u003cspan class=\"example-word\">«хорошо»\u003c/span>. Здесь сравнивается выполнение действия.\u003c/p>\n",
+          "reviewStep": "adverb-comparison"
+        },
+        {
+          "id": "adverb-check-7",
+          "type": "sort",
+          "promptHtml": "Определите степень наречия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Отвечать подробно.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Отвечать менее подробно.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Отвечать подробнее всех.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Отвечать сегодня.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Положительная"
+            },
+            {
+              "value": "1",
+              "label": "Сравнительная"
+            },
+            {
+              "value": "2",
+              "label": "Превосходная"
+            },
+            {
+              "value": "3",
+              "label": "Степеней сравнения нет"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Подробно»\u003c/span> положительная степень, \u003cspan class=\"example-word\">«менее подробно»\u003c/span> составная сравнительная, \u003cspan class=\"example-word\">«подробнее всех»\u003c/span> превосходная. \u003cspan class=\"example-word\">«Сегодня»\u003c/span> степеней сравнения не имеет.\u003c/p>\n",
+          "reviewStep": "adverb-comparison"
+        },
+        {
+          "id": "adverb-check-8",
+          "type": "choice",
+          "promptHtml": "Как правильно усилить сравнение в \u003cstrong class=\"example-word\">Он стал говорить тише\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Он стал говорить более тише."
+            },
+            {
+              "value": "1",
+              "label": "Б. Он стал говорить ещё тише."
+            },
+            {
+              "value": "2",
+              "label": "В. Он стал говорить наиболее тише."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ещё»\u003c/span> усиливает готовую сравнительную форму \u003cspan class=\"example-word\">«тише»\u003c/span>. \u003cspan class=\"example-word\">«Более»\u003c/span> и \u003cspan class=\"example-word\">«наиболее»\u003c/span> не соединяются с ней для образования степени.\u003c/p>\n",
+          "reviewStep": "adverb-comparison"
+        },
+        {
+          "id": "adverb-check-9",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Утро прохладно. (прохладно)",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "На улице прохладно. (прохладно)",
+              "correct": "3"
+            },
+            {
+              "id": "2",
+              "label": "Он прохладно встретил предложение. (прохладно)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Наречие"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "2",
+              "label": "Имя существительное"
+            },
+            {
+              "value": "3",
+              "label": "Слово категории состояния"
+            },
+            {
+              "value": "4",
+              "label": "Имя числительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Прохладно»\u003c/span> характеризует предмет \u003cspan class=\"example-word\">«утро»\u003c/span> как краткое прилагательное; обозначает состояние среды в \u003cspan class=\"example-word\">«на улице прохладно»\u003c/span>; характеризует отношение, проявленное в действии \u003cspan class=\"example-word\">«встретил»\u003c/span>, как наречие.\u003c/p>\n",
+          "reviewStep": "adverb-distinction"
+        },
+        {
+          "id": "adverb-check-10",
+          "type": "choice",
+          "promptHtml": "В каком предложении \u003cstrong class=\"example-word\">выше\u003c/strong> является наречием?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Эта берёза выше соседней."
+            },
+            {
+              "value": "1",
+              "label": "Б. Наш дом выше прежнего."
+            },
+            {
+              "value": "2",
+              "label": "В. Воздушный змей поднялся выше облаков."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Выше»\u003c/span> поясняет действие \u003cspan class=\"example-word\">«поднялся»\u003c/span>. В вариантах А и Б сравниваются признаки предметов \u003cspan class=\"example-word\">«берёза»\u003c/span>, \u003cspan class=\"example-word\">«дом»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "adverb-distinction"
+        },
+        {
+          "id": "adverb-check-11",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Они вернулись вдвоём. (вдвоём)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Двое ребят вернулись. (двое)",
+              "correct": "4"
+            },
+            {
+              "id": "2",
+              "label": "Мы любовались тихим вечером. (вечером)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Вечером мы вернулись. (вечером)",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Наречие"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "2",
+              "label": "Имя существительное"
+            },
+            {
+              "value": "3",
+              "label": "Слово категории состояния"
+            },
+            {
+              "value": "4",
+              "label": "Имя числительное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Вдвоём»\u003c/span> наречие, \u003cspan class=\"example-word\">«двое»\u003c/span> числительное. В \u003cspan class=\"example-word\">«тихим вечером»\u003c/span> существительное сохраняет связь с прилагательным, в \u003cspan class=\"example-word\">«вечером вернулись»\u003c/span> наречие называет время действия.\u003c/p>\n",
+          "reviewStep": "adverb-distinction"
+        },
+        {
+          "id": "adverb-check-12",
+          "type": "input",
+          "promptHtml": "Раскройте скобки и запишите только сочетание из скобок: \u003cstrong class=\"example-word\">Они отдыхали (во)время каникул.\u003c/strong>",
+          "correct": [
+            "во время"
+          ],
+          "explanationHtml": "\u003cp>Название определённого периода \u003cspan class=\"example-word\">«время каникул»\u003c/span> употреблено с предлогом \u003cspan class=\"example-word\">«во»\u003c/span>. Пишем раздельно.\u003c/p>\n",
+          "reviewStep": "adverb-spelling"
+        },
+        {
+          "id": "adverb-check-13",
+          "type": "input",
+          "promptHtml": "Раскройте скобки и запишите только нужное слово: \u003cstrong class=\"example-word\">После ремонта комната выглядит (по)прежнему.\u003c/strong>",
+          "correct": [
+            "по-прежнему"
+          ],
+          "explanationHtml": "\u003cp>Приставка \u003cspan class=\"example-word\">«по-»\u003c/span> и суффикс \u003cspan class=\"example-word\">«-ему»\u003c/span> требуют дефиса.\u003c/p>\n",
+          "reviewStep": "adverb-spelling"
+        },
+        {
+          "id": "adverb-check-14",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Сделать (кое)как.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Взять (по)больше.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Подойти (в)плотную.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Завернуть (в)плотную бумагу.",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Через дефис"
+            },
+            {
+              "value": "2",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Кое-как»\u003c/span> с дефисом, \u003cspan class=\"example-word\">«побольше»\u003c/span> и наречие \u003cspan class=\"example-word\">«вплотную»\u003c/span> слитно. В \u003cspan class=\"example-word\">«в плотную бумагу»\u003c/span> есть предлог и прилагательное при существительном.\u003c/p>\n",
+          "reviewStep": "adverb-spelling"
+        },
+        {
+          "id": "adverb-check-15",
+          "type": "input",
+          "promptHtml": "Вставьте букву и запишите слово полностью: \u003cstrong class=\"example-word\">Мы решили начать всё сначал_.\u003c/strong>",
+          "correct": [
+            "сначала"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Сначала»\u003c/span> пишется с \u003cspan class=\"example-word\">«а»\u003c/span> на конце.\u003c/p>\n",
+          "reviewStep": "adverb-endings"
+        },
+        {
+          "id": "adverb-check-16",
+          "type": "input",
+          "promptHtml": "Запишите наречие полностью: \u003cstrong class=\"example-word\">Она улыбнулась уверен_о.\u003c/strong> Исходное прилагательное \u003cspan class=\"example-word\">«уверенный»\u003c/span>.",
+          "correct": [
+            "уверенно"
+          ],
+          "explanationHtml": "\u003cp>Две \u003cspan class=\"example-word\">«н»\u003c/span> прилагательного \u003cspan class=\"example-word\">«уверенный»\u003c/span> сохраняются в наречии \u003cspan class=\"example-word\">«уверенно»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "adverb-endings"
+        },
+        {
+          "id": "adverb-check-17",
+          "type": "sort",
+          "promptHtml": "Определите, как пишется конец наречия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Открыть дверь настеж_.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ждать невтерпёж_.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Ответить горяч_.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Пахнет свеж_.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Ь"
+            },
+            {
+              "value": "1",
+              "label": "Без мягкого знака"
+            },
+            {
+              "value": "2",
+              "label": "О"
+            },
+            {
+              "value": "3",
+              "label": "Е"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Настежь»\u003c/span> с мягким знаком, \u003cspan class=\"example-word\">«невтерпёж»\u003c/span> исключение. В \u003cspan class=\"example-word\">«горячо»\u003c/span> ударение падает на \u003cspan class=\"example-word\">«о»\u003c/span>, в \u003cspan class=\"example-word\">«свеже»\u003c/span> последний суффикс безударный, пишем \u003cspan class=\"example-word\">«е»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "adverb-endings"
+        },
+        {
+          "id": "adverb-check-18",
+          "type": "input",
+          "promptHtml": "Раскройте скобки и запишите только сочетание из скобок: \u003cstrong class=\"example-word\">Ответ звучал отнюдь (не)уверенно.\u003c/strong>",
+          "correct": [
+            "не уверенно"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Отнюдь»\u003c/span> усиливает отрицание, \u003cspan class=\"example-word\">«не уверенно»\u003c/span> пишется раздельно.\u003c/p>\n",
+          "reviewStep": "adverb-negative"
+        },
+        {
+          "id": "adverb-check-19",
+          "type": "sort",
+          "promptHtml": "Выберите написание \u003cspan class=\"example-word\">«не»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он оказался (не)здесь, а дома.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Прийти (не)сегодня, а завтра.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он выглядел (не)лепо.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Говорил (не)громко, а едва слышно.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Не здесь»\u003c/span>, \u003cspan class=\"example-word\">«не сегодня»\u003c/span> с отрицательной частицей раздельно; \u003cspan class=\"example-word\">«нелепо»\u003c/span> не употребляется без \u003cspan class=\"example-word\">«не»\u003c/span>; \u003cspan class=\"example-word\">«не громко, а едва слышно»\u003c/span> содержит противопоставление.\u003c/p>\n",
+          "reviewStep": "adverb-negative"
+        },
+        {
+          "id": "adverb-check-20",
+          "type": "choice",
+          "promptHtml": "Он \u003cstrong class=\"example-word\">наиболее внимательно\u003c/strong> прочитал условие. Выберите характеристику выделенного сочетания.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наречие образа действия в составной превосходной степени; поясняет глагол «прочитал», исходная форма «внимательно»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Имя прилагательное в превосходной степени; согласуется с «условие» в среднем роде и единственном числе."
+            },
+            {
+              "value": "2",
+              "label": "В. Слово категории состояния: сообщает о состоянии читающего человека, не поясняет действие; неизменяемое, степеней сравнения нет."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Наиболее внимательно»\u003c/span> показывает наибольшую меру внимательности при чтении. Это превосходная степень наречия образа действия, а не характеристика условия как предмета или самостоятельное сообщение о состоянии человека.\u003c/p>\n",
+          "reviewStep": "adverb-analysis"
         }
       ]
     }
