@@ -32,6 +32,14 @@ window.LESSON_CONTENT = {
     {
       "id": "adverb",
       "title": "Наречие"
+    },
+    {
+      "id": "participle",
+      "title": "Причастие"
+    },
+    {
+      "id": "gerund",
+      "title": "Деепричастие"
     }
   ],
   "labels": {
@@ -43,7 +51,9 @@ window.LESSON_CONTENT = {
     "preposition": "Предлог",
     "conjunction": "Союз",
     "particle": "Частица",
-    "numeral": "Имя числительное"
+    "numeral": "Имя числительное",
+    "participle": "Причастие",
+    "gerund": "Деепричастие"
   },
   "steps": [
     {
@@ -721,6 +731,204 @@ window.LESSON_CONTENT = {
       "html": "",
       "groups": [
         "adverb-check"
+      ]
+    },
+    {
+      "id": "participle-meaning",
+      "title": "Что обозначает причастие",
+      "chapter": "participle",
+      "html": "\u003cp>Прочитаем сочетания: \u003cspan class=\"example-word\">«интересная книга»\u003c/span> и \u003cspan class=\"example-word\">«прочитанная книга»\u003c/span>. Слово \u003cspan class=\"example-word\">«интересная»\u003c/span> называет признак книги. Слово \u003cspan class=\"example-word\">«прочитанная»\u003c/span> тоже характеризует книгу, но сообщает о действии: эту книгу прочитали.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Причастие\u003c/strong> обозначает признак предмета по действию. Оно сочетает признаки глагола и прилагательного, отвечает на вопросы \u003cspan class=\"example-word\">«какой?»\u003c/span>, \u003cspan class=\"example-word\">«какая?»\u003c/span>, \u003cspan class=\"example-word\">«какое?»\u003c/span>, \u003cspan class=\"example-word\">«какие?»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Читающий\u003c/strong> ученик: ученик, который читает.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Прочитанная\u003c/strong> книга: книга, которую прочитали.\u003c/p>\n\u003c/div>\u003cp>Как прилагательное, причастие связано с названием предмета и изменяется вместе с ним: \u003cspan class=\"example-word\">«читающий ученик»\u003c/span>, \u003cspan class=\"example-word\">«читающая девочка»\u003c/span>, \u003cspan class=\"example-word\">«читающие дети»\u003c/span>. Как глагол, оно связано с действием и образовано от глагола: \u003cspan class=\"example-word\">«читать → читающий»\u003c/span>, \u003cspan class=\"example-word\">«прочитать → прочитанный»\u003c/span>.\u003c/p>\n\u003cp>Вопрос \u003cspan class=\"example-word\">«какой?»\u003c/span> подходит и прилагательному, и причастию. Чтобы различить их, выясним, выражен ли признак через действие. \u003cspan class=\"example-word\">«Красная»\u003c/span> книга названа по цвету, \u003cspan class=\"example-word\">«прочитанная»\u003c/span> по тому, что с ней сделали.\u003c/p>\n",
+      "groups": [
+        "participle-meaning-practice"
+      ]
+    },
+    {
+      "id": "participle-voices",
+      "title": "Действительные и страдательные причастия",
+      "chapter": "participle",
+      "html": "\u003cp>Причастие может характеризовать того, кто сам выполняет действие, или предмет, на который действие направлено.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Действительные причастия\u003c/strong> называют признак по действию самого предмета: \u003cspan class=\"example-word\">«читающий ученик»\u003c/span>, \u003cspan class=\"example-word\">«упавший лист»\u003c/span>. Ученик читает, лист упал.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Страдательные причастия\u003c/strong> называют признак предмета, с которым кто-то совершает действие: \u003cspan class=\"example-word\">«прочитанная книга»\u003c/span>, \u003cspan class=\"example-word\">«посаженное дерево»\u003c/span>. Кто-то прочитал книгу, кто-то посадил дерево.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Управляющий\u003c/strong> машиной гонщик: гонщик сам управляет машиной. Причастие действительное.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Управляемая\u003c/strong> гонщиком машина: машиной управляет гонщик. Причастие страдательное.\u003c/p>\n\u003c/div>\u003cp>Не нужно искать страдание в житейском смысле. В \u003cspan class=\"example-word\">«подаренная книга»\u003c/span> никто не страдает. Название указывает на направленность действия.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Предмет сам действует: действительное причастие. С предметом что-то делают: страдательное причастие.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "participle-voices-practice"
+      ]
+    },
+    {
+      "id": "participle-features",
+      "title": "Какие признаки глагола сохраняет причастие",
+      "chapter": "participle",
+      "html": "\u003cp>Причастие сохраняет вид глагола, от которого образовано. Оно может быть возвратным или невозвратным и иметь настоящее или прошедшее время.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Признак\u003c/th>\n\u003cth>Как определить\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Вид\u003c/td>\n\u003ctd>Найти исходный глагол и поставить вопрос \u003cspan class=\"example-word\">«что делать?»\u003c/span> или \u003cspan class=\"example-word\">«что сделать?»\u003c/span>\u003c/td>\n\u003ctd>Читать → \u003cstrong class=\"example-word\">читавший\u003c/strong>: несовершенный вид. Прочитать → \u003cstrong class=\"example-word\">прочитавший\u003c/strong>: совершенный вид\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Возвратность\u003c/td>\n\u003ctd>Проверить наличие \u003cspan class=\"example-word\">«-ся»\u003c/span>, \u003cspan class=\"example-word\">«-сь»\u003c/span>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Умывающийся\u003c/strong> ребёнок: возвратное. \u003cstrong class=\"example-word\">Умывающий\u003c/strong> ребёнка взрослый: невозвратное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Время\u003c/td>\n\u003ctd>Определить форму причастия: настоящее или прошедшее\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Читающий\u003c/strong>: настоящее. \u003cstrong class=\"example-word\">Читавший\u003c/strong>, \u003cstrong class=\"example-word\">прочитанный\u003c/strong>: прошедшее\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Прошедшее время не означает совершенный вид. В \u003cspan class=\"example-word\">«читавший»\u003c/span> глагол \u003cspan class=\"example-word\">«читать»\u003c/span> несовершенного вида; в \u003cspan class=\"example-word\">«прочитавший»\u003c/span> глагол \u003cspan class=\"example-word\">«прочитать»\u003c/span> совершенного вида.\u003c/p>\n\u003cp>Причастий будущего времени нет. Слова вокруг могут сообщать о будущем, но не создают у причастия такой формы.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Завтра книга будет \u003cstrong class=\"example-word\">прочитана\u003c/strong>. \u003cspan class=\"example-word\">«Прочитана»\u003c/span> является страдательным причастием прошедшего времени. Будущее выражено словом \u003cspan class=\"example-word\">«будет»\u003c/span> и общим смыслом предложения.\u003c/p>\n\u003c/div>\u003cp>У причастия нет лица и наклонения. Оно не получает первое лицо от слова \u003cspan class=\"example-word\">«я»\u003c/span> или повелительное наклонение от просьбы.\u003c/p>\n",
+      "groups": [
+        "participle-features-practice"
+      ]
+    },
+    {
+      "id": "participle-agreement",
+      "title": "Как причастие согласуется с существительным",
+      "chapter": "participle",
+      "html": "\u003cp>Полное причастие изменяется по родам в единственном числе, по числам и падежам. Эти формы зависят от названия предмета, которое оно поясняет.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Согласование\u003c/strong> означает, что связанное слово принимает тот же род, число и падеж, что и название предмета.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Форма\u003c/th>\n\u003cth>Сочетание\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Мужской род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Прочитанный\u003c/strong> рассказ\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Женский род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Прочитанная\u003c/strong> книга\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Средний род, единственное число\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Прочитанное\u003c/strong> письмо\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Множественное число, род не определяется\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Прочитанные\u003c/strong> книги\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Во множественном числе род не определяют. При склонении вопрос от существительного помогает выбрать окончание причастия.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>О письме каком? \u003cstrong class=\"example-word\">Прочитанном\u003c/strong>. Предложный падеж: о ком? о чём?\u003c/p>\n\u003cp>С письмом каким? \u003cstrong class=\"example-word\">Прочитанным\u003c/strong>. Творительный падеж: кем? чем?\u003c/p>\n\u003c/div>\u003cp>В окончаниях важно различать \u003cspan class=\"example-word\">«-ом»\u003c/span> и \u003cspan class=\"example-word\">«-ым»\u003c/span>: \u003cspan class=\"example-word\">«о прочитанном письме»\u003c/span>, но \u003cspan class=\"example-word\">«с прочитанным письмом»\u003c/span>. Так же: \u003cspan class=\"example-word\">«о строящемся доме»\u003c/span>, \u003cspan class=\"example-word\">«перед строящимся домом»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "participle-agreement-practice"
+      ]
+    },
+    {
+      "id": "participle-short",
+      "title": "Полная и краткая форма",
+      "chapter": "participle",
+      "html": "\u003cp>Страдательные причастия могут иметь полную и краткую форму. Действительные причастия краткой формы не имеют: \u003cspan class=\"example-word\">«читающий»\u003c/span> нельзя превратить в краткое причастие.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Полная форма причастия\u003c/strong> изменяется по родам, числам и падежам: \u003cspan class=\"example-word\">«построенный дом»\u003c/span>, \u003cspan class=\"example-word\">«построенного дома»\u003c/span>, \u003cspan class=\"example-word\">«построенные дома»\u003c/span>.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Краткая форма причастия\u003c/strong> изменяется по родам в единственном числе и по числам, но не склоняется. Падеж у неё не определяется.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Полная форма\u003c/th>\n\u003cth>Краткая форма\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Построенный\u003c/strong> дом\u003c/td>\n\u003ctd>Дом \u003cstrong class=\"example-word\">построен\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Построенная\u003c/strong> школа\u003c/td>\n\u003ctd>Школа \u003cstrong class=\"example-word\">построена\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Построенное\u003c/strong> здание\u003c/td>\n\u003ctd>Здание \u003cstrong class=\"example-word\">построено\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Построенные\u003c/strong> дома\u003c/td>\n\u003ctd>Дома \u003cstrong class=\"example-word\">построены\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Склеенные\u003c/strong> листочки лежат на столе. Полная форма поясняет название предметов.\u003c/p>\n\u003cp>Листочки \u003cstrong class=\"example-word\">склеены\u003c/strong>. Краткая форма сообщает, что сделано с листочками.\u003c/p>\n\u003c/div>\u003cp>Если в полном причастии есть \u003cspan class=\"example-word\">«нн»\u003c/span>, в кратком остаётся одна \u003cspan class=\"example-word\">«н»\u003c/span>: \u003cspan class=\"example-word\">«склеенный → склеен»\u003c/span>, \u003cspan class=\"example-word\">«прочитанная → прочитана»\u003c/span>. Причастия с суффиксом \u003cspan class=\"example-word\">«-т-»\u003c/span> сохраняют его: \u003cspan class=\"example-word\">«открытый → открыт»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "participle-short-practice"
+      ]
+    },
+    {
+      "id": "participle-present",
+      "title": "Как образуются причастия настоящего времени",
+      "chapter": "participle",
+      "html": "\u003cp>Причастия настоящего времени образуются от глаголов несовершенного вида. Выбор гласной в суффиксе связан со спряжением глагола.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Причастие\u003c/th>\n\u003cth>Спряжение\u003c/th>\n\u003cth>Суффиксы\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Действительное\u003c/td>\n\u003ctd>I\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«-ущ-»\u003c/span>, \u003cspan class=\"example-word\">«-ющ-»\u003c/span>\u003c/td>\n\u003ctd>Несут → \u003cstrong class=\"example-word\">несущий\u003c/strong>, читают → \u003cstrong class=\"example-word\">читающий\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Действительное\u003c/td>\n\u003ctd>II\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«-ащ-»\u003c/span>, \u003cspan class=\"example-word\">«-ящ-»\u003c/span>\u003c/td>\n\u003ctd>Дышат → \u003cstrong class=\"example-word\">дышащий\u003c/strong>, строят → \u003cstrong class=\"example-word\">строящий\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Страдательное\u003c/td>\n\u003ctd>I\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«-ем-»\u003c/span>, реже \u003cspan class=\"example-word\">«-ом-»\u003c/span>\u003c/td>\n\u003ctd>Решать → \u003cstrong class=\"example-word\">решаемый\u003c/strong>, вести → \u003cstrong class=\"example-word\">ведомый\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Страдательное\u003c/td>\n\u003ctd>II\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«-им-»\u003c/span>\u003c/td>\n\u003ctd>Хранить → \u003cstrong class=\"example-word\">хранимый\u003c/strong>, видеть → \u003cstrong class=\"example-word\">видимый\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Для действительного причастия удобно проверить форму третьего лица множественного числа: \u003cspan class=\"example-word\">«они строят → строящий»\u003c/span>, \u003cspan class=\"example-word\">«они читают → читающий»\u003c/span>. При образовании сохраняется основа, а окончание глагола заменяется суффиксом причастия и нужным окончанием.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Клеить: \u003cspan class=\"example-word\">«они клеят»\u003c/span>, II спряжение. Поэтому \u003cstrong class=\"example-word\">клеящий\u003c/strong>, а не \u003cspan class=\"example-word\">«клеющий»\u003c/span>.\u003c/p>\n\u003cp>Стелить: \u003cspan class=\"example-word\">«они стелют»\u003c/span>, I спряжение. Поэтому \u003cstrong class=\"example-word\">стелющий\u003c/strong>, хотя глагол оканчивается на \u003cspan class=\"example-word\">«-ить»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Страдательные причастия обычно образуются от переходных глаголов: \u003cspan class=\"example-word\">«решать задачу → решаемая задача»\u003c/span>. От \u003cspan class=\"example-word\">«идти»\u003c/span> такое причастие образовать нельзя: действие не направлено на предмет в винительном падеже без предлога.\u003c/p>\n\u003cp>Есть отдельные исключения: \u003cspan class=\"example-word\">«управляемый»\u003c/span>, \u003cspan class=\"example-word\">«руководимый»\u003c/span> образованы от непереходных \u003cspan class=\"example-word\">«управлять»\u003c/span>, \u003cspan class=\"example-word\">«руководить»\u003c/span>. В сочетаниях \u003cspan class=\"example-word\">«управлять машиной»\u003c/span>, \u003cspan class=\"example-word\">«руководить командой»\u003c/span> предмет действия стоит в творительном падеже: кем? чем? машиной, командой.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cspan class=\"example-word\">«Они читают»\u003c/span> подсказывает \u003cspan class=\"example-word\">«читающий»\u003c/span>, \u003cspan class=\"example-word\">«они строят»\u003c/span> подсказывает \u003cspan class=\"example-word\">«строящий»\u003c/span>. Проверяем спряжение, а не только последние буквы инфинитива.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "participle-present-practice"
+      ]
+    },
+    {
+      "id": "participle-past",
+      "title": "Как образуются причастия прошедшего времени",
+      "chapter": "participle",
+      "html": "\u003cp>Действительные причастия прошедшего времени образуются от глаголов обоих видов. После гласной в основе используется \u003cspan class=\"example-word\">«-вш-»\u003c/span>, после согласной \u003cspan class=\"example-word\">«-ш-»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Читать, читал → \u003cstrong class=\"example-word\">читавший\u003c/strong>. Прочитать, прочитал → \u003cstrong class=\"example-word\">прочитавший\u003c/strong>.\u003c/p>\n\u003cp>Нести, нёс → \u003cstrong class=\"example-word\">нёсший\u003c/strong>. Принести, принёс → \u003cstrong class=\"example-word\">принёсший\u003c/strong>.\u003c/p>\n\u003c/div>\u003cp>Перед \u003cspan class=\"example-word\">«-вш-»\u003c/span> сохраняется гласная исходного глагола: \u003cspan class=\"example-word\">«строить → строивший»\u003c/span>, \u003cspan class=\"example-word\">«надеяться → надеявшийся»\u003c/span>. У некоторых глаголов основа меняется: \u003cspan class=\"example-word\">«идти → шедший»\u003c/span>.\u003c/p>\n\u003cp>Страдательные причастия прошедшего времени образуются от переходных глаголов, чаще совершенного вида. Основные суффиксы: \u003cspan class=\"example-word\">«-нн-»\u003c/span>, \u003cspan class=\"example-word\">«-енн-»\u003c/span>, \u003cspan class=\"example-word\">«-ённ-»\u003c/span>, \u003cspan class=\"example-word\">«-т-»\u003c/span>.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Глагол\u003c/th>\n\u003cth>Причастие\u003c/th>\n\u003cth>Что проверяем\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Прочитать\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Прочитанный\u003c/strong>\u003c/td>\n\u003ctd>Перед \u003cspan class=\"example-word\">«нн»\u003c/span> сохраняется \u003cspan class=\"example-word\">«а»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Посеять\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Посеянный\u003c/strong>\u003c/td>\n\u003ctd>Перед \u003cspan class=\"example-word\">«нн»\u003c/span> сохраняется \u003cspan class=\"example-word\">«я»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Увидеть\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Увиденный\u003c/strong>\u003c/td>\n\u003ctd>Пишется \u003cspan class=\"example-word\">«енн»\u003c/span>, не \u003cspan class=\"example-word\">«инн»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Построить\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Построенный\u003c/strong>\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«И»\u003c/span> заменяется при образовании формы\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Решить\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Решённый\u003c/strong>\u003c/td>\n\u003ctd>В суффиксе под ударением после шипящей пишется \u003cspan class=\"example-word\">«ё»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Открыть\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Открытый\u003c/strong>\u003c/td>\n\u003ctd>Используется суффикс \u003cspan class=\"example-word\">«-т-»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Не от каждого глагола можно образовать все четыре разновидности причастия. От \u003cspan class=\"example-word\">«читать»\u003c/span> образуются \u003cspan class=\"example-word\">«читающий»\u003c/span>, \u003cspan class=\"example-word\">«читавший»\u003c/span>, \u003cspan class=\"example-word\">«читаемый»\u003c/span>, \u003cspan class=\"example-word\">«читанный»\u003c/span>. От непереходного \u003cspan class=\"example-word\">«гулять»\u003c/span> можно образовать действительные \u003cspan class=\"example-word\">«гуляющий»\u003c/span>, \u003cspan class=\"example-word\">«гулявший»\u003c/span>, но не страдательные.\u003c/p>\n",
+      "groups": [
+        "participle-past-practice"
+      ]
+    },
+    {
+      "id": "participle-turnover",
+      "title": "Причастный оборот и запятые",
+      "chapter": "participle",
+      "html": "\u003cp>Причастие может поясняться другими словами. От него к ним можно задать вопросы: \u003cspan class=\"example-word\">«прочитанная когда? вчера»\u003c/span>, \u003cspan class=\"example-word\">«прочитанная кем? чем? учеником»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Причастный оборот\u003c/strong> состоит из причастия и зависимых от него слов.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Определяемое слово\u003c/strong> называет предмет, признак которого выражен причастием. Оно не входит в причастный оборот.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Книга, \u003cstrong class=\"example-word\">прочитанная учеником вчера\u003c/strong>, лежит на столе.\u003c/p>\n\u003cp>Определяемое слово \u003cspan class=\"example-word\">«книга»\u003c/span>. Причастие \u003cspan class=\"example-word\">«прочитанная»\u003c/span>, зависимые слова \u003cspan class=\"example-word\">«учеником»\u003c/span>, \u003cspan class=\"example-word\">«вчера»\u003c/span>. Весь оборот: \u003cspan class=\"example-word\">«прочитанная учеником вчера»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>В обычном предложении оборот после определяемого существительного выделяется запятыми. Если предложение продолжается, нужна и закрывающая запятая. Перед определяемым существительным оборот обычно не выделяется.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Книга, \u003cstrong class=\"example-word\">прочитанная учеником\u003c/strong>, лежит на столе.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Прочитанная учеником\u003c/strong> книга лежит на столе.\u003c/p>\n\u003c/div>\u003cp>Есть условия, при которых запятые нужны и перед определяемым словом. Если оборот относится к личному местоимению, он выделяется независимо от места. Если оборот дополнительно объясняет причину, его тоже выделяем.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Уставший после тренировки\u003c/strong>, он сразу лёг спать. Оборот относится к \u003cspan class=\"example-word\">«он»\u003c/span>.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Напуганный резким шумом\u003c/strong>, кот спрятался. Кот спрятался, потому что испугался: оборот объясняет причину.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Сначала найдём название предмета, затем границы оборота. В \u003cspan class=\"example-word\">«книга, прочитанная вчера»\u003c/span> слово \u003cspan class=\"example-word\">«книга»\u003c/span> не входит в оборот.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "participle-turnover-practice"
+      ]
+    },
+    {
+      "id": "participle-nn",
+      "title": "Н и нн: причастие или прилагательное",
+      "chapter": "participle",
+      "html": "\u003cp>Некоторые слова, образованные от глагола, называют уже не действие, а привычный признак предмета. Их называют отглагольными прилагательными: \u003cspan class=\"example-word\">«варёный картофель»\u003c/span>, \u003cspan class=\"example-word\">«плетёная корзина»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Отглагольные прилагательные\u003c/strong> образованы от глаголов, но в данном употреблении обозначают признак, а не конкретное действие. При их различении с причастиями важно учитывать всё сочетание.\u003c/p>\n\u003c/div>\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Сочетание\u003c/th>\n\u003cth>Почему так пишется\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Плетёная\u003c/strong> корзина\u003c/td>\n\u003ctd>Прилагательное от \u003cspan class=\"example-word\">«плести»\u003c/span>, без приставки и пояснений о действии: одна \u003cspan class=\"example-word\">«н»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Плетённая\u003c/strong> из бисера корзина\u003c/td>\n\u003ctd>Причастие с пояснением, из чего плели: две \u003cspan class=\"example-word\">«н»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Сплетённая\u003c/strong> корзина\u003c/td>\n\u003ctd>Причастие от совершенного \u003cspan class=\"example-word\">«сплести»\u003c/span>: две \u003cspan class=\"example-word\">«н»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Решённая\u003c/strong> задача\u003c/td>\n\u003ctd>Причастие от совершенного \u003cspan class=\"example-word\">«решить»\u003c/span>: две \u003cspan class=\"example-word\">«н»\u003c/span>, хотя приставки нет\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Маринованные\u003c/strong> огурцы\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«Нн»\u003c/span> в словах с \u003cspan class=\"example-word\">«-ованн-»\u003c/span>, \u003cspan class=\"example-word\">«-ёванн-»\u003c/span>, \u003cspan class=\"example-word\">«-ированн-»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Полные страдательные причастия с \u003cspan class=\"example-word\">«-нн-»\u003c/span>, \u003cspan class=\"example-word\">«-енн-»\u003c/span>, \u003cspan class=\"example-word\">«-ённ-»\u003c/span> пишутся с двумя \u003cspan class=\"example-word\">«н»\u003c/span>. С одной \u003cspan class=\"example-word\">«н»\u003c/span> часто пишутся соответствующие прилагательные от бесприставочного глагола несовершенного вида без пояснений к действию: \u003cspan class=\"example-word\">«жареная рыба»\u003c/span>, \u003cspan class=\"example-word\">«сушёные яблоки»\u003c/span>.\u003c/p>\n\u003cp>Приставка \u003cspan class=\"example-word\">«не-»\u003c/span> сама по себе не требует второй \u003cspan class=\"example-word\">«н»\u003c/span>: \u003cspan class=\"example-word\">«жареный → нежареный»\u003c/span>. В словах \u003cspan class=\"example-word\">«кованый»\u003c/span>, \u003cspan class=\"example-word\">«жёваный»\u003c/span> сочетания \u003cspan class=\"example-word\">«ов»\u003c/span>, \u003cspan class=\"example-word\">«ёв»\u003c/span> входят в корень, поэтому без других условий пишется одна \u003cspan class=\"example-word\">«н»\u003c/span>. С пояснениями к действию: \u003cspan class=\"example-word\">«кованный кузнецом»\u003c/span>, \u003cspan class=\"example-word\">«жёванный щенком»\u003c/span>.\u003c/p>\n\u003cp>Есть словарные случаи: \u003cspan class=\"example-word\">«желанный»\u003c/span>, \u003cspan class=\"example-word\">«неожиданный»\u003c/span> пишутся с двумя \u003cspan class=\"example-word\">«н»\u003c/span>. Незнакомое слово проверяем по словарю; одного наличия или отсутствия приставки для всех слов недостаточно.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Полная форма: листочки \u003cstrong class=\"example-word\">склеенные\u003c/strong>. Краткая форма: листочки \u003cstrong class=\"example-word\">склеены\u003c/strong>. У краткого причастия одна \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Краткое причастие надо отличать от краткого прилагательного. \u003cspan class=\"example-word\">«Дети воспитаны бабушкой»\u003c/span> сообщает о действии бабушки. \u003cspan class=\"example-word\">«Дети воспитанны и вежливы»\u003c/span> называет качества детей. Поэтому \u003cspan class=\"example-word\">«воспитаны»\u003c/span> пишется с одной \u003cspan class=\"example-word\">«н»\u003c/span>, а \u003cspan class=\"example-word\">«воспитанны»\u003c/span> сохраняет \u003cspan class=\"example-word\">«нн»\u003c/span> прилагательного \u003cspan class=\"example-word\">«воспитанный»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "participle-nn-practice"
+      ]
+    },
+    {
+      "id": "participle-negative",
+      "title": "Не с причастиями",
+      "chapter": "participle",
+      "html": "\u003cp>Начнём с формы причастия. В краткой форме отрицательная частица \u003cspan class=\"example-word\">«не»\u003c/span> пишется отдельно: \u003cspan class=\"example-word\">«работа не закончена»\u003c/span>, \u003cspan class=\"example-word\">«ответ не получен»\u003c/span>.\u003c/p>\n\u003cp>У полной формы учитываем значение и зависимые слова.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Раздельно\u003c/th>\n\u003cth>Слитно\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Есть пояснение, кем, когда, где или как выполняется действие: \u003cstrong class=\"example-word\">не прочитанная мной\u003c/strong> книга\u003c/td>\n\u003ctd>Нет противопоставления, усиленного отрицания и зависимых слов: \u003cstrong class=\"example-word\">непрочитанная\u003c/strong> книга\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Есть противопоставление: \u003cstrong class=\"example-word\">не законченная, а только начатая\u003c/strong> работа\u003c/td>\n\u003ctd>Слово без \u003cspan class=\"example-word\">«не»\u003c/span> не употребляется: \u003cstrong class=\"example-word\">ненавидящий\u003c/strong> ложь человек\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Отрицание усилено: \u003cstrong class=\"example-word\">ничем не нарушенная\u003c/strong> тишина\u003c/td>\n\u003ctd>Слова степени сами по себе не требуют раздельного написания: \u003cstrong class=\"example-word\">совершенно неподготовленный\u003c/strong> ответ\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Зависимое слово ищем именно при причастии, а не при существительном.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>На столе лежит \u003cstrong class=\"example-word\">непрочитанная\u003c/strong> книга о путешествиях. \u003cspan class=\"example-word\">«О путешествиях»\u003c/span> поясняет \u003cspan class=\"example-word\">«книга»\u003c/span>, поэтому не требует раздельного написания при причастии.\u003c/p>\n\u003cp>На столе лежит \u003cstrong class=\"example-word\">не прочитанная мной\u003c/strong> книга. \u003cspan class=\"example-word\">«Мной»\u003c/span> поясняет действие: книга не прочитана кем? чем? мной.\u003c/p>\n\u003c/div>\u003cp>Слова \u003cspan class=\"example-word\">«совершенно»\u003c/span>, \u003cspan class=\"example-word\">«очень»\u003c/span>, \u003cspan class=\"example-word\">«крайне»\u003c/span> могут усиливать признак, а не отрицание. Поэтому правило \u003cspan class=\"example-word\">«есть любое зависимое слово, значит, всегда раздельно»\u003c/span> неверно. В сложных случаях, когда слово стало прилагательным, учитываем его значение и словарное написание.\u003c/p>\n",
+      "groups": [
+        "participle-negative-practice"
+      ]
+    },
+    {
+      "id": "participle-analysis",
+      "title": "Как охарактеризовать причастие",
+      "chapter": "participle",
+      "html": "\u003ch3>1. Найдём предмет и действие\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>Я подошёл к \u003cstrong class=\"example-word\">читающему\u003c/strong> ученику. Причастие относится к \u003cspan class=\"example-word\">«ученику»\u003c/span> и сообщает, что ученик читает.\u003c/p>\n\u003c/div>\u003ch3>2. Назовём постоянные признаки\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>Начальная форма \u003cspan class=\"example-word\">«читающий»\u003c/span>. Исходный глагол \u003cspan class=\"example-word\">«читать»\u003c/span>, несовершенный вид. Ученик сам выполняет действие, поэтому причастие действительное. Оно невозвратное, настоящего времени.\u003c/p>\n\u003c/div>\u003ch3>3. Определим форму в предложении\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Читающему»\u003c/span> полная форма, мужской род, единственное число, дательный падеж. Вопросы к существительному: к кому? к чему? К причастию: к ученику какому?\u003c/p>\n\u003c/div>\u003cp>У краткого причастия назовём род в единственном числе и число, но не падеж. В начальной форме сохраняем разновидность причастия: \u003cspan class=\"example-word\">«прочитанной → прочитанный»\u003c/span>, а не \u003cspan class=\"example-word\">«читающий»\u003c/span> и не \u003cspan class=\"example-word\">«прочитать»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "participle-analysis-practice"
+      ]
+    },
+    {
+      "id": "participle-check",
+      "title": "Проверка по причастию",
+      "chapter": "participle",
+      "html": "",
+      "groups": [
+        "participle-check"
+      ]
+    },
+    {
+      "id": "gerund-meaning",
+      "title": "Что обозначает деепричастие",
+      "chapter": "gerund",
+      "html": "\u003cp>Сравним: \u003cspan class=\"example-word\">«Маша читала и делала заметки»\u003c/span> и \u003cspan class=\"example-word\">«Маша читала, делая заметки»\u003c/span>. В первом предложении два действия названы глаголами. Во втором основное сообщение выражено словом \u003cspan class=\"example-word\">«читала»\u003c/span>, а \u003cspan class=\"example-word\">«делая»\u003c/span> добавляет, что ещё делала Маша во время чтения.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Деепричастие\u003c/strong> обозначает добавочное действие при основном действии. Оно отвечает на вопросы \u003cspan class=\"example-word\">«что делая?»\u003c/span> или \u003cspan class=\"example-word\">«что сделав?»\u003c/span> и сочетает признаки глагола и наречия.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Маша читала, \u003cstrong class=\"example-word\">делая\u003c/strong> заметки. Основное действие \u003cspan class=\"example-word\">«читала»\u003c/span>, добавочное \u003cspan class=\"example-word\">«делая»\u003c/span>.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Прочитав\u003c/strong> рассказ, Маша закрыла книгу. Основное действие \u003cspan class=\"example-word\">«закрыла»\u003c/span>, добавочное \u003cspan class=\"example-word\">«прочитав»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Добавочное действие не обязательно маловажно. Это способ построить сообщение: одно действие названо глаголом, другое представлено рядом с ним. Оба действия в этих предложениях выполняет Маша.\u003c/p>\n",
+      "groups": [
+        "gerund-meaning-practice"
+      ]
+    },
+    {
+      "id": "gerund-features",
+      "title": "Признаки глагола и наречия у деепричастия",
+      "chapter": "gerund",
+      "html": "\u003cp>Деепричастие сохраняет вид, возвратность и переходность исходного глагола. Подобно наречию, оно не изменяется по родам, числам и падежам.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Признак\u003c/th>\n\u003cth>Как определить\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Вид\u003c/td>\n\u003ctd>Поставить вопрос и найти исходный глагол\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Решая\u003c/strong>: что делая? От \u003cspan class=\"example-word\">«решать»\u003c/span>, несовершенный вид. \u003cstrong class=\"example-word\">Решив\u003c/strong>: что сделав? От \u003cspan class=\"example-word\">«решить»\u003c/span>, совершенный вид\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Возвратность\u003c/td>\n\u003ctd>Проверить \u003cspan class=\"example-word\">«-ся»\u003c/span>, \u003cspan class=\"example-word\">«-сь»\u003c/span>\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Умываясь\u003c/strong>, \u003cstrong class=\"example-word\">умывшись\u003c/strong>: возвратные. \u003cstrong class=\"example-word\">Умывая\u003c/strong>, \u003cstrong class=\"example-word\">умыв\u003c/strong>: невозвратные\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Переходность\u003c/td>\n\u003ctd>Проверить, допускает ли исходный глагол предмет действия в винительном падеже без предлога\u003c/td>\n\u003ctd>\u003cstrong class=\"example-word\">Читая\u003c/strong> книгу: переходное. \u003cstrong class=\"example-word\">Гуляя\u003c/strong> по парку: непереходное\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Неизменяемость\u003c/td>\n\u003ctd>Сравнить употребление при разных исполнителях и формах глагола\u003c/td>\n\u003ctd>Он ушёл, \u003cstrong class=\"example-word\">улыбаясь\u003c/strong>. Она ушла, \u003cstrong class=\"example-word\">улыбаясь\u003c/strong>. Они уйдут, \u003cstrong class=\"example-word\">улыбаясь\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>У деепричастия нет окончания. Суффикс \u003cspan class=\"example-word\">«-я»\u003c/span> в \u003cspan class=\"example-word\">«читая»\u003c/span> не является окончанием женского рода. Род, число, падеж, лицо, время и наклонение у деепричастия не определяются.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Читая\u003c/strong> книгу, девочка делала записи. \u003cspan class=\"example-word\">«Читая»\u003c/span> от \u003cspan class=\"example-word\">«читать»\u003c/span>: несовершенного вида, невозвратное, переходное. Женский род слова \u003cspan class=\"example-word\">«девочка»\u003c/span> не становится признаком деепричастия.\u003c/p>\n\u003c/div>\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>\u003cspan class=\"example-word\">«Улыбаясь»\u003c/span> сохраняет одну форму в \u003cspan class=\"example-word\">«он читает, улыбаясь»\u003c/span>, \u003cspan class=\"example-word\">«она читала, улыбаясь»\u003c/span>, \u003cspan class=\"example-word\">«они будут читать, улыбаясь»\u003c/span>. Формы глагола меняются, деепричастие не согласуется с ними.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "gerund-features-practice"
+      ]
+    },
+    {
+      "id": "gerund-aspect",
+      "title": "Вид и порядок действий",
+      "chapter": "gerund",
+      "html": "\u003cp>Деепричастие несовершенного вида отвечает на вопрос \u003cspan class=\"example-word\">«что делая?»\u003c/span>. Обычно его действие происходит одновременно с основным.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Читая\u003c/strong> рассказ, Маша делает заметки. Она читает и делает заметки в одно время.\u003c/p>\n\u003c/div>\u003cp>Деепричастие совершенного вида отвечает на вопрос \u003cspan class=\"example-word\">«что сделав?»\u003c/span>. Обычно оно называет действие, выполненное до основного.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Прочитав\u003c/strong> рассказ, Маша сделала запись в дневнике. Сначала прочитала, потом сделала запись.\u003c/p>\n\u003c/div>\u003cp>Слова \u003cspan class=\"example-word\">«обычно»\u003c/span> здесь важны: вид показывает, как представлено действие, а точный порядок определяется всем предложением. Например, в \u003cspan class=\"example-word\">«Он сидел, опустив голову»\u003c/span> деепричастие называет уже выполненное движение, результат которого сохраняется во время сидения.\u003c/p>\n\u003cp>У самого деепричастия нет грамматического времени. Оно не становится будущего времени из-за слова \u003cspan class=\"example-word\">«завтра»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Завтра, \u003cstrong class=\"example-word\">закончив\u003c/strong> работу, мы пойдём гулять. \u003cspan class=\"example-word\">«Закончив»\u003c/span> совершенного вида, но время у него не определяется.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "gerund-aspect-practice"
+      ]
+    },
+    {
+      "id": "gerund-formation",
+      "title": "Как образуются деепричастия",
+      "chapter": "gerund",
+      "html": "\u003cp>Способ образования зависит от вида исходного глагола. В форме сохраняются его вид и возвратность.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Вид\u003c/th>\n\u003cth>Основные суффиксы\u003c/th>\n\u003cth>Примеры\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>Несовершенный\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«-а»\u003c/span>, \u003cspan class=\"example-word\">«-я»\u003c/span>, обычно от основы настоящего времени\u003c/td>\n\u003ctd>Читают → \u003cstrong class=\"example-word\">читая\u003c/strong>, говорят → \u003cstrong class=\"example-word\">говоря\u003c/strong>, улыбаются → \u003cstrong class=\"example-word\">улыбаясь\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Совершенный\u003c/td>\n\u003ctd>\u003cspan class=\"example-word\">«-в»\u003c/span> после гласной, \u003cspan class=\"example-word\">«-вши»\u003c/span> в возвратных формах, \u003cspan class=\"example-word\">«-ши»\u003c/span> после согласной\u003c/td>\n\u003ctd>Прочитать → \u003cstrong class=\"example-word\">прочитав\u003c/strong>, умыться → \u003cstrong class=\"example-word\">умывшись\u003c/strong>, принести → \u003cstrong class=\"example-word\">принёсши\u003c/strong>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>В обычной речи из двух форм \u003cspan class=\"example-word\">«прочитав»\u003c/span> и \u003cspan class=\"example-word\">«прочитавши»\u003c/span> выбираем нейтральную \u003cspan class=\"example-word\">«прочитав»\u003c/span>. Формы на \u003cspan class=\"example-word\">«-ши»\u003c/span> встречаются реже, поэтому прежде всего запомним привычные \u003cspan class=\"example-word\">«прочитав»\u003c/span>, \u003cspan class=\"example-word\">«решив»\u003c/span>, \u003cspan class=\"example-word\">«вернувшись»\u003c/span>.\u003c/p>\n\u003cp>Не все глаголы образуют деепричастие по простой схеме. У \u003cspan class=\"example-word\">«быть»\u003c/span> используется форма \u003cspan class=\"example-word\">«будучи»\u003c/span>. От совершенных \u003cspan class=\"example-word\">«прийти»\u003c/span>, \u003cspan class=\"example-word\">«найти»\u003c/span> употребляются \u003cspan class=\"example-word\">«придя»\u003c/span>, \u003cspan class=\"example-word\">«найдя»\u003c/span>: суффикс \u003cspan class=\"example-word\">«-я»\u003c/span> не делает их несовершенного вида.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Придя\u003c/strong> домой, я позвонил другу. \u003cspan class=\"example-word\">«Придя»\u003c/span> от \u003cspan class=\"example-word\">«прийти»\u003c/span>, совершенный вид.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Идя\u003c/strong> домой, я разговаривал с другом. \u003cspan class=\"example-word\">«Идя»\u003c/span> от \u003cspan class=\"example-word\">«идти»\u003c/span>, несовершенный вид.\u003c/p>\n\u003c/div>\u003cp>У некоторых глаголов нейтральной формы несовершенного вида нет: нельзя механически образовать \u003cspan class=\"example-word\">«пиша»\u003c/span> от \u003cspan class=\"example-word\">«писать»\u003c/span> или \u003cspan class=\"example-word\">«пья»\u003c/span> от \u003cspan class=\"example-word\">«пить»\u003c/span>. Можно перестроить предложение: \u003cspan class=\"example-word\">«Когда я писал письмо, я сверял адрес»\u003c/span>.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Перед \u003cspan class=\"example-word\">«-в»\u003c/span> сохраняем гласную глагола: \u003cspan class=\"example-word\">«увидеть → увидев»\u003c/span>, \u003cspan class=\"example-word\">«заметить → заметив»\u003c/span>, \u003cspan class=\"example-word\">«затеять → затеяв»\u003c/span>.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "gerund-formation-practice"
+      ]
+    },
+    {
+      "id": "gerund-turnover",
+      "title": "Деепричастный оборот и запятые",
+      "chapter": "gerund",
+      "html": "\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Деепричастный оборот\u003c/strong> состоит из деепричастия и зависимых от него слов. Эти слова уточняют добавочное действие.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Прочитав интересный рассказ\u003c/strong>, Маша закрыла книгу.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Прочитав»\u003c/span> деепричастие. Прочитав кого? что? рассказ; рассказ какой? интересный. Весь оборот \u003cspan class=\"example-word\">«прочитав интересный рассказ»\u003c/span>. Слово \u003cspan class=\"example-word\">«Маша»\u003c/span> в него не входит.\u003c/p>\n\u003c/div>\u003cp>Оборот, который обозначает отдельное добавочное действие, выделяется запятыми независимо от своего места. Если он находится внутри предложения, нужны две запятые.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Прочитав рассказ\u003c/strong>, Маша закрыла книгу.\u003c/p>\n\u003cp>Маша, \u003cstrong class=\"example-word\">прочитав рассказ\u003c/strong>, закрыла книгу.\u003c/p>\n\u003cp>Маша закрыла книгу, \u003cstrong class=\"example-word\">прочитав рассказ\u003c/strong>.\u003c/p>\n\u003c/div>\u003cp>Одиночное деепричастие с таким же значением тоже выделяется: \u003cspan class=\"example-word\">«Маша, улыбнувшись, закрыла книгу»\u003c/span>.\u003c/p>\n\u003cp>Два добавочных действия, соединённые одним \u003cspan class=\"example-word\">«и»\u003c/span> и относящиеся к одному основному действию, не разделяем запятой.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Маша вошла, \u003cstrong class=\"example-word\">улыбаясь и оглядываясь\u003c/strong>. Перед \u003cspan class=\"example-word\">«и»\u003c/span> запятой нет, а вся группа отделена от основного сообщения.\u003c/p>\n\u003c/div>\u003cp>Устойчивые сочетания и слова, которые стали наречиями, не обозначают отдельного добавочного действия. Например, в \u003cspan class=\"example-word\">«он работал спустя рукава»\u003c/span> запятая не нужна: всё сочетание означает \u003cspan class=\"example-word\">«небрежно»\u003c/span>.\u003c/p>\n",
+      "groups": [
+        "gerund-turnover-practice"
+      ]
+    },
+    {
+      "id": "gerund-actor",
+      "title": "Кто выполняет основное и добавочное действие",
+      "chapter": "gerund",
+      "html": "\u003cp>Исполнитель добавочного действия должен совпадать с исполнителем основного. Проверим не только то, что стоит рядом с деепричастием, но и смысл всего предложения.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Возвращаясь домой\u003c/strong>, я встретил друга. Я возвращался, я встретил. Предложение построено правильно.\u003c/p>\n\u003cp>Ошибка: \u003cspan class=\"example-word\">«Возвращаясь домой, у меня сломался телефон»\u003c/span>. Получается, что возвращался телефон, хотя домой шёл человек. Исправим: \u003cspan class=\"example-word\">«Когда я возвращался домой, у меня сломался телефон»\u003c/span>.\u003c/p>\n\u003c/div>\u003ch3>Проверка в два действия\u003c/h3>\u003cp>Сначала найдём основной глагол и назовём его исполнителя. Затем назовём исполнителя действия деепричастия. Если это не один и тот же человек или предмет, предложение нужно перестроить.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Открыв дверь, я увидел кошку»\u003c/span>: увидел я, открыл я. Ошибки нет.\u003c/p>\n\u003cp>\u003cspan class=\"example-word\">«Открыв дверь, кошка выбежала из комнаты»\u003c/span>: если дверь открыл человек, исполнители разные. Точнее: \u003cspan class=\"example-word\">«Когда я открыл дверь, кошка выбежала из комнаты»\u003c/span>.\u003c/p>\n\u003c/div>\u003cp>Слова \u003cspan class=\"example-word\">«я»\u003c/span>, \u003cspan class=\"example-word\">«ты»\u003c/span>, \u003cspan class=\"example-word\">«мы»\u003c/span> не обязательно должны присутствовать. В просьбе \u003cspan class=\"example-word\">«Прочитав условие, реши задачу»\u003c/span> обе команды обращены к одному собеседнику.\u003c/p>\n\u003cp>Деепричастие возможно и при неопределённой форме, когда у двух действий общий предполагаемый исполнитель: \u003cspan class=\"example-word\">«Переходя дорогу, нужно смотреть по сторонам»\u003c/span>. Тот, кто переходит, должен смотреть. Но \u003cspan class=\"example-word\">«Переходя дорогу, мне стало страшно»\u003c/span> устроено иначе: основное сообщение называет состояние, а не действие того же исполнителя. Лучше: \u003cspan class=\"example-word\">«Когда я переходил дорогу, мне стало страшно»\u003c/span>.\u003c/p>\n\u003caside class=\"note-memory\">\u003cp class=\"memory-title\">\u003cimg src=\"icons/lightbulb.svg\" alt=\"\" width=\"20\" height=\"20\">Запомнить\u003c/p>\u003cp>Проверим два вопроса: кто делает основное? кто делает добавочное? В \u003cspan class=\"example-word\">«читая, я выписываю»\u003c/span> оба действия выполняю я.\u003c/p>\n\u003c/aside>",
+      "groups": [
+        "gerund-actor-practice"
+      ]
+    },
+    {
+      "id": "gerund-distinction",
+      "title": "Деепричастие, причастие или наречие",
+      "chapter": "gerund",
+      "html": "\u003cp>Все три группы могут быть связаны с глаголом по происхождению. Различим их по тому, что они обозначают в данном предложении.\u003c/p>\n\u003ctable>\n\u003cthead>\n\u003ctr>\n\u003cth>Сочетание\u003c/th>\n\u003cth>Что выражает выделенное слово\u003c/th>\n\u003c/tr>\n\u003c/thead>\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cstrong class=\"example-word\">Читающий\u003c/strong> ученик\u003c/td>\n\u003ctd>Признак ученика по действию. Причастие, вопрос \u003cspan class=\"example-word\">«какой?»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Ученик отвечает, \u003cstrong class=\"example-word\">улыбаясь\u003c/strong>\u003c/td>\n\u003ctd>Добавочное действие ученика. Деепричастие, вопрос \u003cspan class=\"example-word\">«что делая?»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003ctr>\n\u003ctd>Ученик отвечает \u003cstrong class=\"example-word\">уверенно\u003c/strong>\u003c/td>\n\u003ctd>Признак действия, без отдельного добавочного действия. Наречие, вопрос \u003cspan class=\"example-word\">«как?»\u003c/span>\u003c/td>\n\u003c/tr>\n\u003c/tbody>\u003c/table>\n\u003cp>Некоторые слова утрачивают значение отдельного действия и становятся наречиями. Например, \u003cspan class=\"example-word\">«не спеша»\u003c/span> может означать просто \u003cspan class=\"example-word\">«медленно»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Мы шли \u003cstrong class=\"example-word\">не спеша\u003c/strong>. Сочетание характеризует скорость ходьбы, запятая не нужна.\u003c/p>\n\u003cp>Он отвечал, \u003cstrong class=\"example-word\">не спеша с выводами\u003c/strong>. Есть отдельное добавочное действие и зависимые слова: не торопился делать выводы. Оборот выделяется запятой.\u003c/p>\n\u003c/div>\u003cp>Не выделяются запятыми устойчивые сочетания с общим переносным значением: \u003cspan class=\"example-word\">«работать спустя рукава»\u003c/span> означает работать небрежно, \u003cspan class=\"example-word\">«бежать сломя голову»\u003c/span> означает бежать очень быстро.\u003c/p>\n\u003cp>Важно различать деепричастие и производный предлог.\u003c/p>\n\u003cdiv class=\"note-definition\">\u003cp>\u003cstrong class=\"term\">Производный предлог\u003c/strong> образован из слова другой части речи, но теперь связывает слова и не называет добавочного действия.\u003c/p>\n\u003c/div>\u003cdiv class=\"note-example\">\u003cp>Он ушёл, \u003cstrong class=\"example-word\">благодаря\u003c/strong> хозяина за помощь. Он уходил и благодарил. Это деепричастие.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Благодаря\u003c/strong> помощи друга я закончил работу. Предлог выражает причину, равен по смыслу \u003cspan class=\"example-word\">«из-за»\u003c/span> с положительной оценкой; действия благодарности здесь нет.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "gerund-distinction-practice"
+      ]
+    },
+    {
+      "id": "gerund-negative",
+      "title": "Не с деепричастиями",
+      "chapter": "gerund",
+      "html": "\u003cp>Отрицательная частица \u003cspan class=\"example-word\">«не»\u003c/span> с деепричастиями обычно пишется отдельно, как с глаголами: \u003cspan class=\"example-word\">«не читая»\u003c/span>, \u003cspan class=\"example-word\">«не заметив»\u003c/span>, \u003cspan class=\"example-word\">«не оглядываясь»\u003c/span>.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Не заметив\u003c/strong> ступеньку, я споткнулся. Отрицается добавочное действие, пишем два слова.\u003c/p>\n\u003c/div>\u003cp>Слитно пишутся слова, которые не употребляются без \u003cspan class=\"example-word\">«не»\u003c/span>: \u003cspan class=\"example-word\">«негодуя»\u003c/span>, \u003cspan class=\"example-word\">«недоумевая»\u003c/span>. \u003cspan class=\"example-word\">«Негодуя»\u003c/span> означает возмущаясь; \u003cspan class=\"example-word\">«недоумевая»\u003c/span> означает не понимая, удивляясь. Нельзя убрать \u003cspan class=\"example-word\">«не»\u003c/span> и получить равнозначные глаголы \u003cspan class=\"example-word\">«годовать»\u003c/span> или \u003cspan class=\"example-word\">«доумевать»\u003c/span>.\u003c/p>\n\u003cp>Нужно отличать приставку \u003cspan class=\"example-word\">«недо-»\u003c/span> со значением недостаточности от отрицания незавершённого действия.\u003c/p>\n\u003cdiv class=\"note-example\">\u003cp>Он ослаб, \u003cstrong class=\"example-word\">недоедая\u003c/strong> во время болезни. Питался недостаточно: приставка \u003cspan class=\"example-word\">«недо-»\u003c/span>, слитно.\u003c/p>\n\u003cp>\u003cstrong class=\"example-word\">Не доев\u003c/strong> суп, он вышел из-за стола. Не закончил есть эту порцию: отрицание и \u003cspan class=\"example-word\">«доесть»\u003c/span>, раздельно.\u003c/p>\n\u003c/div>\u003cp>У \u003cspan class=\"example-word\">«не спеша»\u003c/span> сохраняется раздельное написание и тогда, когда сочетание употребляется как наречие. Часть речи определяем по контексту, написание не доказывает её само по себе.\u003c/p>\n",
+      "groups": [
+        "gerund-negative-practice"
+      ]
+    },
+    {
+      "id": "gerund-analysis",
+      "title": "Как охарактеризовать деепричастие",
+      "chapter": "gerund",
+      "html": "\u003ch3>1. Найдём основное и добавочное действие\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cstrong class=\"example-word\">Умывшись\u003c/strong>, девочка пошла завтракать. Основное действие \u003cspan class=\"example-word\">«пошла»\u003c/span>, добавочное \u003cspan class=\"example-word\">«умывшись»\u003c/span>. Оба выполняет девочка.\u003c/p>\n\u003c/div>\u003ch3>2. Найдём исходный глагол и назовём признаки\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Умывшись»\u003c/span> от \u003cspan class=\"example-word\">«умыться»\u003c/span>, вопрос \u003cspan class=\"example-word\">«что сделав?»\u003c/span>. Совершенный вид, возвратное. Исходный глагол непереходный, поэтому деепричастие тоже непереходное.\u003c/p>\n\u003c/div>\u003ch3>3. Отметим неизменяемость\u003c/h3>\u003cdiv class=\"note-example\">\u003cp>\u003cspan class=\"example-word\">«Умывшись»\u003c/span> не изменяется. Рода, числа, падежа, лица, времени и наклонения у него нет, окончания нет.\u003c/p>\n\u003c/div>",
+      "groups": [
+        "gerund-analysis-practice"
+      ]
+    },
+    {
+      "id": "gerund-check",
+      "title": "Проверка по деепричастию",
+      "chapter": "gerund",
+      "html": "",
+      "groups": [
+        "gerund-check"
       ]
     }
   ],
@@ -12395,6 +12603,3164 @@ window.LESSON_CONTENT = {
           ],
           "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Наиболее внимательно»\u003c/span> показывает наибольшую меру внимательности при чтении. Это превосходная степень наречия образа действия, а не характеристика условия как предмета или самостоятельное сообщение о состоянии человека.\u003c/p>\n",
           "reviewStep": "adverb-analysis"
+        }
+      ]
+    },
+    "participle-meaning-practice": {
+      "id": "participle-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите причастие.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Ученик",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "прочитал",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "интересный",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "рассказ",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "вернул",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "прочитанную",
+                "role": "participle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "книгу",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Ученик",
+              "role": "noun"
+            },
+            {
+              "value": "1",
+              "label": "прочитал",
+              "role": "verb"
+            },
+            {
+              "value": "2",
+              "label": "интересный",
+              "role": "adjective"
+            },
+            {
+              "value": "3",
+              "label": "рассказ",
+              "role": "noun"
+            },
+            {
+              "value": "4",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "5",
+              "label": "вернул",
+              "role": "verb"
+            },
+            {
+              "value": "6",
+              "label": "прочитанную",
+              "role": "participle"
+            },
+            {
+              "value": "7",
+              "label": "книгу",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "6"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Прочитанную»\u003c/span> обозначает признак книги по действию: книгу прочитали. \u003cspan class=\"example-word\">«Интересный»\u003c/span> называет признак без указания на действие.\u003c/p>\n"
+        },
+        {
+          "id": "participle-meaning-2",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Читающий ученик сидит у окна. (читающий)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Ученик читает у окна. (читает)",
+              "correct": "2"
+            },
+            {
+              "id": "2",
+              "label": "Интересная книга лежит на столе. (интересная)",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "Читая, ученик делает заметки. (читая)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Причастие"
+            },
+            {
+              "value": "1",
+              "label": "Имя прилагательное"
+            },
+            {
+              "value": "2",
+              "label": "Глагол"
+            },
+            {
+              "value": "3",
+              "label": "Деепричастие"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Читающий»\u003c/span> характеризует ученика по действию, \u003cspan class=\"example-word\">«читает»\u003c/span> сообщает о действии, \u003cspan class=\"example-word\">«интересная»\u003c/span> называет признак, \u003cspan class=\"example-word\">«читая»\u003c/span> добавочное действие.\u003c/p>\n"
+        },
+        {
+          "id": "participle-meaning-3",
+          "type": "choice",
+          "promptHtml": "Мы смотрели на \u003cstrong class=\"example-word\">падающий\u003c/strong> снег. Выберите характеристику \u003cspan class=\"example-word\">«падающий»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное: называет постоянное качество снега, не связано с глаголом, изменяется по родам, числам и падежам."
+            },
+            {
+              "value": "1",
+              "label": "Б. Причастие: называет признак снега по действию, образовано от «падать», изменяется по родам, числам и падежам."
+            },
+            {
+              "value": "2",
+              "label": "В. Деепричастие: называет добавочное действие наблюдателей, образовано от «падать» и не изменяется."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Снег падает, поэтому он \u003cspan class=\"example-word\">«падающий»\u003c/span>. Действие выполняет снег, а не наблюдатели. У слова есть формы \u003cspan class=\"example-word\">«падающая»\u003c/span>, \u003cspan class=\"example-word\">«падающие»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-voices-practice": {
+      "id": "participle-voices-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-voices-1",
+          "type": "sort",
+          "promptHtml": "Определите залог причастия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Водитель, управляющий машиной.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Машина, управляемая водителем.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Уважающий друзей человек.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Уважаемый коллегами учитель.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Действительное"
+            },
+            {
+              "value": "1",
+              "label": "Страдательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Водитель управляет, человек уважает. Машиной управляют, учителя уважают. Страдательный залог не означает, что предмет действительно страдает.\u003c/p>\n"
+        },
+        {
+          "id": "participle-voices-2",
+          "type": "input",
+          "promptHtml": "Из двух слов выпишите страдательное причастие: \u003cstrong class=\"example-word\">рисующий, нарисованный\u003c/strong>.",
+          "correct": [
+            "нарисованный"
+          ],
+          "explanationHtml": "\u003cp>Картину нарисовали: она испытывает действие. Художник рисует сам: он \u003cspan class=\"example-word\">«рисующий»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-voices-3",
+          "type": "choice",
+          "promptHtml": "Какое объяснение верно для \u003cstrong class=\"example-word\">построенный дом\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Дом выполняет действие, поэтому причастие действительное."
+            },
+            {
+              "value": "1",
+              "label": "Б. Залог зависит от рода существительного: мужской род требует действительного причастия."
+            },
+            {
+              "value": "2",
+              "label": "В. Дом является результатом действия строителей, поэтому причастие страдательное."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Дом построили. Страдательное причастие характеризует предмет, на который направлено действие. Род и залог не определяют друг друга.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-features-practice": {
+      "id": "participle-features-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-features-1",
+          "type": "sort",
+          "promptHtml": "Определите вид исходного глагола и причастия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "читающий (читать)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "прочитанный (прочитать)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "решающий (решать)",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "решённый (решить)",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Несовершенный"
+            },
+            {
+              "value": "1",
+              "label": "Совершенный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Вид сохраняется от глагола: \u003cspan class=\"example-word\">«читать»\u003c/span>, \u003cspan class=\"example-word\">«решать»\u003c/span> несовершенного вида; \u003cspan class=\"example-word\">«прочитать»\u003c/span>, \u003cspan class=\"example-word\">«решить»\u003c/span> совершенного.\u003c/p>\n"
+        },
+        {
+          "id": "participle-features-2",
+          "type": "sort",
+          "promptHtml": "Определите время причастия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "строящийся",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "строившийся",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "обсуждаемый",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "обсуждённый",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Настоящее"
+            },
+            {
+              "value": "1",
+              "label": "Прошедшее"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Настоящее время: действие происходит сейчас. Прошедшее: действие происходило или произошло раньше.\u003c/p>\n"
+        },
+        {
+          "id": "participle-features-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Завтра книга будет прочитана.\u003c/strong> Что верно о причастии?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Прочитана» имеет грамматическое будущее время, поскольку есть «завтра»."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Прочитана» причастие прошедшего времени; будущее значение передаётся сочетанием с «будет»."
+            },
+            {
+              "value": "2",
+              "label": "В. «Прочитана» настоящее время, поскольку краткие причастия не различаются по времени."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>У причастий нет форм будущего времени. \u003cspan class=\"example-word\">«Прочитана»\u003c/span> сохраняет форму прошедшего времени; всё сочетание сообщает о будущем результате.\u003c/p>\n"
+        },
+        {
+          "id": "participle-features-4",
+          "type": "sort",
+          "promptHtml": "Какие признаки определяются у причастия \u003cspan class=\"example-word\">«улыбающийся»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "вид",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "возвратность",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "время",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "лицо",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "наклонение",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Определяются"
+            },
+            {
+              "value": "1",
+              "label": "Не определяются"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Улыбающийся»\u003c/span> несовершенного вида, возвратное, настоящего времени. Лицо и наклонение у причастия не определяют.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-agreement-practice": {
+      "id": "participle-agreement-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-agreement-1",
+          "type": "input",
+          "promptHtml": "Поставьте \u003cspan class=\"example-word\">«прочитанный»\u003c/span> в нужную форму: \u003cstrong class=\"example-word\">Мы говорили о _____ книге.\u003c/strong>",
+          "correct": [
+            "прочитанной"
+          ],
+          "explanationHtml": "\u003cp>Существительное \u003cspan class=\"example-word\">«книге»\u003c/span> женского рода, единственного числа, предложного падежа. Причастие имеет те же признаки.\u003c/p>\n"
+        },
+        {
+          "id": "participle-agreement-2",
+          "type": "input",
+          "promptHtml": "Запишите нужную форму \u003cspan class=\"example-word\">«строящийся»\u003c/span>: \u003cstrong class=\"example-word\">Мы подошли к _____ дому.\u003c/strong>",
+          "correct": [
+            "строящемуся"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«К дому»\u003c/span> дательный падеж, мужской род, единственное число. Нужна форма \u003cspan class=\"example-word\">«строящемуся»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-agreement-3",
+          "type": "sort",
+          "promptHtml": "Определите падеж причастия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "С прочитанным письмом.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "О прочитанном письме.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "К прочитанному письму.",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Без прочитанного письма.",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Творительный"
+            },
+            {
+              "value": "1",
+              "label": "Предложный"
+            },
+            {
+              "value": "2",
+              "label": "Дательный"
+            },
+            {
+              "value": "3",
+              "label": "Родительный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Падеж определяем по существительному и вопросам: с кем? чем?; о ком? о чём?; к кому? чему?; без кого? чего?\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-short-practice": {
+      "id": "participle-short-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-short-1",
+          "type": "input",
+          "promptHtml": "Замените полную форму краткой: \u003cstrong class=\"example-word\">Задание, решённое учеником → задание _____ учеником.\u003c/strong>",
+          "correct": [
+            "решено"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Решено»\u003c/span> краткая форма страдательного причастия, средний род, единственное число; одна \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-short-2",
+          "type": "sort",
+          "promptHtml": "Различите полную и краткую форму.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "собранный",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "собрана",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "открыты",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "открытые",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Полная"
+            },
+            {
+              "value": "1",
+              "label": "Краткая"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Полные формы могут изменяться по падежам. Краткие \u003cspan class=\"example-word\">«собрана»\u003c/span>, \u003cspan class=\"example-word\">«открыты»\u003c/span> не склоняются.\u003c/p>\n"
+        },
+        {
+          "id": "participle-short-3",
+          "type": "choice",
+          "promptHtml": "Что верно о \u003cstrong class=\"example-word\">письма отправлены\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Отправлены» краткое страдательное причастие, множественное число; род и падеж не определяются."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Отправлены» полное причастие, множественное число, именительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. «Отправлены» деепричастие: называет завершённое действие и не изменяется."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Сравним \u003cspan class=\"example-word\">«отправлен»\u003c/span>, \u003cspan class=\"example-word\">«отправлена»\u003c/span>, \u003cspan class=\"example-word\">«отправлено»\u003c/span>, \u003cspan class=\"example-word\">«отправлены»\u003c/span>. Краткое причастие изменяется по числам, в единственном числе по родам, но не по падежам.\u003c/p>\n"
+        },
+        {
+          "id": "participle-short-4",
+          "type": "input",
+          "promptHtml": "Запишите краткую форму: \u003cstrong class=\"example-word\">Открытая дверь → дверь _____.\u003c/strong> Используйте причастие \u003cspan class=\"example-word\">«открытый»\u003c/span>.",
+          "correct": [
+            "открыта"
+          ],
+          "explanationHtml": "\u003cp>В краткой форме \u003cspan class=\"example-word\">«открыта»\u003c/span> сохраняется \u003cspan class=\"example-word\">«т»\u003c/span> суффикса. Правило об одной \u003cspan class=\"example-word\">«н»\u003c/span> не относится к суффиксу \u003cspan class=\"example-word\">«-т-»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-present-practice": {
+      "id": "participle-present-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-present-1",
+          "type": "input",
+          "promptHtml": "Образуйте действительное причастие настоящего времени от \u003cspan class=\"example-word\">«клеить»\u003c/span>: \u003cstrong class=\"example-word\">_____ плакат ученик\u003c/strong>.",
+          "correct": [
+            "клеящий"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Клеить»\u003c/span> второго спряжения: они клеят, \u003cspan class=\"example-word\">«клеящий»\u003c/span>. Суффикс \u003cspan class=\"example-word\">«-ящ-»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-present-2",
+          "type": "input",
+          "promptHtml": "Образуйте действительное причастие настоящего времени: \u003cstrong class=\"example-word\">стелить → _____ постель человек\u003c/strong>.",
+          "correct": [
+            "стелющий"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Стелить»\u003c/span> исключение первого спряжения: они стелют, \u003cspan class=\"example-word\">«стелющий»\u003c/span>. Суффикс \u003cspan class=\"example-word\">«-ющ-»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-present-3",
+          "type": "input",
+          "promptHtml": "Образуйте страдательное причастие настоящего времени: \u003cstrong class=\"example-word\">ценить → _____ друзьями человек\u003c/strong>.",
+          "correct": [
+            "ценимый"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ценить»\u003c/span> второго спряжения. У страдательного причастия суффикс \u003cspan class=\"example-word\">«-им-»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-present-4",
+          "type": "sort",
+          "promptHtml": "Выберите букву в суффиксе.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "просматрива_мый",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "слыш_мый",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "собира_мый",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "вид_мый",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Е"
+            },
+            {
+              "value": "1",
+              "label": "И"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Первое спряжение: \u003cspan class=\"example-word\">«просматриваемый»\u003c/span>, \u003cspan class=\"example-word\">«собираемый»\u003c/span>. Второе: \u003cspan class=\"example-word\">«слышимый»\u003c/span>, \u003cspan class=\"example-word\">«видимый»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-past-practice": {
+      "id": "participle-past-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-past-1",
+          "type": "input",
+          "promptHtml": "Образуйте действительное причастие прошедшего времени: \u003cstrong class=\"example-word\">надеяться → _____ на победу игрок\u003c/strong>.",
+          "correct": [
+            "надеявшийся"
+          ],
+          "explanationHtml": "\u003cp>Сохраняем гласную исходного глагола \u003cspan class=\"example-word\">«надеяться»\u003c/span>: \u003cspan class=\"example-word\">«надеявшийся»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-past-2",
+          "type": "input",
+          "promptHtml": "Образуйте страдательное причастие прошедшего времени: \u003cstrong class=\"example-word\">увидеть → _____ нами фильм\u003c/strong>.",
+          "correct": [
+            "увиденный"
+          ],
+          "explanationHtml": "\u003cp>От \u003cspan class=\"example-word\">«увидеть»\u003c/span> образуется \u003cspan class=\"example-word\">«увиденный»\u003c/span> с \u003cspan class=\"example-word\">«е»\u003c/span>. Форма \u003cspan class=\"example-word\">«увидянный»\u003c/span> неверна.\u003c/p>\n"
+        },
+        {
+          "id": "participle-past-3",
+          "type": "sort",
+          "promptHtml": "Выберите гласную перед \u003cspan class=\"example-word\">«вш»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "кле_вший",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "ла_вший",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "стро_вший",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "зате_вший",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "И"
+            },
+            {
+              "value": "1",
+              "label": "Я"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Сохраняем гласные \u003cspan class=\"example-word\">«клеить»\u003c/span>, \u003cspan class=\"example-word\">«лаять»\u003c/span>, \u003cspan class=\"example-word\">«строить»\u003c/span>, \u003cspan class=\"example-word\">«затеять»\u003c/span>: \u003cspan class=\"example-word\">«клеивший»\u003c/span>, \u003cspan class=\"example-word\">«лаявший»\u003c/span>, \u003cspan class=\"example-word\">«строивший»\u003c/span>, \u003cspan class=\"example-word\">«затеявший»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-past-4",
+          "type": "input",
+          "promptHtml": "Запишите действительное причастие прошедшего времени от \u003cspan class=\"example-word\">«идти»\u003c/span>: \u003cstrong class=\"example-word\">_____ впереди человек\u003c/strong>.",
+          "correct": [
+            "шедший"
+          ],
+          "explanationHtml": "\u003cp>Особая форма: \u003cspan class=\"example-word\">«идти»\u003c/span>, \u003cspan class=\"example-word\">«шёл»\u003c/span>, \u003cspan class=\"example-word\">«шедший»\u003c/span>. Здесь нет \u003cspan class=\"example-word\">«в»\u003c/span> перед \u003cspan class=\"example-word\">«ш»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-turnover-practice": {
+      "id": "participle-turnover-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-turnover-1",
+          "type": "input",
+          "promptHtml": "Выпишите существительное, которое поясняет причастный оборот: \u003cstrong class=\"example-word\">Книга, прочитанная за вечер, лежала на столе.\u003c/strong>",
+          "correct": [
+            "книга"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Прочитанная за вечер»\u003c/span> характеризует книгу. Название предмета не входит в оборот.\u003c/p>\n"
+        },
+        {
+          "id": "participle-turnover-2",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верными запятыми.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Письмо, полученное утром лежало на столе."
+            },
+            {
+              "value": "1",
+              "label": "Б. Письмо, полученное утром, лежало на столе."
+            },
+            {
+              "value": "2",
+              "label": "В. Письмо полученное утром, лежало на столе."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Оборот \u003cspan class=\"example-word\">«полученное утром»\u003c/span> стоит после слова \u003cspan class=\"example-word\">«письмо»\u003c/span> и выделяется с двух сторон.\u003c/p>\n"
+        },
+        {
+          "id": "participle-turnover-3",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верной пунктуацией.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Прочитанная за вечер книга лежала на столе."
+            },
+            {
+              "value": "1",
+              "label": "Б. Прочитанная за вечер, книга лежала на столе."
+            },
+            {
+              "value": "2",
+              "label": "В. Прочитанная, за вечер книга лежала на столе."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Оборот стоит перед существительным и здесь не требует обособления. \u003cspan class=\"example-word\">«За вечер»\u003c/span> входит в оборот.\u003c/p>\n"
+        },
+        {
+          "id": "participle-turnover-4",
+          "type": "sort",
+          "promptHtml": "Нужны ли запятые для причастного оборота?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он, уставший после дороги, сразу заснул.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Уставший после дороги, он сразу заснул.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Уставший после дороги путешественник сразу заснул.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Нужны"
+            },
+            {
+              "value": "1",
+              "label": "Не нужны"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>При личном местоимении \u003cspan class=\"example-word\">«он»\u003c/span> оборот обособляется и до него, и после. Перед существительным \u003cspan class=\"example-word\">«путешественник»\u003c/span> в данном предложении обособления нет.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-nn-practice": {
+      "id": "participle-nn-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-nn-1",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "плетё_ая корзина",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "плетё_ая из бисера цепочка",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "сплетё_ая корзина",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "кован_ый сундук",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Н"
+            },
+            {
+              "value": "1",
+              "label": "НН"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Плетёная»\u003c/span>, \u003cspan class=\"example-word\">«кованый»\u003c/span> отглагольные прилагательные. \u003cspan class=\"example-word\">«Плетённая из бисера»\u003c/span> имеет зависимые слова, \u003cspan class=\"example-word\">«сплетённая»\u003c/span> образовано от глагола совершенного вида.\u003c/p>\n"
+        },
+        {
+          "id": "participle-nn-2",
+          "type": "input",
+          "promptHtml": "Вставьте буквы и запишите слово: \u003cstrong class=\"example-word\">маринова_ые огурцы\u003c/strong>.",
+          "correct": [
+            "маринованные"
+          ],
+          "explanationHtml": "\u003cp>В словах с суффиксами \u003cspan class=\"example-word\">«-ованн-»\u003c/span>, \u003cspan class=\"example-word\">«-ёванн-»\u003c/span> пишется \u003cspan class=\"example-word\">«нн»\u003c/span>. \u003cspan class=\"example-word\">«Кованый»\u003c/span>, \u003cspan class=\"example-word\">«жёваный»\u003c/span> не имеют этих суффиксов.\u003c/p>\n"
+        },
+        {
+          "id": "participle-nn-3",
+          "type": "input",
+          "promptHtml": "Вставьте буквы и запишите слово: \u003cstrong class=\"example-word\">Листочки склее_ы.\u003c/strong>",
+          "correct": [
+            "склеены"
+          ],
+          "explanationHtml": "\u003cp>Краткое страдательное причастие \u003cspan class=\"example-word\">«склеены»\u003c/span> пишется с одной \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-nn-4",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Дети воспита_ы бабушкой.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Дети воспита_ы и вежливы.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Огни погаше_ы.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Обеща_ые подарки получены.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Н"
+            },
+            {
+              "value": "1",
+              "label": "НН"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>В \u003cspan class=\"example-word\">«воспитаны бабушкой»\u003c/span>, \u003cspan class=\"example-word\">«погашены»\u003c/span> названы результаты действий, это краткие причастия. \u003cspan class=\"example-word\">«Воспитанны и вежливы»\u003c/span> характеризует качества детей: краткое прилагательное сохраняет \u003cspan class=\"example-word\">«нн»\u003c/span>. \u003cspan class=\"example-word\">«Обещанные»\u003c/span> полное причастие.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-negative-practice": {
+      "id": "participle-negative-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-negative-1",
+          "type": "input",
+          "promptHtml": "Раскройте скобки и запишите только нужное сочетание: \u003cstrong class=\"example-word\">Книга ещё (не)прочитана.\u003c/strong>",
+          "correct": [
+            "не прочитана"
+          ],
+          "explanationHtml": "\u003cp>С кратким причастием \u003cspan class=\"example-word\">«не»\u003c/span> пишется раздельно.\u003c/p>\n"
+        },
+        {
+          "id": "participle-negative-2",
+          "type": "sort",
+          "promptHtml": "Выберите написание \u003cspan class=\"example-word\">«не»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "(Не)прочитанная мной книга.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "(Не)прочитанная книга о путешествиях.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Совершенно (не)подготовленный ответ.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Ничуть (не)подготовленный ответ.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Мной»\u003c/span> поясняет действие. \u003cspan class=\"example-word\">«О путешествиях»\u003c/span> поясняет книгу и не влияет на написание причастия. \u003cspan class=\"example-word\">«Совершенно»\u003c/span> усиливает степень признака, \u003cspan class=\"example-word\">«ничуть»\u003c/span> усиливает отрицание.\u003c/p>\n"
+        },
+        {
+          "id": "participle-negative-3",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(Не)законченная, а только начатая работа.\u003c/strong> Запишите сочетание из скобок.",
+          "correct": [
+            "не законченная"
+          ],
+          "explanationHtml": "\u003cp>Есть противопоставление: работа не закончена, а начата. \u003cspan class=\"example-word\">«Не»\u003c/span> пишем раздельно.\u003c/p>\n"
+        },
+        {
+          "id": "participle-negative-4",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(Не)навидящий ложь человек.\u003c/strong> Запишите нужное слово.",
+          "correct": [
+            "ненавидящий"
+          ],
+          "explanationHtml": "\u003cp>В этом значении нет глагола без \u003cspan class=\"example-word\">«не»\u003c/span>: \u003cspan class=\"example-word\">«ненавидеть»\u003c/span>, \u003cspan class=\"example-word\">«ненавидящий»\u003c/span> пишутся слитно даже с зависимым словом.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-analysis-practice": {
+      "id": "participle-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "participle-analysis-1",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму причастия \u003cstrong class=\"example-word\">прочитанными\u003c/strong>.",
+          "correct": [
+            "прочитанный"
+          ],
+          "explanationHtml": "\u003cp>Нужна полная форма мужского рода, единственного числа, именительного падежа. Страдательный залог сохраняется.\u003c/p>\n"
+        },
+        {
+          "id": "participle-analysis-2",
+          "type": "choice",
+          "promptHtml": "Мы подошли к \u003cstrong class=\"example-word\">читающему\u003c/strong> ученику. Выберите характеристику выделенного слова.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Деепричастие: добавочное действие, несовершенный вид, невозвратное; не изменяется."
+            },
+            {
+              "value": "1",
+              "label": "Б. Имя прилагательное: постоянное качество, мужской род, единственное число, дательный падеж; вида и времени нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Причастие: действительное, настоящего времени, несовершенного вида, невозвратное; полная форма, мужской род, единственное число, дательный падеж."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Читающему»\u003c/span> образовано от \u003cspan class=\"example-word\">«читать»\u003c/span>, обозначает признак ученика по действию и согласуется с \u003cspan class=\"example-word\">«к ученику»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "participle-analysis-3",
+          "type": "sort",
+          "promptHtml": "Выберите характеристику причастия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "закрывшаяся дверь",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "закрытая дверь",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "закрывающаяся дверь",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Действительное, прошедшее время"
+            },
+            {
+              "value": "1",
+              "label": "Страдательное, прошедшее время"
+            },
+            {
+              "value": "2",
+              "label": "Действительное, настоящее время"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Закрывшаяся»\u003c/span> от \u003cspan class=\"example-word\">«закрыться»\u003c/span>, \u003cspan class=\"example-word\">«закрытая»\u003c/span> от \u003cspan class=\"example-word\">«закрыть»\u003c/span>, \u003cspan class=\"example-word\">«закрывающаяся»\u003c/span> от \u003cspan class=\"example-word\">«закрываться»\u003c/span>. Постфикс \u003cspan class=\"example-word\">«-ся»\u003c/span> не делает причастие автоматически страдательным.\u003c/p>\n"
+        }
+      ]
+    },
+    "participle-check": {
+      "id": "participle-check",
+      "title": "Проверка по причастию",
+      "assessment": "participle-check",
+      "questions": [
+        {
+          "id": "participle-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все причастия.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Пишущий",
+                "role": "participle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "ученик",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "проверил",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "написанный",
+                "role": "participle"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "текст",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "исправил",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "последнюю",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "8",
+                "label": "ошибку",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Пишущий",
+              "role": "participle"
+            },
+            {
+              "value": "1",
+              "label": "ученик",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "проверил",
+              "role": "verb"
+            },
+            {
+              "value": "3",
+              "label": "написанный",
+              "role": "participle"
+            },
+            {
+              "value": "4",
+              "label": "текст",
+              "role": "noun"
+            },
+            {
+              "value": "5",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "6",
+              "label": "исправил",
+              "role": "verb"
+            },
+            {
+              "value": "7",
+              "label": "последнюю",
+              "role": "adjective"
+            },
+            {
+              "value": "8",
+              "label": "ошибку",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "3"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Пишущий»\u003c/span> ученик выполняет действие; \u003cspan class=\"example-word\">«написанный»\u003c/span> текст получен в результате действия. \u003cspan class=\"example-word\">«Последнюю»\u003c/span> прилагательное.\u003c/p>\n",
+          "reviewStep": "participle-meaning"
+        },
+        {
+          "id": "participle-check-2",
+          "type": "sort",
+          "promptHtml": "Определите залог.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ребёнок, собирающий игрушки.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Игрушки, собранные ребёнком.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Птица, летящая над лесом.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Действительное"
+            },
+            {
+              "value": "1",
+              "label": "Страдательное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Ребёнок собирает, птица летит. Игрушки собрали, они испытывают действие.\u003c/p>\n",
+          "reviewStep": "participle-voices"
+        },
+        {
+          "id": "participle-check-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Уснувший\u003c/strong> ребёнок лежал на диване. Выберите характеристику \u003cspan class=\"example-word\">«уснувший»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Причастие: действительное, прошедшего времени, совершенного вида, невозвратное; полная форма, мужской род, единственное число, именительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Глагол: совершенный вид, прошедшее время, мужской род, единственное число; не изменяется по падежам."
+            },
+            {
+              "value": "2",
+              "label": "В. Деепричастие: совершенный вид, невозвратное; обозначает добавочное действие и не изменяется."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Уснувший»\u003c/span> характеризует ребёнка по завершённому действию \u003cspan class=\"example-word\">«уснуть»\u003c/span>. Слово склоняется: \u003cspan class=\"example-word\">«уснувшего»\u003c/span>, \u003cspan class=\"example-word\">«уснувшему»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-analysis"
+        },
+        {
+          "id": "participle-check-4",
+          "type": "sort",
+          "promptHtml": "Определите время.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "летящий",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "летевший",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "открытый",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "открываемый",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Настоящее"
+            },
+            {
+              "value": "1",
+              "label": "Прошедшее"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Летящий»\u003c/span>, \u003cspan class=\"example-word\">«открываемый»\u003c/span> настоящего времени; \u003cspan class=\"example-word\">«летевший»\u003c/span>, \u003cspan class=\"example-word\">«открытый»\u003c/span> прошедшего.\u003c/p>\n",
+          "reviewStep": "participle-features"
+        },
+        {
+          "id": "participle-check-5",
+          "type": "input",
+          "promptHtml": "Поставьте \u003cspan class=\"example-word\">«решённый»\u003c/span> в нужную форму: \u003cstrong class=\"example-word\">Мы вернулись к _____ задаче.\u003c/strong>",
+          "correct": [
+            "решённой"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«К задаче»\u003c/span> женский род, единственное число, дательный падеж: \u003cspan class=\"example-word\">«к решённой задаче»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-agreement"
+        },
+        {
+          "id": "participle-check-6",
+          "type": "input",
+          "promptHtml": "Выберите окончание и запишите слово: \u003cstrong class=\"example-word\">Мы говорили о строящ_мся здании.\u003c/strong>",
+          "correct": [
+            "строящемся"
+          ],
+          "explanationHtml": "\u003cp>Предложный падеж: \u003cspan class=\"example-word\">«о ком? о чём? о здании»\u003c/span>. Пишем \u003cspan class=\"example-word\">«строящемся»\u003c/span>, не \u003cspan class=\"example-word\">«строящимся»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-agreement"
+        },
+        {
+          "id": "participle-check-7",
+          "type": "input",
+          "promptHtml": "Запишите краткую форму \u003cspan class=\"example-word\">«обещанные»\u003c/span>: \u003cstrong class=\"example-word\">Подарки были _____ заранее.\u003c/strong>",
+          "correct": [
+            "обещаны"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Обещаны»\u003c/span> краткое страдательное причастие множественного числа; одна \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-short"
+        },
+        {
+          "id": "participle-check-8",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Окно открыто.\u003c/strong> Какие признаки есть у \u003cspan class=\"example-word\">«открыто»\u003c/span>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Средний род, единственное число, именительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Средний род, единственное число; падежа у краткого причастия нет."
+            },
+            {
+              "value": "2",
+              "label": "В. Род и число отсутствуют, потому что слово заканчивается на «о»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Открыто»\u003c/span> согласуется с названием окна в роде и числе, но не склоняется.\u003c/p>\n",
+          "reviewStep": "participle-short"
+        },
+        {
+          "id": "participle-check-9",
+          "type": "input",
+          "promptHtml": "Образуйте действительное причастие настоящего времени: \u003cstrong class=\"example-word\">бороться → _____ за победу игрок\u003c/strong>.",
+          "correct": [
+            "борющийся"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Бороться»\u003c/span> первого спряжения: \u003cspan class=\"example-word\">«борются»\u003c/span>, \u003cspan class=\"example-word\">«борющийся»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-present"
+        },
+        {
+          "id": "participle-check-10",
+          "type": "input",
+          "promptHtml": "Образуйте страдательное причастие настоящего времени: \u003cstrong class=\"example-word\">хранить → _____ в музее документ\u003c/strong>.",
+          "correct": [
+            "хранимый"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Хранить»\u003c/span> второго спряжения, суффикс \u003cspan class=\"example-word\">«-им-»\u003c/span>: \u003cspan class=\"example-word\">«хранимый»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-present"
+        },
+        {
+          "id": "participle-check-11",
+          "type": "input",
+          "promptHtml": "Образуйте действительное причастие прошедшего времени: \u003cstrong class=\"example-word\">заметить → _____ ошибку ученик\u003c/strong>.",
+          "correct": [
+            "заметивший"
+          ],
+          "explanationHtml": "\u003cp>Сохраняется \u003cspan class=\"example-word\">«и»\u003c/span> от \u003cspan class=\"example-word\">«заметить»\u003c/span>: \u003cspan class=\"example-word\">«заметивший»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-past"
+        },
+        {
+          "id": "participle-check-12",
+          "type": "input",
+          "promptHtml": "Образуйте страдательное причастие прошедшего времени: \u003cstrong class=\"example-word\">посеять → _____ весной горох\u003c/strong>.",
+          "correct": [
+            "посеянный"
+          ],
+          "explanationHtml": "\u003cp>Перед \u003cspan class=\"example-word\">«нн»\u003c/span> сохраняем \u003cspan class=\"example-word\">«я»\u003c/span>: \u003cspan class=\"example-word\">«посеять»\u003c/span>, \u003cspan class=\"example-word\">«посеянный»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-past"
+        },
+        {
+          "id": "participle-check-13",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верными запятыми.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Дом, построенный у реки, виден издалека."
+            },
+            {
+              "value": "1",
+              "label": "Б. Дом построенный у реки, виден издалека."
+            },
+            {
+              "value": "2",
+              "label": "В. Дом, построенный у реки виден издалека."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Оборот после слова \u003cspan class=\"example-word\">«дом»\u003c/span> выделяется с двух сторон.\u003c/p>\n",
+          "reviewStep": "participle-turnover"
+        },
+        {
+          "id": "participle-check-14",
+          "type": "input",
+          "promptHtml": "Выпишите только причастный оборот: \u003cstrong class=\"example-word\">Ребята нашли потерянный вчера ключ.\u003c/strong>",
+          "correct": [
+            "потерянный вчера"
+          ],
+          "explanationHtml": "\u003cp>Оборот состоит из причастия \u003cspan class=\"example-word\">«потерянный»\u003c/span> и зависимого слова \u003cspan class=\"example-word\">«вчера»\u003c/span>. \u003cspan class=\"example-word\">«Ключ»\u003c/span> определяемое слово, в оборот не входит.\u003c/p>\n",
+          "reviewStep": "participle-turnover"
+        },
+        {
+          "id": "participle-check-15",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "варё_ый картофель",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "варе_ый на пару картофель",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "сваре_ый картофель",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "жёва_ый листок",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Н"
+            },
+            {
+              "value": "1",
+              "label": "НН"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Варёный»\u003c/span>, \u003cspan class=\"example-word\">«жёваный»\u003c/span> прилагательные. Зависимые слова в \u003cspan class=\"example-word\">«варенный на пару»\u003c/span> и совершенный вид в \u003cspan class=\"example-word\">«сваренный»\u003c/span> требуют \u003cspan class=\"example-word\">«нн»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-nn"
+        },
+        {
+          "id": "participle-check-16",
+          "type": "input",
+          "promptHtml": "Запишите слово полностью: \u003cstrong class=\"example-word\">Столы завале_ы бумагами.\u003c/strong>",
+          "correct": [
+            "завалены"
+          ],
+          "explanationHtml": "\u003cp>Краткое страдательное причастие \u003cspan class=\"example-word\">«завалены»\u003c/span> с одной \u003cspan class=\"example-word\">«н»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-nn"
+        },
+        {
+          "id": "participle-check-17",
+          "type": "sort",
+          "promptHtml": "Выберите написание \u003cspan class=\"example-word\">«не»\u003c/span>.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "(Не)отправленное письмо лежало на столе.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Письмо (не)отправлено.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "(Не)отправленное вчера письмо.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Полная форма без зависимых слов: \u003cspan class=\"example-word\">«неотправленное»\u003c/span>. Краткая форма и полная с пояснением действия \u003cspan class=\"example-word\">«вчера»\u003c/span>: раздельно.\u003c/p>\n",
+          "reviewStep": "participle-negative"
+        },
+        {
+          "id": "participle-check-18",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">Совершенно (не)продуманный ответ.\u003c/strong> Запишите слово из скобок.",
+          "correct": [
+            "непродуманный"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Совершенно»\u003c/span> обозначает степень признака и не требует раздельного написания.\u003c/p>\n",
+          "reviewStep": "participle-negative"
+        },
+        {
+          "id": "participle-check-19",
+          "type": "input",
+          "promptHtml": "Запишите начальную форму причастия \u003cstrong class=\"example-word\">построена\u003c/strong>.",
+          "correct": [
+            "построенный"
+          ],
+          "explanationHtml": "\u003cp>Краткую форму заменяем полной формой мужского рода, единственного числа, именительного падежа, сохраняя страдательный залог.\u003c/p>\n",
+          "reviewStep": "participle-analysis"
+        },
+        {
+          "id": "participle-check-20",
+          "type": "choice",
+          "promptHtml": "Мы смотрели на \u003cstrong class=\"example-word\">улыбающуюся\u003c/strong> девочку. Выберите характеристику выделенного слова.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Имя прилагательное: качественный признак, женский род, единственное число, винительный падеж; вида и времени нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. Деепричастие: добавочное действие, несовершенный вид, возвратное; неизменяемая форма."
+            },
+            {
+              "value": "2",
+              "label": "В. Причастие: действительное, настоящего времени, несовершенного вида, возвратное; полная форма, женский род, единственное число, винительный падеж."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Улыбающуюся»\u003c/span> образовано от \u003cspan class=\"example-word\">«улыбаться»\u003c/span>. Девочка сама улыбается. Слово согласуется с существительным \u003cspan class=\"example-word\">«девочку»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "participle-analysis"
+        }
+      ]
+    },
+    "gerund-meaning-practice": {
+      "id": "gerund-meaning-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-meaning-1",
+          "type": "tokens",
+          "promptHtml": "Найдите деепричастие.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Читая",
+                "role": "gerund"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "рассказ",
+                "role": "noun"
+              }
+            },
+            {
+              "text": ","
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "Маша",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "внимательно",
+                "role": "adverb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "выписывала",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "незнакомые",
+                "role": "adjective"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "слова",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Читая",
+              "role": "gerund"
+            },
+            {
+              "value": "1",
+              "label": "рассказ",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "Маша",
+              "role": "noun"
+            },
+            {
+              "value": "3",
+              "label": "внимательно",
+              "role": "adverb"
+            },
+            {
+              "value": "4",
+              "label": "выписывала",
+              "role": "verb"
+            },
+            {
+              "value": "5",
+              "label": "незнакомые",
+              "role": "adjective"
+            },
+            {
+              "value": "6",
+              "label": "слова",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>Маша выписывала слова и одновременно читала. \u003cspan class=\"example-word\">«Читая»\u003c/span> называет добавочное действие, \u003cspan class=\"example-word\">«внимательно»\u003c/span> характеризует способ действия.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-meaning-2",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Читая книгу, он делал заметки. (читая)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Читающий ученик сделал заметки. (читающий)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он внимательно читал. (внимательно)",
+              "correct": "2"
+            },
+            {
+              "id": "3",
+              "label": "Он читает книгу. (читает)",
+              "correct": "3"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Деепричастие"
+            },
+            {
+              "value": "1",
+              "label": "Причастие"
+            },
+            {
+              "value": "2",
+              "label": "Наречие"
+            },
+            {
+              "value": "3",
+              "label": "Глагол"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Деепричастие называет добавочное действие, причастие признак предмета по действию, наречие способ действия, глагол основное действие.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-meaning-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Закрыв\u003c/strong> окно, Маша села за стол. Выберите характеристику \u003cspan class=\"example-word\">«закрыв»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Причастие: обозначает признак окна по действию, имеет средний род, единственное число и винительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Деепричастие: называет добавочное действие Маши, образовано от «закрыть», не изменяется."
+            },
+            {
+              "value": "2",
+              "label": "В. Глагол: называет основное действие Маши, имеет прошедшее время, женский род и единственное число."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Маша закрыла окно и села. \u003cspan class=\"example-word\">«Закрыв»\u003c/span> не согласуется с \u003cspan class=\"example-word\">«окно»\u003c/span> или \u003cspan class=\"example-word\">«Маша»\u003c/span> и не получает их рода, числа и падежа.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-features-practice": {
+      "id": "gerund-features-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-features-1",
+          "type": "sort",
+          "promptHtml": "Какие признаки есть у деепричастия \u003cspan class=\"example-word\">«умываясь»\u003c/span>?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "вид",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "возвратность",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "переходность",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "время",
+              "correct": "1"
+            },
+            {
+              "id": "4",
+              "label": "род",
+              "correct": "1"
+            },
+            {
+              "id": "5",
+              "label": "падеж",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Определяются"
+            },
+            {
+              "value": "1",
+              "label": "Не определяются"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Умываясь»\u003c/span> несовершенного вида, возвратное, непереходное. Грамматического времени, рода и падежа у деепричастия нет.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-features-2",
+          "type": "sort",
+          "promptHtml": "Определите возвратность.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "улыбаясь",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "улыбнувшись",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "прочитав",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "собравшись",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Возвратное"
+            },
+            {
+              "value": "1",
+              "label": "Невозвратное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Возвратность выражается \u003cspan class=\"example-word\">«-ся»\u003c/span>, \u003cspan class=\"example-word\">«-сь»\u003c/span> и сохраняется от глагола.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-features-3",
+          "type": "sort",
+          "promptHtml": "Определите переходность исходного глагола и деепричастия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Читая книгу.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Гуляя по парку.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Закрыв дверь.",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "Улыбаясь другу.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Переходное"
+            },
+            {
+              "value": "1",
+              "label": "Непереходное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Читать»\u003c/span>, \u003cspan class=\"example-word\">«закрыть»\u003c/span> допускают предмет действия в винительном падеже без предлога: кого? что? книгу, дверь. \u003cspan class=\"example-word\">«Гулять»\u003c/span>, \u003cspan class=\"example-word\">«улыбаться»\u003c/span> непереходные.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-features-4",
+          "type": "choice",
+          "promptHtml": "Что меняется в \u003cstrong class=\"example-word\">он шёл улыбаясь, она шла улыбаясь, они шли улыбаясь\u003c/strong>?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Деепричастие получает род и число глагола, но эти признаки не выражены окончанием."
+            },
+            {
+              "value": "1",
+              "label": "Б. Деепричастие сохраняет мужской род единственного числа во всех сочетаниях."
+            },
+            {
+              "value": "2",
+              "label": "В. Меняются формы глагола; у деепричастия нет рода, числа и окончания."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Улыбаясь»\u003c/span> неизменяемое слово. В сочетаниях меняются \u003cspan class=\"example-word\">«шёл»\u003c/span>, \u003cspan class=\"example-word\">«шла»\u003c/span>, \u003cspan class=\"example-word\">«шли»\u003c/span>, а не деепричастие.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-aspect-practice": {
+      "id": "gerund-aspect-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-aspect-1",
+          "type": "sort",
+          "promptHtml": "Определите вид деепричастия.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "решая",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "решив",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "найдя",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "идя",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Несовершенный"
+            },
+            {
+              "value": "1",
+              "label": "Совершенный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>Проверяем исходный глагол: \u003cspan class=\"example-word\">«решать»\u003c/span>, \u003cspan class=\"example-word\">«идти»\u003c/span> несовершенного вида; \u003cspan class=\"example-word\">«решить»\u003c/span>, \u003cspan class=\"example-word\">«найти»\u003c/span> совершенного. Одна последняя буква не определяет вид.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-aspect-2",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Прочитав условие, ученик начал решать задачу.\u003c/strong> Как соотносятся действия?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Сначала ученик прочитал условие, затем начал решать задачу."
+            },
+            {
+              "value": "1",
+              "label": "Б. Ученик читал условие только после того, как начал решать задачу."
+            },
+            {
+              "value": "2",
+              "label": "В. Деепричастие обязательно обозначает действие, продолжающееся одновременно с решением."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Прочитав»\u003c/span> совершенного вида, здесь называет завершённое действие перед началом решения.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-aspect-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Ученик отвечал, глядя на доску.\u003c/strong> Что верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Глядя» совершенного вида и называет действие, завершившееся до ответа."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Глядя» несовершенного вида; взгляд на доску сопровождает ответ."
+            },
+            {
+              "value": "2",
+              "label": "В. «Глядя» имеет настоящее время и поэтому не может сочетаться с прошедшим «отвечал»."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Действия происходят одновременно. У деепричастия нет собственного грамматического времени.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-aspect-4",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Он сидел, опустив голову.\u003c/strong> Какое объяснение верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Опустив» несовершенного вида, потому что человек всё ещё сидит."
+            },
+            {
+              "value": "1",
+              "label": "Б. Деепричастие употреблено неверно: совершенный вид не может обозначать результат, сохраняющийся во время другого действия."
+            },
+            {
+              "value": "2",
+              "label": "В. «Опустив» совершенного вида: голову опустили, и результат сохраняется, пока человек сидит."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Совершенный вид показывает завершённость добавочного действия. Его результат может сохраняться во время основного действия.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-formation-practice": {
+      "id": "gerund-formation-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-formation-1",
+          "type": "input",
+          "promptHtml": "Образуйте деепричастие несовершенного вида от \u003cspan class=\"example-word\">«читать»\u003c/span>: \u003cstrong class=\"example-word\">_____ книгу, ученик делал заметки.\u003c/strong>",
+          "correct": [
+            "читая"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Читать»\u003c/span>, \u003cspan class=\"example-word\">«читают»\u003c/span>, \u003cspan class=\"example-word\">«читая»\u003c/span>. Суффикс \u003cspan class=\"example-word\">«-я»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-formation-2",
+          "type": "input",
+          "promptHtml": "Образуйте деепричастие совершенного вида: \u003cstrong class=\"example-word\">увидеть → _____ друга, я остановился.\u003c/strong>",
+          "correct": [
+            "увидев"
+          ],
+          "explanationHtml": "\u003cp>Сохраняется \u003cspan class=\"example-word\">«е»\u003c/span> перед \u003cspan class=\"example-word\">«в»\u003c/span>: \u003cspan class=\"example-word\">«увидеть»\u003c/span>, \u003cspan class=\"example-word\">«увидев»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-formation-3",
+          "type": "input",
+          "promptHtml": "Образуйте деепричастие от \u003cspan class=\"example-word\">«умыться»\u003c/span>: \u003cstrong class=\"example-word\">_____, ребёнок сел завтракать.\u003c/strong>",
+          "correct": [
+            "умывшись"
+          ],
+          "explanationHtml": "\u003cp>У возвратной формы сохраняем \u003cspan class=\"example-word\">«-сь»\u003c/span>: \u003cspan class=\"example-word\">«умывшись»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-formation-4",
+          "type": "input",
+          "promptHtml": "Образуйте деепричастие совершенного вида от \u003cspan class=\"example-word\">«найти»\u003c/span>: \u003cstrong class=\"example-word\">_____ ключ, мы открыли дверь.\u003c/strong>",
+          "correct": [
+            "найдя"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Найдя»\u003c/span> совершенного вида от \u003cspan class=\"example-word\">«найти»\u003c/span>, хотя оканчивается на \u003cspan class=\"example-word\">«я»\u003c/span>.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-turnover-practice": {
+      "id": "gerund-turnover-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-turnover-1",
+          "type": "input",
+          "promptHtml": "Выпишите только деепричастный оборот: \u003cstrong class=\"example-word\">Положив ключи в карман, я вышел из дома.\u003c/strong>",
+          "correct": [
+            "положив ключи в карман"
+          ],
+          "explanationHtml": "\u003cp>Оборот включает деепричастие \u003cspan class=\"example-word\">«положив»\u003c/span> и слова, поясняющие это действие. \u003cspan class=\"example-word\">«Я вышел из дома»\u003c/span> не входит в оборот.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-turnover-2",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верными запятыми.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Собака, повернувшись к полю подняла уши."
+            },
+            {
+              "value": "1",
+              "label": "Б. Собака, повернувшись к полю, подняла уши."
+            },
+            {
+              "value": "2",
+              "label": "В. Собака повернувшись к полю, подняла уши."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Оборот \u003cspan class=\"example-word\">«повернувшись к полю»\u003c/span> выделяется с двух сторон.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-turnover-3",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верной пунктуацией.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Закончив работу, мы убрали инструменты."
+            },
+            {
+              "value": "1",
+              "label": "Б. Закончив, работу мы убрали инструменты."
+            },
+            {
+              "value": "2",
+              "label": "В. Закончив работу мы, убрали инструменты."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Оборот в начале предложения отделяется запятой после зависимого слова \u003cspan class=\"example-word\">«работу»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-turnover-4",
+          "type": "choice",
+          "promptHtml": "Как правильно поставить запятые?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Открыв окно, и включив свет, Маша села за стол."
+            },
+            {
+              "value": "1",
+              "label": "Б. Открыв окно и включив свет Маша, села за стол."
+            },
+            {
+              "value": "2",
+              "label": "В. Открыв окно и включив свет, Маша села за стол."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Два добавочных действия относятся к одному основному и соединены одиночным \u003cspan class=\"example-word\">«и»\u003c/span>. Между ними запятая не нужна, после обоих оборотов нужна.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-actor-practice": {
+      "id": "gerund-actor-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-actor-1",
+          "type": "choice",
+          "promptHtml": "Выберите правильное продолжение: \u003cstrong class=\"example-word\">Возвращаясь домой, ...\u003c/strong>",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. ...у меня разрядился телефон."
+            },
+            {
+              "value": "1",
+              "label": "Б. ...я заметил, что телефон разрядился."
+            },
+            {
+              "value": "2",
+              "label": "В. ...мне пришло сообщение."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Возвращался и заметил один человек: \u003cspan class=\"example-word\">«я»\u003c/span>. В варианте А основное действие связано с телефоном, в варианте В не названо действие самого возвращающегося человека.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-actor-2",
+          "type": "choice",
+          "promptHtml": "В каком предложении оба действия выполняет один человек?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Подойдя к двери, я услышал звонок."
+            },
+            {
+              "value": "1",
+              "label": "Б. Подойдя к двери, мне стало тревожно."
+            },
+            {
+              "value": "2",
+              "label": "В. Подойдя к двери, у меня выпал ключ."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Я»\u003c/span> подошёл и услышал. В вариантах Б и В основное сообщение не обозначает действие того, кто подошёл.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-actor-3",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Переходя дорогу, посмотри по сторонам.\u003c/strong> Что верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Предложение ошибочно, потому что нет существительного, называющего человека."
+            },
+            {
+              "value": "1",
+              "label": "Б. Предложение ошибочно, потому что «переходя» имеет настоящее время, а «посмотри» будущее."
+            },
+            {
+              "value": "2",
+              "label": "В. Предложение верно: переходить и смотреть должен тот, к кому обращаются."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Исполнитель понятен из обращения: \u003cspan class=\"example-word\">«ты»\u003c/span>. Его не обязательно называть отдельным существительным или местоимением.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-actor-4",
+          "type": "choice",
+          "promptHtml": "Выберите верное предложение.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Подходя к перекрёстку, мне стало страшно."
+            },
+            {
+              "value": "1",
+              "label": "Б. Подходя к перекрёстку, нужно смотреть по сторонам."
+            },
+            {
+              "value": "2",
+              "label": "В. Подходя к перекрёстку, у меня возник вопрос."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>В варианте Б \u003cspan class=\"example-word\">«подходить»\u003c/span> и \u003cspan class=\"example-word\">«смотреть»\u003c/span> должен один человек. Сочетание с \u003cspan class=\"example-word\">«нужно»\u003c/span> и неопределённой формой \u003cspan class=\"example-word\">«смотреть»\u003c/span> допускает деепричастный оборот.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-distinction-practice": {
+      "id": "gerund-distinction-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-distinction-1",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он ответил, улыбнувшись. (улыбнувшись)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Улыбнувшийся мальчик ответил. (улыбнувшийся)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Он ответил приветливо. (приветливо)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Деепричастие"
+            },
+            {
+              "value": "1",
+              "label": "Причастие"
+            },
+            {
+              "value": "2",
+              "label": "Наречие"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Улыбнувшись»\u003c/span> добавочное действие; \u003cspan class=\"example-word\">«улыбнувшийся»\u003c/span> признак мальчика по действию; \u003cspan class=\"example-word\">«приветливо»\u003c/span> способ ответа.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-distinction-2",
+          "type": "sort",
+          "promptHtml": "Нужно ли отделять выделенное сочетание запятой?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он шёл не спеша.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Не спеша с выводами, мы проверили расчёты.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Он работал спустя рукава.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Нужно"
+            },
+            {
+              "value": "1",
+              "label": "Не нужно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Не спеша»\u003c/span> в первом случае означает \u003cspan class=\"example-word\">«медленно»\u003c/span>, это наречное сочетание. \u003cspan class=\"example-word\">«Не спеша с выводами»\u003c/span> называет добавочное действие с зависимыми словами. \u003cspan class=\"example-word\">«Спустя рукава»\u003c/span> устойчивое выражение.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-distinction-3",
+          "type": "choice",
+          "promptHtml": "В каком предложении \u003cstrong class=\"example-word\">благодаря\u003c/strong> является деепричастием?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Благодаря помощи друзей мы закончили работу."
+            },
+            {
+              "value": "1",
+              "label": "Б. Благодаря хорошей погоде поездка удалась."
+            },
+            {
+              "value": "2",
+              "label": "В. Ученик говорил, благодаря учителя за помощь."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>В варианте В ученик говорил и благодарил: это добавочное действие. В вариантах А и Б \u003cspan class=\"example-word\">«благодаря»\u003c/span> означает причину и служит предлогом.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-negative-practice": {
+      "id": "gerund-negative-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-negative-1",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(Не)заметив лужу, я промочил ноги.\u003c/strong> Запишите сочетание из скобок.",
+          "correct": [
+            "не заметив"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Не»\u003c/span> с деепричастием обычно пишется раздельно: \u003cspan class=\"example-word\">«не заметив»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-negative-2",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "(не)годуя",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "(не)зная ответа",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "(не)доумевая",
+              "correct": "0"
+            },
+            {
+              "id": "3",
+              "label": "(не)успев закончить",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Негодуя»\u003c/span>, \u003cspan class=\"example-word\">«недоумевая»\u003c/span> в этих значениях без \u003cspan class=\"example-word\">«не»\u003c/span> не употребляются. \u003cspan class=\"example-word\">«Зная»\u003c/span>, \u003cspan class=\"example-word\">«успев»\u003c/span> употребляются без \u003cspan class=\"example-word\">«не»\u003c/span>.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-negative-3",
+          "type": "sort",
+          "promptHtml": "Различите недостаток питания и незавершённое действие.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Долгое время (не)доедая, человек ослаб.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "(Не)доев суп, ребёнок выбежал из-за стола.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Недоедая"
+            },
+            {
+              "value": "1",
+              "label": "Не доев"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Недоедая»\u003c/span> означает питаясь недостаточно. \u003cspan class=\"example-word\">«Не доев»\u003c/span> означает не закончив есть конкретное блюдо.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-analysis-practice": {
+      "id": "gerund-analysis-practice",
+      "title": "Проверьте себя",
+      "questions": [
+        {
+          "id": "gerund-analysis-1",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Умывшись\u003c/strong>, ребёнок сел за стол. Выберите характеристику \u003cspan class=\"example-word\">«умывшись»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Деепричастие: совершенного вида, возвратное, непереходное, неизменяемое; образовано от «умыться»."
+            },
+            {
+              "value": "1",
+              "label": "Б. Причастие: действительное, прошедшего времени, возвратное; мужской род, единственное число, именительный падеж."
+            },
+            {
+              "value": "2",
+              "label": "В. Глагол: совершенного вида, возвратный, непереходный; прошедшее время, мужской род, единственное число."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Умывшись»\u003c/span> называет добавочное завершённое действие, не склоняется и не получает признаков ребёнка.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-analysis-2",
+          "type": "input",
+          "promptHtml": "Запишите исходный глагол для деепричастия \u003cstrong class=\"example-word\">рассматривая\u003c/strong>.",
+          "correct": [
+            "рассматривать"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Рассматривая»\u003c/span> образовано от \u003cspan class=\"example-word\">«рассматривать»\u003c/span>, а не от \u003cspan class=\"example-word\">«рассмотреть»\u003c/span>. Вид исходного глагола сохраняется.\u003c/p>\n"
+        },
+        {
+          "id": "gerund-analysis-3",
+          "type": "choice",
+          "promptHtml": "Девочка говорила, \u003cstrong class=\"example-word\">глядя\u003c/strong> в окно. Какая характеристика верна?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Наречие места: отвечает на вопрос «куда?», не изменяется, вида и переходности нет."
+            },
+            {
+              "value": "1",
+              "label": "Б. Деепричастие: несовершенного вида, невозвратное, непереходное; не имеет грамматического времени, рода, числа и падежа."
+            },
+            {
+              "value": "2",
+              "label": "В. Причастие: действительное, настоящего времени; женский род, единственное число, именительный падеж."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Глядя»\u003c/span> от \u003cspan class=\"example-word\">«глядеть»\u003c/span> называет добавочное действие. \u003cspan class=\"example-word\">«В окно»\u003c/span> уточняет направление взгляда, но не превращает деепричастие в наречие.\u003c/p>\n"
+        }
+      ]
+    },
+    "gerund-check": {
+      "id": "gerund-check",
+      "title": "Проверка по деепричастию",
+      "assessment": "gerund-check",
+      "questions": [
+        {
+          "id": "gerund-check-1",
+          "type": "tokens",
+          "promptHtml": "Найдите все деепричастия.",
+          "sentenceParts": [
+            {
+              "word": {
+                "value": "0",
+                "label": "Закончив",
+                "role": "gerund"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "1",
+                "label": "уроки",
+                "role": "noun"
+              }
+            },
+            {
+              "text": ","
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "2",
+                "label": "ученик",
+                "role": "noun"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "3",
+                "label": "улыбнулся",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "4",
+                "label": "и",
+                "role": "conjunction"
+              }
+            },
+            {
+              "text": ","
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "5",
+                "label": "собрав",
+                "role": "gerund"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "6",
+                "label": "рюкзак",
+                "role": "noun"
+              }
+            },
+            {
+              "text": ","
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "7",
+                "label": "вышел",
+                "role": "verb"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "8",
+                "label": "во",
+                "role": "preposition"
+              }
+            },
+            {
+              "text": " "
+            },
+            {
+              "word": {
+                "value": "9",
+                "label": "двор",
+                "role": "noun"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Закончив",
+              "role": "gerund"
+            },
+            {
+              "value": "1",
+              "label": "уроки",
+              "role": "noun"
+            },
+            {
+              "value": "2",
+              "label": "ученик",
+              "role": "noun"
+            },
+            {
+              "value": "3",
+              "label": "улыбнулся",
+              "role": "verb"
+            },
+            {
+              "value": "4",
+              "label": "и",
+              "role": "conjunction"
+            },
+            {
+              "value": "5",
+              "label": "собрав",
+              "role": "gerund"
+            },
+            {
+              "value": "6",
+              "label": "рюкзак",
+              "role": "noun"
+            },
+            {
+              "value": "7",
+              "label": "вышел",
+              "role": "verb"
+            },
+            {
+              "value": "8",
+              "label": "во",
+              "role": "preposition"
+            },
+            {
+              "value": "9",
+              "label": "двор",
+              "role": "noun"
+            }
+          ],
+          "correct": [
+            "0",
+            "5"
+          ],
+          "multiple": true,
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Закончив»\u003c/span>, \u003cspan class=\"example-word\">«собрав»\u003c/span> обозначают добавочные действия ученика. \u003cspan class=\"example-word\">«Улыбнулся»\u003c/span>, \u003cspan class=\"example-word\">«вышел»\u003c/span> глаголы.\u003c/p>\n",
+          "reviewStep": "gerund-meaning"
+        },
+        {
+          "id": "gerund-check-2",
+          "type": "choice",
+          "promptHtml": "Он слушал музыку, \u003cstrong class=\"example-word\">рисуя\u003c/strong> в альбоме. Выберите характеристику \u003cspan class=\"example-word\">«рисуя»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Причастие: признак человека по действию, действительное, настоящее время, мужской род, единственное число."
+            },
+            {
+              "value": "1",
+              "label": "Б. Глагол: несовершенного вида, настоящее время, третье лицо, единственное число."
+            },
+            {
+              "value": "2",
+              "label": "В. Деепричастие: несовершенного вида, невозвратное, переходное, неизменяемое; называет добавочное действие."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Рисуя»\u003c/span> от переходного \u003cspan class=\"example-word\">«рисовать»\u003c/span>: можно рисовать кого? что? картину. В предложении предмет рисования не назван, но переходность сохраняется.\u003c/p>\n",
+          "reviewStep": "gerund-analysis"
+        },
+        {
+          "id": "gerund-check-3",
+          "type": "sort",
+          "promptHtml": "Определите вид.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "придя",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "идя",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "обсудив",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "обсуждая",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Несовершенный"
+            },
+            {
+              "value": "1",
+              "label": "Совершенный"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Придя»\u003c/span> от \u003cspan class=\"example-word\">«прийти»\u003c/span>, \u003cspan class=\"example-word\">«обсудив»\u003c/span> от \u003cspan class=\"example-word\">«обсудить»\u003c/span> совершенного вида. \u003cspan class=\"example-word\">«Идя»\u003c/span> от \u003cspan class=\"example-word\">«идти»\u003c/span>, \u003cspan class=\"example-word\">«обсуждая»\u003c/span> от \u003cspan class=\"example-word\">«обсуждать»\u003c/span> несовершенного.\u003c/p>\n",
+          "reviewStep": "gerund-aspect"
+        },
+        {
+          "id": "gerund-check-4",
+          "type": "sort",
+          "promptHtml": "Определите возвратность.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "смеясь",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "засмеявшись",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "открыв",
+              "correct": "1"
+            },
+            {
+              "id": "3",
+              "label": "приготовив",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Возвратное"
+            },
+            {
+              "value": "1",
+              "label": "Невозвратное"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Смеяться»\u003c/span>, \u003cspan class=\"example-word\">«засмеяться»\u003c/span> возвратные. \u003cspan class=\"example-word\">«Открыть»\u003c/span>, \u003cspan class=\"example-word\">«приготовить»\u003c/span> невозвратные.\u003c/p>\n",
+          "reviewStep": "gerund-features"
+        },
+        {
+          "id": "gerund-check-5",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Завтра, закончив работу, мы поедем домой.\u003c/strong> Какое утверждение верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. «Закончив» имеет будущее время, поскольку действие произойдёт завтра."
+            },
+            {
+              "value": "1",
+              "label": "Б. «Закончив» совершенного вида, но собственного грамматического времени не имеет."
+            },
+            {
+              "value": "2",
+              "label": "В. «Закончив» имеет прошедшее время, поэтому слово «завтра» делает предложение неверным."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Будущее время названо у \u003cspan class=\"example-word\">«поедем»\u003c/span>. \u003cspan class=\"example-word\">«Закончив»\u003c/span> показывает завершение добавочного действия перед поездкой, а не грамматическое время.\u003c/p>\n",
+          "reviewStep": "gerund-aspect"
+        },
+        {
+          "id": "gerund-check-6",
+          "type": "input",
+          "promptHtml": "Образуйте деепричастие совершенного вида от \u003cspan class=\"example-word\">«прийти»\u003c/span>: \u003cstrong class=\"example-word\">_____ домой, я позвонил другу.\u003c/strong>",
+          "correct": [
+            "придя"
+          ],
+          "explanationHtml": "\u003cp>Нормативная форма \u003cspan class=\"example-word\">«придя»\u003c/span>. Несмотря на \u003cspan class=\"example-word\">«я»\u003c/span> в конце, вид совершенный.\u003c/p>\n",
+          "reviewStep": "gerund-formation"
+        },
+        {
+          "id": "gerund-check-7",
+          "type": "input",
+          "promptHtml": "Образуйте деепричастие от \u003cspan class=\"example-word\">«заметить»\u003c/span>: \u003cstrong class=\"example-word\">_____ ошибку, я исправил ответ.\u003c/strong>",
+          "correct": [
+            "заметив"
+          ],
+          "explanationHtml": "\u003cp>От \u003cspan class=\"example-word\">«заметить»\u003c/span> образуется \u003cspan class=\"example-word\">«заметив»\u003c/span>, перед \u003cspan class=\"example-word\">«в»\u003c/span> пишется \u003cspan class=\"example-word\">«и»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "gerund-formation"
+        },
+        {
+          "id": "gerund-check-8",
+          "type": "input",
+          "promptHtml": "Образуйте деепричастие несовершенного вида от \u003cspan class=\"example-word\">«улыбаться»\u003c/span>: \u003cstrong class=\"example-word\">Она отвечала, _____.\u003c/strong>",
+          "correct": [
+            "улыбаясь"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Улыбаясь»\u003c/span> несовершенного вида, возвратное. Действия происходят одновременно.\u003c/p>\n",
+          "reviewStep": "gerund-formation"
+        },
+        {
+          "id": "gerund-check-9",
+          "type": "input",
+          "promptHtml": "Выпишите деепричастный оборот: \u003cstrong class=\"example-word\">Я остановился, услышав знакомый голос.\u003c/strong>",
+          "correct": [
+            "услышав знакомый голос"
+          ],
+          "explanationHtml": "\u003cp>Оборот содержит \u003cspan class=\"example-word\">«услышав»\u003c/span> и зависимые слова \u003cspan class=\"example-word\">«знакомый голос»\u003c/span>. Основное действие \u003cspan class=\"example-word\">«остановился»\u003c/span> в него не входит.\u003c/p>\n",
+          "reviewStep": "gerund-turnover"
+        },
+        {
+          "id": "gerund-check-10",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верными запятыми.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Девочка, увидев кошку, остановилась."
+            },
+            {
+              "value": "1",
+              "label": "Б. Девочка увидев кошку, остановилась."
+            },
+            {
+              "value": "2",
+              "label": "В. Девочка, увидев кошку остановилась."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>Оборот \u003cspan class=\"example-word\">«увидев кошку»\u003c/span> внутри предложения выделяем с двух сторон.\u003c/p>\n",
+          "reviewStep": "gerund-turnover"
+        },
+        {
+          "id": "gerund-check-11",
+          "type": "choice",
+          "promptHtml": "Выберите предложение с верной пунктуацией.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Я закрыл книгу, и выключив свет, лёг спать."
+            },
+            {
+              "value": "1",
+              "label": "Б. Я закрыл книгу и выключив свет лёг спать."
+            },
+            {
+              "value": "2",
+              "label": "В. Я закрыл книгу и, выключив свет, лёг спать."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«И»\u003c/span> соединяет основные действия \u003cspan class=\"example-word\">«закрыл»\u003c/span> и \u003cspan class=\"example-word\">«лёг»\u003c/span>. Оборот \u003cspan class=\"example-word\">«выключив свет»\u003c/span> выделяется отдельно, после \u003cspan class=\"example-word\">«и»\u003c/span> и после \u003cspan class=\"example-word\">«свет»\u003c/span>.\u003c/p>\n",
+          "reviewStep": "gerund-turnover"
+        },
+        {
+          "id": "gerund-check-12",
+          "type": "choice",
+          "promptHtml": "Исправьте \u003cstrong class=\"example-word\">Открыв дверь, у меня выпал ключ\u003c/strong>. Какой вариант верен?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Открыв дверь, у меня на пол выпал ключ."
+            },
+            {
+              "value": "1",
+              "label": "Б. Открыв дверь, я уронил ключ."
+            },
+            {
+              "value": "2",
+              "label": "В. Открыв дверь, ключ выпал из моей руки."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>В варианте Б один человек открыл и уронил. В вариантах А и В действие \u003cspan class=\"example-word\">«выпал»\u003c/span> относится к ключу, который дверь не открывал.\u003c/p>\n",
+          "reviewStep": "gerund-actor"
+        },
+        {
+          "id": "gerund-check-13",
+          "type": "choice",
+          "promptHtml": "Выберите правильное продолжение: \u003cstrong class=\"example-word\">Обсуждая книгу, ...\u003c/strong>",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. ...ребята сравнивали поступки героев."
+            },
+            {
+              "value": "1",
+              "label": "Б. ...у ребят возник спор."
+            },
+            {
+              "value": "2",
+              "label": "В. ...поступки героев показались ребятам странными."
+            }
+          ],
+          "correct": [
+            "0"
+          ],
+          "explanationHtml": "\u003cp>В варианте А ребята обсуждали и сравнивали. В вариантах Б и В основное сообщение не обозначает действие обсуждающих.\u003c/p>\n",
+          "reviewStep": "gerund-actor"
+        },
+        {
+          "id": "gerund-check-14",
+          "type": "choice",
+          "promptHtml": "В каком предложении деепричастие употреблено верно?",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Выполняя задание, у меня сломалась ручка."
+            },
+            {
+              "value": "1",
+              "label": "Б. Выполняя задание, мне стало трудно."
+            },
+            {
+              "value": "2",
+              "label": "В. Выполняя задание, проверяй каждый шаг."
+            }
+          ],
+          "correct": [
+            "2"
+          ],
+          "explanationHtml": "\u003cp>Выполнять и проверять должен один человек, к которому обращаются. Назвать его отдельным словом не обязательно.\u003c/p>\n",
+          "reviewStep": "gerund-actor"
+        },
+        {
+          "id": "gerund-check-15",
+          "type": "sort",
+          "promptHtml": "Нужно ли обособлять выделенное сочетание?",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Он мчался сломя голову.",
+              "correct": "1"
+            },
+            {
+              "id": "1",
+              "label": "Повернув голову, он увидел друга.",
+              "correct": "0"
+            },
+            {
+              "id": "2",
+              "label": "Мы работали не покладая рук.",
+              "correct": "1"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Нужно"
+            },
+            {
+              "value": "1",
+              "label": "Не нужно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Сломя голову»\u003c/span>, \u003cspan class=\"example-word\">«не покладая рук»\u003c/span> устойчивые выражения со значением способа действия. \u003cspan class=\"example-word\">«Повернув голову»\u003c/span> настоящее добавочное действие.\u003c/p>\n",
+          "reviewStep": "gerund-distinction"
+        },
+        {
+          "id": "gerund-check-16",
+          "type": "sort",
+          "promptHtml": "Определите часть речи слова в скобках.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "Ученик сидел, задумавшись. (задумавшись)",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "Задумавшийся ученик молчал. (задумавшийся)",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Ученик отвечал задумчиво. (задумчиво)",
+              "correct": "2"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Деепричастие"
+            },
+            {
+              "value": "1",
+              "label": "Причастие"
+            },
+            {
+              "value": "2",
+              "label": "Наречие"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Задумавшись»\u003c/span> добавочное действие, \u003cspan class=\"example-word\">«задумавшийся»\u003c/span> признак ученика по действию, \u003cspan class=\"example-word\">«задумчиво»\u003c/span> способ ответа.\u003c/p>\n",
+          "reviewStep": "gerund-distinction"
+        },
+        {
+          "id": "gerund-check-17",
+          "type": "input",
+          "promptHtml": "Раскройте скобки: \u003cstrong class=\"example-word\">(Не)ответив на вопрос, он вышел из комнаты.\u003c/strong> Запишите сочетание из скобок.",
+          "correct": [
+            "не ответив"
+          ],
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Ответив»\u003c/span> употребляется без \u003cspan class=\"example-word\">«не»\u003c/span>, отрицательная частица пишется раздельно.\u003c/p>\n",
+          "reviewStep": "gerund-negative"
+        },
+        {
+          "id": "gerund-check-18",
+          "type": "sort",
+          "promptHtml": "Выберите написание.",
+          "rows": [
+            {
+              "id": "0",
+              "label": "(Не)доумевая, он перечитал письмо.",
+              "correct": "0"
+            },
+            {
+              "id": "1",
+              "label": "(Не)понимая вопроса, он попросил пояснение.",
+              "correct": "1"
+            },
+            {
+              "id": "2",
+              "label": "Постоянно (не)доедая, он терял силы.",
+              "correct": "0"
+            }
+          ],
+          "choices": [
+            {
+              "value": "0",
+              "label": "Слитно"
+            },
+            {
+              "value": "1",
+              "label": "Раздельно"
+            }
+          ],
+          "sortLabel": "Выберите характеристику",
+          "explanationHtml": "\u003cp>\u003cspan class=\"example-word\">«Недоумевая»\u003c/span> не употребляется без \u003cspan class=\"example-word\">«не»\u003c/span> в этом значении. \u003cspan class=\"example-word\">«Не понимая»\u003c/span> раздельно. \u003cspan class=\"example-word\">«Недоедая»\u003c/span> означает недостаточное питание.\u003c/p>\n",
+          "reviewStep": "gerund-negative"
+        },
+        {
+          "id": "gerund-check-19",
+          "type": "input",
+          "promptHtml": "Запишите исходный глагол для деепричастия \u003cstrong class=\"example-word\">собравшись\u003c/strong>.",
+          "correct": [
+            "собраться"
+          ],
+          "explanationHtml": "\u003cp>Исходный глагол совершенного вида и возвратный: \u003cspan class=\"example-word\">«собраться»\u003c/span>. \u003cspan class=\"example-word\">«Собираться»\u003c/span> несовершенного вида.\u003c/p>\n",
+          "reviewStep": "gerund-analysis"
+        },
+        {
+          "id": "gerund-check-20",
+          "type": "choice",
+          "promptHtml": "\u003cstrong class=\"example-word\">Дочитав\u003c/strong> рассказ, Маша вернула книгу. Выберите полную характеристику \u003cspan class=\"example-word\">«дочитав»\u003c/span>.",
+          "choices": [
+            {
+              "value": "0",
+              "label": "А. Причастие: страдательное, прошедшего времени, совершенного вида; женский род, единственное число, именительный падеж."
+            },
+            {
+              "value": "1",
+              "label": "Б. Деепричастие: совершенного вида, невозвратное, переходное, неизменяемое; образовано от «дочитать», называет завершённое добавочное действие Маши."
+            },
+            {
+              "value": "2",
+              "label": "В. Глагол: совершенного вида, невозвратный, переходный; прошедшее время, женский род, единственное число."
+            }
+          ],
+          "correct": [
+            "1"
+          ],
+          "explanationHtml": "\u003cp>Маша дочитала и вернула. \u003cspan class=\"example-word\">«Дочитав»\u003c/span> не согласуется с \u003cspan class=\"example-word\">«Маша»\u003c/span>, не имеет времени, рода и числа и не изменяется.\u003c/p>\n",
+          "reviewStep": "gerund-analysis"
         }
       ]
     }

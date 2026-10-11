@@ -85,7 +85,7 @@ table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.55;text-a
 th,td{padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line);min-width:110px}
 th{background:#f0f4f9;font-size:13px;color:#475467;font-weight:700}
 tr:last-child td{border-bottom:0}
-.exercise{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:30px 0;padding:24px;scroll-margin-top:20px}
+.exercise{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:30px 0;padding:24px;scroll-margin-top:20px;container-type:inline-size}
 .exercise-header{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:16px}
 .exercise-label{font-size:12px;text-transform:uppercase;font-weight:750;color:var(--teal);margin:0 0 5px}
 .exercise h3{font-size:20px;margin:0;line-height:1.35}
@@ -120,6 +120,7 @@ textarea{resize:vertical;min-height:72px;line-height:1.55}
 .sort-rows{display:grid}
 .sort-row{display:grid;grid-template-columns:minmax(80px,1fr) minmax(160px,1.6fr);align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid #e7ecf3}
 .sort-word{font-weight:750;font-size:19px}
+@container(max-width:540px){.sort-row{grid-template-columns:1fr;gap:7px}}
 .sort-row:last-child{border-bottom:0}
 .sort-row.checked-correct .sort-word{color:var(--teal)}
 .sort-answer-note{font-size:13px;grid-column:1 / -1;margin:0;color:#475467}
