@@ -57,7 +57,7 @@
     persist();
     render();
     $('lesson-heading').focus({ preventScroll: true });
-    $('lesson-main').scrollIntoView({ block: 'start', behavior: 'instant' });
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }
   function trustedTheory(html) {
     const container = document.createElement('div');
