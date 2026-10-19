@@ -8,8 +8,8 @@
 
   function updateProgress() {
     let saved;
-    try { saved = JSON.parse(localStorage.getItem(storageKey) || 'null'); } catch (_) { saved = null; }
-    const state = core.cleanState(saved, content);
+    try { saved = localStorage.getItem(storageKey); } catch (_) { saved = null; }
+    const state = core.parseState(saved, content);
     const completed = content.steps.filter(step => core.isStepComplete(step, content, state)).length;
     const done = completed === content.steps.length;
     const started = completed > 0 || state.step > 0 || Object.values(content.groups).some(group => group.questions.some(q => core.hasAnswer(q, state.answers[q.id])));

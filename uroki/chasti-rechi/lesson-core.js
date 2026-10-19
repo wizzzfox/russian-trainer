@@ -71,5 +71,32 @@
     }
     return fresh;
   }
-  return { normalize, hasAnswer, grade, summarize, cleanState, isStepComplete };
+  function parseState(serialized, content) {
+    let saved;
+    try { saved = JSON.parse(serialized || 'null'); } catch (_) { saved = null; }
+    return cleanState(saved, content);
+  }
+  function mergeState(baseline, current, latest) {
+    const merged = { ...latest, step: current.step, stepId: current.stepId };
+    if (current.large !== baseline.large) merged.large = current.large;
+    const read = new Set(latest.read);
+    for (const id of new Set([...baseline.read, ...current.read])) {
+      if (baseline.read.includes(id) !== current.read.includes(id)) {
+        if (current.read.includes(id)) read.add(id);
+        else read.delete(id);
+      }
+    }
+    merged.read = [...read];
+    // Only this tab's changes replace storage; unrelated answers and resets survive.
+    for (const field of ['answers', 'cursors', 'submitted']) {
+      merged[field] = { ...latest[field] };
+      for (const id of new Set([...Object.keys(baseline[field]), ...Object.keys(current[field])])) {
+        if (JSON.stringify(baseline[field][id]) === JSON.stringify(current[field][id])) continue;
+        if (Object.hasOwn(current[field], id)) merged[field][id] = current[field][id];
+        else delete merged[field][id];
+      }
+    }
+    return merged;
+  }
+  return { normalize, hasAnswer, grade, summarize, cleanState, parseState, mergeState, isStepComplete };
 });

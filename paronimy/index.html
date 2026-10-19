@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../uroki/chasti-rechi/icons/book.svg" type="image/svg+xml">
   <title>Паронимы — интерактивный тренажёр</title>
   <style>
     :root{--bg:#f7f8fb;--card:#fff;--text:#101828;--muted:#667085;--line:#d7deea;--primary:#1f6feb;--primary-dark:#195cc4;--accent:#0f766e;--good:#067647;--bad:#b42318;--soft-blue:#eef4ff;--soft-green:#ecfdf3;--soft-red:#fef3f2;--shadow:0 8px 22px rgba(31,41,55,.07)}
@@ -71,11 +72,11 @@
     .tools{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:12px;align-items:center;margin:16px 0}
     .tools input{min-width:0;padding:13px 16px}
     .count{color:var(--muted);font-size:14px}
-    .dictionary-list{display:grid;grid-template-columns:1fr;gap:12px;max-height:68vh;overflow:auto;padding:12px;background:#fff;border:1px solid var(--line);border-radius:8px}
+    .dictionary-list{display:grid;grid-template-columns:1fr;gap:16px;max-height:68vh;overflow:auto;padding:0 8px 0 0}
     .group-card{padding:16px;border:1px solid var(--line);border-radius:8px;background:#fff}
     .group-card h3{margin:0 0 12px;color:var(--text);font-size:21px}
-    .word-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-    .word-item{padding:12px;border:1px solid #e2e8f0;border-radius:8px;background:#f8fbff}
+    .word-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .word-item{padding:12px 0 0;border-top:1px solid var(--line)}
     .word-item b{display:block;margin-bottom:6px;color:var(--primary-dark);font-size:18px}
     .word-item p{margin:0 0 6px;color:#344054;line-height:1.4}
     .word-item small{color:var(--muted);line-height:1.35}
@@ -154,9 +155,9 @@
 
       <section class="panel hidden" id="dictionaryScreen">
         <h2>Словник паронимов</h2>
-        <p class="muted">Группы паронимов, значения и примеры употребления из предоставленного словника.</p>
+        <p class="muted">Группы паронимов, значения и примеры употребления.</p>
         <div class="tools">
-          <input type="text" id="dictionarySearch" placeholder="Поиск">
+          <input type="text" id="dictionarySearch" placeholder="Поиск" aria-label="Поиск в словнике паронимов">
           <button class="ghost" id="clearDictionarySearch">Очистить</button>
         </div>
         <div class="count" id="dictionaryCount"></div>
@@ -174,7 +175,14 @@ const ITEMS = PARONYM_GROUPS.flatMap((group,groupIndex)=>group.items.map((item,i
 const MODES={meaning:'Найди пароним',findError:'Найди ошибку',ege:'ЕГЭ: задание 5'};
 let state={mode:'meaning',questions:[],index:0,score:0,answered:false,mistakes:[],lastSettings:null};
 const $=id=>document.getElementById(id);
-const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+function shuffle(items){
+  const result=[...items];
+  for(let i=result.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [result[i],result[j]]=[result[j],result[i]];
+  }
+  return result;
+}
 const sample=(a,n)=>shuffle(a).slice(0,n);
 const MAX_QUESTIONS=100;
 function uniqueBy(items,keyFn){const seen=new Set();return items.filter(item=>{const key=keyFn(item);if(seen.has(key))return false;seen.add(key);return true})}
@@ -325,7 +333,7 @@ function buildQuestionSet(mode,count){
 }
 function show(id){['homeScreen','quizScreen','resultScreen','dictionaryScreen'].forEach(x=>$(x).classList.add('hidden'));$(id).classList.remove('hidden');if(id==='dictionaryScreen')renderDictionary()}
 function updateProgress(){const total=state.questions.length||1;$('progress').style.width=`${Math.round(((state.index+(state.questions[state.index]?.answered?1:0))/total)*100)}%`}
-function startQuiz(mode){const rawCount=Number($('questionCount').value)||10;const available=mode==='ege'||mode==='findError'?uniqueBy(PARONYM_EGE_TASKS,task=>task.id).length:ITEMS.filter(hasParonym).length;const count=Math.min(Math.max(5,rawCount),Math.min(MAX_QUESTIONS,available));state={mode,questions:buildQuestionSet(mode,count),index:0,score:0,answered:false,mistakes:[],lastSettings:{mode,count}};show('quizScreen');renderQuestion()}
+function startQuiz(mode){const rawCount=Number($('questionCount').value)||10;const available=mode==='ege'||mode==='findError'?uniqueBy(PARONYM_EGE_TASKS,task=>task.id).length:ITEMS.filter(hasParonym).length;const count=Math.min(Math.max(5,Math.floor(rawCount)),Math.min(MAX_QUESTIONS,available));state={mode,questions:buildQuestionSet(mode,count),index:0,score:0,answered:false,mistakes:[],lastSettings:{mode,count}};show('quizScreen');renderQuestion()}
 function renderQuestion(){
   const q=state.questions[state.index];state.answered=!!q.answered;
   $('modeTitle').textContent=MODES[state.mode];$('counter').textContent=`${state.index+1} / ${state.questions.length}`;$('score').textContent=state.score;
@@ -343,6 +351,8 @@ function renderTextAnswer(q){
   const input=document.createElement('input');input.id='typedAnswer';input.type='text';input.placeholder='Введите исправленный пароним';input.autocomplete='off';input.value=q.userAnswer||'';input.disabled=!!q.answered;
   const check=document.createElement('button');check.id='typedCheckBtn';check.textContent='Проверить';check.disabled=!!q.answered;check.onclick=checkTypedAnswer;
   input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();e.stopPropagation();if(!q.answered)checkTypedAnswer()}});
+  input.setAttribute('aria-label','Исправленный пароним');
+  input.addEventListener('input',()=>{q.userAnswer=input.value});
   wrap.appendChild(input);wrap.appendChild(check);$('answers').appendChild(wrap);if(!q.answered)setTimeout(()=>input.focus(),0);
 }
 function checkTypedAnswer(){const q=state.questions[state.index];if(q.answered||!q.inputMode)return;const input=$('typedAnswer');const button=$('typedCheckBtn');const value=input?input.value:'';if(!value.trim()){if(input)input.focus();return}const accepted=(q.accepted||[q.correct]).map(normalizeTypedAnswer);const ok=accepted.includes(normalizeTypedAnswer(value));q.answered=true;q.isCorrect=ok;q.userAnswer=value;if(ok)state.score++;else state.mistakes.push(q);if(input)input.disabled=true;if(button)button.disabled=true;showFeedback(q,ok);$('nextBtn').disabled=false;$('score').textContent=state.score;updateProgress()}

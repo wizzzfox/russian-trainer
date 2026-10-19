@@ -11,16 +11,24 @@
   window.addEventListener('pageshow', scrollToTop);
   let storageAvailable = true;
   let saved;
-  try { saved = JSON.parse(localStorage.getItem(storageKey) || 'null'); } catch (_) { storageAvailable = false; }
-  let state = core.cleanState(saved, content);
+  try { saved = localStorage.getItem(storageKey); } catch (_) { storageAvailable = false; }
+  let state = core.parseState(saved, content);
+  let baseline = core.parseState(saved, content);
   const questionById = Object.fromEntries(Object.values(content.groups).flatMap(group => group.questions).map(q => [q.id, q]));
   const groupByQuestion = Object.fromEntries(Object.values(content.groups).flatMap(group => group.questions.map(q => [q.id, group])));
 
   function answerFor(q) {
-    return state.answers[q.id] ||= { selected: [], mapping: {}, text: '', reflection: '', checked: false, attempts: 0 };
+    return state.answers[q.id] || { selected: [], mapping: {}, text: '', reflection: '', checked: false, attempts: 0 };
   }
   function persist() {
-    try { localStorage.setItem(storageKey, JSON.stringify(state)); storageAvailable = true; } catch (_) { storageAvailable = false; }
+    try {
+      const latest = core.parseState(localStorage.getItem(storageKey), content);
+      state = core.mergeState(baseline, state, latest);
+      const serialized = JSON.stringify(state);
+      localStorage.setItem(storageKey, serialized);
+      baseline = JSON.parse(serialized);
+      storageAvailable = true;
+    } catch (_) { storageAvailable = false; }
     $('storage-status').hidden = storageAvailable;
     $('storage-status').textContent = 'Ответы доступны до закрытия страницы. Браузер не разрешил сохранить их на этом устройстве.';
   }
@@ -171,7 +179,7 @@
   function updateAnswer(element) {
     const q = questionById[element.dataset.question];
     if (!q || answerFor(q).checked || state.submitted[groupByQuestion[q.id].id]) return;
-    const answer = answerFor(q);
+    const answer = state.answers[q.id] ||= answerFor(q);
     if ('reflection' in element.dataset) answer.reflection = element.value;
     else if ('text' in element.dataset) answer.text = element.value;
     else if ('row' in element.dataset) answer.mapping[element.dataset.row] = element.value;
@@ -197,7 +205,7 @@
     const word = event.target.closest('[data-word]');
     if (word && !word.disabled) {
       const q = questionById[word.dataset.question];
-      const answer = answerFor(q);
+      const answer = state.answers[q.id] ||= answerFor(q);
       const value = word.dataset.word;
       answer.selected = q.multiple ? answer.selected.includes(value) ? answer.selected.filter(x => x !== value) : [...answer.selected, value] : answer.selected.includes(value) ? [] : [value];
       persist();
@@ -219,7 +227,7 @@
       prompt.focus({ preventScroll: true });
       prompt.scrollIntoView({ block: 'center', behavior: 'instant' });
     } else if (action === 'check' || action === 'retry') {
-      const answer = answerFor(q);
+      const answer = state.answers[q.id] ||= answerFor(q);
       if (action === 'check' && !core.hasAnswer(q, answer)) return;
       answer.checked = action === 'check';
       if (answer.checked) answer.attempts++;
@@ -261,9 +269,17 @@
     else navigate(state.step + 1);
   });
   $('large-mode').addEventListener('click', () => { state.large = !state.large; persist(); updateNavigation(); });
-  $('reset-lesson').addEventListener('click', () => $('reset-dialog').showModal());
+  $('reset-lesson').addEventListener('click', () => {
+    $('reset-dialog').returnValue = '';
+    $('reset-dialog').showModal();
+  });
   $('reset-dialog').addEventListener('close', () => {
     if ($('reset-dialog').returnValue !== 'confirm') return;
+    try {
+      const latest = core.parseState(localStorage.getItem(storageKey), content);
+      state = core.mergeState(baseline, state, latest);
+      baseline = JSON.parse(JSON.stringify(state));
+    } catch (_) { /* Local reset still works when browser storage is unavailable. */ }
     const steps = chapterSteps();
     const ids = new Set(steps.map(item => item.step.id));
     state.read = state.read.filter(id => !ids.has(id));

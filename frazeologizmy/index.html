@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Фразеологизмы — интерактивный тренажёр</title>
+  <link rel="icon" href="../uroki/chasti-rechi/icons/book.svg" type="image/svg+xml">
 <style>
 :root{
   --bg:#f7f8fb;
@@ -264,7 +265,7 @@ footer{margin-top:24px;padding:16px 0 0;border-top:1px solid var(--line);font-si
 }
 </style></head><body><div class="app" id="app"><header><div><h1>Фразеологизмы</h1><p class="subtitle">Интерактивный тренажёр для подготовки к заданию 25 ЕГЭ по русскому языку</p><p class="school">ГБОУ СОШ № 323 Невского района Санкт-Петербурга</p></div><div class="top-actions"><button class="ghost" id="siteHomeBtn">Все тренажёры</button><button class="ghost" id="homeBtn">Главный экран</button><button class="list-button" id="listBtn">Список фразеологизмов</button><button class="ghost" id="boardBtn">Крупный режим</button></div></header>
 <main><section class="panel" id="homeScreen"><h2 style="margin:0;font-size:28px">Выберите режим</h2><div class="settings-row">
-  <label class="muted">Количество вопросов<br><input type="number" id="questionCount" value="10" min="5" max="50"></label>
+  <label class="muted">Количество вопросов<br><input type="number" id="questionCount" value="10" min="5" max="100"></label>
   <label class="muted">Количество команд<br><input type="number" id="teamCount" value="3" min="2" max="8"></label>
 </div><div class="mode-grid"><button class="mode-card" data-mode="meaning"><h2>Значение</h2><p>Дан фразеологизм. Нужно выбрать правильное значение.</p></button><button class="mode-card" data-mode="phrase"><h2>Фразеологизм по значению</h2><p>Дано значение. Нужно выбрать подходящее устойчивое выражение.</p></button><button class="mode-card" data-mode="synonym"><h2>Синоним</h2><p>Нужно выбрать синоним фразеологизма.</p></button><button class="mode-card" data-mode="error"><h2>Исправь ошибку</h2><p>Дан искажённый фразеологизм. Нужно восстановить правильный вариант.</p></button><button class="mode-card" data-mode="fipi"><h2>ЕГЭ: задание 25</h2><p>Дан диапазон предложений. Нужно выписать один фразеологизм.</p></button><button class="mode-card" data-mode="mixed"><h2>Смешанный режим</h2><p>Значения, фразеологизмы, синонимы и исправление ошибок вперемешку.</p></button><button class="mode-card" data-mode="team"><h2>Командная игра</h2><p>Смешанные задания для команд. Учитель ведёт счёт.</p></button></div></section>
 <section class="hidden" id="quizScreen"><div class="quiz-topline"><div id="modeTitle">Режим</div><div><span id="counter">1 / 10</span> · баллы: <strong id="score">0</strong></div></div><div class="progress-wrap"><div class="progress" id="progress"></div></div><div class="question-card"><div class="question-label" id="questionLabel">Вопрос</div><h2 class="question" id="questionText"></h2><p class="context hidden" id="contextText"></p><p class="hint" id="questionHint"></p><div class="answers" id="answers"></div><div class="feedback hidden" id="feedback"></div><div class="quiz-actions quiz-actions-3">
@@ -284,7 +285,7 @@ footer{margin-top:24px;padding:16px 0 0;border-top:1px solid var(--line);font-si
   <h2 style="margin:0;font-size:34px">Список фразеологизмов</h2>
   <p class="muted">Таблица для справки: точная формулировка фразеологизма и словарное значение.</p>
   <div class="table-tools">
-    <input type="text" id="tableSearch" placeholder="Поиск по фразеологизму, значению или замене">
+    <input type="text" id="tableSearch" placeholder="Поиск по фразеологизму, значению или замене" aria-label="Поиск по фразеологизму, значению или замене">
     <button class="ghost" id="clearTableSearch">Очистить</button>
   </div>
   <div class="table-count" id="tableCount"></div>
@@ -294,7 +295,7 @@ footer{margin-top:24px;padding:16px 0 0;border-top:1px solid var(--line);font-si
         <tr>
           <th>Фразеологизм</th>
           <th>Словарное значение</th>
-          
+
         </tr>
       </thead>
       <tbody id="phraseTableBody"></tbody>
@@ -1445,7 +1446,14 @@ const FIPI_TASKS = [
   }
 ];
 
-const MODES={meaning:'Значение',phrase:'Фразеологизм по значению',synonym:'Синоним',error:'Исправь ошибку',fipi:'ЕГЭ: задание 25',mixed:'Смешанный режим',team:'Командная игра'};let state={mode:'meaning',questions:[],index:0,score:0,answered:false,mistakes:[],lastSettings:null,teamItem:null,teamTask:null,teamHistory:[],teamIndex:-1,teamScores:[0,0,0]};const $=id=>document.getElementById(id);const shuffle=a=>[...a].sort(()=>Math.random()-.5);const sample=(a,n)=>shuffle(a).slice(0,n);
+const MODES={meaning:'Значение',phrase:'Фразеологизм по значению',synonym:'Синоним',error:'Исправь ошибку',fipi:'ЕГЭ: задание 25',mixed:'Смешанный режим',team:'Командная игра'};let state={mode:'meaning',questions:[],index:0,score:0,answered:false,mistakes:[],lastSettings:null,teamItem:null,teamTask:null,teamHistory:[],teamIndex:-1,teamScores:[0,0,0]};const $=id=>document.getElementById(id);function shuffle(items){
+  const result=[...items];
+  for(let i=result.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [result[i],result[j]]=[result[j],result[i]];
+  }
+  return result;
+}const sample=(a,n)=>shuffle(a).slice(0,n);
 const PREFERENCES_KEY='phraseTrainerPreferences';
 function savePreferences(){
   const prefs={
@@ -1621,22 +1629,6 @@ function renderPhraseTable(){
     body.appendChild(tr);
   });
   $('tableCount').textContent=`Показано: ${filtered.length} из ${DATA.length}`;
-}
-function buildFindQuestion(task){
-  return {
-    item:null,
-    findTask:task,
-    actual:'find',
-    label:'Найдите фразеологизм',
-    prompt:task.instruction||'Из предложений выпишите один фразеологизм.',
-    context:task.rangeText||task.sentence,
-    hint:'Выпишите фразеологизм из указанного диапазона в той форме, в которой он употреблён. Регистр не важен, буквы Е/Ё считаются равными.',
-    correct:findTaskAnswers(task)[0],
-    correctAnswers:findTaskAnswers(task),
-    choices:[],
-    inputMode:true,
-    accepted:acceptedFindVariants(task)
-  };
 }
 function buildOfficialFipiQuestion(task){
   const range=task.range||task.rangeLabel||task.sentences||'указанных предложений';
@@ -2105,7 +2097,7 @@ function buildQuestionSet(mode,count){
   const sourcePool=mode==='error'?ERROR_DATA:DATA;
   return arrangeQuestionsNoAdjacentRepeats(selectUniqueQuestions(shuffle(sourcePool).map(item=>buildQuestion(item,mode)),count));
 }
-function startQuiz(mode){savePreferences();const sourceCount=mode==='fipi'?FIPI_TASKS.length:(mode==='error'?ERROR_DATA.length:DATA.length);if(!sourceCount)return;const rawCount=Number($('questionCount').value)||10;const minCount=mode==='fipi'?1:5;const count=Math.min(Math.max(minCount,rawCount),sourceCount);state.mode=mode;state.questions=buildQuestionSet(mode,count);state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count};show('quizScreen');renderQuestion()}function displayFindAnswer(q, ok){
+function startQuiz(mode){savePreferences();const sourceCount=mode==='fipi'?FIPI_TASKS.length:(mode==='error'?ERROR_DATA.length:DATA.length);if(!sourceCount)return;const rawCount=Number($('questionCount').value)||10;const minCount=mode==='fipi'?1:5;const count=Math.min(Math.max(minCount,Math.floor(rawCount)),Math.min(100,sourceCount));state.mode=mode;state.questions=buildQuestionSet(mode,count);state.index=0;state.score=0;state.answered=false;state.mistakes=[];state.lastSettings={mode,count};show('quizScreen');renderQuestion()}function displayFindAnswer(q, ok){
   if(!ok)return q.correct;
   const userNorm=normalizeAnswer(q.userAnswer||'');
   const candidates=[...(q.correctAnswers||[q.correct]),...(q.accepted||[])].filter(Boolean);
@@ -2163,6 +2155,9 @@ function renderQuestion(){const q=state.questions[state.index];state.answered=!!
         input.type='text';
         input.placeholder='Введите правильный фразеологизм';
         input.autocomplete='off';
+        input.setAttribute('aria-label','Ответ');
+        input.value=q.userAnswer||'';
+        input.addEventListener('input',()=>{q.userAnswer=input.value});
         const check=document.createElement('button');
         check.id='textCheckBtn';
         check.textContent='Проверить';
@@ -2272,7 +2267,7 @@ function nextQuestion(){if(state.index<state.questions.length-1){state.index++;r
   return Math.max(2,Math.min(8,raw));
 }
 function setTeamCount(count){
-  count=Math.max(2,Math.min(8,Number(count)||3));
+  count=Math.max(2,Math.min(8,Math.floor(Number(count)||3)));
   const input=$('teamCount');
   if(input)input.value=count;
   const old=Array.isArray(state.teamScores)?state.teamScores:[];

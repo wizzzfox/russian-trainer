@@ -2,10 +2,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
+const {pathToFileURL, fileURLToPath} = require('node:url');
 const root = path.resolve(__dirname, '..');
 
-function load(section) {
-  const html = fs.readFileSync(path.join(root, section, 'index.html'), 'utf8');
+function load(section, basePath = root) {
+  const html = fs.readFileSync(path.join(basePath, section, 'index.html'), 'utf8');
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
   assert.equal(new Set(ids).size, ids.length, `${section}: duplicate IDs`);
   const elements = new Map();
@@ -107,7 +108,7 @@ function inspect() {
     footers.push(html.match(/<footer[^>]*>([\s\S]*?)<\/footer>/)[1].trim());
     for(const [,link] of html.matchAll(/(?:href|src)="([^"]+)"/g)){
       if(/^(https?:|#|data:)/.test(link))continue;
-      assert.ok(fs.existsSync(path.resolve(root,path.dirname(page),link)),`Broken local link: ${page}: ${link}`);
+      assert.ok(fs.existsSync(fileURLToPath(new URL(link,pathToFileURL(path.join(root,page))))),`Broken local link: ${page}: ${link}`);
     }
   }
   assert.equal(new Set(footers).size,1,'Footers must match');

@@ -11,17 +11,18 @@
     location.replace(url);
     return;
   }
-  let state;
+  let state, baseline;
   function refresh() {
     let saved;
     try {
-      saved = JSON.parse(localStorage.getItem(key) || 'null');
+      saved = localStorage.getItem(key);
       document.getElementById('storage-status').hidden = true;
     } catch (_) {
       document.getElementById('storage-status').hidden = false;
       document.getElementById('storage-status').textContent = 'Браузер не разрешил сохранить прогресс на этом устройстве.';
     }
-    state = core.cleanState(saved, content);
+    state = core.parseState(saved, content);
+    baseline = core.parseState(saved, content);
     const completed = content.steps.filter(step => core.isStepComplete(step, content, state)).length;
     document.getElementById('hub-count').textContent = `${completed} из ${content.steps.length} разделов`;
     const progress = document.getElementById('hub-progress');
@@ -48,7 +49,12 @@
     state.large = !state.large;
     document.body.classList.toggle('large', state.large);
     document.getElementById('large-mode').setAttribute('aria-pressed', String(state.large));
-    try { localStorage.setItem(key, JSON.stringify(state)); } catch (_) {
+    try {
+      const latest = core.parseState(localStorage.getItem(key), content);
+      state = core.mergeState(baseline, state, latest);
+      localStorage.setItem(key, JSON.stringify(state));
+      refresh();
+    } catch (_) {
       document.getElementById('storage-status').hidden = false;
       document.getElementById('storage-status').textContent = 'Браузер не разрешил сохранить прогресс на этом устройстве.';
     }
